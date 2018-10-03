@@ -31,6 +31,7 @@ electric 20
 live_loop :playing_piano_through_a_keyhole do;tick
   #  stop
   electric 50
+  shard 1.0
   live_loop :fall_into_your_screen {stop}
   dcam3
   with_bpm 63.5 do #63.5
