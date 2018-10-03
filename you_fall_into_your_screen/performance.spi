@@ -13,7 +13,7 @@ viz :alive, spike: 1.0
 
 viz breath: 1.0
 
-
+electric 20
 alive rotate: 1.0
 stop
 128.times{
