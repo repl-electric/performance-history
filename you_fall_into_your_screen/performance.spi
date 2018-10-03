@@ -6,7 +6,7 @@ eq lo: 1.00
 
 alivecol -2
 
-cam4 true
+#cam4 true
 stop
 
 viz breath: 1.0
@@ -23,9 +23,9 @@ stop
 
 no{
   qbitsea_cc oct: 0.50
-  qbitsea_cc drive: 0.70
+  qbitsea_cc drive: 0.71
   qbitsea_cc charge: 0.50
-  qbitsea_cc fm: 0.41
+  qbitsea_cc fm: 0.42
   qbitsea_cc wav: 0.01
   qbitsea_cc wav_amp: 0.30
   qbitsea_cc atk: 0.83
