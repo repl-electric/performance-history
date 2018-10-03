@@ -18,12 +18,12 @@ ROOT="/Users/josephwilk/Workspace/repl-electric/adventures-in-algorhythm/you_fal
     unity "/glitch/invert",0.0
   #end
 
-
+alive rotate: 1.0
 
 stop
-eq hi: 1.00
+eq hi: 0.00
 
-eq lo: 1.00
+eq lo: 0.00
 
 #alivecol -7.1
 alive color: rand+0.2*0.8* -1.0
