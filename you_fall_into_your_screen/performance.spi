@@ -8,12 +8,14 @@ eq lo: 1.00
 alive color: rand+0.2*0.8* -1.0
 #cam4 true
 viz :alive, spike: 1.0
-stop
+
+
 
 viz breath: 1.0
 
-viz shard: 1.0
+
 alive rotate: 1.0
+stop
 128.times{
   electric
   sleep 2.0
