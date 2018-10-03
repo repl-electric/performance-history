@@ -19,7 +19,16 @@ ROOT="/Users/josephwilk/Workspace/repl-electric/adventures-in-algorhythm/you_fal
   # #end
 
 alive rotate: 4.0
-alive color: rand+0.2*0.8* -1.0
+128.times{
+viz :alive, spike: 1.0
+
+
+
+viz breath: 1.0
+
+  alive color: rand+0.2*0.8* -1.0
+  sleep 1
+}
 stop
 eq hi: 0.00
 
