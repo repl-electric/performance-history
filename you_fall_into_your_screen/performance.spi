@@ -30,7 +30,7 @@ electric 20
 
 live_loop :playing_piano_through_a_keyhole do;tick
   #  stop
-  electric 50
+  electric 40
   shard 1.0
   live_loop :fall_into_your_screen {stop}
 #  dcam3
