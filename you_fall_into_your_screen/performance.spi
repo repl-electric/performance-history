@@ -1,5 +1,5 @@
 ROOT="/Users/josephwilk/Workspace/repl-electric/adventures-in-algorhythm/you_fall_into_your_screen/support"; load "#{ROOT}/midi.rb";load "#{ROOT}/init.rb";use_bpm 127*0.5
- cam4
+# cam4
 # stop
 #eq hi: 0.00
 #eq lo: 0.00
@@ -30,7 +30,7 @@ electric 20
 
 live_loop :playing_piano_through_a_keyhole do;tick
   #  stop
-  electric 20
+  electric 50
   live_loop :fall_into_your_screen {stop}
   dcam3
   with_bpm 63.5 do #63.5
