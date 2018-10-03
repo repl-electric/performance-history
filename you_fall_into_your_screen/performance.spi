@@ -4,7 +4,7 @@ ROOT="/Users/josephwilk/Workspace/repl-electric/adventures-in-algorhythm/you_fal
 eq hi: 1.00
 eq lo: 1.00
 
-alivecol -8.1
+alivecol -7.1
 
 #cam4 true
 stop
