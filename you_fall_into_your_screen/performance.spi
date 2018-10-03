@@ -18,7 +18,7 @@ ROOT="/Users/josephwilk/Workspace/repl-electric/adventures-in-algorhythm/you_fal
 # stop
 
 #
-#bitsea_on :e3
+bitsea_on :e3
 #bitsea_on :cs4
 # #camlogo logo: 1, off: 0
 # #focus
