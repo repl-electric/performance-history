@@ -7,8 +7,8 @@ zero_cc wash: 0.5
 #harp: 0, pad: 0,
 #vastness: 0, waves: 0
 
-alive kick: 0, crystal: 0, perc: 0,
-piano: 1, vocal: 0, kalim: 1, kalim2: 0,
+alive kick: 0, crystal: 1, perc: 0,
+piano: 1, vocal: 1, kalim: 1, kalim2: 0,
 harp: 0,  pad: 0,
 vastness: 1, waves: 0
 
@@ -20,7 +20,7 @@ live_loop :test do
   #vastness [:e6, :eb6], 10, sus: 1
   tick
   score = (ing
-    [[:C3 :Eb2 :G2]   8]
+    #[[:C3 :Eb2 :G2]   8]
     # [[:C2 :Eb2 :bb2]   1]
     # [[:C2 :Eb2  _ ]   1]
     # [[:C2 :Eb2 :G2]   1]
@@ -32,11 +32,11 @@ live_loop :test do
     # [[:C2 :Eb2 :F2]   2]
 
     # #END----------------------------
-    # [[:C3   :Eb3    :G3]   8]
-    # [[:eb3    :g3   :bb3]  1]
-    # [[_       :d3    _ ]   1]
-    # [[_       :d3   :g3 ]  1]
-    # [[:f3     :d3    _ ]   1]
+    [[:C3   :Eb3    :G3]   8]
+    [[:eb3    :g3   :bb3]  1]
+    [[_       :d3    _ ]   1]
+    [[_       :d3   :g3 ]  1]
+    [[:f3     :d3    _ ]   1]
 
     # [[:C3   :Eb3    :G3]   8]
     # [[:eb3    :g3   :bb3]  1]
