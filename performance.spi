@@ -166,9 +166,9 @@ live_loop :test do
   x = spread(1,4).look
   at{
     sleep s[-1] - (s[-1]/2.0)
-    kick 60
+    kick 60+10
     sleep (s[-1]/2.0)
-    #kick 100 if x
+    kick 100 if x
   }
 
   at{
@@ -287,7 +287,7 @@ live_loop :test do
           operator :eb5,97
           sleep 1/2.0
          # operator :g6, 92
-          operator :a6, 85
+          operator :a6, 85+2
         }
     end
     }
