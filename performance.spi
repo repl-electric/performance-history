@@ -10,17 +10,36 @@ zero_cc wash: 0.5
 alive kick: 0, crystal: 1, perc: 0,
 piano: 1, vocal: 1, kalim: 1, kalim2: 0,
 harp: 0,  pad: 0,
-vastness: 0, waves: 1
+vastness: , waves: 0
 
-vastness_cc filter: 0.5, tone: 1.0, shape: 0.01, pulse: 0
+vastness_cc filter: 0.0, tone: 1.0, shape: 0.0, pulse: 0
 bright_cc cutoff: 1.0
 #vastness_on :c4
 
+#Nice progression 7M & 7m
+#    [[:C3    :Eb3  :G3 ]   8]      #1 7 5i
+#    [[:bb2   :ds3  :f3 ]   4]
+#    [[:eb3   :g2   :bb3]   8]
+
+# #nice end
+#     [[:c3    :Eb2     :g3 ]   4]      #1 7 5i
+#     [[:bb2   :ds2     :f3 ]  2]
+#     [[:eb2  :bb2     :d3]   2]
+
+#END DONT FORGET PIANO JOE
+#    [[:C3   :Eb3    :G3]   8]
+    # [[:Bb2  :D3    :G3]   16]
+
+#    [[:eb3    :g3   :bb3]  1]
+#    [[_       :d3    _ ]  1]
+#    [[_       :d3   :g3 ]  1]
+#    [[:f3     :d3    _ ]  1]
+
 live_loop :test do
-#  vastness :e6, 30, sus: 1
+  #vastness :e6, 10, sus: 1
   tick
   score = (ing
-     #  [[:C2 :Eb2 :G2]   8]
+     # [[:C3 :Eb2 :G2]   8]
      # [[:C2 :Eb2 :bb2]   1]
      # [[:C2 :Eb2  _ ]   1]
      # [[:C2 :Eb2 :G2]   1]
@@ -33,75 +52,108 @@ live_loop :test do
 
 
     # #END----------------------------
-#     [[:C3   :Eb3    :G3]   8]
-#     # [[:eb3    :g3   :bb3]  1]
-#     # [[_       :d3    _ ]   1]
-#     # [[_       :d3   :g3 ]  1]
-#     # [[:f3     :d3    _ ]   1]
+    [[:C3   :Eb3    :G3]   8]
+    [[:eb3    :g3   :bb3]  1]
+    [[_       :d3    _ ]   1]
+    [[_       :d3   :g3 ]  1]
+    [[:f3     :d3    _ ]   1]
 
-# #     [[:C3   :Eb3    :G3]   8]
-# #     [[:eb3    :g3   :bb3]  1]
-# # #    [[_]                   4]
-# #     [[_       :d3    _ ]   1]
-# #     [[_       :d3   :g3 ]  1]
-# # #    [[_]                   8]
-# #     [[:f3     :d3    _ ]   4]
+    [[:C3   :Eb3    :G3]   8]
+    [[:eb3    :g3   :bb3]  1]
+#    [[_]                   4]
+    [[_       :d3    _ ]   1]
+    [[_       :d3   :g3 ]  1]
+#    [[_]                   8]
+    [[:f3     :d3    _ ]   4]
 
-#     # [[:g2  :d3   :g3]     8]
-#     # [[_    :bb2     _]    2]
-#     # [[_    :d3      _]    2]
-#     # [[_    :c3      _]    2]
-#     [[:c3    :e3     :g3]    4]
-#     [[:bb2   :d3     :g3]    16]
-
+    [[:g2  :d3   :g3]     8]
+    [[_    :bb2     _]    2]
+    [[_    :d3      _]    2]
+    [[_    :c3      _]    2]
+    [[_    :ab2     _]    2]
 
     #p2---------------------------------------
 
+    [[:C3   :Eb3    :G3]   8]
+    [[:eb3    :g3   :bb3]  1]
+    [[_       :d3    _ ]  1]
+    [[_       :f3   :g3 ]  1]
+    [[:f3     :d3    _ ]  1]
+
+    [[:C3   :Eb3    :G3]   8]
+    [[:f3    :ab3   :c4]   1]
+    [[_      :d3    _ ]    1]
+    [[_      :eb3   :g3 ]  1]
+    [[:f3    :d3    _ ]    1]
+
+    [[:C3   :Eb3    :ab3]   8]
+    [[:g3   :bb3    :c4]   1]
+    [[_     :eb3     _]    1]
+    [[_     :eb3   :g3 ]  1]
+    [[:f3    :d3    _]    1]
+
+    [[:C3   :Eb3    :G3]   8]
+    [[:eb3    :g3   :bb3]  1]
+    [[_       :d3    _ ]   1]
+    [[_       :d3   :g3 ]  1]
+    [[:f3     :d3    _ ]   4]
+
+    [[:g2  :d3     :g3]     8]
+    [[_    :bb2     _]    2]
+    [[_    :d3      _]    2]
+    [[_    :c3      _]    2]
+    [[:d3  :g2     :f3]     4]
+
+    #gbdf-------------------------------------------------
+
+#    [[:f3     :d3    _ ]  1]
+
     # [[:C3   :Eb3    :G3]   8]
-    # [[:eb3    :g3   :bb3]  1]
+    # [[:eb3    :g3   :c4]  1]
     # [[_       :d3    _ ]  1]
     # [[_       :f3   :g3 ]  1]
     # [[:f3     :d3    _ ]  1]
 
     # [[:C3   :Eb3    :G3]   8]
-    # [[:f3    :ab3   :c4]   1]
-    # [[_      :d3    _ ]    1]
-    # [[_      :eb3   :g3 ]  1]
-    # [[:f3    :d3    _ ]    1]
+    # [[:eb3    :g3   :c4]  1]
+    # [[_       :d3    _ ]  1]
+    # [[_       :eb3   :g3 ]  1]
+    # [[:f3     :d3    _ ]  1]
 
-    # [[:C3   :Eb3    :ab3]   8]
-    # [[:g3   :bb3    :c4]   1]
-    # [[_     :eb3     _]    1]
-    # [[_     :eb3   :g3 ]  1]
-    # [[:f3    :d3    _]    1]
 
+#     [[:C3   :E3    :G3]   2]
+    # [[:C3   :E3    :G3]   8]
+    # [[:C3   :Eb3    :G3]   4]
     # [[:C3   :Eb3    :G3]   8]
-    # [[:eb3    :g3   :bb3]  1]
-    # [[_       :d3    _ ]   1]
-    # [[_       :d3   :g3 ]  1]
-    # [[:f3     :d3    _ ]   4]
+    # [[:bb3  :d3    :G3]   16]
 
-    # [[:g2  :d3     :g3]     8]
-    # [[_    :bb2     _]    2]
-    # [[_    :d3      _]    2]
-    # [[_    :c3      _]    2]
-    # [[:d3  :g2     :f3]     4]
 
-    #gbdf-------------------------------------------------
+    #extra
+#    [[:c3     :eb3    :g3 ]  4]
+#    [[:bb3     :d3    :c3 ]  4]
+
+    #--------------------------------
+
+
+    # [[:bb3   :d3  :f4]   4]
+    # [[:F3   :Ab3  :C4]   4]
+    # [[:G3   :Eb3  :C3]  8]
+    # [[:bb3  :d3  :f4]  4]
+    # [[:D3  :Eb3  :Ab3]  8]
 
     #Main Chorus ----------------
-    [[:C3   :Eb3    :G3]   8]
-    [[:bb3   :d3  :f4]   4]
-    [[:F3   :Ab3  :C4]   4]
-    [[:Eb3  :G3   :Bb3]  4]
+    # [[:C3   :Eb3    :G3]   8]
+    # [[:bb3   :d3  :f4]   4]
+    # [[:F3   :Ab3  :C4]   4]
+    # [[:Eb3  :G3   :Bb3]  4]
 
-     [[:ab3  :c3   :Eb4]  8]
+    #  [[:ab3  :c3   :Eb4]  8]
 
 
-    [[:C3   :Eb3  :G3]   8]
-    [[:F3   :bb3  :C4]   4]
-    [[:Eb3   :g3  :C4]    4]
-    [[:Eb3   :ab3  :C4]   4]
+    # [[:C3   :Eb3  :G3]   8]
+    # [[:F3   :bb3  :C4]   4]
+    # [[:Eb3   :g3  :C4]    4]
+    # [[:Eb3   :ab3  :C4]   4]
 
     #------------------------
     #[[_] 4]
@@ -114,9 +166,9 @@ live_loop :test do
   x = spread(1,4).look
   at{
     sleep s[-1] - (s[-1]/2.0)
-    kick 60+10
+    kick 60
     sleep (s[-1]/2.0)
-    kick 100 if x
+    #kick 100 if x
   }
 
   at{
@@ -129,7 +181,7 @@ live_loop :test do
   #smp Mountain[/kick/,1], amp: 2
   # with_swing ((line -0.1, 0.0,128).look){
   #vastness :d3, 127, sus: s[-1]*2 if s[0]
-  vastness octave(root(s[0]),3), 127, sus: s[-1]*2 if s[0]
+  vastness octave(root(s[0]),2), 127, sus: s[-1]*2 if s[0]
   # }
   no{
   at{
@@ -165,7 +217,7 @@ live_loop :test do
   with_swing ((line -0.08, 0.00,32).look){
     #TURN ON FOR DROP
     #bright s[0][0],    100,  sus: s[-1], piano: 0
-    bright s[0][0], 100,  sus: s[-1], piano: 0
+    bright s[0][0]-12, 100,  sus: s[-1], piano: 0
   }
 
   yes{
@@ -186,7 +238,7 @@ live_loop :test do
   with_transpose 12{
    harp s[0][-1], 75,  sus: s[-1]
   }
-  yes{
+  no{
     #A C E
     x=(ing :bb5 [:c6 :c6].choose [:e5 :eb5 :eb5].choose).look(offset: 1)
     #x=(ing :bb5 [:d5 :d5].choose [:g5 :ab5].choose).look(offset: 1)
@@ -220,9 +272,9 @@ live_loop :test do
     #  crystal (ing :fs3 :fs3 :gs3).look(:in), 45-rand_i(5) if spread(3,5).look(:in)
     #}
 
-    with_swing((line 0, -0.05, 128).look(:in)){
-      bright s[0][-1], (ing 82 82 95).look,  sus: s[-1] if spread(7,11).look(:in)
-    }
+    #with_swing((line 0, -0.05, 128).look(:in)){
+    #  bright s[0][-1], (ing 82 82 95).look,  sus: s[-1] if spread(7,11).look(:in)
+    #}
 
     sleep 1/2.0
     #crystal :bb3, 35+rand_i(10) if spread(3,5).rot(-1).look(:in)
