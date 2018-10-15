@@ -233,7 +233,7 @@ live_loop :test do
     if dice(8) > 4
       with_swing((line -0.1, 0.0, 8).look(:in)){
         #crystal :d4, (ine 60, 80,32).look-rand_i(15) if spread(1,s[-1]*1).rot(1*(-s[-1]-4)).look(:in)
-        crystal s[0][0], sus: 12  if spread(1,s[-1]*1).rot(1*(-s[-1]-4)).look(:in)
+        crystal root(s[0]), sus: 12  if spread(1,s[-1]*1).rot(1*(-s[-1]-4)).look(:in)
       }
     end
     sleep 1/2.0
