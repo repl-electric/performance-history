@@ -36,7 +36,7 @@ bright_cc cutoff: 1.0
 #    [[:f3     :d3    _ ]  1]
 
 live_loop :test do
-  vastness :e6, 70, sus: 1
+  vastness :eb6, 70, sus: 1
   tick
   score = (ing
     #   [[:C3 :Eb2 :G2]   8]
