@@ -37,7 +37,7 @@ bright_cc cutoff: 1.0
 
 live_loop :test do
   at{
-    8.times{
+    2.times{
       vastness [:eb6, :e6].choose, 60, sus: 1
       sleep 2
     }
