@@ -48,6 +48,9 @@ live_loop :test do
 #     [[:f3     :d3    _ ]   4]
 
     [[:c3  :e3   :g3]     4]
+
+        [[:c3  :e3   :g3]     4]
+
     # [[_    :bb2     _]    2]
     # [[_    :d3      _]    2]
     # [[_    :c3      _]    2]
@@ -127,7 +130,7 @@ live_loop :test do
   #smp Mountain[/kick/,1], amp: 2
   # with_swing ((line -0.1, 0.0,128).look){
   #vastness :d3, 127, sus: s[-1]*2 if s[0]
-  vastness octave(root(s[0]),3), 127, sus: s[-1]*2 if s[0]
+  vastness octave(root(s[0]),2), 127, sus: s[-1]*2 if s[0]
   # }
   no{
   at{
