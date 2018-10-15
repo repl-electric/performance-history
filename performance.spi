@@ -215,13 +215,12 @@ live_loop :test do
   end
 
   with_swing ((line -0.08, 0.00,32).look){
-    #TURN ON FOR DROP
     #bright s[0][0],    100,  sus: s[-1], piano: 0
     bright s[0][0]-12, 100,  sus: s[-1], piano: 0
   }
 
   yes{
-    crystal s[0][1],120, sus: s[-1]+0.0
+    #crystal s[0][1],120, sus: s[-1]+0.0
     crystal s[0][0],120, sus: s[-1]+0.0
 
     pad s[0][0]-12,100, sus: s[-1]+0.2, channel: 1, port: :iac_bus_1
