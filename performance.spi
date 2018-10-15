@@ -132,7 +132,7 @@ live_loop :test do
   #tick_reset_all
   s = score.look
 
-  crystal :eb3, 127
+  #crystal :eb3, 127
   x = spread(1,4).look
   at{
     sleep s[-1] - (s[-1]/2.0)
