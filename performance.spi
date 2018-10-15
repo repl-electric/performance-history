@@ -273,9 +273,9 @@ live_loop :test do
     #  crystal (ing :fs3 :fs3 :gs3).look(:in), 45-rand_i(5) if spread(3,5).look(:in)
     #}
 
-    #with_swing((line 0, -0.05, 128).look(:in)){
+    with_swing((line 0, -0.05, 128).look(:in)){
       bright s[0][-1], (ing 82 82 95).look,  sus: s[-1] if spread(7,11).look(:in)
-    #}
+    }
 
     sleep 1/2.0
     #crystal :bb3, 35+rand_i(10) if spread(3,5).rot(-1).look(:in)
