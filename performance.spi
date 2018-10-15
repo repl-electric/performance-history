@@ -7,9 +7,9 @@ zero_cc wash: 0.5
 #harp: 0, pad: 0,
 #vastness: 0, waves: 0
 
-alive kick: 1, crystal: 1, perc: 0,
+alive kick: 0, crystal: 1, perc: 0,
 piano: 1, vocal: 1, kalim: 1, kalim2: 0,
-harp: 0,  pad: 0,
+harp: 1,  pad: 0,
 vastness: 1, waves: 0
 
 vastness_cc filter: 0.5, tone: 1.0, shape: 0.0, pulse: 0
@@ -52,26 +52,26 @@ live_loop :test do
 
 
     # #END----------------------------
-    [[:C3   :Eb3    :G3]   8]
-    # [[:eb3    :g3   :bb3]  1]
-    # [[_       :d3    _ ]   1]
-    # [[_       :d3   :g3 ]  1]
-    # [[:f3     :d3    _ ]   1]
-
 #     [[:C3   :Eb3    :G3]   8]
-#     [[:eb3    :g3   :bb3]  1]
-# #    [[_]                   4]
-#     [[_       :d3    _ ]   1]
-#     [[_       :d3   :g3 ]  1]
-# #    [[_]                   8]
-#     [[:f3     :d3    _ ]   4]
+#     # [[:eb3    :g3   :bb3]  1]
+#     # [[_       :d3    _ ]   1]
+#     # [[_       :d3   :g3 ]  1]
+#     # [[:f3     :d3    _ ]   1]
 
-    # [[:g2  :d3   :g3]     8]
-    # [[_    :bb2     _]    2]
-    # [[_    :d3      _]    2]
-    # [[_    :c3      _]    2]
-    [[:c3    :e3     :g3]    4]
-    [[:bb2   :d3     :g3]    16]
+# #     [[:C3   :Eb3    :G3]   8]
+# #     [[:eb3    :g3   :bb3]  1]
+# # #    [[_]                   4]
+# #     [[_       :d3    _ ]   1]
+# #     [[_       :d3   :g3 ]  1]
+# # #    [[_]                   8]
+# #     [[:f3     :d3    _ ]   4]
+
+#     # [[:g2  :d3   :g3]     8]
+#     # [[_    :bb2     _]    2]
+#     # [[_    :d3      _]    2]
+#     # [[_    :c3      _]    2]
+#     [[:c3    :e3     :g3]    4]
+#     [[:bb2   :d3     :g3]    16]
 
 
     #p2---------------------------------------
@@ -144,18 +144,18 @@ live_loop :test do
     # [[:D3  :Eb3  :Ab3]  8]
 
     #Main Chorus ----------------
-    # [[:C3   :Eb3    :G3]   8]
-    # [[:bb3   :d3  :f4]   4]
-    # [[:F3   :Ab3  :C4]   4]
-    # [[:Eb3  :G3   :Bb3]  4]
+    [[:C3   :Eb3    :G3]   8]
+    [[:bb3   :d3  :f4]   4]
+    [[:F3   :Ab3  :C4]   4]
+    [[:Eb3  :G3   :Bb3]  4]
 
-    #  [[:ab3  :c3   :Eb4]  8]
+     [[:ab3  :c3   :Eb4]  8]
 
 
-    # [[:C3   :Eb3  :G3]   8]
-    # [[:F3   :bb3  :C4]   4]
-    # [[:Eb3   :g3  :C4]    4]
-    # [[:Eb3   :ab3  :C4]   4]
+    [[:C3   :Eb3  :G3]   8]
+    [[:F3   :bb3  :C4]   4]
+    [[:Eb3   :g3  :C4]    4]
+    [[:Eb3   :ab3  :C4]   4]
 
     #------------------------
     #[[_] 4]
@@ -219,7 +219,7 @@ live_loop :test do
   with_swing ((line -0.08, 0.00,32).look){
     #TURN ON FOR DROP
     #bright s[0][0],    100,  sus: s[-1], piano: 0
-    bright s[0][0]-12, 100,  sus: s[-1], piano: 0
+    bright s[0][0], 100,  sus: s[-1], piano: 0
   }
 
   yes{
@@ -288,8 +288,8 @@ live_loop :test do
       at{
           operator :eb5,97
           sleep 1/2.0
-         # operator :g6, 92
-          operator :a6, 85+2
+          operator :g6, 92
+#          operator :a6, 85+2
         }
     end
     }
