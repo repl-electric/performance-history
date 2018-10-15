@@ -3,6 +3,7 @@ load_support('rescue'); use_bpm 127.0
 
 
 bright :A3
+stop
 
 zero_cc wash: 0.5
 
