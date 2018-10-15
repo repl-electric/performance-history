@@ -8,12 +8,12 @@ zero_cc wash: 0.5
 #vastness: 0, waves: 0
 
 alive kick: 0, crystal: 0, perc: 0,
-piano: 1, vocal: 0, kalim: 1, kalim2: 0,
+piano: 0, vocal: 0, kalim: 0, kalim2: 0,
 harp: 0,  pad: 0,
-vastness: 1, waves: 0
+vastness: 0, waves: 0
 
 vastness_cc filter: 0.0, tone: 1.0, shape: 0.0, pulse: 0
-bright_cc cutoff: 0.8
+bright_cc cutoff: 0.0
 #vastness_on :c4
 
 #Nice progression 7M & 7m
@@ -39,7 +39,7 @@ live_loop :test do
   #vastness :e6, 10, sus: 1
   tick
   score = (ing
-#    [[:C3 :Eb2 :G2]   8]
+      [[:C3 :Eb2 :G2]   8]
      # [[:C2 :Eb2 :bb2]   1]
      # [[:C2 :Eb2  _ ]   1]
      # [[:C2 :Eb2 :G2]   1]
@@ -52,11 +52,11 @@ live_loop :test do
 
 
     # #END----------------------------
-    [[:C3   :Eb3    :G3]   8]
-    [[:eb3    :g3   :bb3]  1]
-    [[_       :d3    _ ]   1]
-    [[_       :d3   :g3 ]  1]
-    [[:f3     :d3    _ ]   1]
+#     [[:C3   :Eb3    :G3]   8]
+#     [[:eb3    :g3   :bb3]  1]
+#     [[_       :d3    _ ]   1]
+#     [[_       :d3   :g3 ]  1]
+#     [[:f3     :d3    _ ]   1]
 
 #     [[:C3   :Eb3    :G3]   8]
 #     [[:eb3    :g3   :bb3]  1]
@@ -181,7 +181,7 @@ live_loop :test do
   #smp Mountain[/kick/,1], amp: 2
   # with_swing ((line -0.1, 0.0,128).look){
   #vastness :d3, 127, sus: s[-1]*2 if s[0]
-  vastness octave(root(s[0]),3), 127, sus: s[-1]*2 if s[0]
+  vastness octave(root(s[0]),2), 127, sus: s[-1]*2 if s[0]
   # }
   no{
   at{
@@ -217,7 +217,7 @@ live_loop :test do
   with_swing ((line -0.08, 0.00,32).look){
     #TURN ON FOR DROP
     #bright s[0][0],    100,  sus: s[-1], piano: 0
-    bright s[0][0], 100,  sus: s[-1], piano: 0
+    bright s[0][0]-12, 100,  sus: s[-1], piano: 0
   }
 
   yes{
@@ -240,7 +240,7 @@ live_loop :test do
   }
   yes{
     #A C E
-    x=nil
+    x=_
     #x=(ing :bb5 [:c6 :c6].choose [:e5 :eb5 :eb5].choose).look(offset: 1)
     #x=(ing :bb5 [:d5 :d5].choose [:g5 :ab5].choose).look(offset: 1)
     v=(ine 100 90 55).tick(:inner)*0.95
@@ -294,8 +294,8 @@ live_loop :test do
 
     #midi_note_on :eb3, channel: 10
     #stop
-    with_transpose 12*1{
-      bright s[0][1], (ing 80 100 110).look,  sus: s[-1] if spread(2,3).look(:in)
+    with_transpose 12*0{
+      #bright s[0][1], (ing 80 100 110).look,  sus: s[-1] if spread(2,3).look(:in)
     }
   }
   #stop
