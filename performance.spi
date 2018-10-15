@@ -192,9 +192,9 @@ live_loop :test do
   #smp Mountain[/kick/,1], amp: 2
   # with_swing ((line -0.1, 0.0,128).look){
   #vastness :d3, 127, sus: s[-1]*2 if s[0]
-  vastness octave(root(s[0]),2), 127, sus: s[-1]*2 if s[0]
+  #vastness octave(root(s[0]),2), 127, sus: s[-1]*2 if s[0]
   # }
-  no{
+  yes{
   at{
     sleep (s[-1]/4.0)*2
     vastness octave(root(s[0]),2),110, sus: s[-1]*1
