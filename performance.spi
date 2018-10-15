@@ -41,9 +41,9 @@ live_loop :test do
       vastness [:eb6, :e6].choose, 60, sus: 1
       sleep 2
     }
-    vastness [:eb4, :e4].choose, 65, sus: 1
-    sleep 1/2.0
-    vastness [:eb3, :e3].choose, 70, sus: 1
+    #vastness [:eb4, :e4].choose, 65, sus: 1
+    #sleep 1/2.0
+    #vastness [:eb3, :e3].choose, 70, sus: 1
     }
   tick
   score = (ing
