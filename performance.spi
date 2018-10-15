@@ -8,7 +8,7 @@ zero_cc wash: 0.5
 #vastness: 0, waves: 0
 
 alive kick: 0, crystal: 0, perc: 0,
-piano: 1, vocal: 1, kalim: 1, kalim2: 0,
+piano: 0, vocal: 0, kalim: 1, kalim2: 0,
 harp: 0,  pad: 0,
 vastness: 1, waves: 0
 
@@ -158,10 +158,7 @@ live_loop :test do
     }
   }
 
-  #smp Mountain[/kick/,1], amp: 2
-  # with_swing ((line -0.1, 0.0,128).look){
-  #vastness :d3, 127, sus: s[-1]*2 if s[0]
-  vastness octave(root(s[0]),3), 127, sus: s[-1]*2 if s[0]
+  vastness octave(root(s[0]),2), 127, sus: s[-1]*2 if s[0]
   # }
   no{
   at{
