@@ -1,8 +1,9 @@
 load_support('rescue'); use_bpm 127.0
 #scale C D E♭  F G A♭  B♭
-zero_cc rdelay: 1
 
 loop do
+  zero_cc rdelay: 2
+
   bright :C2
   sleep 1.0
 end
