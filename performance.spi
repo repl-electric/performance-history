@@ -23,7 +23,10 @@ live_loop :go do
 
   kick 60 if spread(1,2)
   if spread(1,31).look
-    kick 100
+    at{
+      sleep 1/2.0
+      kick 100
+    }
   end
 
 
