@@ -13,7 +13,7 @@ live_loop :go do
       sleep 1
       operator :eb5, 120, sus: 2
       sleep 1/2.0 + 1
-      operator :eb6, 100, sus: 2
+      operator :eb6, 120, sus: 2
       }
   end
 
