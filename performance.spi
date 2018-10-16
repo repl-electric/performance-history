@@ -6,7 +6,7 @@ live_loop :go do
   zero_cc rdelay: delays[0], ldelay: delays[1], cdelay: delays[2]
 
   bright :C3
-  vastness :e4 if spread(1,4).look
+  vastness (ing :e4).look if spread(1,4).look
   kick 60 if spread(1,2)
   sleep 1.0
 end
