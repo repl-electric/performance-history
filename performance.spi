@@ -29,8 +29,7 @@ live_loop :go do
     }
   end
 
-
-  crystal :d4, 60 if spread(7,11).look
+  crystal :d4, 100 if spread(7,11).look
 
   sleep 1.0
 end
