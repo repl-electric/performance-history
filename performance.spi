@@ -18,7 +18,7 @@ live_loop :go do
   end
 
   bright (ing :C1 :C1 [:ds2 :d2].choose :c1).look, piano: 0
-  vastness :Eb3, sus: 4 if spread(1,4).look
+  vastness :G3, sus: 4 if spread(1,4).look
 
   #kick 60 if spread(1,2)
   if spread(1,16).look
