@@ -3,7 +3,7 @@ load_support('rescue'); use_bpm 127.0
 
 live_loop :go do
   delays = [6,3,2].shuffle
-  zero_cc rdelay: delays[0], ldelay: delays[1], cdelay: 2
+  zero_cc rdelay: delays[0], ldelay: delays[1], cdelay: delays[2]
 
   bright :C2
   kick 60 if spread(1,2)
