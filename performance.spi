@@ -3,7 +3,7 @@ load_support('rescue'); use_bpm 130.0
 zero_cc wash: 0.5
 alive kick: 0, crystal: 0, perc: 0,
 piano: 1, vocal: 0, kalim: 1, kalim2: 0,
-harp: 0,  pad: 0,
+harp: 0,  pad: 1,
 vastness: 0, waves: 0
 
 vastness_cc filter: 0.5, tone: 1.0, shape: 0.0, pulse: 0
@@ -83,7 +83,7 @@ live_loop :test do
 
     #gbdf-------------------------------------------------
 
-    [[_   :Eb3    :G3]   8]
+    [[_      :Eb3    :G3]   8]
     [[:eb3    :g3   :c4]  1]
     [[_       :d3    _ ]  1]
     [[_       :f3   :g3 ]  1]
