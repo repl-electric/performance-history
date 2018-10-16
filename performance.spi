@@ -1,6 +1,6 @@
 load_support('rescue'); use_bpm 127.0
 #scale C D E♭  F G A♭  B♭
-zero_cc rdelay: 3
+zero_cc rdelay: 5
 stop
 zero_cc wash: 0.5
 
