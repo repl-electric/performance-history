@@ -1,7 +1,7 @@
 load_support('rescue'); use_bpm 127.0
 #scale C D E♭  F G A♭  B♭
 
-alive crystal: 1, piano: 1
+alive crystal: 1, piano: 1, vastness: 1
 
 live_loop :go do
   tick
@@ -18,7 +18,7 @@ live_loop :go do
   end
 
   bright (ing :C1 :C1 [:ds2 :d2].choose :c1).look, piano: 0
-  #vastness chord(:c2, 'm').shuffle.look, sus: 4 if spread(1,4).look
+  vastness :C3, sus: 4 if spread(1,4).look
 
   #kick 60 if spread(1,2)
   if spread(1,16).look
@@ -28,8 +28,8 @@ live_loop :go do
     }
   end
 
-  crystal :c3, (line 80, 100,64).look if spread(7,11).look
-  crystal :fs3, (line 80, 100,64).look if spread(3,7).look
+  #crystal :c3, (line 80, 100,64).look if spread(7,11).look
+  #crystal :fs3, (line 80, 100,64).look if spread(3,7).look
 
   sleep 1.0/2.0
   #vastness note((ing :Eb3 :C2).look)+0, piano: 0 if spread(1,4).look
