@@ -8,6 +8,10 @@ live_loop :go do
   delays = [6,3,2].shuffle
   zero_cc rdelay: delays[0], ldelay: delays[1], cdelay: delays[2]
 
+  if spread(1,6).look
+    operator :eb5
+  end
+
   bright (ing :C3 :C3 [:ds3 :d3].choose).look
   vastness chord(:c3, :m).look, sus: 4 if spread(1,4).look
   kick 60 if spread(1,2)
