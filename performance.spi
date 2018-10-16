@@ -31,7 +31,7 @@ live_loop :go do
   crystal :c3, (line 80, 100,64).look if spread(7,11).look
 
   sleep 1.0/2.0
-  bright note((ing :C3 :C3 [:ds3 :d3].choose).look)+7, piano: 0
+  bright note((ing :C3 :C3 [:ds3 :d3].choose).look)+12, piano: 0
   sleep 1.0/2.0
 
 
