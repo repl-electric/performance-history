@@ -1,7 +1,7 @@
 load_support('rescue'); use_bpm 127.0
 #scale C D E♭  F G A♭  B♭
 
-alive crystal: 1
+alive crystal: 1, piano: 1
 
 live_loop :go do
   tick
