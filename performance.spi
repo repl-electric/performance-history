@@ -12,7 +12,7 @@ live_loop :go do
   vastness chord(:c3, :m).look, sus: 4 if spread(1,4).look
   kick 60 if spread(1,2)
 
-  crystal :d4,20 if spread(7,11).look
+  crystal :d4, 30 if spread(7,11).look
 
   sleep 1.0
 end
