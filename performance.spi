@@ -146,7 +146,7 @@ live_loop :test do
     }
   }
 
-  vastness bass_score[0][0], 127, sus: s[-1]*2 if bass_scor[0]
+  vastness bass_score[0][0], 127, sus: s[-1]*2 if bass_score[0]
   #vastness octave(root(s[0]),3), 127, sus: s[-1]*2 if s[0]
   # }
   no{
