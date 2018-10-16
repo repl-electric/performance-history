@@ -155,11 +155,12 @@ live_loop :test do
   at{
     16.times{
       sleep 1/4.0
-      midi (ing :gs3 :as3).look(:in2), (ramp 75, 100, 128).look(:in2), channel: 11 if spread(3,7).tick(:in2)
+      midi (ing :gs3 :as3).look(:in2), (ramp 75, 100, 128).look(:in2), channel: 3 if spread(3,7).tick(:in2)
     }
   }
 
   vastness octave(root(s[0]),2), 127, sus: s[-1]*2 if s[0]
+  # }
   no{
   at{
     sleep (s[-1]/4.0)*2
