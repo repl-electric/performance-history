@@ -4,7 +4,7 @@ zero_cc rdelay: 1
 
 loop do
   bright :C2
-  sleep 1/2.0
+  sleep 1.0
 end
 
 
