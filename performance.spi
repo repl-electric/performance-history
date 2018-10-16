@@ -29,6 +29,7 @@ live_loop :go do
   end
 
   crystal :c3, (line 80, 100,64).look if spread(7,11).look
+  crystal :c3, (line 80, 100,64).look if spread(3,7).look
 
   sleep 1.0/2.0
   vastness note((ing :Eb3 :C2).look)+0, piano: 0 if spread(1,4).look
