@@ -31,7 +31,7 @@ live_loop :go do
   at{
     crystal :d4, (line 80, 127,8).look if spread(11,12).look
     sleep 1/2.0
-    crystal :c3, (line 80, 127,32).look if spread(11,12).tick(:in)
+    crystal :c3, (line 80, 127,8).look if spread(11,12).tick(:in)
   }
   #crystal :fs3, (line 80, 100,64).look if spread(3,7).look
 
