@@ -5,7 +5,7 @@ loop do
   zero_cc rdelay: 6, ldelay: 3, cdelay: 2
 
   bright :C2
-  kick 60
+  kick 60 if spread 1,2
   sleep 1.0
 end
 
