@@ -148,12 +148,12 @@ live_loop :test do
   }
   if s[0][0] == nil
     #more tension....
-    vastness :g2, 127, sus: s[-1]*2
+    #vastness :g2, 127, sus: s[-1]*2
     vocal_note =  (ing :G4 :G4 :Eb4 :Bb4).look
     early = spread(1,3).look
     at{
       sleep 1/8.0
-      vastness :G2, 127, sus: s[-1] - 1/8.0
+      #vastness :G2, 127, sus: s[-1] - 1/8.0
 
       perc vocal_note, 100-(rand*10.0), sus: 6 if early
       sleep 3/8.0
