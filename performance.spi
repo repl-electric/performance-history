@@ -3,7 +3,7 @@ load_support('rescue'); use_bpm 127.0
 zero_cc rdelay: 1
 
 loop do
-  zero :C2
+  bright :C2
 end
 
 
