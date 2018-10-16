@@ -9,7 +9,12 @@ live_loop :go do
   zero_cc rdelay: delays[0], ldelay: delays[1], cdelay: delays[2]
 
   if spread(1,6).look
-    operator :eb5, 100, sus: 2
+    at{
+      sleep 1
+      operator :eb5, 100, sus: 2
+      sleep 1/2.0 + 1
+      operator :eb5, 100, sus: 2
+      }
   end
 
   bright (ing :C3 :C3 [:ds3 :d3].choose).look, piano: 0
