@@ -17,7 +17,7 @@ live_loop :go do
       }
   end
 
-  bright (ing :C2 :C2 [:ds2 :d2].choose :c2).look, piano: 0
+  bright (ing :C1 :C1 [:ds2 :d2].choose :c2).look, piano: 0
   #vastness chord(:c2, 'm').shuffle.look, sus: 4 if spread(1,4).look
 
   kick 60 if spread(1,2)
