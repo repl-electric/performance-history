@@ -5,7 +5,7 @@ alive crystal: 1, piano: 1
 
 live_loop :go do
   tick
-  delays = [6,3,2].shuffle
+  delays = [6,3,4].shuffle
   zero_cc rdelay: delays[0], ldelay: delays[1], cdelay: delays[2]
 
   if spread(1,[6,12].choose).look
