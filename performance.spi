@@ -12,7 +12,7 @@ bright_cc cutoff: 1.0
 
 live_loop :test do
   #vastness [:e6, :eb6].choose, 10, sus: 1 if state[:vastness]
-  zero_cc cdelay: look % 8 == 0 ? 2 : 1
+  zero_cc cdelay: look % 3 == 0 ? 2 : 1
   tick
   score = (ing
     #[[:C3, :Eb2, :G2],   8],
