@@ -58,7 +58,7 @@ live_loop :test do
     #[[_] 4]
 
     [[:c3   :eb3    :G3]   8]
-    [[:f3    :ab3   :c4]   1]
+    [[:f3   :ab3   :c4]   1]
     [[_      :d3    _ ]    1]
     [[_      :eb3   :g3 ]  1]
     [[:g3    :d3    _ ]    1]
@@ -133,7 +133,7 @@ live_loop :test do
     }
   }
 
-  vastness octave(root(s[0]),3), 127, sus: s[-1]*2 if s[0] && s[-1] > 1
+  vastness octave(root(s[0]),3), 127, sus: s[-1]*2 if s[0] && s[-1] == 1
   # }
   no{
   at{
