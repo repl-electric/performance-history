@@ -28,7 +28,7 @@ live_loop :go do
     }
   end
 
-  crystal :d4, (line 80, 100,64).look if spread(7,12).look
+  crystal :d4, (line 80, 100,64).look if spread(8,12).look
   #crystal :fs3, (line 80, 100,64).look if spread(3,7).look
 
   sleep 1.0/2.0
