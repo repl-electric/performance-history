@@ -2,7 +2,8 @@ load_support('rescue'); use_bpm 127.0
 #scale C D E♭  F G A♭  B♭
 
 live_loop :go do
-  zero_cc rdelay: 6, ldelay: 3, cdelay: 2
+  delays = [6,3,2].shuffle
+  zero_cc rdelay: delays[0], ldelay: 3, cdelay: 2
 
   bright :C2
   kick 60 if spread(1,2)
