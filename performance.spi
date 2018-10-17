@@ -168,7 +168,7 @@ live_loop :test do
   end
 
   with_swing ((line -0.08, 0.00,32).look){
-    bright s[0][0], 100,  sus: s[-1], piano: 0
+    bright s[0][0]-12, 100,  sus: s[-1], piano: 0
   }
 
   yes{
