@@ -227,7 +227,7 @@ live_loop :test do
           operator :eb5,97
           sleep 1/2.0
 #          operator :g6, 92
-          operator :a6, 85+5
+          operator :a6, 85+5+2
         }
     end
     }
