@@ -101,14 +101,10 @@ live_loop :test do
 
     #  [[:ab3  :c3   :Eb4]  8]
 
-
     # [[:C3   :Eb3  :G3]   8]
     # [[:F3   :bb3  :C4]   4]
     # [[:Eb3   :g3  :C4]    4]
     # [[:Eb3   :ab3  :C4]   4]
-
-    #------------------------
-    #[[_] 4]
     )
   #tick_reset_all
   s = score.look
@@ -131,8 +127,8 @@ live_loop :test do
     }
   }
 
-  vastness s[0][0], 125, sus: (s[-1]*1)*2 if s[0][0]
-  #vastness octave(root(s[0]),2), 122, sus: s[-1]*2 if s[0]
+  #vastness s[0][0], 125, sus: (s[-1]*1)*2 if s[0][0]
+  vastness octave(root(s[0]),2), 122, sus: s[-1]*2 if s[0]
   #}
   no{
     at{
