@@ -137,7 +137,7 @@ live_loop :test do
 
   #vastness s[0][0], 127, sus: (s[-1]*1)*2 if s[0][0]
   vastness octave(root(s[0]),2), 127, sus: s[-1]*2 if s[0]
-  # }
+  #}
   no{
     at{
       vastness octave(root(s[0]),3),110, sus: s[-1]*1
@@ -191,9 +191,9 @@ live_loop :test do
    harp s[0][-1], 75,  sus: s[-1]
   }
   yes{
-    x=nil
-#    x=(ing :bb5 [:c6 :c6].choose [:e5 :eb5 :eb5].choose).look(offset: 1)
+    x=(ing :bb5 [:c6 :c6].choose [:e5 :eb5 :eb5].choose).look(offset: 1)
     x=(ing :bb5 [:d5 :d5].choose [:g5 :ab5].choose).look(offset: 1)
+    x=nil
     v=(ine 100 90 55).tick(:inner)*1.0
   at{
     sleep 1.0
