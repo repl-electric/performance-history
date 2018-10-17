@@ -6,7 +6,7 @@ piano: 1, vocal: 1, kalim: 1, kalim2: 0,
 harp: 0,  pad: 0,
 vastness: 1, waves: 0
 @rescue=false
-vastness_cc filter: 0.01, tone: 1.0, shape: 0.0, pulse: 0
+vastness_cc filter: 0.0, tone: 1.0, shape: 0.0, pulse: 0
 bright_cc cutoff: 0.01
 #vastness_on :c4
 
