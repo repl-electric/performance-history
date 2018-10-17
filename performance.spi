@@ -2,21 +2,21 @@ load_support('rescue'); use_bpm 130.0
 #scale C D E♭  F G A♭  B♭
 zero_cc wash: 0.5
 alive kick: 0, crystal: 0, perc: 0,
-piano: 0, vocal: 0, kalim: 0, kalim2: 0,
-harp: 0,  pad: 1,
+piano: 0, vocal: 0, kalim: 1, kalim2: 0,
+harp: 0,  pad: 0,
 vastness: 0, waves: 0
-@rescue=true
-vastness_cc filter: 0.7, tone: 1.0, shape: 0.0, pulse: 0
+@rescue=false
+vastness_cc filter: 0.0, tone: 1.0, shape: 0.0, pulse: 0
 bright_cc cutoff: 1.0
 #vastness_on :c4
 
 live_loop :test do
-  vastness [:e6, :eb6].choose, 10, sus: 1 if state[:vastness]
+  #vastness [:e6, :eb6].choose, 10, sus: 1 if state[:vastness]
   #zero_cc cdelay: look % 3 == 0 ? 4 : 1
   zero_delay [3,5,1].shuffle
   tick
   score = (ing
-    # [[:c3 :Eb2 :G2]   8]
+    [[:c3 :Eb2 :G2]   8]
     # [[:C2 :Eb2 :bb2]  1]
     # [[:C2 :Eb2  _ ]   1]
     # [[:C2 :Eb2 :G2]   1]
@@ -29,26 +29,23 @@ live_loop :test do
 
     # # #END----------------------------
     # [[:C3   :Eb3    :G3]   8]
-    # # [[:eb3    :g3   :bb3]  1]
-    # # [[_       :d3    _ ]   1]
-    # # [[_       :d3   :g3 ]  1]
-    # # [[:f3     :d3    _ ]   1]
+    # [[:eb3    :g3   :bb3]  1]
+    # [[_       :d3    _ ]   1]
+    # [[_       :d3   :g3 ]  1]
+    # [[:f3     :d3    _ ]   1]
 
-    # # [[:C3   :Eb3    :G3]   8]
-    # # [[:eb3    :g3   :bb3]  1]
-    # # [[_       :d3    _ ]   1]
-    # # [[_       :d3   :g3 ]  1]
-    # # [[:f3     :d3    _ ]   4]
+    # [[:C3   :Eb3    :G3]   8]
+    # [[:eb3    :g3   :bb3]  1]
+    # [[_       :d3    _ ]   1]
+    # [[_       :d3   :g3 ]  1]
+    # [[:f3     :d3    _ ]   4]
 
-    # # [[:g2   :d3   :g3]      8]
-    # # [[_     :bb2     _]     2]
-    # # [[_     :d3      _]     2]
-    # # [[_     :c3      _]     2]
+    # [[:g2   :d3   :g3]      8]
+    # [[_     :bb2     _]     2]
+    # [[_     :d3      _]     2]
+    # [[_     :c3      _]     2]
     # [[:c3   :e3     :g3]    4]
-    # [[:bb2   :d3     :g3]    16]
-
-
-    #  [[:bb2    :d3     :g3]  16]
+    #[[:bb2    :d3     :g3]  16]
 
     #p2---------------------------------------
 
@@ -84,11 +81,11 @@ live_loop :test do
 
     #gbdf-------------------------------------------------
 
-    [[:c2    :eb2    :G2]   1]
-    #[[_    :g3   :c4]  1]
-    [[_       :d3    _ ]  1]
-    #[[_       :f3   :g3 ]  1]
-    #[[_     :d3    _ ]  1]
+    # [[:C3   :Eb3    :G3]   8]
+    # [[:eb3    :g3   :c4]  1]
+    # [[_       :d3    _ ]  1]
+    # [[_       :f3   :g3 ]  1]
+    # [[:f3     :d3    _ ]  1]
 
     # [[:C3   :Eb3    :G3]   8]
     # [[:eb3    :g3   :c4]  1]
@@ -116,9 +113,9 @@ live_loop :test do
   x = spread(1,4).look
   at{
     sleep s[-1] - (s[-1]/2.0)
-    kick 60+10
+    kick 60
     sleep (s[-1]/2.0)
-    kick 90 if x
+    #kick 90 if x
   }
 
   no{
@@ -130,10 +127,10 @@ live_loop :test do
     }
   }
 
-  #vastness s[0][0], 127, sus: (s[-1]*1)*2 if s[0][0]
-  #vastness octave(root(s[0]),2), 122, sus: s[-1]*2 if s[0]
+  #vastness s[0][0], 125, sus: (s[-1]*1)*2 if s[0][0]
+  vastness octave(root(s[0]),2), 122, sus: s[-1]*2 if s[0]
   #}
-  yes{
+  no{
     at{
       #vastness octave(root(s[0]),3),110, sus: s[-1]*1
       sleep (s[-1]/4.0)*2
@@ -163,12 +160,12 @@ live_loop :test do
   end
 
   with_swing ((line -0.08, 0.00,32).look){
-    bright s[0][0], 100,  sus: s[-1], piano: 0
+    bright s[0][0]-12, 100,  sus: s[-1], piano: 0
   }
 
   yes{
-    #crystal note(s[0][1]),120, sus: s[-1]+0.0
-    #crystal note(s[0][0])-12, [110,100,90].choose, sus: s[-1]+0.0 if spread(1,2).rot(-1).look
+    crystal note(s[0][1]),120, sus: s[-1]+0.0
+    crystal note(s[0][0])-12, [110,100,90].choose, sus: s[-1]+0.0 if spread(1,2).rot(-1).look
     pad s[0][0]-12,100, sus: s[-1]+0.2, channel: 1, port: :iac_bus_1
     pad s[0][1]-12,120, sus: s[-1]+0.0, channel: 1, port: :iac_bus_1
     pad_cc tone: ((line 0.0, 0.5, 128) + (line 0.5, 0.0, 128)).look
@@ -181,8 +178,8 @@ live_loop :test do
   yes{
     x=(ing :bb5 [:c6 :c6].choose [:e5 :eb5 :eb5].choose).look(offset: 1)
     x=(ing :bb5 [:d5 :d5].choose [:g5 :ab5].choose).look(offset: 1)
-    #x=nil
-    v=(ine 100 90 55).tick(:inner)*1.1
+    x=nil
+    v=(ine 100 90 55).tick(:inner)*1.0
     at{
       sleep 1.0
       1.times{
@@ -225,14 +222,14 @@ live_loop :test do
           operator :eb5,97
           sleep 1/2.0
           operator :g6, 92
-#          operator :a6, 85+5
+#          operator :a6, 85
         }
     end
     }
     #midi_note_on :eb3, channel: 10
     #stop
-    with_transpose 12*1{
-      bright s[0][1], (ing 80 100 110).look,  sus: s[-1] if spread(2,3).look(:in)
+    with_transpose 12*0{
+      #bright s[0][1], (ing 80 100 110).look,  sus: s[-1] if spread(2,3).look(:in)
     }
   }
   #stop
