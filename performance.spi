@@ -3,7 +3,7 @@ load_support('rescue'); use_bpm 130.0
 zero_cc wash: 0.5
 alive kick: 0, crystal: 1, perc: 0,
 piano: 1, vocal: 1, kalim: 1, kalim2: 0,
-harp: 0,  pad: 0,
+harp: 0,  pad: 1,
 vastness: 0, waves: 0
 @rescue=true
 vastness_cc filter: 0.7, tone: 1.0, shape: 0.0, pulse: 0
