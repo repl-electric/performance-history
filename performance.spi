@@ -101,10 +101,10 @@ live_loop :test do
 
     #  [[:ab3  :c3   :Eb4]  8]
 
-    [[:C3   :Eb3  :G3]   8]
-    [[:F3   :bb3  :C4]   4]
-    [[:Eb3   :g3  :C4]    4]
-    [[:Eb3   :ab3  :C4]   4]
+    # [[:C3   :Eb3  :G3]   8]
+    # [[:F3   :bb3  :C4]   4]
+    # [[:Eb3   :g3  :C4]    4]
+    # [[:Eb3   :ab3  :C4]   4]
     )
   #tick_reset_all
   s = score.look
