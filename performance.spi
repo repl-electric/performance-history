@@ -5,7 +5,7 @@ alive kick: 0, crystal: 1, perc: 0,
 piano: 1, vocal: 1, kalim: 1, kalim2: 0,
 harp: 1,  pad: 0,
 vastness: 0, waves: 1
-@rescue=false
+@rescue=true
 vastness_cc filter: 0.0, tone: 1.0, shape: 0.0, pulse: 0
 bright_cc cutoff: 1.0
 #vastness_on :c4
