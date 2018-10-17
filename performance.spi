@@ -7,7 +7,7 @@ harp: 0,  pad: 0,
 vastness: 0, waves: 0
 @rescue=false
 vastness_cc filter: 0.0, tone: 1.0, shape: 0.0, pulse: 0
-bright_cc cutoff: 1.0
+bright_cc cutoff: 0.01
 #vastness_on :c4
 
 live_loop :test do
