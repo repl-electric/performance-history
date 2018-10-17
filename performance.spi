@@ -4,7 +4,7 @@ zero_cc wash: 0.5
 alive kick: 0, crystal: 0, perc: 0,
 piano: 1, vocal: 1, kalim: 1, kalim2: 0,
 harp: 0,  pad: 0,
-vastness: 0, waves: 1
+vastness: 0, waves: 0
 @rescue=true
 vastness_cc filter: 0.0, tone: 1.0, shape: 0.0, pulse: 0
 bright_cc cutoff: 1.0
@@ -177,7 +177,7 @@ live_loop :test do
   }
   yes{
  #   x=(ing :bb5 [:c6 :c6].choose [:e5 :eb5 :eb5].choose).look(offset: 1)
-    #x=(ing :bb5 [:d5 :d5].choose [:g5 :ab5].choose).look(offset: 1)
+    x=(ing :bb5 [:d5 :d5].choose [:g5 :ab5].choose).look(offset: 1)
     x=nil
     v=(ine 100 90 55).tick(:inner)*1.0
     at{
