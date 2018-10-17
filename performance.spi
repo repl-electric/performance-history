@@ -126,39 +126,6 @@ live_loop :test do
     #kick 90 if x
   }
 
-  bass_score = (ing
-    [[:C3   :Eb3    :G3]   8]
-    [[:eb3    :g3   :bb3]  1]
-    [[_       :d3    _ ]  1]
-    [[_       :f3   :g3 ]  1]
-    [[:f3     :d3    _ ]  1]
-
-    [[:ab3   :eb3    :G3]   8]
-    [[:f3    :ab3   :c4]   1]
-    [[_      :d3    _ ]    1]
-    [[_      :eb3   :g3 ]  1]
-    [[:g3    :d3    _ ]    1]
-
-    [[:ab3   :Eb3    :ab3]   8]
-    [[:g3   :bb3    :c4]   1]
-    [[_     :eb3     _]    1]
-    [[_     :eb3   :g3 ]  1]
-    [[:f3    :d3    _]    1]
-
-    [[:C3   :Eb3    :G3]   8]
-    [[:eb3    :g3   :bb3]  1]
-    [[_       :d3    _ ]   1]
-    [[_       :d3   :g3 ]  1]
-    [[:f3     :d3    _ ]   4]
-
-    [[:g2  :d3     :g3]     8]
-    [[_    :bb2     _]    2]
-    [[_    :d3      _]    2]
-    [[_    :c3      _]    2]
-    [[:g3  :g2     :f3]     4]
-).look
-
-
   no{
   at{
     16.times{
@@ -171,7 +138,7 @@ live_loop :test do
   #vastness s[0][0], 127, sus: (s[-1]*1)*2 if s[0][0]
   #vastness octave(root(s[0]),2), 127, sus: s[-1]*2 if s[0]
   # }
-  yes{
+  no{
     at{
       vastness octave(root(s[0]),3),110, sus: s[-1]*1
     sleep (s[-1]/4.0)*2
