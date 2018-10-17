@@ -132,7 +132,7 @@ live_loop :test do
   #}
   yes{
     at{
-      #vastness octave(root(s[0]),3),110, sus: s[-1]*1
+      vastness octave(root(s[0]),3),110, sus: s[-1]*1
       sleep (s[-1]/4.0)*2
       vastness octave(root(s[0]),2),110, sus: s[-1]*1
       if s[-1] == 4
