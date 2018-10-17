@@ -16,7 +16,7 @@ live_loop :test do
   delays = [3,1,5].shuffle; zero_cc rdelay: delays[0], ldelay: delays[1], cdelay: delays[2]
   tick
   score = (ing
-    [[:C2 :Eb2 :G2]   8]
+    [[:C3 :Eb2 :G2]   8]
     [[:C2 :Eb2 :bb2]  1]
     [[:C2 :Eb2  _ ]   1]
     [[:C2 :Eb2 :G2]   1]
