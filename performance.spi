@@ -221,8 +221,8 @@ live_loop :test do
       at{
           operator :eb5,97
           sleep 1/2.0
-          operator :g6, 92
-#          operator :a6, 85
+#          operator :g6, 92
+          operator :a6, 85
         }
     end
     }
