@@ -2,7 +2,7 @@ load_support('rescue'); use_bpm 130.0
 #scale C D E♭  F G A♭  B♭
 zero_cc wash: 0.5
 alive kick: 0, crystal: 0, perc: 0,
-piano: 1, vocal: 0, kalim: 1, kalim2: 0,
+piano: 0, vocal: 0, kalim: 1, kalim2: 0,
 harp: 0,  pad: 1,
 vastness: 0, waves: 0
 @rescue=true
@@ -84,9 +84,9 @@ live_loop :test do
 
     #gbdf-------------------------------------------------
 
-    [[:c2    :eb2    :G2]   2]
+    [[:c2    :eb2    :G2]   1]
     #[[_    :g3   :c4]  1]
-    [[_       :d3    _ ]  2]
+    [[_       :d3    _ ]  1]
     #[[_       :f3   :g3 ]  1]
     #[[_     :d3    _ ]  1]
 
