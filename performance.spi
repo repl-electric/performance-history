@@ -5,7 +5,7 @@ alive kick: 0, crystal: 0, perc: 0,
 piano: 1, vocal: 1, kalim: 1, kalim2: 0,
 harp: 1,  pad: 0,
 vastness: 0, waves: 1
-@rescue=false
+@rescue=true
 vastness_cc filter: 0.7, tone: 1.0, shape: 0.0, pulse: 0
 bright_cc cutoff: 1.0
 #vastness_on :c4
@@ -84,11 +84,11 @@ live_loop :test do
 
     #gbdf-------------------------------------------------,
 
-    #, [[:C3,   :Eb3,    :G3],   8],
-    #, [[:eb3,    :g3,   :c4],  1],
-    #, [[_,       :d3,    _, ],  1],
-    #, [[_,       :f3,   :g3, ],  1],
-    #, [[:f3,     :d3,    _, ],  1],
+    [[:C3,   :Eb3,    :G3],   8],
+    [[:eb3,    :g3,   :c4],  1],
+    [[_,       :d3,    _, ],  1],
+    [[_,       :f3,   :g3, ],  1],
+    [[:f3,     :d3,    _, ],  1],
 
     #, [[:C3,   :Eb3,    :G3],   8],
     #, [[:eb3,    :g3,   :c4],  1],
