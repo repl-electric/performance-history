@@ -13,7 +13,7 @@ bright_cc cutoff: 1.0
 live_loop :test do
   #vastness [:e6, :eb6].choose, 10, sus: 1 if state[:vastness]
   #zero_cc cdelay: look % 3 == 0 ? 4 : 1
-  #zero_delay [3,5,1].shuffle
+  zero_delay [3,5,1].shuffle
   tick
   score = (ing
     # [[:c3 :Eb2 :G2]   8]
