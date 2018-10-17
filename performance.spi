@@ -131,8 +131,8 @@ live_loop :test do
     }
   }
 
-  vastness s[0][0], 127, sus: (s[-1]*1)*2 if s[0][0]
-  #vastness octave(root(s[0]),2), 127, sus: s[-1]*2 if s[0]
+  #vastness s[0][0], 127, sus: (s[-1]*1)*2 if s[0][0]
+  vastness octave(root(s[0]),2), 127, sus: s[-1]*2 if s[0]
   #}
   no{
     at{
