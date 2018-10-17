@@ -17,10 +17,10 @@ live_loop :test do
   tick
   score = (ing
     [[:c3 :Eb2 :G2]   4]
-    # [[:C2 :Eb2 :bb2]  1]
-    # [[:C2 :Eb2  _ ]   1]
-    # [[:C2 :Eb2 :G2]   1]
-    # [[:C2 :Eb2  _ ]   1]
+    [[:C2 :Eb2 :bb2]  1]
+    [[:C2 :Eb2  _ ]   1]
+    [[:C2 :Eb2 :G2]   1]
+    [[:C2 :Eb2  _ ]   1]
 
     # [[:C2 :Eb2 :G2]   8]
     # [[:C2 :Eb2 :bb2]  1]
