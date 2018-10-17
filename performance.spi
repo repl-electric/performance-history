@@ -121,9 +121,9 @@ live_loop :test do
   x = spread(1,4).look
   at{
     sleep s[-1] - (s[-1]/2.0)
-    kick 80
+    #kick 60
     sleep (s[-1]/2.0)
-    kick 100 if x
+    #kick 100 if x
   }
 
   bass_score = (ing
