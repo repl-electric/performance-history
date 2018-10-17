@@ -147,7 +147,6 @@ live_loop :test do
     }
   }
   if s[0][0] == nil #fill the void
-    puts @tide
     vastness :g2, 127, sus: s[-1]*2 if @rescue
     vocal_note =  (ing :G4 :G4 :Eb4 :Bb4).look
     early = spread(1,3).look
