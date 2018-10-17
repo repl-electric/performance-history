@@ -132,18 +132,18 @@ live_loop :test do
   #}
   no{
     at{
-      vastness octave(root(s[0]),3),110, sus: s[-1]*1
-    sleep (s[-1]/4.0)*2
-    vastness octave(root(s[0]),2),110, sus: s[-1]*1
-    if s[-1] == 4
-      sleep s[-1] - (s[-1]/4.0)
-      #vastness octave(root(s[0]),3), 127, sus: 1.0
-    else
-      sleep s[-1] - (s[-1]/4.0)*2
-      vastness octave(root(s[0]),4), 127, sus: 1.5*2
-      sleep (s[-1]/4.0)
-   end
-   vastness octave(root(s[0]),3), 120, sus: 0.5
+      #vastness octave(root(s[0]),3),110, sus: s[-1]*1
+      sleep (s[-1]/4.0)*2
+      vastness octave(root(s[0]),2),110, sus: s[-1]*1
+      if s[-1] == 4
+        sleep s[-1] - (s[-1]/4.0)
+        #vastness octave(root(s[0]),3), 127, sus: 1.0
+      else
+        sleep s[-1] - (s[-1]/4.0)*2
+        vastness octave(root(s[0]),4), 127, sus: 1.5*2
+        sleep (s[-1]/4.0)
+      end
+      vastness octave(root(s[0]),3), 120, sus: 0.5
     }
   }
   if s[0][0] == nil #fill the void
