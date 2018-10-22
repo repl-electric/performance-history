@@ -2,7 +2,7 @@ ROOT="/Users/josephwilk/Workspace/repl-electric/adventures-in-algorhythm/you_fal
 #camlogo
 #focus
 
-bitsea_on :A2
+bitsea_on :e3
 
 live_loop :fall_into_your_screen, sync: :unsyncable do; tick
   corrupt :A1, motion: 0.4
