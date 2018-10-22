@@ -17,7 +17,7 @@ vastness_cc filter: 0.0, tone: 1.0, shape: 0.0, pulse: 0
 bright_cc cutoff: 1.0
 #vastness_on :c4
 
-unity "/color", 1.0
+#unity "/color", 0.0
 #unity "/crazy", 0.0
 
 live_loop :test do
