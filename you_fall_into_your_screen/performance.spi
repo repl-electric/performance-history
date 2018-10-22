@@ -4,7 +4,7 @@ ROOT="/Users/josephwilk/Workspace/repl-electric/adventures-in-algorhythm/you_fal
 camlogo logo: 0
 #focus
 live_loop :fall_into_your_screen, sync: :unsyncable do; tick
-  corrupt :F2
+  corrupt :A2
   sleep 1
   sleep 1
 end
