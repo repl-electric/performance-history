@@ -1,7 +1,5 @@
 load_support('rescue'); use_bpm 130.0
 
-unity "/p/1/vel", 0
-stop
 
 
 #alive piano: 1
