@@ -1,6 +1,9 @@
 ROOT="/Users/josephwilk/Workspace/repl-electric/adventures-in-algorhythm/you_fall_into_your_screen/support"; load "#{ROOT}/midi.rb";load "#{ROOT}/init.rb";use_bpm 127*0.5
 #camlogo
 #focus
+
+bitsea_on :A2
+
 live_loop :fall_into_your_screen, sync: :unsyncable do; tick
   corrupt :A1, motion: 0.4
   sleep 1
@@ -11,8 +14,8 @@ live_loop :by_the_light_of_the_terminal, sync: :unsyncable do
     8.times{
       tick
       pp=(ing
-        D1, _, _, _,    _, _, _, _,    _, _, _, _,   _, _, _, _,
-        _, _, _, _,    _, D1, _, _,    _, _, _, _,   _, _, _, _,
+        D1 _ _ _    _ _ _ _    _ _ _ _   _ _ _ _
+        _ _ _ _    _ D1 _ _    _ _ _ _   _ _ _ _
 
         ).look
       smp_dust(pp)
