@@ -122,7 +122,7 @@ live_loop :test do
     sleep s[-1] / 8.0
     kick 65
     sleep (s[-1]/2.0)
-    #kick 80 if x
+    kick 80 if x
   }
 
   no{
