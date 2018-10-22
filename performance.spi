@@ -1,4 +1,8 @@
 load_support('rescue'); use_bpm 130.0
+
+unity "/p/1/vel", 0
+
+
 #alive piano: 1
 #scale C D E♭  F G A♭  B♭
 
