@@ -2,7 +2,7 @@
 
 live_loop :a do
   play :ab3
-  play :cs2
+  play :e2
   sleep 1
 end
 
