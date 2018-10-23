@@ -2,7 +2,7 @@ load_support('rescue'); use_bpm 130.0
 #scale C D E♭  F G A♭  B♭
 
 zero_cc wash: 0.5
-alive kick: 0, crystal: 1, perc: 1,
+alive kick: 0, crystal: 0, perc: 1,
 piano: 1, vocal: 1, kalim: 1, kalim2: 0,
 harp: 0,  pad: 0,
 vastness: 1, waves: 0
