@@ -1,7 +1,7 @@
 
 sample :ambi_choir
 play :a3
-play :cs1
+play :cs1, sustain: 2
 
 
 
