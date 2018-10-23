@@ -1,5 +1,4 @@
 
-use_tuning 
 live_loop :a do
   sample :sn_dolf 
 
@@ -8,6 +7,6 @@ end
 
 
 live_loop :b, sync: :a do
-  sample :sn_dub, amp: 0.2
+#  sample :sn_dub, amp: 0.2
   sleep 1/2.0
 end
