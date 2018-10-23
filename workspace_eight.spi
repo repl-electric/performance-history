@@ -1,7 +1,7 @@
 
 sample :ambi_choir, rate: 0.2
 use_synth :dark_ambience
-play chord(:c4,:m)[2], sustain: 2
+play chord(:c4,:m)[2], sustain: 12
 
 
 
