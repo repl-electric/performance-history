@@ -1,8 +1,8 @@
 
-
+use_tuning 
 live_loop :a do
-  play :ab3
-  play :e3
+  sample :sn_dolf 
+
   sleep 1
 end
 
