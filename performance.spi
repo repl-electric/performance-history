@@ -7,8 +7,8 @@ bitsea_on :e3
 bitsea_cc motion: 0.82  #╟▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╢
 bitsea_cc octave: 0.50  #╟▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╢
 #bitsea_cc formant: 0.00 #╟▒░╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╢
-alivecol -4.0
-cam4
+alivecol -2.0
+##cam4
 live_loop :fall_into_your_screen, sync: :unsyncable do; tick
   corrupt :A2, motion: 0.4
   smp Corrupt[/ambience/, /fx/, /f#/,0], beat_stretch: 16, amp: 0.8
@@ -21,8 +21,8 @@ live_loop :by_the_light_of_the_terminal, sync: :unsyncable do
     8.times{
       tick
       pp=(ing
-        D1 _ _ _    _ _ _ _    _ _ _ _   _ _ _ _
-        _ _ _ _    _ D1 _ _    _ _ _ _   _ _ _ _
+        D1, _, _, _,    _, _, _, _,    _, _, _, _,   _, _, _, _,
+        _, _, _, _,    _, D1, _, _,    _, _, _, _,   _, _, _, _,
 
         ).look
      # smp_dust(pp)
