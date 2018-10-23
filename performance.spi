@@ -7,6 +7,7 @@ load_support('rescue'); use_bpm 130.0
 vastness :a4
 
 unity "/p/4/vel",  0.2
+unity "/p/4/pit",  0.2
 
 
 
