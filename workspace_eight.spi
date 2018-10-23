@@ -1,9 +1,2 @@
 
-use_synth :dark_ambience
-play :a3, sustain: 4
-
-
-sample :ambi_choir, rate: 0.5
-
-
-
+play :a3
