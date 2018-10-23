@@ -2,7 +2,7 @@
 sample :ambi_choir
 play :a3
 use_synth :dark_ambience
-play :cs1, sustain: 2
+play :cs2, sustain: 2
 
 
 
