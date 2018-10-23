@@ -2,7 +2,7 @@ load_support('rescue'); use_bpm 130.0
 #scale C D E♭  F G A♭  B♭
 
 
-operator :A4, 127
+operator :C4, 127
 
 
 
