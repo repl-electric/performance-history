@@ -1,6 +1,5 @@
 
-sample :ambi_choir, rate: 0.2
-
+sample :ambi_choir, rate: 0.3
 use_synth :dark_ambience
 play :cs2, sustain: 2
 
