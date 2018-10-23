@@ -15,6 +15,7 @@ bright_cc cutoff: 1.0
 #unity "/color", 1.0
 #unity "/crazy", 1.0
 #unity "/kick",1.0
+unity "/p/1/vel",  0.1
 unity "/p/1/vel",  1
 
 live_loop :test do
