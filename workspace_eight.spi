@@ -1,6 +1,10 @@
 
+puts spread(1,4)
+
+use_bpm 60
 live_loop :a do
-tick
+  tick
+  sample :sn_dolf if spread(1,4).look 
   sample :sn_dolf if spread(1,4).look 
   
   sleep 1/2.0
