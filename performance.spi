@@ -3,7 +3,7 @@ load_support('rescue'); use_bpm 130.0
 
 
 
-unity "/p/4/vel", 0.2
+unity "/p/4/vel", 0.1
 unity "/p/4/vel/", 0.9
 
 #unity "/kick"
