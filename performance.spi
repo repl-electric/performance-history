@@ -14,7 +14,7 @@ bright_cc cutoff: 1.0
 
 unity "/color", 1.0
 #unity "/crazy", 1.1
-unity "/kick",1
+unity "/kick",1.0
 
 live_loop :test do
   #vastness [:e6, :eb6].choose, 10, sus: 1 if state[:vastness]
