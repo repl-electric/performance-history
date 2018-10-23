@@ -2,7 +2,7 @@ load_support('rescue'); use_bpm 130.0
 #scale C D E♭  F G A♭  B♭
 
 
-bright :c3
+bright :c4
 
 stop
 zero_cc wash: 0.5
