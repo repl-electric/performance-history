@@ -13,7 +13,7 @@ bright_cc cutoff: 1.0
 #vastness_on :c4
 
 #unity "/color", 1.0
-#unity "/crazy", 1.1
+unity "/crazy", 1.0
 #unity "/kick",1.0
 
 live_loop :test do
