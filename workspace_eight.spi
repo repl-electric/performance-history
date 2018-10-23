@@ -1,8 +1,8 @@
 
 live_loop :a do
-  sample :sn_dolf 
-
-  sleep 1
+  sample :sn_dolf if spread(1,4).look 
+  
+  sleep 1/2.0
 end
 
 
