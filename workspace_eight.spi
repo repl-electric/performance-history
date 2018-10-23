@@ -4,3 +4,4 @@ sample :sn_dolf
 play :a3
 play :a2
 sleep 1
+play :a2
