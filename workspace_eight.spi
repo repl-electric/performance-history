@@ -1,8 +1,15 @@
 
 
-play :a3
-play :a2
-sleep 1
-play :a2
+live_loop :a do
+  play :a3
+  play :a2
+  sleep 1
+end
 
+
+live_loop :b, sync: :a do
+sample :sn_dub, amp: 0.2
+sleep 1/2.0
+end
+play :a2
 sample :sn_dolf
