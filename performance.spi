@@ -197,9 +197,6 @@ live_loop :test do
         with_transpose -12 { operator x, v-10, sus: 12}
         sleep 1/2.0 + bonus_sleep_time
         with_transpose 12 { operator x, v+2, sus: 12}
-        #voices x, 127, sus: 12
-        #crystal :fs3
-        #bright :c4,70, sus: 12
       }
     }
   }
