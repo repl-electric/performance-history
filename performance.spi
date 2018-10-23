@@ -1,7 +1,7 @@
 load_support('rescue'); use_bpm 130.0
 #scale C D E♭  F G A♭  B♭
 alive vastness: 1
-vastness :c4, 50
+vastness :c4, 100
 
 #unity "/kick"
 
