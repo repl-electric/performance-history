@@ -4,7 +4,7 @@ load_support('rescue'); use_bpm 130.0
 
 zero_cc wash: 0.5
 alive kick: 0, crystal: 0, perc: 0,
-piano: 1, vocal: 0, kalim: 0, kalim2: 0,
+piano: 1, vocal: 0, kalim: 1, kalim2: 0,
 harp: 0,  pad: 0,
 vastness: 0, waves: 0
 @rescue=false
@@ -14,7 +14,7 @@ bright_cc cutoff: 1.0
 
 unity "/color", 1.0
 #unity "/crazy", 1.1
-unity "/ick",1.0
+#unity "/ick",1.0
 
 live_loop :test do
   #vastness [:e6, :eb6].choose, 10, sus: 1 if state[:vastness]
