@@ -1,3 +1,8 @@
 use_osc "localhost", 9000
 
-osc '/cube/rotate', rand_i(360)
+
+live_loop :alive do
+  sample :elec_chime
+  osc '/cube/rotate', rand_i(360)
+sleep 1
+end
