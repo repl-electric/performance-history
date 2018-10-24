@@ -1,4 +1,4 @@
 use_osc 'localhost',9000
 
 
-osc "/test",10.001
+osc "/test",1.001
