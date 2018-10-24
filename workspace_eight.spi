@@ -2,7 +2,7 @@ use_osc "localhost", 9000
 
 
 live_loop :alive do
-  sample :elec_chime
+  sample :elec_chime, amp: 0.2
   osc '/cube/rotate', rand_i(360)
 sleep 1
 end
