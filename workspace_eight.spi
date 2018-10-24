@@ -1,2 +1,2 @@
 use_osc 9000
-osc "/test"
+osc "/test",2.0
