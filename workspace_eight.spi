@@ -2,6 +2,6 @@ use_osc 'localhost', 9000
 
 live_loop :go do
   osc '/rotate',rand_i(360)
-  sample :bass_voxy_c
+  sample :bass_hit_c
   sleep 1
 end
