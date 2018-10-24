@@ -1,2 +1,7 @@
 use_osc 'localhost', 9000
-osc '/rotate',10.8
+
+live_loop :go do
+  osc '/rotate',10.8
+  sample :bass_voxy_c
+  sleep 1
+end
