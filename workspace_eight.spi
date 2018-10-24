@@ -4,6 +4,6 @@ use_osc "localhost",9000
 
 live_loop :test do
   sample :sn_dub
-  osc "/cube/rotate",10.0
+  osc "/cube/rotate",rand_i(360)
   sleep 1
 end
