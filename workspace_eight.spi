@@ -1,9 +1,0 @@
-use_osc "localhost",9000
-
-
-
-live_loop :test do
-  sample :sn_dub, amp: 0.2
-  osc "/cube/rotate",rand_i(360)
-  sleep 1
-end
