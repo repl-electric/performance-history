@@ -1,1 +1,2 @@
+use_osc 9000
 osc "/test"
