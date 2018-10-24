@@ -1,4 +1,2 @@
-use_osc 'localhost',9000
-
-
-osc "/test",1.001
+use_osc 'localhost', 9000
+osc '/rotate',0.3
