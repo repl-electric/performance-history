@@ -1,0 +1,43 @@
+live_loop :go do
+  tick
+  delays = [16,2,16].shuffle
+  zero_cc rdelay: delays[0], ldelay: delays[1], cdelay: delays[2]
+
+  if spread(1,[6,12].choose).look
+    at{
+      sleep 1
+      operator (ing :eb5 :d5).look, 120, sus: 2
+      sleep 1/2.0 + 1
+      operator (ing :f5 :ds5).look, 127, sus: 2
+      sleep 1
+      operator (ing :f6 :d6).look, 120, sus: 2
+      }
+  end
+
+  with_swing((line 0, -0.2,32).look){
+  bright (ing :C1 :C1).look, piano: 0
+  }
+  vastness :eb3, sus: 4 if spread(1,4).look
+
+  kick 30 if spread(1,1)
+  if spread(1,16).look
+    at{
+      sleep 1/2.0
+      kick 100
+    }
+  end
+
+  with_swing((line 0.1, 0.0,32).look){
+  at{
+    #crystal :d4, (line 80, 127,8).look if spread(11,12).look
+    sleep 1/2.0
+    #crystal :c3, (line 80, 127,8).look if spread(11,12).tick(:in)
+    }
+  }
+  #crystal :fs3, (line 80, 100,64).look if spread(3,7).look
+
+  sleep 1.0/2.0
+  #vastness note((ing :Eb3 :C2).look)+0, piano: 0 if spread(1,4).look
+  sleep 1.0/2.0
+  stop
+end
