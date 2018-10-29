@@ -5,7 +5,7 @@ load_support('t1'); use_bpm 130.0
 live_loop :name do
   tick
   pos = [1,5,3].shuffle
-  zero_cc ldelay: pos[0],cdelay: pos[1]
+  zero_cc ldelay: pos[0],cdelay: pos[1], rdelay: pos[2]
   midi :a2, port: :iac_bus_1, channel:2
   sleep 1
   sleep 1
