@@ -1,11 +1,11 @@
 load_support('t1'); use_bpm 130.0
 
-zero_cc ldelay: 2
-stop
+
 
 live_loop :name do
   tick
-
+  pos = [1,5,3].shuffle
+  zero_cc ldelay:  pos[0]
   midi :a2, port: :iac_bus_1, channel:2
   sleep 1
   sleep 1
