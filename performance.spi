@@ -15,6 +15,11 @@ live_loop :name do
   #midi :g2, 1,  port: :iac_bus_1, channel:2, sus: 1
   midi :c4, 10, sus: 12, port: :iac_bus_1, channel:4 if spread(3,24).look
 
-  midi :g4, 10, sus: 1/4.0, port: :iac_bus_1, channel:4 if spread(3,24).look
+  at{
+    8.times{
+      midi :g4, 10, sus: 1/4.0, port: :iac_bus_1, channel:4 if spread(3,24).look
+      sleep 1/4.0
+      }
+    }
   sleep 1
 end
