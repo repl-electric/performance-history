@@ -9,6 +9,8 @@ live_loop :name do
 
   midi :ab2, port: :iac_bus_1, channel:2
 
+  midi :ab2, port: :iac_bus_1, channel:3
+
   sleep 1
 
   #midi :g2, 1,  port: :iac_bus_1, channel:2, sus: 1
