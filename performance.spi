@@ -25,7 +25,7 @@ end
 
 live_loop :go, sync: :name do
   tick
-
+  midi :c4, channel: 7, sus: 1/4.0
   midi :ab3, 20, port: :iac_bus_1, channel:5
   #midi (knit :g2, 8, :ab2, 8).look,1, sus: 1/4.0,  channel: 4 if spread(7,11).look
   sleep 1/2.0
