@@ -7,10 +7,10 @@ live_loop :name do
   pos = [1,5,3].shuffle
   zero_cc ldelay: pos[0],cdelay: pos[1], rdelay: pos[2]
 
-  midi :b2, port: :iac_bus_1, channel:2
+  midi :bb2, port: :iac_bus_1, channel:2
 
   sleep 1/2.0
-  midi chord(:ab2, :m).look, (ing 1,  5,).look, sus: (ing 2, 2, 4,).look, port: :iac_bus_1, channel:3 if spread(1,4).look
+  midi chord(:ab2, :m).look, (ing 1, 5).look, sus: (ing 2,2,4).look, port: :iac_bus_1, channel:3 if spread(1,4).look
   sleep 1/2.0
   #midi :g2, 1,  port: :iac_bus_1, channel:2, sus: 1
   #midi :c4, 10, sus: 12, port: :iac_bus_1, channel:4 if spread(3,24).look
