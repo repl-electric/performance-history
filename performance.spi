@@ -4,8 +4,8 @@ load_support('t1'); use_bpm 130.0
 #C, D, E♭, F, G, A♭, and B♭.
 
 
-#c-1 =>
-zero_cc delay_note: 1.0
+#c-1 => c5
+zero_cc delay_note: 0.2
 stop
 
 live_loop :name do
