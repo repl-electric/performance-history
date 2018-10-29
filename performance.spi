@@ -17,12 +17,3 @@ live_loop :name do
 
   sleep 1
 end
-
-live_loop :go, sync: :name do
-  tick
-
-  sleep 1
-
-  sleep 1
-
-end
