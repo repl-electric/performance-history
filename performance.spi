@@ -1,1 +1,1 @@
-midi :a3
+midi :a3, port: :iac_bus_1
