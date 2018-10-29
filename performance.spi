@@ -17,9 +17,9 @@ live_loop :name do
 
   at{
     8.times{
-      midi :g4, 10, sus: 1/4.0, port: :iac_bus_1, channel:4
+      midi :g4, 5, sus: 1/4.0, port: :iac_bus_1, channel:4
       sleep 1/4.0
-      midi :g4, 10, sus: 1/4.0, port: :iac_bus_1, channel:4
+      midi :g4, 5, sus: 1/4.0, port: :iac_bus_1, channel:4
       }
     }
   sleep 1
