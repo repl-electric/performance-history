@@ -1,7 +1,7 @@
 load_support('t1'); use_bpm 130.0
 # A♭, B♭, C♭, D♭, E♭, F♭, and G♭.
 #ab2
-
+#C, D, E♭, F, G, A♭, and B♭.
 live_loop :name do
   tick
   pos = [1,5,3].shuffle
