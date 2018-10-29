@@ -19,7 +19,7 @@ live_loop :name do
     8.times{
       midi :g3, 5, sus: 1/4.0, port: :iac_bus_1, channel:4
       sleep 1/4.0
-      midi :gs2, 5, sus: 1/8.0, port: :iac_bus_1, channel:4
+      midi :ab2, 5, sus: 1/8.0, port: :iac_bus_1, channel:4
       sleep 1/4.0 + 1/4.0/2
       }
     }
