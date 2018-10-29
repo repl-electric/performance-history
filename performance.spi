@@ -17,3 +17,13 @@ live_loop :name do
 
   sleep 1
 end
+
+live_loop :go do
+  tick
+
+
+  midi :g3, channel: 4
+
+  sleep 1
+  sleep 1
+end
