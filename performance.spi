@@ -9,11 +9,9 @@ live_loop :name do
 
   midi :ab2, port: :iac_bus_1, channel:2
 
-  midi :ab2, sus: 4, port: :iac_bus_1, channel:3 if spread(1,4).look
+  midi :ab2,100, sus: 4, port: :iac_bus_1, channel:3 if spread(1,4).look
 
   sleep 1
-
   #midi :g2, 1,  port: :iac_bus_1, channel:2, sus: 1
-
   sleep 1
 end
