@@ -11,7 +11,7 @@ live_loop :name do
   midi chord(:c2, :m).look, port: :iac_bus_1, channel:2 if spread(1,11).rot(-4).look
 
 
-  midi :c3, channel: 6
+
 
   sleep 1/2.0
   midi chord(:ab2, :m).look, (ing 1, 5).look, sus: (ing 2,2,4).look, port: :iac_bus_1, channel:3 if spread(1,4).look
@@ -28,6 +28,8 @@ live_loop :go, sync: :name do
   #midi (knit :g2, 8, :ab2, 8).look,1, sus: 1/4.0,  channel: 4 if spread(7,11).look
   sleep 1/2.0
   midi (knit :ab3, 8, :g3, 8).look,20, sus: 4.0,  channel: 4 if spread(3,8).look
+
+    midi :c3, channel: 6
 
   sleep 1/2.0/2.0 + 1/2.0
 end
