@@ -22,6 +22,6 @@ live_loop :go, sync: :name do
   tick
   midi (knit :g2, 8, :ab2, 8).look,1, sus: 1/4.0,  channel: 4
   sleep 1/2.0
-  midi (knit :ab2, 8, :g3, 8).look,1, sus: 1/4.0,  channel: 4
+  midi (knit :ab2, 8, :g2, 8).look,1, sus: 1/4.0,  channel: 4
   sleep 1/2.0/2.0 + 1/2.0
 end
