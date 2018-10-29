@@ -1,6 +1,6 @@
 load_support('t1'); use_bpm 130.0
 
-zero_cc rdelay: 2
+zero_cc ldelay: 2
 stop
 
 live_loop :name do
