@@ -18,7 +18,7 @@ live_loop :name do
   sleep 1
 end
 
-live_loop :go do
+live_loop :go, sync: :name do
   tick
 
 
