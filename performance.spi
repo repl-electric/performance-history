@@ -8,7 +8,7 @@ load_support('t1'); use_bpm 130.0
 
 
 live_loop :name do
-  zero_cc delay_note: 0.5
+  zero_cc delay_note: rand
   tick
   pos = [1,5,3].shuffle
   zero_cc ldelay: pos[0],cdelay: pos[1], rdelay: pos[2]
