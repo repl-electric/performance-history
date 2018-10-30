@@ -6,7 +6,7 @@ load_support('t1'); use_bpm 130.0
 
 #c-1 => c5
 
-zero_cc delay_note: 'es1'
+zero_cc delay_note: 'fs1'
 #midi_cc 64, 45, port: :iac_bus_1, channel: 5
 stop
 live_loop :name do
