@@ -9,7 +9,7 @@ load_support('t1'); use_bpm 130.0
 
 live_loop :melo do
   tick
-  s = (ing [:ab2 1] [:bb2 1] [:c3 1] [:c2 1] [_ 2] [:d2 1/2.0] [:d2 1/2.0]  [_ 1/2.0]).look
+  s = (ing [:ab2 1] [:bb2 1] [:c3 1] [_ 1] [:d3 2] [:d2 1/2.0] [:d2 1/2.0]  [_ 1/2.0]).look
 
   midi s[0], port: :iac_bus_1, channel:2
   sleep s[-1]
