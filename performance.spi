@@ -7,7 +7,7 @@ load_support('t1'); use_bpm 130.0
 #c-1 => c5
 live_loop :kicker, sync: :melo do
   tick
-  midi :c3, 30, port: :iac_bus_1, channel:8
+  midi :c3, 50, port: :iac_bus_1, channel:8
   sleep 1
 end
 
