@@ -11,7 +11,7 @@ live_loop :melo do
   tick
   s = (ing [:ab2 100 1/2.0] [:c3 100 1/2.0] [:eb3 100 1/2.0]  [:f3 90 1] [_ 1/2.0] [:c2 127 1/2.0] [:c2 127 1/2.0]  [_ 1]).look
 
-  midi s[0], s[1], port: :iac_bus_1, channel:5, sus: s[-1]-0.1
+  midi s[0], s[1], port: :iac_bus_1, channel:5, sus: s[-1]
   puts s
   sleep s[-1]
 end
