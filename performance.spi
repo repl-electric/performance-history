@@ -21,7 +21,11 @@ live_loop :melo do
   s = score.look
 
   if spread(1,4).rot(-1).look
-    midi :c3, s[1], port: :iac_bus_1, channel:8
+    at{
+      midi :c3, s[1], port: :iac_bus_1, channel:8
+      sleep 1/2.0
+      midi :c3, s[1], port: :iac_bus_1, channel:8
+    }
   else
     midi :c3, s[1], port: :iac_bus_1, channel:8
   end
