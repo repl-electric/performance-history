@@ -7,7 +7,7 @@ load_support('t1'); use_bpm 130.0
 live_loop :kicker, sync: :melo do
   with_bpm (130.0*[2,1,4].choose) {
     tick
-    midi (ing :c3 :cs3).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:8
+    midi (ing :c3 :d3).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:8
     sleep 1
   }
 end
