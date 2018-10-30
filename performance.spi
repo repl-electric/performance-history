@@ -13,7 +13,6 @@ live_loop :kicker, sync: :melo do
   }
 end
 
-
 live_loop :melo do
   tick
   zero_cc delay_note: (knit :c3, 1, :ab3, 1).look
