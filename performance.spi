@@ -6,7 +6,7 @@ load_support('t1'); use_bpm 130.0
 
 #c-1 => c5
 
-zero_cc delay_note: 'c2'
+zero_cc delay_note: 'cs2'
 #midi_cc 64, 45, port: :iac_bus_1, channel: 5
 stop
 live_loop :name do
@@ -24,7 +24,7 @@ live_loop :name do
   midi :cs3,45, channel: 6 if spread(7,11*4).rot(-1).look
 
   sleep 1/2.0
-  midi chord(:ab2, :m).look, (ing 1,  5,).look, sus: (ing 2, 2, 4,).look, port: :iac_bus_1, channel:3 if spread(1,4).look
+  midi chord(:ab2, :m).look, (ing 1, 5).look, sus: (ing 2,2,4).look, port: :iac_bus_1, channel:3 if spread(1,4).look
   sleep 1/2.0
   #midi :g2, 1,  port: :iac_bus_1, channel:2, sus: 1
   #midi :c4, 10, sus: 12, port: :iac_bus_1, channel:4 if spread(3,24).look
