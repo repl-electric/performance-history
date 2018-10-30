@@ -1,4 +1,4 @@
-load_support('t1'); use_bpm 130.0
+load_support('t1'); use_bpm 160.0
 # A♭, B♭, C♭, D♭, E♭, F♭, and G♭.
 #ab2
 #C, D, E♭, F, G, A♭, and B♭.
