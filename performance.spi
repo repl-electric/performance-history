@@ -20,6 +20,8 @@ live_loop :melo do
     )
   s = score.look
 
+  midi :cs3, s[1], port: :iac_bus_1, channel:7, sus: s[-1]+0.5
+
   if s[0] == _
     midi :eb4, 120, port: :iac_bus_1, channel:3, sus: s[-1]
   end
@@ -50,7 +52,6 @@ live_loop :melo do
   sleep s[-1]
 end
 stop
-
 
 #midi_cc 64, 45, port: :iac_bus_1, channel: 5
 
