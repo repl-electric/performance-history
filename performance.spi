@@ -21,7 +21,7 @@ live_loop :melo do
   s = score.look
 
   if s[0] = _
-    midi :c2, 100, port: :iac_bus_1, channel:3, sus: s[-1]
+    midi :c2, 100, port: :iac_bus_1, channel:3, sus: 1
   end
 
   with_transpose(12){
