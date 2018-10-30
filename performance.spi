@@ -7,6 +7,15 @@ load_support('t1'); use_bpm 130.0
 #c-1 => c5
 
 
+live_loop :melo do
+  tick
+  s = (ing 1 1 1 _ 2 1/2.0 1/2.0).look
+
+  sleep s
+end
+stop
+
+
 #midi_cc 64, 45, port: :iac_bus_1, channel: 5
 
 live_loop :name do
@@ -16,7 +25,11 @@ live_loop :name do
   zero_cc ldelay: pos[0],cdelay: pos[1], rdelay: pos[2]
 
 
-  score = (ing :ab2, :a2).look
+
+
+
+  score = (ing :ab2,
+    ).look
 
   midi score, port: :iac_bus_1, channel:2 if spread(7,11).look
 
