@@ -17,6 +17,9 @@ live_loop :melo do
     #[:g2 127 1/2.0] [:g2 127 1/2.0]  [_ 1]
     ).look
 
+
+  midi s[0], s[1], port: :iac_bus_1, channel:3, sus: s[-1]+0.5
+
   midi s[0], s[1], port: :iac_bus_1, channel:7, sus: s[-1]+0.5
   puts s
   sleep s[-1]
