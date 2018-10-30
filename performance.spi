@@ -22,6 +22,9 @@ live_loop :melo do
 
   #midi score.look(offset: 1)[0], s[1], port: :iac_bus_1, channel:2 if spread(7,11).look
 
+  midi s[0], s[1], port: :iac_bus_1, channel:6, sus: s[-1]+0.5
+
+
   midi s[0], s[1], port: :iac_bus_1, channel:7, sus: s[-1]+0.5
   puts s
   sleep s[-1]
