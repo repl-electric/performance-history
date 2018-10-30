@@ -29,7 +29,9 @@ live_loop :melo do
   }
 
   at{
-    midi :c4, s[1], port: :iac_bus_1, channel:6, sus: s[-1]+0.5
+    8.times{
+      midi :c4, s[1], port: :iac_bus_1, channel:6, sus: s[-1]+0.5
+    }
   }
 
 
