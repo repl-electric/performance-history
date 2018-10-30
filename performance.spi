@@ -9,7 +9,6 @@ live_loop :kicker, sync: :melo do
   tick
   midi :c3, 10, port: :iac_bus_1, channel:8
   sleep 1
-
 end
 
 
