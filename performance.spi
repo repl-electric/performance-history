@@ -91,7 +91,7 @@ live_loop :melo, sync: :unsyncable do
   end
 
   with_transpose(12){
-    midi (ing [:c2 :eb2 :g2].choose :eb2 :c2 :f2).tick(:ch), 25, port: :iac_bus_1, channel:3, sus: 1/16.0 if s[0] == :c5# || s[1] == 75# && spread(1,9*2).look
+    midi (ing [:c2 :eb2 :g2].choose :eb2 :c2 :f2).tick(:ch), 15, port: :iac_bus_1, channel:3, sus: 1/16.0 if s[0] == :c5# || s[1] == 75# && spread(1,9*2).look
   }
 
   midi score.look(offset: 1)[0], s[1]*8, port: :iac_bus_1, channel:2 if spread(7,11).look
