@@ -21,7 +21,7 @@ live_loop :kicker, sync: :unsyncable do
   }
 end
 
-live_loop :kicker, sync: :unsyncable do
+live_loop :creatures, sync: :unsyncable do
   tick
   creature_cc dirt: rand*0.5, filter: rand*0.5, talk: rand*0.5
   creature :c4,80, sus:4 if spread(1,32).look
