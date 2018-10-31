@@ -5,7 +5,7 @@ load_support('t1'); use_bpm 160.0
 
 #creature_on :c2
 arp_on :eb3
-
+stop
 #c-1 => c5
 live_loop :unsyncable do; sleep 1;end
 
