@@ -14,6 +14,9 @@ end
 
 live_loop :melo do
   tick
+
+  midi :c4,10, sus: s[-1]+1, channel: 10
+
   zero_cc delay_note: (knit :c3, 1, :ab3, 1).look
   pos = [1,5,3].shuffle
   zero_cc ldelay: pos[0],cdelay: pos[1], rdelay: pos[2]
