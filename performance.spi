@@ -27,7 +27,7 @@ end
 live_loop :creatures, sync: :unsyncable do
   tick
   if spread(1,1).look
-    creature_cc dirt: rand*1.0, filter: rand*1.0, talk: rand*1.0
+    #creature_cc dirt: rand*1.0, filter: rand*1.0, talk: rand*1.0
     creature (ing :c4 :eb4 :g4).look, (ine 40 100 128).look, sus: 1/2.0
     at{
       sleep 8.0
