@@ -3,10 +3,6 @@ load_support('t1'); use_bpm 160.0
 #ab2
 #C, D, E♭, F, G, A♭, and B♭.
 
-create_cc dirt: rand
-
-stop
-
 #c-1 => c5
 live_loop :kicker, sync: :melo do
   with_bpm (160.0*[1,1,0.5,2].choose) {
@@ -19,6 +15,7 @@ end
 live_loop :melo do
   tick
 
+  create_cc dirt: rand, filter: rand, talk: rand
   midi :d5,50, sus:1, channel: 10 if spread(1,32).look
 
   zero_cc delay_note: (knit :c3, 1, :ab3, 1).look
