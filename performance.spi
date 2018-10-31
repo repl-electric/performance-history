@@ -18,8 +18,7 @@ live_loop :kicker, sync: :unsyncable do
     sleep 1
   }
 end
-stop
-@tally=0
+
 live_loop :melo, sync: :unsyncable do
   tick
   creature_cc dirt: rand*0.5, filter: rand*0.5, talk: rand*0.5
@@ -48,7 +47,6 @@ live_loop :melo, sync: :unsyncable do
     # [:g2 75 1/2.0] [:g3 20 1/2.0] [:ab2 110 1/2.0] [_ 1/2.0] [:c3 120 1.0/2.0] [:c4 120 1.0/2.0]  [:f2 127 1]
     )
   s = score.look
-  @tally += s[-1]
   bass_score = (ing
     [:c3 75 1/2.0] [_ 1/2.0] [:c3 110 1/2.0] [_ 1/2.0] [:c3 120 1.0]  [:ab2 127 1/4.0]  [_ 1/4.0] [:g2 127 1/4.0] [_ 1/4.0]).look
 
