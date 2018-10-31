@@ -42,7 +42,7 @@ live_loop :melo do
   s = score.look
   @tally ||=0
   @tally += s[-1]
-  puts @tally % 8
+  puts @tally % 9
   bass_score = (ing
     [:c3, 75, 1/2.0], [_, 1/2.0], [:c3, 110, 1/2.0], [_, 1/2.0], [:c3, 120, 1.0],  [:ab2, 127, 1/4.0],  [_, 1/4.0], [:g2, 127, 1/4.0], [_, 1/4.0],).look
 
