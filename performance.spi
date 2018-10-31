@@ -33,7 +33,7 @@ live_loop :creatures, sync: :unsyncable do
 
     at{
       sleep 2.0
-      midi (ing :ds4, :e4).look,50, channel: 11
+      midi (ing :ds4, :e4).look, 50, channel: 11
     }
   end
   midi (ing :ds4 :e4 :c4 :d4).look, (ing 20 35 5).look, channel: 12 if spread(7,9*1).look
