@@ -15,7 +15,7 @@ end
 live_loop :melo do
   tick
 
-  creature_cc dirt: rand, filter: rand, talk: rand
+  creature_cc dirt: rand*0.5, filter: rand, talk: rand*0.5
   midi :d5,50, sus:1, channel: 10 if spread(1,32).look
 
   zero_cc delay_note: (knit :c3, 1, :ab3, 1).look
