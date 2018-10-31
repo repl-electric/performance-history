@@ -22,6 +22,7 @@ end
 live_loop :melo, sync: :unsyncable do
   tick
   creature_x
+  arp_x
   creature_cc dirt: rand*0.5, filter: rand*0.5, talk: rand*0.5
   creature :c4,80, sus:4 if spread(1,64).look
 
