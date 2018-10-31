@@ -5,7 +5,12 @@ load_support('t1'); use_bpm 160.0
 
 #creature_on :c2
 
-arp_on :eb3
+#arp_on :eb3
+
+
+
+
+
 
 
 stop
