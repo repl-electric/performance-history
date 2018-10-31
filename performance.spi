@@ -92,6 +92,7 @@ live_loop :melo, sync: :unsyncable do
 
   with_transpose(12){
     midi_cc 51, 127, port: :iac_bus_1, channel:3
+    midi_cc 51, 127, port: :iac_bus_1, channel:3
     midi (ing [:c2 :eb2 :g2].choose :eb2 :c2 :f2).tick(:ch), 1, port: :iac_bus_1, channel:3, sus: 1/16.0 if s[0] == :c5# || s[1] == 75# && spread(1,9*2).look
   }
 
