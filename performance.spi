@@ -30,7 +30,7 @@ live_loop :creatures, sync: :unsyncable do
   creature_cc dirt: rand*0.5, filter: rand*0.5, talk: rand*0.5
   creature :c4,80, sus:4 if spread(1,32).look
   midi (ing :ds4 :e4 :c4 :d4).look, (ing 20 35 5).look, channel: 12 if spread(7,9*1).look
-  midi (ing :db4 :e4 :c4 :d4).look, (ing 20 35 5).look, channel: 7 if spread(7,9*1).look
+  midi (ing :db4 ).look, (ing 20 35 5).look, channel: 7 if spread(7,9*1).look
   midi (ing :ds4, :e4).look,50, channel: 11 if spread(1,32).look
   sleep 1
 end
