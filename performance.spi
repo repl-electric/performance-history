@@ -63,7 +63,7 @@ live_loop :melo do
 
 
   with_transpose(12){
-    midi chord(:c2,:m).choose, 1, port: :iac_bus_1, channel:3, sus: s[-1]*4 if s[0] == :c5 && spread(1,9*2).look
+    midi chord(:c1,:m).choose, 1, port: :iac_bus_1, channel:3, sus: s[-1]*4 if s[0] == :c5 && spread(1,9*2).look
   }
 
   midi score.look(offset: 1)[0], s[1], port: :iac_bus_1, channel:2 if spread(7,11).look
