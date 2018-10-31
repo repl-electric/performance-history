@@ -62,8 +62,6 @@ live_loop :melo do
   end
 
   with_transpose(12){
-    puts @tally
-    puts s[0] if (@tally % 4) == 0.0
     midi :c3, 1, port: :iac_bus_1, channel:3, sus: s[-1]*2 if s[0] == :c5 && spread(1,8).look
   }
 
