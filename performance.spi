@@ -63,7 +63,7 @@ live_loop :melo, sync: :unsyncable do
   bass_score = (ing
     [:c3 75 1/2.0] [_ 1/2.0] [:c3 110 1/2.0] [_ 1/2.0] [:c3 120 1.0]  [:ab2 127 1/4.0]  [_ 1/4.0] [:g2 127 1/4.0] [_ 1/4.0]).look
 
-  midi :c5, 25, sus: s[-1]+1, channel: 5
+  midi :c5, 35, sus: s[-1]+1, channel: 5
 
   if spread(1,8).rot(-1).look
     at{
