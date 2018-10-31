@@ -64,7 +64,7 @@ live_loop :melo, sync: :unsyncable do
     [:c3 75 1/2.0] [_ 1/2.0] [:c3 110 1/2.0] [_ 1/2.0] [:c3 120 1.0]  [:ab2 127 1/4.0]  [_ 1/4.0] [:g2 127 1/4.0] [_ 1/4.0]).look
 
   if spread(1,4).look
-    attr_writer :ith_transpose 12{
+    with_transpose 12{
       new_s = score.look(offset: 2)
       midi new_s[0], 120, sus: 1, channel: 5
     }
