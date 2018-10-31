@@ -12,7 +12,7 @@ live_loop :unsyncable do; sleep 1;end
 live_loop :kicker, sync: :unsyncable do
   tick
   with_bpm (160.0*[1,1,0.5,2].choose) {
-  creature_cc dirt: rand*0.5, filter: rand*0.5, talk: rand*0.1
+  creature_cc dirt: rand*0.5, filter: rand*0.1, talk: rand*0.1
   creature :c4,80, sus:4 if spread(1,32).look
   #with_bpm (160.0*[0.25,0.25,0.5,0.5].choose) {
     if dice(8) > 6
