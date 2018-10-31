@@ -30,7 +30,6 @@ live_loop :creatures, sync: :unsyncable do
   if spread(1,64).look
     creature_cc dirt: rand*1.0, filter: rand*1.0, talk: rand*1.0
     creature :eb4, (ine 40 100 128).look, sus:8
-
     at{
       sleep 2.0
       midi (ing :ds4, :e4).look, 50, channel: 11
