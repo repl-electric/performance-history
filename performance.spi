@@ -126,7 +126,7 @@ live_loop :melo, sync: :unsyncable do
       #midi :c3, s[1], port: :iac_bus_1, channel:8
     }
   else
-    midi :d3, s[1]-rand_i(5), port: :iac_bus_1, channel:8
+#    midi :d3, s[1]-rand_i(5), port: :iac_bus_1, channel:8
   end
 
   if s[0] == _
