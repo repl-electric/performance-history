@@ -43,6 +43,8 @@ live_loop :melo, sync: :unsyncable do
     [:C2 100  W] RW
     [:Cs2 110 H] RQ
     [:C2 120  W] RW
+    [:C2 100  W] RW
+
     )
   s = score.look
 
