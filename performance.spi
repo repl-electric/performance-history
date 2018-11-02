@@ -211,7 +211,7 @@ stop
 #midi_cc 64, 45, port: :iac_bus_1, channel: 5
 
 live_loop :name do
-
+  stop
   tick
   pos = [1,5,3].shuffle
   zero_cc ldelay: pos[0],cdelay: pos[1], rdelay: pos[2]
