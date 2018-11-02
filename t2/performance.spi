@@ -24,8 +24,6 @@ live_loop :kicker, sync: :unsyncable do
   }
 end
 
-
-
 live_loop :creatures, sync: :unsyncable do
   tick
   #with_bpm 160*1 {
