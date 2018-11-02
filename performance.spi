@@ -168,7 +168,6 @@ live_loop :melo, sync: :unsyncable do
 
   midi_cc 19, (line 30, 50,score.length).look, channel: 7
 
-
   if spread(1,4).look
     with_transpose 12*2{
       new_s = score.look(offset: 2)
