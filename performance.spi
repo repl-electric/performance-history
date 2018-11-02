@@ -89,7 +89,7 @@ live_loop :melo, sync: :unsyncable do
     [:e3   30   H]   RH
     [:g3   60   H]   RH
     [:f3  120   H]   RH
-    [:f3   120   W*[2,2,2].choose]
+    [:g3   120   W*[2,2,2].choose]
 
 
     )
