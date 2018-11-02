@@ -70,8 +70,8 @@ live_loop :melo, sync: :unsyncable do
   pos = [1,5,3].shuffle
   #zero_cc ldelay: pos[0],cdelay: pos[1], rdelay: pos[2]
   score = (ing
-    [:c3   27   Q]    RQ
-    [:c2   30   Q]    RQ
+    [:cs3   27   Q]    RQ
+    [:cs2   30   Q]    RQ
     [:c2   60   Q]    RQ
     [:c2  120   Q]    RQ
     [:f3   120   W*1]
