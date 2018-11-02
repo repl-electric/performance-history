@@ -81,7 +81,7 @@ live_loop :melo, sync: :unsyncable do
 
 
     [:c2   17   H]    RH
-    [:c2   30   H]    [_ 1.0/2]
+    [:c2   30   H]    RH
     [:c2   60   H]    [_ 1.0/2]
     [:c2   120  H]    [_ 1.0/2]
     [:eb2  120  W]   [_ 1.0]
