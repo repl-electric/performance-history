@@ -87,7 +87,7 @@ live_loop :melo, sync: :unsyncable do
     [:cs3  87   H]     RQ
     [:e2   100  H]     RQ
     [:gs2  110  H]     RQ
-    [:c3   120  H+W]   RQ
+    [:cs3   120  H+W]   RQ
 
     #RW*4
 
