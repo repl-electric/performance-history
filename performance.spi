@@ -140,7 +140,7 @@ live_loop :melo, sync: :unsyncable do
     }
   }
 
-  midi s[0],120, sus: 4.0, channel: 15 if spread(1,score.count).look
+  midi s[0],120, sus: 4.0, channel: 15 if spread(1,score.count/2.0).look
 
   with_swing((line 0, -0.08,64).look){
     midi_cc 51, (line 0, 127, score.length).look, channel: 7
