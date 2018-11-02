@@ -31,12 +31,12 @@ live_loop :kicker, sync: :unsyncable do
 end
 
 live_loop :creatures, sync: :unsyncable do
-  stop
+  #stop
   tick
   with_bpm 160*1 {
     if spread(1,64).look
-      creature_cc dirt: rand*1.0, filter: rand*1.0, talk: rand*1.0
-      creature :eb4, (ine 40 100 128).look, sus:8
+      #creature_cc dirt: rand*1.0, filter: rand*1.0, talk: rand*1.0
+      #creature :eb4, (ine 40 100 128).look, sus:8
       at{
         sleep 8.0
         midi (ing :ds4, :e4).look, 80, channel: 11
@@ -88,8 +88,6 @@ live_loop :melo, sync: :unsyncable do
     [:cs2  120   H]    RH
     [:f3   120   W*2]  RH
 
-    #RW
-
     [:cs2   27   H]    RH
     [:cs2   30   H]    RH
     [:cs2   60   H]    RH
@@ -97,7 +95,6 @@ live_loop :melo, sync: :unsyncable do
     [:e3   120  H]     RQ
     [:e3   120  H]     RQ
     [:d3   120   W*2]  RH
-
 
 #    RW
 
