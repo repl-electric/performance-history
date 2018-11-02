@@ -13,7 +13,7 @@ live_loop :kicker, sync: :unsyncable do
   #creature_cc dirt: rand*0.1, filter: rand*0.1, talk: rand*0.1
   #creature :eb4,100, sus:4*2 if spread(1,4).look
   #with_bpm (160.0*[0.25,0.25,0.5,0.5].choose) {
-    midi (ing :ds3).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:13 if spread(1,4).look
+    midi (ing :ds3).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:13 if spread(1,8).look
 
     if dice(8) > 6
       midi (ing :c3 :d3).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:8
