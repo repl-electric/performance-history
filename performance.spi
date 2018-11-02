@@ -63,7 +63,7 @@ RE=[_,1/8.0]
 #C♯, D♯, E, F♯, G♯, A, and B
 
 live_loop :melo, sync: :unsyncable do
-  midi_cc 19, (line 30, 50, 10).look, channel: 7
+
   tick
   #creature_x; arp_x
   zero_cc delay_note: (knit :c3, 2, :eb3, 2, :g3, 2).look
@@ -164,6 +164,10 @@ live_loop :melo, sync: :unsyncable do
     # [:g2 75 1/2.0] [:g3 20 1/2.0] [:ab2 110 1/2.0] [_ 1/2.0] [:c3 120 1.0/2.0] [:c4 120 1.0/2.0]  [:f2 127 1]
     )
   s = score.look
+
+
+  midi_cc 19, (line 30, 50, ).look, channel: 7
+
   bass_score = (ing
     [:c3 75 1/2.0] [_ 1/2.0] [:c3 110 1/2.0] [_ 1/2.0] [:c3 120 1.0]  [:ab2 127 1/4.0]  [_ 1/4.0] [:g2 127 1/4.0] [_ 1/4.0]).look
 
