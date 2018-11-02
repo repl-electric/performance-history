@@ -55,6 +55,12 @@ H=1/2.0
 Q=1/4.0
 E=1/8.0
 
+RW=[_ 1.0]
+RH=[_ 1/2.0]
+RQ=[_ 1/4.0]
+RE=[_ 1/8.0]
+
+
 live_loop :melo, sync: :unsyncable do
   tick
   #creature_x; arp_x
@@ -74,11 +80,11 @@ live_loop :melo, sync: :unsyncable do
     # [[:eb3 :d2].choose 127 4]
 
 
-    [:c2   17   H]    [_ 1.0/2.0]
+    [:c2   17   H]    Rh
     [:c2   30   H]    [_ 1.0/2]
     [:c2   60   H]    [_ 1.0/2]
     [:c2   120  H]    [_ 1.0/2]
-    [:eb2  120  W]      [_ 1.0]
+    [:eb2  120  W]   [_ 1.0]
     [:cs2  120  H]   [_ 1.0/2]
 
 
