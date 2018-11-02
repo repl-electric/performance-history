@@ -140,7 +140,7 @@ live_loop :melo, sync: :unsyncable do
     }
   }
 
-  if dice(8) > 3
+  if dice(8) > 2
     with_swing((line 0, -0.08,64).look){
       midi_cc 51, (line 0, 127, score.length).look, channel: 7
       midi s[0], s[1], sus: s[1], channel: 15
