@@ -70,7 +70,6 @@ live_loop :melo, sync: :unsyncable do
     [:C2   120  W] RW
     [:Eb3  100  W] RW
     [:Cs2  100  W] RW
-
     )
   s = score.look
 
@@ -83,5 +82,5 @@ live_loop :melo, sync: :unsyncable do
 
     midi s[0], s[1], port: :iac_bus_1, channel:7, sus: s[-1] + 0.2
   }
-  sleep s[-1]
+  sleep s[-1]/2.0
 end
