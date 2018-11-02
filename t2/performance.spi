@@ -56,6 +56,7 @@ RE=[_,1/8.0]
 #C♯, D♯, E, F♯, G♯, A, and B
 
 live_loop :melo, sync: :unsyncable do
+  with_bpm 160 {
   tick
   #creature_x; arp_x
   #zero_cc delay_note: (knit :c3, 2, :eb3, 2, :g3, 2).look
@@ -84,5 +85,6 @@ live_loop :melo, sync: :unsyncable do
     midi_cc 51, (line 0, 127, score.length).look, channel: 7
     midi s[0], s[1], port: :iac_bus_1, channel:7, sus: s[-1] + 0.2
   }
-  sleep s[-1]
+    sleep s[-1]
+  }
 end
