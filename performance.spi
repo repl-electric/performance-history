@@ -141,7 +141,7 @@ live_loop :melo, sync: :unsyncable do
   }
 
 
-  midi 51, (line 0, 127, score.length).look, channel: 15
+  midi s[0], (line 0, 127, score.length).look, channel: 15
 
   with_swing((line 0, -0.08,64).look){
     midi_cc 51, (line 0, 127, score.length).look, channel: 7
