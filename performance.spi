@@ -80,7 +80,7 @@ live_loop :melo, sync: :unsyncable do
     # [[:eb3 :d2].choose 127 4]
 
 
-    [:c2   17   H]    Rh
+    [:c2   17   H]    RH
     [:c2   30   H]    [_ 1.0/2]
     [:c2   60   H]    [_ 1.0/2]
     [:c2   120  H]    [_ 1.0/2]
