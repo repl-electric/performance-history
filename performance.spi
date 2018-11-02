@@ -8,6 +8,7 @@ load_support('t1'); use_bpm 160.0
 live_loop :unsyncable do; sleep 1;end
 
 live_loop :kicker, sync: :unsyncable do
+  stop
   tick
   with_bpm (160.0*[1,0.5].choose) {
   #creature_cc dirt: rand*0.1, filter: rand*0.1, talk: rand*0.1
@@ -73,9 +74,6 @@ live_loop :melo, sync: :unsyncable do
     [:c2     1.0/2]    [_ 1.0/4]
     [:cs2    1.0/2]    [_ 1.0/4]
     [:c2     1.0]      [_ 1.0/4]
-
-
-
 
 
     # [:d3 127 1.0]     [_ 1.0/4.0]
