@@ -83,7 +83,7 @@ live_loop :melo, sync: :unsyncable do
 
     [:eb3   120   Q]    RQ
     [:eb3   120   Q]    RQ
-    [:ds3   120  W*1]
+    [:d3   120  W*1]
     )
   s = score.look
 
