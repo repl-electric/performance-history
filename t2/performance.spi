@@ -14,8 +14,7 @@ live_loop :kicker, sync: :unsyncable do
         midi (ing :ds3).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:13
       }
     end
-
-    if dice(8) > 3
+    if true#dice(8) > 3
       midi (ing :c3 :d3).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:8
     else
       midi (ing :f3).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:8
