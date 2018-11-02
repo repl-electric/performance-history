@@ -42,7 +42,7 @@ live_loop :melo, sync: :unsyncable do
   score = (ing
     [:C2, 100,  W], RW,
     [:C2, 120,  W], RW,
-    [:C2, 100,  W], RW,
+    [:Eb2, 100,  W], RW,
     [:C2, 100,  W], RW,
     )
   s = score.look
