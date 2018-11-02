@@ -42,7 +42,7 @@ live_loop :creatures, sync: :unsyncable do
 #        midi (ing :ds4, :e4).look, 80, channel: 11
 #      }
     end
-    midi (ing :ds4 :e4 :cs4 :d4).look, (ing 20 35 5).look, channel: 12 if spread(7,9*1).look
+    midi (ing :ds4 :e4 :c4 :d4).look, (ing 20 35 5).look, channel: 12 if spread(7,9*1).look
     midi (ing :eb4).look, 110, sus: 1/4.0, channel: 9                 if spread(7,9*1).rot(-2).look
     #midi (knit :bb4, 8, :b4,8, :c5, 8).look, 120, sus: 1.0/8.0, channel: 9                  if spread(3,7).rot(-1).look
     midi (ing :ds4, :e4).look,55, channel: 11 if spread(1,32).look
