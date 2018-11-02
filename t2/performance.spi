@@ -82,5 +82,5 @@ live_loop :melo, sync: :unsyncable do
 
     midi s[0], s[1], port: :iac_bus_1, channel:7, sus: s[-1] + 0.2
   }
-  sleep s[-1]/2.0
+  sleep s[-1]/4.0
 end
