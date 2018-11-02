@@ -63,7 +63,7 @@ RE=[_,1/8.0]
 #C♯, D♯, E, F♯, G♯, A, and B
 
 live_loop :melo, sync: :unsyncable do
-  midi_cc 19, (line 30, 50, 5).look, channel: 7
+  midi_cc 19, (line 30, 50, 10).look, channel: 7
   tick
   #creature_x; arp_x
   zero_cc delay_note: (knit :c3, 2, :eb3, 2, :g3, 2).look
