@@ -60,6 +60,7 @@ RH=[_, 1/2.0]
 RQ=[_, 1/4.0]
 RE=[_,1/8.0]
 
+#C♯, D♯, E, F♯, G♯, A, and B
 
 live_loop :melo, sync: :unsyncable do
   tick
