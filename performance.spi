@@ -80,9 +80,9 @@ live_loop :melo, sync: :unsyncable do
     # [:cs2   60   Q]   RQ
     # [:cs2  120   Q]   RQ
 
-    # [:e3   120   Q]   RQ
-    # [:e3   120   Q]   RQ
-    # [:ds3   120  W+[2,0].choose]
+    [:e3   120   Q]   RQ
+    [:e3   120   Q]   RQ
+    [:ds3   120  W+[2,0].choose]
 
     [:cs3   87   H]   RH
     [:e3    100   H]   RH
