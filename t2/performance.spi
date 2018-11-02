@@ -73,7 +73,7 @@ live_loop :melo, sync: :unsyncable do
     )
   s = score.look
 
-  midi s[0], 55, sus: 4, channel: 14 if spread(1,score.length*0.25).look
+  midi s[0], 55, sus: 4, channel: 14 if spread(1,4).look
   midi s[0], 10, sus: s[-1]*score.length, channel: 15 if spread(1,score.length).look
   midi_cc 19, (line 1, 40, score.length).look, channel: 7 if spread(1,4).look
 
