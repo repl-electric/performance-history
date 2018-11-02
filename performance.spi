@@ -166,7 +166,7 @@ live_loop :melo, sync: :unsyncable do
   s = score.look
 
 
-  midi_cc 19, (line 30, 50,score.length ).look, channel: 7
+  midi_cc 19, (line 30, 50,score.length).look, channel: 7
 
   bass_score = (ing
     [:c3 75 1/2.0] [_ 1/2.0] [:c3 110 1/2.0] [_ 1/2.0] [:c3 120 1.0]  [:ab2 127 1/4.0]  [_ 1/4.0] [:g2 127 1/4.0] [_ 1/4.0]).look
