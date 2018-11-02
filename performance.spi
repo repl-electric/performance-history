@@ -92,7 +92,6 @@ live_loop :melo, sync: :unsyncable do
     [:f3   120   W*[2,2,2].choose]
 
 
-
     )
   s = score.look
 
