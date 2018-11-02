@@ -70,6 +70,14 @@ live_loop :melo, sync: :unsyncable do
     [:C2   120  W] RW
     [:Eb3  100  W] RW
     [:Cs2  100  W] RW
+
+
+    [:C2   100  H] RH
+    [:C2   120  H] RH
+    [:Eb3  100  H] RH
+    [:Cs2  100  H] RH
+
+
     )
   s = score.look
 
