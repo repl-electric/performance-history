@@ -85,7 +85,7 @@ live_loop :melo, sync: :unsyncable do
     # [:ds3   120  W+[2,0].choose]
 
     [:cs4   87   H]   RH
-    [:e4    60   H]   RH
+    [:e3    60   H]   RH
     [:gs4   80   H]   RH
     [:b3   120   H]   RH
 
