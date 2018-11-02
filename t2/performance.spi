@@ -7,16 +7,16 @@ live_loop :creatures, sync: :unsyncable do
   #with_bpm 160*1 {
     if spread(1,64).look
       #creature_cc dirt: rand*1.0, filter: rand*1.0, talk: rand*1.0
-      creature :eb4, (ine 40, 100, 128,).look, sus:8
+      creature :eb4, (ine 40 100 128).look, sus:8
 #      at{
 #        sleep 8.0
-#        midi (ing :ds4,  :e4,).look, 80, channel: 11
+#        midi (ing :ds4, :e4).look, 80, channel: 11
 #      }
     end
-  midi (ing :ds4, :e4, :cs4, :ds4,).look,  (ing 20, 35, 5,).look, channel: 12            if spread(7,9*1).look
+  midi (ing :ds4 :e4 :cs4 :ds4).look,  (ing 20 35 5).look, channel: 12            if spread(7,9*1).look
   #midi (knit :e4, 8, :eb4, 8).look, (line 50, 120,32).look, sus: 1.0/4.0, channel: 9                 if spread(7,9*1).rot(0).look
   midi (knit :bb4, 8, :b4,8).look, 40, sus: 1.0/8.0, channel: 9                  if spread(3,7*4).rot(-1).look
-  midi (ing :ds4,  :e4,).look,55, channel: 11 if spread(1,32).look
+  midi (ing :ds4, :e4).look,55, channel: 11 if spread(1,32).look
   sleep 1/2.0
   #}
 end
@@ -40,10 +40,16 @@ live_loop :melo, sync: :unsyncable do
   pos = [1,5,3].shuffle
   #zero_cc ldelay: pos[0],cdelay: pos[1], rdelay: pos[2]
   score = (ing
-    [:C2, 100,  W], RW,
-    [:C2, 120,  W], RW,
-    [:Eb2, 100,  W], RW,
-    [:C2, 100,  W], RW,
+    [:C2  100  W] RW
+    [:C2  120  W] RW
+    [:Eb2 100  W] RW
+    [:C2  100  W] RW
+
+    [:C2  100  W] RW
+    [:C2  120  W] RW
+    [:Eb2 100  W] RW
+    [:Cs2  100  W] RW
+
     )
   s = score.look
 
