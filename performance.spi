@@ -14,17 +14,17 @@ live_loop :kicker, sync: :unsyncable do
   #creature_cc dirt: rand*0.1, filter: rand*0.1, talk: rand*0.1
   #creature :eb4,100, sus:4*2 if spread(1,4).look
   #with_bpm (160.0*[0.25,0.25,0.5,0.5].choose) {
-    midi (ing :ds3,).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:13 if spread(1,16).look
+    midi (ing :ds3).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:13 if spread(1,16).look
     if spread(1,32).look
       at{sleep 1/4.0
-        midi (ing :ds3,).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:13
+        midi (ing :ds3).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:13
       }
     end
 
     if dice(8) > 6
-      midi (ing :c3, :d3,).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:8
+      midi (ing :c3 :d3).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:8
     else
-      midi (ing :f3,).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:8
+      midi (ing :f3).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:8
     end
     sleep 1/2.0
   #}
@@ -36,16 +36,16 @@ live_loop :creatures, sync: :unsyncable do
   #with_bpm 160*1 {
     if spread(1,64).look
       #creature_cc dirt: rand*1.0, filter: rand*1.0, talk: rand*1.0
-      creature :eb4, (ine 40, 100, 128,).look, sus:8
+      creature :eb4, (ine 40 100 128).look, sus:8
 #      at{
 #        sleep 8.0
-#        midi (ing :ds4,  :e4,).look, 80, channel: 11
+#        midi (ing :ds4, :e4).look, 80, channel: 11
 #      }
     end
-  midi (ing :ds4, :e4, :c4, :d4,).look, (ing 20, 35, 5,).look, channel: 12 if spread(7,9*1).look
-  #midi (ing :eb4,).look, 110, sus: 1/4.0, channel: 9                 if spread(7,9*1).rot(-2).look
+  midi (ing :ds4 :e4 :c4 :d4).look, (ing 20 35 5).look, channel: 12 if spread(7,9*1).look
+  #midi (ing :eb4).look, 110, sus: 1/4.0, channel: 9                 if spread(7,9*1).rot(-2).look
     #midi (knit :bb4, 8, :b4,8, :c5, 8).look, 120, sus: 1.0/8.0, channel: 9                  if spread(3,7).rot(-1).look
-  midi (ing :ds4,  :e4,).look,55, channel: 11 if spread(1,32).look
+  midi (ing :ds4, :e4).look,55, channel: 11 if spread(1,32).look
   sleep 1/2.0
   #}
 end
@@ -70,20 +70,20 @@ live_loop :melo, sync: :unsyncable do
   pos = [1,5,3].shuffle
   #zero_cc ldelay: pos[0],cdelay: pos[1], rdelay: pos[2]
   score = (ing
-    [:c3,   27,   Q],    RQ,
-    [:cs2,   30,   Q],    RQ,
-    [:cs2,   60,   Q],    RQ,
-    [:cs2,  120,   Q],    RQ,
-    [:f3,   120,   W*[1, 1, 4].choose],
+    [:c3   27   Q]    RQ
+    [:cs2   30   Q]    RQ
+    [:cs2   60   Q]    RQ
+    [:cs2  120   Q]    RQ
+    [:f3   120   W*[1,1,1].choose]
 
-    [:c3,   27,   Q],    RQ,
-    [:cs2,   30,   Q],    RQ,
-    [:cs2,   60,   Q],    RQ,
-    [:cs2,  120,   Q],    RQ,
+    [:c3   27   Q]    RQ
+    [:cs2   30   Q]    RQ
+    [:cs2   60   Q]    RQ
+    [:cs2  120   Q]    RQ
 
-    [:e3,   120,   Q],    RQ,
-    [:e3,   120,   Q],    RQ,
-    [:ds3,   120,  W*[1, 1, 4].choose],
+    [:e3   120   Q]    RQ
+    [:e3   120   Q]    RQ
+    [:ds3   120  W*[1,1,4].choose]
     )
   s = score.look
 
@@ -122,9 +122,9 @@ live_loop :melo, sync: :unsyncable do
       midi :c2, 16, port: :iac_bus_1, channel:3, sus: 0.125
     end
      # midi (ing
-     #,       [:c2, :eb2, :g2].choose, :eb2, :c2, :f2,
-     #,       [:c2, :eb2, :g2].choose, :eb2, :c2, :g3,
-     #,       ).tick(:ch), 1, port: :iac_bus_1, channel:3, sus: 4.0 if s[0] == :c5 || s[1] == 75# && spread(1,9*2).look
+     #       [:c2 :eb2 :g2].choose :eb2 :c2 :f2
+     #       [:c2 :eb2 :g2].choose :eb2 :c2 :g3
+     #       ).tick(:ch), 1, port: :iac_bus_1, channel:3, sus: 4.0 if s[0] == :c5 || s[1] == 75# && spread(1,9*2).look
   }
 
   midi score.look(offset: 1)[0], s[1]*8, port: :iac_bus_1, channel:2 if spread(7,11).look
@@ -160,7 +160,7 @@ live_loop :name do
   tick
   pos = [1,5,3].shuffle
   zero_cc ldelay: pos[0],cdelay: pos[1], rdelay: pos[2]
-  score = (ing :ab2,).look
+  score = (ing :ab2).look
 
   midi score, port: :iac_bus_1, channel:2 if spread(7,11).look
 
@@ -170,7 +170,7 @@ live_loop :name do
   midi :cs3,45, channel: 6 if spread(7,11*4).rot(-1).look
 
   sleep 1/2.0
-  midi chord(:ab2, :m).look, (ing 1,  5,).look, sus: (ing 2, 2, 4,).look, port: :iac_bus_1, channel:3 if spread(1,4).look
+  midi chord(:ab2, :m).look, (ing 1, 5).look, sus: (ing 2,2,4).look, port: :iac_bus_1, channel:3 if spread(1,4).look
   sleep 1/2.0
   #midi :g2, 1,  port: :iac_bus_1, channel:2, sus: 1
   #midi :c4, 10, sus: 12, port: :iac_bus_1, channel:4 if spread(3,24).look
