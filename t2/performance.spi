@@ -45,9 +45,9 @@ live_loop :melo, sync: :unsyncable do
     [:Eb2 100  W] RW
     [:C2  100  W] RW
 
-    [:C2  100  W] RW
-    [:C2  120  W] RW
-    [:Eb2 100  W] RW
+    [:C2   100  W] RW
+    [:C2   120  W] RW
+    [:Eb3  100  W] RW
     [:Cs2  100  W] RW
 
     )
