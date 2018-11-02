@@ -82,11 +82,11 @@ live_loop :melo, sync: :unsyncable do
     # [[:eb3 :d2].choose 127 4]
 
 
-    [:cs1   27   Q]    RH
+    [:cs1   27   Q]    RW
     [:cs2   30   Q]    RH
     [:cs2   60   Q]    RH
     [:cs2  120   Q]    RH
-    [:e3  120   W*2]  RW
+    [:e3   120   W*2]  RW
 
 #    RW
 
