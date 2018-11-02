@@ -141,9 +141,9 @@ live_loop :melo, sync: :unsyncable do
   }
 
   if dice(8) > 6
-    midi s[0],120, sus: 8.0, channel: 15
     with_swing((line 0, -0.08,64).look){
       midi_cc 51, (line 0, 127, score.length).look, channel: 7
+      midi s[0],120, sus: s[1], channel: 15
       midi s[0], s[1], port: :iac_bus_1, channel:7, sus: s[-1] #+ 0.2
     }
   end
