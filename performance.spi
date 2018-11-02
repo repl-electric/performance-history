@@ -69,10 +69,6 @@ live_loop :melo, sync: :unsyncable do
 
 
     [:bb3 127 4.0] [_ 1/4.0]
-    [:b3  127 1.0]
-
-    [:c3 127 2.0]
-    [:d3 127 1.0]
 
 
 
