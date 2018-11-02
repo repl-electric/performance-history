@@ -10,7 +10,7 @@ live_loop :unsyncable do; sleep 1;end
 live_loop :kicker, sync: :unsyncable do
   #stop
   tick
-  with_bpm (160.0*[1,0.5].choose) {
+  #with_bpm (160.0*[1,1].choose) {
   #creature_cc dirt: rand*0.1, filter: rand*0.1, talk: rand*0.1
   #creature :eb4,100, sus:4*2 if spread(1,4).look
   #with_bpm (160.0*[0.25,0.25,0.5,0.5].choose) {
@@ -27,7 +27,7 @@ live_loop :kicker, sync: :unsyncable do
       midi (ing :f3).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:8
     end
     sleep 1/2.0
-  }
+  #}
 end
 
 live_loop :creatures, sync: :unsyncable do
