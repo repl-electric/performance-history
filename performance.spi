@@ -85,9 +85,9 @@ live_loop :melo, sync: :unsyncable do
     # [:ds3   120  W+[2,0].choose]
 
     [:cs4   47   H]   RH
-    [:e3   30   H]   RH
+    [:e3    30   H]   RH
     [:gs3   60   H]   RH
-    [:fs3  120   H]   RH
+    [:fss3  120   H]   RH
 
     )
   s = score.look
