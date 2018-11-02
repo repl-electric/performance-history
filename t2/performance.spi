@@ -56,7 +56,7 @@ RE=[_,1/8.0]
 #C♯, D♯, E, F♯, G♯, A, and B
 
 live_loop :melo, sync: :unsyncable do
-  midi :bb4, sus: 4, channel: 3
+  midi :bb5, sus: 4, channel: 3
   with_bpm 160*0.125 {
   tick
   #creature_x; arp_x
