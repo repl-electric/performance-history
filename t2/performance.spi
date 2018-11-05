@@ -20,8 +20,8 @@ live_loop :testing do
     [:C3 H] RH [:Cs3 H] RH [:Eb3 H] RQ [:E3 H] RH [:Eb3 Q] RQ [:cs3 Q]      [_ W*1]
     [:C3 H] RH [:Cs3 H] RH [:Eb3 H] RQ [:E3 H] RH [:Eb3  Q] RQ [:cs3 Q]     [_ W*1]
 
-    [:C3 H] RH [:Cs3 H] RH [:Eb3 H] RQ [:E3 H] RH [:Eb3 Q] RQ [:bb3 Q]      [_ W*1]
-    [:C3 H] RH [:Cs3 H] RH [:Eb3 H] RQ [:E3 H] RH [:Eb3 Q] RQ [:bb3 Q]     [_ W*1]
+    [:C3 H] RH [:Cs3 H] RH [:Eb3 H] RQ [:E3 H] RH [:Eb3 Q] RQ [:ab3 Q]      [_ W*1]
+    [:C3 H] RH [:Cs3 H] RH [:Eb3 H] RQ [:E3 H] RH [:Eb3 Q] RQ [:ab3 Q]     [_ W*1]
 
     [:C3 H] RH [:Cs3 H] RH [:Eb3 H] RQ [:E3 H] RH [:G3 Q] RQ [:d4 Q]     [_ W*1]
     [:Eb4 H] RH [:Bb3 H] RH [:C4 H] RQ [:D4 H] RH [:C4 Q] RQ [:c4 Q]     [_ W*1]
