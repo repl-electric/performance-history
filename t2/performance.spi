@@ -15,7 +15,7 @@ live_loop :testing do
   score = (ing #[:Cs3 W] [:C3 H] [:D3 W] [:C3 H] [:D3 2]
 
     [:C3 H] RH [:Cs3 H] RH [:D3 H] RQ [:F3 H] RQ [:G3 W]                  [_ W*2]
-    [:C3 H] RH [:Cs3 H] RH [:D3 H] RQ [:F3 H] RQ [:Eb3 Q] RQ [:c3 Q] RQ   [_ W*2]
+    [:C3 H] RH [:Cs3 H] RH [:D3 H] RQ [:F3 H] RQ [:Eb3 Q] RQ [:C 3 Q] RQ   [_ W*2]
 
 
 
