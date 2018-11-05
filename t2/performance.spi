@@ -61,7 +61,7 @@ RE=[_,1/8.0]
 #C♯, D♯, E, F♯, G♯, A, and B
 
 live_loop :melo, sync: :unsyncable do
-  shudder_fx :c2
+  shudder_fx :cs3
   midi :bb4, sus: W*(ing 1, 1, 2, 4,).look, channel: 3
   midi 'c1',(ing 127, 0,).look, channel: 3
   with_bpm 160*0.125 {
