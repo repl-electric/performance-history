@@ -21,7 +21,7 @@ live_loop :testing do
     [:C3 H] RH [:Cs3 H] RH [:Eb3 H] RQ [:E3 H] RH [:F3  Q] RQ [:c3 Q]     [_ W*2]
 
 
-    [:C4 H] RH [:Eb3 H] RH [:D3 H] RH [:E3 H] RH [:F3  Q] RH [:c3 Q]     [_ W*2]
+    [:C4 H] RH [:Eb4 H] RH [:D3 H] RH [:E3 H] RH [:F3  Q] RH [:c3 Q]     [_ W*2]
 
 
 
