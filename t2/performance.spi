@@ -34,10 +34,6 @@ live_loop :testing, sync: :unsyncable do
 
   puts s
   if score.look(offset: 1)[0] == :EOS
-
-      midi s[0], 127,  channel: 14, sus: s[-1]+0.1
-
-
     creature :Eb4,127, sus: 4
     stop
     s[0] = _
