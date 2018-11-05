@@ -6,6 +6,7 @@ live_loop :testing do
   tick
   score = (ing [:C3],)
   s = score.look
+  puts s
   midi s[0], 127, sus: 4, channel: 14
   sleep 1
 end
