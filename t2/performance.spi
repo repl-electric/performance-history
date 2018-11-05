@@ -36,8 +36,8 @@ live_loop :testing, sync: :unsyncable do
     s[0] = _
   end
 
-  midi s[0], 127, sus: 4, channel: 14, sus: s[-1]+0.1
-  sleep s[-1]
+  midi s[0], 127, sus: 4, channel: 14, sus: s[-1]*2
+  sleep s[-1]*2
 end
 live_loop :unsyncable do; sleep 1;end
 stop
