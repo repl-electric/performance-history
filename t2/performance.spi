@@ -68,7 +68,7 @@ end
 
 live_loop :creatures, sync: :unsyncable do
   tick
-  @run||=false
+  @run=true
   with_bpm (160*[2,2,2].choose) {
     midi :eb4,  channel: 7 if spread(1,1).look if @run
     midi :c4,  channel: 7  if spread(1,8).look unless @run
