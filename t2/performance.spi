@@ -36,7 +36,7 @@ live_loop :testing, sync: :unsyncable do
     s[0] = _
   end
 
-  with_transpose 12{
+  with_transpose 0{
     midi s[0], 127, sus: 4, channel: 14, sus: s[-1]+0.1
   }
   sleep s[-1]
