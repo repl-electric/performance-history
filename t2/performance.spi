@@ -28,7 +28,7 @@ live_loop :testing, sync: :unsyncable do
     #[:Eb3 2] [:C3, 1/2.0] [:C3, 1/2.0] [_ 1]
     [:EOS 2]
     )
-  creature :C2, sus: 8 if spread(1,score.count).look
+  midi s[0], 10, sus: s[-1]*score.length, channel: 15 if spread(1,score.length).look
   s = score.look
   puts s
   if s[0] == :EOS
