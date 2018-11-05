@@ -38,7 +38,7 @@ live_loop :testing, sync: :unsyncable do
     stop
     s[0] = _
   end
-  puts score.reduce(0){|a,s|a+=s[-1]}/2
+  puts score.reduce(0){|a,s|a+=s[-1]}
 
   with_transpose -12{
     midi s[0], 100,  sus: s[-1]+0.2, channel: 7
