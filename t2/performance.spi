@@ -24,7 +24,7 @@ live_loop :testing, sync: :unsyncable do
     [:C3 H] RH [:Cs3 H] RH [:Eb3 H] RQ [:E3 H] RH [:Eb3 Q] RQ [:ab3 Q]     [_ W*2]
 
     [:C3 H] RH [:Cs3 H] RH [:Eb3 H] RQ [:E3 H] RH [:G3 Q] RQ [:d4 Q]       [_ W*2]
-    [:Ab4 H] RQ [:F4 H] RQ [:G4 H] RQ [:D4 H] RQ [:Eb4 Q] RQ [:c4 7]       [_ W*2]
+    [:Ab4 H] RQ [:F4 H] RQ [:G4 H] RQ [:D4 H] RQ [:Eb4 Q] RQ [:c4 6]       [_ W*2]
 
     #[:Eb3 2] [:C3, 1/2.0] [:C3, 1/2.0] [_ 1]
     [:EOS 0]
