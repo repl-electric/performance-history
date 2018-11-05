@@ -11,6 +11,7 @@ RQ=[_, 1/4.0]
 RE=[_,1/8.0]
 
 live_loop :testing, sync: :unsyncable do
+  stop
   tick
   score = (ing #[:Cs3 W] [:C3 H] [:D3 W] [:C3 H] [:D3 2]
     [:C3 H] RH [:Cs3 H] RH [:Eb3 H] RQ [:E3 H] RQ [:F3 W]                  [_ W*1]
@@ -95,7 +96,7 @@ end
 #C♯, D♯, E, F♯, G♯, A, and B
 
 live_loop :melo, sync: :unsyncable do
-  stop
+
   midi :bb4, sus: W*(ing 1 1 2 4).look, channel: 3
   midi 'c1',(ing 127 0).look, channel: 3
   at{sleep 1.0; shudder_fx (ing :e3).look} if spread(1,2).rot(-1).look
