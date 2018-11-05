@@ -29,7 +29,7 @@ live_loop :testing, sync: :unsyncable do
     [:EOS 2]
     )
   s = score.look
-  midi s[0], 10, sus: score.reduce(0){|a,s|a+=s[-1]}, channel: 15 if spread(1,score.length).look
+  midi :c2, 10, sus: score.reduce(0){|a,s|a+=s[-1]}, channel: 15 if spread(1,score.length).look
   puts s
   if score.look(offset: 1)[0] == :EOS
     creature :Eb5,127, sus: 4
