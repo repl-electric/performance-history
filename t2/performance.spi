@@ -14,7 +14,7 @@ live_loop :testing do
   tick
   score = (ing #[:Cs3 W] [:C3 H] [:D3 W] [:C3 H] [:D3 2]
 
-    [:C3 H] [_ H] [:C3 H] [_ H] [:D3 H] RQ [:D3 H] RQ [:Ds3 W]
+    [:C3 H] RH [:C3 H] RH [:D3 H] RQ [:D3 H] RQ [:Ds3 W]
     [:C3 H] [_ H] [:C3 H] [_ H] [:D3 H] RQ [:D3 H] RQ [:D3 Q] RQ [:c3 Q]
 
 
