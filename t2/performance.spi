@@ -44,7 +44,7 @@ live_loop :intro, sync: :unsyncable do
   sleep s[-1]
 end
 live_loop :unsyncable do; sleep 1;end
-
+stop
 live_loop :kicker, sync: :unsyncable do
   tick
   with_bpm (160.0*(ing 1 1 2 0.5).look) {
@@ -68,9 +68,9 @@ end
 
 live_loop :creatures, sync: :unsyncable do
   tick
-  @run=true
+  @run||=false
   with_bpm (160*[2,2,2].choose) {
-    midi [:eb4, :e4, :eb5].choose,  channel: 7 if (knit spread(7,11).look,32, spread(3,7).look,32).look
+    midi :eb4,  channel: 7 if spread(1,1).look if @run
     midi :c4,  channel: 7  if spread(1,8).look unless @run
     @run=false if spread(1,64).rot(32+8).look
     @run=true if spread(1,64).rot(-6).look
@@ -96,6 +96,7 @@ end
 #C♯, D♯, E, F♯, G♯, A, and B
 
 live_loop :melo, sync: :unsyncable do
+  stop
   midi :bb4, sus: W*(ing 1 1 2 4).look, channel: 3
   midi 'c1',(ing 127 0).look, channel: 3
   at{sleep 1.0; shudder_fx (ing :e3).look} if spread(1,2).rot(-1).look
