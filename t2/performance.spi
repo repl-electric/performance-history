@@ -28,7 +28,7 @@ live_loop :creatures, sync: :unsyncable do
   @run||=false
   with_bpm (160*[2,2,2].choose) {
     midi :eb4,  channel: 7 if spread(1,1).look if @run
-    midi :c4,  channel: 7 if spread(1,8).look unless @run
+    midi :c4,  channel: 7  if spread(1,8).look unless @run
     @run=false if spread(1,64).rot(32+8).look
     @run=true if spread(1,64).rot(-6).look
     if spread(1,64).look
@@ -61,7 +61,7 @@ RE=[_,1/8.0]
 #C♯, D♯, E, F♯, G♯, A, and B
 
 live_loop :melo, sync: :unsyncable do
-  midi :bb4, sus: W, channel: 3
+  midi :bb4, sus: W*2, channel: 3
   with_bpm 160*0.125 {
   tick
   #creature_x; arp_x
