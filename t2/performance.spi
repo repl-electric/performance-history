@@ -26,10 +26,11 @@ live_loop :testing, sync: :unsyncable do
     [:Ab4 H] RQ [:F4 H] RQ [:G4 H] RQ [:D4 H] RQ [:Eb4 Q] RQ [:c4 8]     [_ W*1]
 
     #[:Eb3 2] [:C3, 1/2.0] [:C3, 1/2.0] [_ 1]
-    [_ 2]
+    [:EOS 2]
     )
   s = score.look
   puts s
+
   midi s[0], 127, sus: 4, channel: 14, sus: s[-1]+0.1
   sleep s[-1]
 end
