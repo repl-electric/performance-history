@@ -10,10 +10,9 @@ RH=[_, 1/2.0]
 RQ=[_, 1/4.0]
 RE=[_,1/8.0]
 
-live_loop :testing do
+live_loop :testing, sync: :unsyncable do
   tick
   score = (ing #[:Cs3 W] [:C3 H] [:D3 W] [:C3 H] [:D3 2]
-
     [:C3 H] RH [:Cs3 H] RH [:Eb3 H] RQ [:E3 H] RQ [:F3 W]                  [_ W*1]
     [:C3 H] RH [:Cs3 H] RH [:Eb3 H] RQ [:E3 H] RQ [:F3 W]                  [_ W*1]
 
@@ -25,9 +24,6 @@ live_loop :testing do
 
     [:C3 H] RH [:Cs3 H] RH [:Eb3 H] RQ [:E3 H] RH [:G3 Q] RQ [:d4 Q]     [_ W*1]
     [:Ab4 H] RQ [:F4 H] RQ [:G4 H] RQ [:D4 H] RQ [:Eb4 Q] RQ [:c4 8]     [_ W*1]
-
-
-
 
     #[:Eb3 2] [:C3, 1/2.0] [:C3, 1/2.0] [_ 1]
     [_ 2]
