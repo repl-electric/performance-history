@@ -30,7 +30,7 @@ live_loop :testing, sync: :unsyncable do
     [:EOS 2]
     )
   s = score.look
-  midi (ing :eb2 :c2).tick(:in), 10, sus: score.reduce(0){|a,s|a+=s[-1]}/2.0, channel: 15 if spread(1,score.length/2.0).look
+  midi (ing :c2 :eb2 :C2 :eb2).tick(:in), 10, sus: score.reduce(0){|a,s|a+=s[-1]}/4.0, channel: 15 if spread(1,score.length/4.0).look
 
   puts s
   if score.look(offset: 1)[0] == :EOS
@@ -40,7 +40,7 @@ live_loop :testing, sync: :unsyncable do
   end
 
   with_transpose 0{
-    midi s[0], 10, sus: s[-1], channel: 7
+    midi s[0], 10,   sus: s[-1], channel: 7
     midi s[0], 127,  channel: 14, sus: s[-1]+0.1
   }
   sleep s[-1]
