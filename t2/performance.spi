@@ -12,11 +12,11 @@ RE=[_,1/8.0]
 
 live_loop :testing do
   tick
-  score = (ing [:C3 1] RH [:C3 1] RH [:Cs3 1.0] RQ [:C3 1] RQ  [:c3 1.0] RH [:Bb2 1/2.0] RQ [:Bb2 1/2.0] RQ
+  score = (ing [:C3, 1], RH, [:C3, 1], RH, [:Cs3, 1.0], RQ, [:C3, 1], RQ,  [:c3, 2.0], RH, [:Bb2, 1/2.0], RQ, [:Bb2, 1/2.0], RQ,
 
 
-    #[:Eb3 2] [:C3, 1/2.0] [:C3, 1/2.0] [_ 1]
-    [_ 2]
+    #[:Eb3, 2], [:C3,  1/2.0], [:C3,  1/2.0], [_, 1],
+    [_, 2],
     )
   s = score.look
   puts s
@@ -30,20 +30,20 @@ live_loop :unsyncable do; sleep 1;end
 
 live_loop :kicker, sync: :unsyncable do
   tick
-  with_bpm (160.0*(ing 1 1 2 0.5).look) {
+  with_bpm (160.0*(ing 1, 1, 2, 0.5,).look) {
   #creature_cc dirt: rand*0.1, filter: rand*0.1, talk: rand*0.1
   #creature :eb4,100, sus:4*2 if spread(1,4).look
   #with_bpm (160.0*[0.25,0.25,0.5,0.5].choose) {
-    midi (ing :ds3).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:13 if spread(1,16).look
+    midi (ing :ds3,).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:13 if spread(1,16).look
     if spread(1,32).look
       at{sleep 1/4.0
-        midi (ing :ds3).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:13
+        midi (ing :ds3,).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:13
       }
     end
     if true#dice(8) > 3
-      midi (ing :c3 :d3).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:8
+      midi (ing :c3, :d3,).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:8
     else
-      midi (ing :f3).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:8
+      midi (ing :f3,).look, (line 80, 120,1024).look, port: :iac_bus_1, channel:8
     end
     sleep 1/2.0
   }
@@ -59,18 +59,18 @@ live_loop :creatures, sync: :unsyncable do
     @run=true if spread(1,64).rot(-6).look
     if spread(1,64).look
       #creature_cc dirt: rand*1.0, filter: rand*1.0, talk: rand*1.0
-      shudder_fx (ing :cs3).tick(:in)
-      creature :eb4, (ine 40 100 128).look, sus:8
+      shudder_fx (ing :cs3,).tick(:in)
+      creature :eb4, (ine 40, 100, 128,).look, sus:8
 #      at{
 #        sleep 8.0
-#        midi (ing :ds4, :e4).look, 80, channel: 11
+#        midi (ing :ds4,  :e4,).look, 80, channel: 11
 #      }
     end
-  midi (ing :ds4 :e4 :cs4 :ds4).look,  (ing 20 35 5).look, channel: 12                  if spread(7,9*1).look
+  midi (ing :ds4, :e4, :cs4, :ds4,).look,  (ing 20, 35, 5,).look, channel: 12                  if spread(7,9*1).look
   bows (knit :e4, 8,  _,8, :eb4, 8).look, (line 50, 120,32).look, sus: 1.0/4.0 if spread(7,9*1).rot(-2).look
   bows (knit :bb4, 8, _,8, :b4, 8).look, 40, sus: 1.0/8.0                     if spread(3,7*1).rot(-1).look
 
-  midi (ing :ds4, :e4).look,55, channel: 11 if spread(1,32).look
+  midi (ing :ds4,  :e4,).look,55, channel: 11 if spread(1,32).look
   sleep 1.0
   }
 end
@@ -79,9 +79,9 @@ end
 #C♯, D♯, E, F♯, G♯, A, and B
 
 live_loop :melo, sync: :unsyncable do
-  midi :bb4, sus: W*(ing 1 1 2 4).look, channel: 3
-  midi 'c1',(ing 127 0).look, channel: 3
-  at{sleep 1.0; shudder_fx (ing :e3).look} if spread(1,2).rot(-1).look
+  midi :bb4, sus: W*(ing 1, 1, 2, 4,).look, channel: 3
+  midi 'c1',(ing 127, 0,).look, channel: 3
+  at{sleep 1.0; shudder_fx (ing :e3,).look} if spread(1,2).rot(-1).look
 
   with_bpm 160*0.125 {
   tick
@@ -90,15 +90,15 @@ live_loop :melo, sync: :unsyncable do
   pos = [1,5,3].shuffle
   #zero_cc ldelay: pos[0],cdelay: pos[1], rdelay: pos[2]
   score = (ing
-    [:C2  100  W] RW
-    [:C2  120  W] RW
-    [:Eb2 100  W] RW
-    [:C2  100  W] RW
+    [:C2,  100,  W], RW,
+    [:C2,  120,  W], RW,
+    [:Eb2, 100,  W], RW,
+    [:C2,  100,  W], RW,
 
-    [:C2   100  W] RW
-    [:C2   120  W] RW
-    [:Eb3  100  W] RW
-    [:Cs2  100  W] RW
+    [:C2,   100,  W], RW,
+    [:C2,   120,  W], RW,
+    [:Eb3,  100,  W], RW,
+    [:Cs2,  100,  W], RW,
     )
   s = score.look
 
