@@ -38,10 +38,11 @@ live_loop :testing, sync: :unsyncable do
   midi s[0], 127, sus: 4, channel: 14, sus: s[-1]+0.1
   sleep s[-1]
 end
+live_loop :unsyncable do; sleep 1;end
 stop
 
 
-live_loop :unsyncable do; sleep 1;end
+
 
 live_loop :kicker, sync: :unsyncable do
   tick
