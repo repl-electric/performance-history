@@ -70,7 +70,7 @@ live_loop :creatures, sync: :unsyncable do
   tick
   @run=true
   with_bpm (160*[2,2,2].choose) {
-    midi [:eb4, :eb4 :eb3].choose,  channel: 7 if (knit spread(7,11).look,32, spread(3,7).look,32).look if @run
+    midi [:eb4, :eb4, :eb3].choose,  channel: 7 if (knit spread(7,11).look,32, spread(3,7).look,32).look if @run
     midi :c4,  channel: 7  if spread(1,8).look unless @run
     @run=false if spread(1,64).rot(32+8).look
     @run=true if spread(1,64).rot(-6).look
