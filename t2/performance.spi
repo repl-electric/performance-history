@@ -32,7 +32,7 @@ live_loop :testing, sync: :unsyncable do
   puts s
   if s[0] == :EOS
     creature :Eb4, sus: 4
-    s[0] = _
+#    s[0] = _
   end
 
   midi s[0], 127, sus: 4, channel: 14, sus: s[-1]+0.1
