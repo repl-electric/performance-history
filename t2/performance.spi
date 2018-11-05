@@ -25,9 +25,12 @@ end
 
 live_loop :creatures, sync: :unsyncable do
   tick
+  creature||=false
   with_bpm (160*[2,2,2].choose) {
+    midi :eb4,  channel: 7 if spread(1,1).look if @creature
     midi :eb4,  channel: 7 if spread(1,4).look
     if spread(1,64).look
+      creature=true
       #creature_cc dirt: rand*1.0, filter: rand*1.0, talk: rand*1.0
       creature :eb4, (ine 40 100 128).look, sus:8
 #      at{
