@@ -11,8 +11,9 @@ RQ=[_, 1/4.0]
 RE=[_,1/8.0]
 
 live_loop :intro, sync: :unsyncable do
+  stop
   tick
-  score = (ing #[:Cs3 W] [:C3 H] [:D3 W] [:C3 H] [:D3 2]
+  score = (ing
     [:C3 H] RH [:Cs3 H] RH [:Eb3 H] RQ [:E3 H] RQ [:F3 W]                  [_ W*1]
     [:C3 H] RH [:Cs3 H] RH [:Eb3 H] RQ [:E3 H] RQ [:F3 W]                  [_ W*1]
 
@@ -25,13 +26,10 @@ live_loop :intro, sync: :unsyncable do
     [:C3 H] RH [:Cs3 H] RH [:Eb3 H] RQ [:E3 H] RH [:G3 Q] RQ [:d4 Q]       [_ W*1]
     [:Ab4 H] RQ [:F4 H] RQ [:G4 H] RQ [:D4 H] RQ [:Eb4 Q] RQ [:c4 6]       [_ 0]
 
-    #[:Eb3 2] [:C3, 1/2.0] [:C3, 1/2.0] [_ 1]
     [:EOS 0]
     )
   s = score.look
   #midi (ing :c2 :eb2).tick(:in), 10, sus: score.reduce(0){|a,s|a+=s[-1]}/2, channel: 15 if spread(1,score.length/2.0).look
-
-  puts s
   if score.look(offset: 1)[0] == :EOS
     creature :Eb4,127, sus: 4
     stop
@@ -46,7 +44,7 @@ live_loop :intro, sync: :unsyncable do
   sleep s[-1]
 end
 live_loop :unsyncable do; sleep 1;end
-stop
+
 live_loop :kicker, sync: :unsyncable do
   tick
   with_bpm (160.0*(ing 1 1 2 0.5).look) {
