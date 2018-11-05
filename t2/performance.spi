@@ -40,7 +40,7 @@ live_loop :testing, sync: :unsyncable do
   end
 
   with_transpose -12{
-    midi s[0], 100,  sus: s[-1], channel: 7
+    midi s[0], 100,  sus: s[-1]+0.1, channel: 7
   }
   with_transpose 0{
     #midi s[0], 127,  channel: 14, sus: s[-1]+0.1 if spread(1,4).look
