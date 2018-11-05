@@ -11,7 +11,7 @@ RQ=[_, 1/4.0]
 RE=[_,1/8.0]
 
 live_loop :intro, sync: :unsyncable do
-#  stop
+  stop
   tick
   score = (ing
     [:C3 H] RH [:Cs3 H] RH [:Eb3 H] RQ [:E3 H] RQ [:F3 W]                  [_ W*1]
