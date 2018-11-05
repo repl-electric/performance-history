@@ -41,8 +41,8 @@ live_loop :creatures, sync: :unsyncable do
 #      }
     end
   midi (ing :ds4 :e4 :cs4 :ds4).look,  (ing 20 35 5).look, channel: 12                  if spread(7,9*1).look
-  bows (knit :e4, 8,  _,4, :eb4, 8).look, (line 50, 120,32).look, sus: 1.0/4.0 if spread(7,9*1).rot(-2).look
-  bows (knit :bb4, 8, _,4, :b4, 8).look, 40, sus: 1.0/8.0                     if spread(3,7*1).rot(-1).look
+  bows (knit :e4, 8,  _,8, :eb4, 8).look, (line 50, 120,32).look, sus: 1.0/4.0 if spread(7,9*1).rot(-2).look
+  bows (knit :bb4, 8, _,8, :b4, 8).look, 40, sus: 1.0/8.0                     if spread(3,7*1).rot(-1).look
 
   midi (ing :ds4, :e4).look,55, channel: 11 if spread(1,32).look
   sleep 1.0
