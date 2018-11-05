@@ -4,7 +4,7 @@ load_support('t2'); use_bpm 160.0
 
 live_loop :testing do
   tick
-  score = (ing [:C3 1] [:C3 1] [:Cs3 1/2.0] [:Cs3 1/2.0]
+  score = (ing [:C3 1] [:C3 1] [:Cs3 1/2.0] [:Cs3 1/2.0] [:D3 2]]
     )
   s = score.look
   puts s
