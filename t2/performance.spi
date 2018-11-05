@@ -40,7 +40,6 @@ live_loop :testing, sync: :unsyncable do
   sleep s[-1]
 end
 live_loop :unsyncable do; sleep 1;end
-stop
 
 live_loop :kicker, sync: :unsyncable do
   tick
