@@ -4,7 +4,7 @@ load_support('t2'); use_bpm 160.0
 
 live_loop :testing do
   tick
-  score = (ing [:C3] [:Cs3])
+  score = (ing [:C3] [:Cs3] [:Cs3] )
   s = score.look
   puts s
   midi s[0], 127, sus: 4, channel: 14 if spread(1,4).look
