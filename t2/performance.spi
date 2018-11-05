@@ -34,6 +34,10 @@ live_loop :testing, sync: :unsyncable do
 
   puts s
   if score.look(offset: 1)[0] == :EOS
+  with_transpose 0{
+    midi s[0], 127,  channel: 14, sus: s[-1]+0.1 if spread(1,4).look
+  }
+
     creature :Eb4,127, sus: 4
     stop
     s[0] = _
