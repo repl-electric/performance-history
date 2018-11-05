@@ -29,7 +29,7 @@ live_loop :creatures, sync: :unsyncable do
   with_bpm (160*[2,2,2].choose) {
     midi :eb4,  channel: 7 if spread(1,1).look if @run
     midi :eb4,  channel: 7 if spread(1,4).look
-    @run=false if spread(1,64).rot(-8).look
+    @run=false if spread(1,64).rot(8).look
     if spread(1,64).look
       @run=true
       #creature_cc dirt: rand*1.0, filter: rand*1.0, talk: rand*1.0
