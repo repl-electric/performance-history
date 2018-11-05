@@ -31,8 +31,8 @@ live_loop :testing, sync: :unsyncable do
   s = score.look
   puts s
   if s[0] == :EOS
-    creature :Eb4, sus: 4
-#    s[0] = _
+    #creature :Eb4, sus: 4
+    #s[0] = _
   end
 
   midi s[0], 127, sus: 4, channel: 14, sus: s[-1]+0.1
