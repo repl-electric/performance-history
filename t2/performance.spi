@@ -12,7 +12,7 @@ RE=[_,1/8.0]
 
 live_loop :testing do
   tick
-  score = (ing [:Cs3 W] [:C3 H] [:C3 W] [:C1 H]
+  score = (ing [:Cs3 W] [:C3 H] [:Cs3 W] [:C3 H]
 
 
 
