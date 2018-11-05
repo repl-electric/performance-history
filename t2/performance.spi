@@ -40,8 +40,8 @@ live_loop :testing, sync: :unsyncable do
   end
 
   with_transpose 0{
-    midi s[0], 10, sus: score.reduce(0){|a,s|a+=s[-1]}, channel: 7
-    midi s[0], 127, sus: 4, channel: 14, sus: s[-1]+0.1
+    midi s[0], 10, sus: s[-1], channel: 7
+    midi s[0], 127,  channel: 14, sus: s[-1]+0.1
   }
   sleep s[-1]
 end
