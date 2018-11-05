@@ -12,7 +12,7 @@ RE=[_,1/8.0]
 
 live_loop :testing do
   tick
-  score = (ing [:C3 1] RH [:C3 1] RH  [:Cs3 1.0] RQ [:Cs3 1.0] RQ [:Eb3 2] [:C3, 1/2.0] [:C3, 1/2.0] [_ 1]
+  score = (ing [:C3 1] RH [:C3 1] RH  [:Cs3 1.0] RQ [:Cs3 1.0] RQ [:Cs3 1.0]  [:Eb3 2] [:C3, 1/2.0] [:C3, 1/2.0] [_ 1]
     )
   s = score.look
   puts s
