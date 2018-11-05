@@ -33,7 +33,7 @@ live_loop :creatures, sync: :unsyncable do
     @run=true if spread(1,64).rot(-6).look
     if spread(1,64).look
       #creature_cc dirt: rand*1.0, filter: rand*1.0, talk: rand*1.0
-      shudder_fx :cs2
+      shudder_fx :c3
       creature :eb4, (ine 40 100 128).look, sus:8
 #      at{
 #        sleep 8.0
