@@ -5,7 +5,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 
 
 overclock_on :E3
-ze :A3
+ze :A5
 
 
 
