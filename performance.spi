@@ -2,7 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 
 
 
-create_cube
+world time: 0.1
 burst 0.5
 overclock_on :E3
 ze :A5
