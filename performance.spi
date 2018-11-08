@@ -4,7 +4,9 @@ load_support('piezoelectric_resonator'); use_bpm 127
 #init!
 
 
-cam :top
+#cam :top
+
+roots alive: 1
 
 stop
 #star life: 0.1, size: 0.1
