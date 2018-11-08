@@ -30,7 +30,7 @@ roots throttle:1.0, freq: 0.5, drag: 2, target: :cube, chase: 1
 #roots throttle:1.0, freq: 1054, drag: 10
 
 
-stop
+#stop
 roots swirl: 1, throttle: 0, alive: 1
 
 
