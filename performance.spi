@@ -13,7 +13,7 @@ burst 0.0
 #defaultcolor
 vortex y: 0.2, force: 10.0, throttle: 0
 
-rocks throttle: 1.0, orbit: 10
+rocks throttle: 1.0, orbit: 500
 
 #explode_aura
 
