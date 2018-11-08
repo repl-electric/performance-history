@@ -15,7 +15,7 @@ vortex y: 0.2, force: 10.0, throttle: 0
 
 rocks throttle: 1.0, orbit: 0
 
-explode_aura
+#explode_aura
 
 zoomout
 
