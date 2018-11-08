@@ -12,7 +12,7 @@ bright
 
 #defaultcolor
 vortex y: 0.2, force: 10.0, throttle: 0
-roots throttle: 0.2
+roots throttle: 0.3
 
 
 stop
