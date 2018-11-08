@@ -4,7 +4,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 
 
 create_cube
-rocks throttle: 1
+rocks throttle: 1.0
 
 
 stop
