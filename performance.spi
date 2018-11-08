@@ -10,8 +10,8 @@ bright
 
 #vortex throttle: 1
 
-defaultcolor
-vortex y: 0.2, force: 10.0
+#defaultcolor
+vortex y: 0.2, force: 10.0, throttle: 0
 
 stop
 roots swirl: 1, throttle: 0, alive: 1
