@@ -12,7 +12,15 @@ bright
 
 #defaultcolor
 vortex y: 0.2, force: 10.0, throttle: 0
-roots throttle:1.0, freq: 1054, drag: 10
+
+
+
+
+roots throttle:1.0, freq: 0, drag: 10
+
+
+#lovely
+#roots throttle:1.0, freq: 1054, drag: 10
 
 
 stop
