@@ -12,9 +12,9 @@ load_support('piezoelectric_resonator'); use_bpm 127
 
 
 
-create_light
 
-roots alive: 1, chase: 1, throttle: 1
+
+roots alive: 1, chase: 1, throttle: 0
 
 
 
