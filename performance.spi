@@ -1,7 +1,7 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 
 #scene 1
-cam :top
+cam :main
 #init!
 stop
 
