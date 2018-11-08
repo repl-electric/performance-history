@@ -6,7 +6,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 burst 0.0
 #overclock_on :E3
 #ze :A5
-bright
+#bright
 
 #vortex throttle: 1
 
