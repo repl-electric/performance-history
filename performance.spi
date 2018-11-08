@@ -22,7 +22,7 @@ rocks throttle: 1.0, orbit: 50
 
 #create_tree
 #explode_world
-end2
+end1
 
 #zoomout
 #sea circle: 0.0, sphere: 0.0
