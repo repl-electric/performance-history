@@ -3,7 +3,11 @@ load_support('piezoelectric_resonator'); use_bpm 127
 
 
 
-create_sea
+
+overclock_on :A3
+
+
+
 
 
 
