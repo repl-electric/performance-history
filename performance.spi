@@ -20,7 +20,7 @@ rocks throttle: 1.0, orbit: 0
 create_tree
 
 zoomout
-sea circle: 0.2
+sea circle: 0.1
 roots throttle:1.0, freq: 0.5, drag: 100
 cam :main
 
