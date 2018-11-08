@@ -1,6 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 
-
+scene 0
 #star life: 0.1, size: 0.1
 #world time: 1.0
 #burst 0.0
