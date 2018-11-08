@@ -14,7 +14,7 @@ burst 0.0
 vortex y: 0.2, force: 10.0, throttle: 0
 
 rocks throttle: 1.0, orbit: 10
-
+zoomout
 
 roots throttle:1.0, freq: 0.5, drag: 100
 
