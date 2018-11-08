@@ -26,7 +26,7 @@ rocks throttle: 1.0, orbit: 50
 #end1
 #zoomout
 #sea circle: 0.0, sphere: 0.0
-roots throttle: 0.0, spiral: 0, chase: 0, alive: 1, freq: 2.1, drag: 1.0
+roots throttle: 0.0, spiral: 0, chase: 0, alive: 1, freq: 10.1, drag: 1.0
 stop
 #cam :main
 
