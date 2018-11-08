@@ -22,6 +22,7 @@ rocks throttle: 1.0, orbit: 50
 
 #create_tree
 cam :top
+explode_tree
 
 
 #zoomout
