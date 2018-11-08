@@ -11,7 +11,7 @@ burst 0.1
 #vortex throttle: 1
 
 
-vortex y: 0.2, force: 1.0
+vortex y: 0.2, force: 10.0
 
 stop
 roots swirl: 1, throttle: 1, alive: 1
