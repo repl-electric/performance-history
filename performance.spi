@@ -21,7 +21,7 @@ rocks throttle: 1.0, orbit: 50
 #explode_aura
 
 #create_tree
-explode_world
+#explode_world
 
 
 #zoomout
