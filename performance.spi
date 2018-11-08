@@ -1,7 +1,7 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 
 
-star life: 0.2, size: 3.1
+star life: 0.2, size: 0.1
 #world time: 1.0
 burst 0.0
 #overclock_on :E3
