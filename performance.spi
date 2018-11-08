@@ -22,7 +22,7 @@ create_tree
 zoomout
 sea circle: 0.0, sphere: 0.0
 roots throttle:1.0, freq: 0.5, drag: 6, target: :bird
-cam :main
+#cam :main
 
 #lovely
 #roots throttle:1.0, freq: 1054, drag: 10
