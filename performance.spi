@@ -1,6 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 
-scene 1
+init!
 
 stop
 roots swirl: 1, throttle: 1, alive: 1
