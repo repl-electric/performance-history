@@ -1,6 +1,10 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 
-init!
+
+
+
+create_cube
+
 
 stop
 roots swirl: 1, throttle: 1, alive: 1
