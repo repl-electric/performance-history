@@ -13,7 +13,7 @@ bright
 #defaultcolor
 vortex y: 0.2, force: 10.0, throttle: 0
 
-create_sea
+create_light
 
 
 roots throttle:1.0, freq: 0, drag: 10
