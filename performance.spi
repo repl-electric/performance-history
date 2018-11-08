@@ -8,10 +8,10 @@ burst 0.1
 #ze :A5
 
 
-vortex throttle: 1
+#vortex throttle: 1
 
 
-vortex y: 0.2
+vortex y: 0.2, force: 0.1
 
 stop
 roots swirl: 1, throttle: 1, alive: 1
