@@ -15,6 +15,9 @@ burst 0.0
 
 rocks throttle: 1.0, orbit: 50
 
+
+explode_cube
+
 #explode_aura
 
 #create_tree
