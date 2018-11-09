@@ -76,7 +76,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
       flop :c4, 110-rand*15, sus: 2.0
     else
       roots chase: 1, target: @t
-      roots_chase freq: rand*100.0
+      #roots_chase freq: rand*100.0
       flop_cc motion: 0.4
       #bitsea :d5, 127, sus: 1
       flop :e3, 60-rand*10, sus: 1.0
