@@ -25,7 +25,15 @@ def cube_hit(f=0.5)
     unity "/cube/hit", 0.0
   }
 end
-cube_hit
+
+live_loop :name do
+  tick
+  cube_hit
+  sleep 1
+  sleep 1
+end
+
+
 #create_cube
 
 
