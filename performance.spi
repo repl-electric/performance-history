@@ -7,6 +7,8 @@ alive sop: 0, perc: 0, kick: 0
 
 #create_cube
 
+rocks throttle: 1
+
 live_loop :wind, sync: :unsyncable do; tick
   s=(knit :A4, 128, _, 127, :A5,1).look
 #  ze s, (line 127,50,256*4).look, sus: (knit 1/4.0,32,1/2.0,31, 1, 1).look if spread(7*1,11*1).look
