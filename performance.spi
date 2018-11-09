@@ -1,7 +1,7 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 #live_loop(:unsyncable) do;  sleep 1.0;end
 #alive sop: 0, perc: 1, kick: 0
-init! true
+
 
 #roots_chase freq: 200
 #scene 1
@@ -15,6 +15,8 @@ init! true
 #zoomout
 #stop
 #zoomout
+
+unity "/cube/hit", 0.1
 
 #roots_chase thick: 0.2, freq: 0.0, target: :cube, drag: 3
 #stop
