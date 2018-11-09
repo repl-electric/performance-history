@@ -15,9 +15,6 @@ alive sop: 0, perc: 1, kick: 0
 world time: 1
 zoomout
 
-create_cube
-
-stop
 
 
 
