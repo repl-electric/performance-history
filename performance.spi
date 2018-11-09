@@ -17,7 +17,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 #zoomout
 
 
-def cube_hit(f=0.2, v=0.0)
+def cube_hit(f=0.2, v=0.2)
   at{
     unity "/cube/hit/speed", v
     sleep 0.5
