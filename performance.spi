@@ -62,7 +62,12 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/2.0
     sleep 1/2.0
     sleep 1/2.0
-    flip :c4
+
+    if spread(3,8).look
+      flip :c4
+    else
+      flip :A4
+    end
 
     sleep 1/2.0
   end
