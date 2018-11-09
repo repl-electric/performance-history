@@ -12,7 +12,7 @@ live_loop :wind, sync: :unsyncable do; tick
 #  ze s, (line 127,50,256*4).look, sus: (knit 1/4.0,32,1/2.0,31, 1, 1).look if spread(7*1,11*1).look
   if spread(7*1,11*2).look
     if spread(7*1,11*2*8).look
-      ze :C3
+      ze :C3, sus: 0.1
       #bitsea :A4, (line 127,100,256).look, sus: 2, hi: 0.85
     else
       #ze :C4
