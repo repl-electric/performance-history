@@ -14,7 +14,7 @@ alive sop: 0, perc: 1, kick: 0
 #zoomout
 world time: 1
 zoomout
-
+stop
 
 
 
@@ -164,6 +164,8 @@ live_loop :light, sync: :unsyncable do; tick
       [[:C3 :E5 :G4] 8]
       REST4
       )
+    #roots throttle: 0.0, freq: 0.2, drag: 2.0, target: :cube, chase: 1, target: :cube
+    roots chase: 1, target: (:cube, :spiral).look
     chd = score.look[0]
     sleeps = score.look[-1]
     deep root(chd), 1, sus: 2
