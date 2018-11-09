@@ -10,7 +10,7 @@ alive sop: 0, perc: 1, kick: 0
 #overclock_cc motion: 0.25
 
 #overclock_on :E3
-roots chase: 1, target: :spiral
+roots chase: 1, target: :cube
 #zoomout
 world time: 1
 zoomout
