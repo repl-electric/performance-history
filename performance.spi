@@ -34,8 +34,8 @@ live_loop :name do
   tick
   puts :hit
   cube_hit
-  sleep 3
-  sleep 1
+  sleep 2
+  sleep 2
 end
 
 
