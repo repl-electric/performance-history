@@ -81,7 +81,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   end
 end
 #zoomout
-roots chase: 1, target: :cube
+roots chase: 1, target: :spiral
 
 
 live_loop :glitch, sync: :unsyncable do; tick
