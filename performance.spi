@@ -27,6 +27,7 @@ def cube_hit(f=0.8)
       puts 0.8 * 1/n
       sleep 0.5
     }
+    unity "/cube/hit", 0
   }
 end
 
