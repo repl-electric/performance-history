@@ -17,25 +17,11 @@ load_support('piezoelectric_resonator'); use_bpm 127
 #zoomout
 
 
-def cube_hit(f=0.2, v=0.2)
-  at{
-    unity "/cube/hit/speed", v
-    sleep 0.5
-    unity "/cube/hit", f
-    sleep 0.25
-    4.times{|n|
-      unity "/cube/hit", 0.8 * 1.0/(n)
-      puts 0.8 * 1/n
-      sleep 0.25
-    }
-    unity "/cube/hit", 0.01
-  }
-end
 
 live_loop :name do
   tick
   puts :hit
-  cube_hit
+  dark :C4
   sleep 2
   sleep 2
 end
