@@ -13,7 +13,7 @@ rocks throttle: 1.0, orbit: 100, radius: 0.3
 
 overclock_cc motion: 0.39
 
-create_light
+
 #overclock_on :E3
 roots throttle: 0.5, freq: 3
 #zoomout
