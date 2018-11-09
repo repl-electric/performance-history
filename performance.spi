@@ -13,7 +13,7 @@ overclock_cc motion: 0.28
 
 
 #overclock_on :E3
-roots throttle: 0.5, freq: 3000, drag: 0.0
+roots throttle: 0.5, freq: 0.2, drag: 0.0
 #zoomout
 
 
