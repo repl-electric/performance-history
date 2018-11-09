@@ -11,7 +11,7 @@ rocks throttle: 1.0, orbit: 100, radius: 0.3
 
 overclock_cc motion: 0.28
 
-
+world time: 1
 
 #overclock_on :E3
 roots throttle: 0.5, freq: 1000, drag: 0.0
