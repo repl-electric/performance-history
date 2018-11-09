@@ -11,8 +11,8 @@ rocks throttle: 1.0, orbit: 100, radius: 0.3
 
 
 
-overclock_on :E3
-roots throttle: 0.1
+#overclock_on :E3
+roots throttle: 0.5, freq: 3
 zoomout
 
 
