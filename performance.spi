@@ -26,7 +26,7 @@ def cube_hit(f=0.5)
   }
 end
 cube_hit
-
+create_cube
 
 
 #roots_chase thick: 0.2, freq: 0.0, target: :cube, drag: 3
