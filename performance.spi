@@ -13,7 +13,7 @@ live_loop :wind, sync: :unsyncable do; tick
   s=(knit :A4, 128, _, 127, :A5,1).look
 #  ze s, (line 127,50,256*4).look, sus: (knit 1/4.0,32,1/2.0,31, 1, 1).look if spread(7*1,11*1).look
   if spread(7*1,11*8).look
-    ze (ing :A3 :F3).look, sus: 0.25, y: 1
+    #ze (ing :A3 :F3).look, sus: 0.25, y: 1
     if spread(7*1,11*8*8).look
       ze (ing :A4).look, z: 1
       #ze :C3, sus: 0.2
