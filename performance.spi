@@ -68,6 +68,9 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   end
 end
 
+
+cam :cube
+
 live_loop :glitch, sync: :unsyncable do; tick
   sync :light
   with_bpm 127*[2.0,2.0].choose do
