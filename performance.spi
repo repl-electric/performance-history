@@ -2,7 +2,6 @@ load_support('piezoelectric_resonator'); use_bpm 127
 live_loop(:unsyncable) do;  sleep 1.0;end
 alive sop: 0, perc: 1, kick: 0
 
-
 #roots_chase freq: 200
 #scene 1
 #create_cube
@@ -11,7 +10,7 @@ alive sop: 0, perc: 1, kick: 0
 
 #overclock_on :E3
 #zoomout
-world time: 1
+#world time: 1
 #zoomout
 #stop
 #zoomout
