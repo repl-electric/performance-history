@@ -18,6 +18,8 @@ alive sop: 0, perc: 1, kick: 0
 
 roots throttle: 0.1, chase: 1
 
+roots_chase thick: 0.1
+
 
 live_loop :wind, sync: :unsyncable do; tick
   s=(knit :A4, 128, _, 127, :A5,1).look
