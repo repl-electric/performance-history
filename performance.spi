@@ -16,7 +16,8 @@ overclock_cc motion: 0.20
 roots throttle: 0.5, freq: 1000, drag: 0.0
 #zoomout
 
-defaultcolor
+create_aura
+
 live_loop :wind, sync: :unsyncable do; tick
   s=(knit :A4, 128, _, 127, :A5,1).look
 #  ze s, (line 127,50,256*4).look, sus: (knit 1/4.0,32,1/2.0,31, 1, 1).look if spread(7*1,11*1).look
