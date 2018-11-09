@@ -15,8 +15,8 @@ alive sop: 0, perc: 1, kick: 0
 #stop
 #zoomout
 
-roots_chase thick: 0.2, freq: 0.0, target: :cube, drag: 3
-stop
+#roots_chase thick: 0.2, freq: 0.0, target: :cube, drag: 3
+#stop
 
 live_loop :wind, sync: :unsyncable do; tick
   s=(knit :A4, 128, _, 127, :A5,1).look
