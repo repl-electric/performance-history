@@ -11,10 +11,10 @@ alive sop: 0, perc: 1, kick: 0
 
 #overclock_on :E3
 #zoomout
-#world time: 1
+world time: 1
 #zoomout
 #stop
-zoomout
+#zoomout
 
 
 live_loop :wind, sync: :unsyncable do; tick
