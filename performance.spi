@@ -21,7 +21,7 @@ def cube_hit(f=0.5)
   at{
     sleep 0.5
     unity "/cube/hit", f
-    sleep 1
+    sleep 2
     unity "/cube/hit", 0.0
   }
 end
