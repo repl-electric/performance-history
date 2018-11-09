@@ -18,7 +18,7 @@ alive sop: 0, perc: 1, kick: 0
 
 roots throttle: 0.1, chase: 1
 
-roots_chase thick: 0.1
+roots_chase thick: 0.2
 
 
 live_loop :wind, sync: :unsyncable do; tick
