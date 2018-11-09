@@ -165,7 +165,7 @@ live_loop :light, sync: :unsyncable do; tick
       REST4
       )
     #roots throttle: 0.0, freq: 0.2, drag: 2.0, target: :cube, chase: 1, target: :cube
-    roots chase: 1, target: (:cube, :spiral).look
+    roots chase: 1, target: (ing :cube, :spiral).look
     chd = score.look[0]
     sleeps = score.look[-1]
     deep root(chd), 1, sus: 2
