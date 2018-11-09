@@ -22,7 +22,9 @@ def cube_hit(f=0.8)
     sleep 0.5
     unity "/cube/hit", f
     sleep 1
-    unity "/cube/hit", 0.0
+    8.times{|n|
+      unity "/cube/hit", 0.8*(8-n)
+    }
   }
 end
 
