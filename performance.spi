@@ -7,13 +7,13 @@ alive sop: 0, perc: 1, kick: 0
 
 #create_cube
 
-rocks throttle: 1.0, orbit: 3
+rocks throttle: 1.0
 
 #overclock_cc motion: 0.28
 
 
 #overclock_on :E3
-roots throttle: 1.0, freq: 0.2, drag: 5.0, target: :cube
+roots throttle: 1.0, freq: 0.2, drag: 5.0, target: :bird
 #zoomout
 world time: 1
 
