@@ -15,7 +15,7 @@ alive sop: 0, perc: 1, kick: 0
 #stop
 #zoomout
 
-roots_chase thick: 0.1, freq: 0.2, target: :cube, drag: 2
+roots_chase thick: 0.1, freq: 0.2, target: :cube, drag: 8
 stop
 
 live_loop :wind, sync: :unsyncable do; tick
