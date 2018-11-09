@@ -41,7 +41,7 @@ live_loop :wind, sync: :unsyncable do; tick
   sleep 1/8.0
 end
 
-roots chase: 1, target: :spiral
+roots chase: 1, target: :spiral, throttle: 0.1
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
