@@ -7,7 +7,7 @@ alive sop: 0, perc: 1, kick: 0
 
 #create_cube
 
-rocks throttle: 1.0
+rocks throttle: 1.0, orbit: 0
 
 #overclock_cc motion: 0.28
 
