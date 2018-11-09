@@ -15,10 +15,10 @@ live_loop :wind, sync: :unsyncable do; tick
       #ze :C3, sus: 0.2
       #bitsea :A4, (line 127,100,256).look, sus: 2, hi: 0.85
     else
-      ze :C3, sus: 0.2
       #ze :C4
     end
   else
+    ze :C3, sus: 0.2
     #ze :D4
   end
   #qbitsea :A5
