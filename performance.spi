@@ -40,7 +40,7 @@ live_loop :wind, sync: :unsyncable do; tick
   #qbitsea :E3, 50, sus: (ing 1/2.0 1 1).look if spread(1*4,8*4).look
   sleep 1/8.0
 end
-
+create_light
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   #sync :light
   zero_delay [2,5,6].shuffle
@@ -70,8 +70,6 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
       #bitsea :d5, 127, sus: 1
       flop :e3, 60-rand*10, sus: 1.0
     end
-
-
 
     sleep 1/2.0
     sleep 1/2.0
