@@ -7,7 +7,7 @@ alive sop: 0, perc: 1, kick: 0
 #scene 1
 #create_cube
 
-overclock_cc motion: 0.10
+overclock_cc motion: 0.20
 
 #overclock_on :E3
 #zoomout
