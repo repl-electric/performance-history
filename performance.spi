@@ -11,6 +11,9 @@ rocks throttle: 1.0, orbit: 100, radius: 0.3
 
 
 
+overclock_cc motion: 0.39
+
+
 #overclock_on :E3
 roots throttle: 0.5, freq: 3
 #zoomout
@@ -22,7 +25,7 @@ live_loop :wind, sync: :unsyncable do; tick
   if spread(7*1,11*8).look
     ze (ing :A3 :F3).look, sus: 0.25, y: 1
     if spread(7*1,11*8*8).look
-      ze (ing :A4).look, z: 1
+      ze (ing :A4).look
       #ze :C3, sus: 0.2
       #bitsea :A4, (line 127,100,256).look, sus: 2, hi: 0.85
     else
