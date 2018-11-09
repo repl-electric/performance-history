@@ -4,8 +4,8 @@ alive sop: 0, perc: 1, kick: 0
 
 
 #roots_chase freq: 200
-
-scene 1
+init! true
+#scene 1
 create_cube
 stop
 #create_cube
