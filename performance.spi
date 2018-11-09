@@ -69,7 +69,6 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 end
 
 
-create_aura
 
 live_loop :glitch, sync: :unsyncable do; tick
   sync :light
