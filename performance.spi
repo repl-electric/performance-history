@@ -5,7 +5,7 @@ alive sop: 0, perc: 0, kick: 0
 #scene 1
 #create_cube
 
-create_cube
+#create_cube
 
 live_loop :wind, sync: :unsyncable do; tick
   stop
