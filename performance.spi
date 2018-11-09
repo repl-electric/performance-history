@@ -128,8 +128,8 @@ end
 
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1.0 do
-    score = (ing _)
-    chd = score.look[0] if score
+    score = (ing [_ 8])
+    chd = score.look[0]
     sleeps = score.look[-1]
     sleep sleeps
   end
