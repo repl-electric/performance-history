@@ -66,7 +66,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/2.0
 
     if spread(3,8).look
-      roots chase: 1, target: (knit :cube,4, ).look
+      roots chase: 1, target: (knit :none,4, ).look
       flop_cc motion: 0.3
       flop :c4, 110-rand*15, sus: 2.0
     else
