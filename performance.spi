@@ -69,7 +69,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     if spread(3,8).look
       @t= [:cube, :spiral].choose
       roots_chase target: @t
-      roots_chase thick: rand
+      #roots_chase thick: rand
       #roots_chase radius: rand
       flop_cc motion: 0.3
       flop :c4, 110-rand*15, sus: 2.0
