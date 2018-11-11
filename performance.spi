@@ -21,7 +21,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 live_loop :name do
   tick
   puts :hit
-  dark :C4
+  dark :C4,1
   sleep 2
   sleep 2
 end
