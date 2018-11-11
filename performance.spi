@@ -3,13 +3,6 @@ load_support('piezoelectric_resonator'); use_bpm 127
 #alive sop: 0, perc: 1, kick: 0
 
 
-
-init! true
-
-
-
-stop
-
 #roots_chase freq: 200
 #scene 1
 #create_cube
