@@ -25,7 +25,7 @@ live_loop :name do
   sleep 2
   sleep 2
 end
-
+stop
 
 #create_cube
 
