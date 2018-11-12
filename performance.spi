@@ -18,7 +18,7 @@ alive sop: 0, perc: 1, kick: 0
 live_loop :name do
   tick
   fn = (ing flip flop).look
-  fn.(:a3)
+  fn.()
   sleep 2
   sleep 2
 end
