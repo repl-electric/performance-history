@@ -1,62 +1,266 @@
-ROOT="/Users/josephwilk/Workspace/repl-electric/adventures-in-algorhythm/you_fall_into_your_screen/support"; load "#{ROOT}/midi.rb";load "#{ROOT}/init.rb";use_bpm 127*0.5
-#camlogo
-#focus
-#bit
-##cam3
+load_support('piezoelectric_resonator'); use_bpm 127
+live_loop(:unsyncable) do;  sleep 1.0;end
 
-alive rotate: 0.2
+scene 9
 stop
-no{
-  qbitsea_cc oct: 0.50
-  qbitsea_cc drive: 1.00
-  qbitsea_cc charge: 0.50
-  qbitsea_cc fm: 0.40
-  qbitsea_cc wav: 0.01
-  qbitsea_cc wav_amp: 0.30
-  qbitsea_cc atk: 0.83
-  qbitsea_cc mod: 0.80
-  qbitsea_cc motion: 0.24
-  qbitsea_cc formant: 0.36
-  qbitsea_cc mul: 0.00
-  qbitsea_cc bass: 0.27
-}
+
+# alive sop: 0, perc: 1, kick: 1
+##init! true
+#roots_chase freq: 200
+#scene 1
+#create_cube
 
 
-bitsea_cc motion: 1.00  #╟▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░╢
-bitsea_cc octave: 0.50  #╟▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╢
-#bitsea_cc formant: 0.00 #╟▒░╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╢
+#eject_cpu_core
+#create_cube
+init! true
+#create_sea
+##sea sphere: 0, circle: 1
+create_sea 0
+
+sea sphere: 0.9
+#overclock_on :a3
+world time: 1
+#init! true
+stop
+
+cam :chase
+
+stop
+#roots_chase throttle: 0.8, amp: 0.1, thick: 0.2
 
 
-bitsea_on :e3
-bitsea_cc motion: 0.82  #╟▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╢
-bitsea_cc octave: 0.50  #╟▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╢
-#bitsea_cc formant: 0.00 #╟▒░╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╢
-alivecol -9.0
-##cam4
-live_loop :fall_into_your_screen, sync: :unsyncable do; tick
-  corrupt :A2, motion: 0.4
-  smp Corrupt[/ambience/, /fx/, /f#/,0], beat_stretch: 16, amp: 0.8
-  shard rand
-  sleep 16
-end
 
-live_loop :by_the_light_of_the_terminal, sync: :unsyncable do
-  with_fx :echo, mix: (ring 0.025+rand*0.1,0.055+rand*0.1,0.03,0.02,0.01).look, phase: (ring 1/4.0, 1/8.0).look do
-    8.times{
-      tick
-      pp=(ing
-        D1 _ _ _    _ _ _ _    _ _ _ _   _ _ _ _
-        _ _ _ _    _ D1 _ _    _ _ _ _   _ _ _ _
+#roots alive: 1
 
-        ).look
-     # smp_dust(pp)
+#fx reverb: 1.0
+#fx tube: 1.00
+#create_cube
 
-      sleep 1/8.0
-    }
+
+#roots_chase thick: 0.2, freq: 0.0, target: :cube, drag: 3
+#stop
+
+live_loop :wind, sync: :unsyncable do; tick
+  stop
+  s=(knit :A4, 128, _, 127, :A5,1).look
+#  ze s, (line 127,50,256*4).look, sus: (knit 1/4.0,32,1/2.0,31, 1, 1).look if spread(7*1,11*1).look
+  if spread(7*1,11*8).look
+    ze (ing :A4 :F3).look, sus: 0.25, y: 1
+    if spread(7*1,11*8*8).look
+      ze (ing :A4).look, z: 1
+      #ze :C3, sus: 0.2
+      #bitsea :A4, (line 127,100,256).look, sus: 2, hi: 0.85
+    else
+      ze :C4
+    end
+  else
+    ze :D4
   end
-end
-live_loop :its_all_just_text_in_a_file, sync: :unsyncable do; tick
-
+  #qbitsea :A5
+  #qbitsea :G3, ((line 20,40,128)+(line 40,20,128)).look, sus: (ing 1/4.0 1/2.0 1/4.0).look if spread(3*4,8*4).look
+  #qbitsea :E3, 50, sus: (ing 1/2.0 1 1).look if spread(1*4,8*4).look
   sleep 1/8.0
 end
-live_loop(:unsyncable) do; sleep 1.0 end
+stop
+
+#roots chase: 1, target: :spiral, throttle: 1
+
+flop_cc motion: 0.5
+flip_cc motion: 0.40
+
+#overclock_on :F3
+#overclock_cc motion: 0.27
+#zoomout
+#roots chase: 0.1, drag: 4
+
+live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
+  #sync :light
+  zero_delay [2,5,6].shuffle
+  with_bpm 127*[1.0,1.0].choose do
+    glitch :c3, (ing 65 60 60 60).look
+
+#    flip :C4, 30, sus: 1
+
+    #kal :E3, 6*(line 5, 30, 32).look#, sus: 6 if spread(1,12).look
+
+    #flop :C3
+
+    sleep 1/4.0
+    sleep 1/4.0
+    sleep 1/2.0
+
+    with_transpose -12*0{
+      if spread(7,11).look
+        ze (nit :g5 4 :a4 4 :e4 4).look,90, sus: 1, viz: true
+      end
+      if spread(3,8).look
+        ze (nit :g4 4 :a4 4 :e4 4 :a4 4 :e4 4 :c5 4).look, 80, viz: false
+      end
+    }
+
+
+    sleep 1/4.0
+    sleep 1/4.0
+    sleep 1/4.0
+    sleep 1/4.0
+
+    sleep 1/2.0
+    sleep 1/2.0
+
+    @t||= :none
+    if spread(3,8).look
+      @t= [:cube, :spiral].choose
+      roots_chase target: @t
+      #roots_chase thick: rand*0.2
+      #roots_chase radius: rand
+      flop_cc motion: 0.3
+      flop :c4, 110-rand*15, sus: 2.0
+    else
+      roots_chase chase: 1, target: @t
+      #roots_chase freq: rand*100.0
+      flop_cc motion: 0.4
+      bitsea :d5, 127, sus: 1
+      flop :e3, 60-rand*10, sus: 1.0
+    end
+
+    sleep 1/2.0
+    sleep 1/2.0
+  end
+end
+#zoomout
+#roots chase: 0.1
+
+live_loop :glitch, sync: :unsyncable do; tick
+  #sync :light
+  with_bpm 127*(ing 1).look do
+    if spread(4,8).look
+      glitch_cc mode: (ing 0 2 3 5).look
+    end
+    if spread(8,8).look
+      dark :e3, 122
+      if spread(3,8).look
+        at{
+          sleep 0.5
+          dark :e3, 110
+        }
+      end
+    end
+    glitch_cc corode: 1.0
+    glitch :c3, (ing 65 60 60 60).look
+    at{
+      sleep 0.25
+      glitch :c3, 2.1*(ing 120 90 100 100    100 90 90 90).look
+    }
+    glitch_cc corode: 0.2
+
+    if spread(7,11).look
+      if spread(1,4).look
+        glitch :ds3,2# if spread(1,4).look
+        sleep 1/4.0
+      else
+        sleep 1/4.0
+
+        glitch :as3,1# if spread(1,4).look
+        sleep 1/4.0
+        glitch :as3,5# if spread(1,4).look
+      end
+      sleep 1/2.0
+    else
+      glitch :gs3,3# if spread(1,4).look
+
+      sleep 1/2.0
+      glitch :ds3, 127# if spread(1,4).look
+      sleep 1/2.0
+
+      glitch :fs3,20# if spread(1,4).look
+
+      at{
+        sleep 1/2.0
+        glitch :g3, 50# if spread(1,4).look
+        }
+    end
+
+    glitch_cc corode: (ine 0.8 0.9 128).look
+    glitch (ing :c3 :a3).look, 30 if spread(7,11).look
+
+    sleep 1/4.0
+    glitch :fs3, 40
+    sleep 1/4.0
+
+    sleep 1/4.0
+    glitch :ds3, 127
+    sleep 1/4.0
+
+    with_swing 0.1 {#((knit -0.1/2.0, 4, 0.1,4).look) {
+      glitch :gs3, 40
+    }
+
+    sleep 1/2.0
+    glitch :gs3, 80 if spread(1,8).look
+    sleep 1/2.0
+    glitch :gs3, 90 if spread(1,8).look
+
+    #dark :cs3, 20
+
+    sleep 1/2.0
+    glitch (ing :cs4 :cs4 :cs4 :d4).look,127
+    sleep 1/2.0
+  end
+end
+
+#create_bird
+rocks orbit: 10
+#roots chase: 1, freq: 100.5, drag: 2, thick: 0.6
+
+
+roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
+live_loop :light, sync: :unsyncable do; tick
+  with_bpm 127*1 do
+    score = (ing
+
+      [[:A3 :C5 :E4] 8]
+      [[:F4 :A6 :C5] 8]
+      [[:C3 :E5 :G4] 4]
+      [Zz 4]
+      [[:A3 :C5 :E4] 8]
+      [[:E4 :G5 :B3] 8]
+      [[:F4 :A6 :C5 :E5] 8]
+      [[:C3 :E5 :G4] 8]
+      [Zz 8]
+
+      [[:A3 :C5 :E4] 8]
+      [[:F4 :A6 :C5] 8]
+      [[:C3 :E5 :G4] 4]
+      [Zz 4]
+      [[:A3 :C5 :E4] 4]
+      [[:A3 :C5 :E4] 4]
+      [[:E4 :G5 :B3] 4]
+      [[:E4 :G5 :B3] 4]
+      [[:G4 :B6 :D5 :F4] 8]
+      [[:C4 :E5 :G4] 8]
+      [Zz 8]
+
+      )
+    #roots throttle: 0.0, freq: 0.2, drag: 2.0, target: :cube, chase: 1, target: :cube
+    #roots chase: 1, target: (knit :cube,4, :spiral,4).look
+    chd = score.look[0]
+    sleeps = score.look[-1]
+    deep root(chd), 127, sus: sleeps*2, tube: 1.0, sat: 1.00
+    heat chd[0]+12, sus: sleeps, pads: [1]
+    sleep sleeps
+  end
+end
+
+#lovely
+#roots throttle:1.0, freq: 1054, drag: 10
+#stop
+#roots swirl: 1, throttle: 0, alive: 1
+#smp Words[0,0]
+#say :practicality
+
+
+#say :beauty
+#say :practicality
+#smp Words[0]
+end2
