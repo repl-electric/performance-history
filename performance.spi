@@ -4,8 +4,12 @@ load_support('piezoelectric_resonator'); use_bpm 127
 
 at{
   sync :unsyncable
-  overclock_on :f3
+#  overclock_on :f3
 }
+
+overclock_cc oct: (ing 0 -12 0 19).look
+
+
 
 zoomout
 
