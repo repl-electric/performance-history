@@ -1,8 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 
 
-start_init
-
 
 at{
   sync :unsyncable
