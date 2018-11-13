@@ -1,7 +1,7 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 
 
-sea circle: 0.91, sphere: 0.0
+sea circle: 0.9, sphere: 0.0
 
 at{
   sync :unsyncable
