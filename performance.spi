@@ -1,6 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 
-alive perc: 1
+alive perc: 1, sop:1
 #sea circle: 0.0, sphere: 0.0
 
 
