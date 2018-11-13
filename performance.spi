@@ -10,7 +10,7 @@ at{
 
 
 
-zoomout
+#zoomout
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
