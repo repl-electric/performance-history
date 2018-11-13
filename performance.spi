@@ -26,6 +26,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     sleep 1/4.0
     sleep 1/4.0
+    flip :c4,50, sus: 1
+
     sleep 1/2.0
 
   with_transpose -12*1{
