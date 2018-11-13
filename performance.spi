@@ -4,7 +4,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 
 at{
   sync :unsyncable
-  overclock :a3, 20
+  overclock :a3, 10
   }
 
 
