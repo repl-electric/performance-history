@@ -2,7 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 
 alive perc: 1, sop:1
 #sea circle: 0.0, sphere: 0.0
-create_sea
+
 
 #overclock_cc motion: 0.26
 #roots amp: 0.0
@@ -142,7 +142,7 @@ live_loop :light, sync: :unsyncable do; tick
     chd = score.look[0]
     sleeps = score.look[-1]
     heat chd[0], 100, sus: sleeps, pads:[1]
-    deep root(chd), 120, sus: sleeps*2
+    deep root(chd), 127, sus: sleeps*2
     sleep sleeps
   end
 end
