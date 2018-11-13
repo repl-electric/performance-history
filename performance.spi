@@ -7,7 +7,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
 
-    glitch :cs3
+    glitch :d3
 
     sleep 1/4.0
     sleep 1/4.0
