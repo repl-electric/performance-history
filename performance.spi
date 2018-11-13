@@ -87,10 +87,10 @@ live_loop :glitch, sync: :unsyncable do; tick
       end
       sleep 1/2.0
     else
-      glitch :gs3,3# if spread(1,4).look
+      #glitch :gs3,3# if spread(1,4).look
 
       sleep 1/2.0
-      glitch :ds3, 127# if spread(1,4).look
+      #glitch :ds3, 127# if spread(1,4).look
       sleep 1/2.0
 
       glitch :fs3,20# if spread(1,4).look
