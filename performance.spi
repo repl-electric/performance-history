@@ -4,8 +4,10 @@ load_support('piezoelectric_resonator'); use_bpm 127
 
 at{
   sync :unsyncable
-  overclock_on :e3
-  }
+  overclock_on :f3
+}
+
+zoomout
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
