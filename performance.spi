@@ -16,7 +16,6 @@ alive perc: 1, sop:1
 #zoomout
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
-  stop
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
     kal :e3, sus: 1/2.0
