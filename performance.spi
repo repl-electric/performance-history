@@ -1,45 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 live_loop(:unsyncable) do;  sleep 1.0;end
 
-scene 1
-stop
-
-# alive sop: 0, perc: 1, kick: 1
-##init! true
-#roots_chase freq: 200
-#scene 1
-#create_cube
-
-
-#eject_cpu_core
-#create_cube
-init! true
-#create_sea
-##sea sphere: 0, circle: 1
-create_sea 0
-
-sea sphere: 0.9
-#overclock_on :a3
-world time: 1
-#init! true
-stop
-
-cam :chase
-
-stop
-#roots_chase throttle: 0.8, amp: 0.1, thick: 0.2
-
-
-
-#roots alive: 1
-
-#fx reverb: 1.0
-#fx tube: 1.00
-#create_cube
-
-
-#roots_chase thick: 0.2, freq: 0.0, target: :cube, drag: 3
-#stop
 
 live_loop :wind, sync: :unsyncable do; tick
   stop
@@ -64,28 +25,11 @@ live_loop :wind, sync: :unsyncable do; tick
 end
 stop
 
-#roots chase: 1, target: :spiral, throttle: 1
-
-flop_cc motion: 0.5
-flip_cc motion: 0.40
-
-#overclock_on :F3
-#overclock_cc motion: 0.27
-#zoomout
-#roots chase: 0.1, drag: 4
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   #sync :light
   zero_delay [2,5,6].shuffle
-  with_bpm 127*[1.0,1.0].choose do
-    glitch :c3, (ing 65 60 60 60).look
-
-#    flip :C4, 30, sus: 1
-
-    #kal :E3, 6*(line 5, 30, 32).look#, sus: 6 if spread(1,12).look
-
-    #flop :C3
-
+  with_bpm 127 do
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
@@ -108,22 +52,6 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/2.0
     sleep 1/2.0
 
-    @t||= :none
-    if spread(3,8).look
-      @t= [:cube, :spiral].choose
-      roots_chase target: @t
-      #roots_chase thick: rand*0.2
-      #roots_chase radius: rand
-      flop_cc motion: 0.3
-      flop :c4, 110-rand*15, sus: 2.0
-    else
-      roots_chase chase: 1, target: @t
-      #roots_chase freq: rand*100.0
-      flop_cc motion: 0.4
-      bitsea :d5, 127, sus: 1
-      flop :e3, 60-rand*10, sus: 1.0
-    end
-
     sleep 1/2.0
     sleep 1/2.0
   end
@@ -132,6 +60,7 @@ end
 #roots chase: 0.1
 
 live_loop :glitch, sync: :unsyncable do; tick
+  stop
   #sync :light
   with_bpm 127*(ing 1).look do
     if spread(4,8).look
@@ -218,49 +147,10 @@ roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
-
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      [[:A3 :C5 :E4] 8]
-      [[:E4 :G5 :B3] 8]
-      [[:F4 :A6 :C5 :E5] 8]
-      [[:C3 :E5 :G4] 8]
-      [Zz 8]
-
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      [[:A3 :C5 :E4] 4]
-      [[:A3 :C5 :E4] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:G4 :B6 :D5 :F4] 8]
-      [[:C4 :E5 :G4] 8]
-      [Zz 8]
-
+      [[:A3] 4]
       )
-    #roots throttle: 0.0, freq: 0.2, drag: 2.0, target: :cube, chase: 1, target: :cube
-    #roots chase: 1, target: (knit :cube,4, :spiral,4).look
     chd = score.look[0]
     sleeps = score.look[-1]
-    deep root(chd), 127, sus: sleeps*2, tube: 1.0, sat: 1.00
-    heat chd[0]+12, sus: sleeps, pads: [1]
     sleep sleeps
   end
 end
-
-#lovely
-#roots throttle:1.0, freq: 1054, drag: 10
-#stop
-#roots swirl: 1, throttle: 0, alive: 1
-#smp Words[0,0]
-#say :practicality
-
-
-#say :beauty
-#say :practicality
-#smp Words[0]
-end2
