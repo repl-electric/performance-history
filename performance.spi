@@ -10,7 +10,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/2.0
 
     if spread(3,8).rot(0).look
-      ze (ing :g4 :a`4 :e3).look, 70, viz: true, sus: 1
+      ze (ing :g4 :a4 :e3).look, 70, viz: true, sus: 1
     end
     if spread(7,11).rot(0).look
       ze (ing :g5 :a4 :e4).look, 30, sus: 1
