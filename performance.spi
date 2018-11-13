@@ -11,7 +11,9 @@ at{
 
 #roots amp: 0.0
 
-cam :chase
+#cam :chase
+
+world time: 1
 
 #zoomout
 
