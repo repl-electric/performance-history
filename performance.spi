@@ -16,7 +16,7 @@ alive perc: 1, sop:1
 #zoomout
 
 cam :chase
-roots_chase target: :cube, throttle: 0.2, thick: 0.1
+#roots_chase target: :cube, throttle: 0.2, thick: 0.1
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
