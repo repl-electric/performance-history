@@ -17,7 +17,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
     kal :e3, sus: 1/2.0
-    overclock_cc oct: (ing 0 -12 0 19).look
+
 
     sleep 1/4.0
     sleep 1/4.0
@@ -126,6 +126,7 @@ end
 
 roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
 live_loop :light, sync: :unsyncable do; tick
+  overclock_cc oct: (ing 0 -12 0 19).look
   with_bpm 127*1 do
     score = (ing
       [[:A3] 4]
