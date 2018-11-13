@@ -117,6 +117,7 @@ live_loop :glitch, sync: :unsyncable do; tick
     #glitch :gs3, 90 if spread(1,8).look
 
     #dark :cs3, 20
+    overclock_cc oct: (ing 0 -12 0 19).look
 
     sleep 1/2.0
     #glitch (ing :cs4 :cs4 :cs4 :d4).look,127
@@ -126,7 +127,6 @@ end
 
 roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
 live_loop :light, sync: :unsyncable do; tick
-  overclock_cc oct: (ing 0 -12 0 19).look
   with_bpm 127*1 do
     score = (ing
       [[:A3] 4]
