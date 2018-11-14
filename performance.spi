@@ -70,7 +70,7 @@ end
 
 live_loop :light, sync: :unsyncable do; tick
 
-  roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
+  roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.2, drag: 2
   with_bpm 127*1 do
     score = (ing
       [[:A3 :C3 :f4] 8]
@@ -83,7 +83,6 @@ live_loop :light, sync: :unsyncable do; tick
     sleeps = score.look[-1]
     heat chd,20, sus: sleeps, pads: [0]
     deep root(chd), 10,sus: sleeps*2, pads: [0]
-
 
     sleep sleeps
   end
