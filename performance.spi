@@ -10,7 +10,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/2.0
 
-
+    ze (ing :A3).look
 
     sleep 1/4.0
     sleep 1/4.0
