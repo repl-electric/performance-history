@@ -13,7 +13,7 @@ at{
 #slow_init
 
 
-roots chase: 0, alive: 1, throttle:0
+roots chase: 0, alive: 1, throttle: 0
 
 #fx reverb: 1, tube: 1
 
