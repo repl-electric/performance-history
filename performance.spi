@@ -1,5 +1,5 @@
 load_support('piezoelectric_resonator'); use_bpm 127
-alive perc: 0, sop: 0
+alive perc: 1, sop: 0
 #start_init
 
 #overclock_cc motion: 0.21
