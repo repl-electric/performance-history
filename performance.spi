@@ -195,4 +195,4 @@ end
 live_loop(:unsyncable) do;  sleep 1.0;end
 
 
-fx tube: 1
+fx tube: 1.00, reverb: 1
