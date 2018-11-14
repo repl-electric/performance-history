@@ -1,5 +1,5 @@
 load_support('piezoelectric_resonator'); use_bpm 127
-init!
+init! true
 
 alive perc: 0, sop: 0
 
