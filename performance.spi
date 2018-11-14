@@ -52,6 +52,9 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
       flop :e4,59, sus: 2
     end
 
+    overclock_cc oct: (ing 0, -12, 0, 19,).look
+
+
     sleep 1/2.0
     flip :C4
     sleep 1/2.0
