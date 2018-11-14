@@ -2,10 +2,8 @@ load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
 #start_init
 
-
 #overclock_cc motion: 0.21
 #zoomout
-
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
@@ -46,7 +44,7 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
-      [[:A3] 8]
+      [[:A3 :C3] 8]
       [[:F3] 8]
       [[:C3] 8]
       )
