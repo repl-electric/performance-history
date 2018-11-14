@@ -16,7 +16,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     if spread(7,9).look
     else
-      flop :a4, 15, sus:4
+      #flop :a4, 15, sus:4
     end
 
     with_swing -0.1 {
