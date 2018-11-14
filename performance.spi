@@ -16,7 +16,7 @@ alive perc:1, sop:0
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
-  with_bpm 127 do
+  with_bpm 127*2 do
     #flop_cc motion: 0.60
 
     if spread(1,4).look
