@@ -6,6 +6,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   with_bpm 127 do
 
     flop :c3, 100, sus: 2 if spread(2,3)
+    flop :e3, 100, sus: 2 if spread(3,9)
+
 
     sleep 1/4.0
     sleep 1/4.0
