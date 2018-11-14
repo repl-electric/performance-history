@@ -4,7 +4,11 @@ alive perc: 0, sop: 1
 
 
 
-overclock_on :F3
+#overclock_on :F3
+
+overclock_cc motion: 0.6
+zoomout
+
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
