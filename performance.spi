@@ -9,9 +9,6 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     flop :c3, 100, sus: 2 if spread(2,3).rot(1).look
     flop :e3, 50, sus: 2 if spread(3,9).rot(1).look
 
-
-
-
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
