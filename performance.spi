@@ -20,6 +20,8 @@ alive perc: 1, sop: 0
 #burst 0
 
 
+overclock_on :A3
+
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
