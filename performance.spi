@@ -4,7 +4,7 @@ alive perc: 0, sop: 0
 #create_cube
 overclock_cc motion: 0.19
 #zoomout
-cam :chase
+#cam :chase
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
@@ -42,11 +42,12 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
-      [[_] 8]
+      [[:a3] 8]
 
       )
     chd = score.look[0]
     sleeps = score.look[-1]
+    heat chd,10, sus: sleeps, pads: [0]
 
     sleep sleeps
   end
