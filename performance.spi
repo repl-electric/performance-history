@@ -45,7 +45,7 @@ live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
       [[:A3] 8]
-      [[:G3] 8]
+      [[:F3] 8]
       [[:C3] 8]
 
       )
