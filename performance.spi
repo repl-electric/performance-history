@@ -27,8 +27,9 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
 
     if spread(7,11).look
-    else
       flip :F3
+    else
+
     end
 
     sleep 1/4.0
