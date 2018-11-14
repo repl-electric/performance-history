@@ -2,7 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
 #start_init
 
-sea circle: 0.2
+sea circle: 0.3
 #slow_init
 at{
   sync :unsyncable
