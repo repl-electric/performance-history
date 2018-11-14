@@ -13,7 +13,7 @@ at{
 #slow_init
 
 
-cam :top
+alive 1
 
 #fx reverb: 1, tube: 1
 
