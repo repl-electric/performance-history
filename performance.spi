@@ -15,7 +15,8 @@ sea circle: 0
 #slow_init
 #cam :chase
 #create_tree -2
-cam :top
+
+roots alive: 1
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
