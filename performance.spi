@@ -180,6 +180,7 @@ end
 #roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
 #roots_chase throttle:0
 live_loop :light, sync: :unsyncable do; tick
+stop
   with_bpm 127*1 do
     score = (ing
       [[:A3 :C5 :E4] 8]
