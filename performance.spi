@@ -5,7 +5,7 @@ alive perc: 0, sop: 0
 #overclock_cc motion: 0.19
 #zoomout
 #cam :chase
-scene 1
+init!
 stop
 #roots_chase target: :spiral, radius: 10, freq: 0.1
 #roots_chase throttle: 1.0, drag: 5, amp: 0.022, force: 20, thick: 0.1, radius: 0
