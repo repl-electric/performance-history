@@ -151,7 +151,28 @@ roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
-      [[:A3] 4]
+      [[:A3 :C5 :E4] 8]
+      [[:F4 :A6 :C5] 8]
+      [[:C3 :E5 :G4] 4]
+      [Zz 4]
+      [[:A3 :C5 :E4] 8]
+      [[:E4 :G5 :B3] 8]
+      [[:F4 :A6 :C5 :E5] 8]
+      [[:C3 :E5 :G4] 8]
+      [Zz 8]
+
+      [[:A3 :C5 :E4] 8]
+      [[:F4 :A6 :C5] 8]
+      [[:C3 :E5 :G4] 4]
+      [Zz 4]
+      [[:A3 :C5 :E4] 4]
+      [[:A3 :C5 :E4] 4]
+      [[:E4 :G5 :B3] 4]
+      [[:E4 :G5 :B3] 4]
+      [[:G4 :B6 :D5 :F4] 8]
+      [[:C4 :E5 :G4] 8]
+      [Zz 8]
+
       )
     chd = score.look[0]
     sleeps = score.look[-1]
