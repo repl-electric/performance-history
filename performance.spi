@@ -1,5 +1,5 @@
 load_support('piezoelectric_resonator'); use_bpm 127
-alive perc: 1, sop: 0
+alive perc: 1, sop: 1
 
 roots_chase target: :tree, drag: 4, force: 70, amp: 0.1, freq: 0.2, throttle: 0.4
 sea circle: 0
@@ -35,7 +35,6 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     fn = [method(:flop), method(:flop)].choose
     fn.(:g3,[50, 70].choose, sus: 2)
-
 
     sleep 1/4.0
     sleep 1/4.0
