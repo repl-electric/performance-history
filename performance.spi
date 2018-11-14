@@ -11,7 +11,7 @@ at{
 #slow_init
 
 
-overclock_cc motion: 0.27
+#overclock_cc motion: 0.27
 
 cam :chase
 
