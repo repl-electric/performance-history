@@ -5,8 +5,8 @@ alive perc: 1, sop: 0
 #eject_cpu_core
 
 
-smp Words[0], amp: 4
-say :beauty
+#smp Words[0], amp: 4
+say :practicality
 
 
 
