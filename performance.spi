@@ -46,7 +46,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
       flip :c4, sus: 2
     else
       flop_cc motion: 0.4
-      flop :e4, sus: 2
+      flop :e3, sus: 2
     end
 
     sleep 1/2.0
