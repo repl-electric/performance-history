@@ -4,17 +4,17 @@ alive perc: 0, sop: 0
 
 #overclock_cc motion: 0.21
 #zoomout
-at{
-  sync :unsyncable
-  overclock_on :f3
-}
+#at{
+#  sync :unsyncable
+ # overclock_on :f3
+#}
 #slow_init
 
 
 #overclock_cc motion: 0.27
 
-cam :chase
-vortex throttle: 0.1
+#cam :chase
+#vortex throttle: 0.1
 
 
 
