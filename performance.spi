@@ -8,7 +8,7 @@ overclock_cc motion: 0.19
 
 #roots_chase target: :spiral
 
-roots_chase radius: 2, force: 20, drag: 2
+roots_chase radius: 2, force: 20, drag: 6
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
