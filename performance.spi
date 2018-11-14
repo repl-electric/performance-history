@@ -37,6 +37,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/2.0
     #zoomout
     if spread(3,9).rot(0).look
+      flop_cc motion: 0.3
+
       flop :c4, sus: 2
 
     else
