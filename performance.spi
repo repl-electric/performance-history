@@ -4,7 +4,7 @@ alive perc: 1, sop:0
 #sea circle: 0.0, sphere: 0.0
 create_tree -2
 
-fx tube: 1
+fx tube: 1.00
 #eject_cpu_core
 
 #overclock_cc motion: 0.26
