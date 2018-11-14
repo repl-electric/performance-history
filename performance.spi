@@ -15,6 +15,9 @@ sea circle: 0
 #slow_init
 #cam :chase
 #create_tree -2
+cam :top
+
+
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
