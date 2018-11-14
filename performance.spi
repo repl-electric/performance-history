@@ -11,7 +11,7 @@ alive perc:0, sop:0
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    overclock :A3
+    overclock :A3,10
     #flop_cc motion: 0.60
     kal :E3, (line 5, 30, 32).look#, sus: 6 if spread(1,12).look
 
