@@ -4,7 +4,7 @@ alive perc: 0, sop: 0
 #create_cube
 overclock_cc motion: 0.19
 #zoomout
-#cam :chase
+cam :chase
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
