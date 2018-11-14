@@ -20,10 +20,10 @@ alive perc: 1, sop:0
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
-  with_bpm 127 do
+  with_bpm 127*2 do
    # kal :f3, sus: 1.0
     flip :c3,120, sus: 1
-    roots_chase amp: (ing 0.1, 0.3).look
+    roots_chase amp: (ing 0.1,  0.3,).look
     sleep 1/4.0
     sleep 1/4.0
     flip :a3,30
@@ -32,10 +32,10 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     with_transpose -12*0{
       if spread(7,11).look
-        ze (nit :g5 4 :a4 4 :e4 4).look,10, viz: true
+        ze (nit :g5, 4, :a4, 4, :e4, 4,).look,10, viz: true
       end
       if spread(3,8).look
-        ze (nit :g4 4 :a4 4 :e4 4 :a4 4 :e4 4 :c5 4).look, 10, viz: true
+        ze (nit :g4, 4, :a4, 4, :e4, 4, :a4, 4, :e4, 4, :c5, 4,).look, 10, viz: true
       end
     }
 
@@ -57,9 +57,9 @@ end
 
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
-  with_bpm 127*(ing 1, 0.5, 1, 0.25).look do
+  with_bpm 127*(ing 1,  0.5,  1,  0.25,).look do
     if spread(4,8).look
-      glitch_cc mode: (ing 0 2 3 5).look
+      glitch_cc mode: (ing 0, 2, 3, 5,).look
     end
     if spread(8,8).look
       dark :e3, 122
@@ -71,10 +71,10 @@ live_loop :glitch, sync: :unsyncable do; tick
       end
     end
     glitch_cc corode: 1.0
-    #glitch :c3, (ing 65 60 60 60).look
+    #glitch :c3, (ing 65, 60, 60, 60,).look
     at{
       sleep 0.25
-      #glitch :c3, 2.1*(ing 120 90 100 100    100 90 90 90).look
+      #glitch :c3, 2.1*(ing 120, 90, 100, 100,    100, 90, 90, 90,).look
     }
     glitch_cc corode: 0.2
 
@@ -105,8 +105,8 @@ live_loop :glitch, sync: :unsyncable do; tick
         }
     end
 
-    glitch_cc corode: (ine 0.8 0.9 128).look
-    glitch (ing :c3 :a3).look, 30 if spread(7,11).look
+    glitch_cc corode: (ine 0.8, 0.9, 128,).look
+    glitch (ing :c3, :a3,).look, 30 if spread(7,11).look
 
     sleep 1/4.0
     #glitch :fs3, 40
@@ -126,10 +126,10 @@ live_loop :glitch, sync: :unsyncable do; tick
     #glitch :gs3, 90 if spread(1,8).look
 
     #dark :cs3, 20
-    overclock_cc oct: (ing 0 -12 0 19).look
+    overclock_cc oct: (ing 0, -12, 0, 19,).look
 
     sleep 1/2.0
-    glitch (ing :cs4 :cs4 :cs4 :d4).look,127
+    glitch (ing :cs4, :cs4, :cs4, :d4,).look,127
     sleep 1/2.0
   end
 end
@@ -139,27 +139,27 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      [[:A3 :C5 :E4] 8]
-      [[:E4 :G5 :B3] 8]
-      [[:F4 :A6 :C5 :E5] 8]
-      [[:C3 :E5 :G4] 8]
-      [Zz 8]
+      [[:A3, :C5, :E4], 8],
+      [[:F4, :A6, :C5], 8],
+      [[:C3, :E5, :G4], 4],
+      [Zz, 4],
+      [[:A3, :C5, :E4], 8],
+      [[:E4, :G5, :B3], 8],
+      [[:F4, :A6, :C5, :E5], 8],
+      [[:C3, :E5, :G4], 8],
+      [Zz, 8],
 
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      [[:A3 :C5 :E4] 4]
-      [[:A3 :C5 :E4] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:G4 :B6 :D5 :F4] 8]
-      [[:C4 :E5 :G4] 8]
-      [Zz 8]
+      [[:A3, :C5, :E4], 8],
+      [[:F4, :A6, :C5], 8],
+      [[:C3, :E5, :G4], 4],
+      [Zz, 4],
+      [[:A3, :C5, :E4], 4],
+      [[:A3, :C5, :E4], 4],
+      [[:E4, :G5, :B3], 4],
+      [[:E4, :G5, :B3], 4],
+      [[:G4, :B6, :D5, :F4], 8],
+      [[:C4, :E5, :G4], 8],
+      [Zz, 8],
 
       )
     chd = score.look[0]
