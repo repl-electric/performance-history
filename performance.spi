@@ -22,7 +22,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     #flop_cc motion: 0.60
     kal :E3, (line 5, 30, 32).look#, sus: 6 if spread(1,12).look
 
-    flip :c3, 100, sus: 2 if spread(2,3).look
+    flip :c3, 100, sus: 2 if spread(2,3).rot(1).look
     flip :e3, 100, sus: 2 if spread(3,9).rot(1).look
 
     sleep 1/4.0
