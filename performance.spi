@@ -1,5 +1,5 @@
 load_support('piezoelectric_resonator'); use_bpm 127
-alive perc: 0, sop: 0
+alive perc: 1, sop: 0
 #start_init
 #create_cube
 #overclock_cc motion: 0.19
@@ -10,7 +10,7 @@ alive perc: 0, sop: 0
 
 #roots_chase target: :spiral
 
-create_sea
+
 
 #roots_chase radius: 1, force: 50, drag: 6, amp: 0.02, target: :spiral
 #stop
