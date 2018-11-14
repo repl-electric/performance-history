@@ -1,117 +1,36 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 
-alive perc: 1, sop:0
-#sea circle: 0.0, sphere: 0.0
-create_tree -2
 
-fx tube: 1.00
-#eject_cpu_core
-
-say :practicality
-stop
-
-#overclock_cc motion: 0.26
-#roots amp: 0.0
-
-
-#roots_chase thick: 0.06, throttle: 0.2, target: :cube, amp: 0.1
-
-
-#flip_cc motion: 0.50
-#flop_cc motion: 0.59
-#zoomout
-
-#cam :chase
-#roots_chase target: :spiral, throttle: 0.2, thick: 0.1, amp: 0.2
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
-  with_bpm 127*1 do
-   # kal :f3, sus: 1.0
-    #flip :c3,120, sus: 1
-    roots_chase amp: (ing 0.1,  0.3,).look
+  with_bpm 127 do
     sleep 1/4.0
     sleep 1/4.0
-    #flip :a3,30
+    sleep 1/2.0
 
-
-    if spread(7,9).look
-      if spread(1,4).look
-        sleep 1/4.0
-        sleep 1/4.0
-      else
-        #flop :E4, 50, sus: 1.0
-        sleep 1/4.0
-        sleep 1/4.0
-      end
-      #flip (knit :A4, 4 ,:F4,4, :E4,8).look, (ing 80, 70, 60, 40,).look, sus: 4.0
-      sleep 1/2.0
-      #flip :e3, 127-rand*10, sus: 1.02
-    else
-      #flop :A3, 1*(ing 50, 60, 70, 110,).look, sus: 1.0/2.0
-      sleep 1/2.0
-      #flip :E3, 70, sus: 1.0
-      #flip :g3, 50, sus: 4.0
-      sleep 1/2.0
-
-      #flop_cc motion: 0.4
-
-      #qbitsea :a4, 80, sus: 1
-      #flip :g3, 50, sus: 4.0
-      flop :A4, 15, sus: 4.0
-
-      at{
-        sleep 1/2.0
-        #glitch :g3, 50# if spread(1,4).look
-        #flop_cc motion: 0.50
-        #flip_cc motion: 0.50
-        }
-    end
-
-
-
- #   sleep 1/2.0
 
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
-
-    #flop :e3, 50-rand*15, sus: 4.0 if spread(1,9).rot(-1).look
-    #flop :c4, 50-rand*15, sus: 1.0 if spread(7,9).rot(-2).look
-
 
     sleep 1/2.0
     sleep 1/2.0
 
-    if spread(3,8).look
-      flop_cc motion: 0.3
-      flop :c4, 110-rand*15, sus: 2.0
-    else
-      flop_cc motion: 0.4
-      bitsea :f4, 120, sus: 1
-      flop :e3, 60-rand*10, sus: 1.0
-    end
-
-
     sleep 1/2.0
-    flop :c4, 127-rand*10, sus: 1.0/2.0
-
     sleep 1/2.0
   end
 end
 
-
-
 live_loop :glitch, sync: :unsyncable do; tick
-stop
   #sync :light
-  with_bpm 127*(ing 0.5,  0.5,  0.5,  0.25,).look do
+  with_bpm 127*(ing 1,).look do
     if spread(4,8).look
       glitch_cc mode: (ing 0, 2, 3, 5,).look
     end
     if spread(8,8).look
-      dark :e3, 122
+      #dark :e3, 122
       if spread(3,8).look
         at{
           sleep 0.5
@@ -143,19 +62,19 @@ stop
       #glitch :gs3,3# if spread(1,4).look
 
       sleep 1/2.0
-      glitch :ds3, 127# if spread(1,4).look
+      #glitch :ds3, 127# if spread(1,4).look
       sleep 1/2.0
 
-      glitch :fs3,20# if spread(1,4).look
+      #glitch :fs3,20# if spread(1,4).look
 
       at{
         sleep 1/2.0
-       # glitch :g3, 50# if spread(1,4).look
+        #glitch :g3, 50# if spread(1,4).look
         }
     end
 
     glitch_cc corode: (ine 0.8, 0.9, 128,).look
-    glitch (ing :c3, :a3,).look, 30 if spread(7,11).look
+    #glitch (ing :c3, :a3,).look, 30 if spread(7,11).look
 
     sleep 1/4.0
     #glitch :fs3, 40
@@ -175,51 +94,21 @@ stop
     #glitch :gs3, 90 if spread(1,8).look
 
     #dark :cs3, 20
-    overclock_cc oct: (ing 0, -12, 0, 19,).look
 
     sleep 1/2.0
-    glitch (ing :cs4, :cs4, :cs4, :d4,).look,127
+    #glitch (ing :cs4, :cs4, :cs4, :d4,).look,127
     sleep 1/2.0
   end
 end
 
-#roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
-#roots_chase throttle:0
+roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
 live_loop :light, sync: :unsyncable do; tick
-stop
   with_bpm 127*1 do
     score = (ing
-      [[:A3, :C5, :E4], 8],
-      [[:F4, :A6, :C5], 8],
-      [[:C3, :E5, :G4], 4],
-      [Zz, 4],
-      [[:A3, :C5, :E4], 8],
-      [[:E4, :G5, :B3], 8],
-      [[:F4, :A6, :C5, :E5], 8],
-      [[:C3, :E5, :G4], 8],
-      [Zz, 8],
-
-      [[:A3, :C5, :E4], 8],
-      [[:F4, :A6, :C5], 8],
-      [[:C3, :E5, :G4], 4],
-      [Zz, 4],
-      [[:A3, :C5, :E4], 4],
-      [[:A3, :C5, :E4], 4],
-      [[:E4, :G5, :B3], 4],
-      [[:E4, :G5, :B3], 4],
-      [[:G4, :B6, :D5, :F4], 8],
-      [[:C4, :E5, :G4], 8],
-      [Zz, 8],
-
+      [[:A3], 4],
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    at{
-      sleep 1
-      roots_chase target: (ing :spiral, :cube,).look, throttle: 0.2, thick: 0.1, amp: 0.2
-    }
-    #heat chd[0], 100, sus: sleeps, pads:[1,2,3]
-    #deep root(chd), 127, sus: sleeps*2, sat: 0.70, drive: 0.70
     sleep sleeps
   end
 end
