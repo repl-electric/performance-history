@@ -1,10 +1,10 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
-#start_init
+start_init
 
 at{
   sync :unsyncable
-  overclock_on :A3, 6
+#  overclock_on :A3, 6
 }
 
 
