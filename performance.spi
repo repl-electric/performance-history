@@ -11,9 +11,9 @@ at{
 #slow_init
 
 
-overclock_cc motion: 0.42
+overclock_cc motion: 0.27
 
-zoomout
+cam :chase
 
 
 
