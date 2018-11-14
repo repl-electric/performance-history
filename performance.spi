@@ -6,7 +6,7 @@ overclock_cc motion: 0.19
 #zoomout
 #cam :chase
 
-roots_chase target: :cube
+roots_chase target: :swirl
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
