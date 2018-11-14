@@ -70,7 +70,7 @@ end
 
 live_loop :light, sync: :unsyncable do; tick
 
-  roots_chase force: (ing 60 80).look, freq: 0.2, thick: 0.2, noise: 1,amp: 0.2, drag: 4
+  roots_chase force: (ing 60 80).look , freq: 0.2, thick: 0.2, noise: 1,amp: 0.2, drag: 4
   with_bpm 127*1 do
     score = (ing
       [[:A3 :C3 :f4] 8]
