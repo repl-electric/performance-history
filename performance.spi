@@ -1,6 +1,7 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
 
+create_cube
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
@@ -10,6 +11,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/2.0
 
+    ze (ing :G3 :A4 :E4).look
     ze (ing :G3 :A4 :E4).look
 
     sleep 1/4.0
