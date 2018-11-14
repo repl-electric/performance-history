@@ -46,11 +46,10 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   end
 end
 
-create_sea
 
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
-  perc=[0, 0, 0, 0,  0, 0, 0, 0,   0, 0, 0, 0,   0, 0, 0, 0]
+  perc=[1, 0, 0, 0,  0, 0, 0, 0,   0, 0, 0, 0,   0, 0, 0, 0]
   with_bpm 127*(ing 1).look do
     perc_machine perc
   end
