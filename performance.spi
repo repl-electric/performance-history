@@ -14,7 +14,7 @@ at{
 #cam :chase
 
 
-roots_chase target: :spiral
+roots_chase target: :spiral, throttle: 0.8
 create_sea
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
