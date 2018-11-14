@@ -6,8 +6,9 @@ alive perc: 0, sop: 1
 
 #overclock_on :F3
 
-overclock_cc motion: 0.6
-zoomout
+#overclock_cc motion: 0.21
+#zoomout
+cam :chase
 
 
 
