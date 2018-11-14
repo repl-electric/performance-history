@@ -9,7 +9,7 @@ overclock_cc motion: 0.19
 #zoomout
 #cam :chase
 
-roots_chase throttle: 1.0, drag: 5, amp: 0.01, force: 10, thick: 0.1, target: :cube
+roots_chase throttle: 1.0, drag: 5, amp: 0.02, force: 10, thick: 0.1, target: :cube
 
 
 stop
