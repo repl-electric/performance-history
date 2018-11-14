@@ -81,7 +81,7 @@ end
 
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
-  with_bpm 127*(ing 0.5 1).look do
+  with_bpm 127*(ing 0.5 1 0.5).look do
     if spread(4,8).look
       glitch_cc mode: (ing 0 2 3 5).look
     end
