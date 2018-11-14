@@ -10,6 +10,8 @@ at{
   overclock_on :F3, 50
 }
 
+overclock_cc motion: 0.40
+
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
