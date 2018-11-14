@@ -12,6 +12,7 @@ alive perc: 1, sop: 1
 #eject_cpu_core
 
 smp Words[//,0], amp: 7
+say :b
 
 
 
