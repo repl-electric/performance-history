@@ -7,7 +7,7 @@ start_init
 at{
   sync :unsyncable
   #WHAT AM I DOING!!!!
-  overclock_on :E3, 50
+  overclock_on :F3, 50
 }
 
 
@@ -25,10 +25,10 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
 
     if spread(3,7).rot(0).look
-      ze (ing :g4 :a4 :e4).look, 10, sus: 1, z: 1
+      ze (ing :g4, :a4, :e4,).look, 10, sus: 1, z: 1
     end
     if spread(7,11).rot(0).look
-      ze (nit :g4 4 :a4 4 :e4 4 :g4 4 :a4 4 :c5 4).look, 10, sus: 1
+      ze (nit :g4, 4, :a4, 4, :e4, 4, :g4, 4, :a4, 4, :c5, 4,).look, 10, sus: 1
     end
 
 
@@ -49,7 +49,7 @@ end
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
   perc=[0, 0, 0, 0,  0, 0, 0, 0,   0, 0, 0, 0,   0, 0, 0, 0]
-  with_bpm 127*(ing 1).look do
+  with_bpm 127*(ing 1,).look do
     perc_machine perc
   end
 end
@@ -58,9 +58,9 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
-      [[:A3] 8]
-      [[:F3] 8]
-      [[:C3] 8]
+      [[:A3], 8],
+      [[:F3], 8],
+      [[:C3], 8],
 
       )
     chd = score.look[0]
