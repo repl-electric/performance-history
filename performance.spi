@@ -11,7 +11,7 @@ roots_chase target: :spiral
 
 
 #roots_chase radius: 1, force: 50, drag: 6, amp: 0.02, target: :spiral
-stop
+#stop
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
@@ -52,7 +52,7 @@ live_loop :light, sync: :unsyncable do; tick
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-  #  heat chd,10, sus: sleeps, pads: [0]
+    heat chd,10, sus: sleeps, pads: [0]
 
     sleep sleeps
   end
