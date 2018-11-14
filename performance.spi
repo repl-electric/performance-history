@@ -193,3 +193,6 @@ live_loop :light, sync: :unsyncable do; tick
 end
 
 live_loop(:unsyncable) do;  sleep 1.0;end
+
+
+fx tube: 1
