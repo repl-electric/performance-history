@@ -45,7 +45,6 @@ live_loop :light, sync: :unsyncable do; tick
       [[_] 8]
 
       )
-    roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
     chd = score.look[0]
     sleeps = score.look[-1]
 
