@@ -19,7 +19,7 @@ roots_chase target: :spiral, throttle: 0.4, drag: 1, force: 100, amp: .4
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    kal :f4
+    kal :g4
     dark :C3
     flip :c3, sus: (ing 2 0.5 0.25).look if spread(2,3).look
     flip (ing :e3 :g3).look,100, sus: (ing 2 0.5 1.25).look if spread(3,9).rot(1).look
