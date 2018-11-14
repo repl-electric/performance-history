@@ -18,7 +18,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
       ze (ing :g3 :a4 :e4).look,100, sus: 2
     end
     if spread(3,9).look
-      ze (nit :g3 4 :a4 4 :e4 4).look,100, sus: 2, viz: true
+      ze (nit :g3 4 :a4 4 :e4 4 :a4).look,100, sus: 2, viz: true
     end
 
 
