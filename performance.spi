@@ -1,6 +1,7 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
 
+scene 1
 #start_init
 
 
@@ -30,7 +31,7 @@ end
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
   perc=[0, 0, 0, 0,  0, 0, 0, 0,   0, 0, 0, 0,   0, 0, 0, 0]
-  with_bpm 127*(ing 1,).look do
+  with_bpm 127*(ing 1).look do
     perc_machine perc
   end
 end
@@ -39,7 +40,7 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
-      [[_], 8],
+      [[_] 8]
 
       )
     chd = score.look[0]
