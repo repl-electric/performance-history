@@ -6,12 +6,15 @@ alive perc:0, sop:0
 
 
 
-overclock_cc motion: 0.31
+#overclock_cc motion: 0.27
 
 
 
+cam :chase
 
-zoomout
+
+
+#zoomout
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
