@@ -10,7 +10,7 @@ overclock_cc motion: 0.19
 #cam :chase
 
     roots throttle: 0.0
-    roots_chase throttle: 1.0, drag: 5, amp: 0.1, force: 1, thick: 0.1
+    roots_chase throttle: 1.0, drag: 5, amp: 0.1, force: 1, thick: 0.1, target: :cube
     vortex y: 1.25, throttle: 0.2, turb: 0, force: 0
     at{
       sleep 1
@@ -50,7 +50,7 @@ end
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
   perc=[0, 0, 0, 0,  0, 0, 0, 0,   0, 0, 0, 0,   0, 0, 0, 0]
-  with_bpm 127*(ing 1,).look do
+  with_bpm 127*(ing 1).look do
     perc_machine perc
   end
 end
@@ -59,7 +59,7 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
-      [[_], 8],
+      [[_] 8]
 
       )
     chd = score.look[0]
