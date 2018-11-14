@@ -36,9 +36,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
 
-    fn = [method(:flip),method(:flop)].choose
-    fn.(:e4,30, sus: 2)
 
+    flop(:e4,30, sus: 2)
 
     sleep 1/2.0
 
