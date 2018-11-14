@@ -1,12 +1,14 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
 
-at{
-  sync :unsyncable
+#at{
+#  sync :unsyncable
   #GULP HERE GOES
-  sleep 0.125
-  overclock_on :E3
-}
+#  sleep 0.125
+#  overclock_on :E3
+#}
+
+
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
