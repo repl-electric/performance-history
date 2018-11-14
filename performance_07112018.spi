@@ -1,7 +1,7 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 #scene 1
 
-fx tube: 1, reverb: 1
+#fx tube: 1, reverb: 1
 
 
 #linecolor cube: rand, s: rand*2, h: rand
