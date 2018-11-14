@@ -2,13 +2,12 @@ load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 1
 #start_init
 
-init! true
-stop
+
 #overclock_cc motion: 0.21
 #zoomout
 
 
-
+create_cube
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
