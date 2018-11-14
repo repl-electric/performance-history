@@ -3,7 +3,10 @@ load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop:0
 #sea circle: 0.0, sphere: 0.0
 create_tree -2
-end1
+
+
+eject_cpu_core
+
 #overclock_cc motion: 0.26
 #roots amp: 0.0
 
