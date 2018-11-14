@@ -15,7 +15,7 @@ alive perc: 1, sop: 0
 
 cam :chase
 #vortex throttle: 0.1
-
+burst 0
 
 
 
