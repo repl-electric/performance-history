@@ -1,8 +1,5 @@
 load_support('piezoelectric_resonator'); use_bpm 127
-alive perc:0,sop:0
-
-
-
+alive perc:0,sop:
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
