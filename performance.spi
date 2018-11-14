@@ -14,7 +14,7 @@ at{
 #overclock_cc motion: 0.27
 
 cam :chase
-roots_chase thick: 0.1
+roots_chase thick: 0.1, target: :cube
 
 
 
