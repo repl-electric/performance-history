@@ -129,7 +129,7 @@ live_loop :light, sync: :unsyncable do; tick
   end
 end
 
-sea wave: 0.1, ripple: 0
+sea wave: 0.2, ripple: 0
 
 
 live_loop(:unsyncable) do;  sleep 1.0;end
