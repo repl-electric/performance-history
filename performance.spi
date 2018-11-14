@@ -5,7 +5,10 @@ alive perc: 1, sop:0
 create_tree -2
 
 fx tube: 1.00
-eject_cpu_core
+#eject_cpu_core
+
+say :beauty
+stop
 
 #overclock_cc motion: 0.26
 #roots amp: 0.0
