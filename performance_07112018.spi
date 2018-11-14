@@ -105,7 +105,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
       #flip :g3, 30, sus: 4.0
       sleep 1/2.0
 
-      flop_cc motion: 0.5
+      flop_cc motion: 0.4
 
       #qbitsea :a4, 80, sus: 1
       #flip :g3, 50, sus: 4.0
