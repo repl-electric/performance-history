@@ -184,7 +184,7 @@ live_loop :light, sync: :unsyncable do; tick
       sleep 1
     roots_chase target: (ing :spiral :cube).look, throttle: 0.2, thick: 0.1, amp: 0.2
     }
-    heat chd[0], 100, sus: sleeps, pads:[1,2,3]
+    #heat chd[0], 100, sus: sleeps, pads:[1,2,3]
     deep root(chd), 127, sus: sleeps*2, sat: 0.70, drive: 0.70
     sleep sleeps
   end
