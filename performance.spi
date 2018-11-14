@@ -7,7 +7,7 @@ start_init
 at{
   sync :unsyncable
   #WHAT AM I DOING!!!!
-  overclock_on :A3, 10
+  overclock_on :E3, 50
 }
 
 
