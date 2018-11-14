@@ -35,13 +35,13 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     sleep 1/4.0
     sleep 1/4.0
-    flip :d4,60, sus: 2
+    flip :e4,60, sus: 2
 
 
     sleep 1/2.0
 
-    ze (ing :a3, :e4, :g4,).look, 10, z: 1, viz: true if spread(7,11).look
-    ze (nit :a3, 4,  :e3, 4, :g3, 4,  :a3, 4,  :e3, 4, :c4, 4,).look, 5 if spread(3,8).look
+    ze (ing :a3 :e4 :g4).look, 10, z: 1, viz: true if spread(7,11).look
+    ze (nit :a3 4  :e3 4 :g3 4  :a3 4  :e3 4 :c4 4).look, 5 if spread(3,8).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -73,7 +73,7 @@ end
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
   perc=[1, 1, 0, 0,  0, 0, 0, 0,   0, 0, 0, 0,   0, 0, 0, 0]
-  with_bpm 127*(ing 1, 0.5, 1, 0.5, 2,).look do
+  with_bpm 127*(ing 1 0.5 1 0.5 2).look do
     perc_machine perc
   end
 end
@@ -84,27 +84,27 @@ live_loop :light, sync: :unsyncable do; tick
   roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
   with_bpm 127*1 do
     score = (ing
-      [[:A3, :C5, :E4], 8],
-      [[:F4, :A6, :C5], 8],
-      [[:C3, :E5, :G4], 4],
-      [Zz, 4],
-      [[:A3, :C5, :E4], 8],
-      [[:E4, :G5, :B3], 8],
-      [[:F4, :A6, :C5, :E5], 8],
-      [[:C3, :E5, :G4], 8],
-      [Zz, 8],
+      [[:A3 :C5 :E4] 8]
+      [[:F4 :A6 :C5] 8]
+      [[:C3 :E5 :G4] 4]
+      [Zz 4]
+      [[:A3 :C5 :E4] 8]
+      [[:E4 :G5 :B3] 8]
+      [[:F4 :A6 :C5 :E5] 8]
+      [[:C3 :E5 :G4] 8]
+      [Zz 8]
 
-      [[:A3, :C5, :E4], 8],
-      [[:F4, :A6, :C5], 8],
-      [[:C3, :E5, :G4], 4],
-      [Zz, 4],
-      [[:A3, :C5, :E4], 4],
-      [[:A3, :C5, :E4], 4],
-      [[:E4, :G5, :B3], 4],
-      [[:E4, :G5, :B3], 4],
-      [[:G4, :B6, :D5, :F4], 8],
-      [[:C4, :E5, :G4], 8],
-      [Zz, 8],
+      [[:A3 :C5 :E4] 8]
+      [[:F4 :A6 :C5] 8]
+      [[:C3 :E5 :G4] 4]
+      [Zz 4]
+      [[:A3 :C5 :E4] 4]
+      [[:A3 :C5 :E4] 4]
+      [[:E4 :G5 :B3] 4]
+      [[:E4 :G5 :B3] 4]
+      [[:G4 :B6 :D5 :F4] 8]
+      [[:C4 :E5 :G4] 8]
+      [Zz 8]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
