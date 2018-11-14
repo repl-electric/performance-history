@@ -6,7 +6,7 @@ alive perc: 0, sop: 0
 #slow_init
 at{
   sync :unsyncable
-  overclock_on :E3
+  overclock_on :F3
 }
 
 
