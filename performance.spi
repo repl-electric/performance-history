@@ -2,6 +2,8 @@ load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 1
 #start_init
 
+
+slow_init
 overclock_on :A3
 
 
