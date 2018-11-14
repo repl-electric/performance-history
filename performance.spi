@@ -3,7 +3,6 @@ alive perc: 1, sop: 0
 
 
 
-end1
 stop
 
 #start_init
@@ -130,6 +129,9 @@ live_loop :light, sync: :unsyncable do; tick
     sleep sleeps
   end
 end
+
+
+fx tube: 1
 
 sea wave: 3, ripple: 0
 
