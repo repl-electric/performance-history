@@ -21,7 +21,7 @@ flop_cc drive: 0.35
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    kal :f4
+    kal :e4
 
     flip :c3, 100, sus: 2 if spread(2,3).rot(1)
     flip :e3, 50, sus: 2 if spread(3,9).rot(1)
