@@ -3,7 +3,8 @@ alive perc: 0, sop: 0
 #start_init
 
 
-fx reverb: 1, tube: 1
+#@$@@@@fx reverb: 1, tube: 1
+eject_cpu_core
 
 
 
@@ -26,27 +27,27 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   with_bpm 127 do
     kal :f4
 
-    # flip :C3, sus: (ing 2,  0.5, 0.25,).look if spread(2,3).look
-    # flip :e3, sus: (ing 2,  1.5, 0.5,).look if spread(3,9).look
+    # flip :C3, sus: (ing 2, 0.5 0.25).look if spread(2,3).look
+    # flip :e3, sus: (ing 2, 1.5 0.5).look if spread(3,9).look
 
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
 
 
-    # ze (ing :G4, :a4, :E4, ).look, 19 if spread(7,11).look
-#    ze (nit :G4, 4, :a4, 4, :E4, 4, :G4, 4, :a4, 4, :c5, 4, ).look, 19 , z: 1 if spread(3,8).look
+    # ze (ing :G4 :a4 :E4 ).look, 19 if spread(7,11).look
+#    ze (nit :G4 4 :a4 4 :E4 4 :G4 4 :a4 4 :c5 4 ).look, 19 , z: 1 if spread(3,8).look
 
     sleep 1/4.0
     sleep 1/4.0
 
- #   flop (ing :a3, :a3, :a3,).look, 20
+ #   flop (ing :a3 :a3 :a3).look, 20
 
 
     sleep 1/4.0
     sleep 1/4.0
 
-  #  flip (ing :f3, :a3, :a3,).look, 120
+  #  flip (ing :f3 :a3 :a3).look, 120
 
     sleep 1/2.0
     sleep 1/2.0
@@ -60,7 +61,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
       flop :e4,59, sus: 2
     end
 
-    overclock_cc oct: (ing 0, -12, 0, 19,).look
+    overclock_cc oct: (ing 0 -12 0 19).look
 
     sleep 1/2.0
     flip :C4
@@ -71,7 +72,7 @@ roots_chase amp: 0.1, drag: 2
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
   perc=[1, 1, 1, 1,  0, 0, 0, 0,   0, 0, 0, 0,   0, 0, 0, 0]
-  with_bpm 127*(ing 0.5,).look do
+  with_bpm 127*(ing 0.5).look do
     perc_machine perc
   end
 end
@@ -85,27 +86,27 @@ live_loop :light, sync: :unsyncable do; tick
   #roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
   with_bpm 127*1 do
     score = (ing
-      [[:A3, :C5, :E4], 8],
-      [[:F4, :A6, :C5], 8],
-      [[:C3, :E5, :G4], 4],
-      [Zz, 4],
-      [[:A3, :C5, :E4], 8],
-      [[:E4, :G5, :B3], 8],
-      [[:F4, :A6, :C5, :E5], 8],
-      [[:C3, :E5, :G4], 8],
-      [Zz, 8],
+      [[:A3 :C5 :E4] 8]
+      [[:F4 :A6 :C5] 8]
+      [[:C3 :E5 :G4] 4]
+      [Zz 4]
+      [[:A3 :C5 :E4] 8]
+      [[:E4 :G5 :B3] 8]
+      [[:F4 :A6 :C5 :E5] 8]
+      [[:C3 :E5 :G4] 8]
+      [Zz 8]
 
-      [[:A3, :C5, :E4], 8],
-      [[:F4, :A6, :C5], 8],
-      [[:C3, :E5, :G4], 4],
-      [Zz, 4],
-      [[:A3, :C5, :E4], 4],
-      [[:A3, :C5, :E4], 4],
-      [[:E4, :G5, :B3], 4],
-      [[:E4, :G5, :B3], 4],
-      [[:G4, :B6, :D5, :F4], 8],
-      [[:C4, :E5, :G4], 8],
-      [Zz, 8],
+      [[:A3 :C5 :E4] 8]
+      [[:F4 :A6 :C5] 8]
+      [[:C3 :E5 :G4] 4]
+      [Zz 4]
+      [[:A3 :C5 :E4] 4]
+      [[:A3 :C5 :E4] 4]
+      [[:E4 :G5 :B3] 4]
+      [[:E4 :G5 :B3] 4]
+      [[:G4 :B6 :D5 :F4] 8]
+      [[:C4 :E5 :G4] 8]
+      [Zz 8]
 
 
       )
