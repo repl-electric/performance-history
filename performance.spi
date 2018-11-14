@@ -10,6 +10,8 @@ alive perc: 1, sop: 0
 
 #roots_chase target: :spiral
 
+say :b
+stop
 fx drive: 1
 
 #eject_cpu_core
