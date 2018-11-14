@@ -1,104 +1,49 @@
 load_support('piezoelectric_resonator'); use_bpm 127
-alive perc:1, sop:0
+alive perc:0, sop: 0
 
-
-#create_cube
-
-
-
-#overclock_cc motion: 0.27
-
-#world time: 1
-#create_sea
-
-
-#zoomout
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
-  with_bpm 127*2 do
-    #flop_cc motion: 0.60
-
-    if spread(1,4).look
-      at{
-        sleep 0.5
-    #    kal :g4, 10
-      }
-    end
-   # kal :f4, (line 5, 30, 32).look
-
-#    flip :c3, 100, sus: 2 if spread(2,3).rot(1).look
-   # flip :e3, 100, sus: 2 if spread(3,9).rot(1).look
-
+  with_bpm 127 do
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
 
-    if spread(7,11).look
-    #  ze (ing :g3 :a4 :e4).look,100, 10, viz: true, z:1
-    end
-    if spread(3,9).look
-    #  ze (nit :g3 4 :a4 4 :e4 4 :a4 4 :e4 4 :c5 4).look, 5#, sus: 2
-    end
 
     sleep 1/4.0
     sleep 1/4.0
-
-    with_swing -0.1 {
-  #    flop :c3, 5.5*(ing 50 60 70 110).look, sus: 1.0/2.0
-    }
-
-    with_swing 0.1 {#((knit -0.1/2.0, 4, 0.1,4).look) {
-      #flip :c3, 127-rand*10, sus: 1.0/4.0
- #     flip (knit :f3,3,:D4,3,:C4,3).look, 50-rand*20, sus: 1.0#/2.0
-    }
-
     sleep 1/4.0
     sleep 1/4.0
-
- #   flip :f3, sus: 2
 
     sleep 1/2.0
     sleep 1/2.0
 
-    if spread(3,9).look
-      flop_cc motion: 0.3
-      flop :c4,110, sus: 2
-    else
-      flop_cc motion: 0.4
-      flop :E4,50, sus: 2
-
-    end
-
-#    flip (ing :c3 :e3 :a3 :e3  :f3 :f3 :c3 :g2).look,(ing 122 110 120 112).look, sus: (ing 2, 2, 4, 2, 4).look
-
     sleep 1/2.0
-    #flop :c4, 127-rand*10, sus: 1.0/2.0
-
     sleep 1/2.0
   end
 end
 
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
-  with_bpm 127*(ing 0.5 0.5 0.5).look do
+  perc= [0 0 0 0  0 0 0 0   0 0 0 0   0 0 0 0]
+  with_bpm 127*(ing 1).look do
     if spread(4,8).look
       glitch_cc mode: (ing 0 2 3 5).look
     end
     if spread(8,8).look
-      dark :e3, 122
+      #dark :e3, 122
       if spread(3,8).look
         at{
           sleep 0.5
-          dark :e3, 110
+          #dark :e3, 110
         }
       end
     end
     glitch_cc corode: 1.0
-    glitch :c3, (ing 65 60 60 60).look
+    #glitch :c3, (ing 65 60 60 60).look
     at{
       sleep 0.25
-      glitch :c3, 2.1*(ing 120 90 100 100    100 90 90 90).look
+      #glitch :c3, 2.1*(ing 120 90 100 100    100 90 90 90).look
     }
     glitch_cc corode: 0.2
 
@@ -118,7 +63,7 @@ live_loop :glitch, sync: :unsyncable do; tick
       #glitch :gs3,3# if spread(1,4).look
 
       sleep 1/2.0
-      #glitch :ds3, 127# if spread(1,4).look
+      glitch :ds3, 127 if spread(1,4).look
       sleep 1/2.0
 
       #glitch :fs3,20# if spread(1,4).look
@@ -133,15 +78,15 @@ live_loop :glitch, sync: :unsyncable do; tick
     #glitch (ing :c3 :a3).look, 30 if spread(7,11).look
 
     sleep 1/4.0
-    glitch :fs3, 40
+    #glitch :fs3, 40
     sleep 1/4.0
 
     sleep 1/4.0
-    glitch :ds3, 127
+    #glitch :ds3, 127
     sleep 1/4.0
 
     with_swing 0.1 {#((knit -0.1/2.0, 4, 0.1,4).look) {
-      glitch :gs3, 40
+      #glitch :gs3, 40
     }
 
     sleep 1/2.0
@@ -150,9 +95,9 @@ live_loop :glitch, sync: :unsyncable do; tick
     #glitch :gs3, 90 if spread(1,8).look
 
     #dark :cs3, 20
-    overclock_cc oct: (ing 0 -12 0 19).look
+
     sleep 1/2.0
-    glitch (ing :cs4 :cs4 :cs4 :d4).look,127
+    #glitch (ing :cs4 :cs4 :cs4 :d4).look,127
     sleep 1/2.0
   end
 end
@@ -161,48 +106,12 @@ roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      [[:A3 :C5 :E4] 8]
-      [[:E4 :G5 :B3] 8]
-      [[:F4 :A6 :C5 :E5] 8]
-      [[:C3 :E5 :G4] 8]
-      [Zz 8]
-
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      [[:A3 :C5 :E4] 4]
-      [[:A3 :C5 :E4] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:G4 :B6 :D5 :F4] 8]
-      [[:C4 :E5 :G4] 8]
-      [Zz 8]
-
+      [[:A3] 4]
       )
-    tick_reset_all
     chd = score.look[0]
     sleeps = score.look[-1]
-    #deep root(chd),127, sus: sleeps
-    heat_on chd[0], 100, sus: sleeps, pads: [0]
-    stop
     sleep sleeps
   end
 end
 
 live_loop(:unsyncable) do;  sleep 1.0;end
-
-
-#fx tube: 1.00, reverb: 1.00
-
-
-#smp Words[0]
-say :practicality
-
-
-
-#eject_cpu_core
