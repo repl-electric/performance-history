@@ -8,7 +8,7 @@ alive perc: 0, sop: 0
 #roots_chase target: :spiral, radius: 10, freq: 0.1
 #roots_chase throttle: 1.0, drag: 5, amp: 0.022, force: 20, thick: 0.1, radius: 0
 
-roots_chase radius: 0, force: 20
+roots_chase radius: 1, force: 20
 
 
 #roots_chase radius: 1, force: 50, drag: 6, amp: 0.02, target: :spiral
