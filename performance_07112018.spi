@@ -109,7 +109,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
       #qbitsea :a4, 80, sus: 1
       flip :g3, 50, sus: 4.0
-      #flop :A4, 15, sus: 4.0
+      flop :A4, 15, sus: 4.0
 
       at{
         sleep 1/2.0
