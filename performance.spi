@@ -39,6 +39,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     end
 
     sleep 1/2.0
+    flop :c4, 127-rand*10, sus: 1.0/2.0
+
     sleep 1/2.0
   end
 end
