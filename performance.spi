@@ -8,7 +8,15 @@ at{
   sync :unsyncable
   overclock_on :f3
 }
-slow_init
+#slow_init
+
+
+overclock_cc motion: 0.42
+
+zoomout
+
+
+
 
 
 
