@@ -38,7 +38,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     overclock_cc oct: (ing 0 -12 0 19).look
 
-    flip :f3
+    flip :f3, 100
 
 
     sleep 1/2.0
