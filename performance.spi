@@ -4,7 +4,7 @@ alive perc: 0, sop: 0
 #create_cube
 overclock_cc motion: 0.19
 #zoomout
-#cam :chase
+cam :chase
 
 roots_chase target: :spiral
 #roots_chase throttle: 1.0, drag: 5, amp: 0.022, force: 20, thick: 0.1, radius: 0
