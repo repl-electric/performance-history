@@ -36,7 +36,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
     if spread(1,12).look
       flop(:g4,80, sus: 1)
-      ze :d4
+      ze :d4, sus: 12
 
     end
 
