@@ -8,7 +8,11 @@ alive perc: 1, sop: 1
 fx tube: 1, reverb: 1
 
 
-eject_cpu_core
+#eject_cpu_core
+
+smp Words[0], amp: 3
+
+
 stop
 
 
