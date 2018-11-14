@@ -1,5 +1,9 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
+
+
+
+
 #start_init
 #scene 1
 #init! true
@@ -24,11 +28,11 @@ alive perc: 1, sop: 0
 #roots_chase amp: 0.1, drag: 5
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
-  with_bpm 127 do
+  with_bpm 127*2 do
     kal :e4, sus: 1
 
-    flip :c3, 100, sus: 2 if spread(2,3).rot(1)
-    flip :e3, 50, sus: 2 if spread(3,9).rot(1)
+    # flip :c3, 100, sus: 2 if spread(2,3).rot(1)
+    # flip :e3, 50, sus: 2 if spread(3,9).rot(1)
 
 
     if spread(7,11).look
@@ -39,14 +43,14 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     rocks orbit: 100
     sleep 1/4.0
     if spread(1,12).look
-      flop(:e4,80, sus: 1)
-      ze :d4, sus: 12
+#      flop(:e4,80, sus: 1)
+#      ze :d4, sus: 12
 
     end
 
     sleep 1/4.0
 
-    flop(:e4,30, sus: 2)
+ #   flop(:e4,30, sus: 2)
 
     sleep 1/2.0
 
@@ -89,7 +93,7 @@ live_loop :glitch, sync: :unsyncable do; tick
 end
 
 #create_sea
-sea dir: 0
+
 live_loop :light, sync: :unsyncable do; tick
   roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
   with_bpm 127*1 do
