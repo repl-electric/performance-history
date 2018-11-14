@@ -195,4 +195,8 @@ end
 live_loop(:unsyncable) do;  sleep 1.0;end
 
 
-fx tube: 1.00, reverb: 1.00
+#fx tube: 1.00, reverb: 1.00
+
+
+
+eject_cpu_core
