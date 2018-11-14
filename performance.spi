@@ -22,7 +22,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127*1 do
    # kal :f3, sus: 1.0
-    flip :c3,120, sus: 1
+    #flip :c3,120, sus: 1
     roots_chase amp: (ing 0.1, 0.3).look
     sleep 1/4.0
     sleep 1/4.0
