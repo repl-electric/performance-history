@@ -11,7 +11,7 @@ alive perc: 1, sop: 1
 
 #eject_cpu_core
 
-smp Words[0], amp: 5
+smp Words[0], amp: 4
 
 
 stop
