@@ -13,6 +13,10 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     if spread(3,7).rot(1).look
       ze (ing :g4 :a4 :e4).look, 10, sus: 1
     end
+    if spread(7,11).rot(1).look
+      ze (ing :g4 :a4 :e4).look, 10, sus: 1
+    end
+
 
 
     sleep 1/4.0
