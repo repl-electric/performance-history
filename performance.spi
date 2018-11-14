@@ -9,6 +9,7 @@ alive perc: 0, sop: 1
 #overclock_cc motion: 0.21
 #zoomout
 cam :chase
+world time: 1
 
 
 
