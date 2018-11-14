@@ -176,7 +176,7 @@ live_loop :light, sync: :unsyncable do; tick
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    deep :A4,127
+    deep root(chd),127
     heat chd[0]+12, 1, sus: sleeps
     sleep sleeps
   end
