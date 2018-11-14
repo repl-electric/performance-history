@@ -11,7 +11,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
 
     if spread(3,7).rot(1).look
-      ze :a2
+      ze (ing :a2).look
 
     else
 
