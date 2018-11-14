@@ -8,6 +8,10 @@ alive perc: 1, sop: 1
 fx tube: 1, reverb: 1
 
 
+eject_cpu_core
+stop
+
+
 #at{
 #  sync :unsyncable
   #GULP HERE GOES
