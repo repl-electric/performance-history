@@ -3,7 +3,7 @@ alive perc: 0, sop: 0
 #start_init
 
 create_cube
-overclock_cc motion: 0.5
+overclock_on
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
