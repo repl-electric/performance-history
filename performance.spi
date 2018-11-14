@@ -4,6 +4,11 @@ alive perc: 0, sop: 0
 
 #overclock_cc motion: 0.21
 #zoomout
+at{
+  sync :unsyncable
+  overclock_on :a2
+}
+
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
@@ -16,8 +21,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/2.0
 
-    ze (ing :a3, :e4, :g4,).look, 10, z: 1 if spread(7,11).look
-    ze (nit :a3, 4,  :e3, 4, :g3, 4,  :a3, 4,  :e3, 4, :c4, 4,).look, 5 if spread(3,8).look
+    ze (ing :a3 :e4 :g4).look, 10, z: 1 if spread(7,11).look
+    ze (nit :a3 4  :e3 4 :g3 4  :a3 4  :e3 4 :c4 4).look, 5 if spread(3,8).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -35,7 +40,7 @@ end
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
   perc=[0, 0, 0, 0,  0, 0, 0, 0,   0, 0, 0, 0,   0, 0, 0, 0]
-  with_bpm 127*(ing 1,).look do
+  with_bpm 127*(ing 1).look do
     perc_machine perc
   end
 end
@@ -44,9 +49,9 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
-      [[:A3, :C3], 8],
-      [[:F3, :a3], 8],
-      [[:C3, :e3], 8],
+      [[:A3 :C3] 8]
+      [[:F3 :a3] 8]
+      [[:C3 :e3] 8]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
