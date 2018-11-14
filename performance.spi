@@ -1,7 +1,7 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
 
-roots_chase target: :spiral, drag: 3, force: 100, amp: 0.1
+roots_chase target: :spiral, drag: 3, force: 100, amp: 0.02
 
 #at{
 #  sync :unsyncable
