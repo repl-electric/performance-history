@@ -6,7 +6,7 @@ alive perc: 0, sop: 0
 at{
   sync :unsyncable
   #WHAT AM I DOING!!!!
-  overclock_on :A3, 10
+  overclock_off :A3, 10
 }
 
 
