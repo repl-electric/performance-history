@@ -50,7 +50,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/2.0
 
     if spread(3,9).look
-      flop_cc motion: 0.2
+      flop_cc motion: 0.3
       flop :A4
     else
       flop :E4
