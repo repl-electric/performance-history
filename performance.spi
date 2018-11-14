@@ -10,7 +10,7 @@ alive perc: 1, sop: 0
 
 #roots_chase target: :spiral
 
-say :n
+say :b
 stop
 fx drive: 1
 
