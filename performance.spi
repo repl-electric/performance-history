@@ -15,14 +15,14 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
 
-    flip :c3, 60, sus: (ing 1 0.5 0.25).look
+    flip :c3, 60, sus: (ing 2, 0.5, 0.25,).look
 
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
 
-    ze (ing :G3 :A4 :E4).look, sus: 2, z: 1 if spread(7,11).look
-    ze (nit :G3 4  :A4 4 :E4 4 :G3 4  :A4 4 :C5 4).look if spread(3,8).look
+    ze (ing :G3, :A4, :E4,).look, sus: 2, z: 1 if spread(7,11).look
+    ze (nit :G3, 4,  :A4, 4, :E4, 4, :G3, 4,  :A4, 4, :C5, 4,).look if spread(3,8).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -40,7 +40,7 @@ end
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
   perc=[0, 0, 0, 0,  0, 0, 0, 0,   0, 0, 0, 0,   0, 0, 0, 0]
-  with_bpm 127*(ing 1).look do
+  with_bpm 127*(ing 1,).look do
     perc_machine perc
   end
 end
@@ -49,10 +49,10 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
-      [[:A3] 8]
-      [[:F3] 8]
-      [[:C3] 8]
-      REST4
+      [[:A3], 8],
+      [[:F3], 8],
+      [[:C3], 8],
+      REST4,
       )
     chd = score.look[0]
     sleeps = score.look[-1]
