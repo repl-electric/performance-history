@@ -17,7 +17,7 @@ alive perc: 1, sop: 0
 
 #slow_init
 
-
+roots_chase amp: 0.1
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
