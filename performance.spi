@@ -7,7 +7,7 @@ overclock_cc motion: 0.19
 #cam :chase
 
 #roots_chase target: :spiral
-roots_chase throttle: 1.0, drag: 5, amp: 0.022, force: 10, thick: 0.1, radius: 0
+roots_chase throttle: 1.0, drag: 5, amp: 0.022, force: 20, thick: 0.1, radius: 0
 
 
 #roots_chase radius: 1, force: 50, drag: 6, amp: 0.02, target: :spiral
@@ -15,7 +15,7 @@ stop
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    roots_chase force: (ing 2, 5.0,).look
+    roots_chase force: (ing 2 5.0).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -39,7 +39,7 @@ stop
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
   perc=[0, 0, 0, 0,  0, 0, 0, 0,   0, 0, 0, 0,   0, 0, 0, 0]
-  with_bpm 127*(ing 1,).look do
+  with_bpm 127*(ing 1).look do
     perc_machine perc
   end
 end
@@ -47,7 +47,7 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
-      [[:a3], 8],
+      [[:a3] 8]
 
       )
     chd = score.look[0]
