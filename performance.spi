@@ -8,6 +8,7 @@ at{
   sync :unsyncable
   overclock_on :f3
 }
+slow_init
 
 
 
