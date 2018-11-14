@@ -12,7 +12,9 @@ at{
 #overclock_cc motion: 0.50
 #slow_init
 
-cam :chase
+fx reverb: 1
+
+#cam :chase
 
 roots_chase target: :spiral, throttle: 0.4, drag: 1, force: 100, amp: .4
 #create_sea
