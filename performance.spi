@@ -11,14 +11,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/2.0
 
-
-    if spread(7,11).rot(1).look
-      ze (ing :g3), 10
-    else
-
-    end
-
-
+    ze (ing :c3).look, 10
 
     sleep 1/4.0
     sleep 1/4.0
@@ -45,7 +38,7 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
-      [[:A3] 8]
+      [[_] 8]
 
       )
     chd = score.look[0]
