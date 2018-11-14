@@ -12,7 +12,7 @@ roots_chase target: :spiral
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    roots_chase force: (ing 0.5, 5.0,).look
+    roots_chase force: (ing 1 5.0).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -36,7 +36,7 @@ stop
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
   perc=[0, 0, 0, 0,  0, 0, 0, 0,   0, 0, 0, 0,   0, 0, 0, 0]
-  with_bpm 127*(ing 1,).look do
+  with_bpm 127*(ing 1).look do
     perc_machine perc
   end
 end
@@ -44,7 +44,7 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
-      [[:a3], 8],
+      [[:a3] 8]
 
       )
     chd = score.look[0]
