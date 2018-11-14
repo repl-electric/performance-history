@@ -6,7 +6,7 @@ alive perc: 0, sop: 0
 #zoomout
 at{
   sync :unsyncable
-  overclock_on :e3
+  overclock_on :f3
 }
 
 
