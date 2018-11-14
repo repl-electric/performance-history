@@ -10,6 +10,7 @@ alive perc: 0, sop: 0
 
 #roots_chase target: :spiral
 
+create_sea
 
 #roots_chase radius: 1, force: 50, drag: 6, amp: 0.02, target: :spiral
 #stop
