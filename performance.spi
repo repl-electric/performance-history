@@ -33,7 +33,9 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
 
-    flop :g3,[100, 70].choose, sus: 4
+    fn = [method(:flop), method(:flop)].choose
+
+    fn.(:g3,[100, 70].choose, sus: 4)
 
 
     sleep 1/4.0
