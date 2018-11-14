@@ -61,6 +61,6 @@ live_loop :light, sync: :unsyncable do; tick
 end
 
 
-roots_chase freq: 0.2, thick: 0.15, noise: 1,amp: 0.2, drag: 2
+roots_chase freq: 0.9, thick: 0.15, noise: 1,amp: 0.2, drag: 2
 
 live_loop(:unsyncable) do;  sleep 1.0;end
