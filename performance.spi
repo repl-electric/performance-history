@@ -13,7 +13,7 @@ alive perc: 1, sop: 0
 
 #overclock_cc motion: 0.27
 
-#cam :chase
+cam :chase
 #vortex throttle: 0.1
 
 
