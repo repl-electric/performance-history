@@ -15,11 +15,15 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/2.0
 
 
+    with_swing -0.1 {
+      flop :c3, 5.5*(ing 50 60 70 110).look, sus: 1.0/2.0
+    }
+
+
     sleep 1/4.0
     sleep 1/4.0
 
     flip  :f3, 55, sus: 2.0
-
 
     sleep 1/4.0
     sleep 1/4.0
