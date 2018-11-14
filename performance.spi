@@ -2,7 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
 
 
-start_init
+#start_init
 
 at{
   sync :unsyncable
@@ -11,7 +11,7 @@ at{
   overclock_on :F3, 50
 }
 
-overclock_cc motion: 0.40
+overclock_cc motion: 0.56
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
