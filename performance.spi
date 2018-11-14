@@ -8,6 +8,7 @@ at{
 #  overclock_on :f3
 }
 rocks orbit: 100
+create_bird
 #overclock_cc motion: 0.27
 #slow_init
 
