@@ -8,6 +8,8 @@ at{
 #  overclock_on :f3
 }
 
+overclock_cc motion: 0.5
+
 
 
 
