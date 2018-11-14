@@ -6,7 +6,10 @@ alive perc:0, sop:0
 
 
 
-overclock_on :F3
+#overclock_on :F3
+
+zoomout
+
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
