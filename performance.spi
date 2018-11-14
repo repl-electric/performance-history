@@ -19,6 +19,10 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
     #flop_cc motion: 0.60
+
+    if spread(1,4).look
+      at{sleep 0.5;     kal :f4, (line 5, 30, 32).look }
+    end
     kal :f4, (line 5, 30, 32).look
 
     flip :c3, 100, sus: 2 if spread(2,3).rot(1).look
