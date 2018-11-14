@@ -11,7 +11,7 @@ alive perc: 0, sop: 0
 #roots_chase target: :spiral
 
 
-roots_chase radius: 1, force: 50, drag: 6, amp: 0.02, target: :spiral
+#roots_chase radius: 1, force: 50, drag: 6, amp: 0.02, target: :spiral
 #stop
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
