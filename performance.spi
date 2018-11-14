@@ -20,7 +20,7 @@ alive perc: 1, sop: 0
 #burst 0
 
 
-overclock_on :A3
+overclock_on :C3
 
 
 
