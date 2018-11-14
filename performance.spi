@@ -69,7 +69,7 @@ end
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
   perc=[1, 1, 0, 0,  0, 0, 0, 0,   0, 0, 0, 0,   0, 0, 0, 0]
-  with_bpm 127*(ing 1).look do
+  with_bpm 127*(ing 1 0.5 1 0.5 1).look do
     perc_machine perc
   end
 end
