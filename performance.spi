@@ -11,7 +11,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
 
-    roots_chase force: (ing 0.3 5.0).look
+    roots_chase force: (ing 0.5 5.0).look
 
 
     sleep 1/4.0
