@@ -131,7 +131,7 @@ live_loop :light, sync: :unsyncable do; tick
 end
 
 
-fx tube: 1
+fx tube: 1, reverb: 1
 
 sea wave: 3, ripple: 0
 
