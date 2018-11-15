@@ -40,6 +40,8 @@ live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
       [[:a3] 8]
+      [[:f3] 8]
+
 
       )
     chd = score.look[0]
