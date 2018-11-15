@@ -1,12 +1,12 @@
 load_support('piezoelectric_resonator'); use_bpm 127
-alive perc: 0, sop: 0
+alive perc: 1, sop: 0
 #start_init
-
+zoomout
 #  say :sleep
 
 
 #overclock_cc motion: 0.27
-cam :chase
+
 
 
 
