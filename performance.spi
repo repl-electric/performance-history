@@ -6,7 +6,7 @@ alive perc: 0, sop: 0
 #say :sleep
 overclock_cc motion: 0.27
 
-create_sea
+#create_sea
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
@@ -30,6 +30,13 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     sleep 1/2.0
     sleep 1/2.0
+
+    if spread(3,9).rot(0).look
+      flop :e3
+    else
+
+    end
+
 
     sleep 1/2.0
     sleep 1/2.0
