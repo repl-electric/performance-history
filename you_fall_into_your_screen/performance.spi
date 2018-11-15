@@ -13,7 +13,7 @@ bitsea_cc octave: 0.55  #╟▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓�
 # zero_cc more:  0.40
 # zero_cc noise: 0.90
 # zero_cc wet:   0.90
-#focus 4, 3
+focus 4, 5
 live_loop :fall_into_your_screen, sync: :unsyncable do; tick
   #corrupt :fs2
   score=(ing
