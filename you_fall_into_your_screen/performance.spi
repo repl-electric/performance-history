@@ -51,7 +51,7 @@ live_loop :playing_piano_through_a_keyhole, sync: :hit do;tick
   end
 end
 
-alivecol 0.2
+alivecol 0.3
 
 #zero_on :F5
 # zero_cc pulse: 0.40
