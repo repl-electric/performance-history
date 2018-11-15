@@ -10,6 +10,8 @@ alive rotate: 1.0
   alive color: (rand+0.2*0.8)*-1.0
 }
 
+stop
+
 
 
 #camlogo logo: 1, off: 1
