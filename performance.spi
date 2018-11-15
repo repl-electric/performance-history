@@ -10,8 +10,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
-    ze (ing :g3).look if spread(7,11).look
-    ze (ing :g4).look, z: 1 if spread(3,7).look
+    ze (ing :g3,).look if spread(7,11).look
+    ze (ing :g4,).look, z: 1 if spread(3,7).look
 
 
     sleep 1/4.0
@@ -30,7 +30,7 @@ end
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
   perc=[0, 0, 0, 0,  0, 0, 0, 0,   0, 0, 0, 0,   0, 0, 0, 0]
-  with_bpm 127*(ing 1).look do
+  with_bpm 127*(ing 1,).look do
     perc_machine perc
   end
 end
@@ -39,8 +39,8 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
-      [[:a3] 8]
-      [[:f3] 8]
+      [[:a3], 8],
+      [[:g3], 8],
 
 
       )
