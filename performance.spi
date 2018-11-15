@@ -13,7 +13,7 @@ at{
 #overclock_cc motion: 0.27
 #zoomout
 #create_sea
-roots_chase force: 20
+roots_chase force: 20, radius: 0.1
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   cam :chase
   #dark :c3
