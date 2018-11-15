@@ -23,7 +23,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/2.0
 
-    linecolor r: rand
+    linecolor cube: 1,r: rand
     ze (ring :g3, :a3, :e3).look,z:1, sus: 4 if spread(3,7).look
     ze (knit :g3,4, :a3,4, :e3,4,  :g3,4, :a3,4, :c4,4).look,z:1 if spread(7,11).look
 
