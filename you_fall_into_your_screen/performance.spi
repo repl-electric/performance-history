@@ -3,7 +3,7 @@ ROOT="/Users/josephwilk/Workspace/repl-electric/adventures-in-algorhythm/you_fal
 camlogo logo: 1
 null :cs2
 
-bitsea_on :a2
+bitsea_on :e3
 
 #focus
 live_loop :fall_into_your_screen, sync: :unsyncable do; tick
