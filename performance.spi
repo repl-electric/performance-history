@@ -24,8 +24,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/2.0
 
     overclock_cc oct: (ing 0 -12 0 19).look
-    unity "/linecolor/cube/b",0.1
-    #linecolor cube: 1.0, s:  rand, h: rand, b: rand, delay: true
+    #unity "/linecolor/cube/b",0.1
+    linecolor cube: 1.0, s:  rand, h: rand, b: rand, delay: true
 
 
     with_transpose -12{
