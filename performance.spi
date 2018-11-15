@@ -5,8 +5,8 @@ alive perc: 0, sop: 0
 #  say :sleep
 
 
-overclock_cc motion: 0.27
-
+#overclock_cc motion: 0.27
+cam :chase
 
 
 
