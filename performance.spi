@@ -15,7 +15,7 @@ at{
 #create_sea
 roots_chase force: 100, radius: 0.1
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
-  cam :chase
+  #cam :chase
   dark :c3
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
