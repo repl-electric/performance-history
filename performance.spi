@@ -4,9 +4,8 @@ alive perc: 1, sop: 1
 #start_init
 
 #cam# :top
-end1
 
-fx drive: 1.00
+fx drive: 1.00, reverb: 1
 
 # at{
 #   sync :unsyncable
