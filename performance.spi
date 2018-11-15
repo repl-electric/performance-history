@@ -1,8 +1,8 @@
 load_support('piezoelectric_resonator'); use_bpm 127
-scene 1
+
 alive perc: 0, sop: 0
 #start_init
-
+init! true
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
