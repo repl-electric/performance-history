@@ -6,7 +6,12 @@ alive perc: 0, sop: 0
 #flop_x :a3
 #flop_cc motion: 0.28
 
-say :begin
+at{
+  sync :unsyncable
+  overclock_on :A3
+  say :raise
+}
+
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
