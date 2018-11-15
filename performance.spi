@@ -8,9 +8,9 @@ overclock_cc motion: 0.27
 
 #create_sea
 #cam :chase
-eject_cpu_core
-end1
-fx drive: 1.00, reverb: 1.00
+#eject_cpu_core
+#end1
+#fx drive: 1.00, reverb: 1.00
 
 
 
@@ -18,8 +18,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
     roots_chase freq: rand*2
-    flip :c3,60, sus: (ing 2 0.5 0.125).look if spread(2,3).look
-    flip :e3,60, sus: (ing 0.5 2 1.125).look if spread(3,9).rot(-1).look
+ #   flip :c3,60, sus: (ing 2 0.5 0.125).look if spread(2,3).look
+ #   flip :e3,60, sus: (ing 0.5 2 1.125).look if spread(3,9).rot(-1).look
 
     sleep 1/4.0
     sleep 1/4.0
