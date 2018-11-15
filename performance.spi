@@ -10,6 +10,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/2.0
 
+    ze (ring :g3).look if spread(1,1).look
 
 
     sleep 1/4.0
