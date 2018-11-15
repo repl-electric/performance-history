@@ -11,7 +11,7 @@ at{
 }
 
 overclock_cc motion: 0.27
-zoomout
+#zoomout
 
 slow_init
 
@@ -39,6 +39,13 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     sleep 1/2.0
     sleep 1/2.0
+
+    if spread(3,9).rot(0).look
+      flop :c4
+    else
+
+    end
+
 
     sleep 1/2.0
     sleep 1/2.0
