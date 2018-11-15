@@ -16,7 +16,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   with_bpm 127 do
 
     flip :c3,60, sus: (ing 2 0.5 0.125).look
-    flip :e3,60, sus: (ing 1 0.5 1.125).look
+    flip :e3,60, sus: (ing 0.5 1  1.125).look
 
 
     sleep 1/4.0
