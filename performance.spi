@@ -35,7 +35,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
 
-    flip :f3,69, sus: (ing 1 0.25 1.5).look if spread(3,2).rot(0).look
+    flip :f3,69, sus: (ing 1 0.25 1.5).look if spread(3,6).rot(0).look
 
 
     sleep 1/2.0
