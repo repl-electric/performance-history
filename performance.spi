@@ -7,12 +7,10 @@ alive perc: 0, sop: 0
 #flop_cc motion: 0.28
 
 
-
-#overclock_cc motion: 0.24
+#overclock_cc motion: 0.26
 
 
 #slow_init
-
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
@@ -24,6 +22,9 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
+
+    overclock_cc oct: (ing 0 -12 0 19).look
+
 
     with_transpose -12{
     ze (ring :G5, :A4, :E4).look, z: 1 if spread(7,11).look
