@@ -34,6 +34,7 @@ end
 # zero_cc wet:   0.90
 #focus 4, 0.1
 live_loop :fall_into_your_screen, sync: :unsyncable do; tick
+  stop
   #corrupt :fs2
   score=(ing
     [:b3  :d4  :fs3] Zz
