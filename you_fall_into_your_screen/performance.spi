@@ -8,14 +8,14 @@ bitsea_cc octave: 0.55  #╟▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓�
 #invcol 0
 
 
-#zero_on :F4
-zero_cc pulse: 0.00
-zero_cc more:  0.00
-zero_cc noise: 0.00
-zero_cc wet:   0.00
+zero_on :F5
+zero_cc pulse: 0.50
+zero_cc more:  0.40
+zero_cc noise: 0.90
+zero_cc wet:   0.90
 
 
-focus 4, 3
+#focus 4, 3
 live_loop :fall_into_your_screen, sync: :unsyncable do; tick
   #corrupt :fs2
   score=(ing
