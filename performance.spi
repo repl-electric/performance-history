@@ -3,7 +3,12 @@ alive perc: 0, sop: 0
 
 ##start_init
 
-say :begin
+at{
+  sync :unsyncable
+  overclock_on :a3
+  say :raise
+}
+
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
