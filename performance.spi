@@ -9,7 +9,7 @@ at{
   say :sleep
 }
 
-overclock_cc motion: 0.40
+overclock_cc motion: 0.36
 
 
 
