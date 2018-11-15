@@ -1,5 +1,5 @@
 load_support('piezoelectric_resonator'); use_bpm 127
-zero_delay rdelay: 1
+zero_cc rdelay: 1
 
 stop
 
