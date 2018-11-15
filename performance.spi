@@ -20,7 +20,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   with_bpm 127 do
 
     flip :c3,56, sus: (ing 2 0.5 0.25).look if spread(3,2).rot(-1).look
-    flip :e3,56, sus: (ing 2 0.5 0.25).look if spread(3,2).rot(0).look
+    flip :e3,69, sus: (ing 2 0.5 0.25).look if spread(3,2).rot(0).look
 
 
     sleep 1/4.0
