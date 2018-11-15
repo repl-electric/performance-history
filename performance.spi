@@ -53,7 +53,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     else
 
       flop_cc motion: 0.4
-      bitsea :f4
+      bitsea :f4, sus: 2
       flop :e3, 40, sus: 1
     end
 
