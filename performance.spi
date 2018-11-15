@@ -6,7 +6,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 
 
 #eject_cpu_core
-end2
+#end2
 
 #fx tube: 1.00, reverb: 1.00
 #cam :top
@@ -94,7 +94,8 @@ live_loop :light, sync: :unsyncable do; tick
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    heat chd[0],40, sus: sleeps, pads: [0,1,2,3]
+    heat_on chd[0],40, sus: sleeps, pads: [0,1,2,3]
+    stop
     deep root(chd), 120,sus: sleeps*2, pads: [0,1,2,3]
 
 
