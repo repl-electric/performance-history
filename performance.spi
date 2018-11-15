@@ -3,7 +3,7 @@ alive perc: 1, sop: 1
 #init! true
 #start_init
 
-
+say :end
 
 
 
