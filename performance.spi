@@ -8,6 +8,9 @@ overclock_cc motion: 0.27
 
 #create_sea
 #cam :chase
+eject_cpu_core
+
+fx drive: 1.00, reverb: 1.00
 
 
 
