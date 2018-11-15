@@ -107,6 +107,7 @@ live_loop :light, sync: :unsyncable do; tick
 
       )
     chd = score.look[0]
+    tick_reset_all
     roots_chase drag: 1
     sleeps = score.look[-1]
     heat_on chd[0],127, sus: sleeps, pads: [0,1,2]
