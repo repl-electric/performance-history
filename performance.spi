@@ -3,13 +3,14 @@ alive perc: 0, sop: 0
 #start_init
 
 at{
-  sync :unsyncable
-  sleep 0.25
-  overclock_on :F3
+  # sync :unsyncable
+  # sleep 0.25
+  # overclock_on :F3
   say :raise
 }
 
 
+slow_init
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
