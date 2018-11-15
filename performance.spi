@@ -1,13 +1,13 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
 #start_init
-create_sea
+#create_sea
 #  say :sleep
 
 
 #overclock_cc motion: 0.27
 #vortex throttle: 0
-
+roots_chase target: :spiral
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
@@ -16,7 +16,6 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     flip :c3, sus: (ing 2 0.5 0.25).look if spread(2,3).look
     flip :e3, sus: (ing 1 0.25 1.25).look if spread(2,3).rot(-1).look
-
 
     sleep 1/4.0
     sleep 1/4.0
