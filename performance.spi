@@ -5,6 +5,7 @@ alive perc: 1, sop: 0
 #  say :sleep
 
 fx tube: 1
+cam :top
 
 
 #overclock_cc motion: 0.27
