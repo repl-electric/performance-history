@@ -15,7 +15,7 @@ zero_cc noise: 0.00
 zero_cc wet:   0.00
 
 
-focus 4, 8
+focus 4, 3
 live_loop :fall_into_your_screen, sync: :unsyncable do; tick
   #corrupt :fs2
   score=(ing
