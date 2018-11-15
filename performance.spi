@@ -2,12 +2,18 @@ load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
 #start_init
 
+at{
+  sync :unsyncable
+  overclock_on :A3
+  say :raise
+}
+
+
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
 
     flip :c3, sus: (ing 2 0.5 0.25).look
-
 
     sleep 1/4.0
     sleep 1/4.0
@@ -44,11 +50,11 @@ live_loop :light, sync: :unsyncable do; tick
       [[:A3] 8]
       [[:F3] 8]
       [[:C3] 8]
-
+      REST4
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    heat chd[0],10, sus: sleeps, pads: [0]
+    #heat chd[0],10, sus: sleeps, pads: [0]
 
     sleep sleeps
   end
