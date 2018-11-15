@@ -17,7 +17,7 @@ at{
 roots_chase radius: 0.01, force: 20
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
-  zero_delay [2,5,6].shuffle
+#  zero_delay [2,5,6].shuffle
   with_bpm 127 do
 
     flip :c3, sus: (ing 2 0.5 0.25).look
