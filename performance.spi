@@ -11,7 +11,7 @@ overclock_cc motion: 0.27
 #eject_cpu_core
 #end1
 #fx drive: 1.00, reverb: 1.00
-end2
+#end2
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   stop
@@ -92,9 +92,9 @@ live_loop :light, sync: :unsyncable do; tick
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    heat chd[0],10, sus: sleeps, pads: [0,1,2,3]
+    heat_on chd[0],10, sus: sleeps, pads: [0,1,2,3]
     deep root(chd), 10,sus: sleeps*2, pads: [0], sat: 1, drive: 1
-
+stop
     sleep sleeps
   end
 end
