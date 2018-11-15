@@ -8,7 +8,7 @@ alive perc: 0, sop: 0
 
 
 #overclock_cc motion: 0.27
-create_sea
+roots_chase target: :cube
 #slow_init
 #zoomout
 
