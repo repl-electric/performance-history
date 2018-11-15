@@ -86,7 +86,13 @@ live_loop :fall_into_your_screen, sync: :unsyncable do; tick
 
   cam4
   kick_machine K1
-  exception root(score), atk: 0.01, sus: 2
+  at{
+    exception root(score), atk: 0.01, sus: 2
+    sleep 1
+    exception root(score), atk: 0.01, sus: 2
+
+
+    }
 
   sleep 1
   null root(score)
