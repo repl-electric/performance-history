@@ -59,7 +59,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     end
 
     sleep 1/2.0
-    flip :c4
+    flop :c4
     sleep 1/2.0
   end
 end
