@@ -43,11 +43,10 @@ live_loop :light, sync: :unsyncable do; tick
       [[:g3] 8]
       [[:c3] 8]
 
-
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    heat chd,10, sus: sleeps, pads: [0]
+    heat chd[0],10, sus: sleeps, pads: [0]
 
     sleep sleeps
   end
