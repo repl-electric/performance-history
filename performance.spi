@@ -1,6 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
-create_cube
+
 #start_init
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
@@ -10,6 +10,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
+    ze (ing :g3).look if spread(1,1).look
 
 
 
@@ -29,7 +30,7 @@ end
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
   perc=[0, 0, 0, 0,  0, 0, 0, 0,   0, 0, 0, 0,   0, 0, 0, 0]
-  with_bpm 127*(ing 1,).look do
+  with_bpm 127*(ing 1).look do
     perc_machine perc
   end
 end
@@ -38,7 +39,7 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
-      [[:a3], 8],
+      [[:a3] 8]
 
       )
     chd = score.look[0]
