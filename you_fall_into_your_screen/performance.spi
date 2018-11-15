@@ -13,7 +13,7 @@ bitsea_cc octave: 0.52  #╟▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓�
 focus
 live_loop :fall_into_your_screen, sync: :unsyncable do; tick
   score=(ing
-    [:a2 :cs4 :e3] Zz
+    [:a2 :b4 :e3] Zz
     [:cs2 :e4 :gs3] Zz
     ).look
 
