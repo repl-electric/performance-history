@@ -9,7 +9,7 @@ overclock_cc motion: 0.27
 #create_sea
 #cam :chase
 
-roots_chase force: 20
+roots_chase force: 40
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
