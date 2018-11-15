@@ -1,4 +1,18 @@
 ROOT="/Users/josephwilk/Workspace/repl-electric/adventures-in-algorhythm/you_fall_into_your_screen/support"; load "#{ROOT}/midi.rb";load "#{ROOT}/init.rb";use_bpm 127*0.5
+
+viz breath: 1.0
+viz shard: 1.0
+alive rotate: 1.0
+128.times{
+  electric
+  sleep 2.0
+  viz :alive, spike: 1.0
+  alive color: (rand+0.2*0.8)*-1.0
+}
+stop
+
+
+
 #init!
 #camlogo logo: 1, off: 1
 #bitsea_on :cs4
@@ -51,7 +65,7 @@ live_loop :playing_piano_through_a_keyhole, sync: :hit do;tick
   end
 end
 
-alivecol 2.0
+#alivecol 2.0
 
 
 no{
