@@ -7,7 +7,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
 
-    flip :c3, sus: (ing 2 0.25 0.5).look
+    flip :c3, sus: (ing 4 0.25 0.5).look
 
 
     sleep 1/4.0
