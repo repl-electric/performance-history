@@ -36,12 +36,12 @@ live_loop :by_the_light_of_the_terminal, sync: :unsyncable do
     8.times{
       tick
       pp=(ing
-        D1 _ D1     _ _ D1
+        D1 _ D1    _ _ D1
 
         ).look
       smp_dust(pp)
       if pp
-        dterrain (line 0.5, 1.0, 256).tick(:sigh)+rand*0.2
+        dterrain (line 0.5, 1.0, 256).tick(:sigh)+rand
       end
 
       mt mt_pat.look.look, accent=(line 75, 85, 16*4).look, 100
