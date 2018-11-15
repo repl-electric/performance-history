@@ -9,7 +9,6 @@ alive perc: 1, sop: 0
 #vortex throttle: 0
 #roots_chase target: :spiral
 
-
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
@@ -24,13 +23,11 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     ze (ing :g3 :a3 :e3).look,z: 1 if spread(3,7).look
     ze (ing :g3 :a3 :e3).look, cubes: 1 if spread(7,11).look
 
-
     sleep 1/4.0
     sleep 1/4.0
 
     roots_chase freq: rand*2
     flop :g3
-
 
     sleep 1/4.0
     sleep 1/4.0
@@ -90,7 +87,7 @@ live_loop :light, sync: :unsyncable do; tick
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    heat chd[0],10, sus: sleeps, pads: [0]
+    heat chd[0],10, sus: sleeps, pads: [0,1,2,3]
     deep root(chd), 20,sus: sleeps*2, pads: [0]
 
 
