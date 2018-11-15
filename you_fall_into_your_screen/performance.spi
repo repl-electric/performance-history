@@ -8,6 +8,7 @@ bitsea_cc octave: 0.55  #╟▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓�
 #invcol 0
 live_loop :playing_piano_through_a_keyhole, sync: :hit do;tick
   live_loop :fall_into_your_screen {stop}
+  stop
   dcam3
   with_bpm 63.5 do #63.5
     score=(ing
@@ -58,7 +59,7 @@ end
 # zero_cc wet:   0.60
 #focus 4, 0.1
 live_loop :fall_into_your_screen, sync: :unsyncable do; tick
-  stop
+
   #corrupt :fs2
   score=(ing
     [:b3  :d4  :fs3] Zz
@@ -66,9 +67,9 @@ live_loop :fall_into_your_screen, sync: :unsyncable do; tick
     ).look
 
   score.each_tick(:in){|n|
-    bitsea n, 1.0*(ing 80 70 85 70).look(:in), mode: 0, cutoff: 1.0, sus: 2.5+0.2
+   qbitsea n, 1.0*(ing 80 70 85 70).look(:in), mode: 0, cutoff: 1.0, sus: 2.5+0.2
   }
-
+cam4
   exception root(score), sus: 2
 
   sleep 1
