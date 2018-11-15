@@ -5,12 +5,21 @@ ROOT="/Users/josephwilk/Workspace/repl-electric/adventures-in-algorhythm/you_fal
 bitsea_cc motion: 0.10  #╟▓▓▓▓▓▓▓▓▓▓▒░╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╢
 bitsea_cc octave: 0.53  #╟▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╢
 #bitsea_cc formant: 0.00 #╟▒░╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╢
-invcol 0
+#invcol 0
 
 
 focus 9, 8
 live_loop :fall_into_your_screen, sync: :unsyncable do; tick
   #corrupt :fs2
+  score=(ing
+    [:a2, :c4, :e3], Zz,
+    ).look
+
+  score.each_tick(:in){|n|
+    bitsea n, 1.0*(ing 80, 70, 85, 70,).look(:in), mode: 0, cutoff: 1.0, sus: 2.5
+  }
+
+
   sleep 1
   sleep 1
 end
@@ -19,8 +28,8 @@ live_loop :by_the_light_of_the_terminal, sync: :unsyncable do
     8.times{
       tick
       pp=(ing
-        _ _ _ _    _ _ _ _    _ _ _ _   _ _ _ _
-        _ _ _ _    _ _ D1 _    _ _ _ _   _ _ _ _
+        _, _, _, _,    _, _, _, _,    _, _, _, _,   _, _, _, _,
+        _, _, _, _,    _, _, D1, _,    _, _, _, _,   _, _, _, _,
 
         ).look
       smp_dust(pp)
