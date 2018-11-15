@@ -86,7 +86,6 @@ live_loop :light, sync: :unsyncable do; tick
     deep root(chd), 20,sus: sleeps*2, pads: [0]
 
 
-
     sleep sleeps
   end
 end
