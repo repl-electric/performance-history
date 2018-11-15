@@ -9,7 +9,7 @@ alive perc: 0, sop: 0
 
 #overclock_cc motion: 0.27
 
-#cam :chase
+cam :chase
 #slow_init
 zoomout
 
