@@ -100,7 +100,11 @@ live_loop :fall_into_your_screen, sync: :unsyncable do; tick
     qbitsea n, 1.0*(ing 80 70 85 70).look(:in), mode: 0, cutoff: 1.0, sus: 2.5
   }
 
-  cam4
+
+  with_transpose -12 {cpu2 score[1], 60, sus: 2 }
+
+
+  #cam4
   kick_machine K1
   at{
     exception root(score), atk: 0.01, sus: 1
