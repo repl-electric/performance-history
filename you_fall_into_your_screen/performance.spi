@@ -64,7 +64,7 @@ end
 # zero_cc wet:   0.00
 
 #focus
-alivecol 0.2
+alivecol 0.3
 
 live_loop :fall_into_your_screen, sync: :unsyncable do; tick
 
