@@ -23,7 +23,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/2.0
 
-    linecolor cube: 1.0, s:  rand*3, h: rand*3, b: rand*6, delay: true
+    linecolor cube: 1.0, s:  rand*3, h: rand*3, b: rand*3, delay: true
 
 
     with_transpose -12{
