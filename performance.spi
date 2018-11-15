@@ -10,7 +10,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
     flip (knit :c3,14, :g3, 1, :f3, 1 ).look,30, sus: (ing 2 0.5 0.25 0.125).look*4
-    flip (knit :e3, 1 ).look,30, sus: (ing 2 0.5 0.25 0.125).look*4 if spread(3,8)
+    flip (knit :e3, 1 ).look,30, sus: (ing 2 0.5 0.25 0.125).look*4 if spread(3,9)
 
 
     sleep 1/4.0
