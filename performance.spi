@@ -9,7 +9,7 @@ alive perc: 0, sop: 0
 
 #overclock_cc motion: 0.26
 
-
+slow_init
 #slow_init
 
 
