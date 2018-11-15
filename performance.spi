@@ -2,7 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 1
 #init! true
 #start_init
-
+eject_cpu_core
 #cam# :top
 
 #fx drive: 1.00, reverb: 1.00
@@ -23,15 +23,15 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   #dark :c3
 #  zero_delay [2,5,6].shuffle
   with_bpm 127 do
-   # flip :c3,56, sus: (ing 2 0.5 0.25).look if spread(3,2).rot(-1).look
-  #  flip :e3,69, sus: (ing 1 0.25 1.5).look if spread(3,2).rot(0).look
+   # flip :c3,56, sus: (ing 2, 0.5, 0.25,).look if spread(3,2).rot(-1).look
+  #  flip :e3,69, sus: (ing 1, 0.25, 1.5,).look if spread(3,2).rot(0).look
 
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
 
-    #ze (ing :g3 :a4 :e4).look,z:1, sus: 1 if spread(3,7).look
-  #  ze (nit :g4 4 :a4 4 :e4 4).look,viz:true if spread(7,11).look
+    #ze (ing :g3, :a4, :e4,).look,z:1, sus: 1 if spread(3,7).look
+  #  ze (nit :g4, 4, :a4, 4, :e4, 4,).look,viz:true if spread(7,11).look
 
 
     sleep 1/4.0
@@ -43,12 +43,12 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
 
-    #flip :f3,69, sus: (ing 1 0.25 1.5).look if spread(4,6).rot(0).look
+    #flip :f3,69, sus: (ing 1, 0.25, 1.5,).look if spread(4,6).rot(0).look
 
     sleep 1/2.0
     sleep 1/2.0
 
-    #overclock_cc oct: (ing 0 -12 0 19).look
+    #overclock_cc oct: (ing 0, -12, 0, 19,).look
 
 
     if spread(3,9).rot(0).look
@@ -70,7 +70,7 @@ end
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
   perc=[1, 1, 1, 1,  1, 1, 1, 1,   1, 0, 0, 0,   0, 0, 0, 0]
-  with_bpm 127*(ing 0.5).look do
+  with_bpm 127*(ing 0.5,).look do
     perc_machine perc
   end
 end
@@ -79,27 +79,27 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      [[:A3 :C5 :E4] 8]
-      [[:E4 :G5 :B3] 8]
-      [[:F4 :A6 :C5 :E5] 8]
-      [[:C3 :E5 :G4] 8]
-      [Zz 8]
+      [[:A3, :C5, :E4], 8],
+      [[:F4, :A6, :C5], 8],
+      [[:C3, :E5, :G4], 4],
+      [Zz, 4],
+      [[:A3, :C5, :E4], 8],
+      [[:E4, :G5, :B3], 8],
+      [[:F4, :A6, :C5, :E5], 8],
+      [[:C3, :E5, :G4], 8],
+      [Zz, 8],
 
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      [[:A3 :C5 :E4] 4]
-      [[:A3 :C5 :E4] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:G4 :B6 :D5 :F4] 8]
-      [[:C4 :E5 :G4] 8]
-      [Zz 8]
+      [[:A3, :C5, :E4], 8],
+      [[:F4, :A6, :C5], 8],
+      [[:C3, :E5, :G4], 4],
+      [Zz, 4],
+      [[:A3, :C5, :E4], 4],
+      [[:A3, :C5, :E4], 4],
+      [[:E4, :G5, :B3], 4],
+      [[:E4, :G5, :B3], 4],
+      [[:G4, :B6, :D5, :F4], 8],
+      [[:C4, :E5, :G4], 8],
+      [Zz, 8],
 
       )
     chd = score.look[0]
