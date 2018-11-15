@@ -1,102 +1,62 @@
-load_support('piezoelectric_resonator'); use_bpm 127
-alive perc: 1, sop: 0
-init! true
-#start_init
+ROOT="/Users/josephwilk/Workspace/repl-electric/adventures-in-algorhythm/you_fall_into_your_screen/support"; load "#{ROOT}/midi.rb";load "#{ROOT}/init.rb";use_bpm 127*0.5
+#camlogo
+#focus
+#bit
+##cam3
 
-#say :sleep
-overclock_cc motion: 0.27
-
-#create_sea
-#cam :chase
-#eject_cpu_core
-#end1
-#fx drive: 1.00, reverb: 1.00
-#end2
-
-live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
-  stop
-  zero_delay [2,5,6].shuffle
-  with_bpm 127 do
-    roots_chase freq: rand*2
- #   flip :c3,60, sus: (ing 2 0.5 0.125).look if spread(2,3).look
- #   flip :e3,60, sus: (ing 0.5 2 1.125).look if spread(3,9).rot(-1).look
-
-    sleep 1/4.0
-    sleep 1/4.0
-    sleep 1/2.0
-    ze (ing :g3 :a3 :e3).look if spread(7,11).look
-    ze (knit :g4, 4).look, z: 1 if spread(3,7).look
+alive rotate: 0.2
+stop
+no{
+  qbitsea_cc oct: 0.50
+  qbitsea_cc drive: 1.00
+  qbitsea_cc charge: 0.50
+  qbitsea_cc fm: 0.40
+  qbitsea_cc wav: 0.01
+  qbitsea_cc wav_amp: 0.30
+  qbitsea_cc atk: 0.83
+  qbitsea_cc mod: 0.80
+  qbitsea_cc motion: 0.24
+  qbitsea_cc formant: 0.36
+  qbitsea_cc mul: 0.00
+  qbitsea_cc bass: 0.27
+}
 
 
-    sleep 1/4.0
-    sleep 1/4.0
+bitsea_cc motion: 1.00  #╟▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░╢
+bitsea_cc octave: 0.50  #╟▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╢
+#bitsea_cc formant: 0.00 #╟▒░╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╢
 
-    flop :f3, sus: 2
 
-    sleep 1/4.0
-    sleep 1/4.0
-
-    flip :f3
-
-    sleep 1/2.0
-    sleep 1/2.0
-
-    if spread(3,8).rot(0).look
-      flop_cc motion: 0.3
-      flop :c4, 100, sus: 2
-    else
-      flop_cc motion: 0.4
-      flop :e3,55, sus: 1
-    end
-
-    sleep 1/2.0
-    flip :c4
-    sleep 1/2.0
-  end
+bitsea_on :e3
+bitsea_cc motion: 0.82  #╟▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╢
+bitsea_cc octave: 0.50  #╟▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╢
+#bitsea_cc formant: 0.00 #╟▒░╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╢
+alivecol -9.0
+##cam4
+live_loop :fall_into_your_screen, sync: :unsyncable do; tick
+  corrupt :A2, motion: 0.4
+  smp Corrupt[/ambience/, /fx/, /f#/,0], beat_stretch: 16, amp: 0.8
+  shard rand
+  sleep 16
 end
 
-live_loop :glitch, sync: :unsyncable do; tick
-  #sync :light
-  perc=[0, 0, 0, 0,  0, 0, 0, 0,   0, 0, 0, 0,   0, 0, 0, 0]
-  with_bpm 127*(ing 1).look do
-    perc_machine perc
+live_loop :by_the_light_of_the_terminal, sync: :unsyncable do
+  with_fx :echo, mix: (ring 0.025+rand*0.1,0.055+rand*0.1,0.03,0.02,0.01).look, phase: (ring 1/4.0, 1/8.0).look do
+    8.times{
+      tick
+      pp=(ing
+        D1 _ _ _    _ _ _ _    _ _ _ _   _ _ _ _
+        _ _ _ _    _ D1 _ _    _ _ _ _   _ _ _ _
+
+        ).look
+     # smp_dust(pp)
+
+      sleep 1/8.0
+    }
   end
 end
+live_loop :its_all_just_text_in_a_file, sync: :unsyncable do; tick
 
-#roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
-live_loop :light, sync: :unsyncable do; tick
-  with_bpm 127*1 do
-    score = (ing
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      [[:A3 :C5 :E4] 8]
-      [[:E4 :G5 :B3] 8]
-      [[:F4 :A6 :C5 :E5] 8]
-      [[:C3 :E5 :G4] 8]
-      [Zz 8]
-
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      [[:A3 :C5 :E4] 4]
-      [[:A3 :C5 :E4] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:G4 :B6 :D5 :F4] 8]
-      [[:C4 :E5 :G4] 8]
-      [Zz 8]
-
-      )
-    chd = score.look[0]
-    sleeps = score.look[-1]
-    heat_on chd[0],10, sus: sleeps, pads: [0,1,2,3]
-    deep root(chd), 10,sus: sleeps*2, pads: [0], sat: 1, drive: 1
-    stop
-    sleep sleeps
-  end
+  sleep 1/8.0
 end
-
-live_loop(:unsyncable) do;  sleep 1.0;end
+live_loop(:unsyncable) do; sleep 1.0 end
