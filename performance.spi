@@ -10,7 +10,6 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     flip (knit :a3,14, :e3, 1, :g3, 1 ).look, sus: (ing 1 0.5 0.25).look
 
-
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
