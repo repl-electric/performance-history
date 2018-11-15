@@ -6,7 +6,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 
 
 #eject_cpu_core
-end1
+end2
 
 #fx tube: 1.00, reverb: 1.00
 #cam :top
