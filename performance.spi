@@ -15,13 +15,13 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
     roots_chase freq: rand*2
-    flip :c3,60, sus: (ing 2, 0.5, 0.125,).look if spread(2,3).look
-    flip :e3,60, sus: (ing 0.5, 2, 1.125,).look if spread(3,9).rot(-1).look
+    flip :c3,60, sus: (ing 2 0.5 0.125).look if spread(2,3).look
+    flip :e3,60, sus: (ing 0.5 2 1.125).look if spread(3,9).rot(-1).look
 
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
-    ze (ing :g3, :a3, :e3,).look if spread(7,11).look
+    ze (ing :g3 :a3 :e3).look if spread(7,11).look
     ze (knit :g4, 4).look, z: 1 if spread(3,7).look
 
 
@@ -46,9 +46,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
       flop :e3,55, sus: 1
     end
 
-
     sleep 1/2.0
-    flop :c3
+    flip :c3
 
     sleep 1/2.0
   end
@@ -57,7 +56,7 @@ end
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
   perc=[0, 0, 0, 0,  0, 0, 0, 0,   0, 0, 0, 0,   0, 0, 0, 0]
-  with_bpm 127*(ing 1,).look do
+  with_bpm 127*(ing 1).look do
     perc_machine perc
   end
 end
@@ -66,27 +65,27 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
-      [[:A3, :C5, :E4], 8],
-      [[:F4, :A6, :C5], 8],
-      [[:C3, :E5, :G4], 4],
-      [Zz, 4],
-      [[:A3, :C5, :E4], 8],
-      [[:E4, :G5, :B3], 8],
-      [[:F4, :A6, :C5, :E5], 8],
-      [[:C3, :E5, :G4], 8],
-      [Zz, 8],
+      [[:A3 :C5 :E4] 8]
+      [[:F4 :A6 :C5] 8]
+      [[:C3 :E5 :G4] 4]
+      [Zz 4]
+      [[:A3 :C5 :E4] 8]
+      [[:E4 :G5 :B3] 8]
+      [[:F4 :A6 :C5 :E5] 8]
+      [[:C3 :E5 :G4] 8]
+      [Zz 8]
 
-      [[:A3, :C5, :E4], 8],
-      [[:F4, :A6, :C5], 8],
-      [[:C3, :E5, :G4], 4],
-      [Zz, 4],
-      [[:A3, :C5, :E4], 4],
-      [[:A3, :C5, :E4], 4],
-      [[:E4, :G5, :B3], 4],
-      [[:E4, :G5, :B3], 4],
-      [[:G4, :B6, :D5, :F4], 8],
-      [[:C4, :E5, :G4], 8],
-      [Zz, 8],
+      [[:A3 :C5 :E4] 8]
+      [[:F4 :A6 :C5] 8]
+      [[:C3 :E5 :G4] 4]
+      [Zz 4]
+      [[:A3 :C5 :E4] 4]
+      [[:A3 :C5 :E4] 4]
+      [[:E4 :G5 :B3] 4]
+      [[:E4 :G5 :B3] 4]
+      [[:G4 :B6 :D5 :F4] 8]
+      [[:C4 :E5 :G4] 8]
+      [Zz 8]
 
       )
     chd = score.look[0]
