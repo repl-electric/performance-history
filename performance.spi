@@ -33,7 +33,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
 
-    flip :a3
+    flop :a3
 
     sleep 1/4.0
     sleep 1/4.0
