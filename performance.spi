@@ -7,13 +7,15 @@ at{
   sync :unsyncable
   sleep 0.25
 #  overclock_on :E3
-  say :sleep
+#  say :sleep
 }
 
-overclock_cc motion: 0.29
-zoomout
+#overclock_cc motion: 0.27
+#zoomout
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
+  cam :chase
+  dark :c3
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
 
@@ -34,6 +36,14 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     sleep 1/2.0
     sleep 1/2.0
+
+    if spread(3,9).rot(0).look
+      flop :e4
+
+    else
+      flop :c4
+    end
+
 
     sleep 1/2.0
     sleep 1/2.0
