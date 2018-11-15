@@ -23,7 +23,6 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/2.0
 
-    overclock_cc oct: (ing 0 -12 0 19).look
 
     linecolor cube: 1.0, s:  rand*6, h: rand*8, b: rand*6, delay: true
 
@@ -51,6 +50,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     sleep 1/2.0
     sleep 1/2.0
+    overclock_cc oct: (ing 0 -12 0 19).look
+
   end
 end
 
