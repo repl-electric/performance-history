@@ -3,7 +3,7 @@ alive perc: 0, sop: 0
 #start_init
 
 
-flop_c :a3
+flop_x :a3
 flop_cc motion: 0.28
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
