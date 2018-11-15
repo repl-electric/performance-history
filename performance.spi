@@ -106,7 +106,7 @@ live_loop :light, sync: :unsyncable do; tick
     roots_chase drag: 1
     sleeps = score.look[-1]
     heat chd[0],127, sus: sleeps, pads: [0,1,2]
-    deep root(chd), 120, sus: sleeps*2, sat: 1, drive: 1
+    deep root(chd), 127, sus: sleeps*2, sat: 1, drive: 1
 
     sleep sleeps
   end
