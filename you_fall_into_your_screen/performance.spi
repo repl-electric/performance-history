@@ -7,7 +7,7 @@ ROOT="/Users/josephwilk/Workspace/repl-electric/adventures-in-algorhythm/you_fal
 bitsea_cc motion: 0.20  #╟▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╢
 bitsea_cc octave: 0.55  #╟▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╢
 #bitsea_cc formant: 0.00 #╟▒░╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╢
-cue :hit
+#cue :hit
 
 live_loop :playing_piano_through_a_keyhole, sync: :hit do;tick
   live_loop :fall_into_your_screen {stop}
@@ -24,6 +24,17 @@ live_loop :playing_piano_through_a_keyhole, sync: :hit do;tick
     zero_x
 
     sleep 1/2.0
+
+    c  = find_chord future_note
+
+    if spread(1,2).rot(1).look
+      with_transpose 0 { zero c[1],1,sus:6 }
+
+    else
+
+    end
+
+
     sleep 1/2.0
     sleep 1/4.0
   end
