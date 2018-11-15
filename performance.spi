@@ -6,8 +6,8 @@ create_sea
 
 
 #overclock_cc motion: 0.27
-vortex throttle: 0
-roots_chase force: 30, radius: 0.1
+#vortex throttle: 0
+roots_chase force: 40, radius: 0.1
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
