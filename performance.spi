@@ -29,11 +29,11 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     #ze (ing :g3 :a4 :e4).look,z:1, sus: 1 if spread(3,7).look
     ze (nit :g4 4 :a4 4 :e4 4).look,viz:true if spread(7,11).look
 
-
-    sleep 1/4.0
-    sleep 1/4.0
-
     flip :g3,69, sus: (ing 1 0.25 1.5).look if spread(4,6).rot(0).look
+
+    sleep 1/4.0
+    sleep 1/4.0
+
 
 
     sleep 1/4.0
