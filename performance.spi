@@ -6,10 +6,10 @@ alive perc: 0, sop: 0
 at{
   sync :unsyncable
   sleep 0.25
-  overclock_on :E3
+#  overclock_on :E3
   say :raise
 }
-
+slow_init
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
