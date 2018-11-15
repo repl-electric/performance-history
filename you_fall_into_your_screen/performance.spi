@@ -3,7 +3,7 @@ ROOT="/Users/josephwilk/Workspace/repl-electric/adventures-in-algorhythm/you_fal
 camlogo logo: 1, off: 1
 #null :cs2
 
-bitsea_on :e3
+bitsea_on :cs4
 
 focus
 live_loop :fall_into_your_screen, sync: :unsyncable do; tick
@@ -23,7 +23,6 @@ live_loop :by_the_light_of_the_terminal, sync: :unsyncable do
       smp_dust(pp)
       if pp
         dterrain (line 0.5, 1.0, 256).tick(:sigh)+rand*0.2
-
       end
 
       sleep 1/8.0
