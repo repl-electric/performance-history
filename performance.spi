@@ -7,11 +7,14 @@ alive perc: 0, sop: 0
 #flop_cc motion: 0.28
 
 at{
-  sync :unsyncable
-  sleep 0.125
-  overclock_on :E3
-  say :raise
+  #sync :unsyncable
+  #sleep 0.125
+  #overclock_on :E3
+  #say :raise
 }
+
+slow_init
+
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
