@@ -13,7 +13,7 @@ live_loop :fall_into_your_screen, sync: :unsyncable do; tick
   #corrupt :fs2
   score=(ing
     [:b2 :d4 :f3] Zz
-    [:e2 :g4 :b3] Zz
+    [:e2 :gs4 :b3] Zz
     ).look
 
   score.each_tick(:in){|n|
