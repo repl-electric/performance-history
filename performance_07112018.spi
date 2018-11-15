@@ -32,7 +32,7 @@ live_loop(:unsyncable) do;  sleep 1.0;end
 #flip_cc motion: 0.50, drive: 0.00
 #glitch_cc tubes: 0.50, corode: 0.30
 
-eject_cpu_core
+#eject_cpu_core
 
 #smp Words[/matz/], amp: 2
 #overclock_on :a3
@@ -262,8 +262,8 @@ live_loop :light, sync: :unsyncable do; tick
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    heat chd[0], 1.0*(ing 10 30 50 10  10 30 40 50).look, sus: sleeps, pads: [0,1,2,3], sat: 0.00, drive: 0.00
-    deep root(chd), 120, sus: (sleeps)*2, drive: 0.50, sat: 0.00
+    #heat chd[0], 1.0*(ing 10 30 50 10  10 30 40 50).look, sus: sleeps, pads: [0,1,2,3], sat: 0.00, drive: 0.00
+    #deep root(chd), 120, sus: (sleeps)*2, drive: 0.50, sat: 0.00
     sleep sleeps
   end
 end
