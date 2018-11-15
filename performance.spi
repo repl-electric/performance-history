@@ -8,7 +8,7 @@ alive perc: 0, sop: 0
 
 
 #overclock_cc motion: 0.27
-roots_chase target: :cube, force: 10
+roots_chase target: :cube, force: 20
 #slow_init
 #zoomout
 
