@@ -39,6 +39,13 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/2.0
     sleep 1/2.0
 
+    if spread(3,9).rot(1).look
+      flop :e4
+    else
+
+    end
+
+
     sleep 1/2.0
     sleep 1/2.0
   end
