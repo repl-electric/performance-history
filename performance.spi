@@ -88,7 +88,6 @@ live_loop :light, sync: :unsyncable do; tick
       [[:C4 :E5 :G4] 8]
       [Zz 8]
 
-
       )
     chd = score.look[0]
     sleeps = score.look[-1]
