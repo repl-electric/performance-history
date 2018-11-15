@@ -29,7 +29,7 @@ end
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
   perc=[0, 0, 0, 0,  0, 0, 0, 0,   0, 0, 0, 0,   0, 0, 0, 0]
-  with_bpm 127*(ing 1,).look do
+  with_bpm 127*(ing 1).look do
     perc_machine perc
   end
 end
@@ -38,11 +38,13 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
-      [[:a3], 8],
+      [[:a3] 8]
 
       )
     chd = score.look[0]
     sleeps = score.look[-1]
+    heat chd,10, sus: sleeps, pads: [0]
+
 
     sleep sleeps
   end
