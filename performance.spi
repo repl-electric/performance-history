@@ -24,7 +24,7 @@ at{
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127*1 do
-    kal :f4
+    kal :e3
     roots_chase drag: 0, freq: rand*19
     #flip :c3, sus: (ing 1 0.25 0.5).look if spread(2,3).rot(-1).look
     #flip :e3, sus: (ing 2 0.25 1.5).look if spread(2,3).look
