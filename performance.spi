@@ -9,12 +9,12 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     flip :c3, sus: (ing 2 0.5 0.25).look
 
-
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
 
-    ze (ring :g3, :a3, :e3).look,z:1 if spread(1,1).look
+    ze (ring :g3, :a3, :e3).look,z:1 if spread(3,7).look
+    ze (ring :g3, :a3, :e3).look,z:1 if spread(7,11).look
 
 
     sleep 1/4.0
