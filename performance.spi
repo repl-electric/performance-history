@@ -16,14 +16,14 @@ alive perc: 0, sop: 0
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
  # zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    flip (knit :c3,6, :g3, 1, :f3, 1 ).look,30, sus: (ing 2, 0.5, 0.25,).look
-#    flip (knit :g3, 1 ).look,20, sus: (ing 1, 0.25, 0.5,).look*4 if spread(3,9).look
+    flip (knit :c3,6, :g3, 1, :f3, 1 ).look,30, sus: (ing 2 0.5 0.25).look
+#    flip (knit :g3, 1 ).look,20, sus: (ing 1 0.25 0.5).look*4 if spread(3,9).look
 
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
 
-    overclock_cc oct: (ing 0, -12, 0, 19,).look
+    overclock_cc oct: (ing 0 -12 0 19).look
 
 
     with_transpose -12{
@@ -47,7 +47,7 @@ end
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
   perc=[0, 0, 0, 0,  0, 0, 0, 0,   0, 0, 0, 0,   0, 0, 0, 0]
-  with_bpm 127*(ing 1,).look do
+  with_bpm 127*(ing 1).look do
     perc_machine perc
   end
 end
@@ -56,14 +56,14 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
-      [[:A3], 8],
-      [[:F3], 8],
-      [[:C3], 8],
-      REST4,
+      [[:A3] 8]
+      [[:F3] 8]
+      [[:C3] 8]
+      REST4
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    heat chd,10, sus: sleeps, pads: [0]
+    #heat chd,10, sus: sleeps, pads: [0]
 
     sleep sleeps
   end
