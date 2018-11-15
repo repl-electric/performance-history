@@ -10,10 +10,14 @@ at{
   #sync :unsyncable
   #sleep 0.125
   #overclock_on :E3
-  #say :raise
+  say :raise
 }
 
-slow_init
+
+overclock_cc motion: 0.5
+
+
+#slow_init
 
 
 
