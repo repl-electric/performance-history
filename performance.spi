@@ -10,9 +10,15 @@ RH=[_, 1/2.0]
 RQ=[_, 1/4.0]
 RE=[_,1/8.0]
 
-live_loop :intro, sync: :unsyncable do;  tick
-  midi :c3,  channel: 1, sus: W*4 if spread(1,4).look
+live_loop :pads, sync: :unsyncable do
+  tick
 
+  midi :c3,  channel: 1, sus: W*4 if spread(1,4).look
+  sleep 1
+end
+
+
+live_loop :intro, sync: :unsyncable do;  tick
   score = (ing
     [:E2 H] RQ [:E2 Q]    RW
     [:F2 H] RW [:F2 Q]    RW
