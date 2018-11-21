@@ -11,7 +11,7 @@ RQ=[_, 1/4.0]
 RE=[_,1/8.0]
 
 live_loop :intro, sync: :unsyncable do;  tick
-  score = (ing [:E2, H], RH, [:E2, Q],)
+  score = (ing [:E2 H] RH [:E2 Q]  RW)
   s = score.look
   with_swing(-0.1){
     midi s[0], 127,  channel: 14, sus: s[-1]+ (dice > 4 ? 0.0 : 0.5)
