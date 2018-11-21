@@ -16,7 +16,7 @@ live_loop :pads, sync: :unsyncable do
   score=(ing [_] [:a3 W*2] [:B3 W*2] [:C4 W*2] [:G3 W*4] [:D3 W*1] [:E2 W*1])
   n = score.look
   with_swing(-0.1){
-    midi n[0],(ing 120, 90).look,  channel: 1, sus: n[-1]
+    midi n[0],(ing 120, 90, 80).look,  channel: 1, sus: n[-1]
   }
   sleep 2
 end
