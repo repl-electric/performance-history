@@ -38,8 +38,7 @@ live_loop :intro, sync: :unsyncable do;  tick
     }
   }
   if s[0].is_a?(Array)
-    zzz = s.map{|a| a[-1]}.max
-    puts zzz[-1]
+    zzz = s.map{|a| a[-1]}.max[-1]
   else
     zzz = s[-1]
   end
