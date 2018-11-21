@@ -16,9 +16,9 @@ live_loop :pads, sync: :unsyncable do
 
   score=(ing _ :a3 :B3 :C4)
   n = score.look
-  midi n,  channel: 1, sus: W*1
+  midi n,  channel: 1, sus: W*2
 
-  sleep 1
+  sleep 2
 end
 
 live_loop :intro, sync: :unsyncable do;  tick
