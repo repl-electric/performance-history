@@ -11,19 +11,24 @@ RQ=[_, 1/4.0]
 RE=[_,1/8.0]
 
 live_loop :intro, sync: :unsyncable do;  tick
-  score = (ing [:E2, Q], RH, [:E2, Q],  RW,
-    [:F2,  Q], RW, [:F2, Q], RW,
-    [:D2, Q*2], RW, [:C2, Q*2], RW, RW,
-    [:G2, W*2],
-    [:D2, W*2],
-    [:F2, Q],
-    [:C2, W*2],
-    [[:G2, :E2], W*4],
-
+  score = (ing [:E2 Q] RH [:E2 Q]  RW
+    [:F2  Q] RW [:F2 Q] RW
+    [:D2 Q*2] RW [:C2 Q*2] RW RW
+    [:G2 W*2]
+    [:D2 W*2]
+    [:F2 Q]
+    [:C2 W*2]
+    [[:G2 :E2] W*4]
     )
   s = score.look
   with_swing(-0.1){
-    midi s[0], 127,  channel: 14, sus: s[-1]+ (dice > 4 ? 0.0 : 0.5)
+    if s[0].is_a?(Array)
+      s[0].map{|a|
+        midi a, 127,  channel: 14, sus: s[-1]+ (dice > 4 ? 0.0 : 0.5)
+        }
+    else
+      midi s[0], 127,  channel: 14, sus: s[-1]+ (dice > 4 ? 0.0 : 0.5)
+    end
   }
   sleep s[-1]
 end
