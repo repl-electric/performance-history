@@ -30,7 +30,7 @@ live_loop :intro, sync: :unsyncable do;  tick
           else
             midi a, 127,  channel: 14, sus: s[-1]+ (dice > 4 ? 0.0 : 0.5)
           end
-          sleep Q*2
+          sleep Q
         }
     else
       midi s[0], 127,  channel: 14, sus: s[-1]+ (dice > 4 ? 0.0 : 0.5)
