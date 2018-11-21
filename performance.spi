@@ -44,8 +44,6 @@ live_loop :intro, sync: :unsyncable do;  tick
   else
     zzz = s[-1]
   end
-  puts zzz
-
   sleep zzz
 end
 live_loop :unsyncable do; sleep 1;end
