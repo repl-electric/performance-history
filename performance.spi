@@ -13,23 +13,23 @@ RE=[_,1/8.0]
 live_loop :pads, sync: :unsyncable do
   tick
   midi :c3,127,  channel: 1, sus: W*4*2 if spread(1,4).look
-  score=(ing [_] [:a3 W*2] [:B3 W*2] [:C4 W*2] [:G3 W*4] [:D3 W*1] [:E2 W*1])
+  score=(ing [_], [:a3, W*2], [:B3, W*2], [:C4, W*2], [:G3, W*4], [:D3, W*1], [:E2, W*1],)
   n = score.look
   with_swing(-0.1){
-    midi n[0],(ing 120, 90, 80).look,  channel: 1, sus: n[-1]
+    midi n[0],(ing 120,  90,  80,).look,  channel: 1, sus: n[-1]
   }
   sleep 2
 end
 
 live_loop :intro, sync: :unsyncable do;  tick
   score = (ing
-    [:E2 H] RH [:E2 Q]    RW
-    [:F2 H] RW [:F2 Q]    RW
-    [:D2 H] RW [:C2 Q*2]  RW
-    [[[:G2 W*2] [:D2 W*2+H]]]
-    [:F2 Q]
-    [:C2 W*2]
-    [[[:G2 W*4] [:E2 W*4]]]
+    [:E2, H], RH, [:E2, Q],    RW,
+    [:F2, H], RW, [:F2, Q],    RW,
+    [:D2, H], RW, [:C2, Q*2],  RW,
+    [[[:G2, W*2], [:D2, W*2+H]]],
+    [:F2, Q],
+    [:C2, W*2],
+    [[[:G2, W*4], [:E2, W*4]]],
     )
   s = score.look
   with_transpose 12{
