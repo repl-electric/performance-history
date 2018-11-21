@@ -12,7 +12,7 @@ RE=[_,1/8.0]
 
 live_loop :pads, sync: :unsyncable do
   tick
-  midi :c3,  channel: 1, sus: W*4 if spread(1,4).look
+  midi :c3,127,  channel: 1, sus: W*4 if spread(1,4).look
   score=(ing [_] [:a3 W*2] [:B3 W*2] [:C4 W*2] [:G3 W*4] [:D3 W*1] [:E2 W*1])
   n = score.look
   with_swing(-0.1){
