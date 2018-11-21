@@ -33,7 +33,7 @@ live_loop :intro, sync: :unsyncable do;  tick
           sleep Q+Q*rand(0.1)
         }
     else
-      midi s[0], 127,  channel: 14, sus: s[-1]
+      midi s[0], 127,  channel: 14, sus: s[-1]+rand(0.1)
     end
     }
   }
