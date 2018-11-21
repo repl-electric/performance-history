@@ -14,7 +14,7 @@ live_loop :intro, sync: :unsyncable do;  tick
   score = (ing
     [:E2 Q] RH [:E2 Q]  RW
     [:F2  Q] RW [:F2 Q] RW
-    [:D2 Q*2] RW [:C2 Q*2] RW RW
+    [[:D2 :C2] Q*2] RW RW
     [:G2 W*2]
     [:D2 W*2]
     [:F2 Q]
