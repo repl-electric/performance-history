@@ -17,6 +17,8 @@ live_loop :intro, sync: :unsyncable do;  tick
     [:G2 W*2]
     [:D2 W*2]
     [:F2 Q]
+    [:C2 W*2]
+
     )
   s = score.look
   with_swing(-0.1){
