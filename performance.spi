@@ -14,9 +14,9 @@ live_loop :pads, sync: :unsyncable do
   tick
   midi :c3,  channel: 1, sus: W*4 if spread(1,4).look
 
-  score=(ing _ :a3 :B3 :C4 :G3 :D3)
+  score=(ing _ [:a3 W*2] [:B3 W*2] [:C4 W*2] [:G3 W*2] [:D3 W*2])
   n = score.look
-  midi n,  channel: 1, sus: W*2
+  midi n[0],  channel: 1, sus: n[-1]
 
   sleep 2
 end
