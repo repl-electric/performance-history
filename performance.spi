@@ -30,7 +30,7 @@ live_loop :intro, sync: :unsyncable do;  tick
             puts :hiut
             midi_note_on a[0], 127,  channel: 14, sus: a[-1]
           else
-            midi a, 127,  channel: 14, sus: a[-1]
+            midi a[0], 127,  channel: 14, sus: a[-1]
           end
           sleep H+Q*rand(0.1)
         }
