@@ -24,7 +24,7 @@ live_loop :intro, sync: :unsyncable do;  tick
   with_transpose 12{
   with_swing(-0.1){
       if s[0].is_a?(Array)
-        if s[0] == [:G2 :E2]
+        if s[0] == [:G2, :E2]
           midi_note_on a, 127,  channel: 14, sus: s[-1]+ (dice > 4 ? 0.0 : 0.5)
         sleep Q*2
         else
