@@ -25,7 +25,6 @@ live_loop :intro, sync: :unsyncable do;  tick
   with_swing(-0.1){
       if s[0].is_a?(Array)
         s[0].map{|a|
-          puts a
           if s[0] == [:G2, :E2]
             puts :hiut
             midi_note_on a[0], 127,  channel: 14, sus: a[-1]
@@ -41,6 +40,7 @@ live_loop :intro, sync: :unsyncable do;  tick
   }
   if s[0].is_a?(Array)
     zzz = s.map{|a| a[-1]}.max
+    puts zzz
   else
     zzz = s[-1]
   end
