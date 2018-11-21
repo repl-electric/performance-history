@@ -12,11 +12,14 @@ RE=[_,1/8.0]
 
 live_loop :pads, sync: :unsyncable do
   tick
-
   midi :c3,  channel: 1, sus: W*4 if spread(1,4).look
+
+
+  score=(ing _ :a3).look
+  midi :a3,  channel: 1, sus: W*1
+
   sleep 1
 end
-
 
 live_loop :intro, sync: :unsyncable do;  tick
   score = (ing
