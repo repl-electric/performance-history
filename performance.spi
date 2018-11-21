@@ -11,9 +11,11 @@ RQ=[_, 1/4.0]
 RE=[_,1/8.0]
 
 live_loop :intro, sync: :unsyncable do;  tick
-  score = (ing [:E2 Q] RH [:E2 Q]  RW
-    [:F2  Q] RW [:F2 Q] RW
-    [:D2 Q*2] RW [:C2 Q*2] RW RW  [:G2 W*2]
+  score = (ing [:E2, Q], RH, [:E2, Q],  RW,
+    [:F2,  Q], RW, [:F2, Q], RW,
+    [:D2, Q*2], RW, [:C2, Q*2], RW, RW,
+    [:G2, W*2],
+    [:D2, W*2],
     )
   s = score.look
   with_swing(-0.1){
