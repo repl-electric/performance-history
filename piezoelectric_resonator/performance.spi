@@ -62,7 +62,7 @@ end
 burst 0.8
 
 
-roots_chase force: 40, drag: 0.1, target: :spiral#, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
+roots_chase drag: 0.1, target: :spiral#, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
