@@ -16,7 +16,7 @@ alive perc: 1, sop: 0
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    kal :e3
+    kal :e3, sus: 2
 
     flip :c3, 100, sus: (ing 2.0 0.5 0.25).look if spread(7,11).look
     flip :e3, 100, sus: 1 if spread(3,8).look
