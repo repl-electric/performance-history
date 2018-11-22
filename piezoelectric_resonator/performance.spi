@@ -16,7 +16,7 @@ alive perc: 1, sop: 0
 
 #fx reverb: 1.00, tube: 1.00
 
-eject_cpu_core
+#eject_cpu_core
 
 
 
@@ -104,10 +104,10 @@ live_loop :light, sync: :unsyncable do; tick
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-#    tick_reset_all
-    heat chd,30, sus: sleeps, pads: [0,1]
-    deep root(chd), 10,sus: sleeps, drive: 1.00, sat: 1.00
-
+    tick_reset_all
+    heat_on chd,30, sus: sleeps, pads: [0,1]
+#    deep root(chd), 10,sus: sleeps, drive: 1.00, sat: 1.00
+stop
     sleep sleeps
   end
 end
