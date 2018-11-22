@@ -14,6 +14,7 @@ alive perc: 1, sop: 0
 #overclock_cc motion: 0.27
 
 
+fx reverb: 1
 
 
 #cam :top
