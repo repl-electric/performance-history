@@ -11,7 +11,7 @@ alive perc: 0, sop: 0
 # }
 # slow_init
 
-say :raise
+say :begin
 
 
 
