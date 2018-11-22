@@ -5,7 +5,7 @@ alive perc: 0, sop: 0
 
 at{
   sync :unsyncable
-  overclock :A3
+  overclock_on :A3
 }
 
 
