@@ -16,7 +16,7 @@ alive perc: 1, sop: 0
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    kal :e4,80, sus: 2
+    kal :c4,80, sus: 2
 
     roots_chase freq: rand*2, amp: 0.4
 
