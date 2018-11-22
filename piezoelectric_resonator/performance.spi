@@ -20,7 +20,6 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     roots_chase freq: rand*2, amp: 0.3
 
-
     flip :c3, 100, sus: (ing 2.0 0.5 0.25).look if spread(7,11).look
     flip :e3, 100, sus: 1 if spread(3,8).look
 
@@ -97,7 +96,7 @@ live_loop :light, sync: :unsyncable do; tick
     sleeps = score.look[-1]
 #    tick_reset_all
     heat chd,30, sus: sleeps, pads: [0,1]
-    deep root(chd), 10,sus: sleeps, drive: 0.20, sat: 0.2
+    deep root(chd), 10,sus: sleeps, drive: 0.20, sat: 0.3
 
     sleep sleeps
   end
