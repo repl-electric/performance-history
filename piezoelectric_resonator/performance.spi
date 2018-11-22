@@ -102,6 +102,6 @@ live_loop :light, sync: :unsyncable do; tick
   end
 end
 
-sea circle: 1.01, sphere: 0.01
+sea circle: 1.01, sphere: 0.02
 
 live_loop(:unsyncable) do;  sleep 1.0;end
