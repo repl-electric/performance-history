@@ -10,8 +10,10 @@ alive perc: 0, sop: 0
 
 # }
 # slow_init
+say :sleep
 
-say :begin
+overclock_cc motion: 0.54
+
 
 
 
