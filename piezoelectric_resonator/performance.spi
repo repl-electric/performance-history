@@ -4,8 +4,6 @@ alive perc: 1, sop: 0
 #start_init
 
 #create_sea
-sea wave: 5.0, ripple: 0.6
-stop
 #cam :chase
 #zoomout
 #stop
