@@ -12,7 +12,7 @@ live_loop :testing do
     }
 
   sleep 4
-  roots_chase target: (ing :start).look, drag: 10, force: 4
+  roots_chase target: (ing :start).look, drag: 10, force: 4, freq: 0.15
   sleep 4
 
 end
