@@ -3,8 +3,8 @@ alive perc: 1, sop: 0
 #init! true
 #start_init
 
-create_sea
-sea wave: 6.0
+#create_sea
+sea wave: 0.0
 
 cam :chase
 #zoomout
@@ -27,7 +27,7 @@ cam :chase
 create_sea
 burst 0.0
 zoomout
-roots
+#roots
 
 #cam :top
 
