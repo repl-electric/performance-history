@@ -3,9 +3,11 @@ alive perc: 1, sop: 0
 #init! true
 #start_init
 #cam :chase
-zoomout
-#roots_chase radius: 0.00, drag: 10
-create_sea
+#zoomout
+roots_chase radius: 0.00, drag: 10
+#create_sea
+
+
 
 stop
 #create_sea
