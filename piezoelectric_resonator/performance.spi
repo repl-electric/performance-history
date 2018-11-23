@@ -6,7 +6,7 @@ cam :chase
 #create_sea
 
 roots_chase target: :start
-
+stop
 #roots_chase freq: 0.15, drag: 8.0, throttle: 1.0
 #zoomout
 #zoomout
