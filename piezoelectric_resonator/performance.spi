@@ -3,7 +3,7 @@ alive perc: 1, sop: 0
 #init! true
 #start_init
 
-roots_chase radius: 0.00, drag: 15
+roots_chase radius: 0.00, drag: 10
 
 
 stop
