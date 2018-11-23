@@ -8,7 +8,7 @@ live_loop :testing do
   smp Mountain[/subkick/,1], amp: 4
 
   at{ sleep 0.5
-    roots_chase target: (ing :start).look, drag: 1, force: 100
+    roots_chase target: (ing :start).look, drag: 1, force: 1, radius: 0.01
     }
 
   sleep 4
