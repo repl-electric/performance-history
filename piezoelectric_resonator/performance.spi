@@ -4,7 +4,7 @@ alive perc: 1, sop: 0
 #start_init
 #cam :chase
 #zoomout
-roots_chase radius: 0.01, drag: 1, force: 100
+roots_chase radius: 0.01, drag: 1, force: 10
 #create_sea
 
 
