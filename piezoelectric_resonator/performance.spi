@@ -4,7 +4,7 @@ alive perc: 1, sop: 0
 #start_init
 #cam :chase
 #create_sea
-#zoomout
+zoomout
 
 #zoomout
 #puts $pmode
