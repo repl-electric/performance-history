@@ -1,7 +1,7 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
 #init! true
-#start_init
+start_init
 #cam :chase
 roots_chase freq: 0.15, drag: 1
 #zoomout
