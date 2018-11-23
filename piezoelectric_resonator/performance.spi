@@ -4,7 +4,7 @@ alive perc: 1, sop: 0
 #start_init
 
 #create_sea
-sea wave: 4.0
+sea wave: 5.0
 stop
 #cam :chase
 #zoomout
