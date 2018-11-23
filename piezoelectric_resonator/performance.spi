@@ -6,9 +6,7 @@ alive perc: 1, sop: 0
 zoomout
 #zoomout
 roots_chase radius: 0.01, drag: 5, force: 10
-#create_sea
-
-
+create_sea
 
 stop
 #create_sea
