@@ -6,7 +6,7 @@ alive perc: 1, sop: 0
 #create_sea
 sea wave: 0.0
 
-cam :chase
+#cam :chase
 #zoomout
 #stop
 # at{
