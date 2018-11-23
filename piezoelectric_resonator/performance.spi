@@ -24,9 +24,9 @@ sea wave: 0.0
 
 #eject_cpu_core
 
-create_sea
-burst 0.0
-zoomout
+#create_sea
+#burst 0.0
+#zoomout
 #roots
 
 #cam :top
