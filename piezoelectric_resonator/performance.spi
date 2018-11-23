@@ -3,7 +3,7 @@ alive perc: 1, sop: 0
 #init! true
 #start_init
 #cam :chase
-roots_chase freq: 0.15, drag: 4.95
+roots_chase freq: 0.15, drag: 4.95, throttle: 0.1
 zoomout
 #zoomout
 #zoomout
