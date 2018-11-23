@@ -5,7 +5,7 @@ alive perc: 1, sop: 0
 cam :chase
 #create_sea
 
-roots_chase target: :slow, drag: 2, force: 10, freq: 0.15, radius: 0.01
+roots_chase target: :slow, drag: 2, force: 50, freq: 0.15, radius: 0.01
 stop
 #roots_chase freq: 0.15, drag: 8.0, throttle: 1.0
 #zoomout
