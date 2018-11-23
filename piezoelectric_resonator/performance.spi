@@ -9,8 +9,8 @@ alive perc: 1, sop: 0
 #zoomout
 #puts $pmode
 
-cam :chase
-
+#cam :chase
+roots_chase target: :start
 
 #roots_chase target: :slow, drag: 8, force: 5, freq: 0.15, radius: 0.01
 #stop
