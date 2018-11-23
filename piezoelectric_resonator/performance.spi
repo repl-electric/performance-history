@@ -3,9 +3,9 @@ alive perc: 1, sop: 0
 #init! true
 #start_init
 #cam :chase
-create_cube
 
-roots_chase freq: 0.15, drag: 8.0, throttle: 1.0
+
+#roots_chase freq: 0.15, drag: 8.0, throttle: 1.0
 #zoomout
 #zoomout
 #zoomout
@@ -14,7 +14,7 @@ roots_chase freq: 0.15, drag: 8.0, throttle: 1.0
 
 #roots_chase drag: 5
 
-stop
+#stop
 #create_sea
 #cam :chase
 #zoomout
