@@ -8,7 +8,7 @@ cam :chase
 
 
 
-$pmode=0
+$pmode=2
 
 roots_chase target: :slow, drag: 8, force: 5, freq: 0.15, radius: 0.01
 stop
