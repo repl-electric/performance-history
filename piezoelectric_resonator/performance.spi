@@ -1,8 +1,8 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
-init! true
+#init! true
 #start_init
-cam :chase
+#cam :chase
 #create_sea
 zoomout
 #stop
