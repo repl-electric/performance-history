@@ -13,7 +13,7 @@ alive perc: 1, sop: 0
 #create_sea
 
 #roots_chase drag: 5
-creaet_sea
+create_sea
 #stop
 #create_sea
 #cam :chase
