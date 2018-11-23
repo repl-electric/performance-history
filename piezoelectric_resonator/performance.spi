@@ -10,7 +10,7 @@ alive perc: 1, sop: 0
 #puts $pmode
 
 #cam :chase
-roots_chase target: :start
+#roots_chase target: :start
 
 #create_aura 0
 
