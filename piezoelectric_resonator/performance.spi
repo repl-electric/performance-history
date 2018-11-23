@@ -9,7 +9,9 @@ live_loop :testing do
 
   roots_chase target: (ing :slow).look, drag: 8, force: 10
 
-  sleep 4
+  sleep 3
+  roots_chase target: (ing :none).look, drag: 8, force: 10
+  sleep 1
 
 end
 
