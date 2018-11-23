@@ -12,7 +12,7 @@ alive perc: 1, sop: 0
 #cam :chase
 roots_chase target: :start
 
-create_aura 0
+#create_aura 0
 
 #roots_chase target: :slow, drag: 8, force: 5, freq: 0.15, radius: 0.01
 #stop
