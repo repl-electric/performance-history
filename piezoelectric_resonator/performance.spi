@@ -115,7 +115,7 @@ stop
 end
 
 
-sea wave: 0.3,11.0, delay: true
+sea wave: 0.3, delay: true
 
 #sea circle: 2.0, sphere: 0.0
 
