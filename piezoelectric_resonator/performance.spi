@@ -3,7 +3,7 @@ alive perc: 1, sop: 0
 
 roots_chase target: :start, drag: 5, force: 10
 
-live_loop :testing, sync: :unsyncable do
+live_loop :testing do
   tick
   smp Mountain[/subkick/,1], amp: 4
   sleep 1
