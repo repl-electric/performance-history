@@ -19,7 +19,7 @@ alive perc: 1, sop: 0
 #eject_cpu_core
 
 create_sea
-burst 0
+burst 0.0
 
 
 
@@ -75,7 +75,7 @@ live_loop :glitch, sync: :unsyncable do; tick
   end
 end
 
-burst 0.8
+#burst 0.8
 
 
 roots_chase drag: 0.1, target: :spiral, force: 50#, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
