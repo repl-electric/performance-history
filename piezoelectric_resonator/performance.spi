@@ -7,7 +7,7 @@ init! true
 sea wave: 6.0
 
 cam :chase
-
+zoomout
 stop
 # at{
 #   sync :unsyncable
