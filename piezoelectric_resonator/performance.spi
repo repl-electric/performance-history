@@ -116,7 +116,7 @@ end
 
 
 create_sea 1
-sea wave: 0.0, ripple: 0, rippleheight: 10
+sea wave: 10.0, ripple: 0, rippleheight: 10
 
 #sea circle: 2.0, sphere: 0.0
 
