@@ -9,6 +9,8 @@ alive perc: 1, sop: 0
 #zoomout
 #puts $pmode
 
+roots_chase target: :start
+
 #cam :chase
 #roots_chase target: :start
 #create_sea
