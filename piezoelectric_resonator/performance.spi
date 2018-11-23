@@ -19,6 +19,7 @@ alive perc: 1, sop: 0
 #eject_cpu_core
 
 create_sea
+burst 0
 
 
 
