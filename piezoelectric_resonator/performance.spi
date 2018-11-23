@@ -5,7 +5,7 @@ alive perc: 1, sop: 0
 #cam :chase
 zoomout
 #zoomout
-roots_chase radius: 0.01, drag: 5, force: 10, throttle: 0.1, freq: 0.2
+roots_chase radius: 0.01, drag: 5, force: 10, throttle: 1.0, freq: 0.2
 create_sea
 
 stop
