@@ -10,11 +10,11 @@ live_loop :testing do
   at{ sleep 0.5
     roots_chase target: (ing :start).look, drag: 1, force: 10, radius: 0.01
     sleep 0.5
-    roots_chase target: (ing :slow).look, drag: 1, force: 20, radius: 0.01
+    roots_chase target: (ing :start).look, drag: 1, force: 20, radius: 0.01
     }
 
   sleep 3
-  roots_chase target: (ing :slow).look, drag: 5, force: 20, radius: 0.01
+  roots_chase target: (ing :start).look, drag: 5, force: 20, radius: 0.01
   sleep 4+2
 
 end
