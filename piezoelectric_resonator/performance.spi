@@ -1,6 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
-init! true
+#init! true
 #start_init
 #cam :chase
 #create_sea
@@ -9,7 +9,7 @@ init! true
 #zoomout
 #puts $pmode
 
-
+flop_cc motion: 0.6
 
 
 roots_chase target: :slow, drag: 8, force: 5, freq: 0.15, radius: 0.01
