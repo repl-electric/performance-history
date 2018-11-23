@@ -3,7 +3,7 @@ alive perc: 1, sop: 0
 #init! true
 #start_init
 
-create_sea 0.125
+create_sea 0.0
 sea wave: 6.0
 
 cam :chase
