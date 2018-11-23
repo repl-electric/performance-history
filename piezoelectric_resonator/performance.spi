@@ -1,9 +1,9 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
-#init! true
+init! true
 #start_init
 
-roots_chase radius: 0.00, drag: 10
+#roots_chase radius: 0.00, drag: 10
 
 
 stop
