@@ -26,7 +26,7 @@ cam :chase
 
 create_sea
 burst 0.0
-
+zoomout
 roots
 
 #cam :top
