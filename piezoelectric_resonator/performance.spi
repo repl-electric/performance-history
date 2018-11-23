@@ -3,6 +3,10 @@ alive perc: 1, sop: 0
 #init! true
 #start_init
 
+
+
+
+stop
 #create_sea
 #cam :chase
 #zoomout
