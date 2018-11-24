@@ -3,7 +3,7 @@ alive perc: 1, sop: 0
 
 live_loop :fast, sync: :unsyncable do
   tick
-  flip :C3, sus: 1/4.0
+  flip :C3, sus: 1/2.0
   sleep 1/2.0
 end
 
