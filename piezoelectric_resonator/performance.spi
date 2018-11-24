@@ -1,6 +1,12 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
 
+live_loop :fast, sync: :unsyncable do
+  tick
+  flip :A3
+  sleep 1
+  sleep 1
+end
 
 
 
