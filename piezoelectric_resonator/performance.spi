@@ -3,8 +3,10 @@ alive perc: 1, sop: 0
 
 live_loop :fast do
   tick
-  flip (ing :F3 :G3 :C3 :C3
-            :F3 :G3 :E3 :C3 :C3 :C4).look,112, sus: 1.0/4.0
+  flip (ing
+        :F3 :G3 :C3 :C3
+        :F3 :G3 :E3 :C3 :C3
+        :C4).look,112, sus: 1.0/4.0
   sleep 4
 end
 stop
