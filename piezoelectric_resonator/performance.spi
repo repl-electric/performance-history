@@ -116,11 +116,9 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     if spread(7,11).look
     else
-      with_swing  0.1{
+      with_swing  (line 0.0, 0.1, 256).look {
       flip :g3, 100, sus: 1.0
       }
-
-
     end
 
     ze (ing :g3 :e3 :a3).look,z:1 if spread(7,11).look
