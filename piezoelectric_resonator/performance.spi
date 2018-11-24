@@ -6,7 +6,7 @@ live_loop :fast do
   tick
   flop_cc motion: (line 0,   0.6, 256).look
   flip_cc motion: (line 0.6, 0.0, 256*2).look
-  flop :C3,120, sus: 1/2.0 if spread(4,8).look
+  flop :C3,120, sus: 1/2.0 #if spread(4,8).look
   with_swing 0.1 {
   flip (ing
         :F3 :G3 :C3 :C3
