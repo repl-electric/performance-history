@@ -107,7 +107,10 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     flip :e3, 120
 
     sleep 1/2.0
-    flip :c3, 120
+
+    with_swing 0.1{
+      flip :c3, 120
+    }
 
 
     sleep 1/2.0
