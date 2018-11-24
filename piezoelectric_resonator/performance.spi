@@ -93,7 +93,6 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
       if spread(1,4).look
         flip :F3, 1*(ing 50 60 70 110).look+20, sus: 1.0#/2.0
       end
-
     else
     end
 
@@ -125,14 +124,14 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     if spread(3,9).rot(1).look
       flop_cc motion: 0.3
-      flop :c4, 110, sus:2
+      flop :c4, 110-rand*15, sus: 2.0
     else
       flop_cc motion: 0.4
-      flop :e3, 80, sus: 1
+      flop :e3, 60-rand*10, sus: 1.0
     end
 
     sleep 1/2.0
-    flop :c4,127, sus: 1/2.0
+    #flop :c4,127, sus: 1/2.0
     sleep 1/2.0
   end
 end
