@@ -83,7 +83,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127*1 do
 #    kal :c4,80, sus: 2
-
+    flop_cc motion: 0.5
     #roots_chase freq: rand*1, amp: 0.1, freq: 0.1
     #flip_cc motion: 0.45
     #flip :c3, 100, sus: 2.0 if spread(2,3).look
@@ -101,7 +101,6 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
           flip :F3, 1*(ing 50, 60, 70, 110,).look+20, sus: 1.0#/2.0
           at{
             sleep 1/2.0
-            flop_cc motion: 0.5
             flop :F3, 1*(ing 50, 60, 70, 110,).look+20, sus: 1.0#/2.0
           }
         end
