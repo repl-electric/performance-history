@@ -86,9 +86,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     #roots_chase freq: rand*1, amp: 0.1, freq: 0.1
     #flip_cc motion: 0.45
-    #flip :c3, 100, sus: 2.0 if spread(2,3).look
+    flip :c3, 100, sus: 2.0 if spread(2,3).look
     #flip :e3, 50, sus: 1 if spread(3,9).look
-
 
     if spread(7,11).look
       if spread(1,4).look
@@ -97,7 +96,6 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     else
     end
-
 
     sleep 1/4.0
     sleep 1/4.0
