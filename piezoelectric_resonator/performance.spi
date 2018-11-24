@@ -116,9 +116,9 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     if spread(7,11).look
       at{
-        flip :f3, 100, sus: 1.0/2.0
+        flip :g3, 100, sus: 1.0/2.0
         sleep 1/4.0 + 1/4.0/2
-        flop :g3, 100, sus: 1.0
+        flop :f3, 100, sus: 1.0
         sleep 1/4.0 + 1/4.0/2 + 1/4.0/2/2
         flip :a3, 100, sus: 2.0
         }
