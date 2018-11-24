@@ -115,14 +115,16 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/2.0
 
     if spread(7,11).look
-      4.times{
       at{
+        4.times{
+
         flip :g3, 100, sus: 1.0/2.0
         sleep 1/4.0 + 1/4.0/2
         flop :f3, 100, sus: 1.0
         sleep 1/4.0 + 1/4.0/2 + 1/4.0/2/2
         flip :e3, 100, sus: 2.0
         }
+
       }
     else
       with_swing((line 0.0, -0.1, 256).look) {
