@@ -3,7 +3,7 @@ alive perc: 1, sop: 0
 
 live_loop :fast do
   tick
-  flip :C3,110, sus: 4.0
+  flip :C4,110, sus: 4.0
   sleep 4
 end
 stop
