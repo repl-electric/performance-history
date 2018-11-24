@@ -133,7 +133,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
       }
     else
       with_swing((line 0.0, -0.1, 256).look) {
-      flip :c3, 100, sus: 1.0
+      flip :c4, 100, sus: 1.0
       }
     end
 
