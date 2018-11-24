@@ -92,7 +92,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     if spread(7,11).look
       if spread(1,4).look
         if dice(8) > 6
-          flip :F3, 1*(ing 50 60 70 110).look+20, sus: 1.0#/2.0
+          flip :E3, 1*(ing 50 60 70 110).look+20, sus: 1.0#/2.0
           # at{
           #   sleep 1/4.0
           #   flop :E3, 1*(ing 50 60 70 110).look, sus: 2.0#/2.0
