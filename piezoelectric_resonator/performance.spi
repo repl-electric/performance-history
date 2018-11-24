@@ -122,7 +122,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
         flop :f3, 100, sus: 1.0
         sleep 1/4.0 + 1/4.0/2
           flip :e3, 100, sus: 2.0
-          sleep 1/4.0 + 1/4.0/2 + 1/4.0/2/2 + 1/4.0/2/2/2
+          sleep 1/4.0 + 1/4.0/2
         }
       }
     else
