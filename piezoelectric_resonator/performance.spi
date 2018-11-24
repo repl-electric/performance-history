@@ -14,9 +14,14 @@ live_loop :fast do
         :F3 :G3 :E3 :D3 :C3 :C3
         :B3 :C4).look,112, sus: 1.0/4.0
   }
-  sleep 2
+  sleep 1
   flop_cc motion: (line 0.3, 0.6, 32).look
-  sleep 2
+  sleep 1
+  flop_cc motion: (line 0.3, 0.6, 32).look
+  sleep 1
+  flop_cc motion: (line 0.3, 0.6, 32).look
+  sleep 1
+
 end
 stop
 
