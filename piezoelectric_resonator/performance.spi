@@ -3,32 +3,28 @@ alive perc: 1, sop: 0
 
 
 
-create_cube
-
-stop
-
-live_loop :testing do
-  tick
-  smp Mountain[/subkick/,1], amp: 4
-
-  at{ sleep 0.5
-    roots_chase target: (ing :slow).look, drag: 1, force: 10, radius: 0.01, amp: 0.1
-    sleep 0.5
-    roots_chase target: (ing :slow).look, drag: 1, force: 20, radius: 0.01
-    }
-
-  sleep 3
-  roots_chase target: (ing :start).look, drag: 5, force: 20, radius: 0.01
-  sleep 4+2
-
-end
-
-
-stop
 
 
 
-stop
+
+
+# live_loop :testing do
+#   tick
+#   smp Mountain[/subkick/,1], amp: 4
+
+#   at{ sleep 0.5
+#     roots_chase target: (ing :slow).look, drag: 1, force: 10, radius: 0.01, amp: 0.1
+#     sleep 0.5
+#     roots_chase target: (ing :slow).look, drag: 1, force: 20, radius: 0.01
+#     }
+
+#   sleep 3
+#   roots_chase target: (ing :start).look, drag: 5, force: 20, radius: 0.01
+#   sleep 4+2
+
+# end
+
+
 
 #init! true
 #start_init
@@ -38,8 +34,6 @@ stop
 #stop
 #zoomout
 #puts $pmode
-
-create_cube
 
 
 #cam :chase
