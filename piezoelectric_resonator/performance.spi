@@ -4,8 +4,8 @@ alive perc: 1, sop: 0
 
 live_loop :fast do
   tick
-  flop_cc motion: (line 0, 1.0, 256).look
-  flip_cc motion: (line 1.0, 0.0, 256).look
+  flop_cc motion: (line 0,   0.8, 256).look
+  flip_cc motion: (line 0.8, 0.0, 256).look
   flop :C3,100, sus: 1/4.0 if spread(4,8).look
   with_swing 0.1 {
   flip (ing
