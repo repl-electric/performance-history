@@ -3,7 +3,7 @@ alive perc: 1, sop: 0
 # C D E F G A B
 live_loop :fast do
   tick
-  flop :C3, sus: 1/4.0 if spread(4,8).look
+  flop :C3,100, sus: 1/4.0 if spread(4,8).look
   with_swing 0.1 {
   flip (ing
         :F3 :G3 :C3 :C3
