@@ -1,6 +1,7 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
 # C D E F G A B
+flop_cc motion: 0.4
 live_loop :fast do
   tick
   flop :C3,100, sus: 1/4.0 if spread(4,8).look
