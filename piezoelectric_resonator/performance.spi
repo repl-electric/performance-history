@@ -1,12 +1,13 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
-
+# C D E F G A B
 live_loop :fast do
   tick
   flip (ing
         :F3 :G3 :C3 :C3
-        :F3 :G3 :E3 :D3 :C3 :C3 :B3
-        :C4).look,112, sus: 1.0/4.0
+        :F3 :G3 :E3 :D3 :C3 :C3
+
+        :B2 :C4).look,112, sus: 1.0/4.0
   sleep 4
 end
 stop
