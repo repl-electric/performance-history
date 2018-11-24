@@ -3,7 +3,7 @@ alive perc: 1, sop: 0
 # C D E F G A B
 live_loop :fast do
   tick
-  flop :A2, sus: 1/2.0
+  flop :A2, sus: 1/4.0
   with_swing 0.1 {
   flip (ing
         :F3 :G3 :C3 :C3
