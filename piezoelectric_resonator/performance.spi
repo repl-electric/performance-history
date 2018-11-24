@@ -124,7 +124,6 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
           flip :e3, 100, sus: 2.0
           sleep 1/4.0 + 1/4.0/2 + 1/4.0/2/2 + 1/4.0/2/2/2
         }
-
       }
     else
       with_swing((line 0.0, -0.1, 256).look) {
