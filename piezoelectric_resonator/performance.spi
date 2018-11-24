@@ -119,10 +119,9 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 #        1.times{
           flip_cc motion: 0.3
           flip :g3, 100, sus: 1.0/2.0
-
-          sleep 1/2.0
+        sleep 1/2.0
         flip_cc motion: 0.4
-        flop_cc motion: 0.6
+        flop_cc motion: 0.5
           flop :f3, 120, sus: 1.0
           sleep 1/2.0 + 1/2.0/2
           flip_cc motion: 0.6
