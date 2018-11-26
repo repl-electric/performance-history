@@ -25,7 +25,7 @@ live_loop :fast do
 
     else
       with_swing 0.2 {
-      flip n[0],112, sus: n[-1]
+      flip n[0],70, sus: n[-1]
     }
   end
 
