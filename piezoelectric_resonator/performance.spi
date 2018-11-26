@@ -15,14 +15,18 @@ live_loop :fast do
     [:B3 1.0/4.0] [:C4 2.0])
   n = score.look
 
-  with_swing 0.2 {
+
     if n[0].is_a?(Array)
       n.each{|n1|
+      with_swing 0.2 {
         flip n1[0],112, sus: n1[-1]
       }
+      }
 
-  else
-    flip n[0],112, sus: n[-1]
+    else
+      with_swing 0.2 {
+      flip n[0],112, sus: n[-1]
+    }
   end
   }
   sleep 1
