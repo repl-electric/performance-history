@@ -9,7 +9,7 @@ alive perc: 1, sop: 0
 
 live_loop :name, sync: :fast do
   tick
-  midi :A4, channel: 14, sus: 1/4.0 if spread(7,11*4).look
+  midi :As4, channel: 14, sus: 1/4.0 if spread(7,11*4).look
   sleep 1/4.0
 #  sleep 1
 end
@@ -22,12 +22,12 @@ live_loop :fast do
   # flop :C3,120, sus: 2.0 #if spread(4,8).look
 
   score = (ing
-    [:F3 1.0/4.0] [:G3 1.0/4.0] [:C3 1.0/4.0]
-    [[:C3 1.0] [:Ds3 1.0/2.0]] [[:C3 1.0] [:Ds3 1.0/2.0]] [[:C3 1.0] [:F3 1.0/2.0]]
-    [[:D3 1.0] [:Ds3 1.0/2.0]] [[:C2 1.0] [:E3 1.0/2.0]]
+    [:F3, 1.0/4.0], [:G3, 1.0/4.0], [:C3, 1.0/4.0],
+    [[:C3, 1.0], [:Ds3, 1.0/2.0]], [[:C3, 1.0], [:Ds3, 1.0/2.0]], [[:C3, 1.0], [:F3, 1.0/2.0]],
+    [[:D3, 1.0], [:Ds3, 1.0/2.0]], [[:C2, 1.0], [:E3, 1.0/2.0]],
 
-    [:F3 1.0/4.0] [:G3 1.0/4.0] [:E3 1.0/4.0] [:D3 1.0/4.0] [:C3 1.0/4.0] [[:C3 1.0/4.0] [:E3 1.0/2.0]]
-    [:B3 1.0/2.0] [:C4 1.0]
+    [:F3, 1.0/4.0], [:G3, 1.0/4.0], [:E3, 1.0/4.0], [:D3, 1.0/4.0], [:C3, 1.0/4.0], [[:C3, 1.0/4.0], [:E3, 1.0/2.0]],
+    [:B3, 1.0/2.0], [:C4, 1.0],
     )
   n = score.look
 
@@ -68,13 +68,13 @@ stop
 #   smp Mountain[/subkick/,1], amp: 4
 
 #   at{ sleep 0.5
-#     roots_chase target: (ing :slow).look, drag: 1, force: 10, radius: 0.01, amp: 0.1
+#     roots_chase target: (ing :slow,).look, drag: 1, force: 10, radius: 0.01, amp: 0.1
 #     sleep 0.5
-#     roots_chase target: (ing :slow).look, drag: 1, force: 20, radius: 0.01
+#     roots_chase target: (ing :slow,).look, drag: 1, force: 20, radius: 0.01
 #     }
 
 #   sleep 3
-#   roots_chase target: (ing :start).look, drag: 5, force: 20, radius: 0.01
+#   roots_chase target: (ing :start,).look, drag: 5, force: 20, radius: 0.01
 #   sleep 4+2
 
 # end
@@ -149,16 +149,16 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     if spread(7,11).look
       if spread(1,4).look
         if dice(8) > 6
-          flip :E3, 1*(ing 50 60 70 110).look+20, sus: 1.0#/2.0
+          flip :E3, 1*(ing 50, 60, 70, 110,).look+20, sus: 1.0#/2.0
           # at{
           #   sleep 1/4.0
-          #   flop :E3, 1*(ing 50 60 70 110).look, sus: 2.0#/2.0
+          #   flop :E3, 1*(ing 50, 60, 70, 110,).look, sus: 2.0#/2.0
           # }
         else
-          flip :F3, 1*(ing 50 60 70 110).look+20, sus: 1.0#/2.0
+          flip :F3, 1*(ing 50, 60, 70, 110,).look+20, sus: 1.0#/2.0
           at{
             sleep 1/2.0
-            flop :F3, 1*(ing 50 60 70 110).look+20, sus: 1.0#/2.0
+            flop :F3, 1*(ing 50, 60, 70, 110,).look+20, sus: 1.0#/2.0
           }
         end
       end
@@ -192,8 +192,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
       }
     end
 
-    ze (ing :g3 :e3 :a3).look,z:1 if spread(7,11).look
-    ze (nit :g3 4 :e3 4 :a3 4 :g3 4 :e3 4 :a3 4).look,z:1 if spread(3,8).look
+    ze (ing :g3, :e3, :a3,).look,z:1 if spread(7,11).look
+    ze (nit :g3, 4, :e3, 4, :a3, 4, :g3, 4, :e3, 4, :a3, 4,).look,z:1 if spread(3,8).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -228,7 +228,7 @@ end
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
   perc=[1, 1, 1, 1,  1, 1, 1, 1,   1, 1, 1, 0,   0, 0, 0, 1]
-  with_bpm 127*(ing 1 0.5 1 0.5).look do
+  with_bpm 127*(ing 1, 0.5, 1, 0.5,).look do
     perc_machine perc
   end
 end
@@ -240,8 +240,8 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (ing
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
+      [[:C3, :E5, :G4], 4],
+      [Zz, 4],
       )
     chd = score.look[0]
     sleeps = score.look[-1]
