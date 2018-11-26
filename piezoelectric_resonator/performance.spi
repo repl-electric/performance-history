@@ -6,6 +6,14 @@ alive perc: 1, sop: 0
  #   flop_on :C3
  # }
 #overclock_cc motion: 0.27
+
+live_loop :name, sync: :fast do
+  tick
+  harp :A2
+  sleep 1
+  sleep 1
+end
+
 live_loop :fast do
   tick
   zero_delay [2,6,5].shuffle
@@ -38,7 +46,8 @@ live_loop :fast do
       with_swing 0.1 {
       flip n[0],70, sus: n[-1]
       }
-  end
+    end
+
 
   sleep 1
   flop_cc motion: (line 0.3, 0.6, 32).tick(:A)
