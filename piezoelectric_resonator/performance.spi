@@ -23,13 +23,12 @@ live_loop :fast do
   n = score.look
 
 
-
     if n[0].is_a?(Array)
       n.each{|n1|
       midi n1[0],80, sus: n1[-1]m, channel: 8
-      with_swing 0.1 {
-        flip n1[0],80, sus: n1[-1]
-      }
+        with_swing 0.1 {
+          flip n1[0],80, sus: n1[-1]
+        }
       }
 
     else
