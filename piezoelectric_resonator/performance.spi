@@ -9,7 +9,7 @@ alive perc: 1, sop: 0
 
 live_loop :name, sync: :fast do
   tick
-  midi (nit :D4 16 :Ds4 16).look, channel: 14, sus: 1/4.0 if spread(7,11*4).look
+  midi (nit :D4 16 :D4 16).look, channel: 14, sus: 1/4.0 if spread(7,11*4).look
   sleep 1/4.0
 #  sleep 1
 end
