@@ -7,12 +7,15 @@ live_loop :fast do
   tick
   flop_cc motion: (line 0.3, 0.6, 32).tick(:A)
   flip_cc motion: (line 0.6, 0.0, 256*2).look
- # flop :C3,120, sus: 2.0 #if spread(4,8).look
+  # flop :C3,120, sus: 2.0 #if spread(4,8).look
+
+  score = (ing
+    :F3 :G3 :C3 :C3
+    :F3 :G3 :E3 :D3 :C3 :C3
+    :B3 :C4)
+  n = score.look
   with_swing 0.1 {
-  flip (ing
-        :F3 :G3 :C3 :C3
-        :F3 :G3 :E3 :D3 :C3 :C3
-        :B3 :C4).look,112, sus: 1.0/4.0
+  flip n,112, sus: 1.0/4.0
   }
   sleep 1
   flop_cc motion: (line 0.3, 0.6, 32).tick(:A)
