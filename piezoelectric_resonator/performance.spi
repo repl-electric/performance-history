@@ -10,7 +10,7 @@ alive perc: 1, sop: 0
 live_loop :name, sync: :fast do
   tick
   midi (nit :E3 16 :F4 16).look, channel: 14, sus: 1/4.0 if spread(1,11).look
-  midi (nit :E4 16 :F3 16).look, channel: 14, sus: 1/4.0 if spread(3,8).look
+  #midi (nit :E4 16 :F3 16).look, channel: 14, sus: 1/4.0 if spread(3,8).look
   sleep 1.0
 #  sleep 1
 end
