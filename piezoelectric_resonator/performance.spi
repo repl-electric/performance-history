@@ -28,7 +28,7 @@ live_loop :fast do
       flip n[0],112, sus: n[-1]
     }
   end
-  }
+
   sleep 1
   flop_cc motion: (line 0.3, 0.6, 32).tick(:A)
   sleep 1
