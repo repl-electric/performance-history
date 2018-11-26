@@ -10,7 +10,7 @@ alive perc: 1, sop: 0
 live_loop :name, sync: :fast do
   tick
   midi :A3, channel: 14, sus: 1/4.0
-  sleep 1
+  sleep 1/2.0
 #  sleep 1
 end
 
