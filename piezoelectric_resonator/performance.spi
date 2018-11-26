@@ -1,10 +1,10 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
 # C D E F G A B
-at{
-  sync :fast
-  flop_on :C3
-}
+# at{
+#   sync :fast
+#   flop_on :C3
+# }
 
 
 
@@ -23,13 +23,13 @@ live_loop :fast do
 
     if n[0].is_a?(Array)
       n.each{|n1|
-      with_swing 0.2 {
+      with_swing 0.1 {
         flip n1[0],80, sus: n1[-1]
       }
       }
 
     else
-      with_swing 0.2 {
+      with_swing 0.1 {
       flip n[0],70, sus: n[-1]
     }
   end
