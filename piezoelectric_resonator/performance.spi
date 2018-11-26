@@ -16,7 +16,7 @@ live_loop :fast do
   n = score.look
 
   with_swing 0.2 {
-    if n.is_a?(Array)
+    if n[0].is_a?(Array)
       n.each{|n1|
         flip n1[0],112, sus: n1[-1]
       }
