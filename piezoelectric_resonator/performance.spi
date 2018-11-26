@@ -11,7 +11,7 @@ live_loop :name, sync: :fast do
   tick
   harp :A2
   sleep 1
-  sleep 1
+#  sleep 1
 end
 
 live_loop :fast do
