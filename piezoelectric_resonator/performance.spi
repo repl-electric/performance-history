@@ -19,7 +19,7 @@ live_loop :fast do
     if n[0].is_a?(Array)
       n.each{|n1|
       with_swing 0.2 {
-        flip n1[0],112, sus: n1[-1]
+        flip n1[0],80, sus: n1[-1]
       }
       }
 
