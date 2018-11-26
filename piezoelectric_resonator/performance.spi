@@ -31,7 +31,7 @@ live_loop :fast do
         }
       }
     else
-      midi n[0],80, sus: n1[-1], channel: 8
+      midi n[0],80, sus: n[-1], channel: 8
       with_swing 0.1 {
       flip n[0],70, sus: n[-1]
       }
