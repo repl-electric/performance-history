@@ -25,17 +25,16 @@ live_loop :fast do
 
     if n[0].is_a?(Array)
       n.each{|n1|
-      midi n1[0],80, sus: n1[-1]m, channel: 8
+      midi n1[0],80, sus: n1[-1], channel: 8
         with_swing 0.1 {
           flip n1[0],80, sus: n1[-1]
         }
       }
-
     else
-      midi n[0],80, sus: n1[-1]m, channel: 8
+      midi n[0],80, sus: n1[-1], channel: 8
       with_swing 0.1 {
       flip n[0],70, sus: n[-1]
-    }
+      }
   end
 
   sleep 1
