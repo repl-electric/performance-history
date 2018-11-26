@@ -43,7 +43,7 @@ live_loop :fast do
   sleep 1
   flop_cc motion: (line 0.3, 0.6, 32).tick(:A)
   sleep 1
-  overclock :A2, sus: 1/8.0
+  overclock :A3, sus: 1/8.0
   flop_cc motion: (line 0.3, 0.6, 32).tick(:A)
   sleep 1
   flop_cc motion: (line 0.3, 0.6, 32).tick(:A)
