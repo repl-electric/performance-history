@@ -7,6 +7,11 @@ alive perc: 1, sop: 0
  # }
 #overclock_cc motion: 0.27
 
+flop_on :A3
+
+
+stop
+
 live_loop :name, sync: :fast do
   tick
   #midi (nit :E3 16 :F4 16).look, channel: 14, sus: 1/4.0 if spread(1,12).look
@@ -14,6 +19,8 @@ live_loop :name, sync: :fast do
   sleep 1.0/2.0
 #  sleep 1
 end
+
+
 
 live_loop :fast do
   tick
