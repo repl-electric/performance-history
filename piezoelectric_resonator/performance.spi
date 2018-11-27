@@ -1,10 +1,10 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
 # C D E F G A B
- at{
-   sync :fast
-   flop_on :C3
- }
+ # at{
+ #   sync :fast
+ #   flop_on :C3
+ # }
 #overclock_cc motion: 0.27
 
 live_loop :name, sync: :fast do
@@ -37,7 +37,7 @@ live_loop :fast do
       n.each{|n1|
       #midi n1[0],80, sus: n1[-1], channel: 8
         with_swing 0.1 {
-          flip n1[0],80, sus: n1[-1]
+          #flip n1[0],80, sus: n1[-1]
         }
       }
     else
@@ -45,7 +45,7 @@ live_loop :fast do
       midi n[0],80, sus: n[-1], channel: 8
       }
       with_swing 0.1 {
-      flip n[0],70, sus: n[-1]
+      #flip n[0],70, sus: n[-1]
       }
     end
 
