@@ -12,7 +12,7 @@ alive perc: 1, sop: 0
 live_loop :play do
   tick
 
-  flip_cc motion: (ing 0.3 0.5).look
+  flip_cc motion: (ing 0.2 0.5).look
 
   sleep 1
   sleep 1
