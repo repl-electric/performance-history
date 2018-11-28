@@ -18,10 +18,15 @@ live_loop :play do
   flop_cc motion: (flow 0.2 0.5 32).look
   ze :D1 if spread(1,3).rot(-1).look
   sleep 1
+
   with_swing 0.1 {
     midi :A4, 85, channel: 14, sus: 4 if spread(1,3).look
   }
   sleep 1
+  if dice(8)>5
+    midi :F4, 85, channel: 14, sus: 4 if spread(1,3).look
+
+  end
 end
 
 
