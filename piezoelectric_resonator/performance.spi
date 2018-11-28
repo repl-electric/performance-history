@@ -7,7 +7,7 @@ alive perc: 1, sop: 0
  # }
 #overclock_cc motion: 0.27
 
-#flop_on :D2,65
+flop_on :D2,65
 #flip_on :A2,60
 #overclock_on :A2, 50
 overclock_cc motion: 0.55
@@ -25,9 +25,6 @@ end
 
 #flip_on :A3
 #flip_cc motion: 0.30
-flip_x
-overclock_x
-flop_x
 
 
 stop
