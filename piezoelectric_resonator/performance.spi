@@ -18,7 +18,7 @@ live_loop :play do
   flop_cc motion: (flow 0.2 0.5 32).look
   s = [[:F1, :D1], :D1, :D1, :C1, :F1].choose
   flip :D2, 40, sus: 1/8.0
-  flip :Ds2, 40, sus: 1/8.0
+  flip :Ds2, 40, sus: 1/4.0
 
   if s.is_a?(Array)
     if spread(1,3).rot(-1).look
