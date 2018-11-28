@@ -7,12 +7,12 @@ alive perc: 1, sop: 0
  # }
 #overclock_cc motion: 0.27
 
-flop_on :D3,65
+#flop_on :D3,65
 
 live_loop :play do
   tick
 
-  flip_cc motion: (vec 0.1 0.5).look
+  flip_cc motion: (ine 0.1 0.5).look
 
   sleep 1
   sleep 1
