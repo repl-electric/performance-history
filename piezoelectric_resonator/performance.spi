@@ -9,7 +9,8 @@ alive perc: 1, sop: 0
 
 #flop_on :D2,65
 #flip_on :A2,60
-overclock_on :A2, 50
+#overclock_on :A2, 50
+overclock_cc motion: 0.55
 
 live_loop :play do
   tick
@@ -26,7 +27,7 @@ end
 #flip_cc motion: 0.30
 #flip_x
 
-
+full-stop
 
 stop
 
