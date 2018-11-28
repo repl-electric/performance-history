@@ -20,8 +20,8 @@ live_loop :play do
   if s.is_a?(Array)
     if spread(1,3).rot(-1).look
     at{
-      s.map{|n| ze n }
-      sleep rand*0.1
+      s.map{|n| ze n;     sleep rand*0.1 }
+
       }
     end
   else
