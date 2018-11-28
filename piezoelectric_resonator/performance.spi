@@ -18,7 +18,10 @@ live_loop :play do
   flop_cc motion: (flow 0.2 0.5 32).look
   s = [[:F1, :D1], :D1, :D1, :C1, :F1].choose
   if s.is_a?(Array)
-    s.map{|n| ze n if spread(1,3).rot(-1).look}
+    at{
+      s.map{|n| ze n if spread(1,3).rot(-1).look}
+      sleep rand*0.01
+      }
   else
     ze s if spread(1,3).rot(-1).look
   end
