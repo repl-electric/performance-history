@@ -14,7 +14,7 @@ live_loop :play do
   tick
 #  flip_cc motion: (flow 0.1 0.5).look
   flop_cc motion: (flow 0.3 0.5 100).look
-  puts (flow 0.3 0.5).look
+  puts (flow 0.3 0.5 100).look
   sleep 1
 #  sleep 1
 end
