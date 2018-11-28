@@ -27,7 +27,6 @@ live_loop :play do
     glitch :fs3, 60 if spread(3,12*4).look
   }
 
-
   with_swing 0.1 {
     midi :A4, 85, channel: 14, sus: 4 if spread(1,3).look
   }
