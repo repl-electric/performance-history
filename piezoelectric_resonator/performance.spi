@@ -12,7 +12,7 @@ alive perc: 1, sop: 0
 
 live_loop :play do
   tick
-  flip_cc motion: (vec 0.5 0.2).look
+  flip_cc motion: (vec 0.6 0.2).look
   flop_cc motion: (flow 0.2 0.5 32).look
   puts (flow 0.2 0.5 32).look
   sleep 1
