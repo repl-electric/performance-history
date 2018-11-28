@@ -39,9 +39,8 @@ live_loop :play do
     midi :A4, 85, channel: 14, sus: 4 if spread(1,3).look
   }
 
-  flip :D2, 40,  sus: 1/4.0
+  flip :D2, 42,  sus: 1/4.0
   flip :Ds2, 40, sus: 1/8.0
-
 
   sleep 1
   if dice(8)>5
