@@ -31,6 +31,9 @@ live_loop :play do
   if dice(8)>5
     midi :F4, 80, channel: 14, sus: 4 if spread(1,3).look
   end
+
+  glitch :f3
+
 end
 
 
