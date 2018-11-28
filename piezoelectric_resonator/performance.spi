@@ -13,7 +13,7 @@ flop_on :D2,65
 live_loop :play do
   tick
 #  flip_cc motion: (flow 0.1 0.5).look
-  flop_cc motion: (flow 0.2 0.5).look
+  flop_cc motion: (flow 0.3 0.5).look
   sleep 1
 #  sleep 1
 end
