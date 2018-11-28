@@ -18,9 +18,8 @@ live_loop :play do
   flop_cc motion: (flow 0.2 0.5 32).look
   sleep 1
   with_swing 0.1 {
-    midi :A3, 80, channel: 14, sus: 12 if spread(1,4)
+    midi :A3, 85, channel: 14, sus: 12 if spread(1,4)
   }
-
   sleep 1
 end
 
