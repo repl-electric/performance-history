@@ -4,8 +4,18 @@ alive perc: 1, sop: 0
 #start_init
 
 #cam :chase
-linecolor factor: -10
+#linecolor factor: -10
+create_sea -2
+  create_tree -2
+  create_cube 3
+  sea ripple: 13.0
+  burst 1.0
+  linecolor factor: -10
+  rocks orbit: 200.0, throttle: 1.0
+  star life: 5, size: 10.0 #4
 
+
+stop
 
 #flop_on :D2
 #overclock_cc motion: 0.27
