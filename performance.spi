@@ -3,14 +3,6 @@ alive perc: 0, sop: 0
 init! true
 #start_init
 
-live_loop :do do
-  tick
-  ze :A3, 1
-
-  sleep 4
-end
-
-stop
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
