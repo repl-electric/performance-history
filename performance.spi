@@ -27,7 +27,7 @@ live_loop :play do
   if spread(4,5*4).look
     at{
       sleep 1/4.0
-      dark :F3, 70
+    #  dark :F3, 70
     }
   end
 
