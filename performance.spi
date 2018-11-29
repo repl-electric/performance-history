@@ -12,8 +12,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/2.0
 
-    ze (vec :g3, :A3, :F3,).look
-    ze (nit :g4, 4, :A4, 4, :F3, 4,  :g3, 4, :A3, 4, :C4, 4,).look
+    ze (vec :g3 :A3 :F3).look
+    ze (nit :g4 4 :A4 4 :F4 4  :g3 4 :A3 4 :C4 4).look
 
 
     sleep 1/4.0
@@ -32,7 +32,7 @@ end
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
   perc=[0, 0, 0, 0,  0, 0, 0, 0,   0, 0, 0, 0,   0, 0, 0, 0]
-  with_bpm 127*(vec 1,).look do
+  with_bpm 127*(vec 1).look do
     perc_machine perc
   end
 end
@@ -41,7 +41,7 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (vec
-      [[_], 8],
+      [[_] 8]
 
       )
     chd = score.look[0]
