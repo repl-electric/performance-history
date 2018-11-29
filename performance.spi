@@ -5,7 +5,7 @@ init! true
 
 live_loop :do do
   tick
-  ze :A3, 10
+  ze :A3, 1
 
   sleep 4
 end
