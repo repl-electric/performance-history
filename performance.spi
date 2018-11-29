@@ -14,7 +14,7 @@ alive perc: 1, sop: 0
 #  rocks orbit: 200.0, throttle: 1.0
   star life: 5, size: 10.0 #4
 
-cam :cube
+cam :chase
 
 #end1
 stop
