@@ -2,55 +2,6 @@ load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
 # C D E F G A B
 
-live_loop :fast do
-  tick
-  zero_delay [2,6,5].shuffle
-  flop_cc motion: (line 0.3, 0.6, 32).tick(:A)
-  flip_cc motion: (line 0.6, 0.0, 256*2).look
-  # flop :C3,120, sus: 2.0 #if spread(4,8).look
-
-  score = (vec
-    [:F3 1.0/4.0] [:G3 1.0/4.0] [:C3 1.0/4.0]
-    [[:C3 1.0] [:Ds3 1.0/2.0]] [[:C3 1.0] [:Ds3 1.0/2.0]] [[:C3 1.0] [:F3 1.0/2.0]]
-    [[:D3 1.0] [:Ds3 1.0/2.0]] [[:C2 1.0] [:E3 1.0/2.0]]
-
-    [:F3 1.0/4.0] [:G3 1.0/4.0] [:E3 1.0/4.0] [:D3 1.0/4.0] [:C3 1.0/4.0] [[:C3 1.0/4.0] [:E3 1.0/2.0]]
-    [:B3 1.0/2.0] [:C4 1.0]
-    )
-  n = score.look
-
-
-    if n[0].is_a?(Array)
-      n.each{|n1|
-      #midi n1[0],80, sus: n1[-1], channel: 8
-        with_swing 0.1 {
-          flip n1[0],80, sus: n1[-1]
-        }
-      }
-    else
-      with_transpose -24 {
-      midi n[0],80, sus: n[-1], channel: 8
-      }
-      with_swing 0.1 {
-      #flip n[0],70, sus: n[-1]
-      }
-    end
-
-
-  sleep 1
-  flop_cc motion: (line 0.3, 0.6, 32).tick(:A)
-  sleep 1
-  #overclock :E3, sus: 1/8.0
-  flop_cc motion: (line 0.3, 0.6, 32).tick(:A)
-  sleep 1
-  flop_cc motion: (line 0.3, 0.6, 32).tick(:A)
-  sleep 1
-end
-stop
-
-
-
-
 # live_loop :testvec do
 #   tick
 #   smp Mountain[/subkick/,1], amp: 4
