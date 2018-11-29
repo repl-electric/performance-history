@@ -15,7 +15,7 @@ overclock_cc motion: 0.55
 flip_cc motion: 0.50
 
 live_loop :play do
-  dark :E3, 80 if spread(4,5).look
+  dark (vec :E3 :D3) , 80 if spread(4,5).look
 
   if spread(4,5*4).look
     at{
