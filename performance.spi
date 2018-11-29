@@ -17,10 +17,12 @@ flip_cc motion: 0.50
 live_loop :play do
   dark (vec :E3 :E3 :G3).look, 80 if spread(4,5).look
 
+   if spread(3,10).look
   at{
     sleep 1
-    glitch :cs4, 80 if spread(3,10).look
+    glitch :cs4, 80
     }
+   end
 
   if spread(4,5*4).look
     at{
