@@ -12,11 +12,11 @@ alive perc: 1, sop: 0
 #overclock_on :A2, 50
 overclock_cc motion: 0.55
 
-flip_cc motion: 0.47
+flip_cc motion: 0.38
 
 live_loop :play do
   tick
-  flip_cc motion: (flow 0.5 0.27 16).look
+#  flip_cc motion: (flow 0.5 0.27 16).look
   flop_cc motion: (flow 0.2 0.5 32).look
   s = [[:F1, :D1], :D1, :D1, :C1, :F1].choose
   #kal :Ds5, 1, sus: 1/2.0 if spread(1,32*0.5).rot(-2).look
@@ -24,7 +24,7 @@ live_loop :play do
 
   flop :D2,50, sus: 1.0
   with_swing 0.1 {
-  flip (vec :C4 :C4 ).look#, 35, sus: 2.0 if spread(4,6).look
+  flip (vec :C4 :C4).look#, 35, sus: 2.0 if spread(4,6).look
   }
 
   if s.is_a?(Array)
