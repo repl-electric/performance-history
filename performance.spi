@@ -12,11 +12,11 @@ alive perc: 1, sop: 0
 #  burst 1.0
   linecolor factor: -10
 #  rocks orbit: 200.0, throttle: 1.0
-  star life: 5, size: 10.0 #4
+#  star life: 5, size: 10.0 #4
 
-cam :chase
+#cam :chase
 
-#end1
+end1
 stop
 
 #flop_on :D2
