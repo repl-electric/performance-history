@@ -16,7 +16,7 @@ alive perc: 1, sop: 0
 
 #cam :chase
 
-eject_cpu_core
+#eject_cpu_core
 
 end2
 stop
@@ -131,8 +131,9 @@ live_loop :light, sync: :unsyncable do; tick
       [Zz 8]
       )
     chd = score.look[0]
+    tick_reset_all
     sleeps = score.look[-1]
-    heat chd,100, sus: sleeps, pads: [0]
+    heat_on chd,100, sus: sleeps, pads: [0]
     deep root(chd), 50,sus: sleeps, drive: 1.00, sat: 1.00
 
     sleep sleeps
@@ -140,3 +141,5 @@ live_loop :light, sync: :unsyncable do; tick
 end
 
 live_loop(:unsyncable) do;  sleep 1.0;end
+
+say :end
