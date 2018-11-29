@@ -14,15 +14,15 @@ overclock_cc motion: 0.55
 
 live_loop :play do
   tick
-  flip_cc motion: (vec 0.5, 0.3, 0.1,).look
-  flop_cc motion: (flow 0.2, 0.5, 32,).look
+  flip_cc motion: (vec 0.5 0.3 32).look
+  flop_cc motion: (flow 0.2 0.5 32).look
   s = [[:F1, :D1], :D1, :D1, :C1, :F1].choose
   #kal :Ds5, 1, sus: 1/2.0 if spread(1,32*0.5).rot(-2).look
   midi :E5, 85, channel: 14, sus: 2 if spread(1,16).rot(-2).look
 
   flop :D2,50, sus: 1.0
   with_swing 0.1 {
-  flip (vec :C4, :C4, :E4, :E4, :D4, :D4,).look, 35, sus: 2.0 if spread(4,6).look
+  flip (vec :C4 :C4 :E4 :E4 :D4 :D4).look, 35, sus: 2.0 if spread(4,6).look
   }
 
   if s.is_a?(Array)
@@ -36,7 +36,7 @@ live_loop :play do
     ze s if spread(1,3).rot(-1).look
   end
   sleep 1
-  with_swing((flow 0, 0.1, 256,).look){
+  with_swing((flow 0 0.1 256).look){
     glitch :fs3, 60 if spread(3*4,12*4).look
   }
 
@@ -64,8 +64,8 @@ stop
 
 live_loop :name, sync: :fast do
   tick
-  #midi (nit :E3, 16, :F4, 16,).look, channel: 14, sus: 1/4.0 if spread(1,12).look
-  #midi (nit :E4, 16, :F3, 16,).look, channel: 14, sus: 1/4.0 if spread(3,8).look
+  #midi (nit :E3 16 :F4 16).look, channel: 14, sus: 1/4.0 if spread(1,12).look
+  #midi (nit :E4 16 :F3 16).look, channel: 14, sus: 1/4.0 if spread(3,8).look
   sleep 1.0/2.0
 #  sleep 1
 end
@@ -80,12 +80,12 @@ live_loop :fast do
   # flop :C3,120, sus: 2.0 #if spread(4,8).look
 
   score = (vec
-    [:F3, 1.0/4.0], [:G3, 1.0/4.0], [:C3, 1.0/4.0],
-    [[:C3, 1.0], [:Ds3, 1.0/2.0]], [[:C3, 1.0], [:Ds3, 1.0/2.0]], [[:C3, 1.0], [:F3, 1.0/2.0]],
-    [[:D3, 1.0], [:Ds3, 1.0/2.0]], [[:C2, 1.0], [:E3, 1.0/2.0]],
+    [:F3 1.0/4.0] [:G3 1.0/4.0] [:C3 1.0/4.0]
+    [[:C3 1.0] [:Ds3 1.0/2.0]] [[:C3 1.0] [:Ds3 1.0/2.0]] [[:C3 1.0] [:F3 1.0/2.0]]
+    [[:D3 1.0] [:Ds3 1.0/2.0]] [[:C2 1.0] [:E3 1.0/2.0]]
 
-    [:F3, 1.0/4.0], [:G3, 1.0/4.0], [:E3, 1.0/4.0], [:D3, 1.0/4.0], [:C3, 1.0/4.0], [[:C3, 1.0/4.0], [:E3, 1.0/2.0]],
-    [:B3, 1.0/2.0], [:C4, 1.0],
+    [:F3 1.0/4.0] [:G3 1.0/4.0] [:E3 1.0/4.0] [:D3 1.0/4.0] [:C3 1.0/4.0] [[:C3 1.0/4.0] [:E3 1.0/2.0]]
+    [:B3 1.0/2.0] [:C4 1.0]
     )
   n = score.look
 
@@ -126,13 +126,13 @@ stop
 #   smp Mountain[/subkick/,1], amp: 4
 
 #   at{ sleep 0.5
-#     roots_chase target: (vec :slow,).look, drag: 1, force: 10, radius: 0.01, amp: 0.1
+#     roots_chase target: (vec :slow).look, drag: 1, force: 10, radius: 0.01, amp: 0.1
 #     sleep 0.5
-#     roots_chase target: (vec :slow,).look, drag: 1, force: 20, radius: 0.01
+#     roots_chase target: (vec :slow).look, drag: 1, force: 20, radius: 0.01
 #     }
 
 #   sleep 3
-#   roots_chase target: (vec :start,).look, drag: 5, force: 20, radius: 0.01
+#   roots_chase target: (vec :start).look, drag: 5, force: 20, radius: 0.01
 #   sleep 4+2
 
 # end
@@ -207,16 +207,16 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     if spread(7,11).look
       if spread(1,4).look
         if dice(8) > 6
-          flip :E3, 1*(vec 50, 60, 70, 110,).look+20, sus: 1.0#/2.0
+          flip :E3, 1*(vec 50 60 70 110).look+20, sus: 1.0#/2.0
           # at{
           #   sleep 1/4.0
-          #   flop :E3, 1*(vec 50, 60, 70, 110,).look, sus: 2.0#/2.0
+          #   flop :E3, 1*(vec 50 60 70 110).look, sus: 2.0#/2.0
           # }
         else
-          flip :F3, 1*(vec 50, 60, 70, 110,).look+20, sus: 1.0#/2.0
+          flip :F3, 1*(vec 50 60 70 110).look+20, sus: 1.0#/2.0
           at{
             sleep 1/2.0
-            flop :F3, 1*(vec 50, 60, 70, 110,).look+20, sus: 1.0#/2.0
+            flop :F3, 1*(vec 50 60 70 110).look+20, sus: 1.0#/2.0
           }
         end
       end
@@ -250,8 +250,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
       }
     end
 
-    ze (vec :g3, :e3, :a3,).look,z:1 if spread(7,11).look
-    ze (nit :g3, 4, :e3, 4, :a3, 4, :g3, 4, :e3, 4, :a3, 4,).look,z:1 if spread(3,8).look
+    ze (vec :g3 :e3 :a3).look,z:1 if spread(7,11).look
+    ze (nit :g3 4 :e3 4 :a3 4 :g3 4 :e3 4 :a3 4).look,z:1 if spread(3,8).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -286,7 +286,7 @@ end
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
   perc=[1, 1, 1, 1,  1, 1, 1, 1,   1, 1, 1, 0,   0, 0, 0, 1]
-  with_bpm 127*(vec 1, 0.5, 1, 0.5,).look do
+  with_bpm 127*(vec 1 0.5 1 0.5).look do
     perc_machine perc
   end
 end
@@ -298,8 +298,8 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (vec
-      [[:C3, :E5, :G4], 4],
-      [Zz, 4],
+      [[:C3 :E5 :G4] 4]
+      [Zz 4]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
