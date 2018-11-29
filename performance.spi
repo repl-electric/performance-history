@@ -16,6 +16,8 @@ alive perc: 1, sop: 0
 
 #cam :chase
 
+eject_cpu_core
+
 end2
 stop
 
