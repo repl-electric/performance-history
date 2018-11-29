@@ -19,8 +19,8 @@ live_loop :play do
 
    if spread(3,10).look
      at{
-      sleep 1
-      glitch [:cs4 ,:c4].choose, 80
+      sleep 1.1
+      glitch [:cs4,:c4].choose, 80
     }
    end
 
