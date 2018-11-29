@@ -25,7 +25,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     if spread(7,11).look
 
     else
-      flop :G3, 100
+      flop :G3, 100, sus: 4
     end
 
     ze (vec :g2 :A2 :F2).look if spread(7,11).look
