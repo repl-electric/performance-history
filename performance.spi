@@ -16,7 +16,7 @@ alive perc: 1, sop: 0
 
 #cam :chase
 
-end1
+end2
 stop
 
 #flop_on :D2
