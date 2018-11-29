@@ -12,6 +12,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     flop_cc motion: (flow 0.2 0.5 32).look
 
     flip :C3, 120, sus: 1/2.0
+    flip :E3, 120, sus: 1/2.0 if spread(7,11).look
+
 
     sleep 1/4.0
     sleep 1/4.0
