@@ -3,7 +3,9 @@ alive perc: 1, sop: 0
 #init! true
 #start_init
 
-cam :chase
+#cam :chase
+linecolor factor: -10
+
 
 #flop_on :D2
 #overclock_cc motion: 0.27
