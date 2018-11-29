@@ -21,7 +21,7 @@ live_loop :play do
   midi :E5, 85, channel: 14, sus: 2 if spread(1,16).rot(-2).look
 
   flop :D2,50, sus: 1.0
-  flip :E4,40, sus: 1.0/4.0 if spread(4,6).look
+  flip :D4,40, sus: 1.0/4.0 if spread(4,6).look
 
 
   if s.is_a?(Array)
