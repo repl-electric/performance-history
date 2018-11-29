@@ -32,7 +32,7 @@ live_loop :play do
   end
   sleep 1
   with_swing((flow 0 0.1 256).look){
-    glitch :fs3, 60 if spread(3*2,12*4).look
+    glitch :fs3, 60 if spread(3*3,12*4).look
   }
 
   with_swing 0.1 {
