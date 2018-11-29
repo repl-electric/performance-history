@@ -16,7 +16,7 @@ alive perc: 1, sop: 0
 
 cam :cube
 
-end1
+#end1
 stop
 
 #flop_on :D2
