@@ -22,7 +22,8 @@ live_loop :play do
       sleep 1/4.0
       dark :E3
 
-      }
+    }
+  end
 
 
   tick
