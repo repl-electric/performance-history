@@ -22,11 +22,8 @@ live_loop :play do
 
   flop :D2,50, sus: 1.0
   with_swing 0.1 {
-  flip (vec :C4 :C4 :E4 :E4 :D4 :D4).look,30, sus: 1.0 if spread(4,6).look
+  flip (vec :C4 :C4 :E4 :E4 :D4 :D4).look,35, sus: 1.0 if spread(4,6).look
   }
-
-
-
 
   if s.is_a?(Array)
     if spread(1,3).rot(-1).look
