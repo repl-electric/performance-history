@@ -21,7 +21,7 @@ star life: 2, size: 2
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127*(vec 2).look do
-    flip_cc motion: (flow 0.4, 0.55 32).look
+#    flip_cc motion: (flow 0.4, 0.55 32).look
 
     roots_chase freq: rand*5, amp: 0.6
     at{
