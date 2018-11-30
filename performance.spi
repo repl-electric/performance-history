@@ -10,7 +10,7 @@ at{
  # say :sleep
 }
 
-overclock_cc motion: 0.50
+overclock_cc motion: 0.55
 world time: 1
 
 
