@@ -11,7 +11,7 @@ at{
 }
 
 overclock_cc motion: 0.40
-
+world time: 1
 
 
 roots_chase target: :spiral, force: 40, drag: 5
