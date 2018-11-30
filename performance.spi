@@ -83,7 +83,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 end
 
 live_loop :glitch, sync: :unsyncable do; tick
-  #sync :light
+
+  sync :light
   perc=[1, 1, 1, 1,  1, 1, 1, 1,   1, 1, 1, 0,   0, 0, 1, 1]
   with_bpm 127*(vec 1 0.5 1 0.5 2).look do
     perc_machine perc
