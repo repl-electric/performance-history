@@ -29,7 +29,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 #    flip_cc motion: (flow 0.4, 0.55 32).look
 
     flip :E4,127, sus: 2
-    roots_chase freq: rand*10, amp: 0.9
+    roots_chase freq: rand*10, amp: 0.9, force: 100
     at{
       sleep 0.5
       sea sphere: rand*0.5
