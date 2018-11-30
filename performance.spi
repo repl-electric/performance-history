@@ -27,7 +27,7 @@ alive perc: 1, sop: 0
 
 live_loop :testvec do
   tick
-  smp Mountain[/subkick/,1], amp: 4
+#  smp Mountain[/subkick/,1], amp: 4
 
   at{ sleep 0.5
     roots_chase target: (vec :slow).look, drag: 1, force: 10, radius: 0.01, amp: 0.1
