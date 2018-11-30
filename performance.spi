@@ -19,6 +19,10 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     flip :C3, 120 if spread(7,11).look
     flip :E3, 110 if spread(3,8).look
 
+    if spread(7,11).look
+      flip :g3
+    end
+
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
