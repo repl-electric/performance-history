@@ -16,7 +16,7 @@ world time: 1
 
 roots_chase target: :spiral, force: 40, drag: 5
 
-star life: 2, size: 1
+star life: 2, size: 2
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
