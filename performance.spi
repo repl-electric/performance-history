@@ -16,10 +16,13 @@ world time: 1
 
 roots_chase target: :spiral, force: 40, drag: 5
 
-star life: 2, size: 5.00
+#star life: 2, size: 5.00
 
-flop_cc motion: 0.37, sat: 1.00, drive: 0.50
-flip_cc motion: 0.40
+flop_cc motion: 0.70, sat: 1.00, drive: 0.80
+flip_cc motion: 0.70
+
+
+
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
@@ -28,7 +31,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   with_bpm 127*(vec 2).look do
 #    flip_cc motion: (flow 0.4, 0.55 32).look
 
-    flip :E4,127, sus: 2
+    flip :F4,127, sus: 2
     roots_chase freq: rand*10, amp: 0.9, force: 500, drag: 3
 
     at{
