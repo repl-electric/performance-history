@@ -1,7 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
 
-
 #flop_on :D3, 100
 
 at{
@@ -10,7 +9,7 @@ at{
 #  overclock_on :E3
  # say :sleep
 }
-
+start_init
 #overclock_cc motion: 0.27
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
@@ -19,6 +18,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     #flop_cc motion: 0.4
 
     flip :C3, 100
+    flip :C3, 100
+
 
     sleep 1/4.0
     sleep 1/4.0
