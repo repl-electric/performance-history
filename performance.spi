@@ -31,7 +31,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   with_bpm 127*(vec 2).look do
 #    flip_cc motion: (flow 0.4, 0.55 32).look
     flip :G4,127, sus: 2
-    roots_chase freq: rand*3, amp: 0.2, force: 100, drag: 2
+    roots_chase freq: rand*0.3, amp: 0.2, force: 100, drag: 2
 
     at{
       sleep 0.5
