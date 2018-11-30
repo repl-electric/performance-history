@@ -61,7 +61,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
       flop_cc motion: 0.5
       flop :C4, 127, sus: 2
     else
-      flop_cc motion: 0.4
+      flop_cc motion: 0.6
       flop :E3, 127, sus: 2
     end
 
