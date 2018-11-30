@@ -130,7 +130,7 @@ live_loop :light, sync: :unsyncable do; tick
     chd = score.look[0]
     sleeps = score.look[-1]
     heat chd[0],15, sus: sleeps, pads: [0,1,2]
-    deep root(chd), 20,sus: sleeps, drive: 0.0, sat: 0.30
+    deep root(chd), 20,sus: sleeps, drive: 0.40, sat: 0.30
     sleep sleeps
   end
 end
