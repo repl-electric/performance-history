@@ -14,7 +14,7 @@ at{
 flip_cc motion: 0.50
 flop_cc motion: 0.40
 
-roots_chase target: :spiral, force: 20
+roots_chase target: :spiral, force: 20, drag: 3
 
 
 
