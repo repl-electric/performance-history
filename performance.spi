@@ -21,8 +21,8 @@ world time: 1
 flop_cc motion: 0.70, sat: 1.00, drive: 0.80
 flip_cc motion: 0.70
 
-fx tube: 1.00, reverb: 1.00
-eject_cpu_core
+#fx tube: 1.00, reverb: 1.00
+#eject_cpu_core
 
 
 
@@ -127,10 +127,12 @@ live_loop :light, sync: :unsyncable do; tick
       [Zz 8]
 
       )
+    tick_reset_all
     chd = score.look[0]
     sleeps = score.look[-1]
-    heat chd[0],15, sus: sleeps, pads: [0,1,2]
+    heat_on chd[0],15, sus: sleeps, pads: [0,1,2]
     deep root(chd), 20,sus: sleeps, drive: 0.80, sat: 0.90
+    stop
     sleep sleeps
   end
 end
