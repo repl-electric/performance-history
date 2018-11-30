@@ -19,7 +19,7 @@ roots_chase target: :spiral, force: 40, drag: 5
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
-  with_bpm 127*(vec 2).look do
+  with_bpm 127*(vec 4).look do
     flip_cc motion: (flow 0.4, 0.55 32).look
 
     roots_chase freq: rand*2, amp: 0.2
