@@ -10,6 +10,7 @@ at{
  # say :sleep
 }
 
+cam :chase
 #overclock_cc motion: 0.27
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
