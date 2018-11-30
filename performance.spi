@@ -25,21 +25,21 @@ alive perc: 1, sop: 0
 #overclock_cc motion: 0.27
 #cam :chase
 
-live_loop :testvec do
-  tick
-#  smp Mountain[/subkick/,1], amp: 4
+# live_loop :testvec do
+#   tick
+# #  smp Mountain[/subkick/,1], amp: 4
 
-  at{ sleep 0.5
-    roots_chase target: (vec :slow).look, drag: 1, force: 10, radius: 0.01, amp: 0.1
-    sleep 0.5
-    roots_chase target: (vec :slow).look, drag: 1, force: 20, radius: 0.01
-    }
+#   at{ sleep 0.5
+#     roots_chase target: (vec :slow).look, drag: 1, force: 10, radius: 0.01, amp: 0.1
+#     sleep 0.5
+#     roots_chase target: (vec :slow).look, drag: 1, force: 20, radius: 0.01
+#     }
 
-  sleep 3
-  roots_chase target: (vec :start).look, drag: 5, force: 20, radius: 0.01
-  sleep 4+2
+#   sleep 3
+#   roots_chase target: (vec :start).look, drag: 5, force: 20, radius: 0.01
+#   sleep 4+2
 
-end
+# end
 
 
 
