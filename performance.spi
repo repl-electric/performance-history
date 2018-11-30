@@ -18,6 +18,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   with_bpm 127 do
     flop_cc motion: 0.2
 
+    flip :C3
+
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
