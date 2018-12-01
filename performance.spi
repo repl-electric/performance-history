@@ -15,7 +15,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/2.0
 
-
+    puts note(:g2)
     if spread(7,11).look
       ze (vec :g2 :a2 :e2).look, z: 1, sus: 2, star: 1
     end
