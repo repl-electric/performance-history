@@ -47,7 +47,7 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (vec
-      [[:A2] 8]
+      [[:A2] 4]
 
       )
     chd = score.look[0]
