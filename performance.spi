@@ -70,8 +70,7 @@ live_loop :light, sync: :unsyncable do; tick
     puts "HEAT: #{chd[0]}"
     with_swing 0.1 {
       2.times{
-        midi chd[1],85, channel: 16,sus: sleeps
-
+        midi :f3,85, channel: 16,sus: sleeps
         }
     }
 
