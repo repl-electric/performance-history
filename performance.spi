@@ -5,7 +5,15 @@ alive perc: 0, sop: 0
 
 #flop_on :d3, 127
 
+live_loop :do do
+  tick
 midi :A3,127, channel: 8, port: :iac_bus_1
+  sleep 1
+  sleep 1
+end
+stop
+
+
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
