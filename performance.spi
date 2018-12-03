@@ -55,7 +55,7 @@ live_loop :light, sync: :unsyncable do; tick
     chd = score.look[0]
     sleeps = score.look[-1]
     #heat chd,1, sus: sleeps, pads: [0]
-    operator chd[0],80,sus: sleeps
+    midi chd[0],120, channel: 16,80,sus: sleeps
     sleep sleeps
   end
 end
