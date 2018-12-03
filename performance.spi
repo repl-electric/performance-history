@@ -68,7 +68,11 @@ live_loop :light, sync: :unsyncable do; tick
     sleeps = score.look[-1]
     #heat chd,1, sus: sleeps, pads: [0]
     puts "HEAT: #{chd[0]}"
+    with_swing 0.1 {
     midi chd[1],80, channel: 16,sus: sleeps
+    }
+
+
     sleep sleeps
   end
 end
