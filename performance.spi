@@ -7,7 +7,7 @@ alive perc: 0, sop: 0
 
 live_loop :do do
   tick
-midi :A3,127, channel: 8, port: :iac_bus_1
+  midi :A3,127
   sleep 1
   sleep 1
 end
