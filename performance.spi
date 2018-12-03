@@ -5,6 +5,8 @@ alive perc: 0, sop: 0
 
 #flop_on :d3, 127
 ze :A3
+
+stop
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
