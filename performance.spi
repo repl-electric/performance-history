@@ -18,7 +18,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     # A F C
 
     if spread(7,11).look
-      ze (vec :g3, :a3, :e3,).tick(:in), z: 1, sus: 12, star: true
+      ze (vec :g4, :a4, :e4,).tick(:in), z: 1, sus: 12, star: true
       puts "ZE: #{(vec :e3, :a3, :e3,).look(:in)}"
     end
     if spread(3,8).look
