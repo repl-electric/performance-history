@@ -58,8 +58,8 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (vec
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
+      [[:A3 :C5 :E4] 8/2]
+      [[:F4 :A6 :C5] 8/2]
       [[:B3 :E5 :G4] 4]
       [Zz 4]
 
