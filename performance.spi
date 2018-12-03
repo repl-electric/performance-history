@@ -37,6 +37,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/2.0
     sleep 1/2.0
 
+    flop :C4,100, sus: 1.0/2.0
+
     sleep 1/2.0
     sleep 1/2.0
   end
