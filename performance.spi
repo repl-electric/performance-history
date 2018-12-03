@@ -21,7 +21,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
       ze x=(vec :g4 :a4 :e4).tick(:in), z: 1, sus: 2, star: true
       puts "ZE: #{x}"
     end
-    ze x=(vec :f2 :a2).tick(:in),127, z: 1, sus: 1.0
+    ze x=(vec :f2 :a3).tick(:in),127, z: 1, sus: 1.0
 
     if spread(3,8).look
       #ze (nit :g3 4 :A3 4 :e3 4 :g3 4 :A3 4 :c4 4).look, sus: 4, y: 1
