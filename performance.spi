@@ -22,10 +22,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
       puts "ZE: #{x}"
     end
       x=(vec :f3 :a3 :g3 :a3).tick(:in2)
-      at{
-        sleep (1/4.0)
         ze x, 127, z: 1, sus: 1.0
-      }
       }
     if spread(3,8).look
       #ze (nit :g3 4 :A3 4 :e3 4 :g3 4 :A3 4 :c4 4).look, sus: 4, y: 1
