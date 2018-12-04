@@ -87,7 +87,7 @@ live_loop :light, sync: :unsyncable do; tick
     }
     midi chd[-2],85, channel: 16,sus: sleeps
     sleep sleeps/2.0
-    midi chd[0],85, channel: 16,sus: sleeps
+    midi chd[0],75, channel: 16,sus: sleeps
 
     sleep sleeps/2.0
   end
