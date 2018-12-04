@@ -3,9 +3,8 @@ alive perc: 1, sop: 0
 #init! true
 #start_init
 overclock_x
-stop
 at{
-  sync :light
+  sync :ModularSynthsControlledByCode
   overclock_on :A3, 1
   sleep 1
   overclock_on :E3,1
