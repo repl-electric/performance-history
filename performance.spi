@@ -9,8 +9,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     flop_cc motion: (flow 0.27 0.6 32).look
     #E C G
     flop x=(vec
-          :a2  :a2  :a2  :a2
-          :c2  :c2  :b2  :b2
+          :a2  :a2  :f2  :f2 #12
+          :f2  :f2  :e2  :e2
           #:E2  :D2  #:E2 :E2
       ).look,80, sus: 4.1
     puts x
