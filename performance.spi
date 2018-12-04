@@ -4,7 +4,6 @@ alive perc: 1, sop: 0
 #start_init
 
 at{
-  stop
   sync :unsyncable
   overclock_on :A3, 1
   sleep 1
@@ -12,7 +11,7 @@ at{
   sleep 2
   overclock_on :F3,1
 }
-overlock_x
+
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
