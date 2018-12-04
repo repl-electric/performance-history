@@ -11,7 +11,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     flop (vec
           :G3 :G3 :G3 :G3
           :D3 :D3 :D3 :D3
-          :Eb3 :E3 :Eb3 :Eb3
+          :Eb3 :E3 :Eb3 :E3
           ).look,100, sus: 4.1
     sleep 1/4.0
     sleep 1/4.0
