@@ -55,7 +55,6 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     #flop :D4,100, sus: 1.0/2.0
 
     sleep 1/2.0
-    ze :d4, 127, z: 1, sus: 1.0/2.0
     sleep 1/2.0
   end
 end
@@ -80,8 +79,9 @@ live_loop :light, sync: :unsyncable do; tick
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    #heat chd,1, sus: sleeps, pads: [0]
+    heat chd,1, sus: sleeps, pads: [0]
     puts "HEAT: #{chd[-1]},  #{chd[-2]}" if chd[0]
+
     with_swing 0.1 {
       midi chd[-1],85, channel: 16,sus: sleeps
     }
