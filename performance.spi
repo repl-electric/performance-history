@@ -8,11 +8,12 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   with_bpm 127 do
     flop_cc motion: (flow 0.27 0.6 32).look
     #E C G
-    flop (vec
-          :G3 :G3 :G3 :G3
-          :D3 :D3 :D3 :D3
+    flop x=(vec
+          :G3  :G3 :G3 :G3
+          :D3  :D3 :D3 :D3
           :Eb3 :E3 :Eb3 :E3
-          ).look,100, sus: 4.1
+      ).look,100, sus: 4.1
+    puts x
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
