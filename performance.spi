@@ -43,6 +43,11 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
         :g3 :a3 :e3
         :a3 :b3 :e3
         :f3 :g3 :c3
+
+        :g3 :a3 :e3
+        :g3 :g3 :e3
+
+
         ).look#.tick(:in)
       puts "ZE: #{x}"
       ze x, 127, z: 1, sus: 1.0
