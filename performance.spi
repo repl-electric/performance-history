@@ -129,7 +129,11 @@ live_loop :light, sync: :unsyncable do; tick
     if chd[0] == :G3
       at{
       8.times{
-        midi (vec :F4 :F4 :F4 :F4 :E4).look(:inner), (flow 75 50 8).tick(:inner), channel: 16,sus: sleeps/2.0
+          if dice(8) > 4
+            midi (vec :G4 :G4 :G4 :D4 :G4).look(:inner), (flow 75 50 8).tick(:inner), channel: 16,sus: sleeps/2.0
+          else
+            midi (vec :F4 :F4 :F4 :F4 :E4).look(:inner), (flow 75 50 8).tick(:inner), channel: 16,sus: sleeps/2.0
+          end
         sleep sleeps/2.0
         }
       }
