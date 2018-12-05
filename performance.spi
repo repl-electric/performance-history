@@ -46,7 +46,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
         :g3 :a3 :e3
         :g3 :f3 :e3
-        :f3 :b3 :e3
+        :f3 :a3 :e3
 
         ).look#.tick(:in)
       puts "ZE: #{x}"
