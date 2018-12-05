@@ -109,7 +109,6 @@ live_loop :light, sync: :unsyncable do; tick
       [[:E3 :B3 :G4] 8]
       [[:G3] 2+2]
 
-
       [[:A3 :Cb5 :E4] 2]
       [[:A3 :C5 :E4] 8]
       [[:F4 :A6 :C5] 8]
