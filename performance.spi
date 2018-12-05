@@ -46,6 +46,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
         :g3 :a3 :e3
         :g3 :g3 :e3
+        :f3 :b3 :c3
 
 
         ).look#.tick(:in)
