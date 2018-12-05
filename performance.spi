@@ -102,7 +102,8 @@ live_loop :light, sync: :unsyncable do; tick
       [Zz 2]
       [[:B3 :C4 :A4] 2]
       [[:E3 :B3 :G4] 8]
-      [Zz 2]
+      [[:G3] 2]
+
 
       [[:A3 :Cb5 :E4] 2]
       [[:A3 :C5 :E4] 8]
@@ -113,9 +114,6 @@ live_loop :light, sync: :unsyncable do; tick
       [[:B3 :C4 :A4] 2]
       [[:E3 :G4 :B4] 8]
       [Zz 2]
-
-
-
 
       )
     chd = score.look[0]
