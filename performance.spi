@@ -39,7 +39,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 #      puts "ZE: #{x}"
     end
       #x=(vec :f3 :a3 :g3 :a3).look#.tick(:in)
-      x=(vec :f3 :a3 :g3 :a3).look#.tick(:in)
+      x=(vec :f3 :a3 :a3 :a3).look#.tick(:in)
       puts "ZE: #{x}"
       ze x, 127, z: 1, sus: 1.0
       }
