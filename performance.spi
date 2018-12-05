@@ -120,10 +120,14 @@ live_loop :light, sync: :unsyncable do; tick
     sleeps = score.look[-1]
     #heat chd,1, sus: sleeps, pads: [0]
     puts "HEAT: #{chd[-1]},  #{chd[-2]}" if chd[0]
-    with_swing 0.1 {
-      midi chd[-1],85, channel: 16,sus: sleeps
-    }
-    midi chd[-2],85, channel: 16,sus: sleeps
+    if chd[0] == :G3
+      v = 50
+    else
+      with_swing 0.1 {
+        midi chd[-1],85, channel: 16,sus: sleeps
+      }
+      midi chd[-2],85, channel: 16,sus: sleeps
+    end
     sleep sleeps/2.0
     #midi chd[0], 75, channel: 16,sus: sleeps
     sleep sleeps/2.0
