@@ -123,7 +123,7 @@ live_loop :light, sync: :unsyncable do; tick
     if chd[0] == :G3
       2.times{
       with_swing 0.1 {
-        midi chd[-1],85, channel: 16,sus: sleeps
+        midi chd[-1],85, channel: 16,sus: sleeps/2.0
       }
         midi chd[-2],85, channel: 16,sus: sleeps/2.0
         sleep sleeps/2.0
