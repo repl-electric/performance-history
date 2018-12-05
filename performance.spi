@@ -6,10 +6,8 @@ live_loop(:unsyncable) do;sleep 1.0;end
 
 #overclock_x
 
-
-
 at{
-  sync :ModularSynthsControlledByCode
+  sync :unsyncable
   overclock_on :A3, 1
   sleep 1
   overclock_on :E3,1
