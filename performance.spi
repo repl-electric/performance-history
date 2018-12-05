@@ -121,10 +121,12 @@ live_loop :light, sync: :unsyncable do; tick
     #heat chd,1, sus: sleeps, pads: [0]
     puts "HEAT: #{chd[-1]},  #{chd[-2]}" if chd[0]
     if chd[0] == :G3
+      at{
       8.times{
-        midi :F4,66, channel: 16,sus: sleeps/2.0
+        midi :F4, (vec 68).tick(:inner), channel: 16,sus: sleeps/2.0
         sleep sleeps/2.0
         }
+      }
     else
       with_swing 0.1 {
         midi chd[-1],85, channel: 16,sus: sleeps
