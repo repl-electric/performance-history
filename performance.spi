@@ -4,8 +4,9 @@ alive perc: 1, sop: 0
 #start_init
 live_loop(:unsyncable) do;sleep 1.0;end
 
+overclock_cc motion: 0.60
+stop
 overclock_x
-
 at{
   sync :unsyncable
   overclock_on :A2, 1
@@ -14,7 +15,7 @@ at{
   sleep 8.25
   overclock_on :F5,1
 }
-stop
+
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
