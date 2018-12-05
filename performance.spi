@@ -123,7 +123,7 @@ live_loop :light, sync: :unsyncable do; tick
     if chd[0] == :G3
       at{
       8.times{
-        midi :F4, (flow 68 50 8).tick(:inner), channel: 16,sus: sleeps/2.0
+        midi :F4, (flow 70 50 8).tick(:inner), channel: 16,sus: sleeps/2.0
         sleep sleeps/2.0
         }
       }
