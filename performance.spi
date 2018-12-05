@@ -2,15 +2,15 @@ load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
 #init! true
 #start_init
-#overclock_x
-# at{
-#   sync :ModularSynthsControlledByCode
-#   overclock_on :A3, 1
-#   sleep 1
-#   overclock_on :E3,1
-#   sleep 2
-#   overclock_on :F3,1
-# }
+overclock_x
+at{
+  sync :ModularSynthsControlledByCode
+  overclock_on :A3, 1
+  sleep 1
+  overclock_on :E3,1
+  sleep 2
+  overclock_on :F3,1
+}
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
