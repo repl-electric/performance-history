@@ -101,7 +101,7 @@ live_loop :light, sync: :unsyncable do; tick
       [[:E3 :C4 :A4] 8]
       [Zz 2]
       [[:B3 :C4 :A4] 2]
-      [[:E3 :G4 :B5] 8]
+      [[:E3 :B3 :B5] 8]
       [Zz 2]
 
       )
