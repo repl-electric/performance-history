@@ -9,9 +9,9 @@ live_loop(:unsyncable) do;sleep 1.0;end
 at{
   sync :unsyncable
   overclock_on :A3, 1
-  sleep 1
+  sleep 4
   overclock_on :E3,1
-  sleep 2
+  sleep 8
   overclock_on :F3,1
 }
 stop
