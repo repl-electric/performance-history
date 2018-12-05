@@ -122,7 +122,7 @@ live_loop :light, sync: :unsyncable do; tick
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    puts score.reduce(0){|a,n|a+n[-1]}
+    puts score.reduce(0){|a,n|a=+n[-1]}
     #heat chd,1, sus: sleeps, pads: [0]
     puts "HEAT: #{chd[-1]},  #{chd[-2]}" if chd[0]
     if chd[0] == :G3
