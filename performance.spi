@@ -121,9 +121,9 @@ live_loop :light, sync: :unsyncable do; tick
     #heat chd,1, sus: sleeps, pads: [0]
     puts "HEAT: #{chd[-1]},  #{chd[-2]}" if chd[0]
     if chd[0] == :G3
-      2.times{
+      4.times{
       with_swing 0.1 {
-        midi chd[-1],85, channel: 16,sus: sleeps/2.0
+        midi chd[-1],50, channel: 16,sus: sleeps/2.0
         }
         sleep sleeps/2.0
         }
