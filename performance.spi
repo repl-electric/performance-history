@@ -6,7 +6,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 
 #color 1.0
 
-unity "/color2/h", 0
+unity "/color2/h", 1.0
 unity "/color1/h",1.0
 unity "/color3/h",1.0
 unity "/color2/s", 1.0
