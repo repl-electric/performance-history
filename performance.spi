@@ -41,13 +41,20 @@ live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (vec
       [[:a2] 8]
-
       )
     chd = score.look[0]
     sleeps = score.look[-1]
     heat chd,1, sus: sleeps, pads: [0]
 
-    sleep sleeps
+
+
+    sleep sleeps/2.0
+    with_swing 0.1 {
+      midi score[-1] channel: 16
+    }
+
+
+    sleep sleeps/2.0
   end
 end
 
