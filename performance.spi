@@ -4,7 +4,7 @@ alive perc: 1, sop: 0
 #start_init
 #overclock_on :E3
 
-color 1.0,1.0,1.0
+color 1.0
 
 
 stop
