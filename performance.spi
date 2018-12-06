@@ -5,8 +5,8 @@ alive perc: 0, sop: 0
 #flop_on :D2
 at{
   sync :unsyncable
-  sleep 2.5
-  overclock_x :E2
+  sleep 1.5
+  overclock_on :A3
 
 }
 
