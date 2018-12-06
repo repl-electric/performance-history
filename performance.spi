@@ -1,7 +1,8 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
 #start_init
-fx tube: 1
+fx tube: 1.00, reverb: 1
+
 #flop_on :D2
 #star life: 9, size: 2
 
