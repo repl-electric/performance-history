@@ -70,7 +70,10 @@ end
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
   perc=[1, 1, 1, 1,  1, 1, 1, 1,   0, 0, 0, 0,   0, 0, 0, 1]
-  sea circle: (flow 0, 1.0, 128).look
+  at{
+    sleep 0.5
+    sea circle: (flow 0, 1.0, 128).look
+    }
   with_bpm 127*(vec 1).look do
     perc_machine perc
   end
