@@ -11,9 +11,18 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     flop_cc motion: (flow 0.27 0.4 12).look
     flip :A3, 120, sus: 0.8
 
+    if spread(7,11).rot(1).look
+      flip :G3, 120, sus: 0.8
+    else
+
+    end
+
+
+
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
+
 
     if spread(7,11).rot(1).look
       ze (vec :g3 :a3 :e3).look, z: 1 if spread(1,1).look
