@@ -15,7 +15,12 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     if spread(7,11).rot(1).look
       ze (vec :g3 ).look, z: 1 if spread(1,1).look
+    else
 
+    end
+
+    if spread(7,11).rot(1).look
+      ze (vec :g3 :a3 :e3 ).look, z: 1 if spread(1,1).look
     else
 
     end
