@@ -3,7 +3,7 @@ alive perc: 1, sop: 0
 #start_init
 
 #flop_on :D2
-star life: 9, size: 1.5
+star life: 9, size: 2
 
 roots_chase drag: 3.0, force: 50
 
