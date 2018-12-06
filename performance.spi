@@ -20,7 +20,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     roots_chase freq: rand*5, amp: 0.5
 
     if spread(7,11).rot(1).look
-      flip :G3, 100, sus: 1
+#      flip :G3, 100, sus: 1
     else
 
     end
