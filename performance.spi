@@ -17,11 +17,16 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     end
 
-
-
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
+
+    if spread(7,11).rot(1).look
+      flip :A3, 120, sus: 1
+    else
+
+    end
+
 
 
     if spread(7,11).rot(1).look
