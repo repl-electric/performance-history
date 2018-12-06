@@ -3,7 +3,7 @@ alive perc: 1, sop: 0
 #start_init
 
 #flop_on :D2
-star life: 1, size: 1
+star life: 1, size: 1.1
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
