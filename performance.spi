@@ -2,4 +2,4 @@ load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
 #init! true
 
-star size: 0.0000001, life: -10.000001
+star size: 0.0000001, life: -20.000001
