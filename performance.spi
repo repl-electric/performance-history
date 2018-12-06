@@ -48,7 +48,7 @@ live_loop :light, sync: :unsyncable do; tick
 
     sleep sleeps/2.0
     with_swing 0.1 {
-      midi octave(chd[-1],4),85, channel: 16
+      midi octave(chd[-1],5),85, channel: 16
     }
     sleep sleeps/2.0
   end
