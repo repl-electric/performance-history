@@ -76,6 +76,7 @@ live_loop :light, sync: :unsyncable do; tick
     with_swing 0.1 {
       operator octave(chd[-1],5), 100
     }
+    operator octave(chd[-2],5), 100
     sleep sleeps/2.0
   end
 end
