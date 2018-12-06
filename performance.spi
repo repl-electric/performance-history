@@ -49,6 +49,9 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     if spread(3,8)
       flop :c3
+    else
+      flop :e3
+
     end
 
     sleep 1/2.0
