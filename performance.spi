@@ -5,7 +5,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 #overclock_on :E3
 
 #color 1.0
-
+world time: 1
 unity "/linecolor/h",1.0
 unity "/linecolor/s",1.0
 unity "/linecolor/b",0.0
