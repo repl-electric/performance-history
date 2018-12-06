@@ -3,14 +3,14 @@ alive perc: 1, sop: 0
 #start_init
 
 #flop_on :D2
-star life: 3, size: 1.4
+star life: 4, size: 1.4
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    #flop_cc motion: (flow 0.3, 0.5, 8,).look
-    flip :A3, 120, sus: (vec 0.5, 0.25, 2,).look
-    flip :E3, 120, sus: (vec 0.5, 0.25, 2,).look if spread(3,8).look
+    #flop_cc motion: (flow 0.3 0.5 8).look
+    flip :A3, 120, sus: (vec 0.5 0.25 2).look
+    flip :E3, 120, sus: (vec 0.5 0.25 2).look if spread(3,8).look
 
     roots_chase freq: rand*2, amp: 0.1
 
@@ -30,13 +30,13 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     end
 
     if spread(7,11).rot(1).look
-      ze (vec :g3, :a3, :e3,).look, z: 1
+      ze (vec :g3 :a3 :e3).look, z: 1
     else
 
     end
 
     if spread(3,8).rot(1).look
-      ze (nit :g3, 4, :a3, 4, :e3, 4,).look, z: 1
+      ze (nit :g3 4 :a3 4 :e3 4).look, z: 1
     else
 
     end
@@ -72,9 +72,9 @@ live_loop :glitch, sync: :unsyncable do; tick
   perc=[1, 1, 1, 1,  1, 1, 1, 1,   0, 0, 0, 0,   0, 0, 0, 1]
   at{
     sleep 0.5
-    sea circle: (flow 0.0,  1.0,  128,).look
+    sea circle: (flow 0.0, 1.0, 128).look
     }
-  with_bpm 127*(vec 1,).look do
+  with_bpm 127*(vec 1).look do
     perc_machine perc
   end
 end
@@ -84,27 +84,27 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (vec
-      [[:A3, :C5, :E4], 8],
-      [[:F4, :A6, :C5], 8],
-      [[:C3, :E5, :G4], 4],
-      [Zz, 4],
-      #, [[:A3, :C5, :E4], 8],
-      #, [[:E4, :G5, :B3], 8],
-      #, [[:F4, :A6, :C5, :E5], 8],
-      #, [[:C3, :E5, :G4], 8],
-      #, [Zz, 8],
+      [[:A3 :C5 :E4] 8]
+      [[:F4 :A6 :C5] 8]
+      [[:C3 :E5 :G4] 4]
+      [Zz 4]
+      # [[:A3 :C5 :E4] 8]
+      # [[:E4 :G5 :B3] 8]
+      # [[:F4 :A6 :C5 :E5] 8]
+      # [[:C3 :E5 :G4] 8]
+      # [Zz 8]
 
-      #, [[:A3, :C5, :E4], 8],
-      #, [[:F4, :A6, :C5], 8],
-      #, [[:C3, :E5, :G4], 4],
-      #, [Zz, 4],
-      #, [[:A3, :C5, :E4], 4],
-      #, [[:A3, :C5, :E4], 4],
-      #, [[:E4, :G5, :B3], 4],
-      #, [[:E4, :G5, :B3], 4],
-      #, [[:G4, :B6, :D5, :F4], 8],
-      #, [[:C4, :E5, :G4], 8],
-      #, [Zz, 8],
+      # [[:A3 :C5 :E4] 8]
+      # [[:F4 :A6 :C5] 8]
+      # [[:C3 :E5 :G4] 4]
+      # [Zz 4]
+      # [[:A3 :C5 :E4] 4]
+      # [[:A3 :C5 :E4] 4]
+      # [[:E4 :G5 :B3] 4]
+      # [[:E4 :G5 :B3] 4]
+      # [[:G4 :B6 :D5 :F4] 8]
+      # [[:C4 :E5 :G4] 8]
+      # [Zz 8]
 
       )
     chd = score.look[0]
