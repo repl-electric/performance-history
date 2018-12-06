@@ -67,8 +67,6 @@ live_loop :light, sync: :unsyncable do; tick
       # [[:G4 :B6 :D5 :F4] 8]
       # [[:C4 :E5 :G4] 8]
       # [Zz 8]
-
-
       )
     chd = score.look[0]
     sleeps = score.look[-1]
@@ -76,7 +74,7 @@ live_loop :light, sync: :unsyncable do; tick
 
     sleep sleeps/2.0
     with_swing 0.1 {
-      operator octave(chd[-1],5)
+      operator octave(chd[-1],5), 100
     }
     sleep sleeps/2.0
   end
