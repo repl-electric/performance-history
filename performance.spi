@@ -77,7 +77,7 @@ live_loop :glitch, sync: :unsyncable do; tick
     sleep 0.5
     sea circle: rand
     }
-  with_bpm 127*(vec 1).look do
+  with_bpm 127*(vec 2).look do
     perc_machine perc
   end
 end
