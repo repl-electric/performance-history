@@ -26,7 +26,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     if spread(7,11).rot(1).look
     else
-      flip :F3, 120, sus: 1
+      flip :F3, 100, sus: 1
     end
 
     if spread(7,11).rot(1).look
