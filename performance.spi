@@ -11,7 +11,7 @@ unity "/linecolor/s",0.0
 unity "/linecolor/b",0.0
 
 unity "/linecolor/cube/h",0.0
-unity "/linecolor/cube/s",0.0
+unity "/linecolor/cube/s",1.0
 unity "/linecolor/cube/b",1.0
 
 
