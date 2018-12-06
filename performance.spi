@@ -12,7 +12,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     flip :A3, 120, sus: 0.8
 
     if spread(7,11).rot(1).look
-      flip :G3, 120, sus: 1
+      flip :G3, sus: 1
     else
 
     end
