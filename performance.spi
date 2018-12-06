@@ -30,13 +30,13 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     end
 
     if spread(7,11).rot(1).look
-      ze (vec :g3, :a3, :e3,).look, z: 1 if spread(7,1).look
+      ze (vec :g3, :a3, :e3,).look, z: 1
     else
 
     end
 
     if spread(3,8).rot(1).look
-      ze (nit :g3, 4, :a3, 4, :e3, 4,).look, z: 1 if spread(1,1).look
+      ze (nit :g3, 4, :a3, 4, :e3, 4,).look, z: 1
     else
 
     end
