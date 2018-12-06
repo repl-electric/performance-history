@@ -5,7 +5,7 @@ alive perc: 1, sop: 0
 #flop_on :D2
 star life: 8, size: 1.4
 
-roots_chase drag: , force: 100
+roots_chase drag: , force: 200
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
