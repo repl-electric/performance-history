@@ -4,6 +4,8 @@ alive perc: 1, sop: 0
 #start_init
 #overclock_on :E3
 
+color1 0
+
 overclock_cc motion: 0.27
 
 
