@@ -8,12 +8,14 @@ star life: 9, size: 2
 roots_chase drag: 3.0, force: 50
 
 overclock_cc motion: 0.45
+flip_cc motion: 0.40
+flop_cc motion: 0.40
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 * 2.0 do
-    flop_cc motion: (flow 0.3 0.6 32).tick(:faster)
+#    flop_cc motion: (flow 0.3 0.6 32).tick(:faster)
     kal :a4, 15, sus: 1
     flip :C4, 120, sus: (vec 0.5 0.25 2).look
 #    flip :E3, 120, sus: (vec 0.5 0.25 2).look if spread(3,8).look
@@ -56,10 +58,10 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
 
     if spread(3,8)
-      flop_cc motion: 0.4
+#      flop_cc motion: 0.4
       flop :g4, sus: 1
     else
-      flop_cc motion: 0.5
+ #     flop_cc motion: 0.5
       flop :e4, sus: 1
     end
 
