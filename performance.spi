@@ -13,7 +13,6 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     ze (vec :g3).look if spread(7,11).look
 
-
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
