@@ -12,7 +12,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
     flop_cc motion: (flow 0.27 0.6 32).look
-    flop :d3, sus: 4.2
+    flip :a3, sus: (vec 1 0.5).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -28,6 +28,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     sleep 1/2.0
     sleep 1/2.0
+
+
 
     sleep 1/2.0
     sleep 1/2.0
