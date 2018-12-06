@@ -7,20 +7,20 @@ alive perc: 0, sop: 0
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    flop_cc motion: (flow 0.27, 0.6, 128,).look
+    flop_cc motion: (flow 0.27 0.6 128).look
 
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
 
     if spread(7,11).rot(1).look
-      ze (vec :g3, ).look, z: 1 if spread(1,1).look
+      ze (vec :g3 :a3 :e3 ).look, z: 1 if spread(1,1).look
     else
 
     end
 
     if spread(3,8).rot(1).look
-      ze (vec :g3, :a3, :e3, ).look, z: 1 if spread(1,1).look
+      ze (vec :g3 :a3 :e3 ).look, z: 1 if spread(1,1).look
     else
 
     end
@@ -43,7 +43,7 @@ end
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
   perc=[0, 0, 0, 0,  0, 0, 0, 0,   0, 0, 0, 0,   0, 0, 0, 0]
-  with_bpm 127*(vec 1,).look do
+  with_bpm 127*(vec 1).look do
     perc_machine perc
   end
 end
@@ -53,7 +53,7 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (vec
-      [[:a2], 8],
+      [[:a2] 8]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
