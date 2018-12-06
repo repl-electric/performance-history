@@ -10,7 +10,7 @@ unity "/linecolor/h",0.0
 unity "/linecolor/s",0.0
 unity "/linecolor/b",0.0
 
-unity "/color2/h", 1.0
+unity "/color2/h", 0.0
 unity "/color2/s", 0.0
 unity "/color3/b", 0.0
 
