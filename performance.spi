@@ -1,131 +1,51 @@
 load_support('piezoelectric_resonator'); use_bpm 127
-alive perc: 1, sop: 0
+alive perc: 0, sop: 0
+init! true
 #start_init
-#flop_on :d2
-fx drive:  1.00, reverb: 1.00
-#cam :top
 
-
-#eject_cpu_core #hold on....
-
-
-#slow_init
-#say :raise
-#say :sleep
-overclock_cc motion: 0.70
-#star size: 3, life: 5
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
-  with_bpm 127*6 do
-    flip_cc motion: 0.5
-    kal :f4, sus: 2
-    roots_chase freq: rand*4, amp: 0.5
-#    flop_cc motion: (flow 0.27 0.5 16).look
-    flip :a4,127, sus: (vec 0.5 1 0.5).look if spread(7,11).look
-   # flip :e3,120, sus: (vec 0.5 1 0.5).look if spread(3,8).look
-    #flip_cc motion: 0.3
-    #flip :e3, 120, sus: (vec  1 0.5 0.25).look if spread(3,8).look
-
-    if spread(7,11).look
-      flip :g3, sus: 4
-    else
-    end
+  with_bpm 127 do
 
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
 
-    if spread(7,11).look
-      ze (vec :g3 :A3 :e3).look, (vec 120, 50).look, sus: 2, z: 1
-    end
-    ze (nit :g3 4 :A3 4 :e3 4, :g3 4 :A3 4 :c4 4).look if spread(3,8).look
 
-    #zoomout
-
-    fn = [(method :flop), (method :flop)].shuffle[0]
-    if spread(7,11).look
-    #  fn.(:a3, sus: 2)
-    else
-    end
 
     sleep 1/4.0
     sleep 1/4.0
-
-    #flip :f3, sus: 2
-
     sleep 1/4.0
     sleep 1/4.0
-
-    if spread(3,8).look
-      flop_cc motion: 0.5
-      flop :c4,127, sus: 2
-    else
-      flop_cc motion: 0.6
-      flop :e3,80, sus: 2
-    end
 
     sleep 1/2.0
     sleep 1/2.0
 
     sleep 1/2.0
     sleep 1/2.0
-    flop :c4, sus: 1/2.0
   end
 end
 
 live_loop :glitch, sync: :unsyncable do; tick
-#  sync :light
-  perc=[1, 1, 1, 1,  1, 1, 1, 1,  1]
-  with_bpm 127*(vec 2).look do
+  #sync :light
+  perc=[0, 0, 0, 0,  0, 0, 0, 0,   0, 0, 0, 0,   0, 0, 0, 0]
+  with_bpm 127*(vec 1).look do
     perc_machine perc
-    at{
-      sleep 0.5
-      sea circle: rand
-      }
-
   end
 end
 
-#cam :chase
-#star life: 3, size: 1.5
-roots_chase target: :spiral, force: 10, drag: 5
-#roots_chase force: 100, radius: 0.1,drag: 5,noise: 0.0, freq: 0.0 #, freq: 0.01, noise: 0.001 #, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
+#roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (vec
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      # [[:A3 :C5 :E4] 8]
-      # [[:E4 :G5 :B3] 8]
-      # [[:F4 :A6 :C5 :E5] 8]
-      # [[:C3 :E5 :G4] 8]
-      # [Zz 8]
-
-      # [[:A3 :C5 :E4] 8]
-      # [[:F4 :A6 :C5] 8]
-      # [[:C3 :E5 :G4] 4]
-      # [Zz 4]
-      # [[:A3 :C5 :E4] 4]
-      # [[:A3 :C5 :E4] 4]
-      # [[:E4 :G5 :B3] 4]
-      # [[:E4 :G5 :B3] 4]
-      # [[:G4 :B6 :D5 :F4] 8]
-      # [[:C4 :E5 :G4] 8]
-      # [Zz 8]
+      [[_] 8]
 
       )
-    tick_reset_all
     chd = score.look[0]
     sleeps = score.look[-1]
-    heat_on chd,1, sus: sleeps, pads: [0,1,2,3], sat: 0.30, drive: 0.50
-    deep root(chd), 10,sus: sleeps, drive: 1.00, sat: 1.00
-    stop
+
     sleep sleeps
   end
 end
 
 live_loop(:unsyncable) do;  sleep 1.0;end
-
-say :end
