@@ -5,11 +5,13 @@ start_init
 
 at{
   sync :unsyncable
-  say :begin
+  sleep 1/4.0
+  overclock_on :a3
 }
-
+say :raise
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
+  stop
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
     flop_cc motion: (flow 0.27 0.5 16).look
