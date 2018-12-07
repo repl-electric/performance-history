@@ -3,7 +3,7 @@ alive perc: 0, sop: 0
 
 #flop_on :D2, 127
 #rocks orbit: 0.0
-colorb 1.1
+#colorb 1.1
 #start_init
 
 
