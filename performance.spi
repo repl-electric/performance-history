@@ -10,7 +10,8 @@ alive perc: 1, sop: 0
 #colorb 0.6
 #star size: 1, life: 1
 #zoomout
-cam :chase
+
+roots_chase target: :start
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
