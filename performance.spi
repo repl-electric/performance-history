@@ -46,8 +46,6 @@ live_loop :light, sync: :unsyncable do; tick
     chd = score.look[0]
     sleeps = score.look[-1]
 
-    puts x
-    rocks speed: x
     sleep sleeps
   end
 end
