@@ -10,8 +10,9 @@ alive perc: 1, sop: 0
 #colorb 0.6
 #star size: 1, life: 1
 #zoomout
-cam :chase
+#cam :chase
 
+roots_chase freq: 0.1
 
 #roots_chase target: :start
 
