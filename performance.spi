@@ -16,8 +16,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   with_bpm 127 do
     flop_cc motion: (flow 0.27 0.5 32).look
     flop :a3
-    @x=0
-#    star size: @x, life: 2
+#    @x=0
+    star size: 1, life: 2
 
     sleep 1/4.0
     sleep 1/4.0
