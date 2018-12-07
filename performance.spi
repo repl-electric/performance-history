@@ -75,8 +75,8 @@ end
 
 cam :chase
 
-star life: 3, size: 1.5
-#roots_chase target: :spiral
+#star life: 3, size: 1.5
+roots_chase target: :spiral
 #roots_chase force: 100, radius: 0.1,drag: 5,noise: 0.0, freq: 0.0 #, freq: 0.01, noise: 0.001 #, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
