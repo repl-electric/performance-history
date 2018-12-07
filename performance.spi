@@ -3,7 +3,7 @@ init! true
 alive perc: 0, sop: 0
 #start_init
 
-#flop_on :d2
+flop_x :d2
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
