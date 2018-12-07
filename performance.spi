@@ -1,11 +1,11 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 #alive perc: 1, sop: 0
-#@init! true
-
- unity "/linecolor/b",1.0
- unity "/color1/b",0.3
- unity "/color2/b",1.0
- unity "/color3/b",0.2
+init! true
+stop
+#255
+ unity "/color1/b",118
+ unity "/color2/b",255
+ unity "/color3/b",49
 
 stop
 
