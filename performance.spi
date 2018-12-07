@@ -6,7 +6,7 @@ alive perc: 0, sop: 0
 colorb 1.1
 #start_init
 
-rocks noise: 0, freq: 0.04
+rocks noise: 0, freq: 0.04, rot: 100
 
 stop
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
