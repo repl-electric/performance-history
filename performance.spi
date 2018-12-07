@@ -6,7 +6,7 @@ alive perc: 1, sop: 0
 #start_init
 #stop
 #flop_on :D2
-create_cube
+zommout
 #overclock_cc motion: 0.27
 #colorb 0.6
 #star size: 1, life: 1
