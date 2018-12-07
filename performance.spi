@@ -1,7 +1,7 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
 
-flop_on :D2, 127
+#flop_on :D2, 127
 #rocks orbit: 0.0
 colorb 1.1
 #start_init
@@ -13,7 +13,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     flop_cc motion: x=(flow 0.27 0.5 32).look
     at{
       sleep 0.5
-      rocks noise: (x-0.27)*3, freq: (x-0.27)*1.1, orbit: (x-0.27)*50
+      rocks noise: (x-0.27)*3, freq: (x-0.27)*1.1, orbit: (x-0.27)*50, rot: x
     }
 
 
