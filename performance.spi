@@ -59,7 +59,7 @@ end
 cam :chase
 
 #roots_chase target: :slow
-roots_chase force: 10, radius: 0.1,drag: 5, freq: 0.01, noise: 0.001 #, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
+roots_chase force: 10, radius: 0.1,drag: 3, freq: 0.01, noise: 0.001 #, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (vec
