@@ -7,10 +7,11 @@ alive perc: 0, sop: 0
 at{
   sync :unsyncable
   sleep 1/2.0
-  overclock_on :A3
-  say :raise
+  overclock_on :F3
+
 }
-slow_init
+#slow_init
+zoomout
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
