@@ -1,6 +1,7 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
-#init! true
+init! true
+stop
 #create_cube
 #start_init
 #stop
@@ -12,7 +13,7 @@ alive perc: 1, sop: 0
 #zoomout
 #cam :chase
 
-roots_chase freq: 1.4, drag: 100
+
 
 #roots_chase target: :start
 
