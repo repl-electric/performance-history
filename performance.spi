@@ -10,7 +10,7 @@ alive perc: 1, sop: 0
 #colorb 0.6
 #star size: 1, life: 1
 #zoomout
-star size: 0.6, life: 3
+star size: 0.4, life: 3
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
