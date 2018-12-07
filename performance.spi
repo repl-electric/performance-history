@@ -1,16 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 #alive perc: 1, sop: 0
 init! true
-#start_init
-#overclock_on :E3
-
-#color 1.0
-#unity "/color1/h",0.0
-
-
-
-stop
-overclock_cc motion: 0.27
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
