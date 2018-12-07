@@ -16,9 +16,9 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     if spread(7,11).look
       ze (vec :g3 :A3 :e3).look, (vec 120, 50).look, sus: 2, z: 1
     end
-    ze (vec :g3).look if spread(3,8).look
+    ze (knit :g3 4 :A3 4 :e3 4).look if spread(3,8).look
 
-    zoomout
+    #zoomout
 
     sleep 1/4.0
     sleep 1/4.0
