@@ -12,7 +12,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127*2 do
     flip_cc motion: 0.4
-    kal :f4, sus: 2
+    kal :f4,127, sus: 2
     roots_chase freq: rand*4, amp: 0.5
 
 #    flop_cc motion: (flow 0.27 0.5 16).look
