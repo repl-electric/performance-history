@@ -34,7 +34,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     #zoomout
 
     if spread(7,11).look
-      flop :a3
+      flop :a3, sus: 2
     else
     end
 
