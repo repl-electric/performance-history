@@ -2,8 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 #init! true
 alive perc: 0, sop: 0
 #start_init
-
-flop_on :d2
+#flop_on :d2
 rocks orbit: 0
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
