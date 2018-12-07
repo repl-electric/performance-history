@@ -13,7 +13,7 @@ alive perc: 1, sop: 0
 #zoomout
 #cam :chase
 
-cam :chase
+#cam :chase
 
 #roots throttle: 0
 roots_chase target: :start, throttle: 0.1, drag: 10, freq: 10
