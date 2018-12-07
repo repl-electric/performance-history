@@ -16,7 +16,7 @@ alive perc: 1, sop: 0
 #cam :chase
 
 #roots throttle: 0
-roots_chase target: :cube
+roots_chase target: :spiral
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
