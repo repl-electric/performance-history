@@ -61,7 +61,7 @@ live_loop :light, sync: :unsyncable do; tick
     chd = score.look[0]
     sleeps = score.look[-1]
     heat chd,1, sus: sleeps, pads: [0]
-    at{sleep 0.5
+    at{sleep 0.5;
       rocks rotate: speed: 40}
 
 
