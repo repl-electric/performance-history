@@ -5,8 +5,6 @@ init! true
 #rocks orbit: 0.0
 flop_on :d2
 
-star life: -500.000001, size: 0.0000000001
-
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
@@ -48,7 +46,7 @@ live_loop :light, sync: :unsyncable do; tick
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-#    heat chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
+    heat chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
 
 
     sleep sleeps
