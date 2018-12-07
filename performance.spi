@@ -5,7 +5,7 @@ init! true
 #rocks orbit: 0.0
 flop_on :d2
 
-star life: -500.000001
+star life: -500.000001, size: 0.0000000001
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
