@@ -8,7 +8,7 @@ unity "/color3/b",0.0
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
-#  stop
+  stop
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
     flop_cc motion: (flow 0.27 0.6 32).look
