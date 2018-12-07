@@ -11,7 +11,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   with_bpm 127 do
 
     flop_cc motion: x=(flow 0.27, 0.5, 32,).look
-    rocks y: 1.0
+    rocks x: 1.0
 
 
     sleep 1/4.0
