@@ -18,6 +18,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     end
     ze (vec :g3).look if spread(3,8).look
 
+    zoomout
 
     sleep 1/4.0
     sleep 1/4.0
