@@ -16,7 +16,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     roots_chase freq: rand*4, amp: 0.5
 
 #    flop_cc motion: (flow 0.27 0.5 16).look
-    flip :a4,120, sus: (vec 0.5 1 0.5).look if spread(7,11).look
+    flip :g4,120, sus: (vec 0.5 1 0.5).look if spread(7,11).look
    # flip :e3,120, sus: (vec 0.5 1 0.5).look if spread(3,8).look
     #flip_cc motion: 0.3
     #flip :e3, 120, sus: (vec  1 0.5 0.25).look if spread(3,8).look
