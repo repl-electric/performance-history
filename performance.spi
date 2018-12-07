@@ -2,8 +2,8 @@ load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
 #start_init
 #flop_on :d2
-
-cam :top
+fx drive:  1
+#cam :top
 
 #slow_init
 #say :raise
