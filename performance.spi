@@ -3,7 +3,7 @@ alive perc: 1, sop: 0
 #start_init
 #flop_on :d2
 
-cam :stop
+cam :top
 
 #slow_init
 #say :raise
