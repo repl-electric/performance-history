@@ -10,11 +10,10 @@ alive perc: 1, sop: 0
 #star size: 3, life: 5
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
-  with_bpm 127*2 do
+  with_bpm 127*4 do
     flip_cc motion: 0.4
     kal :e4, sus: 2
     roots_chase freq: rand*4, amp: 0.5
-
 #    flop_cc motion: (flow 0.27 0.5 16).look
     flip :c4,127, sus: (vec 0.5 1 0.5).look if spread(7,11).look
    # flip :e3,120, sus: (vec 0.5 1 0.5).look if spread(3,8).look
