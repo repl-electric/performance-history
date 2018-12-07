@@ -33,6 +33,12 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     #zoomout
 
+    if spread(7,11).look
+      flop :a3
+    else
+    end
+
+
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
