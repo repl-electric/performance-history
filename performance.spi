@@ -13,7 +13,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     flop_cc motion: x=(flow 0.27 0.5 32).look
     at{
       sleep 0.5
-      rocks noise: (x-0.27)*3, freq: (x-0.27)*1.1, orbit: (x-0.27)*50, rot: (x-0.27)*20
+      rocks noise: (x-0.27)*3, freq: (x-0.27)*1.1, orbit: (x-0.27)*50, rot: (x-0.27)*50
     }
 
 
