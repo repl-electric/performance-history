@@ -10,8 +10,8 @@ alive perc: 1, sop: 0
 #overclock_cc motion: 0.27
 #colorb 0.6
 #star size: 1, life: 1
-#zoomout
-cam :chase
+zoomout
+#cam :chase
 
 #cam :chase
 
