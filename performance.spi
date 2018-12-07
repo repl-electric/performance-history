@@ -49,7 +49,7 @@ live_loop :light, sync: :unsyncable do; tick
     #heat chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
     x = linear_map(note(:A2), note(:a4),0.0,500.0,note(n)
     puts x
-    rocks speed:
+    rocks speed: x
     sleep sleeps
   end
 end
