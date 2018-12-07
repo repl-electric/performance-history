@@ -6,9 +6,9 @@ start_init
 at{
   sync :unsyncable
   sleep 1/3.0
-  overclock_on :f3
+  overclock_on :e3
 }
-slow_init
+#slow_init
 #say :raise
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
