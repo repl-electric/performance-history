@@ -4,7 +4,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 #stop
 #255
 #flop_on :d2
-colorb 0.1
+colorb 0.5
 puts :done
 stop
 
