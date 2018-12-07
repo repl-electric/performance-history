@@ -5,6 +5,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 #255
 #flop_on :d2
 colorb 1
+puts :done
 stop
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
