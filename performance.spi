@@ -18,7 +18,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     at{
       sleep 0.5
       rocks noise: (x-0.27)*40,
-      freq: (linear_map 0.27, 0.6, 0,0.06, x), rot: 0.0,  orbit: (x-0.27)*10
+      freq: (linear_map 0.27, 0.6, 0,0.06, x), rot: 0.0,  orbit: (x-0.27)*20
 #speed: (x-0.27)*100
       #rocks noise: (x-0.27)*5, freq: (x-0.27)*1.5, orbit: (x-0.27)*50, rot: (x-0.27)*50
     }
