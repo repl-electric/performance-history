@@ -45,7 +45,7 @@ live_loop :light, sync: :unsyncable do; tick
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    chd[0] == n
+    n = chd[0]
     #heat chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
     rocks speed: (linear_map note(:A2), note(:a4),0.0,200.0,note(n))
     sleep sleeps
