@@ -16,7 +16,7 @@ alive perc: 1, sop: 0
 #cam :chase
 
 #roots throttle: 0
-roots_chase target: :ring
+roots_chase target: :start
 #roots_chase drag: 20.5, freq: 0.02, amp: 0.02, force: 80, radius: 0.1, noise: 0
 #create_sea
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
