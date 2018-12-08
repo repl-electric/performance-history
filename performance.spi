@@ -5,9 +5,9 @@ alive perc: 1, sop: 0
 #flop_on :d2, 127
 
 at{
-  sync :unsyncable
-  sleep 1/2.0
-  overclock_on :a3,120
+  sync :ModularSynthsControlledByCode
+  sleep 1/4.0
+  overclock_on :f3,120
   livecode :raise
 }
 
