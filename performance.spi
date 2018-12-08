@@ -4,7 +4,7 @@ init! true
 #stop
 #start_init
 #flop_on :d2, 127
-
+create_cube
 #colorb 1
 #cam :chase
 #zoomout
