@@ -34,7 +34,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
-
+    burst: 1
 
     if spread(3,8).look
       vortex force: (vec 10.2 0).look
