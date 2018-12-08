@@ -4,6 +4,7 @@ init! true
 #stop
 #start_init
 #flop_on :d2, 127
+live_loop :name, sync: :unsyncable do
 
 #zoomout
 colorb 0.9, force: 1
@@ -17,7 +18,13 @@ world time: 1
 cam :chase
 #create_cube
 zoomout
-stop
+  tick
+
+  sleep 1
+  sleep 1
+end
+
+  stop
 stop
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
