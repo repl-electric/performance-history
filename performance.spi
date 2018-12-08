@@ -13,7 +13,7 @@ at{
   #livecode :raise
 }
 #zoomout
-colorb 1
+colorb 1.0
 #slow_init
 #livecode :sleep
 
