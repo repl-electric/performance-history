@@ -15,7 +15,7 @@ at{
 #slow_init
 #livecode :sleep
 
-fx drive: 0.80, reverb: 1.00
+fx drive: 1.00, reverb: 1.00
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
