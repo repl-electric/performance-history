@@ -14,7 +14,7 @@ roots_chase throttle: 0
 star size: 0
 #cam :side
 world time: 1
-#cam :chase
+cam :chase
 #create_cube
 #zoomout
 stop
