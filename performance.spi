@@ -105,6 +105,7 @@ live_loop :light, sync: :unsyncable do; tick
       operator chd[-1],110, sus: 4
     }
     operator chd[-2],100, sus: 4
+    deep root(chd), 10,sus: sleeps, drive: 0.0, sat: 0.0
 
     sleep sleeps/2.0
   end
