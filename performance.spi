@@ -4,6 +4,8 @@ alive perc: 1, sop: 0
 #start_init
 #flop_on :d2, 127
 
+
+
 at{
   #sync :ModularSynthsControlledByCode
   #sleep 1/4.0
@@ -17,7 +19,10 @@ at{
 
 #fx drive: 1.00, reverb: 1.00
 
-cam :top
+#cam :top
+
+
+roots swirl: 1, throttle: 0
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
