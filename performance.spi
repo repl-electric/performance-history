@@ -7,10 +7,10 @@ alive perc: 1, sop: 0
 at{
   sync :ModularSynthsControlledByCode
   sleep 1/4.0
-  overclock_on :f3,120
-  livecode :raise
+  overclock_on :e3,120
+  #livecode :raise
 }
-
+zoomout
 
 slow_init
 
