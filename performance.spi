@@ -21,6 +21,7 @@ at{
 
 #cam :side
 world time: 1
+cam :chase
 
 
 
