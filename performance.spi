@@ -21,8 +21,8 @@ at{
 star size: 0
 #cam :side
 world time: 1
-cam :chase
-
+#cam :chase
+zoomout
 
 
 
