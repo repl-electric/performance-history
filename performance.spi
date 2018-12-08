@@ -22,7 +22,7 @@ star size: 0
 #cam :side
 world time: 1
 #cam :chase
-create_cube
+#create_cube
 #zoomout
 stop
 stop
