@@ -6,7 +6,7 @@ alive perc: 1, sop: 0
 #flop_on :d2, 127
 
 #zoomout
-colorb 1.1
+colorb 0.1
 #slow_init
 #livecode :sleep
 roots_chase throttle: 0
