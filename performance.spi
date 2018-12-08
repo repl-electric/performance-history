@@ -34,7 +34,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
       flop :g3, sus: 4
     end
 
-    roots_chase freq: rand*3, amp: 0.2, force: 200
+    roots_chase freq: rand*3, amp: 0.2, force: 100
     #roots_chase target: :start
 
     sleep 1/4.0
