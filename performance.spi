@@ -4,6 +4,8 @@ load_support('piezoelectric_resonator'); use_bpm 127
 #start_init
 code :begin
 
+puts code
+
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
@@ -27,8 +29,8 @@ end
 
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
-  perc=(vec 0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,)
-  with_bpm 127*(vec 1,).look do
+  perc=(vec 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
+  with_bpm 127*(vec 1).look do
     perc_machine perc.to_a
   end
 end
@@ -37,7 +39,7 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (vec
-      [[_], 8],
+      [[_] 8]
 
       )
     chd = score.look[0]
