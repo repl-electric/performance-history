@@ -6,6 +6,7 @@ alive perc: 1, sop: 0
 #flop_on :d2, 127
 
 colorb 1
+cam :chase
 stop
 at{
   #sync :ModularSynthsControlledByCode
