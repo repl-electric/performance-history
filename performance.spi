@@ -90,6 +90,7 @@ live_loop :light, sync: :unsyncable do; tick
     with_swing 0.1 {
       operator chd[-1],110, sus: 4
     }
+    operator chd[-2],110, sus: 4
 
     sleep sleeps/2.0
   end
