@@ -7,7 +7,7 @@ init! true
 
 #colorb 1
 #cam :chase
-zoomout
+#zoomout
 stop
 at{
   #sync :ModularSynthsControlledByCode
