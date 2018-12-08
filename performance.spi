@@ -133,7 +133,7 @@ live_loop :light, sync: :unsyncable do; tick
     with_swing 0.1 {
       operator chd[-1],110, sus: 4
     }
-    operator chd[-2],110, sus: 4
+    operator chd[-2],127, sus: 4
     deep root(chd), 100,sus: sleeps, drive: 1.00, sat: 1.00
 
     sleep sleeps/2.0
