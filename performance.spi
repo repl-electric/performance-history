@@ -5,7 +5,7 @@ alive perc: 1, sop: 0
 #start_init
 #flop_on :d2, 127
 
-colorb 1
+colorb 1.1
 
 #colorb 1
 #cam :chase
