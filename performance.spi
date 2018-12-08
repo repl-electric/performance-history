@@ -23,7 +23,7 @@ star size: 0
 world time: 1
 #cam :chase
 zoomout
-
+stop
 
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
