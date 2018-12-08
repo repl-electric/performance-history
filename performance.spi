@@ -13,8 +13,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/2.0
 
-    alu (vec :g3).look if spread(1,8).look
-
+    alu (vec :g3).look if spread(3,8).look
+    #create_cube
 
     sleep 1/4.0
     sleep 1/4.0
