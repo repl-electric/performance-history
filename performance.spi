@@ -17,13 +17,13 @@ at{
 
 fx drive: 1.00, reverb: 1.00
 
-
+cam :top
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 * 4 do
-    overclock_cc motion: 0.5
-    flop_cc motion: 0.53
+    overclock_cc motion: 1.00
+    flop_cc motion: 1.00
     star life: 7
     kal :e4,5, sus: 4
     #flop_cc motion: (flow 0.27 0.5 12).look
