@@ -5,7 +5,7 @@ alive perc: 1, sop: 0
 #start_init
 #flop_on :d2, 127
 
-create_cube
+colorb 1
 stop
 at{
   #sync :ModularSynthsControlledByCode
