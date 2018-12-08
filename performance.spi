@@ -18,7 +18,7 @@ at{
 #livecode :sleep
 
 #fx drive: 1.00, reverb: 1.00
-
+star size: 0
 #cam :side
 world time: 1
 cam :chase
