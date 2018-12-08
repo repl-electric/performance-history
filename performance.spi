@@ -22,9 +22,9 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   with_bpm 127 * 4 do
     overclock_cc motion: 0.5
     flop_cc motion: 0.6
-    kal :c4, sus: 2
+    kal :a4, sus: 2
     #flop_cc motion: (flow 0.27 0.5 12).look
-    flip :a4, 127, sus: (vec 1 0.5 2).look if spread(1,3).look
+    flip :c4, 127, sus: (vec 1 0.5 2).look if spread(1,3).look
     #flip :e3, 127, sus: (vec 1 0.5 2).look if spread(1,3).rot(-1).look
 
     if spread(7,11).look
