@@ -34,6 +34,12 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
     alu (knit :g3,4, :a3,4,:f3,4,  :g3,4, :a3,4, :c4,4).look,(vec 1,127,1).look,z:1, sus: (vec 3 1 1).look if spread(7,11).look
     #create_cube
 
+    if spread(7,11).look
+      flop :g3
+    end
+
+
+
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
