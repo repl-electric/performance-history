@@ -16,7 +16,7 @@ at{
 colorb 1.0
 #slow_init
 #livecode :sleep
-
+roots_chase throttle: 0
 #fx drive: 1.00, reverb: 1.00
 star size: 0
 #cam :side
