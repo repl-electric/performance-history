@@ -28,6 +28,8 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
       flop :g3, sus: 4
     end
 
+    roots_chase freq: rand*2, amp: 0.2
+
 
     sleep 1/4.0
     sleep 1/4.0
