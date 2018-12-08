@@ -22,7 +22,7 @@ at{
 #cam :top
 
 
-roots swirl: 0.1
+roots swirl: 0.2
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
