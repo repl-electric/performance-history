@@ -4,7 +4,7 @@ init! true
 #stop
 #start_init
 #flop_on :d2, 127
-live_loop :name, sync: :unsyncable do
+live_loop :name do
 
 #zoomout
 colorb 0.9, force: 1
