@@ -6,7 +6,7 @@ init! true
 #flop_on :d2, 127
 
 #zoomout
-colorb 0.9, force: 1
+colorb 0.3, force: 1
 #slow_init
 #livecode :sleep
 roots_chase throttle: 0
