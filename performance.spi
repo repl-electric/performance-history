@@ -5,7 +5,7 @@ init! true
 #start_init
 #flop_on :d2, 127
 live_loop :name do
-
+burst: 0
 #zoomout
 colorb 0.9, force: 1
 #slow_init
