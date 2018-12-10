@@ -19,7 +19,7 @@ cam :chase
 #create_cube
 #zoomout
   tick
-  operator :C3, 127
+  operator :C3, 80
   sleep 1
   flop :B3, 120
   sleep 1
