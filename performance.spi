@@ -21,9 +21,8 @@ cam :chase
   tick
   flop_cc motion: (flow 0.27 0.5 12).look
   with_swing 0.08 {
-    operator [:C3, :C3, :C3, :C3].choose, 98, sus: 2
+    operator [:C4, :C3, :C3, :C3].choose, 98, sus: 2
   }
-
   sleep 1
   x= (vec
     :B3 :B3 :A3 _     :C4 :B3 :B3 _    :B3 :B3 :B3 _
