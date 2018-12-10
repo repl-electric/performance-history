@@ -19,7 +19,7 @@ cam :chase
 #create_cube
 #zoomout
   tick
-
+  operator :A3
   sleep 1
   sleep 1
 end
