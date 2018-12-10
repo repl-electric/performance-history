@@ -20,7 +20,7 @@ cam :chase
 #zoomout
   tick
   flop_cc motion: (flow 0.27 0.5 12).look
-  operator [:C3, :C3, :C3, :C3, :B2].choose, 98, sus: 2
+  operator [:C3, :C3, :C3, :C3].choose, 98, sus: 2
 
   sleep 1
   x= (vec
