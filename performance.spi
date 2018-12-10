@@ -21,11 +21,10 @@ cam :chase
   tick
   operator :C3, 98, sus: 2
   sleep 1
-  flop :B3, 120
+  flop (vec :B3 :B3 :B3 :A3), 120
   sleep 1/2.0
   operator :G3, 98, sus: 2 if spread(7,11).look
   sleep 1/2.0
-
 end
 
   stop
