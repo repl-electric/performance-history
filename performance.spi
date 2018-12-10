@@ -21,7 +21,7 @@ cam :chase
   tick
   operator :B3, 127
   sleep 1
-  flop :D3, 120
+  flop :C3, 120
   sleep 1
 end
 
