@@ -19,6 +19,7 @@ cam :chase
 #create_cube
 #zoomout
   tick
+  flop_cc motion: (flow 0.27 0.5 12).look
   operator :C3, 98, sus: 2
   sleep 1
   flop x=(vec :B3 :B3 :A3 _     :C4 :B3 :B3 _    :B3 :B3 :B3 _
