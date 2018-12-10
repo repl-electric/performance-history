@@ -24,7 +24,7 @@ cam :chase
   flop x=(vec :B3 :B3 :A3 _     :C4 :B3 :B3 _    :B3 :B3 :B3 _
             :C4 :C4 :C4 _    :F4 :E4 :E4 _    :E4 :E4 :G4  _).look, 120
   sleep 1/2.0
-  operator :G4, 98, sus: 2 if spread(3,8*4).look
+  operator :G4, 90, sus: 2 if spread(3,8*4).look
   operator :G3, 98, sus: 2 if spread(3,8).look
   sleep 1/2.0
 end
