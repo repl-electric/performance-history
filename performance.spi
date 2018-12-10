@@ -36,7 +36,7 @@ cam :chase
   sleep 1/2.0/2.0
   operator [:E5, :E5, :D5, :F5].choose, [113,100,120].choose, sus: 12 if spread(1, x.count).rot(-3).look
   operator [:E5, :E5, :D5, :F5].choose, [113,100,120].choose, sus: 12 if spread(1, x.count).rot(3).look
-  operator [:G5, :B5, :B5, :D5].choose, [123,105,120].choose, sus: 12 if spread(1, x.count).rot(6).look
+  operator [:G5, :B5, :B5, :D5].choose, [123,105,122].choose, sus: 12 if spread(1, x.count).rot(6).look
 
   sleep 1/2.0/2.0
 end
