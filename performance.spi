@@ -111,7 +111,11 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 
     sleep 1/2.0
     sleep 1/2.0
+    with_swing 0.1 {
     dark :f4
+    }
+
+
     flop :c4,120, sus: 1/2.0
 
     sleep 1/2.0
