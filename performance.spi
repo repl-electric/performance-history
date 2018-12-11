@@ -179,6 +179,7 @@ live_loop :light, sync: :unsyncable do; tick
     }
    # operator chd[-2],127, sus: 4
     #deep root(chd), 127,sus: sleeps, drive: 0.00, sat: 0.00, tube: 0.00
+    dark :a4,50
     at{
       2.times{
       dark :e3
