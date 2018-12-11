@@ -64,7 +64,7 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
         flip :a3, 127, sus: x
       }
     end
-    flip :g4, 127, sus: (vec 4).look if spread(1,32).rot(-3).look
+    flip :g4, 127, sus: (cycle 4).look if spread(1,32).rot(-3).look
 
 
     if spread(7,11).look
@@ -81,9 +81,9 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
 #    burst 1
 
     if spread(3,8).look
-    #  vortex force: (vec 10.2 0).look
+    #  vortex force: (cycle 10.2 0).look
     end
-    #alu (vec :c4 :e4).look, (vec 1,60,127).look, sus: (vec 0.5 0.25 2).look if spread(3,8).look
+    #alu (cycle :c4 :e4).look, (vec 1,60,127).look, sus: (vec 0.5 0.25 2).look if spread(3,8).look
     #alu (knit :a4,4).look,(vec 127,127,1).look,z:1, sus: (vec 8 8 8).look if spread(7,11).look
     #create_cube
 
