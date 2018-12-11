@@ -65,6 +65,9 @@ live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
       }
     end
 
+
+    puts (cycle_rep 4 2).look
+
     flip :g4, 127, sus: (cycle_rep 4 2).look if spread(1,32).rot(-3).look
 
 
