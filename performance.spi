@@ -171,7 +171,7 @@ live_loop :light, sync: :unsyncable do; tick
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    dark :C3
+    dark :d3
     heat chd[0],10, sus: sleeps, pads: [0,1,2,3], sat: 0.00, drive: 0.00
     sleep sleeps/2.0
     with_swing 0.1 {
