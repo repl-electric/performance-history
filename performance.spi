@@ -188,7 +188,7 @@ dark :a4,50
       2.times{
         dark :b4
         sleep 1/2.0
-        dark :c4
+        dark :c4,55
         }
     }
     sleep sleeps/2.0
