@@ -186,9 +186,8 @@ dark :a4,50
     at{
       slee sleeps/4.0
       2.times{
-
         dark :a4
-        sleep 1
+        sleep 1/2.0
         dark :a4
         }
     }
