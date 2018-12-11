@@ -185,9 +185,9 @@ dark :a4,50
 
     at{
       2.times{
-      dark :e3
+      dark :a4
       sleep 0.5
-        dark :f3
+        dark :a4
         }
     }
 
