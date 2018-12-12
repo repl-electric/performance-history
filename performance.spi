@@ -11,7 +11,7 @@ class Score
 end
 
 def compose(pat)
-  pat.map{|root| chord(root)}
+  pat.map{|root| chord(root[0])}
 end
 
 puts compose((cycle [:a2 4]))
