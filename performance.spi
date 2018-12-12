@@ -99,7 +99,7 @@ def perc_machine(pat)
       #glitch :ds3, 127 if pat[0]!=0
     end
     sleep 1/4.0
-    dark :c3, 20
+    dark :c2, 20
 
     with_swing 0.1 {#((knit -0.1/2.0, 4, 0.1,4).look) {
       #glitch :gs3, 40 if pat[5]!=0
