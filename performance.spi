@@ -88,6 +88,8 @@ def perc_machine(pat)
     glitch_cc corode: (line 0.8, 0.9, 128).look
     #glitch (ring :c3, :a3).look, 30 if spread(7,11).look
 
+  dark :a5, 20
+
     sleep 1/4.0
     if dice(32) > 29
       #glitch :fs3, 40 if pat[1]!=0
