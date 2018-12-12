@@ -120,7 +120,8 @@ def perc_machine(pat)
       #dark (knit :Cs6, 7, :cs5,1, _,4).look, 40 if spread(1,4).look
     }
 
-    sleep 1/2.0
+  sleep 1/2.0
+  dark :a5, 20
     #glitch (ring :cs4, :cs4, :cs4, :d4).look,127 if pat[6] !=0
     sleep 1/2.0
 end
