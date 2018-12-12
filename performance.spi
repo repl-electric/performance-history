@@ -50,7 +50,7 @@ def perc_machine(pat)
   if spread(4,8).look
     glitch_cc mode: (ring 0, 2, 3, 5).look
   end
-with_swing 0.1{
+
   if spread(8,8).look
     dark (ring :a5, :a5).look, (ring 122, 100, 80, 104).look-(rand*6) if pat[-1]!=0
       if spread(3,8).look
@@ -119,7 +119,6 @@ with_swing 0.1{
     sleep 1/2.0
     glitch (ring :cs4, :cs4, :cs4, :d4).look,127 if pat[6] !=0
     sleep 1/2.0
-    }
 end
 
 
