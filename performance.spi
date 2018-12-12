@@ -3,6 +3,9 @@ load_support('piezoelectric_resonator'); use_bpm 127
 #init! true
 #start_init
 class Score
+  def initalise(a)
+    @a||=a
+  end
   def voice(opts)
   end
 end
