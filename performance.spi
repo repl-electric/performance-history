@@ -120,9 +120,11 @@ def perc_machine(pat)
 
     #dark :cs3, 20
 
+  if spread(1,4).look
     with_swing 0.1 {
-      dark (knit :Cs6, 7, :cs5,1, _,4).look, 40 if spread(1,4).look
+      dark (knit :Cs6, 7, :cs5,1, _,4).look, 40
     }
+  end
 
     sleep 1/2.0
     with_swing -0.1{dark :a5, 15}
