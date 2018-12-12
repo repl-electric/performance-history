@@ -11,6 +11,7 @@ def compose(pat)
   Score.new(pat).map{|root| chord(root)}
 end
 
+puts compose(:a2)
 
 stop
 
