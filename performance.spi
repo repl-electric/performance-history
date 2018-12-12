@@ -7,6 +7,7 @@ class Score
     @a||=a
   end
   def voice(opts)
+    @a
   end
 end
 
