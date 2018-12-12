@@ -111,7 +111,7 @@ def perc_machine(pat)
 
     #dark :cs3, 20
 
-  dark :Cs6
+    dark :Cs6, 40
 
     sleep 1/2.0
     glitch (ring :cs4, :cs4, :cs4, :d4).look,127 if pat[6] !=0
