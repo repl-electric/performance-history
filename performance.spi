@@ -89,7 +89,7 @@ def perc_machine(pat)
     #glitch (ring :c3, :a3).look, 30 if spread(7,11).look
 
     if spread(1,32).look
-      dark :cs3, 36
+      dark :cs3, 46
     end
 
     sleep 1/4.0
