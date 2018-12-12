@@ -19,9 +19,9 @@ def compose(pat)
   Score.new(pat.map{|root| [chord(root[0]), root[-1]]})
 end
 
-flop compose((cycle [:a2 4] [:C2 4])).voice(open: 2).look
+#flop
 
-stop
+#stop
 
 live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
@@ -57,9 +57,10 @@ end
 #roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
-    score = (cycle
-      compose(:a2).style(open:2) # [[_] 8]
-      )
+  #  score = (cycle
+ #     compose(:a2).style(open:2) # [[_] 8]
+    #    )
+    score = compose((cycle [:a2 4] [:C2 4])).voice(open: 2)
     chd = score.look[0]
     sleeps = score.look[-1]
 
