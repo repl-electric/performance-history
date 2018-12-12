@@ -90,7 +90,7 @@ def perc_machine(pat)
 
     sleep 1/4.0
     if dice(32) > 29
-      glitch :fs3, 40 if pat[1]!=0
+      #glitch :fs3, 40 if pat[1]!=0
     end
     sleep 1/4.0
 
