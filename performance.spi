@@ -167,7 +167,7 @@ live_loop :light, sync: :unsyncable do; tick
     sleeps = score.look[-1]
 
     at{
-      sleep sleeps/3.0
+      sleep sleeps/1.5
       midi x, 50, channel: 13, sus: 4
       }
 
