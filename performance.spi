@@ -11,7 +11,7 @@ class Score
       chd = section[0]
       open_chd = chd.to_a
       open_chd[1] = chd[1] + opts[:open] * 12
-      [open_chd.ring, section[-1]]
+      [open_chd, section[-1]]
     }
   end
 end
