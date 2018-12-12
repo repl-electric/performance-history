@@ -159,6 +159,8 @@ live_loop :light, sync: :unsyncable do; tick
     #    )
     # midi (cycle :c4 :C3 _).look, 50, channel: 13, sus: 2
     x=(cycle :c4 :a3 :e3).rot(1).look
+    y=(cycle :e4 :c3 :g3).rot(1).look
+
 
     puts (cycle :c4 :C3 _).look
     score = compose((cycle [:a2 8] [:f2 8] [:c3 8] [_ 4])).voice(open: 1)
@@ -167,7 +169,9 @@ live_loop :light, sync: :unsyncable do; tick
     sleeps = score.look[-1]
 
     at{
-      sleep sleeps/1.5
+      sleep sleeps/2.0
+      midi y, 52, channel: 13, sus: 8
+      sleep sleeps/2.0
       midi x, 52, channel: 13, sus: 8
       }
 
