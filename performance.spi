@@ -159,16 +159,16 @@ live_loop :light, sync: :unsyncable do; tick
     #    )
     # midi (cycle :c4 :C3 _).look, 50, channel: 13, sus: 2
     x=(cycle :c4 :a3 :e3).look
-    at{
-      sleep sleeps/2.0
-      midi x, 50, channel: 13, sus: 2
-      }
 
     puts (cycle :c4 :C3 _).look
     score = compose((cycle [:a2 8] [:f2 8] [:c3 8] [_ 4])).voice(open: 1)
     puts score
     chd = score.look[0]
     sleeps = score.look[-1]
+    at{
+      sleep sleeps/2.0
+      midi x, 50, channel: 13, sus: 2
+      }
 
   #  puts chd
     #flop chd[1]
