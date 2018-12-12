@@ -14,7 +14,7 @@ def compose(pat)
   pat.map{|root| chord(root)}
 end
 
-puts compose((cycle :a2 4) )
+puts compose((cycle [:a2 4]))
 
 stop
 
