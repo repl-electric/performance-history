@@ -119,7 +119,7 @@ def perc_machine(pat)
     }
 
   if spread(7,8).look
-    dark :cs3, 20
+    dark :a5, 20
   end
 
   if spread(1,4).look
