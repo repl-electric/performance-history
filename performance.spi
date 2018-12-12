@@ -64,7 +64,7 @@ def perc_machine(pat)
     glitch :c3, (ring 65, 60, 60, 60).look if pat[0]!=0
     at{
       sleep 0.25
-      glitch :c3, 2.1*(ring 120, 90, 100, 100,    100, 90, 90, 90).look if pat[1]!=0
+      #glitch :c3, 2.1*(ring 120, 90, 100, 100,    100, 90, 90, 90).look if pat[1]!=0
     }
     glitch_cc corode: 0.8
 
@@ -128,8 +128,8 @@ end
 
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
-  perc=(cycle 1 1 1 1  1 1 1 1  1 1 1 1  1 1 1 1)
-  with_bpm 127*(cycle 1).look do
+  perc=(cycle 1, 1, 1, 1,  1, 1, 1, 1,  1, 1, 1, 1,  1, 1, 1, 1,)
+  with_bpm 127*(cycle 1,).look do
     perc_machine perc.to_a
   end
 end
@@ -138,9 +138,9 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
   #  score = (cycle
- #     compose(:a2).style(open:2) # [[_] 8]
+ #,     compose(:a2,).style(open:2) # [[_] 8]
     #    )
-    score = compose((cycle [:a2 4] [:C2 4])).voice(open: 1)
+    score = compose((cycle [:a2, 4], [:C2, 4],)).voice(open: 1)
     chd = score.look[0]
     sleeps = score.look[-1]
   #  puts chd
