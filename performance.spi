@@ -74,7 +74,7 @@ def perc_machine(pat)
       #glitch :gs3,3# if spread(1,4).look
 
       sleep 1/2.0
-      glitch :ds3, 127 if state[:perc] && pat[2]!=0 #if spread(1,4).look
+      #glitch :ds3, 127 if state[:perc] && pat[2]!=0 #if spread(1,4).look
       sleep 1/2.0
 
       #glitch :fs3,20 if state[:perc] && pat[3]!=0# if spread(1,4).look
