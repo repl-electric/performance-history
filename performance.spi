@@ -129,7 +129,11 @@ def perc_machine(pat)
   end
 
     sleep 1/2.0
-    with_swing -0.1{dark :a5, 15}
+  if !spread(7,8).look
+    dark :a5, 89
+  end
+
+  with_swing -0.1{dark :a5, 15}
     #glitch (ring :cs4, :cs4, :cs4, :d4).look,127 if pat[6] !=0
     sleep 1/2.0
 end
