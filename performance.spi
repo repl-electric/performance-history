@@ -6,7 +6,7 @@ class Score
   def initialize(a)
     @a ||= a
   end
-  def voice(*opts)
+  def voice(opts)
     #@a
   end
 end
