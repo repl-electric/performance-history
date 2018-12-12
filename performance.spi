@@ -121,7 +121,7 @@ def perc_machine(pat)
     }
 
     sleep 1/2.0
-    glitch (ring :cs4, :cs4, :cs4, :d4).look,127 if pat[6] !=0
+    #glitch (ring :cs4, :cs4, :cs4, :d4).look,127 if pat[6] !=0
     sleep 1/2.0
 end
 
