@@ -66,6 +66,7 @@ live_loop :light, sync: :unsyncable do; tick
     puts chd
     flop chd[1]
     flop chd[0]
+    flop chd[2]
 
 
     sleep sleeps
