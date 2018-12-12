@@ -164,7 +164,7 @@ live_loop :light, sync: :unsyncable do; tick
     #flop chd[1]
   #  flop chd[0]
   #  flop chd[2]
-    heat chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
+    heat chd[0],1, sus: sleeps, pads: [0], sat: 0, drive: 0
 
     sleep sleeps
   end
