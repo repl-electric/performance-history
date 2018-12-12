@@ -135,14 +135,18 @@ def perc_machine(pat)
 
   with_swing -0.1{dark :a5, 15}
     #glitch (ring :cs4, :cs4, :cs4, :d4).look,127 if pat[6] !=0
-    sleep 1/2.0
+  sleep 1/2.0
+  if !spread(7,8).look
+    dark :a5, 99
+  end
+
 end
 
 
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
-  perc=(cycle 1, 1, 1, 1,  1, 1, 1, 1,  1, 1, 1, 1,  1, 1, 1, 1,)
-  with_bpm 127*(cycle 1,).look do
+  perc=(cycle 1 1 1 1  1 1 1 1  1 1 1 1  1 1 1 1)
+  with_bpm 127*(cycle 1).look do
     perc_machine perc.to_a
   end
 end
@@ -151,9 +155,9 @@ end
 live_loop :light, sync: :unsyncable do; tick
   with_bpm 127*1 do
   #  score = (cycle
- #,     compose(:a2,).style(open:2) # [[_] 8]
+ #     compose(:a2).style(open:2) # [[_] 8]
     #    )
-    score = compose((cycle [:a2, 4], [:C2, 4],)).voice(open: 1)
+    score = compose((cycle [:a2 4] [:C2 4])).voice(open: 1)
     chd = score.look[0]
     sleeps = score.look[-1]
   #  puts chd
