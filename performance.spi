@@ -111,7 +111,7 @@ def perc_machine(pat)
     }
     sleep 1/2.0
     with_swing 0.05 {
-    glitch :gs3, 96 if spread(1,8).look
+    glitch :gs3, 98 if spread(1,8).look
     }
 
     #dark :cs3, 20
