@@ -9,7 +9,7 @@ class Score
   def voice(opts)
     @a.map{|section|
       chd = section[0]
-      open_chd = chd
+      open_chd = chd.to_a
       open_chd[1] = chd[1] + opts[:open] * 12
       [open_chd, section[-1]]
     }
