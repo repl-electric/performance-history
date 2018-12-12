@@ -160,9 +160,8 @@ live_loop :light, sync: :unsyncable do; tick
     # midi (cycle :c4 :C3 _).look, 50, channel: 13, sus: 2
     x=(cycle :c4 :a3 :e3).look
     at{
-      sleep sleeps/2
+      sleep sleeps/2.0
       midi x, 50, channel: 13, sus: 2
-
       }
 
     puts (cycle :c4 :C3 _).look
