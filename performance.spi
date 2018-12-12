@@ -14,7 +14,7 @@ def compose(pat)
   pat.map{|root| [chord(root[0]), root[-1]]}
 end
 
-puts compose((cycle [:a2 4] [:C2 4]))
+puts compose((cycle [:a2 4] [:C2 4])).voice
 
 stop
 
