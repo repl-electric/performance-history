@@ -121,7 +121,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     sleep sleeps
   end
 end
-vol 0.7
+vol 0.6
 #livecode :end #has
 
 live_loop(:unsyncable) do;  sleep 1.0;end
