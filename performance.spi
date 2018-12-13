@@ -45,8 +45,9 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
     at{
       sleep 0.5
-      unity "/color3/b",(rand+1.0)*2
-      unity "/color3/h",(rand+0.2)*4
+      colorb 1
+      # unity "/color3/b",(rand+1.0)*2
+      # unity "/color3/h",(rand+0.2)*4
       rocks noise: 1
       sleep 2.5
       rocks orbit: -0.9
