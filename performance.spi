@@ -4,8 +4,8 @@ alive perc: 0, sop: 0
 #flop_on :d2
 at{
   sync :unsyncable
-  sleep 1/4.0
-  overclock_on :A3
+  sleep 1/2.0
+  overclock_on :F3
 }
 #slow_init
 
