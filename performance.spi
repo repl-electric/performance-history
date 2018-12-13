@@ -14,18 +14,14 @@ at{
 
 #fx reverb: 1.00, tube: 1.00, drive: 1.0
 
-
-cam :top
-
-
 roots_chase force: 100, drag: 2, target: :spiral
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
-  with_bpm 127*3 do
+  with_bpm 127*4 do
     flop_cc motion: (flow 0.4, 0.5, 32,).look
     kal :F4, sus: 1
-    flip :A3,127, sus: (cycle 0.5, 0.25, 1,).look
+    flip :G3,127, sus: (cycle 0.5, 0.25, 1,).look
    # flip :E3,127, sus: (cycle 0.5, 0.25, 1,).look
 
     roots_chase freq: rand*4, amp: 0.4
