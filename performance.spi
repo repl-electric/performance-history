@@ -166,7 +166,7 @@ live_loop :light, sync: :unsyncable do; tick
 
     tick_reset_all
     at{
-      sleep sleeps/2.0 + sleeps/4.0
+      sleep sleeps/2.0 + (sleeps/4.0)*2
       voltage y, 32, channel: 13, sus: sleeps/2.0
     }
 
