@@ -9,7 +9,11 @@ at{
 }
 #slow_init
 # livecode :sleep
- overclock_cc attune: 0.58
+overclock_cc attune: 0.58
+
+
+fx reverb: 1
+
 
 
 roots_chase force: 100, drag: 2, target: :spiral
