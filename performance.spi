@@ -42,22 +42,6 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     chd = score.look[0]
     sleeps = score.look[-1]
     resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
-
-    at{
-      sleep 0.5
-      # unity "/color3/b",(rand+1.0)*2
-      unity "/color2/h",1.4+rand*0.1
-      rocks noise: 1
-      sleep 1.5
-      unity "/color2/h",1.7+rand*0.1
-      sleep 1
-      rocks orbit: -0.9
-      #unity "/color2/h",1.0
-      #colorb 1.0, force: true
-      defaultcolor
-      #sleep 0.5
-      #      colorb 2.0
-    }
     voltage :c4,1, sus: 8
 
     sleep sleeps
