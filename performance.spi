@@ -167,7 +167,7 @@ live_loop :light, sync: :unsyncable do; tick
     at{
       sleep sleeps/2.0
       sleep sleeps/4.0
-      midi y, 62, channel: 13, sus: 4
+      voltage y, 62, channel: 13, sus: 4
     }
 
   #  puts chd
