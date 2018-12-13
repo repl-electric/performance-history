@@ -142,13 +142,8 @@ live_loop :light, sync: :unsyncable do; tick
     score = compose((cycle [:a2 8] [:f2 8] [:b3 8] [_ 4])).voice(open: 1)
     chd = score.look[0]
     sleeps = score.look[-1]
-
+    voltage y, 1, sus: sleeps
     resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
-    at{
-      sleep sleeps/2.0
-      voltage y, 1, sus: sleeps
-    }
-
     sleep sleeps
   end
 end
