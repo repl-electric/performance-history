@@ -11,7 +11,7 @@ at{
 # livecode :sleep
 # overclock_cc motion: 0.27
 
-roots_chase force: 100, drag: 2, target: :start
+roots_chase force: 100, drag: 2, target: :slow
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
