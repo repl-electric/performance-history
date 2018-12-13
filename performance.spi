@@ -170,7 +170,6 @@ live_loop :light, sync: :unsyncable do; tick
       sleep sleeps/2.0
       midi y, 52, channel: 13, sus: 8
       sleep sleeps/2.0
-
       }
 
   #  puts chd
