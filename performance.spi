@@ -48,8 +48,10 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
       # unity "/color3/b",(rand+1.0)*2
       unity "/color2/h",0.5
       rocks noise: 1
-      sleep 2.5
-      unity "/color2/h",0.6
+      sleep 1.5
+      unity "/color2/h",0.8
+      sleep 1
+
       rocks orbit: -0.9
       #colorb 1.0, force: true
 #      defaultcolor
