@@ -44,13 +44,15 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
 
     at{
-      sleep 3
+      sleep 1
+      unity "/color1/b",rand
+      unity "/color3/b",rand
+      sleep 2
+
       rocks orbit: -0.9
       colorb 1.0, force: true
       #sleep 0.5
       #      colorb 2.0
-      unity "/color1/b",rand
-      unity "/color3/b",rand
     }
     voltage :c4,1, sus: 2
 
