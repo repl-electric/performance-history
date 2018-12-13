@@ -1,6 +1,9 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
 
+
+eject_cpu_core
+
 #flop_on :d2
 at{
   # sync :unsyncable
