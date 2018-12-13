@@ -6,7 +6,7 @@ alive perc: 0, sop: 0
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    flop_cc motion: (flow 0.27 0.5 32).look
+    flop_cc motion: (flow 0.27, 0.5, 32,).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -27,8 +27,8 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
-  with_bpm 127*(cycle 1).look do
+  perc=(cycle 0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,)
+  with_bpm 127*(cycle 1,).look do
     perc_machine perc.to_a
   end
 end
@@ -37,7 +37,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:a2] 8]
+      [[:a2], 8],
       )
     chd = score.look[0]
     sleeps = score.look[-1]
@@ -46,7 +46,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     at{
       sleep 0.5
       unity "/color1/b",(118/255.0)*1.5
-      unity "/color1/h",rand+0.2
+      unity "/color1/h",2*rand+0.2
       sleep 2.5
       rocks orbit: -0.9
       #colorb 1.0, force: true
