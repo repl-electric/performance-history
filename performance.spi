@@ -1,16 +1,17 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
 init! true
-
+#start_init
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    flop_cc motion: (flow 0.27 0.5 32).look
 
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
+
+
 
     sleep 1/4.0
     sleep 1/4.0
@@ -37,12 +38,11 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:a2] 8]
+      [[_] 8]
+
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
-    voltage :c4,1, sus: 8
 
     sleep sleeps
   end
