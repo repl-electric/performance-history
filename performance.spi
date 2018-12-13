@@ -145,7 +145,7 @@ live_loop :light, sync: :unsyncable do; tick
 
     at{
       sleep sleeps/2.0 + (sleeps/4.0)*2
-      voltage :c4, 1, channel: 13, sus: sleeps
+      voltage y, 1, channel: 13, sus: sleeps
     }
 
   #  puts chd
