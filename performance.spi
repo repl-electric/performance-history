@@ -2,28 +2,12 @@ load_support('piezoelectric_resonator'); use_bpm 127
 #alive perc: 1, sop: 0
 #init! true
 #start_init
-class Score
-  def initialize(a)
-    @a ||= a
-  end
-  def voice(opts)
-    @a.map{|section|
-      chd = section[0]
-      open_chd = chd.to_a
-      open_chd[1] = chd[1] + opts[:open] * 12
-      [open_chd, section[-1]]
-    }
-  end
-end
-def compose(pat)
-  Score.new(pat.map{|root| [chord(root[0]), root[-1]]})
-end
 
 #flop
 
 #stop
 
-live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
+live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
     silence?
