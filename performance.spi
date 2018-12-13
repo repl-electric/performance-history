@@ -164,7 +164,7 @@ live_loop :light, sync: :unsyncable do; tick
     chd = score.look[0]
     sleeps = score.look[-1]
 
-    tick_reset!
+    tick_reset_all
     at{
       sleep sleeps/2.0 + sleeps/4.0
       voltage y, 42, channel: 13, sus: sleeps
