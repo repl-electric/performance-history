@@ -48,7 +48,6 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
       unity "/color1/b",rand
       unity "/color3/b",rand
       sleep 2
-
       rocks orbit: -0.9
       colorb 1.0, force: true
       #sleep 0.5
