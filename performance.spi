@@ -11,7 +11,7 @@ at{
 # livecode :sleep
 # overclock_cc motion: 0.27
 
-roots_chase force: 100, drag: 2, target: :slow
+#roots_chase force: 100, drag: 2, target: :slow
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
@@ -19,6 +19,11 @@ live_loop :Attune, sync: :unsyncable do; tick
     flop_cc motion: (flow 0.4 0.5 32).look
     flip :A3, sus: (cycle 0.5 0.25 1).look
     flip :E3, sus: (cycle 0.5 0.25 1).look
+
+
+   if spread(3,8).look
+      flop :G3, sus: 4
+   end
 
     sleep 1/4.0
     sleep 1/4.0
