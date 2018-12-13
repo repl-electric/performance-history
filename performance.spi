@@ -51,9 +51,6 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
       #      colorb 2.0
       unity "/color1/b",rand
       unity "/color3/b",rand
-
-
-
     }
     voltage :c4,1, sus: 2
 
