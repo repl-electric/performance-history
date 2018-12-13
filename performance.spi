@@ -48,7 +48,9 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
       rocks orbit: -0.9
       colorb 1.0, force: true
       #sleep 0.5
-      colorb 2.0
+      #      colorb 2.0
+      unity "/color1/b",0.5
+
 
     }
     voltage :c4,1, sus: 2
