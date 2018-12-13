@@ -162,7 +162,7 @@ live_loop :light, sync: :unsyncable do; tick
     y=(cycle :e4 :c3 :g3).rot(1).look
 
     puts (cycle :c4 :C3 _).look
-    score = compose((cycle [:a2 8] [:f2 8] [:c3 8] [_ 4])).voice(open: 1)
+    score = compose((cycle [:a2 8] [:f2 8] [:b3 8] [_ 4])).voice(open: 1)
     puts score
     chd = score.look[0]
     sleeps = score.look[-1]
