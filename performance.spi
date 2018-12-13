@@ -44,12 +44,13 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
 
     at{
-      sleep 1
-      unity "/color1/b",rand+0.2
+      sleep 0.5
+      unity "/color1/b",(118/255.0)*1.1
       unity "/color1/h",rand+0.2
-      sleep 2
+      sleep 2.5
       rocks orbit: -0.9
-      colorb 1.0, force: true
+      #colorb 1.0, force: true
+      unity "/color1/b",118/255.0
       #sleep 0.5
       #      colorb 2.0
     }
