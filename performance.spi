@@ -35,14 +35,14 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
     perc_machine perc.to_a
   end
 end
-zoomout
+
 #roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
       [[:G2] 8]
       [[:A2] 8]
-      [[:B2] 8]
+      [[:C2] 8]
       REST4
       )
     chd = score.look[0]
