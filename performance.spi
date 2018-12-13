@@ -11,11 +11,11 @@ at{
 # livecode :sleep
 # overclock_cc motion: 0.27
 
-#roots_chase force: 100, drag: 2, target: :slow
+roots_chase force: 100, drag: 2, target: :spiral
 live_loop :Attune, sync: :unsyncable do; tick
-  silence!
+  silence?
   zero_delay [2,5,6].shuffle
-  with_bpm 127 do
+  with_bpm 127*2 do
     flop_cc motion: (flow 0.4 0.5 32).look
     flip :A3,127, sus: (cycle 0.5 0.25 1).look
     flip :E3,127, sus: (cycle 0.5 0.25 1).look
