@@ -1,17 +1,17 @@
 load_support('piezoelectric_resonator'); use_bpm 127
-#alive perc: 1, sop: 0
-#init! true
+alive perc: 0, sop: 0
+init! true
 #start_init
 
-live_loop :Attune, sync: :unsyncable do; tick
+live_loop :ModularSynthsControlledByCode, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    silence?
-   # flip :A3
 
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
+
+
 
     sleep 1/4.0
     sleep 1/4.0
@@ -25,107 +25,10 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/2.0
   end
 end
-
-def perc_machine(pat)
-  if spread(4,8).look
-    glitch_cc mode: (ring 0, 2, 3, 5).look
-  end
-
-  if spread(8,8).look
-    dark (ring :a5, :a5).look, (ring 120, 70, 75, 64).look-(rand*6) if pat[-1]!=0
-      if spread(3,8).look
-        at{
-          sleep 0.5
-          dark :b5, 52 if pat[-1]!=0
-        }
-      end
-    end
-    glitch_cc corode: 1.0
-    glitch :c3, (ring 65, 60, 60, 60).look if pat[0]!=0
-    at{
-      sleep 0.25
-      #glitch :c3, 2.1*(ring 120, 90, 100, 100,    100, 90, 90, 90).look if pat[1]!=0
-    }
-    glitch_cc corode: 0.8
-
-    if spread(7,11).look
-      sleep 1
-    else
-      #glitch :gs3,3# if spread(1,4).look
-
-      sleep 1/2.0
-      #glitch :ds3, 127 if state[:perc] && pat[2]!=0 #if spread(1,4).look
-      sleep 1/2.0
-
-      #glitch :fs3,20 if state[:perc] && pat[3]!=0# if spread(1,4).look
-
-      at{
-        sleep 1/2.0
-      #  glitch :g3, 50 if pat[4]!=0# if spread(1,4).look
-        }
-    end
-
-    glitch_cc corode: (line 0.8, 0.9, 128).look
-    #glitch (ring :c3, :a3).look, 30 if spread(7,11).look
-
-    if !spread(7,8).look
-      dark :cs3, 46
-    end
-
-    sleep 1/4.0
-    if dice(32) > 29
-      #glitch :fs3, 40 if pat[1]!=0
-    end
-    sleep 1/4.0
-
-    sleep 1/4.0
-    if dice(32) > 28
-      #glitch :ds3, 127 if pat[0]!=0
-    end
-    sleep 1/4.0
-    dark :cs3, 20 if spread(7,8).look
-
-    with_swing 0.1 {#((knit -0.1/2.0, 4, 0.1,4).look) {
-      #glitch :gs3, 40 if pat[5]!=0
-    }
-
-    sleep 1/2.0
-    with_swing -0.08 {
-    glitch :gs3, 84 if spread(1,8).look
-    }
-    sleep 1/2.0
-    with_swing -0.05 {
-    glitch :gs3, 98 if spread(1,8).look
-    }
-
-  if !spread(7,8).look && dice(8) > 3
-    dark :a5, 80
-  end
-
-  if spread(1,4).look
-    with_swing 0.1 {
-      dark (knit :Cs6, 7, :cs5,1, _,4).look, 53
-    }
-  end
-
-    sleep 1/2.0
-   if dice(8) > 5 && !spread(7,8).look
-     dark :a5, 89
-   end
-
-  with_swing -0.1{dark :a5, 15}
-    #glitch (ring :cs4, :cs4, :cs4, :d4).look,127 if pat[6] !=0
-  sleep 1/2.0
-  if !spread(7,8).look
-    dark :a5, 99
-  end
-
-end
-
 
 live_loop :glitch, sync: :unsyncable do; tick
   #sync :light
-  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 1)
+  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
   with_bpm 127*(cycle 1).look do
     perc_machine perc.to_a
   end
@@ -143,5 +46,3 @@ live_loop :light, sync: :unsyncable do; tick
     sleep sleeps
   end
 end
-
-live_loop(:unsyncable) do;  sleep 1.0;end
