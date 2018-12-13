@@ -51,7 +51,6 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
       sleep 1.5
       unity "/color2/h",0.8
       sleep 1
-
       rocks orbit: -0.9
       #colorb 1.0, force: true
 #      defaultcolor
