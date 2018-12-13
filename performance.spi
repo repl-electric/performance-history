@@ -12,7 +12,7 @@ at{
 overclock_cc attune: 0.58
 
 
-fx reverb: 1
+fx reverb: 1.00, tube: 1.00
 
 
 
