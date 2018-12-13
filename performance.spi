@@ -46,7 +46,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     at{
       sleep 3
       rocks orbit: -0.9
-      colorb 1.0
+      colorb 1.0, force: true
       sleep 0.5
 
     }
