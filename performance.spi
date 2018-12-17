@@ -55,7 +55,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     operator chd[-1], 95, sus: 6
     with_swing((flow 0.0 4 32).look){
       operator chd[-2], 89+20, sus: 6
-      qbitsea :d4,120, sus: 4
+      qbitsea :e4,120, sus: 4
     }
 
 
