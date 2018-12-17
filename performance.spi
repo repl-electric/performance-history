@@ -9,7 +9,7 @@ live_loop :Attune, sync: :unsyncable do; tick
 
     flop :A3,120, sus: (cycle 1 0.5 0.25).look
     with_swing 0.1 {
-      flop :E3
+      flop :E3, sus: 2
     }
 
     sleep 1/4.0
