@@ -60,8 +60,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
       [[:A2 :C4 :E3] 8]
       [[:A2 :A4 :F3] 8]
       [[:C2 :B4 :D3] 4]
-      [[:B2 :D5 :F4] 4]
-
+      [[:B2 :C4 :F4] 4]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
