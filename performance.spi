@@ -36,8 +36,8 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
   perc=(cycle 1 0 0 0  0 0 0 0  0 0 0 0  0 0 0 1)
   with_bpm 127*(cycle 1).look do
-    dark scale(:C0, :major, num_octaves: 3).choose, 127
-    puts scale(:C0, :major, num_octaves: 3).choose
+    dark scale(:C0, :major, num_octaves: 4).choose, 127
+    puts scale(:C0, :major, num_octaves: 4).choose
     #perc_machine perc.to_a
     sleep 2.0
   end
