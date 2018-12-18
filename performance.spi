@@ -45,7 +45,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
       dark scale(:C3, :major, num_octaves: 4).choose, 100 if spread(3,8).look
     }
 
-    sleep 1/2.0
+    sleep 1.0
   end
 end
 
