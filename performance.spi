@@ -38,7 +38,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
   with_bpm 127*(cycle 1).look do
     dark scale(:C0, :major, num_octaves: 4).choose, 127 if spread(1,4).look
     #perc_machine perc.to_a
-    with_swing 0.1 {
+    with_swing((flow 0.0 1.0 32).look){
       dark scale(:C2, :major, num_octaves: 4).choose, 100 if spread(7,11).look
       dark scale(:C3, :major, num_octaves: 4).choose, 100 if spread(3,8).look
     }
