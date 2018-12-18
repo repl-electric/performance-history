@@ -53,7 +53,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:A2 :C4 :E3] 8]
+      [[:A2 :C4 :C3] 8]
       [[:A2 :E4 :E3] 8]
       [[:A2 :C4 :E3] 8]
       [[:A2 :F4 :E3] 8]
