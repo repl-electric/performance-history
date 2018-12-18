@@ -39,7 +39,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
     dark scale(:C0, :major, num_octaves: 4).choose, 127
     puts scale(:C0, :major, num_octaves: 4).choose
     #perc_machine perc.to_a
-    sleep 2.0
+    sleep 240
   end
 end
 
