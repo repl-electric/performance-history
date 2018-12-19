@@ -3,7 +3,7 @@ alive perc: 1, sop: 0
 init! true
 
 #flop_on :d2
-heat :a2
+resonate :a2
 stop
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
