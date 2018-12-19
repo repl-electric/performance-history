@@ -3,8 +3,7 @@ alive perc: 1, sop: 0
 #init! true
 world time: 1.0
 colorb 0.001
-burst 0
-create_aura -0.92
+create_aura -0.95
 #zoom_in
 #flop_on :d2
 #resonate :a2
