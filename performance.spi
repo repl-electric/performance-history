@@ -1,8 +1,8 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
-init! true
+#init! true
 #world time: 1
-colorb 1.3
+colorb 1.2
 
 #flop_on :d2
 #resonate :a2
