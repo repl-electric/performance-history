@@ -12,11 +12,12 @@ def crash
   unity "/cam0/glitch_a", 0.5
   explode_rocks
   explode_cube
+  world time: 0.01
   sleep 1
   unity "/cam0/glitch_a", 0.0
 end
 
-crash
+#crash
 
 
 def recover
