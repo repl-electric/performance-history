@@ -1,6 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
-#init! true
+init! true
 def crash
   unity "/cam0/glitch_a", 0.5
 #  explode_rocks
