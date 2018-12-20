@@ -9,10 +9,12 @@ alive perc: 1, sop: 0
 
 roots_chase target: :start
 
+recover
+
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
-  with_bpm 127 do
+  with_bpm 127 *2 do
     flop_cc motion: (flow 0.27 0.5 32).look
     flop :d3, 127, sus: (cycle 4 0.5 0.25).look
 
