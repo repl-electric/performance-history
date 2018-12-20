@@ -19,6 +19,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     flip :a4, 127, sus: (cycle 1 0.5 0.25).look
     flop :e4, 127, sus: (cycle 1 0.5 0.25).rot(1).look
 
+    rocks orbit: 100
     roots_chase freq: rand*2, amp: 0.45
 
 
