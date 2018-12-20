@@ -9,7 +9,7 @@ alive perc: 1, sop: 0
 def crash
   world time: 0.04
   unity "/cam0/glitch_a", 0.5
-  star size: 5.4
+  star size: 10.4
   sleep 0.5
   #explode_rocks
   burst 1.0
