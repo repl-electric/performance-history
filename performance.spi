@@ -3,11 +3,8 @@ alive perc: 1, sop: 0
 
 #flop_on :d2, 127
 
-at{
-  sync :unsyncable
-  sleep 1/4.0
-  overclock_on :f3
-}
+
+slow_init
 
 
 live_loop :Attune, sync: :unsyncable do; tick
