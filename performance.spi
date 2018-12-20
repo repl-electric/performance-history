@@ -3,10 +3,10 @@ alive perc: 1, sop: 0
 #init! true
 def crash
   unity "/cam0/glitch_a", 0.5
-  explode_rocks
 #  explode_cube
   world time: 0.1
   sleep 1
+  explode_rocks
   unity "/cam0/glitch_a", 0.0
 end
 
