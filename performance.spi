@@ -23,14 +23,14 @@ end
 #crash
 #crash
 recover
-def recover
+
   world time: 0.99
   unity "/cube/recover", 1.0
   create_cube
   cam :cube
   sleep 1
 end
-
+def recover
 
 #world time: 0.99
 #world time: 0.001
