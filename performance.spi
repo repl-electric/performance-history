@@ -16,6 +16,7 @@ def crash
   explode_rocks
   explode_cube
   world time: 0.01
+  aura 2
   sleep 1
   unity "/cam0/glitch_a", 0.0
 end
