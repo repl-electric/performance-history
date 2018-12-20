@@ -33,7 +33,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
   end
 end
 
-create_cube
+
 
 #roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
 live_loop :MachineInstructions, sync: :unsyncable do; tick
@@ -45,8 +45,11 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     sleeps = score.look[-1]
     resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
 
+
+
     voltage :e4, sus: 2
     sleep sleeps/2.0
+    operator score[-1]
     midi :A3,  channel: 3, sus: 4 if spread(1,4).look
     sleep sleeps/2.0
   end
