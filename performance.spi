@@ -17,13 +17,12 @@ def crash
   explode_rocks
   explode_cube
   world time: 0.01
-
   sleep 1
   unity "/cam0/glitch_a", 0.0
 end
 #world time: 0.04
 #crash
-crash
+#crash
 def recover
   world time: 0.99
   unity "/cube/recover", 1.0
@@ -31,7 +30,7 @@ def recover
 #  cam :cube
   sleep 1
 end
-#recover
+recover
 
 #world time: 0.99
 #world time: 0.001
