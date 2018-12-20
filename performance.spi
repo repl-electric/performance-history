@@ -7,7 +7,7 @@ alive perc: 1, sop: 0
 
 
 
-#init! true
+init! true
 def crash
   world time: 0.04
   unity "/cam0/glitch_a", 0.5
@@ -18,11 +18,12 @@ def crash
   unity "/cam0/glitch_a", 0.0
 end
 #world time: 0.04
-crash
+#crash
 
 
 def recover
   world time: 0.99
+  unity "/cube/recover"
   create_cube
   cam :cube
   sleep 1
