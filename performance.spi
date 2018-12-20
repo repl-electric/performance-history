@@ -28,6 +28,7 @@ def recover
   init! true
   unity "/cube/recover", 1.0
   create_cube
+  burst 0.0
   #  cam :cube
   colorb 1.0
   sleep 1
