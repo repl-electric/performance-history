@@ -40,9 +40,10 @@ end
 #colorb 0.001
 #create_aura -0.95
 #zoom_in
- flop_on :d2
- create_cube
- resonate :a2
+ #flop_on :d2
+ #create_cube
+#resonate :a2
+world time: 0.99
 stop
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
