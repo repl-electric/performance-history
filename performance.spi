@@ -77,7 +77,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     sleeps = score.look[-1]
     resonate chd,1, sus: sleeps, pads: [0,1,2], sat: 0, drive: 0
 
-    control_unit root(chd), sus: sleeps
+    control_unit root(chd),1, sus: sleeps
 
     #voltage :e4, sus: 2
     sleep sleeps/2.0
