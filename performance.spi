@@ -6,7 +6,7 @@ alive perc: 1, sop: 0
 #world time: 1.0
 
 
-world time: 0.99
+#world time: 0.99
 
 #init! true
 def crash
@@ -19,7 +19,7 @@ def crash
   unity "/cam0/glitch_a", 0.0
 end
 #world time: 0.04
-#crash
+crash
 
 
 def recover
