@@ -21,7 +21,7 @@ def crash
 end
 #world time: 0.04
 #crash
-#crash
+crash
 def recover
   world time: 0.99
   unity "/cube/recover", 1.0
@@ -29,7 +29,7 @@ def recover
 #  cam :cube
   sleep 1
 end
-recover
+#recover
 
 #world time: 0.99
 #world time: 0.001
@@ -40,9 +40,9 @@ recover
 #colorb 0.001
 #create_aura -0.95
 #zoom_in
- flop_on :d2
- create_cube
-resonate :a2
+#  flop_on :d2
+#  create_cube
+# resonate :a2
 #world time: 0.99
 stop
 live_loop :Attune, sync: :unsyncable do; tick
