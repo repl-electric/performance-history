@@ -58,7 +58,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     }
 
     with_swing((flow 0.0 2.0 32).look){
-      operator score[-1], 98, sus: 12
+      operator score[-1], 100, sus: 12
     }
 
     midi chd.choose,  channel: 3, sus: 6 if spread(1,4).look
