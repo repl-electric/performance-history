@@ -23,7 +23,7 @@ end
 #recover
 #crash
 
-alu :a3
+alu :a4
 def recover
   world time: 0.99
   init! true
