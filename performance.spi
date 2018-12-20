@@ -21,8 +21,8 @@ def crash
 end
 #world time: 0.04
 #crash
-crash
-
+#crash
+recover
 def recover
   world time: 0.99
   unity "/cube/recover"
