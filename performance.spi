@@ -23,7 +23,9 @@ end
 #recover
 #crash
 
-alu :a4, z: 4, y: 1, z: 1, cubes: 2
+zoomout
+
+#alu :a4, z: 4, y: 1, z: 1, cubes: 2
 def recover
   world time: 0.99
   init! true
