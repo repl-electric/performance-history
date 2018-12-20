@@ -49,7 +49,11 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
     voltage :e4, sus: 2
     sleep sleeps/2.0
-    operator score[-1], 80, sus: 12
+    with_swing 2.0 {
+      operator score[-1], 80, sus: 12
+    }
+
+
     midi :A3,  channel: 3, sus: 4 if spread(1,4).look
     sleep sleeps/2.0
   end
