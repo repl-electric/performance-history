@@ -7,7 +7,7 @@ def crash
 #  explode_cube
   world time: 0.1
   sleep 2
-  unity "/cam0/glitch_a", 0.0
+  unity "/cam0/glitch_a", 0.001
 end
 crash
 #crash
