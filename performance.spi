@@ -36,7 +36,7 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1 0 0 0  0 0 0 0  0 0 0 0  0 0 0 1)
+  perc=(cycle 1 1 0 0  0 0 0 0  0 0 0 0  0 0 0 1)
   with_bpm 127*(cycle 1).look do
     perc_machine perc.to_a
   end
@@ -44,7 +44,7 @@ end
 
 
 #roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
-cam :chase
+
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
