@@ -25,7 +25,7 @@ end
 #crash
 def recover
   world time: 0.99
-  star size: 0.1
+  init!
   unity "/cube/recover", 1.0
  # create_cube
 #  cam :cube
