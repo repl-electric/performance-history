@@ -13,7 +13,7 @@ def crash
   star size: 1.4
   sleep 0.5
   #explode_rocks
-  burst throttle: 1
+  burst 1.0
   explode_cube
   world time: 0.01
   sleep 1
