@@ -78,7 +78,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     sleeps = score.look[-1]
     resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
 
-    voltage :e4, sus: 2
+    #voltage :e4, sus: 2
     sleep sleeps/2.0
     with_swing 0.1 {
       operator score[-1], 95, sus: 12
