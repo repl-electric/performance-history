@@ -6,8 +6,8 @@ def crash
   explode_cube
 end
 
-crash
-world time: 0.01
+#crash
+#world time: 0.01
 #colorb 0.001
 #create_aura -0.95
 #zoom_in
