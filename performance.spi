@@ -30,7 +30,7 @@ recover
   cam :cube
   sleep 1
 end
-def recover
+recover
 
 #world time: 0.99
 #world time: 0.001
