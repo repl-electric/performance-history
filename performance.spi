@@ -2,7 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
 #world time: 0.1
 
-#init! true
+init! true
 #world time: 1.0
 
 #world time: 0.99
@@ -21,7 +21,7 @@ def crash
 end
 #world time: 0.04
 #crash
-recover
+#recover
 #crash
 def recover
   world time: 0.99
@@ -34,7 +34,6 @@ def recover
   sleep 1
 end
 #recover
-
 #world time: 0.99
 #world time: 0.001
 #world time: 0.99
