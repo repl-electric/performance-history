@@ -86,7 +86,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
     control_unit root(chd),1, sus: sleeps, sat: 1, drive: 1
 
-    #voltage :e4, sus: 2
+    voltage :e4, sus: 2
     sleep sleeps/2.0
     with_swing 0.1 {
       operator score[-1], 125, sus: 12
