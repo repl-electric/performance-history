@@ -1,70 +1,14 @@
 load_support('piezoelectric_resonator'); use_bpm 127
-alive perc: 1, sop: 0
-#world time: 0.1
-#init! true
-#world time: 1.0
+alive perc: 0, sop: 0
+init! true &&  start_init
 
-#world time: 0.99
-#init! true
-def crash
-  world time: 0.04
-  unity "/cam0/glitch_a", 0.5
-  star size: 1.4
-  sleep 0.5
-  #explode_rocks
-  burst 1.0
-  explode_cube
-  shard 1.0
-  world time: 0.03
-  sleep 1
-  unity "/cam0/glitch_a", 0.0
-end
-#world time: 0.04
-#crash
-recover
-#crash
-
-#alu :a4, z: 4, y: 1, z: 1, cubes: 2
-def recover
-  world time: 0.99
-  init! true
-  unity "/cube/recover", 1.0
-  create_cube
-  burst 0.0
-  #  cam :cube
-  colorb 1.0
-  sleep 1
-end
-#recover
-#world time: 0.99
-#world time: 0.001
-#world time: 0.99
-#crash
-#crash
-#world time: 0.01
-#colorb 0.001
-#create_aura -0.95
-#zoom_in
-#  flop_on :d2
-#  create_cube
-# resonate :a2
-#world time: 0.99
-stop
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    flop_cc motion: (flow 0.27 0.57 32).look
-    flop :A3,120, sus: (cycle 1 0.5 0.25).look
-    with_swing 0.1 {
-      flop :E3,100, sus: (cycle 1 0.5 0.25).rot(-1).look
-    }
 
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
-
-    alu (cycle :a3).look,(cycle 1 5).look, sus: 2 if spread(7,11).look
-    alu (cycle :g4).look,127, sus:4 if spread(3,8).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -81,18 +25,9 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1 0 0 0  0 0 0 0  0 0 0 0  0 0 0 1)
-  with_bpm 127*(cycle 1).look do
-    #dark scale(:C0, :major, num_octaves: 4).choose, 127 if spread(1,4*4).look
-    #perc_machine perc.to_a
-    with_swing((flow 0.0 0.1 32).look){
-      dark scale(:C2, :major, num_octaves: 4).choose, 100 if spread(3,6*4).look
-    }
-    with_swing(0.1){
-      #dark scale(:C3, :major, num_octaves: 4).choose, 100 if spread(3,8*4).look
-    }
-
-    sleep 1.0/2.0
+  perc=(cycle 0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,)
+  with_bpm 127*(cycle 1,).look do
+    perc_machine perc.to_a
   end
 end
 
@@ -100,33 +35,13 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:A2 :C4 :C3] 8]
-      [[:A2 :E4 :E3] 8]
-      [[:A2 :C4 :E3] 8]
-      [[:A2 :F4 :E3] 8]
-      [[:A2 :C4 :E3] 8]
-      [[:A2 :A4 :F3] 8]
-      [[:C2 :B4 :D3] 4]
-      [[:B2 :C4 :F4] 12]
+      [[_], 8],
+
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
-    #control_unit root(chd),1,sus: sleeps, drive: 0.00, sat: 0.00
-    sleep sleeps/2.0
-    operator chd[-1], 95, sus: 6
-    with_swing((flow 0.0 4 32).look){
-      operator chd[-2], 89+20, sus: 6
-      qbitsea :a4,120, sus: 2
-    }
 
-    sleep sleeps/2.0/2.0
-    if spread(1,4).look
-      midi :c4, 127, sus: 6, channel: 3
-    end
-    qbitsea :c4,127, sus: 6
-
-    sleep sleeps/2.0/2.0
+    sleep sleeps
   end
 end
 
