@@ -61,7 +61,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
       operator score[-1], 98, sus: 12
     }
 
-    midi chd.choose,  channel: 3, sus: 4 if spread(1,4).look
+    midi chd.choose,  channel: 3, sus: 6 if spread(1,4).look
     sleep sleeps/2.0
   end
 end
