@@ -2,7 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
 #world time: 0.1
 
-init! true
+#init! true
 #world time: 1.0
 
 
@@ -40,9 +40,9 @@ recover
 #colorb 0.001
 #create_aura -0.95
 #zoom_in
- #flop_on :d2
- #create_cube
-#resonate :a2
+ flop_on :d2
+ create_cube
+resonate :a2
 #world time: 0.99
 stop
 live_loop :Attune, sync: :unsyncable do; tick
