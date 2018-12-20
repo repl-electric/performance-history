@@ -10,7 +10,7 @@ def crash
   unity "/cam0/glitch_a", 0.0
 end
 
-world time: 0.0
+world time: 0.01
 #crash
 #crash
 #world time: 0.01
