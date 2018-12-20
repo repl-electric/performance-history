@@ -9,7 +9,7 @@ alive perc: 1, sop: 0
 
 #init! true
 def crash
-  world time: 0.05
+  world time: 0.04
   unity "/cam0/glitch_a", 0.5
   explode_rocks
   explode_cube
