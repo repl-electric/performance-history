@@ -25,7 +25,7 @@ end
 recover
 def recover
   world time: 0.99
-  unity "/cube/recover"
+  unity "/cube/recover",1
   create_cube
   cam :cube
   sleep 1
