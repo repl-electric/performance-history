@@ -3,12 +3,12 @@ alive perc: 1, sop: 0
 
 #flop_on :d2, 127
 
+end1
+#eject_cpu_core
+
 
 #zoomout
 overclock_cc motion: 0.52
-
-cam :top
-
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
