@@ -13,10 +13,11 @@ def crash
   world time: 0.04
   unity "/cam0/glitch_a", 0.5
   sleep 0.5
+  star size: 1.2
   explode_rocks
   explode_cube
   world time: 0.01
-  star size: 2
+
   sleep 1
   unity "/cam0/glitch_a", 0.0
 end
