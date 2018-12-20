@@ -8,7 +8,7 @@ def crash
   sleep 2
   unity "/cam0/glitch_a", 0.0
 end
-
+zoomout
 #crash
 #world time: 0.01
 #colorb 0.001
