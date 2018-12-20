@@ -2,7 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
 #init! true
 def crash
-  unity "/cam0/glitch_a", 0.3
+  unity "/cam0/glitch_a", 0.4
 #  explode_rocks
 #  explode_cube
   world time: 0.1
