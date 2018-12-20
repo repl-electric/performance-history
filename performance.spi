@@ -16,7 +16,7 @@ def crash
   sleep 1
   unity "/cam0/glitch_a", 0.0
 end
-world time: 0.05
+world time: 0.08
 #crash
 
 
