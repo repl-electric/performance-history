@@ -20,8 +20,8 @@ def crash
   unity "/cam0/glitch_a", 0.0
 end
 #world time: 0.04
-crash
-#recover
+#crash
+recover
 #crash
 
 #alu :a4, z: 4, y: 1, z: 1, cubes: 2
