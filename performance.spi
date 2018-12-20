@@ -16,7 +16,16 @@ def crash
   unity "/cam0/glitch_a", 0.0
 end
 
-world time: 0.99
+
+def recover
+  world time: 0.99
+  create_cube
+  cam :cube
+  sleep 1
+end
+
+
+#world time: 0.99
 #world time: 0.001
 #world time: 0.99
 #crash
