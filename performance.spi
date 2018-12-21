@@ -8,7 +8,7 @@ resonate :a2,1, sus:1, pads: [0], sat: 0, drive: 0
 
 #create_aura -0.9
 unity "/cube/aura/ripple", 0.3
-unity "/cube/aura/scalemul",  0.3
+unity "/cube/aura/scalemul",  0.1
 
 
 live_loop :Attune, sync: :unsyncable do; tick
