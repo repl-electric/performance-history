@@ -6,7 +6,7 @@ alive perc: 0, sop: 0
 
 create_cube
 
-colorb 1.0
+star size: 1
 
 cam :chase
 #create_sea
