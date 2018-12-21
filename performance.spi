@@ -13,7 +13,7 @@ alive perc: 0, sop: 0
 
 aura scale: -0.7,
 wave: 0.0,
-ripple: 0
+ripple: 1
 unity "/aura/waveh",20.00
 unity "/cube/aura/waveheight",.0
 
