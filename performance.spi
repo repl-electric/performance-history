@@ -6,7 +6,7 @@ alive perc: 0, sop: 0
 aura scale: -0.6
 
 
-unity "/cube/aura/globalscale", 2.0
+unity "/cube/aura/globalscale", 4.0
 stop
 #flop_on :D2
 #resonate :a2
