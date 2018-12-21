@@ -10,7 +10,7 @@ create_aura -0.98
 #unity "/cube/aura/ripple", rand
 
 
-unity "/cube/aura/scalemul", -0.2
+unity "/cube/aura/scalemul", -0.3
 
 
 
