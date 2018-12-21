@@ -24,7 +24,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     kal :c4, 4
     flip :e4, 127, sus: (cycle 1 0.5 0.25).look
     flop :g4, 127, sus: (cycle 2 0.5 0.25).rot(1).look if spread(7,11).look
-    kal :a4, 127, sus: (cycle 4 0.5 0.25).rot(1).look if spread(7,12).look
+    kal :a4, 127, sus: (cycle 4 0.5 0.25).rot(1).look if  spread(7,10).look
 
     rocks orbit: 100
     roots_chase freq: rand*2, amp: 0.45
