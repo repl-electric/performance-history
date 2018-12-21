@@ -7,7 +7,7 @@ flop_on :D2
 resonate :a2,1, sus:1, pads: [0], sat: 0, drive: 0
 
 #create_aura -0.9
-unity "/aura/scale", 0.1
+unity "/aura/scale", 0.2
 
 
 live_loop :Attune, sync: :unsyncable do; tick
