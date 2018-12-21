@@ -2,7 +2,8 @@ load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
 #aura ripple: 1.4, scale: 1
 #unity "/aura/waveh",1
-create_aura -0.6
+create_aura
+aura scale: -0.6
 #cam :chase
 #zoomout
 #create_sea
