@@ -11,7 +11,7 @@ aura scale: -0.7, wave: 10.0, ripple: 0.1
 unity "/aura/waveh",0.0
 unity "/cube/aura/waveheight",1.0
 
-colorb 0
+colorb 1
 
 
 # unity "/cube/aura/wave", 1.0
