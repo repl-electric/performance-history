@@ -5,7 +5,7 @@ alive perc: 0, sop: 0
 
 aura scale: -0.6
 
-
+colorb 1
 #unity "/cube/aura/globalscale", 1.0
 stop
 #flop_on :D2
