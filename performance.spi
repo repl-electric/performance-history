@@ -22,9 +22,10 @@ live_loop :Attune, sync: :unsyncable do; tick
   flop_cc motion: x=(flow 0.27 0.5 32).look
 
   at{
-    sleep 0.5
+    sleep 1.0
     #unity "/cube/aura/fresnel", 1-(x*2)
     unity "/cube/aura/ripple", (x-0.27)*2.5
+
     unity "/cube/aura/scalemul", linear_map(0.27,0.5,-0.6,-0.5,x)
     }
   with_bpm 127 do
