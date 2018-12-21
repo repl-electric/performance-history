@@ -9,7 +9,9 @@ alive perc: 0, sop: 0
 #create_aura
 #unity "/cube/aura/scalemul", -0.8
 #aura ripple: -0.000
-unity "/cube/aura/scalemul", -0.8
+#unity "/cube/aura/scalemul", -0.8
+
+flop_on :A2
 
 #stop
 #flop_on :D2
