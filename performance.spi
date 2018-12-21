@@ -3,6 +3,8 @@ alive perc: 0, sop: 0
 #init! true
 #create_aura
 
+unity "/cube/aura/globalscale", 0.2
+
 #flop_on :D2
 #resonate :a2
 #create_aura
@@ -15,7 +17,7 @@ alive perc: 0, sop: 0
 # unity "/cube/aura/ripple", 1.4
 # unity "/cube/aura/scalemul", -0.6
 
-unity "/cube/aura/globalscale", 0.2
+
 
 puts :yes
 
