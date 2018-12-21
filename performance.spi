@@ -13,14 +13,14 @@ create_aura -0.98
 unity "/cube/aura/scalemul", -0.6
 
 flop_on :D2
-
+unity "/cube/aura/fresnel", (flow 0.2 2.0 8).look
 
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   at{
     sleep 0.5
-    unity "/cube/aura/fresnel", (flow 0.2 2.0 8).look
+
 
     unity "/cube/aura/ripple", 0.2
 
