@@ -25,7 +25,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     if dice(8)>6
       flip :e4, 127, sus: (cycle 1 0.5 0.25).look if spread(4,8).look
     end
-    if dice(8)>7
+    if dice(8)< 6
       flop :g4, 127, sus: (cycle 2 0.5 0.25).rot(1).look if spread(7,11).look
     end
     kal :a4, 127, sus: (cycle 4 0.5 0.25).rot(1).look if spread(6,12).look
