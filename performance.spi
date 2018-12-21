@@ -4,7 +4,7 @@ alive perc: 0, sop: 0
 
 
 aura scale: -0.6, height: 0, wave: 1
-unity "/aura/waveheight",2.0
+unity "cube/aura/waveheight",2.0
 
 
 live_loop :Attune, sync: :unsyncable do; tick
