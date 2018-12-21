@@ -4,7 +4,7 @@ init! true &&  start_init
 
 #flop_on :d2
 create_aura
-aura scale: 0
+aura scale: 0.0
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
