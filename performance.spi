@@ -6,8 +6,8 @@ alive perc: 0, sop: 0
 #flop_on :D2
 #resonate :a2
 #create_aura
-unity "/cube/aura/scalemul", -0.6
-# unity "/cube/aura/wave", 1.0
+#unity "/cube/aura/scalemul", -0.6
+ unity "/cube/aura/wave", 1.0
 # unity "/cube/aura/height", 1.0
 # unity "/cube/aura/waveheight", 10.0
 # unity "/cube/aura/globalscale", 0.0
