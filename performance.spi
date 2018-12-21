@@ -1,14 +1,21 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
-init! true
+#init! true
 #create_aura
 
 #flop_on :D2
 #resonate :a2
 
 create_aura
+
+
+
+
+
+
+
 aura scale: -0.7, wave: 10.0, ripple: 0.1
-unity "/aura/waveh",0.00
+unity "/aura/waveh",1.00
 #unity "/cube/aura/waveheight",.0
 
 colorb 1
