@@ -9,7 +9,7 @@ init! true
 create_aura
 aura scale: -0.7, wave: 10.0, ripple: 0.1
 unity "/aura/waveh",0.2
-unity "/cube/aura/waveheight",.0
+#unity "/cube/aura/waveheight",.0
 
 colorb 1
 
