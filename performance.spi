@@ -3,8 +3,8 @@ alive perc: 0, sop: 0
 #init! true &&  start_init
 
 
-    aura fresnel: 1.5, scale: 0, wave: 0.01
-    unity "/cube/aura/scalemul", -0.99
+aura fresnel: 1.5, scale: 0, wave: 0.01
+unity "/cube/aura/scalemul", -0.99
 
 #flop_on :d2
 #create_aura
