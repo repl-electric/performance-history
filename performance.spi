@@ -4,7 +4,7 @@ alive perc: 0, sop: 0
 
 create_aura
 
-unity "/cube/aura/fresnel", 8
+unity "/cube/aura/fresnel", 0.1
 aura fresnel: 0.0, scale: 0, wave: 0.1, ripple: 0
 
 
