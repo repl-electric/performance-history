@@ -3,7 +3,6 @@ alive perc: 0, sop: 0
 
 #flop_on :d2
 
-
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
@@ -40,11 +39,14 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[_], 8],
+      [[:A2], 8],
 
       )
     chd = score.look[0]
     sleeps = score.look[-1]
+    resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
+    create_aura
+    aura scale: -0.7
 
     sleep sleeps
   end
