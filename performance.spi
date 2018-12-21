@@ -6,6 +6,8 @@ alive perc: 0, sop: 0
 
 create_cube
 
+cam :chase
+
 
 #unity "/cube/aura/globalscale", 0.0
 live_loop :Attune, sync: :unsyncable do; tick
