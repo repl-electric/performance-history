@@ -7,7 +7,7 @@ alive perc: 0, sop: 0
 #create_aura -0.98
 #unity "/cube/aura/ripple", rand
 #create_aura
-unity "/cube/aura/scalemul", -0.93
+unity "/cube/aura/scalemul", -0.9
 #aura ripple: -0.000
 #unity "/cube/aura/scalemul", -0.6
 
