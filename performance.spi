@@ -8,7 +8,7 @@ alive perc: 0, sop: 0
 
 
 aura scale: -0.7, wave: 0.0, ripple: 1
-unity "/aura/waveh",2.1000
+unity "/aura/waveh",100.1000
 
 
 # unity "/cube/aura/wave", 1.0
