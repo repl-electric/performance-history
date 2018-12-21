@@ -16,7 +16,7 @@ create_aura -0.98
 
 #resonate :a2
 
-unity "/cube/aura/scalemul", -0.3
+unity "/cube/aura/scalemul", -0.35
 
 
 live_loop :Attune, sync: :unsyncable do; tick
