@@ -5,9 +5,10 @@ alive perc: 0, sop: 0
 
 
 create_cube
+resonate :A2
 
 cam :chase
-create_sea
+#create_sea
 #unity "/cube/aura/globalscale", 0.0
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
