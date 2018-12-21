@@ -5,8 +5,8 @@ alive perc: 0, sop: 0
 
 
 create_cube
-flop_on :A2
-resonate :A2
+
+colorb 1.1
 
 cam :chase
 #create_sea
