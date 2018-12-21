@@ -5,7 +5,7 @@ alive perc: 0, sop: 0
 create_aura
 
 unity "/cube/aura/fresnel", 0.0
-aura fresnel: 1.0, scale: 0, wave: 0.1, ripple: 1
+aura fresnel: 2.0, scale: 0, wave: 0.1, ripple: 1
 
 colorb 1.0
 
