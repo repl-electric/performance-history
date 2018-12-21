@@ -1,6 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
-init! true &&  start_init
+#init! true &&  start_init
 
 
 #aura scale: -0.6, height: 0, wave: 1
