@@ -8,7 +8,7 @@ alive perc: 0, sop: 0
 
 create_aura
 aura scale: -0.7, wave: 10.0, ripple: 0.1
-unity "/aura/waveh",0.60
+unity "/aura/waveh",0.70
 #unity "/cube/aura/waveheight",.0
 
 colorb 1
