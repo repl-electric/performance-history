@@ -2,18 +2,20 @@ load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
 #init! true &&  start_init
 
-create_aura
-aura fresnel: 1.5, scale: 0, wave: 0.1, ripple: 0
-unity "/cube/aura/scalemul", -0.7
-resonate :A2
+# create_aura
+# aura fresnel: 1.5, scale: 0, wave: 0.1, ripple: 0
+# unity "/cube/aura/scalemul", -0.7
 
-flop_on :d2
+#resonate :A2
+#flop_on :d2
 #create_aura
 #aura scale: 0.0
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
+    flop_cc motion: (flow 0.27 0.5 32).look
+
 
     sleep 1/4.0
     sleep 1/4.0
