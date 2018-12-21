@@ -13,7 +13,7 @@ cam :chase
 #unity "/cube/aura/globalscale", 0.0
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
-  flop_cc motion: x=(flow 0.27 0.5 32).look
+#  flop_cc motion: x=(flow 0.27 0.5 32).look
 
   with_bpm 127 do
     sleep 1/4.0
@@ -33,6 +33,9 @@ live_loop :Attune, sync: :unsyncable do; tick
   end
 end
 #unity "/cube/aura/globalscale", 1.0
+
+
+
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
