@@ -7,7 +7,7 @@ alive perc: 1, sop: 0
 create_cube
 
 star size: 1
-
+cube aura: 1.5
 cam :chase
 #create_sea
 #unity "/cube/aura/globalscale", 0.0
