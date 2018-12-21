@@ -9,7 +9,7 @@ alive perc: 0, sop: 0
 
 #aura ripple: -0.000
 #unity "/cube/aura/scalemul", -0.6
-create_aura -1.0
+create_aura -1.1
 aura fresnel: 200
 stop
 #flop_on :D2
