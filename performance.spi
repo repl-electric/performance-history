@@ -1,51 +1,10 @@
 load_support('piezoelectric_resonator'); use_bpm 127
-alive perc: 1, sop: 0
-init! true
-#aura ripple: 1.4, scale: 1
-#unity "/aura/waveh",1
-#create_aura
-#aura scale: -0.6
-#cam :chase
-#zoomout
-#create_sea
-#roots_chase throttle: 0
-#stop
-#init! true
-#create_aura
+alive perc: 0, sop: 0
+init! true &&  start_init
 
-#aura scale: -0.6
-
-#colorb 1
-#unity "/cube/aura/globalscale", 1.0
-#stop
-#flop_on :D2
-#resonate :a2
-#create_aura
-#unity "/cube/aura/scalemul", -0.6
-# unity "/cube/aura/wave", 1.0
-# unity "/cube/aura/height", 1.0
-# unity "/cube/aura/waveheight", 10.0
-# unity "/cube/aura/globalscale", 0.0
-# unity "/cube/aura/fresnel", 1.4
-# unity "/cube/aura/ripple", 1.4
-# unity "/cube/aura/scalemul", -0.6
-#aura ripple: 1.4, scale: 1
-#unity "/aura/waveh",1
-
-          #unity "/cube/aura/globalscale", linear_map(0.27,0.5,0.0,1.0,x)
-# unity "/cube/aura/fresnel", 1.4
-# unity "/cube/aura/ripple",  1.4
-#unity "/cube/aura/scalemul", 0.0
-
-
-#zoomout
-puts :yes
-stop
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-#    flop_cc motion: (flow 0.27 0.5 32).look
-
 
     sleep 1/4.0
     sleep 1/4.0
@@ -66,7 +25,7 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1 1 1 1  1 1 1 1  1 1 1 1 1 1 1 1)
+  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
   with_bpm 127*(cycle 1).look do
     perc_machine perc.to_a
   end
@@ -76,12 +35,11 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:A2] 8]
+      [[_] 8]
 
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
 
     sleep sleeps
   end
