@@ -7,7 +7,7 @@ stop
 init! true
 create_aura
 
-aura scale: -0.6
+#aura scale: -0.6
 
 colorb 1
 #unity "/cube/aura/globalscale", 1.0
