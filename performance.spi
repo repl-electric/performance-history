@@ -3,7 +3,7 @@ alive perc: 0, sop: 0
 init! true
 #create_aura
 
-aura scale: -1.6
+aura scale: -.6
 
 
 unity "/cube/aura/globalscale", 1.0
