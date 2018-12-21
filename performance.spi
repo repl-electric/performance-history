@@ -5,7 +5,10 @@ alive perc: 0, sop: 0
 
 #flop_on :D2
 #resonate :a2
+
+create_aura
 aura scale: -0.7, wave: 0.0, ripple: 1
+
 
 
 # unity "/cube/aura/wave", 1.0
