@@ -1,7 +1,7 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
 
-unity "/cube/aura/waveheight", 0.1
+unity "/cube/aura/waveheight", 100.1
 unity "/cube/aura/globalscale", 1.0
 
 stop
