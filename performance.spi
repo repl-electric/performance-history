@@ -1,6 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
-init! true &&  start_init
+#init! true &&  start_init
 
 
 #flop_on :D2
@@ -10,7 +10,9 @@ create_aura -0.98
 #unity "/cube/aura/ripple", rand
 
 
-unity "/cube/aura/scalemul", -0.6
+#unity "/cube/aura/scalemul", -0.6
+
+flop_on :D2
 
 
 
