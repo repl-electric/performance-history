@@ -29,11 +29,11 @@ alive perc: 1, sop: 0
 # unity "/cube/aura/ripple", 1.4
 # unity "/cube/aura/scalemul", -0.6
 aura ripple: 1.4, scale: 1
-unity "/aura/waveh",1
+#unity "/aura/waveh",1
 
           #unity "/cube/aura/globalscale", linear_map(0.27,0.5,0.0,1.0,x)
-unity "/cube/aura/fresnel", 1.4
-unity "/cube/aura/ripple",  1.4
+# unity "/cube/aura/fresnel", 1.4
+# unity "/cube/aura/ripple",  1.4
 unity "/cube/aura/scalemul", -0.6
 
 
