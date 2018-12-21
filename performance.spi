@@ -8,7 +8,7 @@ create_aura
 
 
 aura scale: -0.7, wave: 0.0, ripple: 1
-unity "/aura/waveh",0.01
+unity "/aura/waveh",0.1
 
 
 # unity "/cube/aura/wave", 1.0
