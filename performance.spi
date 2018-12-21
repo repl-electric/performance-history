@@ -15,7 +15,7 @@ alive perc: 0, sop: 0
 # unity "/cube/aura/ripple", 1.4
 # unity "/cube/aura/scalemul", -0.6
 
-unity "/cube/aura/globalscale", 1
+unity "/cube/aura/globalscale", 0.2
 
 puts :yes
 
