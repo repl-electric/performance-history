@@ -2,13 +2,6 @@ load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
 init! true &&  start_init
 
-
-#aura scale: -0.6, height: 0, wave: 1
-#unity "/cube/aura/waveheight",1.0
-
-#aura scale: -0.6
-
-
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
@@ -42,12 +35,11 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:A2] 8]
+      [[_] 8]
 
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
 
     sleep sleeps
   end
