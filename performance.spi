@@ -29,7 +29,7 @@ alive perc: 1, sop: 0
 # unity "/cube/aura/ripple", 1.4
 # unity "/cube/aura/scalemul", -0.6
 
-
+zoomout
 puts :yes
 
 live_loop :Attune, sync: :unsyncable do; tick
