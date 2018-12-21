@@ -22,10 +22,10 @@ resonate :a2
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
-  flop_cc motion: (flow 0.27 0.5 32).look
+  flop_cc motion: x=(flow 0.27 0.5 32).look
 
 
-  unity "/cube/aura/globalscale", 1
+  unity "/cube/aura/globalscale", 1-
 #  unity "/cube/aura/ripple", 0
   with_bpm 127 do
 
