@@ -13,7 +13,7 @@ alive perc: 0, sop: 0
 
 aura scale: -0.7,
 wave: 0.0,
-ripple: 1
+ripple: 0
 unity "/aura/waveh",20.00
 unity "/cube/aura/waveheight",.0
 
@@ -34,7 +34,7 @@ stop
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    flop_cc motion: (flow 0.27 0.5 32).look
+    flop_cc motion: (flow 0.27, 0.5, 32,).look
 
 
 
@@ -57,8 +57,8 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
-  with_bpm 127*(cycle 1).look do
+  perc=(cycle 0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,)
+  with_bpm 127*(cycle 1,).look do
     perc_machine perc.to_a
   end
 end
@@ -67,7 +67,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:A2] 8]
+      [[:A2], 8],
 
       )
     chd = score.look[0]
