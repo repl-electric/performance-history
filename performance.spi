@@ -3,6 +3,11 @@ alive perc: 0, sop: 0
 
 unity "/cube/aura/waveheight", 200.1
 unity "/cube/aura/globalscale", 10.0
+unity "/cube/aura/fresnel", 1.4
+unity "/cube/aura/ripple", 0.0
+unity "/cube/aura/scalemul", -0.6
+
+
 
 stop
 live_loop :Attune, sync: :unsyncable do; tick
