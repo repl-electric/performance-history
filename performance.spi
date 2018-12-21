@@ -3,7 +3,7 @@ alive perc: 0, sop: 0
 #init! true
 #create_aura
 
-unity "/cube/aura/globalscale", 0.2
+unity "/cube/aura/globalscale", 2.2
 stop
 #flop_on :D2
 #resonate :a2
