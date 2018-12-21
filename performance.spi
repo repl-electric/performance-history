@@ -9,8 +9,8 @@ aura fresnel: 0.0, scale: 0, wave: 0.1, ripple: 0
 
 colorb 1.1
 
-unity "/cube/aura/scalemul", -0.7
-colorb 1.0
+#unity "/cube/aura/scalemul", -0.7
+#colorb 1.0
 
 #resonate :A2
 #flop_on :d2
