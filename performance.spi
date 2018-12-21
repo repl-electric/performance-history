@@ -15,7 +15,7 @@ unity "/cube/aura/scalemul", -0.6
 flop_on :D2
 unity "/cube/aura/fresnel", 0.8
 
-resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
+resonate :a2
 
 
 
