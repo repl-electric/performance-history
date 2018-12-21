@@ -2,9 +2,9 @@ load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
 
 #cam :chase
-zoomout
-create_sea
-roots_chase throttle: 0
+#zoomout
+#create_sea
+#roots_chase throttle: 0
 stop
 init! true
 create_aura
