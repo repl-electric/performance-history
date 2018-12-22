@@ -19,7 +19,7 @@ aura fresnel: 2.0, scale: -0.6, wave: 10.4, ripple: 2
 #create_aura
 #aura scale: 0.0
 unity "/cube/aura/globalscale", 2.0
-unity "/cube/aura/scalemul", 10.2
+unity "/cube/aura/scalemul", 20.2
 stop
 
 
