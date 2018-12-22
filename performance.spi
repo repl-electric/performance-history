@@ -8,8 +8,6 @@ aura fresnel: 2.0, scale: -0.6, wave: 10.4, ripple: 2
 #stop
 #stop
 
-
-
 #unity "/aura/waveh", 2.0
 #colorb 1.0
 
