@@ -1,6 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
-init! true &&  start_init
+#init! true &&  start_init
 colorb 1
 #create_aura
 aura fresnel: 2.0, scale: -0.6, wave: 10.4, ripple: 2
