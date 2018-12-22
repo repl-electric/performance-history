@@ -6,7 +6,7 @@ alive perc: 0, sop: 0
 
 #unity "/cube/aura/fresnel", 2.0
 aura fresnel: 2.0, scale: 0, wave: 0.1, ripple: 1
-unity "/aura/waveh", 1.0
+unity "/aura/waveh", 2.0
 colorb 1.0
 
 #unity "/cube/aura/scalemul", -0.8
