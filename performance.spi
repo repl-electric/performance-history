@@ -4,7 +4,7 @@ alive perc: 0, sop: 0
 
 #create_aura
 
-aura fresnel: 2.0, scale: -0.6, wave: 5.4, ripple: 2
+aura fresnel: 2.0, scale: -0.6, wave: 10.4, ripple: 2
 #aura fresnel: 0.0, wave: 5
 stop
 #stop
