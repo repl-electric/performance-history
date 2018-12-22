@@ -23,6 +23,7 @@ stop
 #aura scale: 0.0
 unity "/cube/aura/globalscale", 2.0
 unity "/cube/aura/scalemul", 1.2
+stop
 
 
 live_loop :Attune, sync: :unsyncable do; tick
