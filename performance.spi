@@ -4,14 +4,11 @@ alive perc: 0, sop: 0
 
 create_aura
 
+#aura fresnel: 2
+#stop
 
 
-
-aura fresnel: 2
-stop
-
-
-#aura fresnel: 2.0, scale: 0, wave: 0.4, ripple: 2
+aura fresnel: 2.0, scale: 0, wave: 0.4, ripple: 2
 #unity "/aura/waveh", 2.0
 #colorb 1.0
 
@@ -26,7 +23,7 @@ stop
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    flop_cc motion: (flow 0.27 0.5 32).look
+    flop_cc motion: (flow 0.27, 0.5, 32,).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -47,8 +44,8 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
-  with_bpm 127*(cycle 1).look do
+  perc=(cycle 0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,)
+  with_bpm 127*(cycle 1,).look do
     perc_machine perc.to_a
   end
 end
@@ -57,7 +54,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[_] 8]
+      [[_], 8],
 
       )
     chd = score.look[0]
