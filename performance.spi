@@ -4,12 +4,13 @@ alive perc: 0, sop: 0
 
 #create_aura
 
-aura fresnel: 0.0, wave: 5
+aura fresnel: 2.0, scale: 0, wave: 0.4, ripple: 2
+#aura fresnel: 0.0, wave: 5
 stop
 #stop
 
 
-#aura fresnel: 2.0, scale: 0, wave: 0.4, ripple: 2
+
 #unity "/aura/waveh", 2.0
 #colorb 1.0
 
