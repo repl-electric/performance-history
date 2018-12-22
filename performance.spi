@@ -21,7 +21,7 @@ stop
 #flop_on :d2
 #create_aura
 #aura scale: 0.0
-unity "/cube/aura/globalscale", 2.0
+unity "/cube/aura/globalscale", 10.0
 unity "/cube/aura/scalemul", 10.2
 stop
 
