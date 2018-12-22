@@ -1,11 +1,11 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
-init! true &&  start_init
+#init! true &&  start_init
 
-create_aura
+#create_aura
 
-unity "/cube/aura/fresnel", 2.0
-aura fresnel: 1.0, scale: 0, wave: 0.1, ripple: 1
+#unity "/cube/aura/fresnel", 2.0
+aura fresnel: 2.0, scale: 0, wave: 0.1, ripple: 1
 unity "/aura/waveh", 1.0
 colorb 1.1
 
