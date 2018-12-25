@@ -45,6 +45,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
   perc=(cycle 1 1 1   1 1 1 1  0 0 0 0  0 0 0 1)
   with_bpm 127*(cycle 1).look do
     perc_machine perc.to_a
+
   end
 end
 
@@ -79,7 +80,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     chd = score.look[0]
     sleeps = score.look[-1]
     resonate chd,1, sus: sleeps, pads: [0,1,2], sat: 0, drive: 0
-    attune root(chd),16, sus: sleeps
+    control_unit root(chd),16, sus: sleeps
 
 
     create_sea
