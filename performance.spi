@@ -11,7 +11,7 @@ alive perc: 1, sop: 0
 #roots_chase target: :start
 
 cam :top
-
+stop
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
@@ -83,10 +83,10 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     chd = score.look[0]
     sleeps = score.look[-1]
     resonate chd,1, sus: sleeps, pads: [0,1,2], sat: 0, drive: 0
-    control_unit root(chd),56, sus: sleeps
+ #   control_unit root(chd),56, sus: sleeps
 
 
-    create_sea
+#    create_sea
     sleep sleeps
   end
 end
