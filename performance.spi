@@ -6,7 +6,10 @@ fx tube: 1.00, distort: 1.00
 #create_cube
 
 
-eject_cpu_core
+#eject_cpu_core
+
+
+
 #overclock_cc motion: 0.55
 #cam :chase
 
@@ -97,3 +100,4 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 end
 
 live_loop(:unsyncable)do;sleep 1.0;end
+livecode :end
