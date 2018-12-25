@@ -7,7 +7,7 @@ alive perc: 1, sop: 0
 
 at{
   sync :unsyncable
-  overclock_x :f3
+  overclock_on :f3
 }
 slow_int
 
