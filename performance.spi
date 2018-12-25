@@ -1,42 +1,14 @@
 load_support('piezoelectric_resonator'); use_bpm 127
-alive perc: 1, sop: 0
-#init! true &&  start_init
-fx tube: 1.00, distort: 1.00
-#flop_on :D2, 127
-#create_cube
-
-
-#eject_cpu_core
-
-
-
-#overclock_cc motion: 0.55
-#cam :chase
-
-#roots_chase target: :start
-
-#cam :top
-end1
-
-
+alive perc: 0, sop: 0
+init! true &&  start_init
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
-  with_bpm 127*6 do
-    kal :e4
-    flop_cc motion: (flow 0.25 0.5 32).look
-    flop :f4,127, sus: 1
-    flop :a4,127, sus: 2 if spread(7,11).look
-
+  with_bpm 127 do
 
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/2.0
-
-    alu (cycle :g3 :a3).look, z:1 if spread(7,11).look
-    alu (cycle :g4 :e3).look if spread(7,11).look
-
-
 
     sleep 1/4.0
     sleep 1/4.0
@@ -45,7 +17,7 @@ live_loop :Attune, sync: :unsyncable do; tick
 
     sleep 1/2.0
     sleep 1/2.0
-    flop :c4,12, sus: 1/2.0
+
     sleep 1/2.0
     sleep 1/2.0
   end
@@ -53,51 +25,24 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1 1 1   1 1 1 1  0 0 0 0  0 0 0 1)
-  with_bpm 127*(cycle 4).look do
+  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
+  with_bpm 127*(cycle 1).look do
     perc_machine perc.to_a
-
   end
 end
 
-
-roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
+#roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      [[:A3 :C5 :E4] 8]
-      [[:E4 :G5 :B3] 8]
-      [[:F4 :A6 :C5 :E5] 8]
-      [[:C3 :E5 :G4] 8]
-      [Zz 8]
-
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      [[:A3 :C5 :E4] 4]
-      [[:A3 :C5 :E4] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:G4 :B6 :D5 :F4] 8]
-      [[:C4 :E5 :G4] 8]
-      [Zz 8]
+      [[_] 8]
 
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-  #  resonate chd,1, sus: sleeps, pads: [0,1,2], sat: 0, drive: 0
- #   control_unit root(chd),56, sus: sleeps
 
-
-#    create_sea
     sleep sleeps
   end
 end
 
 live_loop(:unsyncable)do;sleep 1.0;end
-livecode :end
