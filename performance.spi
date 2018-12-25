@@ -8,7 +8,7 @@ alive perc: 1, sop: 0
 #overclock_cc motion: 0.26
 #cam :chase
 
-roots_chase: target: :start
+roots_chase target: :start
 
 
 
