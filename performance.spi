@@ -5,10 +5,7 @@ alive perc: 1, sop: 0
 #flop_on :D2, 127
 #create_cube
 
-at{
-  sync :unsyncable
-  overclock_on :f3
-}
+slow_init!
 
 
 
