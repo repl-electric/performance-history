@@ -5,6 +5,10 @@ init! true &&  start_init
 
 flop_on :D2, 127
 
+resonate :A2
+
+
+
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
