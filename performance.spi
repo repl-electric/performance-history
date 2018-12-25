@@ -4,7 +4,7 @@ alive perc: 0, sop: 0
 
 
 #flop_on :d2
-create_aura -0.9
+create_aura 1
 stop
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
