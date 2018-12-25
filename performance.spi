@@ -3,7 +3,7 @@ alive perc: 0, sop: 0
 #init! true &&  start_init
 
 flop_on :D2, 127
-
+create_aura
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
