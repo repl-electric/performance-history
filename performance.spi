@@ -10,7 +10,7 @@ alive perc: 1, sop: 0
 
 #roots_chase target: :start
 
-cam :top
+#cam :top
 
 
 live_loop :Attune, sync: :unsyncable do; tick
