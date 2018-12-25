@@ -16,7 +16,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/2.0
 
-    alu (cycle :g3).look, z:1 if spread(7,11).look
+    alu (cycle :g3 :a3).look, z:1 if spread(7,11).look
     alu (cycle :g4).look if spread(7,11).look
 
 
@@ -41,7 +41,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
     perc_machine perc.to_a
   end
 end
-zoomout
+
 
 #roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
 live_loop :MachineInstructions, sync: :unsyncable do; tick
