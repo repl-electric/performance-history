@@ -17,7 +17,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/2.0
 
     alu (cycle :g3 :a3).look, z:1 if spread(7,11).look
-    alu (cycle :g4).look if spread(7,11).look
+    alu (cycle :g4 :e3).look if spread(7,11).look
 
 
 
