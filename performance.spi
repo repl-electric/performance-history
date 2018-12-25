@@ -9,7 +9,7 @@ at{
   sync :unsyncable
   overclock_on :e3
 }
-slow_int
+
 
 
 live_loop :Attune, sync: :unsyncable do; tick
