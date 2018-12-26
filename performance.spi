@@ -6,6 +6,10 @@ alive perc: 0, sop: 0
  rocks throttle: 0
 vortex throttle: 0
 
+
+
+aura scale: rand
+
 #crash
 #star life: 8, size: 8
 #aura fresnel: 1.5, scale: 1, wave: 1.01,
