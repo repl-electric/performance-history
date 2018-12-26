@@ -4,7 +4,7 @@ alive perc: 0, sop: 0
 
 #crash
 #star life: 8, size: 8
-    aura fresnel: 1.5, scale: 0.0, wave: 0.01
+aura fresnel: 1.5, scale: 0.0, wave: 1.01
 
 stop
 
