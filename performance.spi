@@ -4,7 +4,7 @@ alive perc: 0, sop: 0
 
 
 #flop_on :d2
-create_aura -0.01
+create_aura -0.02
 
 no{
   sync :unsyncable
