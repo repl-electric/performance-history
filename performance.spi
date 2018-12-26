@@ -4,11 +4,11 @@ alive perc: 0, sop: 0
 
 
 #flop_on :d2
-create_aura
+#create_aura
 
 at{
   sync :unsyncable
-#  overclock_on :A2
+  overclock_on :A2
 }
 
 
