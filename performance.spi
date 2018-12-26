@@ -8,7 +8,7 @@ create_aura
 
 at{
   sync :unsyncable
-  overclock_on :A2
+#  overclock_on :A2
 }
 
 
