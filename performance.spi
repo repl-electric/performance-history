@@ -9,7 +9,7 @@ alive perc: 0, sop: 0
 #star life: 8, size: 8
 #aura fresnel: 1.5, scale: 1, wave: 1.01,
 unity "/cube/aura/scalemul", 0
-unity "/cube/aura/wave", 0
+unity "/cube/aura/wave", 1
 
 
 stop
