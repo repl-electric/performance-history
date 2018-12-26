@@ -6,6 +6,8 @@ alive perc: 0, sop: 0
 crash
 star life: 8
 
+recover
+
 stop
 
 #flop_on :d2
