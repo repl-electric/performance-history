@@ -19,7 +19,7 @@ alive perc: 0, sop: 0
 #recover
 #slow_init
 create_cube -2
-star throttle: 0.0
+star throttle: -2
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
