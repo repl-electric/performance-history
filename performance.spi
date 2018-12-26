@@ -68,7 +68,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     sleep sleeps
   end
 end
-roots_chase target: :spiral, drag: 10, force: 200
+roots_chase target: :spiral, drag: 5, force: 200
 live_loop(:unsyncable)do;sleep 1.0;end
 
 colorb 0.9
