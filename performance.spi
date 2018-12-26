@@ -14,7 +14,7 @@ alive perc: 0, sop: 0
 #  $triggered=false
 #  overclock_on :A3
 #}
-
+    aura fresnel: 1.5, wave: 1.5
 #create_aura
 #recover
 #slow_init
