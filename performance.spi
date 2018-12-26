@@ -1,7 +1,7 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
-init true &&  start_init
-
+#init true &&  start_init
+stop
 
 #flop_on :d2
 #create_cube
