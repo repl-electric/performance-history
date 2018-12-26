@@ -13,7 +13,7 @@ alive perc: 0, sop: 0
 yes{
   sync :unsyncable
   $triggered=false
-  overclock_on :A2
+  overclock_on :A3
 }
 
 #slow_init
