@@ -16,6 +16,7 @@ yes{
   overclock_on :A2
 }
 
+slow_init
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
