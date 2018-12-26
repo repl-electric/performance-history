@@ -7,7 +7,7 @@ alive perc: 0, sop: 0
 # vortex throttle: 0
 #crash
 #star life: 8, size: 8
-aura fresnel: 1.5, scale: 0.1, wave: 1.01
+aura fresnel: 1.5, scale: 0.2, wave: 1.01
 
 unity "/cube/aura/wave", 1
 
