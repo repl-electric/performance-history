@@ -2,7 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
 #init true &&  start_init
 cam :chase
-# roots_chase throttle: 0
+#\ roots_chase throttle: 0
 # rocks throttle: 0
 # vortex throttle: 0
 #crash
