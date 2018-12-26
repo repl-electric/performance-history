@@ -8,7 +8,8 @@ alive perc: 0, sop: 0
 #crash
 #star life: 8, size: 8
 #aura fresnel: 1.5, scale: 1, wave: 1.01,
-create_aura
+
+flop_on :d2
 
 stop
 
