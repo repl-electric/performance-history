@@ -6,7 +6,7 @@ init true &&  start_init
 #crash
 #star life: 8, size: 8
 
-
+sleep 2
 
 create_aura
 
