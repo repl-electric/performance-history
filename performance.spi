@@ -71,4 +71,4 @@ roots_chase target: :start, drag: 2, force: 200
 live_loop(:unsyncable)do;sleep 1.0;end
 
 colorb 1.00
-star size: 1, life: 1
+star size: 1, life: 2
