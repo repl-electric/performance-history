@@ -12,6 +12,7 @@ alive perc: 0, sop: 0
 yes{
   sync :unsyncable
   $triggered=false
+  star size: 0.1
   overclock_on :A2
 }
 
