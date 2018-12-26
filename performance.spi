@@ -32,7 +32,7 @@ cam :chase
 #  $triggered=false
 #  overclock_on :A3
 #}
-    aura fresnel: 1.5, wave: 1.5, scale: 0
+  #  aura fresnel: 1.5, wave: 1.5, scale: 0
 #create_aura
 #recover
 #slow_init
