@@ -18,7 +18,7 @@ unity "/cube/aura/wave", 1.0
 unity "/cube/aura/scale", 1.0
 
 #aura fresnel: 1.5, scale: 1
-aura fresnel: 1.5, scale: 0.0, wave: 0.01
+aura fresnel: 1.5, scale: 0.0, wave: 1
 
 stop
 
