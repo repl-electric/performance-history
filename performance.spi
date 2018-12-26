@@ -9,7 +9,7 @@ alive perc: 0, sop: 0
 #star life: 8, size: 8
 #aura fresnel: 1.5, scale: 1, wave: 1.01,
 unity "/cube/aura/scalemul", 0
-unity "/cube/aura/wave", 1
+unity "/cube/aura/wave", 2
 
 
 stop
@@ -32,7 +32,7 @@ star throttle: -2.0,size: 0.00001
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    flop_cc motion: (flow 0.27, 0.5, 32,).look
+    flop_cc motion: (flow 0.27 0.5 32).look
 
     flop :c4
     sleep 1/4.0
@@ -54,8 +54,8 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1,)
-  with_bpm 127*(cycle 1,).look do
+  perc=(cycle 1)
+  with_bpm 127*(cycle 1).look do
     perc_machine perc.to_a
     sea circle: rand
   end
@@ -65,7 +65,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:a3], 8],
+      [[:a3] 8]
 
       )
     chd = score.look[0]
