@@ -68,3 +68,4 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 end
 roots_chase target: :start
 live_loop(:unsyncable)do;sleep 1.0;end
+create_cube
