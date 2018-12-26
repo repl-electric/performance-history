@@ -8,6 +8,7 @@ alive perc: 0, sop: 0
 
 at{
   sync :unsyncable
+  $triggered=true
   overclock_on :A2
 }
 
