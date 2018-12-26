@@ -8,7 +8,7 @@ vortex throttle: 0
 
 
 
-aura scale: rand*3
+aura scale: rand*4
 
 #crash
 #star life: 8, size: 8
