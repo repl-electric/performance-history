@@ -9,7 +9,9 @@ alive perc: 0, sop: 0
 #star life: 8, size: 8
 #aura fresnel: 1.5, scale: 1, wave: 1.01,
 
-flop_on :d2
+resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
+overclock_on :a4
+
 
 stop
 
