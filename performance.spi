@@ -19,7 +19,7 @@ unity "/cube/aura/scale", 0
 
 #aura fresnel: 1.5, scale: 1
 aura fresnel: 1.5, scale: 0, wave: 0, height: 1
-cube aura: 1
+#cube aura: 1
 
 
 stop
