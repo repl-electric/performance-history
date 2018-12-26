@@ -19,56 +19,7 @@ alive perc: 0, sop: 0
 #recover
 #slow_init
 #create_cube -2
-
-star throttle: -2.0,size: 0.00001
-live_loop :Attune, sync: :unsyncable do; tick
-  zero_delay [2,5,6].shuffle
-  with_bpm 127 do
-    flop_cc motion: (flow 0.27 0.5 32).look
-
-    flop :c4
-    sleep 1/4.0
-    sleep 1/4.0
-    sleep 1/2.0
-
-    sleep 1/4.0
-    sleep 1/4.0
-    sleep 1/4.0
-    sleep 1/4.0
-
-    sleep 1/2.0
-    sleep 1/2.0
-
-    sleep 1/2.0
-    sleep 1/2.0
-  end
-end
-
-live_loop :ClockCycle, sync: :unsyncable do; tick
-  #sync :MachineInstructions
-  perc=(cycle 1)
-  with_bpm 127*(cycle 1).look do
-    perc_machine perc.to_a
-    sea circle: rand
-  end
-end
-
-#roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
-live_loop :MachineInstructions, sync: :unsyncable do; tick
-  with_bpm 127*1 do
-    score = (cycle
-      [[:a3] 8]
-
-      )
-    chd = score.look[0]
-    sleeps = score.look[-1]
-    resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
-    control_unit root(chd), 10,sus: sleeps, drive: 0.0, sat: 0.0
-
-    sleep sleeps
-  end
-end
-roots_chase target: :spiral, drag: 2, force: 200
+, force: 200
 live_loop(:unsyncable)do;sleep 1.0;end
 
 colorb 0.9
