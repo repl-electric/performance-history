@@ -7,7 +7,7 @@ alive perc: 0, sop: 0
 vortex throttle: 0
 
 
-unity "/cube/aura/globalscale", 9
+unity "/cube/aura/globalscale", 19
 
 
 #crash
