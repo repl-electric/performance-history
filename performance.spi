@@ -1,6 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
-#init true &&  start_init
+init true &&  start_init
 #cam :chase
 # roots_chase throttle: 0
 # rocks throttle: 0
@@ -8,8 +8,6 @@ alive perc: 0, sop: 0
 #crash
 #star life: 8, size: 8
 #aura fresnel: 1.5, scale: 1, wave: 1.01,
-unity "/cube/aura/scalemul", 0
-unity "/cube/aura/wave", 1
 
 
 stop
