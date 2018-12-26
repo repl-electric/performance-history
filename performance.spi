@@ -7,13 +7,13 @@ init true &&  start_init
 
 
 #flop_on :d2
-create_cube
 #create_cube
-yes{
-  sync :unsyncable
+#create_cube
+#yes{
+#  sync :unsyncable
   $triggered=false
   overclock_on :A3
-}
+#}
 
 #slow_init
 
