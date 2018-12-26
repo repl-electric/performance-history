@@ -8,7 +8,7 @@ init true &&  start_init
 
 
 
-create_aura
+#create_aura
 
 stop
 #flop_on :d2
