@@ -6,7 +6,7 @@ alive perc: 0, sop: 0
 #flop_on :d2
 #create_aura
 #stop
-unity "/cube/aura/globalscale", 1
+#unity "/cube/aura/globalscale", 1
 #resonate :a3
 
 
