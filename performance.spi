@@ -4,7 +4,7 @@ alive perc: 0, sop: 0
 
 #aura ping: 5
 
-aura distort: 2
+aura distort: 1
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
