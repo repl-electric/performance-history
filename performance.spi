@@ -1,10 +1,10 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
-init true &&  start_init
+#init true &&  start_init
 
 
 #flop_on :d2
-#create_aura
+create_aura
 #stop
 #unity "/cube/aura/globalscale", 1
 #resonate :a3
