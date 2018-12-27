@@ -2,14 +2,9 @@ load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 0, sop: 0
 #init true &&  start_init
 
+#aura ping: 5
 
-#flop_on :d2
-#create_aura
-#stop
-#unity "/cube/aura/globalscale", 1
-#resonate :a3
-aura ping: 5
-
+aura scale: 1
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
