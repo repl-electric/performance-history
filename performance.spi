@@ -5,7 +5,7 @@ alive perc: 1, sop: 0
 #aura ping: 5
 
 #recover
-cam :chase
+cam :cube
 #aura distort: 1
 #create_cube
 
