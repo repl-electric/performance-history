@@ -7,7 +7,7 @@ alive perc: 1, sop: 0
 #recover
 #aura distort: 1
 #create_cube
-zoomout true
+zoom_in
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
 
