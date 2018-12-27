@@ -5,13 +5,13 @@ alive perc: 0, sop: 0
 #aura ping: 5
 
 #aura distort: 1
-
+create_cube
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   #@x=0.0
   with_bpm 127 do
     flop_cc motion: (flow 0.27 0.5 32).look
-    puts     (flow 0.27 0.5 32).look
+    #puts     (flow 0.27 0.5 32).look
 
     sleep 1/4.0
     sleep 1/4.0
