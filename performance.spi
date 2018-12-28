@@ -15,7 +15,7 @@ alive perc: 1, sop: 0
 roots swirl: 0.0, drag: 0.1, freq: 1.8, amp: 0.9
 #create_bird
 
-create_aura
+create_aura 2
 
 rocks orbit: 200
 stop
