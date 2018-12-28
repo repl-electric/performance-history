@@ -4,7 +4,7 @@ alive perc: 1, sop: 0
 
 #aura ping: 5
 
-recover
+#recover
 
 #aura distort: 1
 #create_cube
