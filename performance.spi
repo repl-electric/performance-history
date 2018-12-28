@@ -12,7 +12,7 @@ alive perc: 1, sop: 0
 #aura distort: 1
 #create_cube
 #bright
-roots swirl: 0.6, drag: 2.0, freq: 0.4, amp: 0.2, radius: 1.0
+roots swirl: 0.2, drag: 2.0, freq: 0.4, amp: 0.2, radius: 1.0
 
 stop
 live_loop :Attune, sync: :unsyncable do; tick
