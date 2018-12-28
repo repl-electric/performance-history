@@ -8,7 +8,7 @@ alive perc: 1, sop: 0
 #cam :top
 #end1
 
-star size: 3
+star size: 10
 #aura distort: 1
 #create_cube
 
