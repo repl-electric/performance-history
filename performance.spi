@@ -65,6 +65,6 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
   end
 end
 
-cam :top
+end1
 
 live_loop(:unsyncable)do;sleep 1.0;end
