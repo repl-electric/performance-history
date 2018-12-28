@@ -1,6 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
-init true &&  start_init
+#init true &&  start_init
 
 #aura ping: 5
 
@@ -12,6 +12,7 @@ init true &&  start_init
 #aura distort: 1
 #create_cube
 #bright
+cam :top
 roots swirl: 0.0, drag: 0.1, freq: 1.8, amp: 0.9
 create_bird -2
 
