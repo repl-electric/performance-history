@@ -19,7 +19,7 @@ create_aura 2
 aura scale: 1, distort: 1.0, wave: 1.0, fresnel: 19999.5, ripple: 1
 burst 1
 shard 1
-sea circle: 0.8, sphere: 2
+sea circle: 0.8, sphere: 0.2
 
 rocks orbit: 200
 stop
