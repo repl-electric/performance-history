@@ -16,7 +16,7 @@ alive perc: 1
 star size: 3
 
 #cam :top
-star life: 5, size: 10
+star life: 5, size: 20
 
 
 live_loop :Attune, sync: :unsyncable do; tick
