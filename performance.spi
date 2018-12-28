@@ -1,11 +1,11 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
-init true &&  start_init
+#init true &&  start_init
 
 #aura ping: 5
 
 #recover
-
+cam :top
 #aura distort: 1
 #create_cube
 
@@ -14,8 +14,8 @@ live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
 
   with_bpm 127 do
-    flop_cc motion: (flow 0.27 0.5 32).look
-    #puts     (flow 0.27 0.5 32).look
+    flop_cc motion: (flow 0.27, 0.5, 32,).look
+    #puts     (flow 0.27, 0.5, 32,).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -40,8 +40,8 @@ end
 roots_chase target: :start
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1)
-  with_bpm 127*(cycle 1).look do
+  perc=(cycle 1,)
+  with_bpm 127*(cycle 1,).look do
     aura ping: rand*3, scale: 1
     perc_machine perc.to_a
     sleep 1
@@ -52,7 +52,7 @@ roots_chase force: 100#,# freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:A3] 8]
+      [[:A3], 8],
 
       )
     chd = score.look[0]
