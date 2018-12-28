@@ -12,7 +12,7 @@ alive perc: 1, sop: 0
 #aura distort: 1
 #create_cube
 #bright
-roots swirl: 0.5, drag: 0.1, freq: 1.8, amp: 0.9
+roots swirl: 0.0, drag: 0.1, freq: 1.8, amp: 0.9
 create_bird
 rocks orbit: 200
 stop
