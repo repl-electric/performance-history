@@ -17,7 +17,7 @@ alive perc: 1, sop: 0
 #cam :top
 roots swirl: 0.0
 #create_bird -2
-create_sea -2
+create_sea -9
 #create_aura 2
 #aura scale: 1, distort: 1.0, wave: 1.0, fresnel: 19999.5, ripple: 1
 #burst 1
