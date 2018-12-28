@@ -15,7 +15,7 @@ alive perc: 1, sop: 0
 #create_cube
 #bright
 #cam :top
-#roots swirl: 0.0, drag: 0.1, freq: 1.8, amp: 0.9
+roots swirl: 0.0
 #create_bird -2
 
 #create_aura 2
