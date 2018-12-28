@@ -25,7 +25,7 @@ roots swirl: 0.0
 #sea circle: 0.8, sphere: 0.6
 #unity "/cam0/glitch_s", 0.9
 #unity "/cube/hit", 2.0
-
+sea -2
 #rocks orbit: 200
 stop
 live_loop :Attune, sync: :unsyncable do; tick
