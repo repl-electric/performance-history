@@ -20,7 +20,7 @@ aura scale: 1, distort: 1.0, wave: 1.0, fresnel: 19999.5, ripple: 1
 burst 1
 shard 1
 sea circle: 0.8, sphere: 0.6
-unity "/cam0/glitch_a", 0.9
+unity "/cam0/glitch_s", 0.9
 
 
 rocks orbit: 200
