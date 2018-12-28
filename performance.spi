@@ -13,7 +13,10 @@ alive perc: 1, sop: 0
 #create_cube
 #bright
 roots swirl: 0.0, drag: 0.1, freq: 1.8, amp: 0.9
-create_bird
+#create_bird
+
+create_aura
+
 rocks orbit: 200
 stop
 live_loop :Attune, sync: :unsyncable do; tick
