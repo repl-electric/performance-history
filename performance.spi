@@ -1,6 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
-#init true &&  start_init
+init true &&  start_init
 
 #aura ping: 5
 
@@ -8,8 +8,7 @@ alive perc: 1, sop: 0
 
 #aura distort: 1
 #create_cube
-create_sea -2
-create_aura -2
+
 stop
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
