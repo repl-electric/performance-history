@@ -21,7 +21,7 @@ burst 1
 shard 1
 sea circle: 0.8, sphere: 0.6
 unity "/cam0/glitch_s", 0.9
-
+unity "/cube/hit", 1.0
 
 rocks orbit: 200
 stop
