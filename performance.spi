@@ -5,13 +5,13 @@ alive perc: 1, sop: 0
 #aura ping: 5
 
 #recover
-cam :top
+#cam :top
 #end1
 
 #star size: 10, life: 5
 #aura distort: 1
 #create_cube
-bright
+#bright
 
 stop
 live_loop :Attune, sync: :unsyncable do; tick
