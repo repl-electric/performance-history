@@ -47,7 +47,7 @@ end
 
 #roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
 live_loop :MachineInstructions, sync: :unsyncable do; tick
-  cam :chase
+
   with_bpm 127*1 do
     score = (cycle
       [[:A3 :C5 :E4] 8]
@@ -75,7 +75,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-
+    create_sea
     sleep sleeps
   end
 end
