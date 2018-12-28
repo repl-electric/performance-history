@@ -13,7 +13,7 @@ alive perc: 1, sop: 0
 #create_cube
 #bright
 roots swirl: 0.0, drag: 0.1, freq: 1.8, amp: 0.9
-#create_bird
+create_bird -2
 
 create_aura 2
 aura scale: 1, distort: 1.0, wave: 1.0, fresnel: 19999.5, ripple: 1
