@@ -14,7 +14,7 @@ alive perc: 1
 #roots_chase, throttle: 0.9, force: 100, radius: 0.01
 
 star size: 3
-
+burst 1
 #cam :top
 star life: 5, size: 10
 roots swirl: 0.0
