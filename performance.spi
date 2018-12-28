@@ -1,11 +1,11 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1, sop: 0
-init true &&  start_init
+#init true &&  start_init
 
 #aura ping: 5
 
 #recover
-#cam :top
+cam :top
 #end1
 
 #star size: 10, life: 5
