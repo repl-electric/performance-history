@@ -11,7 +11,7 @@ alive perc: 1
 #overclock_cc motion: 0.27
 #zoomout
 
-roots_chase target: :start, throttle: 0.4
+roots_chase target: :start, throttle: 0.3
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
