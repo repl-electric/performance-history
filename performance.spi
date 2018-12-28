@@ -14,7 +14,7 @@ alive perc: 1, sop: 0
 #aura distort: 1
 #create_cube
 #bright
-cam :top
+#cam :top
 roots swirl: 0.0
 #create_bird -2
 #create_sea -10
