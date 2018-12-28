@@ -8,7 +8,7 @@ alive perc: 1, sop: 0
 #cam :top
 #end1
 
-colorb 1
+colorb 2
 #aura distort: 1
 #create_cube
 
