@@ -7,7 +7,8 @@ alive perc: 1, sop: 0
 
 #recover
 #cam :top
-end1
+#end1
+
 
 #star size: 10, life: 5
 #aura distort: 1
