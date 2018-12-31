@@ -12,7 +12,7 @@ eject_cpu_core
 #end2
 
 #livecode :end
-unity "/fadeout",-5.0
+unity "/fadeout",-8.0
 
 
 #star size: 5
