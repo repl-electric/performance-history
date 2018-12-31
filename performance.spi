@@ -8,7 +8,7 @@ alive perc: 1
 #overclock_on :e4
 
 star size: 4, life: 5
-creat_sea 0
+create_sea 0
 
 #cam :top
 #overclock_cc motion: 0.27
