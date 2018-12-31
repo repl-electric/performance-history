@@ -9,7 +9,10 @@ alive perc: 1
 #cam :top
 
 
-kal :f4
+
+overclock_on ::a3
+
+
 
 #create_sea -10
 #overclock_on :e4
