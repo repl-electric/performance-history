@@ -11,6 +11,7 @@ alive perc: 1
 
 resonate :a3
 flop_on :g4,127
+flop_cc motion: 0.34
 
 
 
