@@ -10,7 +10,7 @@ cam :top
 eject_cpu_core
 #end2
 
-#livecode :end
+livecode :end
 unity "/fadeout",-8.0
 
 
