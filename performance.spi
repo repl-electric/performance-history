@@ -6,11 +6,11 @@ alive perc: 1
 #slow_init
 #cam :top
 #overclock_on :e4
-create_sea -2
+#create_sea -2
 
 
 #vortex orbit: 100
-vortex throttle: 1.0, y: 10.0, force: 10, radius: 0.001, turb: 1.0
+#vortex throttle: 1.0, y: 10.0, force: 10, radius: 0.001, turb: 1.0
 stop
 star size: 0
 
