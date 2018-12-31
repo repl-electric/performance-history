@@ -9,7 +9,7 @@ alive perc: 1
 
 #vortex orbit: 100
 vortex throttle: 1.0, y: 10.0, force: 100, radius: 20
-
+stop
 star size: 0
 
 create_aura -2
