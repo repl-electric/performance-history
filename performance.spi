@@ -10,7 +10,7 @@ alive perc: 1
 #eject_cpu_core
 
 
-star size: 0
+star size: 1
 
 
 #resonate :a3
