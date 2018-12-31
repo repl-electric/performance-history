@@ -12,7 +12,7 @@ alive perc: 1
 star size: 1.8, life: 0.5
 
 create_aura 2
-aura scale: 4, resnel: 1
+aura scale: 4, resnel: 0
 
 
 #create_sea -2
