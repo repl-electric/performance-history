@@ -1,6 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1
-#init true &&  start_init
+init true &&  start_init
 #flop_on :d2
 #resonate :a3
 #slow_init
@@ -8,7 +8,7 @@ alive perc: 1
 #overclock_on :e4
 
 
-unity "/burst/dark", 1.0
+#unity "/burst/dark", 1.0
 
 stop
 #create_sea -10
