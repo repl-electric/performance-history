@@ -12,7 +12,7 @@ init true &&  start_init
 
 #star size: 5
 
-colorb 0.0
+#colorb 0.0
 
 
 #resonate :a3
