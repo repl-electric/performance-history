@@ -13,7 +13,7 @@ star size: 1.8, life: 0.5
 
 create_aura 2
 aura scale: 3, fresnel: 0.2, distort: 0.8
-
+stop
 
 #create_sea -2
 sea circle: 0.0, sphere: 0.0
