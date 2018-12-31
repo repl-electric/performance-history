@@ -7,6 +7,8 @@ alive perc: 1
 #cam :top
 #overclock_on :e4
 
+
+
 star size: 4, life: 5
 create_sea 0
 
