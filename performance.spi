@@ -7,8 +7,8 @@ alive perc: 1
 
 #world time: 1
 #cam :top
-eject_cpu_core
-
+#eject_cpu_core
+end2
 
 star size: 5
 
