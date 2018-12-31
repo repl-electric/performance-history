@@ -6,7 +6,12 @@ alive perc: 1
 #slow_init
 #cam :top
 #overclock_on :e4
-create_sea -10
+
+
+unity "/darkness", 1
+
+stop
+#create_sea -10
 
 
 #vortex orbit: 100
