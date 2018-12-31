@@ -8,7 +8,7 @@ alive perc: 1
 #overclock_on :e4
 
 
-unity "/darkness", 1
+unity "/darkness/throttle", 1
 
 stop
 #create_sea -10
