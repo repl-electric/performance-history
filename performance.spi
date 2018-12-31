@@ -6,10 +6,7 @@ init true &&  start_init
 #slow_init
 
 #world time: 1
-cam :top
-
-unity "/eyelids",1.0
-
+#cam :top
 
 #eject_cpu_core
 #end2
