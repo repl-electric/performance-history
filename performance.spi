@@ -1,13 +1,13 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1
-#init true &&  start_init
+init true &&  start_init
 #flop_on :d2
 #resonate :a3
 #slow_init
 
 #world time: 1
 #cam :top
-eject_cpu_core
+#eject_cpu_core
 #end2
 
 #star size: 5
