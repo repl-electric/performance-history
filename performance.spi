@@ -10,6 +10,10 @@ alive perc: 1
 
 
 star size: 1.8, life: 0.5
+
+create_aura
+
+
 #create_sea -2
 sea circle: 0.0, sphere: 0.0
 
