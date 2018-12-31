@@ -8,7 +8,7 @@ alive perc: 1
 #world time: 1
 cam :top
 
-unity "/eyelids",0.0
+unity "/eyelids",1.0
 
 
 #eject_cpu_core
