@@ -9,8 +9,8 @@ alive perc: 1
 
 
 
-star size: 4, life: 5
-create_sea -2
+star size: 10, life: 5
+#create_sea -2
 sea circle: 0.0, sphere: 0.0
 
 shard 1.0
