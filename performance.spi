@@ -4,10 +4,10 @@ alive perc: 1
 #flop_on :d2
 #resonate :a3
 #slow_init
-cam :top
+#cam :top
 #overclock_on :e4
 
-
+vortex orbit: 100
 
 star size: 0
 
