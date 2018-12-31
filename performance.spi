@@ -8,7 +8,7 @@ alive perc: 1
 #overclock_on :e4
 
 #vortex orbit: 100
-vortex throttle: 1.0, y: 10.0, force: 100, radius: 10, turb: 10.0
+vortex throttle: 0.1, y: 10.0, force: 100, radius: 10, turb: 10.0,
 stop
 star size: 0
 
