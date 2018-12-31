@@ -4,7 +4,7 @@ alive perc: 1
 #flop_on :d2
 #resonate :a3
 #slow_init
-cam :top
+#cam :top
 #overclock_on :e4
 create_sea -2
 
