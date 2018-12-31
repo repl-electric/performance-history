@@ -9,7 +9,7 @@ alive perc: 1
 
 
 
-star size: 0.2, life: 0.2
+star size: 0.1, life: 0.2
 #create_sea -2
 sea circle: 0.0, sphere: 0.0
 
