@@ -7,7 +7,7 @@ alive perc: 1
 #cam :top
 #overclock_on :e4
 
-star size: 1
+star size: 2
 
 #cam :top
 #overclock_cc motion: 0.27
