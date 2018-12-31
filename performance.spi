@@ -5,7 +5,7 @@ alive perc: 1
 #resonate :a3
 #slow_init
 cam :top
-create_sea -10
+#create_sea -10
 #overclock_on :e4
 
 
