@@ -9,8 +9,11 @@ alive perc: 1
 #cam :top
 
 
+heat :a3
 
-overclock_on :e3
+
+
+#overclock_on :e3
 
 
 
