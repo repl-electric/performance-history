@@ -8,9 +8,11 @@ alive perc: 1
 #world time: 1
 #cam :top
 #eject_cpu_core
-end2
+#end2
 
-star size: 5
+#star size: 5
+
+colorb 0
 
 
 #resonate :a3
