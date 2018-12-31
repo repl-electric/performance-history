@@ -1,10 +1,10 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1
-#init true &&  start_init
+init true &&  start_init
 #flop_on :d2
 #resonate :a3
 #slow_init
-#cam :top
+cam :top
 #overclock_on :e4
 
 
