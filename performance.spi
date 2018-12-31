@@ -1,25 +1,24 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 alive perc: 1
-init true &&  start_init
-stop
+#init true &&  start_init
 #flop_on :d2
 #resonate :a3
 #slow_init
 
 #overclock_on :e4
 
-cam :top
+#cam :top
 #overclock_cc motion: 0.27
 #zoomout
 #recover
 #roots_chase, throttle: 0.9, force: 100, radius: 0.01
 
-star size: 3
-burst 1
-rocks orbit: 1
-#cam :top
-star life: 5, size: 10
-roots swirl: 0.0
+# star size: 3
+# burst 1
+# rocks orbit: 1
+# #cam :top
+# star life: 5, size: 10
+# roots swirl: 0.0
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
