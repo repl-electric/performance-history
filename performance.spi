@@ -10,7 +10,7 @@ alive perc: 1
 
 
 resonate :a3
-flop_x :B4
+flop_on :B4,127
 
 
 
