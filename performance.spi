@@ -10,8 +10,8 @@ alive perc: 1
 #eject_cpu_core
 #end2
 
-#livecode :end
-unity "/fadeout",1.0
+livecode :end
+#unity "/fadeout",1.0
 stop
 
 #star size: 5
