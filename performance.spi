@@ -10,7 +10,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 
 unity "/eyelids",0.0
 unity "/eyelid",0.0
-
+stop
 
 
 live_loop :Attune, sync: :unsyncable do; tick
