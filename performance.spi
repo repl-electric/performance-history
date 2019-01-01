@@ -6,9 +6,9 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 #roots_chase target: :spiral, force: 100
 #recover
 
+fx reverb: 1
 
-
-cam :top
+#cam :top
 #create_sea
 
  # unity "/eyelids",1.0
