@@ -37,7 +37,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     score = (cycle
       [[:A2] 8]
       [[:E2] 8]
-      [[:G2] 4]
+      [[:C2] 4]
       REST4
       )
     chd = score.look[0]
