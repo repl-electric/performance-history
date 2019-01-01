@@ -34,18 +34,23 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
 
+
+
+
+
     sleep 1/2.0
     sleep 1/2.0
 
 
-    flop :c4, 127, sus: 1/4.0
+
 
     sleep 1/2.0
+flop :c4, 127, sus: 1/4.0
     sleep 1/2.0
   end
 end
 
-roots_chase target: :start, force: 100
+#roots_chase target: :start, force: 100
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
