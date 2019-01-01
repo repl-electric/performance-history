@@ -1,145 +1,44 @@
-load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
-
-
-at{
-  # sync :unsyncable
-  # sleep 1/8.0
-  # overclock_on :F3
-#  slow_init
-}
-#overclock_cc attune: 1.00
-#z#oomout
-
-fx reverb: 1.00, tube: 1.00, drive: 1.00
-
-#eject_cpu_core
-
-#recover
-
-#livecode :sleep
-
-#cam :top
-#create_sea 2
+load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0
+init true && start_init
 
 live_loop :Attune, sync: :unsyncable do; tick
-  silence?
   zero_delay [2,5,6].shuffle
-  with_bpm 127*4 do
-    kal :f4
-    flop_cc motion: (flow 0.50, 0.60, 32,).look, drive: 0.81
-    flip_cc motion: 0.53
-    flip :A4,127, sus: (cycle 2, 0.25, 0.5,).look, drive: 1.00 if spread(7,11).look
-    flip :E4,127, sus: (cycle 2, 0.25, 0.5,).look if spread(3,8).look
+  with_bpm 127 do
 
     sleep 1/4.0
     sleep 1/4.0
-
-    if spread(7,11).look
-
-    else
-      flop :a3, 100, sus: 2
-    end
-
-
     sleep 1/4.0
     sleep 1/4.0
 
-    alu (cycle :g3, :a3, :e3,).look, z:1 if spread(7,11).look
-    alu (cycle_rep :g3, 4, :a3, 4, :e3, 4, :g3, 4, :a3, 4, :c4, 4,).look, z:1 if spread(7,11).look
-
     sleep 1/4.0
     sleep 1/4.0
-
-    if spread(7,11).look
-#      flop :g3, 100, sus: 4
-    else
-
-    end
-
-
     sleep 1/4.0
     sleep 1/4.0
-
-
-    if spread(3,8).look
-      flop_cc motion: 0.4
-
-      flop :c4, 100, sus: 2
-    else
-      flop_cc motion: 0.3
-      flop :e3, 60, sus: 2
-    end
 
     sleep 1/2.0
     sleep 1/2.0
-
-
     sleep 1/2.0
-
-    fn = [(method :flip), (method :flop) ].choose
-    fn.( :c4, 127, sus: 1/2.0)
     sleep 1/2.0
   end
 end
-
-roots_chase target: :spiral, force: 80
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
-  sync :MachineInstructions
-  perc=(cycle 1, 1, 1, 1,  1, 1, 1, 1,  1, 1, 1, 1,  1, 1, 1, 1,)
-  with_bpm 127*(cycle 2, 0.5,).look do
-#    perc_machine perc.to_a
+  #sync :MachineInstructions
+  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
+  with_bpm 127*(cycle 1).look do
+    perc_machine perc.to_a
   end
 end
-
 
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:A3, :C5, :E4], 8],
-      [[:F4, :A6, :C5], 8],
-      [[:C3, :E5, :G4], 4],
-      [Zz, 4],
-      [[:A3, :C5, :E4], 8],
-      [[:E4, :G5, :B3], 8],
-      [[:F4, :A6, :C5, :E5], 8],
-      [[:C3, :E5, :G4], 8],
-      [Zz, 8],
-
-      [[:A3, :C5, :E4], 8],
-      [[:F4, :A6, :C5], 8],
-      [[:C3, :E5, :G4], 4],
-      [Zz, 4],
-      [[:A3, :C5, :E4], 4],
-      [[:A3, :C5, :E4], 4],
-      [[:E4, :G5, :B3], 4],
-      [[:E4, :G5, :B3], 4],
-      [[:G4, :B6, :D5, :F4], 8],
-      [[:C4, :E5, :G4], 8],
-      [Zz, 8],
-
+      [[_] 8]
       )
-    tick_reset_all
     chd = score.look[0]
     sleeps = score.look[-1]
-    resonate_on chd,1, sus: sleeps, pads: [0,1,2], sat: 0.60, drive: 0.65
-#    cam :chase
-    control_unit root(chd), 50,sus: sleeps, drive: 1.00, sat: 1.00
-    stop
-    sleep sleeps/2.0
-
-    with_swing sleeps/4.0 {
-      operator chd[-1], 127, sus: 12
-   #   voltage :f4,1, sus: 8
-    }
-    sleep sleeps/2.0
+    sleep sleeps
   end
 end
-
-
-
-#livecode :end
-
-vol 0.0
 
 live_loop(:unsyncable)do;sleep 1.0;end
