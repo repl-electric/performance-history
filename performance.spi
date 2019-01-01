@@ -14,8 +14,8 @@ at{
 
 #livecode :sleep
 
-#cam :top
-create_sea
+cam :top
+create_sea 2
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
