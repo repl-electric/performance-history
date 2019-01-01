@@ -12,6 +12,8 @@ at{
 #overclock_cc motion: 0.27
 #livecode :sleep
 
+cam :top
+
 #recover
 #create_sea
 #roots_chase target: :spiral, force: 110
