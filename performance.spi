@@ -12,7 +12,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     kal :e4
     flop_cc motion: (flow 0.37 0.5 32).look
     flip :c3, 127, sus: (cycle 4 0.5 2).look if spread(7,11).look
-    flip :b3, 127, sus: (cycle 4 0.5 2).rot(1).look if spread(3,8).look
+    flip :g3, 127, sus: (cycle 4 0.5 2).rot(1).look if spread(3,8).look
 
     if spread(7,11).rot(1).look
 
