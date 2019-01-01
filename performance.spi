@@ -66,9 +66,9 @@ live_loop :Attune, sync: :unsyncable do; tick
 end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
-  #sync :MachineInstructions
+  sync :MachineInstructions
   perc=(cycle 1 1 1 1  1 1 1 )
-  with_bpm 127*(cycle 2).look do
+  with_bpm 127*(cycle 2 0.5).look do
     perc_machine perc.to_a
     sea circle: rand
     aura distort: rand*2, scale: rand*0.5
