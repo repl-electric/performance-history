@@ -3,12 +3,14 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0
 #flop_on :d2, 127
 
 at{
-  sync :unsyncable
-  sleep 1/6.0
-  overclock_on :f3
+#  sync :unsyncable
+#  sleep 1/6.0
+#  overclock_on :f3
  # slow_init
 #  livecode :raise
 }
+overclock_cc motion: 0.57
+livecode :sleep
 
 
 
