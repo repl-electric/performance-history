@@ -11,8 +11,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 cam :top
 #create_sea
 
- unity "/eyelids",1.0
- unity "/eyelid",1.0
+ # unity "/eyelids",1.0
+ # unity "/eyelid",1.0
 #stop
 
 
@@ -21,7 +21,7 @@ live_loop :Attune, sync: :unsyncable do; tick
   with_bpm 127*6 do
     kal :f4
 #    flop_cc motion: (flow 0.37 0.5 32).look
-    flip :a4, 127, sus: (cycle 4 0.5 2).look if spread(7,11).look
+    flip :e4, 127, sus: (cycle 4 0.5 2).look if spread(7,11).look
     flip :c4, 127, sus: (cycle 4 0.5 2).rot(1).look, drive: 0.71 if spread(3,8).look
  #   roots_chase freq: rand*2, amp: 0.3
 
