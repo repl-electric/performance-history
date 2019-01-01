@@ -38,7 +38,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
     #create_cube
 
-   if spread(7,11).rot(1).look
+   if spread(7,11).look
 
     else
      flip :g3, 90, sus: 2
