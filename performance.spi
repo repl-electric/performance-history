@@ -26,6 +26,8 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/2.0
     sleep 1/2.0
 
+    flip :c4, 127, sus: (cycle 4 0.5 2).look
+
     sleep 1/2.0
     sleep 1/2.0
   end
