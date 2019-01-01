@@ -6,7 +6,7 @@ alive perc: 1
 #slow_init
 #stop
 #world time: 1
-cam :top
+#cam :top
 #eject_cpu_core
 #end2
 
