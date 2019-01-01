@@ -151,6 +151,6 @@ end
 
 live_loop(:unsyncable)do;sleep 1.0;end
 
-vol 0.0
+
 #livecode :end
-#vol 0.0
+vol 0
