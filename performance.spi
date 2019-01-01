@@ -13,7 +13,7 @@ at{
 #overclock_cc motion: 0.27
 #livecode :sleep
 
-
+cam :top
 #create_sea 2
 #recover
 
