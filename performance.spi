@@ -9,9 +9,9 @@ live_loop :Attune, sync: :unsyncable do; tick
   silence!
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    flop_cc motion: (flow 0.27, 0.5, 32,).look
-    flop :a3, 127, sus: (cycle 4, 0.5, 2,).look
-    flop :e3, 127, sus: (cycle 4, 0.5, 2,).rot(1).look
+    flop_cc motion: (flow 0.27 0.5 32).look
+    flop :a3, 127, sus: (cycle 4 0.5 2).look
+    flop :e3, 127, sus: (cycle 4 0.5 2).rot(1).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -33,8 +33,8 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,)
-  with_bpm 127*(cycle 1,).look do
+  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
+  with_bpm 127*(cycle 1).look do
     perc_machine perc.to_a
   end
 end
@@ -42,27 +42,27 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:A3, :C5, :E4], 8],
-      [[:F4, :A6, :C5], 8],
-      [[:C3, :E5, :G4], 4],
-      [Zz, 4],
-      #, [[:A3, :C5, :E4], 8],
-      #, [[:E4, :G5, :B3], 8],
-      #, [[:F4, :A6, :C5, :E5], 8],
-      #, [[:C3, :E5, :G4], 8],
-      #, [Zz, 8],
+      [[:A3 :C5 :E4] 8]
+      [[:F4 :A6 :C5] 8]
+      [[:C3 :E5 :G4] 4]
+      [Zz 4]
+      # [[:A3 :C5 :E4] 8]
+      # [[:E4 :G5 :B3] 8]
+      # [[:F4 :A6 :C5 :E5] 8]
+      # [[:C3 :E5 :G4] 8]
+      # [Zz 8]
 
-      #, [[:A3, :C5, :E4], 8],
-      #, [[:F4, :A6, :C5], 8],
-      #, [[:C3, :E5, :G4], 4],
-      #, [Zz, 4],
-      #, [[:A3, :C5, :E4], 4],
-      #, [[:A3, :C5, :E4], 4],
-      #, [[:E4, :G5, :B3], 4],
-      #, [[:E4, :G5, :B3], 4],
-      #, [[:G4, :B6, :D5, :F4], 8],
-      #, [[:C4, :E5, :G4], 8],
-      #, [Zz, 8],
+      # [[:A3 :C5 :E4] 8]
+      # [[:F4 :A6 :C5] 8]
+      # [[:C3 :E5 :G4] 4]
+      # [Zz 4]
+      # [[:A3 :C5 :E4] 4]
+      # [[:A3 :C5 :E4] 4]
+      # [[:E4 :G5 :B3] 4]
+      # [[:E4 :G5 :B3] 4]
+      # [[:G4 :B6 :D5 :F4] 8]
+      # [[:C4 :E5 :G4] 8]
+      # [Zz 8]
 
       )
     chd = score.look[0]
@@ -71,7 +71,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
     sleep sleeps/2.0
 
-    voltage :f4, sus: 8
+    voltage :f4,1, sus: 8
 
     operator chd[-2],85, sus: 12
     with_swing 0.25 {
