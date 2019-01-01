@@ -17,13 +17,13 @@ live_loop :Attune, sync: :unsyncable do; tick
 #  silence?
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    flop_cc motion: (flow 0.27 0.5 32).look
-    flip :a3, 127, sus: (cycle 0.25 0.5 1).look if spread(7,11).look
-    flip :e3, 127, sus: (cycle 0.25 0.5 1).rot(-1).look if spread(3,8).look
+    flop_cc motion: (flow 0.27, 0.5, 32,).look
+    flip :a3, 127, sus: (cycle 0.25, 0.5, 1,).look if spread(7,11).look
+    flip :e3, 127, sus: (cycle 0.25, 0.5, 1,).rot(-1).look if spread(3,8).look
 
 
     if spread(7,11).rot(1).look
-      flip :a3, 127
+      flip :a3, 90, sus: 4
     else
 
     end
@@ -34,8 +34,8 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
     #create_cube
-    alu (cycle :g3 :a3 :e3).look, z:1 if spread(7,11).look
-    alu (cycle_rep :g3 4 :a3 4 :e3 4 :g3 4 :a3 4 :c4 4).look, z:1 if spread(3,8).look
+    alu (cycle :g3, :a3, :e3,).look, z:1 if spread(7,11).look
+    alu (cycle_rep :g3, 4, :a3, 4, :e3, 4, :g3, 4, :a3, 4, :c4, 4,).look, z:1 if spread(3,8).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -65,8 +65,8 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1 1 1 1  1 1 1 1  1 1 1 1  1 1 1 0)
-  with_bpm 127*(cycle 1).look do
+  perc=(cycle 1, 1, 1, 1,  1, 1, 1, 1,  1, 1, 1, 1,  1, 1, 1, 0,)
+  with_bpm 127*(cycle 1,).look do
     perc_machine perc.to_a
   end
 end
@@ -77,29 +77,29 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      # [[:A3 :C5 :E4] 8]
-      # [[:E4 :G5 :B3] 8]
-      # [[:F4 :A6 :C5 :E5] 8]
-      # [[:C3 :E5 :G4] 8]
-      # [Zz 8]
+      [[:A3, :C5, :E4], 8],
+      [[:F4, :A6, :C5], 8],
+      [[:C3, :E5, :G4], 4],
+      [Zz, 4],
+      #, [[:A3, :C5, :E4], 8],
+      #, [[:E4, :G5, :B3], 8],
+      #, [[:F4, :A6, :C5, :E5], 8],
+      #, [[:C3, :E5, :G4], 8],
+      #, [Zz, 8],
 
-      # [[:A3 :C5 :E4] 8]
-      # [[:F4 :A6 :C5] 8]
-      # [[:C3 :E5 :G4] 4]
-      # [Zz 4]
-      # [[:A3 :C5 :E4] 4]
-      # [[:A3 :C5 :E4] 4]
-      # [[:E4 :G5 :B3] 4]
-      # [[:E4 :G5 :B3] 4]
-      # [[:G4 :B6 :D5 :F4] 8]
-      # [[:C4 :E5 :G4] 8]
-      # [Zz 8]
+      #, [[:A3, :C5, :E4], 8],
+      #, [[:F4, :A6, :C5], 8],
+      #, [[:C3, :E5, :G4], 4],
+      #, [Zz, 4],
+      #, [[:A3, :C5, :E4], 4],
+      #, [[:A3, :C5, :E4], 4],
+      #, [[:E4, :G5, :B3], 4],
+      #, [[:E4, :G5, :B3], 4],
+      #, [[:G4, :B6, :D5, :F4], 8],
+      #, [[:C4, :E5, :G4], 8],
+      #, [Zz, 8],
 
-      REST4
+      REST4,
       )
     chd = score.look[0]
     sleeps = score.look[-1]
