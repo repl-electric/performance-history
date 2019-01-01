@@ -2,7 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 
 #flop_on :d2, 127
 
-fx reverb: 0.5, drive: 0.60
+fx reverb: 0.60, drive: 0.60
 at{
 #  sync :unsyncable
 #  sleep 1/6.0
