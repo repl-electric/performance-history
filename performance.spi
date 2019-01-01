@@ -10,7 +10,7 @@ recover
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
-  with_bpm 127 do
+  with_bpm 127*2 do
     kal :e4
     flop_cc motion: (flow 0.37 0.5 32).look
     flip :a3, 127, sus: (cycle 4 0.5 2).look if spread(7,11).look
