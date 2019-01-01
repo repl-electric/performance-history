@@ -9,10 +9,8 @@ at{
  # slow_init
 #  livecode :raise
 }
-overclock_cc motion: 0.40
-livecode :sleep
-
-
+overclock_cc motion: 0.27
+#livecode :sleep
 
 
 live_loop :Attune, sync: :unsyncable do; tick
@@ -54,6 +52,8 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
       [[:a2] 8]
+      [[:e2] 8]
+      [[:c2] 8]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
