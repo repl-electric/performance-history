@@ -1,89 +1,10 @@
 load_support('piezoelectric_resonator'); use_bpm 127
-alive perc: 1
-#init true &&  start_init
-#create_sea
-#flop_on :d2
-#resonate :a3
-#slow_init
-#stop
-#world time: 1
-cam :top
-#eject_cpu_core
-#end2
-
-
-
-
-#unity "/fadeout",-5.0
-livecode :end
-#stop
-
-#star size: 5
-
-#colorb 0.0
-
-
-#resonate :a3
-#flop_on :g4,127
-#flip_on :a4, 127
-#flop_cc motion: 0.58
-
-
-
-
-#overclock_on :e3
-
-
-
-#create_sea -10
-#overclock_on :e4
-
-
-#unity "/burst/dark", 1.0
-
-stop
-#create_sea -10
-
-
-#vortex orbit: 100
-#vortex throttle: 1.0, y: 10.0, force: 10, radius: 0.001, turb: 1.0
-stop
-star size: 0
-
-create_aura -2
-#aura scale: 3, fresnel: 0.2, distort: 0.12, ripple: 9
-stop
-
-#create_sea -2
-sea circle: 0.0, sphere: 0.0
-
-shard 1.0
-burst 1
-
-#cam :top
-#overclock_cc motion: 0.27
-#zoomout
-#recover
-#roots_chase, throttle: 0.9, force: 100, radius: 0.01
-
-# star size: 3
-# burst 1
-# rocks orbit: 1
-# #cam :top
-# star life: 5, size: 10
-# roots swirl: 0.0
+alive perc: 0
+init true && start_init
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    flop_cc motion: (flow 0.27 0.5 32).look
-
-    kal :f3
-    flip :a3, 60, sus: 1 if spread(1,1).look
-    flop :e3, 60, sus: 1 if spread(1,1).look
-
-    roots_chase freq: rand*2, amp: 0.2
-
 
     sleep 1/4.0
     sleep 1/4.0
@@ -99,53 +20,26 @@ live_loop :Attune, sync: :unsyncable do; tick
 
     sleep 1/2.0
     sleep 1/2.0
-#    flop :c4, 127, sus: 1/2.0 if spread(1,1).look
-
   end
 end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1)
+  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
   with_bpm 127*(cycle 1).look do
-#    perc_machine perc.to_a
-#    sea circle: rand
- #   aura distort: rand*1.5, scale: 1/2.0
+    perc_machine perc.to_a
   end
 end
 
 #roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
 live_loop :MachineInstructions, sync: :unsyncable do; tick
-
   with_bpm 127*1 do
     score = (cycle
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      [[:A3 :C5 :E4] 8]
-      [[:E4 :G5 :B3] 8]
-      [[:F4 :A6 :C5 :E5] 8]
-      [[:C3 :E5 :G4] 8]
-      [Zz 8]
-
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      [[:A3 :C5 :E4] 4]
-      [[:A3 :C5 :E4] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:G4 :B6 :D5 :F4] 8]
-      [[:C4 :E5 :G4] 8]
-      [Zz 8]
+      [[_] 8]
 
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
-    control_unit root(chd), 10,sus: sleeps, drive: 0.0, sat: 0.0
 
     sleep sleeps
   end
