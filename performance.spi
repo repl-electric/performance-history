@@ -2,7 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 #init
 #overclock_cc motion: 0.27
 #livecode :sleep
-vortex throttle: 0
+#vortex throttle: 0
 #roots_chase target: :spiral, force: 100
 #recover
 
