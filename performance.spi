@@ -47,9 +47,10 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
     perc_machine perc.to_a
   end
 end
-create_sea
+#create_sea
 #cam :chase
 #zoomout
+roots_chase target: :slow
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
