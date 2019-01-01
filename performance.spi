@@ -32,7 +32,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
 
     if spread(3,8).look
-      roots_chase target: :start, force: 50
+      roots_chase target: :start, force: 100
       flop_cc motion: 0.5
       flop :c3,120, sus: 2
     else
