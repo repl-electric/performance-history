@@ -47,6 +47,9 @@ live_loop :Attune, sync: :unsyncable do; tick
     end
 
 
+    roots_chase freq: rand*2, amp: 0.1
+
+
     alu (cycle :g3 :a3 :e3).look, z:1 if spread(7,11).look
     alu (cycle_rep :g3 4 :a3 4 :e3 4 :g3 4 :a3 4 :c4 4).look, z:1 if spread(3,8).look
 
