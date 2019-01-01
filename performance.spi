@@ -24,7 +24,6 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
 
-
     if spread(7,11).look
 
     else
@@ -42,7 +41,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
 
     if spread(7,11).look
-      flop :g3, 100, sus: 2
+      flop :g3, 100, sus: 4
     else
 
     end
