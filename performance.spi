@@ -8,7 +8,8 @@ at{
 }
 
 
-flop_cc motion: 0.58
+overclock_cc motion: 0.57
+
 livecode :sleep
 
 
