@@ -48,7 +48,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
     operator chd[-2],80, sus: 12
     with_swing 0.25 {
-      operator chd[-1],85, sus: 12
+      operator chd[-1],90, sus: 12
     }
 
     sleep sleeps/2.0
