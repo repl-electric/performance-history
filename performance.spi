@@ -121,7 +121,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
     control_unit root(chd), 10,sus: sleeps, drive: 0.0, sat: 0.0
 
-    voltage :f4,127, sus: sleeps*2
+    voltage :f4,127,sus: sleeps*2
 
     sleep sleeps/2.0
  #   operator chd[-2], 90, sus: 12
