@@ -10,7 +10,9 @@ at{
 #overclock_cc attune: 1.00
 #z#oomout
 
-fx reverb: 1, tube: 1, drive: 1
+fx reverb: 1.00, tube: 1.00, drive: 1.00
+
+eject_cpu_core
 
 #recover
 
