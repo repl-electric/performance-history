@@ -8,8 +8,8 @@ at{
 }
 
 
-#flop_cc motion: 0.0
-#livecode :sleep
+flop_cc motion: 0.58
+livecode :sleep
 
 
 
