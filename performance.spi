@@ -19,10 +19,10 @@ cam :top
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127*6 do
-    kal (cycle :f4 :f4 :c4 :c4).look,100, sus: 1
-#    flop_cc motion: (flow 0.37 0.5 32).look
-    flip :e4, 127, sus: (cycle 4 0.5 2).look if spread(7,11).look
-    flip :a3, 127, sus: (cycle 4 0.5 2).rot(1).look, drive: 0.71 if spread(3,8).look
+    kal (cycle :f4, :f4, :c4, :c4,).look,20, sus: 1
+#    flop_cc motion: (flow 0.37, 0.5, 32,).look
+    flip :e4, 127, sus: (cycle 4, 0.5, 2,).look if spread(7,11).look
+    flip :a3, 127, sus: (cycle 4, 0.5, 2,).rot(1).look, drive: 0.71 if spread(3,8).look
  #   roots_chase freq: rand*2, amp: 0.3
 
     if spread(7,11).rot(1).look
@@ -77,8 +77,8 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1 1 1 1  1 1 1 )
-  with_bpm 127*(cycle 2 2 2).look do
+  perc=(cycle 1, 1, 1, 1,  1, 1, 1, )
+  with_bpm 127*(cycle 2, 2, 2,).look do
    # perc_machine perc.to_a
    # sea circle: 0
 #    aura distort: rand*2, scale: rand*0.5
@@ -88,27 +88,27 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      [[:A3 :C5 :E4] 8]
-      [[:E4 :G5 :B3] 8]
-      [[:F4 :A6 :C5 :E5] 8]
-      [[:C3 :E5 :G4] 8]
-      [Zz 8]
+      [[:A3, :C5, :E4], 8],
+      [[:F4, :A6, :C5], 8],
+      [[:C3, :E5, :G4], 4],
+      [Zz, 4],
+      [[:A3, :C5, :E4], 8],
+      [[:E4, :G5, :B3], 8],
+      [[:F4, :A6, :C5, :E5], 8],
+      [[:C3, :E5, :G4], 8],
+      [Zz, 8],
 
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      [[:A3 :C5 :E4] 4]
-      [[:A3 :C5 :E4] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:G4 :B6 :D5 :F4] 8]
-      [[:C4 :E5 :G4] 8]
-      [Zz 8]
+      [[:A3, :C5, :E4], 8],
+      [[:F4, :A6, :C5], 8],
+      [[:C3, :E5, :G4], 4],
+      [Zz, 4],
+      [[:A3, :C5, :E4], 4],
+      [[:A3, :C5, :E4], 4],
+      [[:E4, :G5, :B3], 4],
+      [[:E4, :G5, :B3], 4],
+      [[:G4, :B6, :D5, :F4], 8],
+      [[:C4, :E5, :G4], 8],
+      [Zz, 8],
 
       )
     chd = score.look[0]
@@ -125,7 +125,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 #    voltage :e4,100, sus: 8
 
     operator chd[-2],100, sus: 12
-    with_swing ((flow 0.25 2.0 32).look) {
+    with_swing ((flow 0.25, 2.0, 32,).look) {
       operator chd[-1],98, sus: 12
     }
 
