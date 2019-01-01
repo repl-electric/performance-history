@@ -46,7 +46,7 @@ live_loop :Attune, sync: :unsyncable do; tick
 
     sleep 1/4.0
     sleep 1/4.0
-    flip :a4, 127, sus: 1, drive: 0.5
+  #  flip :a4, 127, sus: 1, drive: 0.5
 
     sleep 1/4.0
     sleep 1/4.0
