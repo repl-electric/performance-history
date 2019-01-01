@@ -16,8 +16,7 @@ at{
 
 #fx reverb: 1.0, drive: 1.00
 
-
-
+eject_cpu_core
 
 #cam :top
 #create_sea 2
