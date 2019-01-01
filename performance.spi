@@ -23,7 +23,7 @@ live_loop :Attune, sync: :unsyncable do; tick
   with_bpm 127*3 do
     kal :f4
     flop_cc motion: (flow 0.50 0.60 32).look
-    flip_cc motion: 0.52
+    flip_cc motion: 0.52,  drive: 0.50
     flip :A4,127, sus: (cycle 2 0.25 0.5).look, drive: 0.50 if spread(7,11).look
     flip :E4,127, sus: (cycle 2 0.25 0.5).look if spread(3,8).look
 
