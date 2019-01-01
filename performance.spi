@@ -11,7 +11,7 @@ cam :top
 #end2
 
 #livecode :end
-unity "/fadeout",0.0
+unity "/fadeout",1.0
 stop
 
 #star size: 5
