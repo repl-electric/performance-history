@@ -85,7 +85,8 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
   perc=(cycle 1 1 1 1  1 1 1 1  1 1 1 1  1 1 1 0)
   with_bpm 127*(cycle 0.5 0.25 1).look do
-#    perc_machine perc.to_a
+    #    perc_machine perc.to_a
+    sleep 1
   end
 end
 #create_sea
