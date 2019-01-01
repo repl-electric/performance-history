@@ -3,7 +3,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 #overclock_cc motion: 0.27
 #livecode :sleep
 
-roots_chase :slow
+roots_chase target: :slow
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence!
