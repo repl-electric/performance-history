@@ -155,6 +155,6 @@ live_loop(:unsyncable)do;sleep 1.0;end
 #livecode :end
 
 32.times{|n|
-  vol n/32.0
+  vol (32/n)*n
   sleep 0.5
 }
