@@ -1,7 +1,7 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 #init true
 
-zommout
+zoomout
 at{
   sync :unsyncable
 #  overclock_on :e3,127
