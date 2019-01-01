@@ -11,7 +11,7 @@ alive perc: 1
 #end2
 
 
-unity "/fadeout",1.0
+unity "/fadeout",2.0
 #livecode :end
 #stop
 
