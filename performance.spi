@@ -17,7 +17,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     if spread(7,11).rot(1).look
 
     else
-      flop :a4, 60, sus: 2
+      flop :a4, 60, sus: 4
     end
 
 
