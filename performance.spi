@@ -9,8 +9,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 cam :top
 #create_sea
 
-unity "/eyelids",1.0
-unity "/eyelid",1.0
+unity "/eyelids",0.0
+unity "/eyelid",0.0
 stop
 
 
