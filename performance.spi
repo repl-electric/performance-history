@@ -54,6 +54,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
       [[:a2] 8]
       [[:e2] 8]
       [[:c2] 4]
+      REST4
       )
     chd = score.look[0]
     sleeps = score.look[-1]
