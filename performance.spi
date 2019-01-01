@@ -10,6 +10,9 @@ at{
 #overclock_cc motion: 1.00
 #z#oomout
 
+
+
+
 #recover
 
 #livecode :sleep
@@ -22,7 +25,7 @@ live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127*3 do
     kal :f4
-    flop_cc motion: (flow 0.50 0.60 32).look,  drive: 0.50
+    flop_cc motion: (flow 0.50 0.60 32).look, drive: 0.50
     flip_cc motion: 0.52
     flip :A4,127, sus: (cycle 2 0.25 0.5).look, drive: 0.50 if spread(7,11).look
     flip :E4,127, sus: (cycle 2 0.25 0.5).look if spread(3,8).look
@@ -119,7 +122,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     sleeps = score.look[-1]
     resonate chd,1, sus: sleeps, pads: [0,1,2], sat: 0, drive: 0
 #    cam :chase
-    control_unit root(chd), 50,sus: sleeps, drive: 0.30, sat: 0.40
+    control_unit root(chd), 50,sus: sleeps, drive: 0.30, sat: 0.60
 
     sleep sleeps/2.0
 
