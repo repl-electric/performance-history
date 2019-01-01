@@ -13,6 +13,14 @@ live_loop :Attune, sync: :unsyncable do; tick
     flop :a3, 127, sus: (cycle 4 0.5 2).look
     flop :e3, 127, sus: (cycle 4 0.5 2).rot(1).look
 
+
+    if spread(7,11).rot(1).look
+
+    else
+      flop :a4, 60, sus: 2
+    end
+
+
     sleep 1/4.0
     sleep 1/4.0
 
