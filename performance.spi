@@ -2,7 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 
 #flop_on :d2, 127
 
-fx reverb: 0.80, drive: 0.83
+fx reverb: 0.80, drive: 0.93
 at{
 #  sync :unsyncable
 #  sleep 1/6.0
@@ -12,6 +12,9 @@ at{
 }
 #overclock_cc attune: 0.50
 #livecode :sleep
+
+
+
 
 #cam :top
 
