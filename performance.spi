@@ -152,4 +152,9 @@ end
 live_loop(:unsyncable)do;sleep 1.0;end
 
 
-livecode :end
+#livecode :end
+
+32.times{|n|
+
+  vol n/32.0
+}
