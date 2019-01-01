@@ -12,7 +12,10 @@ at{
 
 #overclock_cc motion: 0.27
 #livecode :sleep
-cam :chase
+
+
+recover
+
 roots_chase target: :spiral, force: 100
 
 live_loop :Attune, sync: :unsyncable do; tick
