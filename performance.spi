@@ -153,10 +153,10 @@ live_loop(:unsyncable)do;sleep 1.0;end
 
 
 #livecode :end
-vol 1
-stop
-32.times{|n|
-  vol (flow 1.0 0.0 32).look
+#vol 1
+#stop
+128.times{|n|
+  vol (flow 1.0 0.0 128).look
   tick
-  sleep 0.25
+  sleep 0.125
 }
