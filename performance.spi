@@ -73,7 +73,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
     voltage :f4,10, sus: 8
 
-    operator chd[-2],95, sus: 12
+    operator chd[-2],100, sus: 12
     with_swing ((flow 0.25 2.0 32).look) {
       operator chd[-1],94, sus: 12
     }
