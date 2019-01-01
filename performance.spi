@@ -19,17 +19,17 @@ live_loop :Attune, sync: :unsyncable do; tick
  #   flip :a3, 127, sus: (cycle 1 0.5 2).look  if spread(3,8).look
 #    flip :e3, 127, sus: (cycle 1 0.5 2).look if spread(7,11).look
 
+    sleep 1/4.0
+    sleep 1/4.0
+    sleep 1/4.0
+    sleep 1/4.0
+
     if spread(7,11).look
 
     else
       flip :g3,50, sus: 4
     end
 
-
-    sleep 1/4.0
-    sleep 1/4.0
-    sleep 1/4.0
-    sleep 1/4.0
 
     alu (cycle :g3).look, z: 1 if spread(7,11).look
     alu (cycle_rep :g3 4 :e3 4 :a3 4).look, z: (cycle 1 127).look, sus: (cycle 1 2).look if spread(7,11).look
