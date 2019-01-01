@@ -20,9 +20,9 @@ live_loop :Attune, sync: :unsyncable do; tick
 #    flip :e3, 127, sus: (cycle 1 0.5 2).look if spread(7,11).look
 
    if spread(7,11).look
+     flip :f3,80, sus: 1
+   else
 
-    else
-      flip :f3,80, sus: 1
     end
 
 
