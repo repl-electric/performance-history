@@ -1,8 +1,6 @@
-load_support('piezoelectric_resonator'); use_bpm 127
-alive perc: 0
-init true && start_init
+load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0
 
-
+flop_on :d2
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
@@ -19,7 +17,6 @@ live_loop :Attune, sync: :unsyncable do; tick
 
     sleep 1/2.0
     sleep 1/2.0
-
     sleep 1/2.0
     sleep 1/2.0
   end
@@ -33,16 +30,13 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
   end
 end
 
-#roots_chase force: 20, freq: 0.2, thick: 0.2, noise: 1,amp: 0.3, drag: 2
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
       [[_] 8]
-
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-
     sleep sleeps
   end
 end
