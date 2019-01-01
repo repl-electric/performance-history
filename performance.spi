@@ -45,7 +45,7 @@ live_loop :Attune, sync: :unsyncable do; tick
   end
 end
 
-roots_chase target: :slow, force: 80
+roots_chase target: :start, force: 80
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
