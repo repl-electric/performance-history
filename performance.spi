@@ -2,7 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 #init true
 
 #zoomout
-create_sea
+#create_sea
 at{
   sync :unsyncable
 #  overclock_on :e3,127
@@ -124,7 +124,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
     control_unit root(chd), 10,sus: sleeps, drive: 0.0, sat: 0.0
 
-    voltage :f4,127,sus: sleeps*2
+
 
     sleep sleeps/2.0
  #   operator chd[-2], 90, sus: 12
@@ -132,7 +132,14 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 #      operator chd[-1], 90, sus: 12
     }
 
+    with_swing sleeps/4.0 {
+    voltage :f4,127,sus: sleeps*2
+    }
+
+
     sleep sleeps/2.0
+
+
   end
 end
 
