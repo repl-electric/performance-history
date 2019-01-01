@@ -1,8 +1,8 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0
 
 
-overclock_on :e3
-
+#overclock_on :e3
+slow_init
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence!
