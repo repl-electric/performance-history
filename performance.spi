@@ -12,7 +12,7 @@ alive perc: 1
 
 
 ##unity "/fadeout",1.0
-livecode :end
+livecode :none
 #stop
 
 #star size: 5
