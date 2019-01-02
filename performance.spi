@@ -10,7 +10,7 @@ fx tube: 1.00
 world time: 1.0
 
 #unity "/camtop/jitter",0.04
-unity "/camtop/phase",1.00
+unity "/camtop/phase",0.10
 
 #fx reverb: 1.00, drive: 1.00
 #unity "/rockvortex", 1.0
