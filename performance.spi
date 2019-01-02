@@ -5,6 +5,8 @@ init true
 
 fx reverb: 1.00, drive: 1.00
 
+cam :top
+
 #.... nearly...
 #eject_cpu_core
 
