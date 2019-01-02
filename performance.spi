@@ -5,11 +5,11 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 #flop_on :d2, 127
 
 
-#fx tube: 1.00
+fx tube: 0.41
 
 #world time: 1.0
 
-unity "/camtop/jitter",0.05
+unity "/camtop/jitter",0.13
 unity "/camtop/phase",0.03
 
 #fx reverb: 1.00, drive: 1.00
