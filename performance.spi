@@ -4,7 +4,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 #flop_on :d2, 127
 
 #fx reverb: 1.00, drive: 1.00
-unity "/rockvortex/throttle", 0.0
+unity "/rockvortex/throttle", 1.0
 unity "/eyelids",0
 #cam :top
 
