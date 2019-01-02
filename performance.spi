@@ -6,7 +6,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 
 
 unity "/camtop/jitter",0.08
-unity "/camtop/phase",0.2
+unity "/camtop/phase",0.1
 
 #fx reverb: 1.00, drive: 1.00
 #unity "/rockvortex", 1.0
