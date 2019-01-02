@@ -11,6 +11,8 @@ unity "/eyelids",0
 #star life: 1.0
 #cam :top
 
+create_cube -2
+
 #vortex
 stop
 #.... nearly...
