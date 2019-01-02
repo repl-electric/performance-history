@@ -6,7 +6,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 #fx reverb: 1.00, drive: 1.00
 unity "/vortex", 0.0
 #cam :top
-#unity "/eyelids",0
+unity "/eyelids",0
 #vortex
 stop
 #.... nearly...
