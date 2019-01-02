@@ -8,7 +8,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 #unity "/rockvortex", 1.0
 #unity "/eyelids",0
 #vortex throttle: 0.0
-star life: 4.0
+star life: 3.0
 #cam :top
 
 #vortex
