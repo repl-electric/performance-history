@@ -5,7 +5,7 @@ init true
 
 #fx reverb: 1.00, drive: 1.00
 
-#cam :top
+cam :top
 unity "/eyelids",0
 stop
 #.... nearly...
