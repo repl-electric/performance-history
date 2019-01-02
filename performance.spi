@@ -10,7 +10,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 #vortex throttle: 0.0
 #star life: 1.0
 unity "/cube",0.0
-cam :top
+#cam :top
 
 #create_cube -2
 
