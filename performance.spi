@@ -1,6 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 
-init true
+#init true
 #stop
 #flop_on :d2, 127
 
@@ -9,7 +9,7 @@ init true
 #unity "/eyelids",0
 #vortex throttle: 0.0
 #star life: 0.2, size: 10.5
-#cam :top
+cam :top
 
 #vortex
 stop
