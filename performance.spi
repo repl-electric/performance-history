@@ -27,10 +27,10 @@ create_sea
 #unity "/camtop/jitter",0.2
 #unity "/camtop/phase",0.9
 
-unity "/lights/end",11.0
+##unity "/lights/end",11.0
 
 #livecode :end
-fadeout 0
+#fadeout 0
 #eject_cpu_core
 #stop
 
