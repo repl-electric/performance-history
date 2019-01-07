@@ -30,7 +30,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 
 
 
-#init true
+init true
 #stop
 #flop_on :d2, 127
 
@@ -38,7 +38,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 # fx tube: 1.00, reverb: 1.00
 
 #eject_cpu_core
-stop
+#stop
 #unity "/camtop/jitter",0.2
 #unity "/camtop/phase",0.9
 
