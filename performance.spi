@@ -19,6 +19,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 
 unity "/lights/end",11.0
 
+livecode :end
+
 #eject_cpu_core
 #stop
 
