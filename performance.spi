@@ -27,7 +27,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 
 
 
-unity "/dark/throttle", 1.0
+#unity "/dark/throttle", 1.0
 
 
 #init true
@@ -36,8 +36,8 @@ unity "/dark/throttle", 1.0
 
 #
 # fx tube: 1.00, reverb: 1.00
-
-eject_cpu_core
+unity "/world/time", 0.4
+#eject_cpu_core
 stop
 #unity "/camtop/jitter",0.2
 #unity "/camtop/phase",0.9
