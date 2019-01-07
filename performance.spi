@@ -12,7 +12,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 
 
 roots_chase  throttle: 0
-vortex throttle: 0
+
+create_sea
 
 #recover
 #cam :top
