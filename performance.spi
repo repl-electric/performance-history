@@ -1,4 +1,34 @@
+#
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #init true
 #stop
