@@ -1,11 +1,11 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 
-init true
+#init true
 #stop
 #flop_on :d2, 127
 
 #
-## fx tube: 1.00, reverb: 1.00
+ fx tube: 1.00, reverb: 1.00
 
 
 
@@ -29,7 +29,7 @@ init true
  vortex throttle: 0.0
  #star life: 1.0
  unity "/cube",0.0
- cam :top
+# cam :top
 
 
 
