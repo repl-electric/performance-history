@@ -9,7 +9,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 init true
 #stop
 #flop_on :d2, 127
-
+stop
 
 roots_chase  throttle: 0
 
