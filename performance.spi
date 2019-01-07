@@ -12,7 +12,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 
 eject_cpu_core
 unity "/camtop/jitter",0.5
-unity "/camtop/phase",0.8
+unity "/camtop/phase",0.9
 
 
 
