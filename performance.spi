@@ -8,7 +8,11 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 ## fx tube: 1.00, reverb: 1.00
 
 
+
+
 eject_cpu_core
+unity "/camtop/jitter"1
+
 
 
 # #world time: 1.0
