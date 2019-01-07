@@ -6,7 +6,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 #ive
 #unity "/dark/throttle", 1.0
 
-#init true
+init true
 #stop
 #flop_on :d2, 127
 
