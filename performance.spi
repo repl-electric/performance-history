@@ -56,7 +56,7 @@ init true
  vortex throttle: 0.0
  #star life: 1.0
  unity "/cube",0.0
-# cam :top
+ cam :top
 
 
 
