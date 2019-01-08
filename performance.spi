@@ -44,6 +44,10 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
 
     operator score[-1], sus: 12
+    with_swing (flow 0.0 sleeps/2.0 32).look
+     {
+      operator score[-2],90, sus: 12
+    }
 
 
     sleep sleeps/2.0
