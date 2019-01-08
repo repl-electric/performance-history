@@ -4,7 +4,7 @@ init true && start_init
 at{
   sync :Attune
   sleep 3
-  flop_x :c3,127
+  flop_on :c3,127
 }
 
 
