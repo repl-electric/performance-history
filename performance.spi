@@ -4,9 +4,8 @@ init true && start_init
 at{
   sync :Attune
   sleep 1.5
-  flop_on :e3,127
+  flop_x :e3,127
 }
-
 
 
 live_loop :Attune, sync: :unsyncable do; tick
