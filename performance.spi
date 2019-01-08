@@ -9,8 +9,9 @@ init true && start_init
 
 at{
   sync :Attune
-  flop_on :d2
   sleep 1.5
+  flop_on :b3
+
 }
 
 
