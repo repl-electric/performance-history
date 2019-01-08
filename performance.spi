@@ -53,7 +53,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
     sleep sleeps/2.0
     with_swing (sleeps/2.0/[4.0,2.0].choose) {
-      voltage [:f4, :e4].choose,100, sus: (cycle 1 6).look
+      voltage [:f4, :e4].choose,120, sus: (cycle 1 6).look
     }
 
     sleep sleeps/2.0
