@@ -6,7 +6,12 @@ solo :cpu
 #stop
 #alive pitch: 1
 
-flop_on :g3
+at{
+  sync :Attune
+  sleep 1.5
+}
+
+flop_x :g3
 
 stop
 
