@@ -3,8 +3,8 @@ init true && start_init
 # C D E F G A B
 at{
   sync :Attune
-  sleep 3
-  flop_on :c3,127
+  sleep 1.5
+  flop_on :b3,127
 }
 
 
