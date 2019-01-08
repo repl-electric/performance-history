@@ -6,7 +6,7 @@ solo :cpu
 #stop
 #alive pitch: 1
 
-#flop_on :b3
+flop_on :g3
 
 stop
 
