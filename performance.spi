@@ -2,9 +2,9 @@ load_support('piezoelectric_resonator')#; use_bpm 127; alive perc: 0
 init true && start_init
 
 #flop_cc on: 127
-#solo :cpu
+solo :cpu
 #stop
-alive pitch: 1
+#alive pitch: 1
 
 #flop_on :b3
 
