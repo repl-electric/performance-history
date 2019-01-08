@@ -5,7 +5,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
   sync :Attune
   sleep 3
   #flop_x :g3,127
-  flop_on :e3,127, to: :g3, to: :e3, to: :d3
+  flop_x :e3,127, to: :g3, to: :e3, to: :d3
   }
 #D3  G3  B3
 
