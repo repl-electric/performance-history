@@ -49,11 +49,8 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     }
 
     sleep sleeps/2.0
-    with_swing sleeps/2.0/4.0 {
+    with_swing (sleeps/2.0/4.0) {
       voltage [:f4, :e4].choose,10, sus: (cycle 1 6).look
-
-
-
     }
 
     sleep sleeps/2.0
