@@ -45,7 +45,11 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
 
     sleep sleeps/2.0
+    with_swing sleeps/2.0/4.0 {
     voltage :f4
+    }
+
+
     sleep sleeps/2.0
   end
 end
