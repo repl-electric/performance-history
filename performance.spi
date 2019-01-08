@@ -11,7 +11,7 @@ init true && start_init
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    flop_cc motion: (flow 0.27 0.5 32).look
+    flop_cc motion: (flow 0.0 0.5 32).look
     flop :a3,127, sus: (cycle 0.25 0.5 4).look #if spread(7,11).look
     flop :e3,127, sus: (cycle 0.25 0.5 4).rot(-1).look #if spread(7,11).look
 
