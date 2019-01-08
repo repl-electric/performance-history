@@ -42,7 +42,7 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1 1 1 1  0 0 0 0  0 0 0 0  0 0 0 0)
+  perc=(cycle 1 1 1 1  1 0 0 0  0 0 0 0  0 0 0 0)
   with_bpm 127*(cycle 1).look do
     operator :A2,85, sus: 1
     volatage :gs4,127, sus: 1/4.0
