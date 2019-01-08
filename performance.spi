@@ -8,10 +8,10 @@ solo :cpu
 
 at{
   sync :Attune
+  flop_on :d2
   sleep 1.5
 }
 
-flop_x :g3
 
 stop
 
