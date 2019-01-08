@@ -38,8 +38,8 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
       [[:a2] 8]
-      [[:f2] 4]
-      [[:e2] 4]
+      [[:f3] 4]
+      [[:e3] 4]
       REST4
       )
     chd = score.look[0]
