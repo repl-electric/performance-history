@@ -5,7 +5,7 @@ init true && start_init
 #solo :cpu
 #stop
 #alive pitch: 1
-flop_on :d3
+flop_x :d3
 #stop
 #}
 # at{
