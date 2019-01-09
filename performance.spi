@@ -4,7 +4,7 @@ init true && start_init
 #flop_cc on: 127
 #solo :cpu
 #stop
-alive pitch: 0
+#alive pitch: 0
 
 # at{
 #   sync :Attune
@@ -56,7 +56,7 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
+  perc=(cycle 1 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
   with_bpm 127*(cycle 1).look do
     perc_machine perc.to_a
   end
