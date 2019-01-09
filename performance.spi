@@ -72,7 +72,7 @@ live_loop :Attune, sync: :unsyncable do; tick
       flop :e3, 60, sus: 1
     end
 
-    glitch_cc mode: (cycle 0 1 0 3 3).look, corode: (flow 0.0 1.0 32).look, tubes: 0.20
+    glitch_cc mode: (cycle 0 1 0 3 3).look, corode: (flow 0.0 1.0 32).look, tubes: 0.30
 
     sleep 1/2.0
     sleep 1/2.0
