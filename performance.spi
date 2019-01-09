@@ -14,12 +14,13 @@ alive pitch: 1
 #   flop_on :g3
 # }
 
-at{
-  sync :Attune
-  sleep 6
-  flop_on :d3
-}
+# at{
+#   sync :Attune
+#   sleep 6
+   flop_x :d3
+# }
 
+fx reverb: 1.00, tube: 0.48
 
 #stop
 
