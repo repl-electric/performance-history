@@ -5,7 +5,7 @@ init true && start_init
 #solo :cpu
 #stop
 alive pitch: 1
-#flop_on :d2
+flop_on :d2
 #stop
 #}
 # at{
@@ -17,7 +17,7 @@ alive pitch: 1
 # at{
 #   sync :Attune
 #   sleep 6
-   flop_x :d3
+#   flop_x :d3
 # }
 
 fx reverb: 1.00, tube: 0.48
