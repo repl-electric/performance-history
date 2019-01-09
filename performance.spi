@@ -4,8 +4,8 @@ init true && start_init
 #flop_cc on: 127
 #solo :cpu
 #stop
-#alive pitch: 1
-flop_on :d2
+alive pitch: 1
+#flop_on :d2
 #stop
 #}
 # at{
@@ -15,6 +15,10 @@ flop_on :d2
 # }
 
 #stop
+
+
+
+
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
