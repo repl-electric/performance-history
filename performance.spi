@@ -6,11 +6,11 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 #stop
 #alive pitch: 1
 
-at{
-  sync :Attune
-  sleep 1.5
-  flop_on :a3
-}
+# at{
+#   sync :Attune
+#   sleep 1.5
+#   flop_on :a3
+# }
 #stop
 #}
 # at{
@@ -94,7 +94,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:C3] 8]
+      [[:D3] 8]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
