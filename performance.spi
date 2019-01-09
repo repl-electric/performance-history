@@ -16,8 +16,8 @@ alive pitch: 1
 
 at{
   sync :Attune
-  sleep 3
-  flop_off :d3
+  sleep 6
+  flop_on :d3
 }
 
 
