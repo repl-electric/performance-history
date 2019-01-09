@@ -54,11 +54,10 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
 
-    flip :f4
+    flip :g4
 
     sleep 1/4.0
     sleep 1/4.0
-
 
     if spread(3,8).look
       flop :c4, 60, sus: 2
