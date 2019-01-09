@@ -5,7 +5,10 @@ init true && start_init
 #solo :cpu
 #stop
 alive pitch: 1
-flop_on :d2
+at{
+  sync :Attune
+  flop_x :d2
+}
 #stop
 #}
 # at{
