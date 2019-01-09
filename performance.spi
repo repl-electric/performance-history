@@ -67,10 +67,10 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
 
     if spread(3,8).look
-      flop_cc motion: 0.3
+      #flop_cc motion: 0.3
       flop :c4, 100, sus: 2
     else
-      flop_cc motion: 0.4
+      #flop_cc motion: 0.4
       flop :e3, 60, sus: 1
     end
 
