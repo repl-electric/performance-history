@@ -42,7 +42,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     end
 
     if !spread(7,11).look
-      flip :a3, 50, sus: 4
+      flip :a3, 50, sus: 1
     end
 
 
