@@ -7,15 +7,18 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 
 #flop :d3, 127
 
-flop_on :D2
+#flop_on :D2
 
-at{
-  sync :Attune
-  sleep 1.5
-  flop_on :d2
- resonate :a2
 
-}
+
+
+# at{
+#   sync :Attune
+#   sleep 1.5
+#   flop_on :d2
+#  resonate :a2
+
+# }
 #create_aura
 
 #stop
