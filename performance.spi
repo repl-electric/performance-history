@@ -5,9 +5,9 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 #stop
 #alive pitch: 1
 
-flop :d3, 127
+#flop :d3, 127
 
-#flop_on :D2
+flop_on :D2
 
 
 # at{
