@@ -7,8 +7,11 @@ init true && start_init
 
 #flop :d3, 127
 
+
+unity "/lights/up", 0.0
+
 stop
-unity "/lights/up", 0
+
 
 at{
   sync :Attune
