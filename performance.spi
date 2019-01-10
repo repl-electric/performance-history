@@ -6,11 +6,11 @@ init true && start_init
 #stop
 alive pitch: 1
 
-# at{
-#   sync :Attune
-#   sleep 1.5
-#   flop_on :a3
-# }
+at{
+  sync :Attune
+  sleep 1.5
+  flop_on :d2
+}
 #stop
 #}
 # at{
