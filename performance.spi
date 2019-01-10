@@ -7,7 +7,7 @@ init true && start_init
 
 #flop :d3, 127
 
-
+stop
 unity "/lights/up", 0
 
 at{
