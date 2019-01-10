@@ -11,6 +11,9 @@ at{
   sleep 1.5
   flop_on :d2
 }
+
+
+stop
 #stop
 #}
 # at{
