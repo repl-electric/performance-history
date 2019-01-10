@@ -9,7 +9,7 @@ init true && start_init
 at{
 #  sync :Attune
   sleep 1.5
-  flop_on :d2
+  heat :a2
 }
 
 
