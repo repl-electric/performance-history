@@ -7,9 +7,9 @@ init true && start_init
 #alive pitch: 1
 
 at{
-  sync :Attune
+#  sync :Attune
   sleep 1.5
-#  flop_on :d2
+  flop_on :d2
 }
 
 
