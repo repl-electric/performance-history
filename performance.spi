@@ -10,7 +10,7 @@ at{
   sync :Attune
   sleep 1.5
   flop_on :d2
-# resonate :a2
+ resonate :a2
 
 }
 #create_aura
