@@ -5,7 +5,7 @@ init true && start_init
 #stop
 #alive pitch: 1
 
-flop :d3, 127
+#flop :d3, 127
 
 
 unity "/lights/end", 1
