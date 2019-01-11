@@ -11,7 +11,7 @@ colorb 1.2
 create_aura 3.1
 rocks throttle: 0
 unity "/eyelids",1.0
-aura distort: 1, ping: 1, scale: 1
+aura distort: 1, ping: 1, scale: 0.2
 stop
 
 flop_on :D2
