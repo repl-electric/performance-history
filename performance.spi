@@ -1,6 +1,9 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0
 #init true && start_init
-cam :top
+
+#eject
+eject_cpu_core
+#cam :top
 stop
 # at{
 #   sync :Attune
@@ -34,7 +37,7 @@ end
 #create_sea
 #cam :chase
 
-eject_cpu
+
 
 #unity "/lights/up",0.0
 #unity "/lights/up",0.0
