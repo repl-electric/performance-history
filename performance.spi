@@ -1,9 +1,12 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0
 #init true && start_init
 
+
+#cam :top #really needs to trigger new mode and stop a tone of stuff from starting.
+
 #eject
 #eject_cpu_core
-#world time: 1
+world time: 0.1
 livecode :end
 #cam :top
 stop
