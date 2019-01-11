@@ -9,7 +9,7 @@ init true && start_init
 
 colorb 1.0
 create_aura
-
+rocks throttle: 0
 
 
 stop
