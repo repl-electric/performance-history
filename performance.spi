@@ -10,7 +10,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1
 colorb 1.1
 create_aura 0.4
 rocks throttle: 0
-unity "/eyelid",1.0
+unity "/eyelids",1.0
 
 stop
 
