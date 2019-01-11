@@ -8,7 +8,7 @@ init true && start_init
 #flop :d3, 127
 
 colorb 1.0
-create_aura
+create_aura 0.2
 rocks throttle: 0
 
 
