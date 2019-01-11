@@ -7,7 +7,7 @@ init true && start_init
 
 #flop :d3, 127
 
-colorb 2.0
+colorb 1.0
 
 
 stop
