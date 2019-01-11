@@ -33,8 +33,8 @@ end
 #create_sea
 #cam :chase
 
-unity "/lights/up",0.0
-unity "/lights/up",0.0
+#unity "/lights/up",0.0
+#unity "/lights/up",0.0
 
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
