@@ -12,7 +12,7 @@ colorb 1.2
 rocks throttle: 0
 unity "/eyelids",1.0
 aura distort: 2.0, wave: 1,
-fresnel: 0.0, ripple: 1.0
+fresnel: 0.1, ripple: 1.0
 stop
 
 flop_on :D2
