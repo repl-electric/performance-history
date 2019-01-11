@@ -34,6 +34,8 @@ end
 #create_sea
 #cam :chase
 
+eject_cpu
+
 #unity "/lights/up",0.0
 #unity "/lights/up",0.0
 
