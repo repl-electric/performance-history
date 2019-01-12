@@ -33,7 +33,7 @@ live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-#    flop_cc motion: 0.27#(flow 0.0, 0.58, 32*2,).look
+    flop_cc motion: (flow 0.27, 0.58, 32*2,).look
 #     at{
 #  #     sleep 0.5
 # #      create_cube 0.01
