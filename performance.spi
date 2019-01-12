@@ -42,7 +42,7 @@ def eject_cpu_core(k=:pad)
   end
 end
 unity "/camtop/jitter",0
-eject_cpu_core
+#eject_cpu_core
 
  #    unity "/star/throttle", 1.0
 # #unity "/camtop/jitter",1.0
