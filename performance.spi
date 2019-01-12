@@ -33,16 +33,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1
 
 #eject_cpu_core
 
-
-def eject_cpu_core(k=:pad)
-  case k
-    when :pad
-    #midi_cc 11,127, port: :iac_bus_1, channel: 1
-    #end2
-  end
-end
-unity "/camtop/jitter",0
-#eject_cpu_core
+#unity "/camtop/jitter",0
+eject_cpu_core
 
  #    unity "/star/throttle", 1.0
 # #unity "/camtop/jitter",1.0
