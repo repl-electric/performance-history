@@ -15,17 +15,27 @@ live_loop :viz, sync: :Attune do
 #  voltage :f4
 end
 
+at{
+  sync :Attune
+  sleep 1.0/4.0
+  overclock_on :a3
+
+  slow_init
+}
+
+
 
 live_loop :Attune, sync: :unsyncable do; tick
+  silence!
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    flop_cc motion: (flow 0.0, 0.58, 32*2,).look
+    flop_cc motion: (flow 0.0 0.58 32*2).look
     at{
  #     sleep 0.5
 #      create_cube 0.01
       }
-    flop :a3, 60, sus: (cycle 0.25, 0.5, 1.0,).look if spread(7,11).look
-    flop :e3, 60, sus: (cycle 0.25, 0.5, 1.0,).rot(-1).look if spread(3,8).look
+    flop :a3, 60, sus: (cycle 0.25 0.5 1.0).look if spread(7,11).look
+    flop :e3, 60, sus: (cycle 0.25 0.5 1.0).rot(-1).look if spread(3,8).look
 
     #flop :d3
     sleep 1/4.0
@@ -42,7 +52,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/2.0
     sleep 1/2.0
 
-    flop :c4, 60, sus: (cycle 1/2.0,).look if spread(1,1).look
+    flop :c4, 60, sus: (cycle 1/2.0).look if spread(1,1).look
 
     sleep 1/2.0
   end
@@ -58,8 +68,8 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1, 1, 1, 0,   0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,)
-  with_bpm 127*(cycle 1,).look do
+  perc=(cycle 1 1 1 0   0 0 0 0  0 0 0 0  0 0 0 0)
+  with_bpm 127*(cycle 1).look do
     perc_machine perc.to_a
   end
 end
@@ -69,7 +79,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:C2], 8],
+      [[:C2] 8]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
