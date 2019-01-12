@@ -80,7 +80,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
     perc_machine perc.to_a
   end
 end
-roots_chase target: :start, force: 100
+roots_chase target: :start, force: 150
 
 
 live_loop :MachineInstructions, sync: :unsyncable do; tick
