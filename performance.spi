@@ -1,23 +1,15 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0
-init true && start_init
+#init true && start_init
+
+at{
+  sync :Attune
+  sleep 1.0/3.0
+  flop_on :d2
 
 
-#cam :top #really needs to trigger new mode and stop a tone of stuff from starting.
+}
 
-#eject
-#eject_cpu_core
-# world time: 0.0
-# livecode :end
-#cam :top
-stop
-# at{
-#   sync :Attune
-#   sleep 1.0/2.0
-#   overclock_on :a3
-# }
-#slow_init
-#resonate :a2
-#resonate :a3
+
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
