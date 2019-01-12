@@ -1,4 +1,4 @@
-load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0
+load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1
 #init true && start_init
 
 #    unity "/lights/up",1.0
@@ -16,7 +16,6 @@ live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
     flop_cc motion: (flow 0.27 0.5 32).look
-
 
     #flop :d3
     sleep 1/4.0
