@@ -34,10 +34,10 @@ live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
     flop_cc motion: 0.27#(flow 0.0 0.58 32*2).look
-    at{
- #     sleep 0.5
-#      create_cube 0.01
-      }
+#     at{
+#  #     sleep 0.5
+# #      create_cube 0.01
+#       }
     flop :a3, 60, sus: (cycle 0.25 0.5 1.0).look if spread(7,11).look
     flop :e3, 60, sus: (cycle 0.25 0.5 1.0).rot(-1).look if spread(3,8).look
 
