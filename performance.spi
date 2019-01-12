@@ -32,7 +32,7 @@
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
-  with_bpm 127 do
+  with_bpm 127*2 do
     flop_cc motion: (flow 0.27 0.58 32*2).look
 #     at{
 #  #     sleep 0.5
@@ -81,7 +81,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
   end
 end
 roots_chase target: :start, force: 250
-
+recover
 
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
