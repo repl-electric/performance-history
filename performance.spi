@@ -78,6 +78,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
     perc_machine perc.to_a
   end
 end
+roots_chase target: :slow
 
 
 live_loop :MachineInstructions, sync: :unsyncable do; tick
