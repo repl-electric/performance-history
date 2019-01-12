@@ -30,10 +30,11 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1
 
 #overclock_cc attune: 0.52, drive: 0.45
 
-cam :top
-stop
+#fx tube: 1.00, reverb: 1.00
+#cam :top
+#stop
 
-#eject_cpu_core
+eject_cpu_core
 
     unity "/star/throttle", 1.0
     unity "/camtop/jitter",2.5
