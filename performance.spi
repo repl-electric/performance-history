@@ -106,7 +106,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
       #, [Zz, 8],
       )
     chd = score.look[0]
-    puts chd
+    puts score
     sleeps = score.look[-1]
 
     resonate chd+12,1, sus: sleeps, pads: [0], sat: 0, drive: 0
