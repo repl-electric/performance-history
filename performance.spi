@@ -17,8 +17,9 @@ end
 
 at{
   sync :Attune
-  sleep 1.0/4.0
-  overclock_on :e3
+  sleep 1.5
+  flop_x
+  overclock_on :f3
 
   slow_init
 }
