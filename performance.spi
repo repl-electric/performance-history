@@ -18,14 +18,14 @@ live_loop :viz, sync: :Attune do
 #  voltage :f4
 end
 
-at{
-  sync :Attune
-  sleep 1.5
-  flop_x
-  overclock_on :f3
+# at{
+#   sync :Attune
+#   sleep 1.5
+#   flop_x
+#   overclock_on :f3
 
-  slow_init
-}
+#   slow_init
+# }
 
 
 
@@ -92,5 +92,5 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     sleep sleeps
   end
 end
-
+create_sea
 live_loop(:unsyncable)do;sleep 1.0;end
