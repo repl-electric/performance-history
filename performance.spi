@@ -15,13 +15,16 @@ live_loop :viz, sync: :Attune do
 #  voltage :f4
 end
 
-create_cube
+
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
     flop_cc motion: (flow 0.27 0.58 32).look
-
+    at{
+      sleep 0.5
+      create_cube
+      }
     flop :a3, 60, sus: (cycle 0.25 0.5 1.0).look if spread(7,11).look
     flop :e3, 60, sus: (cycle 0.25 0.5 1.0).look if spread(3,8).look
 
