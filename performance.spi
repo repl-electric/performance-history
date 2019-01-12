@@ -44,7 +44,7 @@ end
 #eject_cpu_core
 
     unity "/star/throttle", 1.0
-    unity "/camtop/jitter",0.0
+unity "/camtop/jitter",1.0
     unity "/camtop/phase",0.0
     unity "/camtop/glitch_a", 0.0
     unity "/camtop/glitch_v", 0.1
