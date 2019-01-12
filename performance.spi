@@ -38,7 +38,7 @@ live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127*4 do
     flip_cc motion: 0.4
-    flop_cc motion: (flow 0.54 0.58 32).look
+    flop_cc motion: (flow 0.55 0.58 32).look
     kal :f4
 #     at{
 #  #     sleep 0.5
