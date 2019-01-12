@@ -9,8 +9,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0
 #   sleep 6
 #   flop_on :b3
 # }
-zoomout
-overclock_cc motion: (cycle 0.27).look
+#zoomout
+#overclock_cc motion: (cycle 0.27).look
 
 
 live_loop :viz, sync: :Attune do
