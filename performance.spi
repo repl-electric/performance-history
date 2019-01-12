@@ -11,7 +11,7 @@
 # }
 #zoomout
 #overclock_cc motion: (cycle 0.27,).look
-
+colorb 1
 
 # live_loop :viz, sync: :Attune do
 #   sleep 3
