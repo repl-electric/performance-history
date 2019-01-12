@@ -15,7 +15,7 @@ live_loop :viz, sync: :Attune do
 #  voltage :f4
 end
 
-
+create_cube
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
