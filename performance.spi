@@ -50,7 +50,7 @@ def perc_machine(pat)
         at{
         sleep 0.47
         puts :hit
-        dark :f3, 127 if pat[-1]!=0
+        dark :fs3, 127 if pat[-1]!=0
         }
       else
         dark :e3, ring(122, 100, 110, 90).look-(rand*5) if pat[-1]!=0
