@@ -34,6 +34,9 @@ live_loop :Attune, sync: :unsyncable do; tick
 
     sleep 1/4.0
     sleep 1/4.0
+
+    flop :g3,127, sus: 2
+
     sleep 1/4.0
     sleep 1/4.0
 
