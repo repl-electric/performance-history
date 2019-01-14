@@ -14,7 +14,10 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #   overclock_on :f3
 # }
 
-overclock_cc motion: 0.57, fm: 0.00, drive: 0.55
+
+fx reverb: 1.00, drive: 1.00
+
+overclock_cc motion: 0.57, fm: 0.00, drive: 0.70
 
 live_loop :Attune, sync: :unsyncable do; tick
   overclock_cc oct: (cycle 0 -12 0 19 9 24).rot(rand_i(12)).look
@@ -24,7 +27,7 @@ live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127*4 do
     flop_cc motion: 0.5#x=(flow 0.40 0.57 32).look, drive: 0.00
-    flip_cc motion: 0.40
+    flip_cc motion: 0.40, drive: 0.4
 
     flip :a3, sus: (cycle 0.25 0.5 1).look, drive: 0.00
     flip :e3, sus: (cycle 0.25 0.5 1).rot(-1).look
