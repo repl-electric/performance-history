@@ -14,7 +14,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #   overclock_on :f3
 # }
 
-fx reverb: 1.00, drive: 1.00
+fx reverb: 1.00, drive: 1.00, tube: 1.00
 
 overclock_cc motion: 0.57, fm: 0.00, drive: 0.70
 
