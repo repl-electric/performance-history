@@ -51,7 +51,7 @@ def perc_machine(pat)
         sleep 0.47
         puts :hit
         dark :b3, 60 if pat[-1]!=0
-        sleep 0.5
+        sleep 0.53
         dark :b3, 60 if pat[-1]!=0
         }
       else
