@@ -14,20 +14,20 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #   overclock_on :f3
 # }
 
-overclock_cc motion: 0.50, fm: 1.00, drive: 0.55
+overclock_cc motion: 0.57, fm: 0.00, drive: 0.55
 
 live_loop :Attune, sync: :unsyncable do; tick
-  overclock_cc oct: (cycle 0 -12 0 19).look
+  overclock_cc oct: (cycle 0, -12, 0, 19,).look
 
-  overclock :E3,127, sus: 4
+  overclock :F3,127, sus: 4
   silence?
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    flop_cc motion: 0.5#x=(flow 0.40 0.57 32).look, drive: 0.00
+    flop_cc motion: 0.5#x=(flow 0.40, 0.57, 32,).look, drive: 0.00
     flip_cc motion: 0.40
 
-    flip :a3, sus: (cycle 0.25 0.5 1).look, drive: 0.00
-    flip :e3, sus: (cycle 0.25 0.5 1).rot(-1).look
+    flip :a3, sus: (cycle 0.25, 0.5, 1,).look, drive: 0.00
+    flip :e3, sus: (cycle 0.25, 0.5, 1,).rot(-1).look
 
 
     flip :g3,127, sus: 2
@@ -60,7 +60,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/2.0
     sleep 1/2.0
 
-    glitch_cc mode: (cycle 1 2 3 4 5 6 7).choose
+    glitch_cc mode: (cycle 1, 2, 3, 4, 5, 6, 7,).choose
 
     flop :c4, sus: 1/2.0
 
@@ -149,8 +149,8 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1 1 0 0  1 0 0 0  0 0 0 0  0 0 0 1)
-  with_bpm 127*(cycle 1).look do
+  perc=(cycle 1, 1, 0, 0,  1, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 1,)
+  with_bpm 127*(cycle 1,).look do
     perc_machine perc.to_a
   end
 end
@@ -158,28 +158,28 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      #      [[:C3 :d4 :f3] 8]
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      [[:A3 :C5 :E4] 8]
-      [[:E4 :G5 :B3] 8]
-      [[:F4 :A6 :C5 :E5] 8]
-      [[:C3 :E5 :G4] 8]
-      [Zz 8]
+      #,      [[:C3, :d4, :f3], 8],
+      [[:A3, :C5, :E4], 8],
+      [[:F4, :A6, :C5], 8],
+      [[:C3, :E5, :G4], 4],
+      [Zz, 4],
+      [[:A3, :C5, :E4], 8],
+      [[:E4, :G5, :B3], 8],
+      [[:F4, :A6, :C5, :E5], 8],
+      [[:C3, :E5, :G4], 8],
+      [Zz, 8],
 
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      [[:A3 :C5 :E4] 4]
-      [[:A3 :C5 :E4] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:G4 :B6 :D5 :F4] 8]
-      [[:C4 :E5 :G4] 8]
-      [Zz 8]
+      [[:A3, :C5, :E4], 8],
+      [[:F4, :A6, :C5], 8],
+      [[:C3, :E5, :G4], 4],
+      [Zz, 4],
+      [[:A3, :C5, :E4], 4],
+      [[:A3, :C5, :E4], 4],
+      [[:E4, :G5, :B3], 4],
+      [[:E4, :G5, :B3], 4],
+      [[:G4, :B6, :D5, :F4], 8],
+      [[:C4, :E5, :G4], 8],
+      [Zz, 8],
       )
     chd = score.look[0]
     sleeps = score.look[-1]
@@ -189,7 +189,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     sleep sleeps/2.0
     #operator chd[-1]+12,100, sus: 12
 
-    with_swing((flow 0.0 sleeps/4.0 32).look) {
+    with_swing((flow 0.0, sleeps/4.0, 32,).look) {
       #voltage :f4
       operator chd[-2]+12,100, sus: 12
     }
