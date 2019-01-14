@@ -165,7 +165,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     chd = score.look[0]
     sleeps = score.look[-1]
     resonate chd,4, sus: sleeps, pads: [0], sat: 0, drive: 0
-    control_unit root(chd),127, sus: sleeps, drive: 0.00, sat: 0.00
+    control_unit root(chd)+12,127, sus: sleeps, drive: 0.00, sat: 0.00
 
     sleep sleeps/2.0
     #operator chd[-1]+12,100, sus: 12
