@@ -1,4 +1,4 @@
-load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, kick: 1
+load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 1
 #init true && start_init
 
 # at{
@@ -14,7 +14,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, k
 #   overclock_on :f3
 # }
 
-#overclock_cc motion: 0.27, fm: 0.00, drive: 0.00
+#overclock_cc motion: 0.50, fm: 0.00, drive: 0.40
 
 live_loop :Attune, sync: :unsyncable do; tick
   overclock_cc oct: (cycle 0 -12 0 19).look
