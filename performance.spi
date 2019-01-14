@@ -11,7 +11,7 @@ at{
   sync :Attune
   sleep 1.0/4.0
   alive perc: 0
-  overclock_on :a3
+  overclock_on :e3
 
 }
 
