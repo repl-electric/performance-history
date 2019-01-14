@@ -7,7 +7,17 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1
 #   flop_on :g3
 # }
 
+at{
+  sync :Attune
+  sleep 1.0/4.0
+  overclock_on :a3
+
+}
+
+
+
 live_loop :Attune, sync: :unsyncable do; tick
+  silence!
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
     flop_cc motion: x=(flow 0.0 0.57 32).look
