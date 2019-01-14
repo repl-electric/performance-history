@@ -19,7 +19,7 @@ overclock_cc motion: 0.50, fm: 1.00, drive: 0.55
 live_loop :Attune, sync: :unsyncable do; tick
   overclock_cc oct: (cycle 0 -12 0 19).look
 
-  overclock :A3, sus: 4
+  overclock :A3,127, sus: 4
   silence?
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
