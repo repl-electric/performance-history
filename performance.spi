@@ -10,10 +10,10 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    flop_cc motion: x=(flow 0.0 0.57 32).look
+    flop_cc motion: x=(flow 0.0, 0.57, 32,).look
 
-    flop :a3, sus: (cycle 0.25 0.5 1).look
-    flop :e3, sus: (cycle 0.25 0.5 1).rot(-1).look
+    flop :a3, sus: (cycle 0.25, 0.5, 1,).look
+    flop :e3, sus: (cycle 0.25, 0.5, 1,).rot(-1).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -29,7 +29,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/2.0
     sleep 1/2.0
 
-    glitch_cc mode: (cycle 1 2 3 4 5 6 7).choose if dice(32) > 32*(1-x)
+    glitch_cc mode: (cycle 1, 2, 3, 4, 5, 6, 7,).choose
 
     flop :c4, sus: 1/2.0
 
@@ -39,8 +39,8 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1 0 0 0  1 0 0 0  1 0 0 0  0 0 0 0)
-  with_bpm 127*(cycle 1).look do
+  perc=(cycle 1, 0, 0, 0,  1, 0, 0, 0,  1, 0, 0, 0,  0, 0, 0, 0,)
+  with_bpm 127*(cycle 1,).look do
     perc_machine perc.to_a
   end
 end
@@ -48,7 +48,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:B2 :d4 :f3] 8]
+      [[:B2, :d4, :f3], 8],
       )
     chd = score.look[0]
     sleeps = score.look[-1]
@@ -57,7 +57,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     sleep sleeps/2.0
     #operator chd[-1]+12,100, sus: 12
 
-    with_swing((flow 0.0 sleeps/4.0 32).look) {
+    with_swing((flow 0.0, sleeps/4.0, 32,).look) {
       voltage :f4
       operator chd[-2]+12,100, sus: 12
     }
