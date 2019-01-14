@@ -52,7 +52,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     resonate chd,4, sus: sleeps, pads: [0], sat: 0, drive: 0
 
     sleep sleeps/2.0
-    operator chd[-1]+12,100, sus: 12
+    #operator chd[-1]+12,100, sus: 12
 
     with_swing((flow 0.0 sleeps/4.0 32).look) {
       voltage :e4
