@@ -128,6 +128,8 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
 
+flip :f4
+
     sleep 1/4.0
     sleep 1/4.0
 
