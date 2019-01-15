@@ -13,9 +13,9 @@ def perc_machine(pat)
         if (dice(16)) > 8
           at{
           sleep 0.47
-          dark :b3, 60 if pat[-1]!=0
+          dark :b3, 60+rand_i(4) if pat[-1]!=0
           sleep 0.43
-          dark :cs4, 58+rand_i(4) if pat[-1]!=0
+          dark :d4, 58+rand_i(4) if pat[-1]!=0
         }
         else
         at{
