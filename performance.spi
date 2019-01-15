@@ -13,7 +13,7 @@ def perc_machine(pat)
         if (dice(16)) > 8
           at{
           sleep 0.47
-          dark :e3, 60+rand_i(4) if pat[-1]!=0
+          dark :e4, 60+rand_i(4) if pat[-1]!=0
           sleep 0.43
           dark :e4, 58+rand_i(4) if pat[-1]!=0
         }
@@ -109,8 +109,8 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 1)
-  with_bpm 127*(cycle 1).look do
+  perc=(cycle 0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 1,)
+  with_bpm 127*(cycle 1,).look do
     perc_machine perc.to_a
   end
 end
@@ -118,7 +118,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[_] 8]
+      [[_], 8],
       )
     chd = score.look[0]
     sleeps = score.look[-1]
