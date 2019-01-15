@@ -91,19 +91,23 @@ live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
 
-    sleep 1/4.0
-    sleep 1/4.0
-    sleep 1/4.0
-    sleep 1/4.0
+
 
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
 
+    sleep 1/4.0
+    sleep 1/4.0
+    sleep 1/4.0
+    sleep 1/4.0
+
     sleep 1/2.0
     sleep 1/2.0
     sleep 1/2.0
+    flip :c4, 60, sus: (cycle 1/2.0).look if spread(1,1).look
+
     sleep 1/2.0
   end
 end
