@@ -96,10 +96,9 @@ end
 
 at{
   sync :Attune
-  sleep 1.5
-  overclock_on :a3
-
-
+  alive :perc 0,pitch:0
+  sleep 3
+  overclock_on :e3
 }
 
 
