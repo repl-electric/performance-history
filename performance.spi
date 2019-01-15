@@ -15,7 +15,7 @@ def perc_machine(pat)
           sleep 0.47
           dark :b3, 60 if pat[-1]!=0
           sleep 0.43
-          dark :cs4, 58+rand if pat[-1]!=0
+          dark :cs4, 58+rand_i(4) if pat[-1]!=0
         }
         else
         at{
