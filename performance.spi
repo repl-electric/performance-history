@@ -102,12 +102,12 @@ end
  # }
 
 
-#overclock_cc motion: 0.30
+#overclock_cc motion: 0.40
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
-  overclock :f3, sus: 4
+  overclock :d3, sus: 4
   overclock_cc oct: (cycle 0 -12 0 19).look
 
   with_bpm 127 do
