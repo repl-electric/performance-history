@@ -1,4 +1,4 @@
-load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, kick: 1
+load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 1
 #init true && start_init
 
 def perc_machine(pat)
@@ -108,12 +108,12 @@ live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
   overclock :d3, sus: 4
-  overclock_cc oct: (cycle 0, -12, 0, 19,).look
+  overclock_cc oct: (cycle 0 -12 0 19).look
 
   with_bpm 127 do
     #flop_cc motion: 0
-    flip :a3, 127, sus: (cycle 0.25, 0.5, 1,).look if spread(1,1).look
-    flip :e3, 127, sus: (cycle 0.25, 0.5, 1,).look if spread(1,1).look
+    flip :a3, 127, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
+    flip :e3, 127, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
 
     flip :a3, sus: 2 if spread(7,11).look
 
@@ -128,7 +128,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
 
-flip :f3
+    flip :f3
 
     sleep 1/4.0
     sleep 1/4.0
@@ -145,7 +145,7 @@ flip :f3
     sleep 1/2.0
     sleep 1/2.0
     sleep 1/2.0
-    flop :c4, 127, sus: (cycle 1/2.0,).look if spread(1,1).look
+    flop :c4, 127, sus: (cycle 1/2.0).look if spread(1,1).look
     sleep 1/2.0
   end
 end
@@ -153,8 +153,8 @@ end
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
   glitch :gs3
-  perc=(cycle 1, 1, 0, 0,  1, 1, 0, 0,  1, 0, 0, 0,  0, 0, 0, 1,)
-  with_bpm 127*(cycle 1,).look do
+  perc=(cycle 1 1 0 0  1 1 0 0  1 0 0 0  0 0 0 1)
+  with_bpm 127*(cycle 1).look do
     perc_machine perc.to_a
   end
 end
@@ -163,8 +163,8 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
   with_bpm 127*1 do
     score = (cycle
-      [[:E4], 4],
-      [[:F4], 4],
+      [[:E4] 4]
+      [[:F4] 4]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
