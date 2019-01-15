@@ -96,7 +96,7 @@ end
 
 # at{
 #   sync :Attune
-#   alive perc: 0, pitch:0, kick: 0
+   alive perc: 0, pitch:0, kick: 0
 #   sleep 3
 #   overclock_on :f3
 # }
