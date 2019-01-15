@@ -90,7 +90,7 @@ end
 at{
   sync :Attune
   sleep 6
-  flop_off :b3
+  flop_on :d3
 }
 
 live_loop :Attune, sync: :unsyncable do; tick
