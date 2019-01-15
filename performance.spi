@@ -107,6 +107,7 @@ end
 live_loop :Attune, sync: :unsyncable do; tick
   silence!
   zero_delay [2,5,6].shuffle
+  overclock :f3, sus: 4
   with_bpm 127 do
     flop_cc motion: 0
     flop :a3, 127, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
