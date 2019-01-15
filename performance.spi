@@ -91,7 +91,7 @@ end
 at{
   sync :Attune
   sleep 1.5
-
+  flop_on :d2
 
 }
 
