@@ -110,8 +110,9 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 1,)
-  with_bpm 127*(cycle 1,).look do
+  glitch :gs3
+  perc=(cycle 1 0 0 0  0 0 0 0  0 0 0 0  0 0 0 1)
+  with_bpm 127*(cycle 1).look do
     perc_machine perc.to_a
   end
 end
@@ -119,7 +120,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[_], 8],
+      [[_] 8]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
