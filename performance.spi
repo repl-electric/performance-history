@@ -1,5 +1,8 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 1
 #init true && start_init
+
+
+dark :c4
 def perc_machine(pat)
   if spread(4,8).look
     glitch_cc mode: (ring 0, 2, 3, 5).look
