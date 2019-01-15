@@ -126,7 +126,11 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
 
 
-    flop :e3
+    if spread(3,8).look
+    else
+
+      flop :e3
+    end
 
     sleep 1/2.0
     sleep 1/2.0
