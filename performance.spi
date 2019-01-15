@@ -138,7 +138,7 @@ live_loop :Attune, sync: :unsyncable do; tick
       flop :C4,127, sus: 2
     else
       flop_cc motion: 0.4
-      flop :e4,100, sus: 2
+      flop :e3,100, sus: 2
     end
 
     sleep 1/2.0
