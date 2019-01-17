@@ -1,8 +1,8 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
-# start_init
-# sleep 2
-# init true
-# create_aura
+start_init
+sleep 2
+init true
+create_aura
 
 
 
