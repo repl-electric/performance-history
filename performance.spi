@@ -15,9 +15,9 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, k
 #flop_off :b3
 #livecode :sleep
 
-recover
+#recover
 
-overclock_cc attune: 0.40, drive: 0.00
+overclock_cc attune: 0.45, drive: 0.00
 
 roots_chase target: :start, force: 140
 
