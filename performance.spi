@@ -32,7 +32,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 
 
 
-eject_cpu_core
+#eject_cpu_core
 
 fx reverb: 1.00, drive: 1.00, tube: 1.00
 
@@ -134,6 +134,9 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
       )
 #    tick_reset_all
+
+    tick_reset_all
+
     chd = score.look[0]
     sleeps = score.look[-1]
     resonate chd,1, sus: sleeps, pads: [0,1,2], sat: 0.20, drive: 0.20
