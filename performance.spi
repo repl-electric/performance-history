@@ -5,8 +5,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, k
 #   sleep 6
 #   flop_on :b3
 # }
-#fx tube: 1.00, reverb: 1.00
-
+##fx tube: 1.00, reverb: 1.00
+#
 
 
 eject_cpu_core
