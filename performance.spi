@@ -4,8 +4,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 at{
   sync :Attune
   sleep 3
-  create_aura
-  flop_off :g3, 127
+  flop_on :g3
 }
 
 
