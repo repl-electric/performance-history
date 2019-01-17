@@ -19,6 +19,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     unity "/lights/top", 100
     vortex distort: x
     vortex throttle: 0.01
+    vortex force: 1
 
     sleep 1/4.0
     sleep 1/4.0
