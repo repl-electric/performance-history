@@ -19,6 +19,7 @@ at{
 
 #recover
 
+roots_chase freq: rand*2, amp: 0.2
 
 
 live_loop :Attune, sync: :unsyncable do; tick
