@@ -5,14 +5,12 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 #   sleep 3
 #   flop_on :G3
 # }
-create_aura
+#create_aura
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
     flop_cc motion: (flow 0.27 0.5 32).look
-
-
 
     sleep 1/4.0
     sleep 1/4.0
