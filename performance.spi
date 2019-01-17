@@ -5,7 +5,7 @@ at{
   sync :Attune
   sleep 3
   create_aura
-  flop_on :g3, 127
+  flop_off :g3, 127
 }
 
 
