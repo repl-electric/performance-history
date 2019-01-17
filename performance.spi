@@ -80,7 +80,7 @@ end
 
 #cam :chase
 
-roots_chase target: :start, force: 150, drag: 0.2
+roots_chase target: :start, force: 150, drag: 0.3
 
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
