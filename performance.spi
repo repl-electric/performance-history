@@ -1,26 +1,9 @@
-load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, kick: 0
-#init true
-
-
-# at{
-#   sync :Attune
-#   sleep 3
-#   flop_on :G3
-# }
-
-#vortex throttle: 1.0, turb: 0
-
-#stop
-
+load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
+init true && start_init
+flop_x
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    #tick_reset_all
-    flop_cc motion: x=(flow 0.0 0.5 32).look
-    flop :A3, sus: (cycle 0.25 0.5 1).look
-    flop :e3, sus: (cycle 0.25 0.5 1).rot(-1).look
-
-#    unity "/lights/end", 10.0
 
     sleep 1/4.0
     sleep 1/4.0
@@ -35,10 +18,6 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/2.0
     sleep 1/2.0
     sleep 1/2.0
-
-    fn = (ring (method :flop),  (method :flop),  (method :flop), (method :flip), (method :flip)).look
-    flop(:c4, 60,sus: 1/2.0)
-
     sleep 1/2.0
   end
 end
@@ -54,12 +33,10 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:C2] 8]
+      [[_] 8]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
-
     sleep sleeps
   end
 end
