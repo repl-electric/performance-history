@@ -17,7 +17,7 @@ fx tube: 0.40, reverb: 0.40
 
 #recover
 
-#overclock_cc attune: 0.45, drive: 0.00
+overclock_cc attune: 0.00
 
 #roots_chase target: :start, force: 140
 
