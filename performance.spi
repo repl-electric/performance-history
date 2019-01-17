@@ -10,6 +10,10 @@ start_init
 #zoomout
 colorb 1
 
+
+create_aura
+
+
 #cam :top
 #cam :top
 stop
