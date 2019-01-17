@@ -4,8 +4,8 @@ start_init
 # init true
 
 
-cam :top
-
+#cam :top
+eject_cpu_core
 
 
 #cam :top
