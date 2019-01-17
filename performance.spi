@@ -1,35 +1,13 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
-#init true && start_init
+start_init
+sleep 2
+init true
 
-# at{
-#   sync :Attune
-#   sleep 1.5
-   flop_on :d2, 60
-# }
-#resonate :A2
-
-
-
-# unity "/lights/up",1.0
-
-#eject_cpu_core
-
-# unity "/lights/top",0
-# unity "/lights/end",10
-
-
-# rocks throttle: 0.0
-# vortex throttle: 0.0
-# star size: 0
-stop
 
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    #flop_cc motion: 0.5
-
-
 
     sleep 1/4.0
     sleep 1/4.0
