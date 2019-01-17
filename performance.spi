@@ -32,7 +32,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     overclock :d4, sus: 4
 
     flip :a3, sus: (cycle 0.25 0.5 1).look, tube: 0, drive: 0
-    flop :e3, sus: (cycle 0.25 0.5 1).rot(-1).look, tube: 0, drive: 0
+    flip :e3, sus: (cycle 0.25 0.5 1).rot(-1).look, tube: 0, drive: 0
 
     sleep 1/4.0
     sleep 1/4.0
