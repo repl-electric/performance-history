@@ -64,7 +64,7 @@ end
 # zoomout
 # create_sea
 
-roots_chase target: :start, force: 120, drag: 0.5
+roots_chase target: :start, force: 120, drag: 1
 
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
