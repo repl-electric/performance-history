@@ -46,7 +46,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:D2] 8]
+      [[:B2] 8]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
@@ -54,6 +54,10 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
     sleep sleeps/2.0
     voltage :e4
+
+
+
+
     sleep sleeps/2.0
   end
 end
