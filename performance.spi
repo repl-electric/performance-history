@@ -2,12 +2,9 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 start_init
 # sleep 2
 # init true
-
+create_aura
 
 #cam :top
-eject_cpu_core
-
-
 #cam :top
 stop
 
