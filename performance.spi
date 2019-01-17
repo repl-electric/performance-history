@@ -14,6 +14,7 @@ at{
 eject_cpu_core
 
 unity "/lights/top",0
+unity "/lights/end",10
 
 
 # rocks throttle: 0.0
