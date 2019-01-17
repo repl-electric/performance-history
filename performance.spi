@@ -28,7 +28,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     overclock_cc oct: (cycle 0 -12 0 19 12  24).look
     overclock :f4, sus: 4
     flop_cc motion: (flow 0.4 0.5 32).look
-    flip_cc motion: (flow 0.4 0.5 32).look
+    flip_cc motion: (flow 0.4 0.6 32).look
     flip :a4, 60, sus: (cycle 0.25 1/2.0 1).look, tube: 0.20 if spread(7,11).look
     flip :e4, 60, sus: (cycle 0.25 1/2.0 1).rot(-1).look if spread(3,8).look
 
