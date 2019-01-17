@@ -6,7 +6,7 @@ start_init
 
 
 
-flop_on :d2
+heat :s2
 
 #cam :top
 #cam :top
