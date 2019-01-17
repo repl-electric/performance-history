@@ -12,6 +12,10 @@ at{
 #cam :top
 
 eject_cpu_core
+
+unity "/lights/top",0
+
+
 # rocks throttle: 0.0
 # vortex throttle: 0.0
 # star size: 0
