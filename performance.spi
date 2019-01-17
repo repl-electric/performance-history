@@ -23,7 +23,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm 127*3 do
-    kal :f4
+    kal :c4
 #    silence?
     overclock_cc oct: (cycle 0 -12 0 19 12  24).look
     overclock :c4, sus: 4
