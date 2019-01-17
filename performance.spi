@@ -15,20 +15,22 @@ at{
 }
 
 #livecode :sleep
-#overclock_cc motion: 0.27
+#overclock_cc attune: 0.40
+
+recover
 
 live_loop :Attune, sync: :unsyncable do; tick
   #silence?
   zero_delay [2,5,6].shuffle
   overclock :a3, sus: 4
-  with_bpm 127 do
+  with_bpm 127*2 do
     flop_cc motion: (flow 0.26 0.57 32).look
 
     flip :a3, sus: (cycle 0.25 0.5 1).look if spread(7,11).look
     flip :e3, sus: (cycle 0.25 0.5 1).rot(-1).look if spread(3,8).look
 
     if spread(7,11).look
-      flop :g3,100, sus: 4
+ #     flop :g3,100, sus: 4
     end
 
 
@@ -38,7 +40,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
 
     if !spread(7,11).look
-      flop :a3,100, sus: 4
+#      flop :a3,100, sus: 4
     end
 
     sleep 1/4.0
