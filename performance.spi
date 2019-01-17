@@ -53,6 +53,7 @@ live_loop :Attune, sync: :unsyncable do; tick
 
       flop :c4, 90, sus: 2
     else
+      flop_cc motion: (cycle 0.4).look
       flop :e3, 65, sus: 2
     end
 
