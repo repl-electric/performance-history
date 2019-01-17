@@ -6,7 +6,8 @@ start_init
 
 
 
-heat :d2
+#heat :d2
+zoomout
 
 #cam :top
 #cam :top
