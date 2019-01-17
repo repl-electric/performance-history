@@ -25,11 +25,11 @@ live_loop :Attune, sync: :unsyncable do; tick
   with_bpm 127*2 do
     kal :f4
 #    silence?
-    overclock_cc oct: (cycle 0, -12, 0, 19, 12,  24,).look
+    overclock_cc oct: (cycle 0 -12 0 19 12  24).look
     overclock :f4, sus: 4
-    flop_cc motion: (flow 0.27, 0.5, 32,).look
-    flip :a4, 60, sus: (cycle 0.25, 1/2.0, 1,).look if spread(7,11).look
-    flip :e4, 60, sus: (cycle 0.25, 1/2.0, 1,).rot(-1).look if spread(3,8).look
+    flop_cc motion: (flow 0.27 0.5 32).look
+    flip :a4, 60, sus: (cycle 0.25 1/2.0 1).look if spread(7,11).look
+    flip :e4, 60, sus: (cycle 0.25 1/2.0 1).rot(-1).look if spread(3,8).look
 
 
     roots_chase freq: rand*2, amp: 0.2
@@ -58,11 +58,11 @@ live_loop :Attune, sync: :unsyncable do; tick
 
 
     if spread(3,8).look
-      flop_cc motion: (cycle 0.3,).look
+      flop_cc motion: (cycle 0.3).look
 
       flop :c4, 90, sus: 2
     else
-      flop_cc motion: (cycle 0.4,).look
+      flop_cc motion: (cycle 0.4).look
       flop :e3, 65, sus: 2
     end
 
@@ -72,7 +72,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/2.0
 
     #create_aura
-    flop :c4, 60, sus: (cycle 1/2.0,).look if spread(1,1).look
+    flop :c4, 60, sus: (cycle 1/2.0).look if spread(1,1).look
 
 
     sleep 1/2.0
@@ -81,8 +81,8 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1, 1, 1, 1,  1, 1, 1, 1,  1, 1,)
-  with_bpm 127*(cycle 1, 0.5, 0.25,).look do
+  perc=(cycle 1 1 1 1  1 1 1 1  1 1)
+  with_bpm 127*(cycle 1 0.5 0.25).look do
     perc_machine perc.to_a
     sea circle: rand*0.5
   end
@@ -95,33 +95,33 @@ roots_chase target: :spiral, force: 100, drag: 0.5
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:A3, :C5, :E4], 8],
-      [[:F4, :A6, :C5], 8],
-      [[:C3, :E5, :G4], 4],
-      [Zz, 4],
-      [[:A3, :C5, :E4], 8],
-      [[:E4, :G5, :B3], 8],
-      [[:F4, :A6, :C5, :E5], 8],
-      [[:C3, :E5, :G4], 8],
-      [Zz, 8],
+      [[:A3 :C5 :E4] 8]
+      [[:F4 :A6 :C5] 8]
+      [[:C3 :E5 :G4] 4]
+      [Zz 4]
+      [[:A3 :C5 :E4] 8]
+      [[:E4 :G5 :B3] 8]
+      [[:F4 :A6 :C5 :E5] 8]
+      [[:C3 :E5 :G4] 8]
+      [Zz 8]
 
-      [[:A3, :C5, :E4], 8],
-      [[:F4, :A6, :C5], 8],
-      [[:C3, :E5, :G4], 4],
-      [Zz, 4],
-      [[:A3, :C5, :E4], 4],
-      [[:A3, :C5, :E4], 4],
-      [[:E4, :G5, :B3], 4],
-      [[:E4, :G5, :B3], 4],
-      [[:G4, :B6, :D5, :F4], 8],
-      [[:C4, :E5, :G4], 8],
-      [Zz, 8],
+      [[:A3 :C5 :E4] 8]
+      [[:F4 :A6 :C5] 8]
+      [[:C3 :E5 :G4] 4]
+      [Zz 4]
+      [[:A3 :C5 :E4] 4]
+      [[:A3 :C5 :E4] 4]
+      [[:E4 :G5 :B3] 4]
+      [[:E4 :G5 :B3] 4]
+      [[:G4 :B6 :D5 :F4] 8]
+      [[:C4 :E5 :G4] 8]
+      [Zz 8]
 
       )
 #    tick_reset_all
     chd = score.look[0]
     sleeps = score.look[-1]
-    resonate chd,1, sus: sleeps, pads: [0,1,2], sat: 0, drive: 0.20
+    resonate chd,1, sus: sleeps, pads: [0,1,2], sat: 0.20, drive: 0.20
 
     control_unit root(chd), 15,sus: sleeps, drive: 0.30, sat: 0.30
 
@@ -129,7 +129,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     sleep sleeps/2.0
 #    voltage :e4
 
-    with_swing((flow 0.0, 2, 32,).look){
+    with_swing((flow 0.0 2 32).look){
       operator chd[-1]+12, 88, sus: 12
     }
 
