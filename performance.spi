@@ -10,12 +10,12 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 
 
 #cam :top
-unity "/lights/up",1.0
+# unity "/lights/up",1.0
 
-#eject_cpu_core
+eject_cpu_core
 
-unity "/lights/top",0
-unity "/lights/end",10
+# unity "/lights/top",0
+# unity "/lights/end",10
 
 
 # rocks throttle: 0.0
