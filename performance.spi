@@ -14,7 +14,7 @@ at{
 
 }
 
-say :begin
+livecode :begin
 
 
 
