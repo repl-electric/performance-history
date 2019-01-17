@@ -19,7 +19,7 @@ at{
 
 #recover
 
-roots_chase freq: rand*2, amp: 0.2
+
 
 
 live_loop :Attune, sync: :unsyncable do; tick
@@ -27,6 +27,7 @@ live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   overclock :a3, sus: 4
   with_bpm 127*2 do
+    roots_chase freq: rand*2, amp: 0.2
     kal :f3
     flop_cc motion: (flow 0.26 0.57 32).look
 
