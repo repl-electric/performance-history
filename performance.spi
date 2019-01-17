@@ -9,6 +9,8 @@ at{
 #resonate :A2
 
 
+cam :top
+
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
