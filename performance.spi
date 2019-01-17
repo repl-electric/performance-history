@@ -4,7 +4,9 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 # init true
 
 
-resonate :a2
+create_aura
+
+#resonate :a2
 
 
 live_loop :Attune, sync: :unsyncable do; tick
