@@ -9,7 +9,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #resonate :A2
 
 
-cam :chase
+cam :top
 # unity "/lights/up",1.0
 
 #eject_cpu_core
