@@ -16,7 +16,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     flop :A3, sus: (cycle 0.25, 0.5, 1,).look
     flop :e3, sus: (cycle 0.25, 0.5, 1,).rot(-1).look
 
-    unity "/lights/top", 10
+    unity "/lights/top", 20
 
     sleep 1/4.0
     sleep 1/4.0
