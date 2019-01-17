@@ -7,7 +7,8 @@ start_init
 
 
 #heat :d2
-zoomout
+#zoomout
+colorb 1
 
 #cam :top
 #cam :top
