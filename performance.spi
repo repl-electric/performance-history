@@ -8,7 +8,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 #   flop_on :G3
 # }
 
-vortex throttle: 1.0, turb: 2
+vortex throttle: 1.0, turb: 3
 
 stop
 
