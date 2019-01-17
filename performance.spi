@@ -13,7 +13,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 
 #create_aura
 
-cam :top
+#cam :top
 #end1
 create_sea
 
