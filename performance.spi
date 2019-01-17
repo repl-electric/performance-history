@@ -10,7 +10,7 @@ fx tube: 0.40, reverb: 0.40
 # at{
 #   sync :Attune
 #   sleep 1.0/8.0
-#   overclock_on :e3
+   overclock_on :e3
 # }
 #flop_off :b3
 #livecode :sleep
