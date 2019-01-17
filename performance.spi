@@ -30,7 +30,7 @@ live_loop :Attune, sync: :unsyncable do; tick
   with_bpm 127*3 do
     roots_chase freq: rand*2, amp: 0.2
     kal :f4
-    flop_cc motion: (flow 0.46, 0.6, 32,).look, drive: 0.35
+    flop_cc motion: (flow 0.46, 0.6,  32,).look, drive: 0.35
     flip_cc motion: 0.41, drive: 0.40
 
     flip :c3, sus: (cycle 0.25, 0.5, 1,).look if spread(7,11).look
