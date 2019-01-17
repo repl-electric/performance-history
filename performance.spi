@@ -26,7 +26,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     flip :e3, 60, sus: (cycle 0.25 1/2.0 1).rot(-1).look if spread(3,8).look
 
 
-    roots_chase freq: rand*2, amp: 0.1
+    roots_chase freq: rand*2, amp: 0.2
 
 
     if spread(7,11).look
