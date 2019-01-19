@@ -3,6 +3,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 #init true
 cam :top
 #zoomout
+eject_cpu_core
 stop
 
 # at{
