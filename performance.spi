@@ -3,7 +3,7 @@ world time: 1
 #init true
 #cam :top
 #zoomout
-eject_cpu_core
+#eject_cpu_core
 stop
 
 # at{
