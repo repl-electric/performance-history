@@ -3,7 +3,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 #init true
 #flop_on :D2
 
-unity "/cam0/glitch_a", 0.9
+unity "/cam0/glitch_r", 0.9
 #unity "/cam0/glitch_v", 0.0
 livecode :begin
 
