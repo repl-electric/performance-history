@@ -1,6 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, kick: 1
-world time: 1
-#init true
+#world time: 1
+init true
 #cam :top
 #unity "/endshard/throttle",0.1
 #zoomout
