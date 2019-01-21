@@ -4,7 +4,7 @@ world time: 1.0
 #cam :top
 unity "/endshard/throttle",0.0
 #zoomout
-eject_cpu_core
+#eject_cpu_core
 #world time: 1.0
 stop
 
