@@ -1,13 +1,13 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, kick: 1
 #world time: 1.0
-#init true
+init true
 #flop_on :D2
-world time: 0.1
+#world time: 0.1
 #unity "/cam0/glitch_j", 0.9
 #unity "/cam0/glitch_v", 0.0
 #livecode :begin
 
-#cam :top
+cam :top
 #unity "/endshard/throttle",0.1
 ##zoomout
 #eject_cpu_core
