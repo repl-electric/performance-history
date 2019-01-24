@@ -6,7 +6,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 #unity "/camtop/zoomin",10.0
 #end1
 
-unity "/attune/flow", 0.0
+unity "/attune/flow", 1.0
 
 stop
 #flop_on :D2
