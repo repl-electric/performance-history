@@ -8,7 +8,7 @@ init true
 #livecode :begin
 
 roots_chase target: :start, #force: 0.0
-flop_cc motion: (flow (x=0.25) 0.5 32).look, min: x
+flop_cc motion: (flow 0.25 0.5 32).look, min: x
 
 
 
