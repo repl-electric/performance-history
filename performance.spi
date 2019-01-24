@@ -1,6 +1,8 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, kick: 1
 #world time: 1.0
 init true
+cam :top
+stop
 #flop_on :D2
 #world time: 0.1
 #unity "/cam0/glitch_j", 0.9
@@ -9,7 +11,6 @@ init true
 
 #roots_chase target: :start, #force: 0.0
 flop_cc motion: (flow x=0.25 0.5 32).look, min: x
-
 
 cam :top
 #unity "/endshard/throttle",0.1
