@@ -3,7 +3,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 #init true
 #cam :top
 
-unity "/camtop/zoomout",2.0
+unity "/camtop/zoomout",0.0
 
 stop
 #flop_on :D2
