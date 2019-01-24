@@ -7,7 +7,7 @@ init true
 #unity "/cam0/glitch_v", 0.0
 #livecode :begin
 
-cam :top
+#cam :top
 #unity "/endshard/throttle",0.1
 ##zoomout
 #eject_cpu_core
