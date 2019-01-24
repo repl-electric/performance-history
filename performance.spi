@@ -14,7 +14,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 #eject_cpu_core
 
 #attune
-unity "/attune",1
+#unity "/attune",1
+unity "/attune/flow", 3.0
 
 #attune
 #  unity "/attune",1.0
