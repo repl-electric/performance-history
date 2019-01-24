@@ -10,7 +10,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 
 
 #unity "/camtop/zoomin",-10.0
-unity "/attune/flow", 3.5
+unity "/attune/flow", 5.5
 #eject_cpu_core
 
 #attune
