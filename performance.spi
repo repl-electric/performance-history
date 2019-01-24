@@ -1,7 +1,7 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, kick: 1
 ##world time: 1.0
-#  init true
-#  cam :top
+  init true
+  cam :top
 #stop
 #unity "/attune/flow", 1.0
 #unity "/attune"
@@ -15,7 +15,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 
 #attune
 #unity "/attune",1
-unity "/attune/flow", 4.5
+#unity "/attune/flow", 4.5
 
 #attune
 #  unity "/attune",1.0
