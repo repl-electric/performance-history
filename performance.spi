@@ -28,16 +28,16 @@ live_loop :Attune, sync: :unsyncable do; tick
       }
  #   puts "Z: #{z}"
     puts z
-    @steps ||= 0
-    if z > 0.29
-      @steps +=1
-      vortex force: 1.5*(z+(10*@steps))
-      vortex turb: 10.6*z
-    else
-      @steps = 0
-      vortex force: 1.6*z
-      vortex turb: 1.6*z
-    end
+    # @steps ||= 0
+    # if z > 0.29
+    #   @steps +=1
+    #   vortex force: 1.5*(z+(10*@steps))
+    #   vortex turb: 10.6*z
+    # else
+    #   @steps = 0
+    #   vortex force: 1.6*z
+    #   vortex turb: 1.6*z
+    # end
 
 
 
