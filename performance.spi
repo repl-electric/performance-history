@@ -36,7 +36,7 @@ live_loop :Attune, sync: :unsyncable do; tick
       vortex turb: 1.6*z
     end
 
-    vortex force: 2000
+    vortex force: 1000
 
 
     sleep 1/4.0
