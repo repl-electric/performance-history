@@ -11,7 +11,7 @@ flop_cc drive: 0.42
 
 at{
   sync :Attune
-  dark :C3, 127
+  glitch :C3, 127
   sleep 1.0/2.0
   overclock_on :a2
 
