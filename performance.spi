@@ -12,7 +12,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 # #unity "/fadeoutroots",1.0
 # unity "/fadeout",0
 
-eject_cpu_core
+#eject_cpu_core
 #world time: 1
 #attune
 #unity "/camtop/glitch_h", 0.0
@@ -30,7 +30,7 @@ eject_cpu_core
 
 
 
-#attune
+attune
 
 
 #fadeout_roots
