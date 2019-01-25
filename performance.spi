@@ -3,7 +3,7 @@ world time: 1
 #overclock_cc attune: 0.40
 
 cam :top
-stop
+#stop
 
 #stop
 
