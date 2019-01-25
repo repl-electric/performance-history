@@ -34,9 +34,9 @@ live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    #flop_cc motion: (flow 0.27, 0.5, 32,).look, pitch: 1.2
-    flip :a3,  sus: (cycle 0.0, 0.5, 1,).look, min: 0 if spread(1,1).look
-    flip :e3,  sus: (cycle 0.0, 0.5, 1,).rot(-1).look if spread(1,1).look
+    #flop_cc motion: (flow 0.27 0.5 32).look, pitch: 1.2
+    flip :a3,  sus: (cycle 0.0 0.5 1).look, min: 0 if spread(1,1).look
+    flip :e3,  sus: (cycle 0.0 0.5 1).rot(-1).look if spread(1,1).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -68,8 +68,8 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1, 1, 1, 1,  1, 1, 0, 0,  1, 0, 0, 0,  0, 0, 0, 0,)
-  with_bpm 127*(cycle 1,).look do
+  perc=(cycle 1 1 1 1  1 1 0 0  1 0 0 0  0 0 0 0)
+  with_bpm 127*(cycle 1).look do
     perc_machine perc.to_a
   end
 end
@@ -85,29 +85,29 @@ world time: 0.5
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:A3, :C5, :E4], 8],
-      [[:F4, :A6, :C5], 8],
-      [[:C3, :E5, :G4], 4],
-      [Zz, 4],
-      [[:A3, :C5, :E4], 8],
-      [[:E4, :G5, :B3], 8],
-      [[:F4, :A6, :C5, :E5], 8],
-      [[:C3, :E5, :G4], 8],
-      [Zz, 8],
+      [[:A3 :C5 :E4] 8]
+      [[:F4 :A6 :C5] 8]
+      [[:C3 :E5 :G4] 4]
+      [Zz 4]
+      [[:A3 :C5 :E4] 8]
+      [[:E4 :G5 :B3] 8]
+      [[:F4 :A6 :C5 :E5] 8]
+      [[:C3 :E5 :G4] 8]
+      [Zz 8]
 
-      [[:A3, :C5, :E4], 8],
-      [[:F4, :A6, :C5], 8],
-      [[:C3, :E5, :G4], 4],
-      [Zz, 4],
-      [[:A3, :C5, :E4], 4],
-      [[:A3, :C5, :E4], 4],
-      [[:E4, :G5, :B3], 4],
-      [[:E4, :G5, :B3], 4],
-      [[:G4, :B6, :D5, :F4], 8],
-      [[:C4, :E5, :G4], 8],
-      [Zz, 8],
+      [[:A3 :C5 :E4] 8]
+      [[:F4 :A6 :C5] 8]
+      [[:C3 :E5 :G4] 4]
+      [Zz 4]
+      [[:A3 :C5 :E4] 4]
+      [[:A3 :C5 :E4] 4]
+      [[:E4 :G5 :B3] 4]
+      [[:E4 :G5 :B3] 4]
+      [[:G4 :B6 :D5 :F4] 8]
+      [[:C4 :E5 :G4] 8]
+      [Zz 8]
 
-      REST4,
+      REST4
       )
     chd = score.look[0]
     sleeps = score.look[-1]
@@ -119,7 +119,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
     sleep sleeps/2.0
     #operator chd[-1],90, sus: 12
-    with_swing((flow 0.0, sleeps/4.0, 32,).look){
+    with_swing((flow 0.0 sleeps/4.0 32).look){
 #      voltage :e4
       operator chd[-2]+12, 90, sus: 12
     }
