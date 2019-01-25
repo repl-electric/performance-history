@@ -78,7 +78,7 @@ end
 roots_chase target: :start, force: 80.0, drag: 3
 
 #explode_cube
-world time: 0.05
+world time: 0.07
 
 
 live_loop :MachineInstructions, sync: :unsyncable do; tick
