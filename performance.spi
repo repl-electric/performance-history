@@ -30,7 +30,7 @@ overclock_cc attune: 0.3, drive: 0.29
 
 #unity "/camtop/zoomin",1.0
 
-unity "/camtop/zoomin",15.0
+unity "/camtop/zoomin",12.0
 
 #fx reverb: 0.70, drive:
 
