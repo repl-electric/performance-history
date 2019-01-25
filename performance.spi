@@ -151,4 +151,5 @@ live_loop(:unsyncable)do;sleep 1.0;end
 
 
 
-fadeout
+#fadeout
+vol 0.1
