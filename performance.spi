@@ -11,18 +11,18 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, k
 #
 at{
   sync :Attune
-  voltage :c4,127, sus: 4
-  voltage :f4,127
+ # voltage :c4,127, sus: 4
+ # voltage :f4,127
   operator :C4,110, sus: 12
-  resonate :A1, sus: 12
+ # resonate :A1, sus: 12
   sleep 3
   sleep 1.0/2.0
-  overclock_off :a2
+  overclock_on :a2
 }
 
 
 
-  glitch :ds4, 127
+#  glitch :ds4, 127
 stop
 
 
