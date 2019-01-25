@@ -74,7 +74,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 #eject_cpu_core
 
 live_loop :Attune, sync: :unsyncable do; tick
-stop
+#stop
   silence?
   overclock_cc oct: (cycle 0 12 24 19).look
   overclock :D3,80,sus:4
@@ -104,7 +104,6 @@ stop
 
     sleep 1/4.0
     sleep 1/4.0
-
 
 
     sleep 1/4.0
