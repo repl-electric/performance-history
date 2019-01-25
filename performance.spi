@@ -30,7 +30,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     puts z
     @steps ||= 0
     if z > 0.29
-      vortex force: (1.5*z)+(@steps*@steps)*0.3
+      vortex force: (1.4*z)+(@steps*@steps)*0.3
 #      vortex turb:  (1.5*z)+(@steps*@steps)*0.01
       @steps +=1
     else
