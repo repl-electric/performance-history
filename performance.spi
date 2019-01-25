@@ -66,11 +66,11 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 #     unity "/world/time", 0.1
 
 
-#attune
+attune
 
 #stop
 
-world time: 1
+#world time: 1
 #eject_cpu_core
 
 live_loop :Attune, sync: :unsyncable do; tick
