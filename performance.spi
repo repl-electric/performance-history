@@ -18,9 +18,9 @@ at{
   sleep 3
   sleep 1.0/2.0
   #overclock_off :a2
-  overclock_on :a2
+  overclock_off :a2
 }
-
+#overclock_cc motion: 0.54
 
 
 #  glitch :ds4, 127
