@@ -2,7 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #explode_cube
 
 #world time: 1.00
-overclock_cc attune: 0.3
+overclock_cc attune: 0.3, drive: 0.29
 
 #recover
 
@@ -33,6 +33,7 @@ live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
   with_bpm 127*2 do
+    kal :f4
     flop_cc motion: (flow 0.27, 0.5, 32,).look
     flip :a3,127, sus: (cycle 0.25, 0.5, 1,).look if spread(7,11).look
     flip :e3,127, sus: (cycle 0.25, 0.5, 1,).rot(-1).look if spread(3,8).look
