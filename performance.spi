@@ -2,7 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #init true && start_init
 #cam :top
 world time: 1
-unity "/camptop/arm/jitter",0.0
+unity "/camptop/arm/jitter",100.0
 unity "/camptop/pivot/jitter",100.0
 
 stop
