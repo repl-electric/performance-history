@@ -28,7 +28,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 # fadeout_roots
 #vol 0
 
-livecode :end
+#livecode :end
 
 #unity "/camtop/zoomin",-100.0
 
