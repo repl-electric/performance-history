@@ -63,7 +63,7 @@ end
 
 #create_aura
 cam :chase
-
+zoomoout
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
