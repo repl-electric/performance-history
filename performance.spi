@@ -62,6 +62,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
 end
 
 #create_aura
+#cam :chase
 
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
@@ -97,7 +98,8 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     sleep sleeps/2.0
     operator chd[-1], sus: 12
 
-    resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
+    control_unit root(chd), 10,sus: sleeps, drive: 0.0, sat: 0.0
+
 
 
     with_swing((flow 0.0 sleeps/4.0 32).look){
