@@ -13,22 +13,22 @@ at{
   sync :Attune
  # voltage :c4,127, sus: 4
  # voltage :f4,127
-  operator :c6,100, sus: 12
-  flop_cc motion: 0
+#  operator :c6,100, sus: 12
+#  flop_cc motion: 0
  # resonate :A1, sus: 12
   sync :Attune#  sleep 3
   sleep 1.0/2.0
 #  overclock_off :a3
-  overclock_on :a3
+#  overclock_on :a3
 }
 #sleep 4
 #overclock_x
-#overclock_cc motion: 0.54
+#overclock_cc motion: 0.27
 
 
 #  glitch :ds4, 127
 #stop
-
+zoomout
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence!
