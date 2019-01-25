@@ -28,7 +28,7 @@ at{
 
 #  glitch :ds4, 127
 #stop
-zoomout
+#zoomout
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence!
@@ -83,6 +83,8 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
 
 
+    control_unit root(chd), 10,sus: sleeps, drive: 0.0, sat: 0.0
+    create_sea
 
     sleep sleeps/2.0
     operator chd[-1],90, sus: 12
