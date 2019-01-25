@@ -7,7 +7,10 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 
 #stop
 
-unity "/camtop/zoomin",15.0
+#unity "/camtop/zoomin",15.0
+
+fx reverb: 1.00, tube: 1.00
+
 
 #recover
 
@@ -43,7 +46,7 @@ at{
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
-  with_bpm 127 do
+  with_bpm 127*4 do
     #flop_cc motion: (flow 0.27 0.5 32).look, pitch: 1.2
     flip :a3,  sus: (cycle 0.0 0.5 1).look, min: 0 if spread(1,1).look
     flip :e3,  sus: (cycle 0.0 0.5 1).rot(-1).look if spread(1,1).look
