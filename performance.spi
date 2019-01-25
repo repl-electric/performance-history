@@ -62,8 +62,8 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
 end
 
 #create_aura
-cam :chase
-zoomoout
+#cam :chase
+zoomout
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
