@@ -36,8 +36,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 
 #hold
 #I'm not sure.....
-eject_cpu_core
-#attune
+#eject_cpu_core
+attune
 
 
 live_loop :Attune, sync: :unsyncable do; tick
