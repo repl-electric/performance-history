@@ -28,7 +28,7 @@ overclock_cc attune: 0.3, drive: 0.29
 #flop_x
 #roots_chase target: :spiral,  force: 80.0, drag: 1.3
 
-unity "/camtop/zoomin"
+unity "/camtop/zoomin",1.0
 
 fx reverb: 0.70, drive:
 
