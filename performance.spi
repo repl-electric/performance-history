@@ -21,7 +21,7 @@ at{
   overclock_on :a3
 }
 sleep 4
-overclock_off :A3
+overclock_x :A3
 #overclock_cc motion: 0.54
 
 
