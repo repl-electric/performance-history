@@ -12,13 +12,13 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 # #unity "/fadeoutroots",1.0
 # unity "/fadeout",0
 
-#eject_cpu_core
+eject_cpu_core
 #world time: 1
 #attune
 #unity "/camtop/glitch_h", 0.0
 
 #vol 0.0
-create_sea -2
+#create_sea -2
 
 # def fadeout_roots()
 #   unity "/fadeoutroots",1.0
@@ -28,10 +28,7 @@ create_sea -2
 # fadeout_roots
 #vol 0
 
-
-
-attune
-
+#attune
 
 #fadeout_roots
 #unity "/fadeoutroots",1.0
