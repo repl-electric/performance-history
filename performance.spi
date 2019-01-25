@@ -8,9 +8,9 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 
 #stop
 #livecode :end
-eject_cpu_core
+#eject_cpu_core
 #stop
-# attune
+attune
 stop
 # #vol 0
 # #livecode :end
