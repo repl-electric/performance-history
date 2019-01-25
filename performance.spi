@@ -16,7 +16,7 @@ at{
   voltage :f3,127
   resonate :A1, sus: 12
   sleep 1.0/2.0
-  overclock_off :a2
+  overclock_on :a2
 }
 
 
