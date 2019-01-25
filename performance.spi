@@ -77,6 +77,9 @@ end
 #cam :chase
 roots_chase target: :start, force: 80.0, drag: 3
 
+explode_cube
+
+
 
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
