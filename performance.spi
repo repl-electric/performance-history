@@ -10,7 +10,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #attune
 
 23.times{
-  unity "/attune/flow", rand(-1.0)
+  unity "/attune/flow", rand(0.0)
   sleep 1
 }
 
