@@ -77,7 +77,7 @@ end
 #cam :chase
 roots_chase target: :start, force: 80.0, drag: 3
 
-#explode_cube
+explode_cube
 world time: 0.5
 
 
