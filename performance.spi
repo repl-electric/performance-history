@@ -53,7 +53,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/2.0
     at{
       sleep 0.5
-      if z < 0.3
+      if z < 0.29
         vortex throttle: 0.1
       end
       }
