@@ -9,7 +9,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 
 
 vortex force: 1
-vortex turb: 0
+vortex turb: 100
 
 
 #flop_x
