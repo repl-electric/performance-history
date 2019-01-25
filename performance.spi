@@ -22,7 +22,7 @@ fadeout_roots
 
 
 # 23.times{
-   unity "/attune/flow", 3.5
+   unity "/attune/flow", 2.5
 #   sleep 1
 # }
 
@@ -52,8 +52,8 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
-  with_bpm 127*(cycle 1).look do
+  perc=(cycle 0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,)
+  with_bpm 127*(cycle 1,).look do
     perc_machine perc.to_a
   end
 end
@@ -61,7 +61,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[_] 8]
+      [[_], 8],
       )
     chd = score.look[0]
     sleeps = score.look[-1]
