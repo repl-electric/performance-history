@@ -6,7 +6,10 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 
 #eject_cpu_core
 
-attune
+#attune
+
+vol 0
+
 
 
 #attune
