@@ -18,8 +18,8 @@ at{
  # resonate :A1, sus: 12
   sleep 3
   sleep 1.0/2.0
-  overclock_off :a3
   overclock_on :a3
+#  overclock_on :a3
 }
 sleep 4
 overclock_x
@@ -31,7 +31,7 @@ overclock_x
 
 
 live_loop :Attune, sync: :unsyncable do; tick
-  silence!
+  silence?
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
     #flop_cc motion: (flow 0.27 0.5 32).look, pitch: 1.2
