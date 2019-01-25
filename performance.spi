@@ -1,59 +1,9 @@
-load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 1
-#world time: 1
-#overclock_cc attune: 0.40
-
-#cam :top
-#stop
-
-#stop
-
-#unity "/camtop/zoomin",15.0
-
-#fx reverb: 1.00, tube: 1.00
-
-
-#eject_cpu_core
-#attune
-
-
-#recover
-
-# at{
-#   sync :Attune
-#   sleep 1.25
-#   flop_on :d3
-# }
-
-#flop_cc drive: 0.00
-#
-at{
-  sync :Attune
- # voltage :c4,127, sus: 4
- # voltage :f4,127
-#  operator :c6,100, sus: 12
-#  flop_cc motion: 0
- # resonate :A1, sus: 12
-  sync :Attune#  sleep 3
-  sleep 1.0/2.0
-#  overclock_off :a3
-#  overclock_on :a3
-}
-#sleep 4
-#overclock_x
-#overclock_cc motion: 0.27
-
-
-#  glitch :ds4, 127
-#stop
-#zoomout
+load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
+init true && start_init
 
 live_loop :Attune, sync: :unsyncable do; tick
-  silence?
   zero_delay [2,5,6].shuffle
-  with_bpm 127*6 do
-    #flop_cc motion: (flow 0.27 0.5 32).look, pitch: 1.2
-    flip :a3,  sus: (cycle 0.0 0.5 1).look, min: 0 if spread(1,1).look
-    flip :e3,  sus: (cycle 0.0 0.5 1).rot(-1).look if spread(1,1).look
+  with_bpm 127 do
 
     sleep 1/4.0
     sleep 1/4.0
@@ -62,97 +12,33 @@ live_loop :Attune, sync: :unsyncable do; tick
 
     sleep 1/4.0
     sleep 1/4.0
-
-    flop :g4, sus: 2
-
     sleep 1/4.0
     sleep 1/4.0
-
-    if spread(3,8).look
-    flop :c4, sus: 2
-    else
-      flop :e3, sus: 2
-    end
 
     sleep 1/2.0
     sleep 1/2.0
     sleep 1/2.0
-    fn = [(method :flop), (method :flip) ].choose
-    fn.( :C4, sus: 1/2.0)
     sleep 1/2.0
   end
 end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1 1 1 1  1 1 0 0  1 0 0 0  0 0 0 0)
+  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
   with_bpm 127*(cycle 1).look do
     perc_machine perc.to_a
   end
 end
 
-#cam :chase
-#roots_chase target: :start, force: 80.0, drag: 3
-
-#explode_cube
-#explode_rocks
-
-
-
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      [[:A3 :C5 :E4] 8]
-      [[:E4 :G5 :B3] 8]
-      [[:F4 :A6 :C5 :E5] 8]
-      [[:C3 :E5 :G4] 8]
-      [Zz 8]
-
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      [[:A3 :C5 :E4] 4]
-      [[:A3 :C5 :E4] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:G4 :B6 :D5 :F4] 8]
-      [[:C4 :E5 :G4] 8]
-      [Zz 8]
-
-      REST4
+      [[_] 8]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    tick_reset_all
-
-    resonate_on chd[0]+12,1, sus: sleeps, pads: [0,1,2,3], sat: 0, drive: 0
-    stop
-
-    control_unit root(chd), 10,sus: sleeps, drive: 0.0, sat: 0.0
-#    create_sea
-
-    sleep sleeps/2.0
-    #operator chd[-1],90, sus: 12
-    with_swing((flow 0.0 sleeps/4.0 32).look){
-#      voltage :e4
-      operator chd[-2]+12, 90, sus: 12
-    }
-
-    sleep sleeps/2.0
+    sleep sleeps
   end
 end
 
 live_loop(:unsyncable)do;sleep 1.0;end
-
-#attune
-livecode :end
-#unity "/attune/flow", 1.0
-#unity "/fadeout", 0
-#end2
-#fadeout
-#vol 0
