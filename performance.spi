@@ -18,7 +18,7 @@ at{
   sleep 3
   sleep 1.0/2.0
   #overclock_off :a2
-  overclock_on :a2
+  overclock_on :a3
 }
 sleep 4
 overclock_off :A2
