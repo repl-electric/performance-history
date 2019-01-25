@@ -4,7 +4,7 @@ init true && start_init
 
 #livecode :end
 #eject_cpu_core
-
+stop
 # attune
 
 # #vol 0
