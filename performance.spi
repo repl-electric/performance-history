@@ -38,9 +38,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 #I'm not sure.....
 #eject_cpu_core
 #attune
-unity "/lights/up",0.0
-
-colorb 1
+#unity "/lights/up",0.0
+colorb 0
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
