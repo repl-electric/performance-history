@@ -15,12 +15,15 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #eject_cpu_core
 #world time: 1
 #attune
-#unity "/camtop/glitch_a", 1.0
+unity "/camtop/glitch_a", 1.0
 #unity "/camtop/glitch_h", 1.0
 
 
 #fadeout_roots
 #unity "/fadeoutroots",1.0
+
+
+
 
 #livecode :end
 #unity "/attune/flow", 1.0
