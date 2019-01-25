@@ -18,7 +18,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 # }
 
 
-voltage :f3,127
+voltage :f4,127
 
 stop
 
