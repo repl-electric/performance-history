@@ -35,7 +35,6 @@ def attune
   unity "/attune/flow", 4.5
   unity "/camtop/zoomin",15.0
   unity "/attune",1
-
   unity "/camtop/glitch_v", 0.0
   $pmode = 4
 end
