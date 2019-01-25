@@ -28,7 +28,7 @@ live_loop :Attune, sync: :unsyncable do; tick
       }
  #   puts "Z: #{z}"
     puts z
-    if z > 0.28
+    if z > 0.29
       vortex force: 10.5*(z*15)
       vortex turb: 10.6*z
     else
