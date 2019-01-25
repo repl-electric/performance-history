@@ -22,7 +22,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 
 def fadeout_roots()
   unity "/fadeoutroots",1.0
-  unity "/attune/flow", -20.0
+  unity "/attune/flow", 10.0
 end
 
 fadeout_roots
@@ -75,8 +75,8 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,)
-  with_bpm 127*(cycle 1,).look do
+  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
+  with_bpm 127*(cycle 1).look do
     perc_machine perc.to_a
   end
 end
@@ -84,7 +84,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[_], 8],
+      [[_] 8]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
