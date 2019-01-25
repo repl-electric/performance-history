@@ -26,7 +26,7 @@ cam :top
 # end
 # livecode :end
 # fadeout_roots
-vol 0
+#vol 0
 
 
 
