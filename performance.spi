@@ -54,7 +54,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
     star size: 0
     unity "/lights/end", 7.5
     sleep 0.125
-#    unity "/lights/up",0.0
+    unity "/lights/up",0.0
     sleep 10/2.0
 #    unity "/endshard/throttle",0.1
     sleep 10/2.0
