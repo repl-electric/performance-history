@@ -2,7 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #explode_cube
 
 world time: 0.27
-overclock_cc attune: 0.32
+overclock_cc attune: 0.34
 
 
 
