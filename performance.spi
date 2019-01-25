@@ -1,5 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 1
-
+world time: 0.1
+stop
 
 # at{
 #   sync :Attune
@@ -75,11 +76,11 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
 end
 
 #cam :chase
-roots_chase target: :start, force: 80.0, drag: 3
+#roots_chase target: :start, force: 80.0, drag: 3
 
 explode_cube
 explode_rocks
-world time: 0.5
+
 
 
 live_loop :MachineInstructions, sync: :unsyncable do; tick
