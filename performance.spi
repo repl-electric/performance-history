@@ -13,7 +13,7 @@ at{
   sync :Attune
  # voltage :c4,127, sus: 4
  # voltage :f4,127
-  operator :bs5,102, sus: 12
+  operator :c5,102, sus: 12
   flop_cc motion: 0
  # resonate :A1, sus: 12
   sleep 3
