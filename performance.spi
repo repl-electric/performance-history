@@ -22,7 +22,7 @@ at{
 
 
 
-  glitch :g3, 127
+  glitch :gs3, 127
 stop
 
 
