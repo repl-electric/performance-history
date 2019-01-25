@@ -12,8 +12,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, k
 at{
   sync :Attune
   voltage :c4,127, sus: 4
-
-  voltage :f3,127
+  voltage :f4,127
   resonate :A1, sus: 12
   sleep 3
   sleep 1.0/2.0
