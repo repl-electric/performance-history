@@ -9,7 +9,11 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 
 #unity "/camtop/zoomin",15.0
 
-fx reverb: 1.00, tube: 1.00
+#fx reverb: 1.00, tube: 1.00
+
+
+eject_cpu_core
+
 
 
 #recover
