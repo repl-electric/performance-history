@@ -15,6 +15,7 @@ at{
   glitch :C4, 127
   voltage :f3,127
   resonate :A1, sus: 12
+  sleep 3
   sleep 1.0/2.0
   overclock_on :a2
 }
