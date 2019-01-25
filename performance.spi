@@ -22,7 +22,7 @@ fadeout_roots
 
 
  23.times{
-   unity "/attune/flow", [-1.5,1.5].choose
+   unity "/attune/flow", 1
    sleep 1
  }
 
