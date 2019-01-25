@@ -38,7 +38,7 @@ def attune
   $pmode = 4
 end
 
-attune
+unity "/camtop/zoomin",-100.0
 
 #fadeout_roots
 #unity "/fadeoutroots",1.0
