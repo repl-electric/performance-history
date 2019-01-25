@@ -1,5 +1,9 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 1
-explode_cube
+#explode_cube
+
+world time: 0.1
+
+
 
 stop
 
