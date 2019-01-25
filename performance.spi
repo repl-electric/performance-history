@@ -18,11 +18,11 @@ at{
  # resonate :A1, sus: 12
   sleep 3
   sleep 1.0/2.0
-  overclock_off :a3
+#  overclock_off :a3
 #  overclock_on :a3
 }
-sleep 4
-overclock_x
+#sleep 4
+#overclock_x
 #overclock_cc motion: 0.54
 
 
