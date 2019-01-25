@@ -28,7 +28,7 @@ live_loop :Attune, sync: :unsyncable do; tick
       vortex force: 10.5*(z*10)
       vortex turb: 4.6*z
     else
-      vortex force: 2.5*z
+      vortex force: 1.5*z
       vortex turb: 1.6*z
     end
 
