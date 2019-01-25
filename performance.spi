@@ -1,6 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
-#init true && start_init
-#cam :top
+init true && start_init
+cam :top
 
 #livecode :end
 #eject_cpu_core
@@ -17,7 +17,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #attune
 
 #fadeout_roots
-unity "/fadeoutroots",1.0
+#unity "/fadeoutroots",1.0
 
 #livecode :end
 #vol 0
