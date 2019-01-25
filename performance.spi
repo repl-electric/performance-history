@@ -151,6 +151,6 @@ live_loop(:unsyncable)do;sleep 1.0;end
 
 
 livecode :end
-unity "/attune/flow", 20.0
+unity "/attune/flow", 200.0
 #fadeout
 vol 0.1
