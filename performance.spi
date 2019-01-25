@@ -14,6 +14,7 @@ at{
  # voltage :c4,127, sus: 4
  # voltage :f4,127
   operator :bs5,102, sus: 12
+  flop_cc motion: 0
  # resonate :A1, sus: 12
   sleep 3
   sleep 1.0/2.0
