@@ -30,7 +30,7 @@ overclock_cc attune: 0.3, drive: 0.29
 
 unity "/camtop/zoomin",1.0
 
-fx reverb: 0.70, drive:
+#fx reverb: 0.70, drive:
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
