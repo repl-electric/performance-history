@@ -3,7 +3,6 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, k
 #overclock_x
 #stop
 at{
-
   # sync :Attune
   # sleep 1/6.0
   # flop_on :b3
@@ -19,7 +18,7 @@ at{
 }
 
 # A B C *D E F  *G  A B C
-#overclock :A3,1,sus: 12
+overclock :A3,1,sus: 12
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence!
