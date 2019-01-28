@@ -11,7 +11,7 @@ at{
   # overclock_off :A3, 15
   # sleep 3
 
-   overclock_on :e3, 15
+   overclock_on :f3, 15
 #  sleep 1/6.0
 #  flop_on :b3
 }
@@ -59,7 +59,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:g4] 4]
+      [[:f4] 4]
 
 #      [[:fs3] 8]
 
