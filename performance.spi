@@ -3,9 +3,9 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, k
 #overclock_x
 #stop
 at{
-  sync :Attune
-   sleep 3
-   flop_on :g3
+#  sync :Attune
+   # sleep 3
+   # flop_on :g3
   # sleep 3
   # operator :B5, 95
   # overclock_off :A3, 15
@@ -88,7 +88,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    resonate chd,10, sus: sleeps, pads: [1], sat: 0, drive: 0
+    resonate chd,10, sus: sleeps, pads: [0], sat: 0, drive: 0
 
     sleep sleeps/2.0
     operator chd[-1]+[9,7].choose,95, sus: 8
