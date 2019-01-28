@@ -11,7 +11,7 @@ at{
   # overclock_off :A3, 15
   # sleep 3
 
-   overclock_on :f3, 15
+#   overclock_on :f3, 15
 #  sleep 1/6.0
 #  flop_on :b3
 }
@@ -22,7 +22,7 @@ at{
 live_loop :Attune, sync: :unsyncable do; tick
   silence!
   zero_delay [2,5,6].shuffle
-  overclock :A3, sus: 2
+  overclock f:3, sus: 2
   with_bpm 127 do
     #tick_reset_all
     flop_cc motion: (flow 0.0 0.57 32).look
