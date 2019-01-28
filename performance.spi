@@ -89,7 +89,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    resonate chd,10, sus: sleeps, pads: [2], sat: 0, drive: 0
+    resonate chd,10, sus: sleeps, pads: [3], sat: 0, drive: 0
 
     sleep sleeps/2.0
     operator chd[-1]+[9,7].choose,95, sus: 8
