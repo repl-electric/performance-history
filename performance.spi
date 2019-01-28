@@ -4,7 +4,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, k
 at{
   sync :Attune
   sleep 1/6.0
-  flop_on :b3
+#  flop_on :b3
 }
 
 # A B C *D E F  *G  A B C
@@ -50,7 +50,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:d3] 8]
+      [[:g3] 8]
       # [[:A3 :C5 :E4] 8]
       # [[:F4 :A6 :C5] 8]
       # [[:C3 :E5 :G4] 4]
