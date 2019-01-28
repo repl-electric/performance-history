@@ -5,7 +5,7 @@ at{
 
   sync :Attune
   sleep 3
-  operator :B5, 93
+  operator :B5, 95
 
 #  sleep 1/6.0
 #  flop_on :b3
