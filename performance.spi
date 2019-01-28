@@ -3,8 +3,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, k
 
 at{
   sync :Attune
-  sleep 1.25
-#  flop_on :a3
+  sleep 1/6.0
+  flop_on :b3
 }
 
 # A B C *D E F  *G  A B C
@@ -16,13 +16,14 @@ live_loop :Attune, sync: :unsyncable do; tick
     #tick_reset_all
     flop_cc motion: (flow 0.27 0.57 32).look
     flop :a3,127, sus: (cycle 0.25 0.5 1).look
+    flop :a3,127, sus: (cycle 0.25 0.5 1).look
 
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
 
-    alu (cycle :G3).look if spread(1,4).look
+#    alu (cycle :G3).look if spread(1,4).look
 
 
     sleep 1/4.0
