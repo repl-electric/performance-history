@@ -1,4 +1,10 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 1
+
+  unity "/color1/b",rand*10
+  unity "/color2/b",0
+  unity "/color3/b",rand*10
+
+stop
 #colorb 800
 
 
@@ -62,9 +68,6 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #stop
 unity "/lights/up", 7.5
 live_loop :Attune, sync: :unsyncable do; tick
-  unity "/color1/b",rand*10
-unity "/color2/b",rand*10
-unity "/color3/b",rand*10
 
   silence?
   zero_delay [2,5,6].shuffle
