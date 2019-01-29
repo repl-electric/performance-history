@@ -10,9 +10,9 @@ unity "/linecolor/b",1
 
 
 
-unity "/linecolor/cube/s",0
-unity "/linecolor/cube/b",0
-unity "/linecolor/cube/h",0
+unity "/linecolor/cube/s",1
+unity "/linecolor/cube/b",1
+unity "/linecolor/cube/h",1
 
 
 
