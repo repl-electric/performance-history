@@ -60,7 +60,8 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
   perc=(cycle 0, 0, 1, 1,  1, 1, 0, 1,  1, 0, 0, 0,  0, 0, 0, 0,)
   with_bpm 127*(cycle 1,).look do
     glitch :C3,100
-    perc_machine perc.to_a
+    #perc_machine perc.to_a
+    sleep 1/4.0
   end
 end
 
