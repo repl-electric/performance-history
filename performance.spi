@@ -35,7 +35,7 @@ live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
   #  overclock :e4,5, sus: 2 if spread(1,4).look
-  operator :a4,105, sus: 3
+  operator :c4,105, sus: 3
   overclock :f4, sus: 3 if spread(1,1).look
   overclock_cc oct: (cycle 0 -12 0 19 0 12).look
 
