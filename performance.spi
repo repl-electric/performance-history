@@ -19,6 +19,14 @@ at{
 # A B C *D E F  *G  A B C
 #overclock :A3,1,sus: 12
 
+at{
+  sync :Attune
+  sleep 1.0/6.0
+  overclock_on :A3
+
+}
+
+
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
