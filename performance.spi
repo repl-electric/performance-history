@@ -18,7 +18,8 @@ at{
 #init true
 #zoomout
 #cam :top
-heat :A2
+resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
+
 # A B C *D E F  *G  A B C
 #overclock :A3,1,sus: 12
 
