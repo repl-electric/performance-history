@@ -40,7 +40,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #world time: 1
 #init true
 #unity "/fadeout",0.0
-#colorb 0.9
+colorb 0.9
 eject_cpu_core
 #unity "/fadeout",2.0
 #cam :top
