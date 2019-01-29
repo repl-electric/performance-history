@@ -52,7 +52,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #unity "/fadeout",2.0
 #cam :top
 #vol 0
-init
+#init
+cam :top
 stop
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
