@@ -15,7 +15,7 @@ at{
 #  sleep 1/6.0
 #  flop_on :b3
 }
-init
+init true
 # A B C *D E F  *G  A B C
 #overclock :A3,1,sus: 12
 
