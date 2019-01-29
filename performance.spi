@@ -22,7 +22,7 @@ at{
 at{
   sync :Attune
   sleep 1.5
-  overclock_on :F3
+  overclock_on :E3
 }
 
 
