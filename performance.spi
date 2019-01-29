@@ -39,7 +39,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #      [[:C3 :E5 :G4] 4]
 
 colorb 0.0
-
+stop
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
