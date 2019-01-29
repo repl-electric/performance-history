@@ -1,5 +1,5 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 1
-colorb -10.9
+colorb 0.9
 stop
 #init true && start_init
 #overclock_x
