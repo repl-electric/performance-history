@@ -16,7 +16,9 @@ at{
 #  flop_on :b3
 }
 #init true
-zoomout
+#zoomout
+#cam :top
+heat :A2
 # A B C *D E F  *G  A B C
 #overclock :A3,1,sus: 12
 
