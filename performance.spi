@@ -2,7 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #init true && start_init
 #overclock_x
 #stop
-at{
+#at{
 #  sync :Attune
    # sleep 3
    # flop_on :g3
@@ -14,7 +14,7 @@ at{
 #   overclock_on :f3, 15
 #  sleep 1/6.0
 #  flop_on :b3
-}
+#}
 #init true
 #zoomout
 #cam :top
