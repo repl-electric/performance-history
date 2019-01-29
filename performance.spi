@@ -63,10 +63,8 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
     #perc_machine perc.to_a
     #sleep 1.0/2.0
     with_swing -0.1 {
-      glitch :f3,100 if spread(3,9).look
+      glitch :f3,100 if spread(4,9).look
     }
-
-
     sleep 1.0/2.0
   end
 end
