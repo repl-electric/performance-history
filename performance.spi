@@ -38,7 +38,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #      [[:F4 :A6 :C5] 8]
 #      [[:C3 :E5 :G4] 4]
 
-colorb 0.1
+colorb 1.1
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
