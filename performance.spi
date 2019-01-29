@@ -10,6 +10,13 @@ unity "/linecolor/b",1
 
 
 
+unity "/linecolor/cube/s",0
+unity "/linecolor/cube/b",opts[:b] || 1.0+rand*f
+unity "/linecolor/cube/h",opts[:h] || 1.0
+
+
+
+
 stop
 #colorb 800
 
