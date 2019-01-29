@@ -15,8 +15,8 @@ unity "/linecolor/cube/b",1
 unity "/linecolor/cube/h",1
 
 
-unity "/fadeout",0.0
-
+#unity "/fadeout",0.0
+zoom_in
 
 
 stop
