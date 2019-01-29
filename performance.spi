@@ -53,8 +53,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #cam :top
 #vol 0
 #init
-cam :top
-stop
+#cam :top
+#stop
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
