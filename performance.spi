@@ -62,6 +62,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
 
     #perc_machine perc.to_a
     #sleep 1.0/2.0
+    glitch :g3, 80 if spread(4,8).look
     with_swing((flow 0.0 1/4.0 16).look){
       glitch :g3, 80 if spread(4,8).look
       glitch_cc corode: 0
