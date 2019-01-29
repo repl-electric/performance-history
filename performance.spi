@@ -22,9 +22,8 @@ at{
 at{
   sync :Attune
   sleep 1.5
-  overclock_on :E3
+#  overclock_on :E3
 }
-
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence!
@@ -67,7 +66,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:a4] 4]
+      [[:e4] 4]
 
 #      [[:fs3] 8]
 
