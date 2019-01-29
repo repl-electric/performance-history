@@ -4,7 +4,7 @@ unity "/color1/b",1
 unity "/color2/b",1
 unity "/color3/b",1
 
-unity "/linecolor/h",1
+unity "/linecolor/h",0
 unity "/linecolor/s",1
 unity "/linecolor/b",1
 
@@ -16,7 +16,7 @@ unity "/linecolor/cube/h",1
 
 
 #unity "/fadeout",0.0
-zoom_in
+#zoom_in
 
 
 stop
