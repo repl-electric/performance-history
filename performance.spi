@@ -40,7 +40,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #init
 #cam :top
 #cam :top
-world time: 1
+#world time: 1
+attune
 #eject_cpu_core
 #world time: 1
 #init true
