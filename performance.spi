@@ -41,8 +41,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #cam :top
 #cam :top
 #world time: 1
-attune
-    unity "/lights/up",0.0
+#attune
+unity "/lights/up",0.0
 #eject_cpu_core
 #world time: 1
 #init true
