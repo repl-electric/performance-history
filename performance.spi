@@ -19,11 +19,11 @@ at{
 # A B C *D E F  *G  A B C
 #overclock :A3,1,sus: 12
 
-at{
-  sync :Attune
-  sleep 1.5
-#  overclock_on :E3
-}
+# at{
+#   sync :Attune
+#   sleep 1.5
+# #  overclock_on :E3
+# }
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence!
@@ -66,7 +66,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-      [[:a2] 4]
+      [[:b2] 4]
 
 #      [[:fs3] 8]
 
