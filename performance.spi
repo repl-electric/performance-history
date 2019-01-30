@@ -1,11 +1,14 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 1
-init
-cam :top
+#init
+#cam :top
 
 #colort  20.0
+
+
 stop
 unity "/camtop/color1/b",1
 live_loop :test do
+stop
   tick
 
   sleep 1
