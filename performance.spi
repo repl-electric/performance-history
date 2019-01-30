@@ -1,10 +1,15 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 1
 #init
 
-cam :top
+#cam :top
+
 #colort  20.0
 
-#unity "/camtop/color1/b",0.0
+
+
+unity "/camtop/color1/b",rand
+unity "/camtop/color1/s",rand
+unity "/camtop/color1/h",rand
 
 
 stop
