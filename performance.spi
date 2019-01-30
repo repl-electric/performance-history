@@ -19,6 +19,9 @@ unity "/camtop/color3/s",rand*2
 unity "/camtop/color3/h",rand*2
 
 
+unity "/fadeout",0.5
+
+
 
 stop
 
