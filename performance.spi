@@ -7,7 +7,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 
 
 
-unity "/endroots/target/rb",1
+
 stop
 
 
@@ -18,6 +18,9 @@ stop
   tick
 
   sleep 1
+
+  unity "/endroots/target/#{(ring 'lt', 'rb', 'rt', 'lb')}",1
+
 
 
 unity "/camtop/color1/s",rand*1
