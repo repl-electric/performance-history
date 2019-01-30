@@ -17,7 +17,7 @@ live_loop :test do
 stop
   tick
 
-  sleep 1
+  sleep 3
 
   unity "/endroots/target/#{(ring 'lt', 'rb', 'rt', 'lb').look}",1
 
