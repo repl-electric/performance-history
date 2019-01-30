@@ -8,15 +8,15 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 
 
 unity "/camtop/color1/b",rand*2
-unity "/camtop/color1/s",rand
-unity "/camtop/color1/h",rand
-unity "/camtop/color2/b",rand
-unity "/camtop/color2/s",rand
-unity "/camtop/color2/h",rand
+unity "/camtop/color1/s",rand*2
+unity "/camtop/color1/h",rand*2
+unity "/camtop/color2/b",rand*2
+unity "/camtop/color2/s",rand*2
+unity "/camtop/color2/h",rand*2
 
-unity "/camtop/color3/b",rand
-unity "/camtop/color3/s",rand
-unity "/camtop/color3/h",rand
+unity "/camtop/color3/b",rand*2
+unity "/camtop/color3/s",rand*2
+unity "/camtop/color3/h",rand*2
 
 
 
