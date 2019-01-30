@@ -8,11 +8,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 
 
 
-stop
 
-
-stop
-unity "/camtop/color1/b",1
 live_loop :test do
 
   tick
