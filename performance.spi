@@ -18,10 +18,9 @@ stop
   tick
 
   sleep 3
-
-  unity "/endroots/target/#{(ring 'lt', 'rb', 'rt', 'lb').look}",1
-
-
+  p = (ring 'lt', 'rb', 'rt', 'lb').look
+  puts p
+  unity "/endroots/target/#{p}",1
 
 unity "/camtop/color1/s",rand*1
   unity "/camtop/color1/h",rand*1
