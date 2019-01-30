@@ -9,7 +9,7 @@ unity "/camtop/color1/b",1
 live_loop :test do
   tick
 
-  sleep 3
+  sleep 1
 
 
 unity "/camtop/color1/s",rand*2
