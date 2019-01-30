@@ -19,7 +19,7 @@ stop
 
   sleep 1
 
-  unity "/endroots/target/#{(ring 'lt', 'rb', 'rt', 'lb')}",1
+  unity "/endroots/target/#{(ring 'lt', 'rb', 'rt', 'lb').look}",1
 
 
 
