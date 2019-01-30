@@ -12,8 +12,8 @@ live_loop :test do
   sleep 1
 
 
-unity "/camtop/color1/s",rand*2
-#unity "/camtop/color1/h",rand*10
+#unity "/camtop/color1/s",rand*2
+unity "/camtop/color1/h",rand*10
 # unity "/camtop/color2/b",rand*2
 # unity "/camtop/color2/s",rand*2
 # unity "/camtop/color2/h",rand*2
