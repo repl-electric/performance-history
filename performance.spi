@@ -1,7 +1,9 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 1
 
 
-cam :top
+#cam :top
+colort 1
+
 stop
 
 unity "/color1/b",1
