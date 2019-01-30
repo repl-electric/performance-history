@@ -9,7 +9,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 live_loop :test do
   tick
 
-  sleep 1
+  sleep 3
 
 unity "/camtop/color1/b",rand*2
 unity "/camtop/color1/s",rand*2
