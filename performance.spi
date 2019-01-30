@@ -6,15 +6,12 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 
 
 
-
-
-
 live_loop :test do
 
   tick
 
-  sleep 3
-  p = (ring 'lt', 'rb', 'rt', 'lb').look
+  sleep 1
+  p = (ring 'lt', 'rb', 'rt', 'lb').shuffle.look
   puts p
   unity "/endroots/target/#{p}",1
 
