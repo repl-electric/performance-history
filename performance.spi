@@ -6,7 +6,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 
 
 
-unity "/rootsend/target/lt",1
+unity "/rootsend/target/rt",1
 stop
 
 
