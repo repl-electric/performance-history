@@ -26,7 +26,7 @@ unity "/camtop/color1/s",rand*1
 end
 
 
-#unity "/fadeout",0.4
+unity "/fadeout",0.4
 
 
 
