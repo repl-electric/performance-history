@@ -14,7 +14,7 @@ stop
 stop
 unity "/camtop/color1/b",1
 live_loop :test do
-stop
+
   tick
 
   sleep 3
