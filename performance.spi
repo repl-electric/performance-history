@@ -6,7 +6,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #colort  20.0
 
 
-live_loop :test
+live_loop :testdo
   tick
 
   sleep 1
