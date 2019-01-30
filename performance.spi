@@ -14,13 +14,13 @@ live_loop :test do
 unity "/camtop/color1/b",rand*2
 unity "/camtop/color1/s",rand*2
 unity "/camtop/color1/h",rand*2
-unity "/camtop/color2/b",rand*2
-unity "/camtop/color2/s",rand*2
-unity "/camtop/color2/h",rand*2
+# unity "/camtop/color2/b",rand*2
+# unity "/camtop/color2/s",rand*2
+# unity "/camtop/color2/h",rand*2
 
-unity "/camtop/color3/b",rand*2
-unity "/camtop/color3/s",rand*2
-unity "/camtop/color3/h",rand*2
+# unity "/camtop/color3/b",rand*2
+# unity "/camtop/color3/s",rand*2
+# unity "/camtop/color3/h",rand*2
   sleep 1
 end
 
