@@ -2,7 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #init
 
 #cam :top
-colort 2.1
+colort 3.1
 
 stop
 
