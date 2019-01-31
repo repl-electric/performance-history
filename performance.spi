@@ -137,7 +137,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     flip :e4,127, sus: (cycle 0.25 0.5 1).look
     fn = (ring
       (method :flip),(method :flip),(method :flip),
-      (method :flop)).look
+      (method :flop),(method :flop),(method :flop)  ).look
     fn.(:g4,127, sus: (cycle 0.25 0.5 1).rot(look%6).look)
 
     sleep 1/4.0
