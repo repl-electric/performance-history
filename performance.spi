@@ -4,7 +4,7 @@ cam :top
 #stop
 #colort  20.0
 #unity "/endroots/target/circle",1.0
-unity "/endroots/circle/speed",4.0
+unity "/endroots/circle/speed",10.0
 unity "/endroots/circle/radius",10.0
 
 stop
