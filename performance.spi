@@ -5,7 +5,7 @@ cam :top
 #colort  20.0
 #unity "/endroots/target/circle",1.0
 unity "/endroots/circle/speed",4.0
-unity "/endroots/circle/radius",1.0
+unity "/endroots/circle/radius",9.0
 
 stop
 live_loop :test do
