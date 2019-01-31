@@ -1,12 +1,12 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 1
-#init
-#cam :top
+init
+cam :top
 #stop
 #colort  20.0
 #unity "/endroots/target/circle",1.0
-unity "/endroots/circle/speed",10.0
-unity "/endroots/circle/radius",10.0
-#unity "/fadeout",0
+#unity "/endroots/circle/speed",10.0
+#unity "/endroots/circle/radius",10.0
+##unity "/fadeout",0
 
 stop
 live_loop :test do
