@@ -121,6 +121,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 
 #overclock_cc motion: 0.30
 
+eject_cpu_core
+
 live_loop :Attune, sync: :unsyncable do; tick
 
   silence?
@@ -138,7 +140,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     fn = (ring
       (method :flip),(method :flip),(method :flip),
       (method :flop),(method :flop),(method :flop) ).look
-    flop(:c4,127, sus: (cycle 0.125 0.5 1).rot(look%6).look)
+    flop(:g4,127, sus: (cycle 0.125 0.5 1).rot(look%6).look)
 
     sleep 1/4.0
     sleep 1/4.0
