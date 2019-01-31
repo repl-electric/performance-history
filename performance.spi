@@ -4,120 +4,120 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #stop
 #colort  20.0
 #unity "/endroots/target/circle",1.0
-unity "/fadeout",0
+#unity "/fadeout",0
 
-stop
-live_loop :test do
+#stop
+# live_loop :test do
 
-  tick
+#   tick
 
-  sleep 6
-  p = (ring 'lt', 'rb', 'rt', 'lb').shuffle.look
-  puts p
-  unity "/endroots/target/#{p}",1
+#   sleep 6
+#   p = (ring 'lt', 'rb', 'rt', 'lb').shuffle.look
+#   puts p
+#   unity "/endroots/target/#{p}",1
 
-unity "/camtop/color1/s",rand*1
-  unity "/camtop/color1/h",rand*1
-  unity "/camtop/color1/b",rand*1
-# unity "/camtop/color2/b",rand*2
-# unity "/camtop/color2/s",rand*2
-# unity "/camtop/color2/h",rand*2
+# unity "/camtop/color1/s",rand*1
+#   unity "/camtop/color1/h",rand*1
+#   unity "/camtop/color1/b",rand*1
+# # unity "/camtop/color2/b",rand*2
+# # unity "/camtop/color2/s",rand*2
+# # unity "/camtop/color2/h",rand*2
 
-# unity "/camtop/color3/b",rand*2
-# unity "/camtop/color3/s",rand*2
-# unity "/camtop/color3/h",rand*2
-  sleep 1
-end
+# # unity "/camtop/color3/b",rand*2
+# # unity "/camtop/color3/s",rand*2
+# # unity "/camtop/color3/h",rand*2
+#   sleep 1
+# end
 
 
 #unity "/fadeout",0.0
 
 
 
-stop
+# stop
 
-unity "/color1/b",1
-unity "/color2/b",1
-unity "/color3/b",1
+# unity "/color1/b",1
+# unity "/color2/b",1
+# unity "/color3/b",1
 
-unity "/linecolor/h",1
-unity "/linecolor/s",1
-unity "/linecolor/b",1
-
-
-
-unity "/linecolor/cube/s",2
-unity "/linecolor/cube/b",2
-unity "/linecolor/cube/h",2
-
-
-#unity "/fadeout",0.0
-#zoom_in
-
-
-stop
-#colorb 800
+# unity "/linecolor/h",1
+# unity "/linecolor/s",1
+# unity "/linecolor/b",1
 
 
 
-#stop
-#init true && start_init
-#overclock_x
-#stop
-#at{
-#  sync :Attune
-   # sleep 3
-   # flop_on :g3
-  # sleep 3
-  # operator :B5, 95
-  # overclock_off :A3, 15
-  # sleep 3
+# unity "/linecolor/cube/s",2
+# unity "/linecolor/cube/b",2
+# unity "/linecolor/cube/h",2
 
-#   overclock_on :f3, 15
-#  sleep 1/6.0
-#  flop_on :b3
-#}
-#init true
-#zoomout
-#cam :top
 
-#cam :top
+# #unity "/fadeout",0.0
+# #zoom_in
 
-#resonate :A2
 
-# A B C *D E F  *G  A B C
-#overclock :A3,1,sus: 12
+# stop
+# #colorb 800
 
-# at{
-#   sync :Attune
-#   sleep 1.5
-# #  overclock_on :E3
-# }
 
-#overclock_cc motion: 0.49
 
-#      [[:A3 :C5 :E4] 8]
-#      [[:F4 :A6 :C5] 8]
-#      [[:C3 :E5 :G4] 4]
-#init
-#cam :top
-#cam :top
-#world time: 1
-#attune
-#unity "/lights/up",0.0
-#eject_cpu_core
-#world time: 1
-#init true
-#unity "/fadeout",0.0
-#colorb 0.9
-#eject_cpu_core
-#unity "/fadeout",2.0
-#cam :top
-#vol 0
-#init
-#cam :top
-#stop
-unity "/lights/up", 7.5
+# #stop
+# #init true && start_init
+# #overclock_x
+# #stop
+# #at{
+# #  sync :Attune
+#    # sleep 3
+#    # flop_on :g3
+#   # sleep 3
+#   # operator :B5, 95
+#   # overclock_off :A3, 15
+#   # sleep 3
+
+# #   overclock_on :f3, 15
+# #  sleep 1/6.0
+# #  flop_on :b3
+# #}
+# #init true
+# #zoomout
+# #cam :top
+
+# #cam :top
+
+# #resonate :A2
+
+# # A B C *D E F  *G  A B C
+# #overclock :A3,1,sus: 12
+
+# # at{
+# #   sync :Attune
+# #   sleep 1.5
+# # #  overclock_on :E3
+# # }
+
+# #overclock_cc motion: 0.49
+
+# #      [[:A3 :C5 :E4] 8]
+# #      [[:F4 :A6 :C5] 8]
+# #      [[:C3 :E5 :G4] 4]
+# #init
+# #cam :top
+# #cam :top
+# #world time: 1
+# #attune
+# #unity "/lights/up",0.0
+# #eject_cpu_core
+# #world time: 1
+# #init true
+# #unity "/fadeout",0.0
+# #colorb 0.9
+# #eject_cpu_core
+# #unity "/fadeout",2.0
+# #cam :top
+# #vol 0
+# #init
+# #cam :top
+# #stop
+# unity "/lights/up", 7.5
 live_loop :Attune, sync: :unsyncable do; tick
 
   silence?
