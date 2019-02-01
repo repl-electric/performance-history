@@ -3,7 +3,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 
 
 #cam :top
-error target: :circle, speed: 10
+error target: :circle, speed: 100
 stop
 
 
