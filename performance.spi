@@ -3,7 +3,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 
 
 #cam :top
-error target: (cycle :lt :bt).look#, speed: 30, radius: 30
+error target: (cycle :lt :bt).shufflelook#, speed: 30, radius: 30
 stop
 
 
