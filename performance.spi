@@ -3,6 +3,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 
 
 #cam :top
+puts rand
 error target: (cycle :lt :bt).shuffle.choose#, speed: 30, radius: 30
 stop
 
