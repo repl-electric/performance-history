@@ -5,6 +5,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #cam :top
 
 error target: :circle, radius: 5
+world time: 2
 #stop
 
 #cam :top
