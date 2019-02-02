@@ -32,7 +32,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #unity "/fadeout",1
 
 
-unity "/attune/noise",2.0
+unity "/attune/noise",4.0
 
 
 live_loop :Attune, sync: :unsyncable do; tick
