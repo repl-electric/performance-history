@@ -1,8 +1,8 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 1
-#init
+init
 #create_sea
 #create_sea -1
-#cam :top
+cam :top
 
 #error target: :circle, radius: 25, speed: 80
 #world time: 2
@@ -12,8 +12,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 
 #eject_cpu_core
 
-attune
-unity "/attune/noise",1.5
+#attune
+#unity "/attune/noise",1.5
 
 #error target: :circle, radius: 20, speed: 100
 
