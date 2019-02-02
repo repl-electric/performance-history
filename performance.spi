@@ -10,8 +10,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 
 #cam :top
 
-eject_cpu_core
-
+#eject_cpu_core
+attune
 #attune
 #vol 0
 #overclock_cc motion: 0.40
