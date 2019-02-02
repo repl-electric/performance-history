@@ -13,7 +13,7 @@ error radius: 25, target: :circle
 
 #eject_cpu_core
 unity "/attune/noise", 500
-unity "/ejectcpu",1
+#unity "/ejectcpu",1
 
 #eject_cpu_core
 #unity "/ejectcpu",1
