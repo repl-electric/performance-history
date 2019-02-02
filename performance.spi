@@ -20,7 +20,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 
 
 #eject_cpu_core
-rocks throttle: 0
+#rocks throttle: 0
 #rocksinit
 #attune
 #attune
@@ -30,6 +30,11 @@ rocks throttle: 0
 #world time: 1
 #stop
 #unity "/fadeout",1
+
+
+unity "/attune/noise",2.0
+
+
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
