@@ -1,9 +1,9 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 1
 #init
 
-create_sea
-
-#cam :top
+#create_sea
+create_sea -1
+cam :top
 
 
 stop
