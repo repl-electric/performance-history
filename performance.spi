@@ -16,8 +16,9 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #unity "/attune/noise",1.5
 
 #error target: :circle, radius: 30, speed: 100
-eject_cpu_core
-
+#eject_cpu_core
+unity "/attune/noise",200
+stop
 
 #eject_cpu_core
 #rocks throttle: 0
