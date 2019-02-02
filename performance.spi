@@ -1,8 +1,8 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 1
-init
+#init
 #create_sea
 #create_sea -1
-cam :top
+#cam :top
 
 #error target: :circle, radius: 25, speed: 80
 #world time: 2
@@ -33,7 +33,7 @@ live_loop :Attune, sync: :unsyncable do; tick
   overclock :f4, sus: 3 if spread(1,1).look
   overclock_cc oct: (cycle 0 -12 0 19 0 12).look
 
-  with_bpm @bpm=(127*1) do
+  with_bpm @bpm=(127*2) do
     #tick_reset_all
     flop_cc motion: (flow 0.4 0.57 32).look
     flip_cc motion: 0.6
