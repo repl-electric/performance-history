@@ -10,7 +10,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 
 #cam :top
 
-error target: :o
+error target: :lt
 
 #attune
 #vol 0
