@@ -4,7 +4,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #create_sea -1
 #cam :top
 
-error target: :circle, radius: 25, speed: 100
+error target: :circle, radius: 25, speed: 80
 #world time: 2
 #stop
 
