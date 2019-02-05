@@ -173,7 +173,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
         }
         operator :Ab4,90, sus: 4
         }
-      resonate :Ab4, sus: 1.0
+      resonate :Ab5, sus: 1.0
     end
 
     sleep sleeps/2.0
