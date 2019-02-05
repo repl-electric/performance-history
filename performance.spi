@@ -117,7 +117,8 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
       puts (flow 0.0 1/4.0 16*4).look if spread(4,8).look
       glitch (cycle :c3 :c3 :ds3  :c3 :c3 :cs3).look, 120 if spread(1,8).look
       glitch_cc corode: rand*2
-      voltage :g4, sus: 1/4.0
+#      voltage :g4, sus: 1/4.0
+      midi channel: 3, :f3
     }
     sleep 1.0/4.0
   end
