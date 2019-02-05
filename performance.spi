@@ -38,7 +38,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 
 #attune
 
-vol 1
+#vol 1
 
 
 #attune
