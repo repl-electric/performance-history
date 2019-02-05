@@ -180,6 +180,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     elsif chd[0] == :C3
       at{
         sleep sleeps/3.0
+        overclock :F4,100
         resonate :F5, 100, sus: sleeps/2.0, pads: [2]
         }
       operator :e4, 98, sus: 12
