@@ -178,7 +178,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
         }
       #resonate :Ab5,127, sus: 1.0, pads: [2]
     elsif chd[0] == :C3
-      resonate :E3, 127, sus: sleeps, pads: [2]
+      resonate :E4, 127, sus: sleeps, pads: [2]
       #operator :e4, 98, sus: 12
     end
 
