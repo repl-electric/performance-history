@@ -164,7 +164,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     #control_unit root(chd)+12, 10,sus: sleeps, drive: 0.0, sat: 0.0
 
     if chd[0]  == :F4
-      operator :Ab4, sus: 12
+      operator :Ab4,127, sus: 12
       resonate :Ab3, sus: 1.0
     end
 
