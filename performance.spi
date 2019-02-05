@@ -168,7 +168,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
         with_swing 0.125 {
         4.times{
        #   operator :Ab4,95, sus: 1/2.0
-            resonate :Ab4,127, sus: 1.0, pads: [1]
+            resonate :Ab4,127, sus: 2.0, pads: [1]
             sleep 1/2.0
           }
         }
