@@ -165,10 +165,11 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
     if chd[0]  == :F3
       at{
-        8.times{
+        4.times{
           operator :Ab4,90, sus: 1/2.0
           sleep 1/2.0
-          }
+        }
+        operator :Ab4,90, sus: 4
         }
       resonate :Ab3, sus: 1.0
     end
