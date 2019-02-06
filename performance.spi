@@ -73,7 +73,7 @@ live_loop :Attune, sync: :unsyncable do; tick
   #  overclock :e4,5, sus: 2 if spread(1,4).look
   #operator :e4,105, sus: 3
   # A F C
-  overclock (cycle_rep :g4 6 :c4 6  :g4 6  :cs4 6  ).look, sus: 3 if spread(1,1).look
+  overclock (cycle_rep :g4 6 :c4 6  :g4 6  :gs4 6  ).look, sus: 3 if spread(1,1).look
   #  overclock_cc oct: (cycle 0 -12 0 19 0 12).look
   overclock_cc oct: (cycle 7 0 19 0  0 0 24
                            7 0 19 0  0 0 24
