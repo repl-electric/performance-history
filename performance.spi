@@ -13,8 +13,12 @@ end
 
 
 
+live_loop :demo do
+  tick
+  ping :A3
+  sleep 4
+end
 
 
-ping :A3
 
 #midi :a4, channel: 1, sus: 12
