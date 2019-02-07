@@ -1,6 +1,6 @@
 use_bpm 127
 
-def midi_fn(n, *args)
+def ping(n, *args)
   if n
     vel = 20
     if args && args[0].is_a?(Numeric)
@@ -10,5 +10,6 @@ def midi_fn(n, *args)
   end
 end
 
+ping :a2
 
-midi :a2, channel: 1
+#midi :a2, channel: 1
