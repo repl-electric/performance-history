@@ -1,5 +1,10 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
 
+
+midi_cc 7, 127  channel: 1
+
+stop
+
 def ping(n, *args)
   if n
     velocity = 20
@@ -24,18 +29,15 @@ end
 
 
 
+
+
 #ping :A3, sus: 1/2.0
 
 
 live_loop :demo do
   tick
-
   ping :a3, sus: 1/4.0
-
   sleep 4/2.0
-
   pong :c2, sus: 2
-
-
   sleep 2
 end
