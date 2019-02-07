@@ -11,8 +11,13 @@ def ping(n, *args)
   end
 end
 
-ping :A3, sus: 1/2.0
+#ping :A3, sus: 1/2.0
 
 
+live_loop :demo do
+  tick
 
-#midi :a4,100, sus: 12, channel: 1
+  ping :a3
+
+  sleep 4
+end
