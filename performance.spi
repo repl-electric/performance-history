@@ -34,7 +34,8 @@ live_loop :demo do
 
   sleep 4/2.0
 
-  pong :c2
+  pong :c2, sus: 2
+
 
   sleep 2
 end
