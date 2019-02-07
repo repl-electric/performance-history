@@ -11,4 +11,4 @@ load_support('piezoelectric_resonator'); use_bpm 127#; alive perc: 0, pitch: 0, 
 #   end
 # end
 
-midi :a4, channel: 1
+midi :a4, channel: 1, sus: 12
