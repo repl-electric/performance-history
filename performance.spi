@@ -10,10 +10,22 @@ def ping(n, *args)
   end
 end
 
+def pong(n, *args)
+  if n
+    vel = 20
+    if args && args[0].is_a?(Numeric)
+      vel,args = args[0], args[1..-1]
+    end
+    midi n, vel, *(args << {port: :iac_bus_1} << {channel: 2})
+  end
+end
+
+
 live_loop :demo do
   tick
   ping :A2
 
   sleep 1
+  pong :c2
   sleep 1
 end
