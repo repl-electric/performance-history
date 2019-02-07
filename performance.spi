@@ -1,6 +1,5 @@
 use_bpm 127
 
-midi_cc 10, 0, channel: 1
 
 #stop
 
@@ -27,6 +26,8 @@ end
 
 live_loop :demo do
   tick
+  midi_cc 10, (ramp 0, 127, 128).look, channel: 1
+
   ping :A2
 
   sleep 1
