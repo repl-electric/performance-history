@@ -8,7 +8,6 @@ def ping(n, *args)
       vel = args[0]
       args = args[1..-1]
     end
-    puts args
     midi n, vel, (args << {port: :iac_bus_1} << {channel: 1})
   end
 end
