@@ -19,7 +19,7 @@ def pang(n, *args)
       args = args[1..-1]
     end
     puts (args << {port: :iac_bus_1} << {channel: 2})
-    midi n, vel, (args << {port: :iac_bus_1} << {channel: 2})
+    midi n, vel, *(args << {port: :iac_bus_1} << {channel: 2})
   end
 end
 
@@ -27,6 +27,6 @@ live_loop :demo do
   tick
 #  ping :A3, sus: 1/4.0
   sleep 4/2.0
-  pang :c3, sus: 1, channel: 2
+  pang :c3, sus: 1
   sleep 4/2.0
 end
