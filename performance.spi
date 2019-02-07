@@ -11,4 +11,4 @@ def ping(n, *args)
   end
 end
 
-midi :a3, channel: 1
+midi :a3, channel: 1, sus: 4
