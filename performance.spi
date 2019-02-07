@@ -18,6 +18,7 @@ def pang(n, *args)
       vel = args[0]
       args = args[1..-1]
     end
+    puts (args << {port: :iac_bus_1} << {channel: 2})
     midi n, vel, (args << {port: :iac_bus_1} << {channel: 2})
   end
 end
