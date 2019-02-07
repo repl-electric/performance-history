@@ -4,17 +4,17 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 
 
 def ping(n, *args)
-  opts = resolve_synth_opts_hash_or_array(args)
   if args && args[0].is_a?(Numeric)
     velocity = args[0]
     args = args[1..-1]
   else
     velocity = 30
   end
+  opts = resolve_synth_opts_hash_or_array(args)
   if n
     midi n, velocity *(args << {port: :iac_bus_1} << {channel: 1})
   end
-end
+endo
 
 
 ping :A3
