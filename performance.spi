@@ -29,9 +29,10 @@ end
 
 live_loop :demo do
   tick
-  ping :a3, sus: 2
-  midi_cc 10, (flow 0.0,  127,  38,).look, channel: 1
+#  ping :a3, sus: 2
+  midi :c3
+  midi_cc 10, (flow 0.0, 127, 38).look, channel: 1
   sleep 4/2.0
-#  pong :a1, sus: 2
+  pong :a1, sus: 2
   sleep 4/2.0
 end
