@@ -39,6 +39,6 @@ live_loop :demo do
   tick
   ping :a3, sus: 1/4.0
   sleep 4/2.0
-  pong :c2, sus: 2
+  pong :c2, sus: 2 if spread(1,3).look
   sleep 2
 end
