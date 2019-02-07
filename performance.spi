@@ -14,7 +14,7 @@ def ping(n, *args)
   if n
     midi n, velocity *(args << {port: :iac_bus_1} << {channel: 1})
   end
-endo
+end
 
 
 ping :A3
