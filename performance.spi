@@ -11,4 +11,11 @@ def ping(n, *args)
   end
 end
 
-ping :a3
+
+live_loop :demo do
+  tick
+
+  ping :a3, sus: 2
+
+  sleep 4
+end
