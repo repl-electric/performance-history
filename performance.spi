@@ -18,4 +18,4 @@ def ping(n, args)
   end
 end
 
-ping :A3, 10
+ping :A3, 10, sus: 12
