@@ -6,7 +6,7 @@ def ping(n, *args)
   if n
     vel = 10
     if args && args[0].is_a?(Numeric)
-      velocity = args[0]
+      vel = args[0]
       args = args[1..-1]
     end
     puts args
