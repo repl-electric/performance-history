@@ -1,7 +1,7 @@
 use_bpm 127
 midi_cc 11,0,  channel: 1
 
-stop
+#stop
 
 def ping(n, *args)
   if n
