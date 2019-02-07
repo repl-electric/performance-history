@@ -26,7 +26,7 @@ end
 
 live_loop :demo do
   tick
-  midi_cc 10, (ring 1).look, channel: 1
+  midi_cc 10, (ring 1, 17).look, channel: 1
   ping :A3, sus: 4
   sleep 4/2.0
 #  pong :c2, sus: 4
