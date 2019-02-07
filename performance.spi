@@ -1,6 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127#; alive perc: 0, pitch: 0, kick: 0
 
-midi_cc 10, 10, channel: 1
+midi_cc 10, 1, channel: 1
 
 stop
 
