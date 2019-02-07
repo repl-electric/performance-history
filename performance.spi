@@ -38,13 +38,8 @@ end
 
 
 
-live_loop :demo do
+live_loop :demo do; tick
   drums :c3
-  pong :c2,50, sus: 2
-  midi_cc 10, 0, channel: 1
-  tick
- # ping :a3, sus: 2
-  sleep 4/2.0
-
-  sleep 2
+  pong :c3,50, sus: 2
+  sleep 4
 end
