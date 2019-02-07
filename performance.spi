@@ -11,7 +11,7 @@ def ping(n, *args)
       velocity = 10
     end
     puts args
-    midi n, velocity *(args << {port: :iac_bus_1} << {channel: 1})
+    midi n, velocity (args << {port: :iac_bus_1} << {channel: 1})
   end
 end
 
