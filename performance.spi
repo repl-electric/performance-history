@@ -14,7 +14,7 @@ def ping(n, *args)
     args_h = resolve_synth_opts_hash_or_array(args)
     puts args_h
     puts n
-    midi n, velocity
+    midi n, velocity *(args_h << {port: :iac_bus_1} << {channel: 1})
   end
 end
 
