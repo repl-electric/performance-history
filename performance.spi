@@ -1,71 +1,5 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 1
 
-#init
-#create_sea
-#create_sea -1
-#cam :top
-#stop
-#error target: :circle, radius: 25, speed: 80
-#world time: 2
-#stop
-
-#stop
-#error radius: 10, target: :circle
-##attune
-#vol 0
-#eject_cpu_core
-#unity "/attune/noise", 500
-#world time: 1
-#unity "/ejectcpu",1
-
-
-#attune
-
-#eject_cpu_core
-#unity "/ejectcpu",1
-#unity "/attune",
-#stop
-
-#attune
-#vol 0
-#stop
-#cam :top
-#world time: 0.2
-#eject_cpu_core
-
-
-#eject_cpu_core
-
-#attune
-
-#vol 1
-
-
-#attune
-#unity "/attune/noise",1.5
-
-#error target: :circle, radius: 30, speed: 100
-#eject_cpu_core
-#unity "/attune/noise",100
-#stop
-
-#eject_cpu_core
-#rocks throttle: 0
-#rocksinit
-#attune
-#attune
-#vol 0
-#overclock_cc motion: 0.39
-#e#ject_cpu_core
-#world time: 1
-#stop
-#unity "/fadeout",1
-
-
-#unity "/attune/noise",1.0
-#eject
-#vol 0
-
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
@@ -75,7 +9,7 @@ live_loop :Attune, sync: :unsyncable do; tick
   # ACEG  FACE  CEGA
   overclock (cycle_rep :f4 6).look,50, sus: 1/2.0 if spread(1,8).look
   #  overclock_cc oct: (cycle 0 -12 0 19 0 12).look
-  overclock_cc oct: (cycle 0 0 19  0 0 24 ).look
+  overclock_cc oct: (cycle 0 0 19     0 0 24 ).look
 
   with_bpm @bpm=(127*4) do
     #tick_reset_all
