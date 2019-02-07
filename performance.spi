@@ -18,7 +18,7 @@ def pong(n, *args)
       vel = args[0]
       args = args[1..-1]
     end
-    midi n, vel, (args << {port: :iac_bus_1} << {channel: 2})
+    midi n, vel, (args << {port: :iac_bus_1} << {channel: 3})
   end
 end
 
