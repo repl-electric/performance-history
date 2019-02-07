@@ -1,6 +1,6 @@
 use_bpm 127
 
-def ping(n, *args)
+def midi_fn(n, *args)
   if n
     vel = 20
     if args && args[0].is_a?(Numeric)
@@ -11,10 +11,4 @@ def ping(n, *args)
 end
 
 
-live_loop :demo do
-  tick
-  ping :a2, sus: 1
-
-  sleep 1
-  sleep 1
-end
+midi :a2, channel: 1
