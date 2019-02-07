@@ -30,6 +30,6 @@ live_loop :demo do
   midi_cc 10, (ring 1, 127).look, channel: 1
   ping :A3, sus: 4
   sleep 4/2.0
-#  pong :c2, sus: 4
+  pong :c2, sus: 4
   sleep 4/2.0
 end
