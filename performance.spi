@@ -11,4 +11,4 @@ def midi_fn(n, *args)
 end
 
 
-midi :a2, channel: 1
+midi :a2, channel: 1, sus: 2
