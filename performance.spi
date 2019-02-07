@@ -11,7 +11,7 @@ def ping(n, *args)
   end
 end
 
-def pong(n, *args)
+def pang(n, *args)
   if n
     velocity = 20
     if args && args[0].is_a?(Numeric)
@@ -26,6 +26,6 @@ live_loop :demo do
   tick
 #  ping :A3, sus: 1/4.0
   sleep 4/2.0
-  pong :c3, sus: 1, channel: 2
+  pang :c3, sus: 1, channel: 2
   sleep 4/2.0
 end
