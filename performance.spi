@@ -1,15 +1,14 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
-#init true && start_init
 
-def ping(n, *args)
-  if n
-    velocity = 10
-    if args && args[0].is_a?(Numeric)
-      vel = args[0]
-      args = args[1..-1]
-    end
-    midi n, vel, (args << {port: :iac_bus_1} << {channel: 1})
-  end
-end
+# def ping(n, *args)
+#   if n
+#     velocity = 10
+#     if args && args[0].is_a?(Numeric)
+#       vel = args[0]
+#       args = args[1..-1]
+#     end
+#     midi n, vel, (args << {port: :iac_bus_1} << {channel: 1})
+#   end
+# end
 
-ping :A3, 10, sus: 12
+midi :a4,100, sus: 12, channel: 1
