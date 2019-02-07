@@ -4,11 +4,10 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 def ping(n, *args)
   puts args
   if n
+    velocity = 10
     if args && args[0].is_a?(Numeric)
       velocity = args[0]
       args = args[1..-1]
-    else
-      velocity = 10
     end
     puts args
     midi n, velocity (args << {port: :iac_bus_1} << {channel: 1})
