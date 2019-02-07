@@ -1,45 +1,17 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
 #init true && start_init
 
-
-
 def ping(n, *args)
-   if n
+  if n
     if args && args[0].is_a?(Numeric)
       velocity = args[0]
       args = args[1..-1]
     else
       velocity = 10
     end
-    if n.is_a?(Array)
-      args[0] = {sus: n[1]+0.5}.merge(args[0]||{})
-      n = n[0]
-    end
     args_h = resolve_synth_opts_hash_or_array(args)
-    if(args_h[:mode])
-    end
-       if n && ((n != "_") && n != :_)
-         at{
-           sleep 0.5
-           roots_chase radius: 2.01
-           sleep 1
-           roots_chase radius: 0.01
-         }
-      midi n, velocity, *(args << {port: :iac_bus_1} << {channel: 16})
-      nname = SonicPi::Note.new(n).midi_string
-    end
-  end
-  if args && args[0].is_a?(Numeric)
-    velocity = args[0]
-    args = args[1..-1]
-  else
-    velocity = 30
-  end
-  args_h = resolve_synth_opts_hash_or_array(args)
-  if n
     midi n, velocity *(args << {port: :iac_bus_1} << {channel: 1})
   end
 end
-
 
 ping :A3, 10
