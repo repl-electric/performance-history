@@ -27,6 +27,5 @@ live_loop :demo do
   ping :A3, sus: 1/4.0
   sleep 4/2.0
   pong :c3, sus: 1
-
   sleep 4/2.0
 end
