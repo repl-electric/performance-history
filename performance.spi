@@ -16,7 +16,7 @@ def pong(n, *args)
     if args && args[0].is_a?(Numeric)
       vel,args = args[0], args[1..-1]
     end
-    midi n, vel, *(args << {port: :iac_bus_1} << {channel: 2})
+    midi n, vel, *(args << {port: :iac_bus_1} << {channel: 3})
   end
 end
 
