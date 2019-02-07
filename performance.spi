@@ -17,7 +17,7 @@ live_loop :demo do
   ping :a3, sus: 2
   sleep 4/2.0
 
-  ping :a3, sus: 2
+  ping :a2, sus: 2
 
   sleep 4/2.0
 end
