@@ -17,4 +17,4 @@ def ping(n, *args)
 end
 
 
-ping :A3
+ping :A3, 10
