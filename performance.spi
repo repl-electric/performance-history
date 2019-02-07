@@ -1,9 +1,10 @@
-def ping(n, *args)
+use_bpm 127
+
+def midi_fn(n, *args)
   if n
     vel = 20
     if args && args[0].is_a?(Numeric)
-      vel = args[0]
-      args = args[1..-1]
+      vel,args = args[0], args[1..-1]
     end
     midi n, vel, *(args << {port: :iac_bus_1} << {channel: 1})
   end
