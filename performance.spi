@@ -15,7 +15,6 @@ live_loop :demo do
   tick
   ping :a2, sus: 1
 
-
   sleep 1
   sleep 1
 end
