@@ -2,6 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #init true && start_init
 
 def ping(n, *args)
+  puts n
   if n
     if args && args[0].is_a?(Numeric)
       velocity = args[0]
