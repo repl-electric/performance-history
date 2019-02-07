@@ -36,6 +36,7 @@ end
 
 
 live_loop :demo do
+  midi_cc 10, 10, channel: 1, port: :iac_bus_1
 
   tick
   ping :a3, sus: 1/4.0
