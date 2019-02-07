@@ -12,7 +12,9 @@ end
 
 live_loop :demo do
   tick
-midi :a2, channel: 1
+  midi :a3, channel: 1
   sleep 1
+
+  midi :a2, channel: 2
   sleep 1
 end
