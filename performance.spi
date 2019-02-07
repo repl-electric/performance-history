@@ -10,4 +10,9 @@ def midi_fn(n, *args)
   end
 end
 
+live_loop :demo do
+  tick
 midi :a2, channel: 1
+  sleep 1
+  sleep 1
+end
