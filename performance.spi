@@ -11,12 +11,25 @@ def ping(n, *args)
   end
 end
 
+def pong(n, *args)
+  if n
+    velocity = 20
+    if args && args[0].is_a?(Numeric)
+      vel = args[0]
+      args = args[1..-1]
+    end
+    midi n, vel, (args << {port: :iac_bus_1} << {channel: 2})
+  end
+end
+
 
 
 live_loop :demo do
   tick
   ping :A3, sus: 1/4.0
-  sleep 4
+  sleep 4/2.0
+  pong :c3
+  sleep 4/2.0
 end
 
 
