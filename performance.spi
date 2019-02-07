@@ -10,7 +10,7 @@ def ping(n, *args)
     else
       velocity = 10
     end
-    ptus args
+    puts args
     args_h = resolve_synth_opts_hash_or_array(args)
     midi n, velocity *(args << {port: :iac_bus_1} << {channel: 1})
   end
