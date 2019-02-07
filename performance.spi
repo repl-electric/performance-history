@@ -40,6 +40,6 @@ end
 
 live_loop :demo do; tick
   drums :c3
-  pong :c3,50, sus: 2
+  pong :c2, 50, sus: 2
   sleep 4
 end
