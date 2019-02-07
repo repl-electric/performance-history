@@ -9,3 +9,5 @@ def midi_fn(n, *args)
     midi n, vel, *(args << {port: :iac_bus_1} << {channel: 1})
   end
 end
+
+midi :a2, channel: 1
