@@ -10,6 +10,10 @@ def ping(n, *args)
   end
 end
 
-ping :a2
+live_loop :demo do
+  tick
+  ping :A2
 
-#midi :a2, channel: 1
+  sleep 1
+  sleep 1
+end
