@@ -15,7 +15,7 @@ end
 
 live_loop :demo do
   tick
-  ping :A3
+  ping :A3, sus: 1/4.0
   sleep 4
 end
 
