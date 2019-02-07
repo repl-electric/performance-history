@@ -22,8 +22,6 @@ def pong(n, *args)
   end
 end
 
-
-
 live_loop :demo do
   tick
   ping :A3, sus: 1/4.0
