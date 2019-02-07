@@ -11,7 +11,7 @@ def ping(n, *args)
   end
 end
 
-ping :A3
+ping :A3, sus: 1/2.0
 
 
 
