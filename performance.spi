@@ -1,28 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, kick: 0
 #init true && start_init
 #  explode_cube
-at{
-  sync :Attune
-  sleep 2.5
-  #flop_off :b2
-}
-# D G
-at{
-  sync :Attune
-  sleep 1.5
- # overclock_on :f3
-}
-#livecode :raise
-
-#overclock_cc motion: 0.40
-#livecode :sleep
-
-#recover
-
-#cam :top
-
-#eject_cpu_core
-#vortex throttle: 0
 
 eject_cpu_core
 stop
