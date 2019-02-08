@@ -56,8 +56,8 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
     with_swing((flow 0.0, sleeps/2.0, 64,).look){
       voltage :F4
+      operator chd[-1]
     }
-
 
     sleep sleeps/2.0
 
