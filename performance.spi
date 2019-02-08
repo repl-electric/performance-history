@@ -10,7 +10,7 @@ at{
 at{
   sync :Attune
   sleep 1.5
-#  overclock_on :f3
+  overclock_on :f3
 }
 #livecode :raise
 
