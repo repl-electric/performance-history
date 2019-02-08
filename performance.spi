@@ -3,7 +3,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, k
 #  explode_cube
 
 #eject_cpu_core
-world time: 0.7
+world time: 0.6
 #attune
 
 stop
