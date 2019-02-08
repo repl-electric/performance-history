@@ -7,7 +7,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, k
 #attune
 
 #vol 0
-zoomin
+zoom_in
 stop
 
 
