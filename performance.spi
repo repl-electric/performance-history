@@ -22,7 +22,10 @@ at{
 #cam :top
 
 #eject_cpu_core
-vortex throttle: 0
+#vortex throttle: 0
+
+eject_cpu_core
+
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=127*4 do
