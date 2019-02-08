@@ -12,7 +12,7 @@ at{
   sleep 1.0/5.0
   overlock_on :a3
 }
-say :raise
+livecode :raise
 
 
 
