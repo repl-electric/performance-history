@@ -15,7 +15,7 @@ at{
 #livecode :raise
 
 overclock_cc motion: 0.6
-say :sleep
+livecode :sleep
 
 
 
