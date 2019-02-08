@@ -26,7 +26,7 @@ end
 
 live_loop :demo do
   tick
-  midi :c3, channel: 4
+  midi :c3, channel: 1
  # midi_cc 10, (ramp 0, 127, 128).look, channel: 1
  # midi_cc 11, (ramp 0, 127, 64).look,  channel: 1
  # ping :A2
