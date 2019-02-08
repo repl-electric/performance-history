@@ -11,7 +11,7 @@ attune
 #vol 0
 #zoom_in
 
-livecode :blank
+livecode :empty
 #unity "/fadeout",-5.0
 
 stop
