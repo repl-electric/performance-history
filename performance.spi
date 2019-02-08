@@ -9,7 +9,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, k
 #vol 0
 zoom_in
 
-#livecode :end
+livecode :end
 
 stop
 
