@@ -9,8 +9,8 @@ at{
 # D G
 at{
   sync :Attune
-  sleep 1.0/5.0
-  overclock_on :a3
+  sleep 1.0/6.0
+  overclock_on :e3
 }
 #livecode :raise
 
