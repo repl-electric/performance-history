@@ -23,12 +23,12 @@ at{
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
-  with_bpm 127*2 do
+  with_bpm 127*3 do
     silence!
 #    overclock :b3,20,sus: 1/4.0
-    flop_cc motion: (flow 0.0 0.57 32).look*0.27
-    flop :a3, 60, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
-    flop :e3, 60, sus: (cycle 1).look if spread(1,1).look
+    flop_cc motion: (flow 0.0, 0.57, 32,).look*0.27
+    flop :a3, 60, sus: (cycle 0.25, 0.5, 1,).look if spread(1,1).look
+    flop :e3, 60, sus: (cycle 1,).look if spread(1,1).look
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
@@ -43,7 +43,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/2.0
     sleep 1/2.0
 
-    flop :c4, 60, sus: (cycle 1/2.0).look if spread(1,1).look
+    flop :c4, 60, sus: (cycle 1/2.0,).look if spread(1,1).look
 
     sleep 1/2.0
   end
@@ -51,8 +51,8 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
-  with_bpm 127*(cycle 1).look do
+  perc=(cycle 1, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,)
+  with_bpm 127*(cycle 1,).look do
     perc_machine perc.to_a
   end
 end
@@ -60,8 +60,8 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm @bpm=(127*1) do
     score = (cycle
-      [[:A2] 4]
-      [[:F2] 4]
+      [[:A2], 4],
+      [[:F2], 4],
       )
 
     chd = score.look[0]
@@ -70,7 +70,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     sleep sleeps/2.0
 
     operator chd[-1]+12,100
-    with_swing((flow 0.0 sleeps/2.0 64).look){
+    with_swing((flow 0.0, sleeps/2.0, 64,).look){
       voltage :E4
       operator chd[-1]+12,100
     }
