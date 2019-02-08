@@ -1,42 +1,44 @@
-use_bpm 127
+load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
+init true && start_init
 
+live_loop :Attune, sync: :unsyncable do; tick
+  zero_delay [2,5,6].shuffle
+  with_bpm 127 do
 
-#stop
+    sleep 1/4.0
+    sleep 1/4.0
+    sleep 1/4.0
+    sleep 1/4.0
 
-def ping(n, *args)
-  if n
-    vel = 20
-    if args && args[0].is_a?(Numeric)
-      vel,args = args[0], args[1..-1]
-    end
-    midi n, vel, *(args << {port: :iac_bus_1} << {channel: 1})
+    sleep 1/4.0
+    sleep 1/4.0
+    sleep 1/4.0
+    sleep 1/4.0
+
+    sleep 1/2.0
+    sleep 1/2.0
+    sleep 1/2.0
+    sleep 1/2.0
   end
 end
 
-def pong(n, *args)
-  if n
-    vel = 20
-    if args && args[0].is_a?(Numeric)
-      vel,args = args[0], args[1..-1]
-    end
-    midi n, vel, *(args << {port: :iac_bus_1} << {channel: 3})
+live_loop :ClockCycle, sync: :unsyncable do; tick
+  #sync :MachineInstructions
+  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
+  with_bpm 127*(cycle 1).look do
+    perc_machine perc.to_a
   end
 end
 
-
-live_loop :demo do
-  tick
-  midi :c3, channel: 1
- # midi_cc 10, (ramp 0, 127, 128).look, channel: 1
- # midi_cc 11, (ramp 0, 127, 64).look,  channel: 1
- # ping :A2
-
-  #sleep 1
-#  pong :c2
-  sleep 8/2.0
-  with_swing((flow 0.0, 8/2.0, 64,).look){
-    midi :e3,51, channel: 1
-  }
-  sleep 8/2.0
-
+live_loop :MachineInstructions, sync: :unsyncable do; tick
+  with_bpm 127*1 do
+    score = (cycle
+      [[_] 8]
+      )
+    chd = score.look[0]
+    sleeps = score.look[-1]
+    sleep sleeps
+  end
 end
+
+live_loop(:unsyncable)do;sleep 1.0;end
