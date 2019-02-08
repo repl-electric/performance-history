@@ -34,7 +34,7 @@ live_loop :demo do
   #sleep 1
 #  pong :c2
   sleep 8/2.0
-  midi :e2,25, channel: 1
+  midi :e2,35, channel: 1
   sleep 8/2.0
 
 end
