@@ -34,11 +34,9 @@ live_loop :demo do
   #sleep 1
 #  pong :c2
   sleep 8/2.0
-  with_swing((flow 0.0, 1.0, 64,).look){
+  with_swing((flow 0.0, 8/2.0, 64,).look){
     midi :e3,51, channel: 1
   }
-
-
   sleep 8/2.0
 
 end
