@@ -23,7 +23,7 @@ at{
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
-  with_bpm @bpm=127*2 do
+  with_bpm @bpm=127*3 do
     silence!
 #    overclock :b3,20,sus: 1/4.0
     flop_cc motion: (flow 0.0 0.57 32).look*0.27
