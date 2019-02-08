@@ -10,9 +10,9 @@ at{
 at{
   sync :Attune
   sleep 1.0/5.0
-#  overlock_on
+  overlock_on :a3
 }
-
+say :raise
 
 
 
