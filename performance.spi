@@ -15,7 +15,7 @@ def ping_cc(cc)
 end
 
 
-ping_cc delay: 0.2
+#ping_cc delay: 0.2
 
 
 
@@ -35,7 +35,7 @@ def ping(n,*args)
 
 
 
-stop
+#stop
 
  def pong(n,*args)
    if n
