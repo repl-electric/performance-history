@@ -45,7 +45,7 @@ end
 live_loop :demo do
   tick
 
-  pong :a2, sus: 2, delay: 0.0
+  pong :a2, sus: 2, delay: 0.1
 
   sleep 1.0
 
