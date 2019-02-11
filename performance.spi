@@ -14,7 +14,6 @@ live_loop :Attune, sync: :unsyncable do; tick
     flop :A3, sus: (cycle 0.25 0.5 1).look
     flop :E3, sus: (cycle 0.25 0.5 1).rot(-1).look
 
-
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
@@ -40,12 +39,14 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
   perc=(cycle 1 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
   with_bpm 127*(cycle 1).look do
     #    perc_machine perc.to_a
-    with_swing((flow 0.0 1.0 32).look){
-      if spread(4,8).look
-        glitch :c3,80
-        glitch_cc corrode: rand
-      end
+
+    with_swing((flow 0.0 1/4.0 16*4).look){
+      puts (flow 0.0 1/4.0 16*4).look if spread(4,8).look
+      glitch :c3, 120 if spread(4,8).look
+      glitch_cc corode: rand
     }
+
+
 
     sleep 1/4.0
   end
