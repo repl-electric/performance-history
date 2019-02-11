@@ -1,57 +1,44 @@
-load_support('piezoelectric_resonator'); use_bpm 127
+load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
+init true && start_init
 
-def midi_cc_fn(cc)
-  cc.keys.each do |k|
-    n = case k
-        when :delay; 100
-        else
-          nil
-        end
-    puts n
-    if n
-      midi_cc n, cc[k]*127.0, port: :iac_bus_1, channel: 1
-    end
+live_loop :Attune, sync: :unsyncable do; tick
+  zero_delay [2,5,6].shuffle
+  with_bpm 127 do
+
+    sleep 1/4.0
+    sleep 1/4.0
+    sleep 1/4.0
+    sleep 1/4.0
+
+    sleep 1/4.0
+    sleep 1/4.0
+    sleep 1/4.0
+    sleep 1/4.0
+
+    sleep 1/2.0
+    sleep 1/2.0
+    sleep 1/2.0
+    sleep 1/2.0
   end
 end
 
-def pong(n,*args)
-   if n
-     velocity = 127
-     if args && args[0].is_a?(Numeric)
-       velocity = args[0]
-     end
-     args_h = resolve_synth_opts_hash_or_array(args)
-     midi n, velocity, *(args << {port: :iac_bus_1} << {channel: 1})
-     nname = SonicPi::Note.new(n).midi_string
-     puts "[#{nname}]"
-     midi_cc_fn args_h
-   end
+live_loop :ClockCycle, sync: :unsyncable do; tick
+  #sync :MachineInstructions
+  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
+  with_bpm 127*(cycle 1).look do
+    perc_machine perc.to_a
+  end
 end
 
-def ping(n,*args)
-   if n
-     velocity = 127
-     if args && args[0].is_a?(Numeric)
-       velocity = args[0]
-     end
-     args_h = resolve_synth_opts_hash_or_array(args)
-     midi n, velocity, *(args << {port: :iac_bus_1} << {channel: 2})
-     nname = SonicPi::Note.new(n).midi_string
-     puts "[#{nname}]"
-     midi_cc args_h
-   end
+live_loop :MachineInstructions, sync: :unsyncable do; tick
+  with_bpm @bpm=(127*1) do
+    score = (cycle
+      [[_] 8]
+      )
+    chd = score.look[0]
+    sleeps = score.look[-1]
+    sleep sleeps
+  end
 end
 
-live_loop :demo do
-  tick
-
-  midi :c3, channel: 3
-  pong :a2, sus: 2, delay: (ring 0.5, 1.0).look
-
-
-  sleep 1.0
-  ping :c2, sus: 2
-
-
-  sleep 1.0
- end
+live_loop(:unsyncable)do;sleep 1.0;end
