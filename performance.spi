@@ -57,6 +57,6 @@ live_loop :demo do
 
    ping :a2, delay: (ramp 0.0, 0.1, 256).look, sus: 2
    sleep 1.0
-   pong :c3, sus: 4
+   pong :c3,10, sus: 4
    sleep 1.0
  end
