@@ -3,6 +3,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 def midi_cc(cc)
   cc.keys.each do |k|
     n = case k
+        when :none; 100
         else
           nil
         end
