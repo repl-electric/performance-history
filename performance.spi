@@ -16,7 +16,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     kal :c4
     flop_cc motion: 0.47, drive: 0.43
     flip_cc motion: 0.50, drive: 0.23
-    overclock_cc oct: (cycle 19 -12 24).look
+    overclock_cc oct: (cycle 19 0 24).look
     overclock :g4,100, sus: 3
     flop_cc motion: (flow 0.4 0.57 32).look
     flip :g3, sus: (cycle 0.25 0.5 1).look
