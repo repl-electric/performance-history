@@ -2,7 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 midi_cc delay: 0.2
 
 
-
+stop
 def midi_cc(cc)
   cc.keys.each do |k|
     n = case k
