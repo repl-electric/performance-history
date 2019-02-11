@@ -46,8 +46,7 @@ end
 live_loop :demo do
    tick
   pong :A2
-
   sleep 1.0
-  ping :c3
+  ping :c2
   sleep 1.0
  end
