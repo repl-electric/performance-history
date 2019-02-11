@@ -7,13 +7,13 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, k
 #   #  flop_on :A3
 # #  overclock_on :f3,42
 # }
-overclock_cc motion: 0.45, drive: 0.19
+overclock_cc motion: 0.51, drive: 0.16
 # ACE FAC CEG
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
   with_bpm 127*4 do
-    kal :a4
+    kal :f4
     flop_cc motion: 0.47, drive: 0.43
     flip_cc motion: 0.50, drive: 0.23
     overclock_cc oct: (cycle 0 -12 0 19 0 12 24).look
