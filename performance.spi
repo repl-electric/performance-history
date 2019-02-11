@@ -2,7 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 
  def ping(n,*args)
    if n
-     velocity = 80
+     velocity = 100
      if args && args[0].is_a?(Numeric)
        velocity = args[0]
      end
