@@ -1,6 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 
-midi_cc delay: 0.2
+
 
 
 def midi_cc(cc)
@@ -16,6 +16,9 @@ def midi_cc(cc)
     end
   end
 end
+
+midi_cc delay: 0.2
+
 stop
 def pong(n,*args)
    if n
