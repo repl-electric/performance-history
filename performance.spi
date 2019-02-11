@@ -1,6 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 
-midi_cc 100, 127, channel: 1
+midi_cc 100, 0, channel: 1
 
 stop
 
