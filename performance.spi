@@ -43,7 +43,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
       puts (flow 0.0 1/4.0 16*4).look if spread(4,8).look
       glitch :c3, 120 if spread(4,8).look
       if dice(8) > 6 && spread(4,8*2).rot(-1).look
-        glitch :e3, 100
+        glitch :f3, 100
       end
       glitch_cc corode: rand
     }
