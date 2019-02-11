@@ -9,11 +9,11 @@ load_support('piezoelectric_resonator'); use_bpm 127
      args_h = resolve_synth_opts_hash_or_array(args)
      midi n, velocity, *(args << {port: :iac_bus_1} << {channel: 1})
      nname = SonicPi::Note.new(n).midi_string
-     puts "#{nname}"
+     puts "Ping: [#{nname}]"
    end
  end
 
-ping :A2
+
 
 
 live_loop :demo do
