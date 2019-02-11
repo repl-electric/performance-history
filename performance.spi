@@ -1,13 +1,10 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 
-midi_cc 100, 0, channel: 1
-
-stop
 
 def midi_cc(cc)
   cc.keys.each do |k|
     n = case k
-        when :none; 100
+        when :delay; 100
         else
           nil
         end
@@ -31,8 +28,6 @@ def pong(n,*args)
    end
 end
 
-stop
-
 def ping(n,*args)
    if n
      velocity = 100
@@ -49,7 +44,7 @@ end
 
 live_loop :demo do
   tick
-  pong :A2
+  pong :A2, delay: 0.2
   sleep 1.0
   ping :c2
   sleep 1.0
