@@ -1,83 +1,16 @@
-load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, kick: 0
-#init true && start_init
-#  explode_cube
+load_support('piezoelectric_resonator'); use_bpm 127
 
-#cam :top
+ def midi_fn(n,*args)
+   if n
+     velocity = 10
+     if args && args[0].is_a?(Numeric)
+       velocity = args[0]
+     end
+     args_h = resolve_synth_opts_hash_or_array(args)
+     midi n, velocity, *(args << {port: :iac_bus_1} << {channel: 1})
+     nname = SonicPi::Note.new(n).midi_string
+     puts "#{nname}"
+   end
+ end
 
-#eject_cpu_core
-#world time: 0.6
-#attune
-cam :top
-
-
-#vol 0
-#zoom_in
-
-#livecode :n
-#unity "/fadeout",-5.0
-
-stop
-
-
-
-live_loop :Attune, sync: :unsyncable do; tick
-  zero_delay [2,5,6].shuffle
-  with_bpm @bpm=127*4 do
-    silence!
-    overclock_cc oct: (cycle 0 -12 0 19).look
-#    overclock :b3,20,sus: 1/4.0
-    flop_cc motion: (flow 0.0 0.57 32).look*0.27
-    flop :a3, 60, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
-    flop :e3, 60, sus: (cycle 1).look if spread(1,1).look
-    sleep 1/4.0
-    sleep 1/4.0
-    sleep 1/4.0
-    sleep 1/4.0
-
-    sleep 1/4.0
-    sleep 1/4.0
-    sleep 1/4.0
-    sleep 1/4.0
-
-    sleep 1/2.0
-    sleep 1/2.0
-    sleep 1/2.0
-
-    flop :c4, 60, sus: (cycle 1/2.0).look if spread(1,1).look
-
-    sleep 1/2.0
-  end
-end
-
-live_loop :ClockCycle, sync: :unsyncable do; tick
-  #sync :MachineInstructions
-  perc=(cycle 1 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
-  with_bpm 127*(cycle 1).look do
-    perc_machine perc.to_a
-  end
-end
-
-live_loop :MachineInstructions, sync: :unsyncable do; tick
-  with_bpm @bpm=(127*1) do
-    score = (cycle
-      [[:A2] 4]
-      [[:F2] 4]
-      )
-
-    chd = score.look[0]
-    sleeps = score.look[-1]
-    resonate chd[0]+12,1, sus: sleeps, pads: [0], sat: 0, drive: 0
-    sleep sleeps/2.0
-
-    operator chd[-1]+12,100
-    with_swing((flow 0.0 sleeps/2.0 64).look){
-      voltage :E4
-      operator chd[-1]+12,100
-    }
-
-    sleep sleeps/2.0
-
-  end
-end
-#create_aura
-live_loop(:unsyncable)do;sleep 1.0;end
+ midi :A3
