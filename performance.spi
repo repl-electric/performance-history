@@ -1,8 +1,5 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 
-midi :a2, channel: 1
-
-
 def midi_cc(cc)
   cc.keys.each do |k|
     n = case k
@@ -16,7 +13,7 @@ def midi_cc(cc)
   end
 end
 
-def midi_fn(n,*args)
+def pong(n,*args)
    if n
      velocity = 100
      if args && args[0].is_a?(Numeric)
@@ -29,6 +26,8 @@ def midi_fn(n,*args)
      midi_cc args_h
    end
 end
+
+pong :A2
 
 live_loop :demo do
    tick
