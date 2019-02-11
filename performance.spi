@@ -41,10 +41,8 @@ def ping(n,*args)
    end
 end
 
-
-
 live_loop :demo do
-   tick
+  tick
   pong :A2
   sleep 1.0
   ping :c2
