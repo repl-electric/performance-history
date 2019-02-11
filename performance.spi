@@ -17,7 +17,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     overclock :f4, sus: 3
     flop_cc motion: (flow 0.0 0.57 32).look
     flip :g3, sus: (cycle 0.25 0.5 1).look
-    flip [:e4,:F3].choose, sus: (cycle 0.25 0.5 1).rot(-1).look
+    flip :e4, sus: (cycle 0.25 0.5 1).rot(-1).look
 
     sleep 1/4.0
     sleep 1/4.0
