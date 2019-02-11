@@ -1,5 +1,5 @@
 load_support('piezoelectric_resonator'); use_bpm 127
-midi_cc delay: 0.1
+midi_cc delay: 0.2
 
 
 
