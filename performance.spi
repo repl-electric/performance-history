@@ -54,7 +54,7 @@ def ping(n,*args)
 live_loop :demo do
    tick
 
-   ping :a2, delay: 0.4
+   ping :a2, delay: 0.7
    sleep 2.0
  #  pong :c3
    sleep 2.0
