@@ -13,4 +13,10 @@ load_support('piezoelectric_resonator'); use_bpm 127
    end
  end
 
- midi :a3, channel: 1
+
+live_loop :demo do
+   tick
+   midi :a3, channel: 1
+   sleep 1
+   sleep 1
+ end
