@@ -3,7 +3,7 @@ load_support('piezoelectric_resonator'); use_bpm 127
 
 
 
-def midi_cc(cc)
+def midi_cc_fn(cc)
   puts cc.keys
   cc.keys.each do |k|
     n = case k
@@ -18,7 +18,7 @@ def midi_cc(cc)
   end
 end
 
-midi_cc delay: 0.2
+midi_cc_fn delay: 0.2
 
 stop
 def pong(n,*args)
