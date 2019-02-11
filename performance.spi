@@ -39,7 +39,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
     #    perc_machine perc.to_a
     with_swing((flow 0.0 2.0 64).look){
       if spread(4,8).look
-        glitch :c3,50
+        glitch :c3,60
       end
     }
 
