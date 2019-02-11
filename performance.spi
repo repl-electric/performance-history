@@ -41,7 +41,6 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
       if spread(4,8).look
         glitch :c3
       end
-
     }
 
     sleep 1/4.0
