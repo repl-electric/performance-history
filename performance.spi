@@ -1,6 +1,20 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 
 
+def ping_cc(cc)
+  cc.keys.each do |k|
+    n = case k
+        when :delay; 100
+        else
+          nil
+        end
+    if n
+      midi_cc n, cc[k]*127.0, port: :iac_bus_1, channel: 1
+    end
+  end
+end
+
+
 ping_cc delay: 0.2
 
 
@@ -19,18 +33,6 @@ def ping(n,*args)
    end
  end
 
-def ping_cc(cc)
-  cc.keys.each do |k|
-    n = case k
-        when :delay; 100
-        else
-          nil
-        end
-    if n
-      midi_cc n, cc[k]*127.0, port: :iac_bus_1, channel: 1
-    end
-  end
-end
 
 
 stop
