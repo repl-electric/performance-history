@@ -1,6 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127
-pong :A2, delay: rand
 
+midi_cc delay: 0.2
 
 stop
 def midi_cc(cc)
