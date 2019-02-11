@@ -44,7 +44,6 @@ end
 
 
 live_loop :demo do
-
   tick
 
   pong :a2, sus: 2
