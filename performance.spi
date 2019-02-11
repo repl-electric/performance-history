@@ -8,14 +8,14 @@ at{
 #  overclock_on :f3,42
 }
 #overclock_cc motion: 0.27
-
+# ACE FAC CEG
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
     flop_cc motion: (flow 0.0 0.57 32).look
     flip :g3, sus: (cycle 0.25 0.5 1).look
-    flip :e3, sus: (cycle 0.25 0.5 1).rot(-1).look
+    flip [:e3,:F3].choose, sus: (cycle 0.25 0.5 1).rot(-1).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -85,7 +85,6 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     resonate chd[0]+12,1, sus: sleeps, pads: [0], sat: 0, drive: 0
 
     control_unit root(chd), 10,sus: sleeps, drive: 0.0, sat: 0.0
-
 
     sleep sleeps/2.0
     with_swing((flow 0.0 sleeps/2.0 64).look){
