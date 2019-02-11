@@ -16,7 +16,7 @@ end
 
 def pong(n,*args)
    if n
-     velocity = 120
+     velocity = 127
      if args && args[0].is_a?(Numeric)
        velocity = args[0]
      end
@@ -28,12 +28,12 @@ def pong(n,*args)
    end
 end
 
-pong :A2
-
-#midi :a2, channel: 1
-
 live_loop :demo do
+
   tick
+
+  pong :a2
+
   sleep 1.0
   sleep 1.0
  end
