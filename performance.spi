@@ -24,7 +24,7 @@ def pong(n,*args)
      midi n, velocity, *(args << {port: :iac_bus_1} << {channel: 1})
      nname = SonicPi::Note.new(n).midi_string
      puts "[#{nname}]"
-     midi_cc args_h
+     midi_cc_fn args_h
    end
 end
 
