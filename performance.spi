@@ -27,10 +27,12 @@ def pong(n,*args)
    end
 end
 
-pong :A2
+
 
 live_loop :demo do
    tick
-   sleep 1.0
+  pong :A2
+
+  sleep 1.0
    sleep 1.0
  end
