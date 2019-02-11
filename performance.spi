@@ -40,7 +40,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
     with_swing((flow 0.0 2.0 64).look){
       if spread(4,8).look
         glitch :c3,60
-        glitch_cc corode: rand
+        glitch_cc corrode: rand
       end
     }
 
