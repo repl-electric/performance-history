@@ -42,9 +42,9 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
   with_bpm 127*(cycle 1).look do
     #    perc_machine perc.to_a
     with_swing((flow 0.0 1/4.0 16*4).look){
-      glitch :c3, 120 if spread(7,12).look
+ #     glitch :c3, 120 if spread(7,12).look
       if dice(8) > 6 && spread(1,8).rot(-1).look
-        glitch :f3, 100
+#        glitch :f3, 100
       end
       glitch_cc corode: rand+0.5
     }
