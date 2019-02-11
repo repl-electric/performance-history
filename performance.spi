@@ -27,6 +27,20 @@ def pong(n,*args)
    end
 end
 
+def ping(n,*args)
+   if n
+     velocity = 100
+     if args && args[0].is_a?(Numeric)
+       velocity = args[0]
+     end
+     args_h = resolve_synth_opts_hash_or_array(args)
+     midi n, velocity, *(args << {port: :iac_bus_1} << {channel: 2})
+     nname = SonicPi::Note.new(n).midi_string
+     puts "Ping: [#{nname}]"
+     midi_cc args_h
+   end
+end
+
 
 
 live_loop :demo do
@@ -34,5 +48,6 @@ live_loop :demo do
   pong :A2
 
   sleep 1.0
-   sleep 1.0
+  ping :c3
+  sleep 1.0
  end
