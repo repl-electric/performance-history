@@ -34,7 +34,7 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
+  perc=(cycle 1 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
   with_bpm 127*(cycle 1).look do
     perc_machine perc.to_a
   end
@@ -53,7 +53,6 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     with_swing((flow 0.0 sleeps/2.0 64).look){
       resonate chd[0],110, sus: sleeps/2.0, pads: [2], sat: 0, drive: 0
     }
-
     sleep sleeps/2.0
   end
 end
