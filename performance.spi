@@ -30,7 +30,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
 
     if spread(3,8).rot(1).look
-
+      flop :C4
     else
       flop :E4
     end
