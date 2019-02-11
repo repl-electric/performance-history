@@ -18,6 +18,6 @@ load_support('piezoelectric_resonator'); use_bpm 127
 
 live_loop :demo do
    tick
-   midi :a3, channel: 1
+   ping :a3
    sleep 4
  end
