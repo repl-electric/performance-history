@@ -1,8 +1,8 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 
- def midi_fn(n,*args)
+ def ping(n,*args)
    if n
-     velocity = 10
+     velocity = 20
      if args && args[0].is_a?(Numeric)
        velocity = args[0]
      end
@@ -12,6 +12,8 @@ load_support('piezoelectric_resonator'); use_bpm 127
      puts "#{nname}"
    end
  end
+
+ping :A2
 
 
 live_loop :demo do
