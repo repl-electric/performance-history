@@ -33,7 +33,7 @@ live_loop :demo do
    tick
 
    ping :a2
-   sleep 4/2.0
+   sleep 2.0
    pong :c3
-   sleep 4/2.0
+   sleep 2.0
  end
