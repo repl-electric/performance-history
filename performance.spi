@@ -52,7 +52,7 @@ def ping(n,*args)
 
 live_loop :demo do
    tick
-   midi :c3, channel: 3
+   midi :c3,100, channel: 3
    ping :a2, delay: (ramp 0.0, 1.0, 256).look
    sleep 2.0
    pong :c3
