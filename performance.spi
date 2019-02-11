@@ -1,5 +1,11 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 
+
+midi_cc 100, 10, channel: 1
+
+
+stop
+
 def midi_cc_fn(cc)
   cc.keys.each do |k|
     n = case k
@@ -41,7 +47,6 @@ def ping(n,*args)
      midi_cc args_h
    end
 end
-
 
 live_loop :demo do
   tick
