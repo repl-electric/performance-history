@@ -41,7 +41,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
     #    perc_machine perc.to_a
     with_swing((flow 0.0 1/4.0 16*4).look){
       puts (flow 0.0 1/4.0 16*4).look if spread(4,8).look
-      glitch :c3, 120 if spread(7,8).look
+      glitch :c3, 120 if spread(3,7).look
       if dice(8) > 6 && spread(1,8).rot(-1).look
         glitch :f3, 100
       end
