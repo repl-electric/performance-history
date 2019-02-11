@@ -1,5 +1,8 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 
+midi :a2, channel: 1
+
+
 def midi_cc(cc)
   cc.keys.each do |k|
     n = case k
