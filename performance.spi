@@ -1,10 +1,8 @@
 load_support('piezoelectric_resonator'); use_bpm 127
 
-
-def ping_cc(cc)
+def midi_cc(cc)
   cc.keys.each do |k|
     n = case k
-        when :delay; 100
         else
           nil
         end
@@ -14,12 +12,7 @@ def ping_cc(cc)
   end
 end
 
-
-#ping_cc delay: 0.2
-
-
-
-def ping(n,*args)
+def midi_fn(n,*args)
    if n
      velocity = 100
      if args && args[0].is_a?(Numeric)
@@ -29,34 +22,12 @@ def ping(n,*args)
      midi n, velocity, *(args << {port: :iac_bus_1} << {channel: 1})
      nname = SonicPi::Note.new(n).midi_string
      puts "Ping: [#{nname}]"
-     ping_cc args_h
+     midi_cc args_h
    end
- end
-
-
-
-#stop
-
- def pong(n,*args)
-   if n
-     velocity = 100
-     if args && args[0].is_a?(Numeric)
-       velocity = args[0]
-     end
-     args_h = resolve_synth_opts_hash_or_array(args)
-     midi n, velocity, *(args << {port: :iac_bus_1} << {channel: 2})
-     nname = SonicPi::Note.new(n).midi_string
-     puts "Pong: [#{nname}]"
-   end
- end
+end
 
 live_loop :demo do
    tick
-   midi :c3,100, channel: 3
-#   pong :c3, sus: 2
-
-   ping :a2, delay: (ramp 0.0, 0.1, 256).look, sus: 2
    sleep 1.0
-   pong :c3,10, sus: 4
    sleep 1.0
  end
