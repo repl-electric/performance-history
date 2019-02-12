@@ -27,7 +27,7 @@ at{
 at{
   sync :Attune
   sleep 1.5
-  flop_on :d2,100, sus: (cycle 1).look if spread(1,1).look
+  flop_on :d2,120
 }
 
 
