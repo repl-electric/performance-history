@@ -5,6 +5,12 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, k
 
 #overclock_cc sync: 0
 #puts :done
+at{
+  sync :Attune
+  sleep 1.0/2.0
+  overclock_on :A3
+
+}
 
 
 #overclock_on :A2
@@ -23,6 +29,7 @@ at{
 }
 
 live_loop :Attune, sync: :unsyncable do; tick
+  silence!
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
     #tick_reset_all
@@ -64,13 +71,13 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     chd = score.look[0]
     sleeps = score.look[-1]
     resonate chd[0],1, sus: sleeps, pads: [0], sat: 0, drive: 0
-    glitch :d4,5, corrode: rand, mode: [0,1,2,3,4].choose
-    glitch_cc mode: [0,1,2,3,4].choose
+  #  glitch :d4,5, corrode: rand, mode: [0,1,2,3,4].choose
+  #  glitch_cc mode: [0,1,2,3,4].choose
 
     sleep sleeps/2.0
-    overclock :e3, 10, sus: 1/8.0, motion: rand*0.5
+#    overclock :e3, 10, sus: 1/8.0, motion: rand*0.5
     with_swing((flow 0.0 sleeps/2.0 64).look){
-      resonate :gs2,120, sus: sleeps*2, pads: [2], sat: 0, drive: 0.65
+ #     resonate :gs2,120, sus: sleeps*2, pads: [2], sat: 0, drive: 0.65
     }
 
     sleep sleeps/2.0
