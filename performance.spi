@@ -8,8 +8,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, k
 # #  overclock_on :f3,42
 # }
 
-fx reverb:  0.40, drive: 1.00
-overclock_cc motion: 0.60, drive: 1.00
+fx reverb:  1.00, drive: 1.00
+overclock_cc motion: 0.00, drive: 1.00
 # ACE FAC CEG
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
