@@ -26,8 +26,8 @@ at{
 
 at{
   sync :Attune
-  sleep 1.5
-  flop_off :b3,120
+  sleep 3
+  flop_on :b3,120
 }
 
 
