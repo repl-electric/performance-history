@@ -1,4 +1,4 @@
-load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, kick: 0
+load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 0
 #overclock_cc sync: 127
 #midi_cc 102, 127, channel: 5
 
@@ -27,7 +27,7 @@ at{
 at{
   sync :Attune
   sleep 1.5
-  flop_on :b2,120
+#  flop_on :b2,120
 }
 
 
