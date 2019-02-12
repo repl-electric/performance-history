@@ -52,7 +52,9 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    resonate chd[0]+12,1, sus: sleeps, pads: [0], sat: 0, drive: 0
+    if dice(8) > 6
+      resonate chd[0]+12,1, sus: sleeps, pads: [0], sat: 0, drive: 0
+    end
   #  glitch :d4,5, corrode: rand, mode: [0,1,2,3,4].choose
   #  glitch_cc mode: [0,1,2,3,4].choose
 
