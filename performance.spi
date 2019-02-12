@@ -11,7 +11,7 @@ at{
 #  overclock_on :F3, motion: 0.5
 }
 
-overclock_cc motion: 0.27, sync: 1
+#overclock_cc motion: 0.27, sync: 1
 
 
 
