@@ -2,7 +2,7 @@
 #midi_cc 102, 127, channel: 5
 
 
-overclock_cc unsync: 1
+overclock_cc unsync: 127
 
 
 stop
