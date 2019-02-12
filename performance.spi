@@ -6,7 +6,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #overclock_cc unsync: 1
 #puts :done
 
-midi_cc 102, 0, port: :iac_bus_1, channel: 5
+midi_cc 102, 127, port: :iac_bus_1, channel: 5
 
 stop
 
