@@ -10,7 +10,7 @@ at{
 }
 
 
-stop
+#stop
 live_loop :Attune, sync: :unsyncable do; tick
 #  silence?
   zero_delay [2,5,6].shuffle
