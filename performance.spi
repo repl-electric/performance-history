@@ -1,5 +1,5 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
-init true && start_init
+#init true && start_init
 #TESTING  TESTING!!!!!!!!!!!!!!!!!!!!!!
 # cam :top
 # at{
@@ -9,6 +9,7 @@ init true && start_init
 
 # }
 #unity "/attune/noise",1.1
+cam :top
 stop
 
 live_loop :Attune, sync: :unsyncable do; tick
