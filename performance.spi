@@ -81,6 +81,8 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
 #    sea circle: rand
     #    aura scale: rand*1.3
 
+    glitch :c3 if spread(4,8).look
+
     sleep 1/4.0
 
   end
