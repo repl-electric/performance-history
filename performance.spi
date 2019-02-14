@@ -5,7 +5,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, k
 #world time: 0.98
 #overclock_on :f4
 #overclock_cc attune: 0.50
-cam :top
+#cam :top
 
 #recover
 
@@ -38,7 +38,7 @@ live_loop :Attune, sync: :unsyncable do; tick
 
   overclock :f4, sus: 3
 
-  with_bpm 127 do
+  with_bpm 127*2 do
     flop_cc motion: (flow 0.0 0.27 32).look
 
     flop :g3, 60, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
