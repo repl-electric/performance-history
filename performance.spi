@@ -37,7 +37,7 @@ live_loop :Attune, sync: :unsyncable do; tick
  #   unity "/lights/up",100
     overclock_cc oct: (cycle 0 -12 0 19).look
     puts (cycle 0 -12 0 19).look
-    roots throttle: 0
+    roots_chase throttle: 0
 
     sleep 1/4.0
     sleep 1/4.0
