@@ -78,8 +78,8 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
   perc=(cycle 1 1 0 0  1 0 1 0  1 0 0 0  0 0 0 0)
   with_bpm 127*(cycle 1).look do
     perc_machine perc.to_a
-    sea circle: rand
-    aura scale: rand*1.3
+#    sea circle: rand
+#    aura scale: rand*1.3
   end
 end
 
