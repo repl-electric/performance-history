@@ -16,8 +16,8 @@ at{
 
 
 livecode :sleep
-overclock_cc motion: 0.37
-
+overclock_cc motion: 0.29
+zoomout
 
 
 
