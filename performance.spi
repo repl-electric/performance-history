@@ -1,11 +1,13 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, kick: 0
 
 
-world time: 1.00
-overclock_cc attune: 0.50
+#world time: 1.00
+#overclock_cc attune: 0.50
 
 
-stop
+recover
+
+#stop
 at{
   sync :Attune
   sleep 4
