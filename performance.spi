@@ -9,8 +9,9 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 
 # }
 
-$end=false
+
 live_loop :Attune, sync: :unsyncable do; tick
+  $end=false
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=2*(127) do
     flop :g3
