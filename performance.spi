@@ -19,7 +19,7 @@ live_loop :Attune, sync: :unsyncable do; tick
   with_bpm @bpm=4*(127) do
     flop :g3
     overclock :g3, sus: 3
-    overclock_cc oct: (cycle 0, 19, 0, 24,).look
+    overclock_cc oct: (cycle 0, 19, 24,).look
 
 
     sleep 1/4.0
