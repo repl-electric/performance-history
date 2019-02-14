@@ -8,7 +8,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #   flop_on :g2,127
 
 # }
-
+unity "/attune/noise",0.0
 
 live_loop :Attune, sync: :unsyncable do; tick
   $end=false
