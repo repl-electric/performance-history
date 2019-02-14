@@ -24,7 +24,7 @@ fx reverb: 0.60, drive: 0.30
 #zoomout
 roots_chase target: :spiral, force: 150, drag: 0.5
 live_loop :Attune, sync: :unsyncable do; tick
-  overclock_cc oct: (cycle 0 -12 19 0 24).look, drive: 0.45
+  overclock_cc oct: (cycle 0 19 0 24).look, drive: 0.45
   flip_cc motion: 0.4
   overclock :d4
   silence?
