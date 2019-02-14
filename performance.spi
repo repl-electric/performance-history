@@ -4,7 +4,7 @@ at{
   sync :Attune
   sleep 1/4.0
 
-  overclock_on :a3
+  overclock_on :a3, motion: 0.5
 
 #  flop_on :b3#, 120#, sus: (cycle 1).look if spread(1,1).look
 }
@@ -58,7 +58,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     sleep sleeps/2.0
 
     with_swing((flow 0.0 sleeps/2.0 64).look){
-      overclock :f4, 10, motion: rand*0.5
+#      overclock :f4, 10, motion: rand*0.5
  #     resonate :f1,127, sus: sleeps*4, pads: [2], sat: 0, drive: 0
 #      voltage chd[0],0
     }
