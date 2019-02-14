@@ -1,5 +1,6 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 0
 
+roots target: :slow, force: 200
 # at{
 #   sync :Attune
 #   sleep 4
@@ -46,7 +47,7 @@ live_loop :Attune, sync: :unsyncable do; tick
   end
 end
 
-roots target: :slow, force: 200
+
 
 #zoomout
 
@@ -93,7 +94,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     resonate chd[0],1, sus: sleeps, pads: [0], sat: 0, drive: 0
     control_unit root(chd), 10,sus: sleeps, drive: 0.0, sat: 0.0
 
-    at{sleep 0.5; cam :chase; create_sea}
+#    at{sleep 0.5; cam :chase; create_sea}
 
     sleep sleeps/2.0
 
