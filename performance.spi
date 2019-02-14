@@ -3,7 +3,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 
 #flop_on :D2
 
-cam :top
+#cam :top
 
 #cam :top
 
@@ -20,11 +20,11 @@ cam :top
 #unity "/fadeout",1
 
 
-$end = false
+#$end = false
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
-  with_bpm @bpm=1*(127) do
+  with_bpm @bpm=2*(127) do
 
 
 #    unity "/lights/up",1.0
