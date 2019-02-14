@@ -4,7 +4,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, k
 
 world time: 0.20
 #overclock_on :d3
-overclock_cc attune: 0.20
+overclock_cc attune: 0.30
 
 
 stop
