@@ -5,7 +5,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, k
 #world time: 0.98
 #overclock_on :f4
 #overclock_cc attune: 0.50
-
+cam :top
 
 #recover
 
@@ -79,7 +79,10 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
   with_bpm 127*(cycle 1).look do
     perc_machine perc.to_a
 #    sea circle: rand
-#    aura scale: rand*1.3
+    #    aura scale: rand*1.3
+
+
+
   end
 end
 
