@@ -36,7 +36,7 @@ fx reverb: 0.41, drive: 0.40
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   silence?
-  overclock_cc oct: (cycle 0 19 0 12).look
+  overclock_cc oct: (cycle 0 19 0 24).look
 
   overclock :f4, sus: 4
 
