@@ -40,7 +40,7 @@ at{
 #stop
 
 
-fx reverb: 1.00, drive: 1.00
+#fx reverb: 1.00, drive: 1.00
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
@@ -152,3 +152,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 end
 
 live_loop(:unsyncable)do;sleep 1.0;end
+
+
+#livecode :end
+vol 0.0
