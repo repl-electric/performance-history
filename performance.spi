@@ -10,8 +10,13 @@ at{
 #  sync :Attune
 #  sleep 1.0/6.0
 #  overclock_on :f3, motion: 0.5
-  livecode :raise
+#  livecode :raise
 }
+
+livecode :sleep
+overclock_cc motion: 0.49
+
+
 
 
 
