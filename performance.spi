@@ -45,7 +45,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm @bpm=(127*1) do
     score = (cycle
-      [[:e2] 4]
+      [[:g2] 4]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
@@ -54,7 +54,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     sleep sleeps/2.0
 
     with_swing((flow 0.0 sleeps/2.0 64).look){
-      resonate :f2,127, sus: sleeps*4, pads: [2], sat: 0, drive: 0
+      resonate :f1,127, sus: sleeps*4, pads: [2], sat: 0, drive: 0
       voltage chd[0],0
     }
 
