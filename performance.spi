@@ -1,31 +1,9 @@
-load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, kick: 0
-#overclock_cc sync: 127
-#overclock :f4, 120
-#midi_cc 102, 127, channel: 5
+load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
+init true && start_init
 
-
-
-
-#flop :g2,127
-
-#flop_on :G2
-
-at{
-  sync :Attune
-  sleep 2.5
-  #flop_off :b2#,127
-  puts :done
-}
-
-
-#stop
 live_loop :Attune, sync: :unsyncable do; tick
-  #silence?
   zero_delay [2,5,6].shuffle
   with_bpm 127 do
-    #tick_reset_all
-    flop_cc motion: (flow 0.0 0.5 32).look
-    flop :A3
 
     sleep 1/4.0
     sleep 1/4.0
@@ -40,9 +18,6 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/2.0
     sleep 1/2.0
     sleep 1/2.0
-
-    flop :c4, 40, sus: (cycle 1/2.0).look if spread(1,1).look
-
     sleep 1/2.0
   end
 end
@@ -56,28 +31,13 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
 end
 
 live_loop :MachineInstructions, sync: :unsyncable do; tick
-  stop
   with_bpm @bpm=(127*1) do
     score = (cycle
-      [[:F2] 4]
+      [[_] 8]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    if dice(8) > 2
-      resonate chd[0]+12,1, sus: sleeps, pads: [0], sat: 1.00, drive: 0.21
-    end
-  #  glitch :d4,5, corrode: rand, mode: [0,1,2,3,4].choose
-  #  glitch_cc mode: [0,1,2,3,4].choose
-
-    sleep sleeps/2.0
-#    overclock :e3, 10, sus: 1/8.0, motion: rand*0.5
-    with_swing((flow 0.0 sleeps/2.0 64).look){
-      overclock :f4, 25, sus: 1/8.0, motion: rand*0.5, sync: 1
-      resonate :g3,1, sus: sleeps*4, pads: [1], sat: 1.00, drive: 0.58
-    }
-
-    sleep sleeps/2.0
-
+    sleep sleeps
   end
 end
 
