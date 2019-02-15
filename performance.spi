@@ -52,7 +52,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #stop
 
 
-attune
+#attune
 
 
 ##@its hurting!!
@@ -163,3 +163,8 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 end
 
 live_loop(:unsyncable)do;sleep 1.0;end
+
+
+
+vol 0
+#livecode :end
