@@ -1,5 +1,5 @@
 #Repl Electric: http://www.repl-electric.com
-load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, kick: 0
+load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, kick: 0
 #init true && start_init
 
 at{
@@ -52,7 +52,7 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
+  perc=(cycle 1 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
   with_bpm @bpm=(127*(cycle 1).look) do
     perc_machine perc.to_a
   end
