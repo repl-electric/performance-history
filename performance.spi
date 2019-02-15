@@ -20,7 +20,6 @@ live_loop :Attune, sync: :unsyncable do; tick
     #tick_reset_all
     flop_cc motion: (flow 0.0 0.57 32).look
 
-#    flop :c4, 127, sus: (cycle 1/2.0).look
 
     flop :g3,100, sus: (cycle 0.25 0.5 1).look
     flip :e3,100, sus: (cycle 0.25 0.5 1).rot(-1).look
