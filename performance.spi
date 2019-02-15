@@ -53,7 +53,15 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     sleeps = score.look[-1]
     resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
 
-    sleep sleeps
+    sleep sleeps/2.0
+
+    with_swing((flow 0.0, sleeps/2.0, 64,).look){
+      resonate :f2,1, sus: sleeps, pads: [2], sat: 0, drive: 0
+
+    }
+
+
+    sleep sleeps/2.0
   end
 end
 
