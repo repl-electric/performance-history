@@ -12,10 +12,10 @@ live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127) do
     #tick_reset_all
-    flop_cc motion: (flow 0.0 0.57 32).look
+    flop_cc motion: (flow 0.0, 0.57, 32,).look
 
-    flop :A3, 60, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
-    flop :E3, 60, sus: (cycle 0.25 0.5 1).rot(-1).look if spread(1,1).look
+    flop :A3, 60, sus: (cycle 0.25, 0.5, 1,).look if spread(1,1).look
+    flop :E3, 60, sus: (cycle 0.25, 0.5, 1,).rot(-1).look if spread(1,1).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -41,8 +41,8 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
-  with_bpm @bpm=(127*(cycle 1).look) do
+  perc=(cycle 0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,)
+  with_bpm @bpm=(127*(cycle 1,).look) do
     perc_machine perc.to_a
   end
 end
@@ -50,7 +50,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm @bpm=(127*1) do
     score = (cycle
-      [[:D2] 8]
+      [[:D2], 8],
       )
     chd = score.look[0]
     sleeps = score.look[-1]
@@ -62,8 +62,8 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
     sleep sleeps/2.0
 
-    overclock :c3,30, sus: 1/2.0, motion: rand
-    with_swing((flow 0.0 sleeps/2.0 64).look){
+    overclock :c3,30, sus: 1/2.0, motion: rand*0.5
+    with_swing((flow 0.0, sleeps/2.0, 64,).look){
       resonate :f2,127, sus: sleeps, pads: [2], sat: 0, drive: 0.55
     }
 
