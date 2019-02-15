@@ -4,14 +4,17 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #Lets try and bring it back to life...
 
 #world time: 1.00
-overclock_cc attune: 0.46, sync: 1
+#overclock_cc attune: 0.46, sync: 1
 
+
+
+cam :top
 
 
 
 #stop
 
-recover
+#recover
 
 #init true && start_init
 
@@ -34,7 +37,7 @@ recover
 live_loop :Attune, sync: :unsyncable do; tick
   silence? # please
   zero_delay [2,5,6].shuffle
-  with_bpm @bpm=(127) do
+  with_bpm @bpm=(127*2) do
     #tick_reset_all
     flop_cc motion: (flow 0.0 0.57 32).look
 
