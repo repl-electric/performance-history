@@ -41,7 +41,7 @@ live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
 
   with_bpm @bpm=(127*3) do
-  overclock :g4, sus: 3
+  overclock :f4, sus: 3
   overclock_cc oct: (cycle -12 0 19, 0, 24).look
 
     #tick_reset_all
