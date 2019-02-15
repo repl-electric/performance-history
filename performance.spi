@@ -42,7 +42,7 @@ live_loop :Attune, sync: :unsyncable do; tick
 
   with_bpm @bpm=(127*3) do
   overclock :f4, sus: 3
-  overclock_cc oct: (cycle -12 0 19, 0, 24).look
+  overclock_cc oct: (cycle 0 19, 0, 24).look
 
     #tick_reset_all
     flop_cc motion: (flow 0.3 0.57 32).look
