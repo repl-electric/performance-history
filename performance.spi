@@ -1,28 +1,17 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
-init true && start_init
-#TESTING  TESTING!!!!!!!!!!!!!!!!!!!!!!
- cam :top
+#Repl Electric: http://www.repl-electric.com
+
 at{
   sync :Attune
   sleep 1.5
-  flop_on :g2,127
+  flop_on :d2
 
 }
-#unity "/attune/noise",1.1
-#cam :top
-#stop
-#world time: 1
-#eject_cpu_core
-#overclock_cc attune: 0.30#, motion: 0.50
+
+
 live_loop :Attune, sync: :unsyncable do; tick
-  stop
-  $end=false
   zero_delay [2,5,6].shuffle
-  with_bpm @bpm=4*(127) do
-    flop :g3
-    overclock :g3, sus: 3
-#    overclock_cc oct: (cycle 0, 19, 24,).look
-
+  with_bpm @bpm=(127) do
 
     sleep 1/4.0
     sleep 1/4.0
@@ -37,10 +26,6 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/2.0
     sleep 1/2.0
     sleep 1/2.0
-
-    flop :C4, 60, sus: (cycle 1,).look if spread(1,1).look
-
-
     sleep 1/2.0
   end
 end
