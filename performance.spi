@@ -122,7 +122,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     #zoomout
     resonate chd[0]+12,1, sus: sleeps, pads: [0,1,2], sat: 0, drive: 0
 
-    control_unit root(chd), 15,sus: sleeps, drive: 0.70, sat: 0.72
+    control_unit root(chd), 15,sus: sleeps, drive: 1.00, sat: 0.72
 
     sleep sleeps/2.0
 
