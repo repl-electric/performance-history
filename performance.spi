@@ -25,7 +25,7 @@ at{
 
 #roots_chase target: :spiral, force: 100
 
-cam :top
+#cam :top
 #cam :chase
 #stop
 
@@ -36,12 +36,12 @@ cam :top
 live_loop :Attune, sync: :unsyncable do; tick
   stop
   zero_delay [2,5,6].shuffle
-  with_bpm @bpm=(127*1) do
-    silence!
+  with_bpm @bpm=(127*2) do
+    silence?
     #tick_reset_all
  #   overclock_cc oct: (cycle 0 -12 0 19).look
-    overclock :f4, sus:3, motion: 0.3 if spread(1,4).look
-    flop_cc motion: (flow 0.3 0.57 32).look
+#    overclock :f4, sus:3, motion: 0.3 if spread(1,4).look
+#    flop_cc motion: (flow 0.3 0.57 32).look
  #   flip_cc motion: 0.4
 
     flop :g3, 80, sus: (cycle 0.25 0.5 1).look if spread(7,11).look
