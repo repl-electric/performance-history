@@ -25,14 +25,14 @@ at{
 
 #roots_chase target: :spiral, force: 100
 
-cam :top
+#cam :top
 #cam :chase
 #stop
 
 #world time: 1
 #unity "/attune/noise",1.5
 #stop
-error(speed: 27, radius: 9)
+#error(speed: 27, radius: 9)
 live_loop :Attune, sync: :unsyncable do; tick
 #  stop
   zero_delay [2,5,6].shuffle
@@ -40,7 +40,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     silence?
     #tick_reset_all
     overclock_cc oct: (cycle 0 -12 0 19).look
-    overclock :f4, sus:3, motion: 0.3 if spread(1,4).look
+    overclock :f4, sus:3, motion: 0.3 # if spread(1,4).look
 #    flop_cc motion: (flow 0.3 0.57 32).look
  #   flip_cc motion: 0.4
 
