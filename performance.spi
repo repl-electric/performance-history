@@ -45,7 +45,7 @@ $triggered=true
 live_loop :Attune, sync: :unsyncable do; tick
  # stop
   zero_delay [2,5,6].shuffle
-  with_bpm @bpm=(127*3) do
+  with_bpm @bpm=(127*4) do
     silence?
     #tick_reset_all
 #    overclock_cc
