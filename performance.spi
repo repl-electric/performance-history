@@ -29,14 +29,14 @@ at{
 
 #roots_chase target: :spiral, force: 100
 
-#cam :top
+cam :top
 #stop
 #unity "/fadeout",1.0
 #cam :chase
 #stop
 
 #world time: 1
-unity "/fadeout",1.0
+#unity "/fadeout",1.0
 #stop
 #error(speed: 25, radius: 9)
 #unity "/attune/noise",1.5
