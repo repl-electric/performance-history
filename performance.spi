@@ -26,8 +26,8 @@ at{
 #roots_chase target: :spiral, force: 100
 
 #cam :top
-#cam :chase
-#stop
+cam :chase
+stop
 
 #world time: 1
 #unity "/attune/noise",0.5
