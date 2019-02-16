@@ -25,7 +25,7 @@ at{
 
 #roots_chase target: :spiral, force: 100
 
-cam :top
+#cam :top
 #cam :chase
 #stop
 
