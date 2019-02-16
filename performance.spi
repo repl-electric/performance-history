@@ -43,7 +43,10 @@ at{
 $triggered=true
 
 
-error(speed: 100, radius: 80)
+#error(speed: 100, radius: 80)
+
+eject_cpu_core
+stop
 
 live_loop :Attune, sync: :unsyncable do; tick
   stop
