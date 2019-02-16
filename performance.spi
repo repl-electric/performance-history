@@ -55,7 +55,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     #at{sleep 0.5; create_aura}
     sleep sleeps/2.0
     with_swing((flow 0.0 sleeps/2.0 64).look){
-      resonate :g2,127, sus: sleeps, pads: [2], sat: 0, drive: 0.30
+      resonate :g2,127, sus: sleeps, pads: [2], sat: 0, drive: 0.41
     }
 
     sleep sleeps/2.0
