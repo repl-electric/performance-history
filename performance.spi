@@ -46,7 +46,7 @@ $triggered=true
 error(speed: 2000, radius: 100)
 
 live_loop :Attune, sync: :unsyncable do; tick
- # stop
+  stop
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127*4) do
     silence?
