@@ -32,6 +32,9 @@ live_loop :Attune, sync: :unsyncable do; tick
   with_bpm @bpm=(127*2) do
     silence?
     #tick_reset_all
+
+    overclock :f4, sync: 1
+
     flop_cc motion: (flow 0.0 0.57 32).look
 
     flop :g3, 80, sus: (cycle 0.25 0.5 1).look if spread(7,11).look
