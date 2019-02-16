@@ -32,7 +32,7 @@ at{
 #world time: 1
 #unity "/attune/noise",1.5
 #stop
-error(speed: 100, radius: 14)
+error(speed: 100, radius: 12)
 live_loop :Attune, sync: :unsyncable do; tick
 #  stop
   zero_delay [2,5,6].shuffle
