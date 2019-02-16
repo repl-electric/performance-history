@@ -43,7 +43,7 @@ at{
 $triggered=true
 
 
-error(speed: 400, radius: 20)
+error(speed: 400, radius: 40)
 
 live_loop :Attune, sync: :unsyncable do; tick
  # stop
