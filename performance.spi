@@ -25,7 +25,7 @@ at{
 
 #roots_chase target: :spiral, force: 100
 
-cam :top
+#cam :top
 #unity "/fadeout",1.0
 #cam :chase
 #stop
@@ -33,7 +33,7 @@ cam :top
 #world time: 1
 #unity "/attune/noise",1.5
 #stop
-#error(speed: 27, radius: 9)
+error(speed: 27, radius: 9)
 live_loop :Attune, sync: :unsyncable do; tick
 #  stop
   zero_delay [2,5,6].shuffle
