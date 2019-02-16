@@ -5,7 +5,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #world time: 2.50
 #overclock_cc attune: 0.57
 
-cam :top
+#cam :top
 #recover
 
 #error target: :circle
