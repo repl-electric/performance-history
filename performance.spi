@@ -23,7 +23,9 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 #overclock_cc motion: 0.27
 #zoomout
 
-roots_chase target: :spiral, force: 100
+#roots_chase target: :spiral, force: 100
+
+cam :top
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
@@ -31,8 +33,6 @@ live_loop :Attune, sync: :unsyncable do; tick
     silence?
     #tick_reset_all
     flop_cc motion: (flow 0.0 0.57 32).look
-
-
 
     flop :g3, 80, sus: (cycle 0.25 0.5 1).look if spread(7,11).look
     flip :e3, 80, sus: (cycle 0.25 0.5 1).rot(-1).look if spread(3,8).look
