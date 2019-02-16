@@ -28,7 +28,7 @@ at{
 #cam :top
 #cam :chase
 #world time: 1
-unity "/attune/noise",1.5
+unity "/attune/noise",2.5
 
 live_loop :Attune, sync: :unsyncable do; tick
   stop
