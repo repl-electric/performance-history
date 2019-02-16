@@ -30,7 +30,7 @@ cam :top
 #stop
 
 #world time: 1
-unity "/attune/noise",0.5
+#unity "/attune/noise",0.5
 stop
 
 live_loop :Attune, sync: :unsyncable do; tick
