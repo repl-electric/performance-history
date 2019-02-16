@@ -25,7 +25,8 @@ at{
 
 #roots_chase target: :spiral, force: 100
 
-#cam :top
+cam :top
+stop
 #unity "/fadeout",1.0
 #cam :chase
 #stop
