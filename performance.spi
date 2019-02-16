@@ -1,4 +1,4 @@
-load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
+load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, kick: 0
 
 # lets recover
 
@@ -12,9 +12,9 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #stop
 
 at{
-  sync :Attune
-  sleep 3
-  flop_on :g3
+#  sync :Attune
+#  sleep 3
+#  flop_on :g3
 
 }
 #livecode :raise
