@@ -157,7 +157,7 @@ live_loop(:unsyncable)do;sleep 1.0;end
 
 #attune
 
-unity "/lights/up",0
+unity "/lights/up",1
 
 #unity "/fadeout",1
 
