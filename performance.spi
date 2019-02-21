@@ -8,7 +8,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 
 #eject_cpu_core
 #attune
-
+eject_cpu_core
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
@@ -33,8 +33,8 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1)
-  with_bpm @bpm=(127*(cycle 1).look) do
+  perc=(cycle 1,)
+  with_bpm @bpm=(127*(cycle 1,).look) do
     perc_machine perc.to_a
   end
 end
@@ -42,7 +42,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm @bpm=(127*1) do
     score = (cycle
-      [[:d2] 8]
+      [[:d2], 8],
       )
     chd = score.look[0]
     sleeps = score.look[-1]
