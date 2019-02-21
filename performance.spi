@@ -12,7 +12,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
-  with_bpm @bpm=(127) do
+  with_bpm @bpm=(127*2) do
 
     sleep 1/4.0
     sleep 1/4.0
