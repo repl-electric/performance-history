@@ -59,6 +59,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
       sleep 0.5
       sea circle: rand
       aura scale: rand*1.5
+      glitch corrode: rand
       }
     perc_machine perc.to_a
   end
