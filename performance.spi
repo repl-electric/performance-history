@@ -70,7 +70,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
 
       end
       }
-    end
+
     #    perc_machine perc.to_a
     sleep 1/4.0
   end
