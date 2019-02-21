@@ -21,7 +21,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 # }
 
 #livecode :sleep
-overclock_cc attune: 0.50
+overclock_cc attune: 0.52
 #zoomout
 
 #livecode :raise
@@ -29,7 +29,7 @@ overclock_cc attune: 0.50
 live_loop :Attune, sync: :unsyncable do; tick
   silence? #please?
   zero_delay [2,5,6].shuffle
-  overclock :f4,sus: 3, motion: 0.4
+  overclock :f4,sus: 3
   overclock_cc oct: (cycle 0 -12 0 19).look
 
   with_bpm @bpm=3*(127) do
