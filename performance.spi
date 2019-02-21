@@ -157,8 +157,8 @@ end
 live_loop(:unsyncable)do;sleep 1.0;end
 
 
-#attune
-eject_cpu_core
+attune
+#eject_cpu_core
 
 
 
