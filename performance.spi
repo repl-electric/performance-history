@@ -97,6 +97,7 @@ end
 roots_chase target: :spiral, force: 250
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
+  stop
   #sync :MachineInstructions
   perc=(cycle 1 1 1 1  1 1 1 1   1)
   with_bpm @bpm=(127*(cycle 1 0.5 0.25 1).look) do
