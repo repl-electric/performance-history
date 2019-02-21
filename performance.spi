@@ -3,8 +3,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 at{
 # sync :Attune
 # sleep 1
-  flop_off :a3
-  flop_on :B3
+  flop_off :b3
+  flop_on :c4
 }
 
 live_loop :Attune, sync: :unsyncable do; tick
