@@ -19,15 +19,12 @@ live_loop :Attune, sync: :unsyncable do; tick
     #tick_reset_all
     flop_cc motion: (flow 0.27 0.57 32).look
 
-
-
     flip :g3, 127, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
     flop :e4, 127, sus: (cycle 0.25 0.5 1).rot(-1).look if spread(1,1).look
 
     if spread(7,11).look
       flop :b3, 127, sus: 2
     end
-
 
     sleep 1/4.0
     sleep 1/4.0
@@ -63,6 +60,8 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
     perc_machine perc.to_a
   end
 end
+
+root_chase target: start
 
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm @bpm=(127*1) do
