@@ -61,7 +61,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
   end
 end
 
-roots_chase target: :start, force: 160
+roots_chase target: :start, force: 170
 
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm @bpm=(127*1) do
