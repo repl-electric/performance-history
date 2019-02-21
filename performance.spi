@@ -2,6 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #init true && start_init
 
 #flop_on :D2
+create_aura
 
 
 live_loop :Attune, sync: :unsyncable do; tick
@@ -41,7 +42,6 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     chd = score.look[0]
     sleeps = score.look[-1]
     resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
-
     sleep sleeps
   end
 end
