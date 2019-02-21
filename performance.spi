@@ -39,7 +39,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     fn = [(method :flip), (method :flop)].choose
 
     flip :g4, 127, sus: (cycle 0.25, 0.5, 2,).look if spread(7,11).look
-    fn(:e4, 127, sus: (cycle 0.25, 0.5, 1,).rot(-1).look) if spread(3,8).look
+    fn.(:e4, 127, sus: (cycle 0.25, 0.5, 1,).rot(-1).look) if spread(3,8).look
 
     if spread(7,11).look
  #     flop :b3, 127, sus: 2
