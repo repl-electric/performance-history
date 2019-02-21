@@ -51,7 +51,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
     sleep sleeps/2.0
     with_swing((flow 0.0 sleeps/2.0 64).look){
-      overclock :f4, 55, sus: 1.0/4.0, motion: rand*0.50 + 0.2
+      overclock :f4, 35, sus: 1.0/4.0, motion: rand*0.50 + 0.2
       #resonate :f3,120, sus: sleeps/2.0, pads: [2], sat: 0, drive: 0
     }
     sleep sleeps/2.0
