@@ -100,13 +100,13 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
 
     sleep sleeps/2.0
+
     if chd[0] == :F4
-      resonate :Gs4,10, sus: sleeps, pads: [1], sat: 0, drive: 0
+      resonate :Gs4,15, sus: sleeps, pads: [1], sat: 0, drive: 0
     end
     if chd[0] == :C3
       resonate :E4,15, sus: sleeps, pads: [1], sat: 0, drive: 0
     end
-
 
 
 #    with_swing((flow 0.0 sleeps/2.0 64).look){
