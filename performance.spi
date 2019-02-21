@@ -52,7 +52,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/2.0
   end
 end
-roots_chase target: :slow
+#roots_chase target: :slow,
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
@@ -91,7 +91,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     sleeps = score.look[-1]
     resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
 
-    at{sleep 0.5; create_sea; zoomout; cam :chase}
+ #   at{sleep 0.5; create_sea; zoomout; cam :chase}
     control_unit root(chd), 12,sus: sleeps, drive: 0.0, sat: 0.0
 
 
