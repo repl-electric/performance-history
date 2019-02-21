@@ -159,7 +159,7 @@ live_loop(:unsyncable)do;sleep 1.0;end
 
 #attune
 
-attune
+eject_cpu_core
 
 #unity "/fadeout",1
 
