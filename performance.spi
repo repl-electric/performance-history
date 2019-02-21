@@ -3,21 +3,21 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 at{
   sync :Attune
   sleep 5
-  overclock_on :A3, 38, motion: 0.35
+  overclock_on :E3, 48, motion: 0.4
 }
 
 
-livecode :raise #hehehe
+#livecode :raise #hehehe
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence! #please
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127) do
     #tick_reset_all
-    flop_cc motion: (flow 0.0, 0.57, 32,).look
+    flop_cc motion: (flow 0.0 0.57 32).look
 
-    flop :a3, 100, sus: (cycle 0.25, 0.5, 1,).look if spread(1,1).look
-    flop :e3, 110, sus: (cycle 0.25, 0.5, 1,).rot(-1).look if spread(1,1).look
+    flop :a3, 100, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
+    flop :e3, 110, sus: (cycle 0.25 0.5 1).rot(-1).look if spread(1,1).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -35,7 +35,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/2.0
     sleep 1/2.0
 
-    flop :c4, 127, sus: (cycle 1/2.0,).look if spread(1,1).look
+    flop :c4, 127, sus: (cycle 1/2.0).look if spread(1,1).look
 
     sleep 1/2.0
   end
@@ -43,8 +43,8 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,)
-  with_bpm @bpm=(127*(cycle 1,).look) do
+  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
+  with_bpm @bpm=(127*(cycle 1).look) do
     perc_machine perc.to_a
   end
 end
@@ -52,14 +52,14 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm @bpm=(127*1) do
     score = (cycle
-      [[:G2], 8],
+      [[:G2] 8]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
     resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
 
     sleep sleeps/2.0
-#    with_swing((flow 0.0, sleeps/2.0, 64,).look){
+#    with_swing((flow 0.0 sleeps/2.0 64).look){
 #      overclock :f4, 20, sus: 1/2.0, motion: rand*0.5
 #      resonate chd,120, sus: sleeps, pads: [2], sat: 0, drive: 0.70
 #    }
