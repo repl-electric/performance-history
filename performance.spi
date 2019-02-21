@@ -97,7 +97,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
       resonate :Gs4,1, sus: sleeps, pads: [1], sat: 0, drive: 0
     end
     if chd[0] == :C3
-      resonate :E4,1, sus: sleeps, pads: [1], sat: 0, drive: 0
+      resonate :E4,4, sus: sleeps, pads: [1], sat: 0, drive: 0
     end
 
     sleep sleeps/2.0
