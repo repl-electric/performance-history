@@ -40,7 +40,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 live_loop :Attune, sync: :unsyncable do; tick
   silence? #please
   zero_delay [2,5,6].shuffle
-  overclock_cc oct: (cycle 0 12 24).look, drive: 0.37
+  overclock_cc oct: (cycle 19 12 24).look, drive: 0.37
   overclock :f4, sus: 3
   with_bpm @bpm=(127*4) do
     #tick_reset_all
