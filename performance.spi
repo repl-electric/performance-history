@@ -3,8 +3,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 at{
 # sync :Attune
 # sleep 1
-  flop_off :b3
-  flop_on :c4
+  #flop_off :b3
+  #flop_on :c4
 }
 
 live_loop :Attune, sync: :unsyncable do; tick
@@ -51,6 +51,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     resonate chd,1, sus: sleeps, pads: [0], sat: 0, drive: 0
     sleep sleeps/2.0
     with_swing((flow 0.0 sleeps/2.0 64).look){
+      overclock :f2, sus: 1/4.0
      resonate :f2,110, sus: sleeps*1, pads: [2], sat: 0, drive: 0
     }
     sleep sleeps/2.0
