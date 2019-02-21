@@ -61,7 +61,8 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
         glitch corrode: rand
         at{
           sleep 0.5
-          sea sphere: rand-1
+          glitch_cc mode: (ring 0, 2, 3, 5).look
+          #sea sphere: rand-1
           aura scale: rand*1.5
         }
       }
