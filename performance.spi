@@ -58,11 +58,12 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
     if spread(4,8).look
       with_swing((flow 0.0 1/4.0 64).look){
         glitch :c3,127
+        glitch corrode: rand
         at{
           sleep 0.5
           sea circle: rand
           aura scale: rand*1.5
-          glitch corrode: rand
+
         }
       }
     end
