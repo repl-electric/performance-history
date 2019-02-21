@@ -61,7 +61,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
       glitch :c3,127
       sea circle: rand
       aura scale: rand*1.5
-      glitch corode: rand
+      glitch corrode: rand
       }
     end
     #    perc_machine perc.to_a
