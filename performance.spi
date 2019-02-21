@@ -55,7 +55,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
   perc=(cycle 1 1 1 1  1 1 1 1  1 1 1 1  1 1 1 1)
   with_bpm @bpm=(127*(cycle 1).look) do
-    glitch :D3
+    glitch :D2
     at{
       sleep 0.5
       sea circle: rand
