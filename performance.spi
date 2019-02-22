@@ -26,7 +26,12 @@ at{
 
 #cam :top
 
-fx reverb: 1.00, drive: 1.00
+#fx reverb: 1.00, drive: 1.00
+
+
+
+eject_cpu_core
+
 
 #livecode :begin
 #zoomout
