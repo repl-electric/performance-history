@@ -11,7 +11,7 @@ at{
 
 
 #livecode :begin
-
+zoomout
 live_loop :Attune, sync: :unsyncable do; tick
   silence!
   zero_delay [2,5,6].shuffle
