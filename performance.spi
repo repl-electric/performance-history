@@ -41,12 +41,12 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
   end
 end
 
-create_aura
+
 
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm @bpm=(127*1) do
     score = (cycle
-      [[:d2] 8]
+      [[:e2] 8]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
