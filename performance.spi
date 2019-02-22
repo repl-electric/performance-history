@@ -24,7 +24,7 @@ at{
 
 #recover
 
-#cam :top
+cam :top
 
 #livecode :begin
 #zoomout
