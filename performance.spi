@@ -17,7 +17,7 @@ at{
 }
 
 
-cam :top
+#cam :top
 
 #recover
 #livecode :sleep
@@ -36,7 +36,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     #    tick_reset_all
     overclock :f4,10, sus: 3
     flop_cc motion: (flow 0.37 0.57 32).look
-    flip_cc motion: 0.4
+    flip_cc motion: 0.4, drive: 0.30
 
     flip :g3, 60, sus: (cycle 0.25 0.5 1).look if !spread(7,11).look
     flip :e3, 60, sus: (cycle 0.25 0.5 1).rot(-1).look if spread(7,11).look
