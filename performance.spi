@@ -11,7 +11,10 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #its out of control
 # attempting recovery
 
-recover
+#recover
+
+
+cam :top
 
 
 
