@@ -22,8 +22,8 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
 
-    flop :e3, 60, sus: (cycle 1).look if spread(1,1).look
-
+    flop :e3, 60, sus: (cycle 1).look if spread(3,8).look
+    #flop :e3, 60, sus: (cycle 1).look if spread(3,8).look
 
     sleep 1/2.0
     sleep 1/2.0
@@ -46,7 +46,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm @bpm=(127*1) do
     score = (cycle
-      [[:d2] 8]
+      [[:e2] 8]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
