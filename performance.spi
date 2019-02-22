@@ -26,6 +26,8 @@ at{
 
 #cam :top
 
+fx reverb: 0.70, drive: 0.30
+
 #livecode :begin
 #zoomout
 live_loop :Attune, sync: :unsyncable do; tick
