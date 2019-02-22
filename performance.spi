@@ -1,5 +1,15 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 0
 
+#lets recover it
+
+world time: 0.20
+overclock_cc motion: 0.28
+
+
+
+stop
+
+
 # at{
 #   sync :Attune
 #   sleep 4
@@ -7,6 +17,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 # #  flop_on :b2
 
 # }
+
+#lets see what error brings us. Crashing the server
 
 #livecode :raise
 
