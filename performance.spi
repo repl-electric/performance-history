@@ -3,10 +3,10 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 # at{
 #   sync :Attune
 #   sleep 3
-   overclock_on :F3, 52#, motion: 0.57
+#   overclock_on :F3, 52#, motion: 0.57
 # }
 
-overclock_x
+#overclock_x
 
 
 
