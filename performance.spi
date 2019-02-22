@@ -11,7 +11,7 @@ at{
 #overclock_cc motion: 0.27
 #zoomout
 
-roots_chase target: :slow
+roots_chase target: :spiral
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
