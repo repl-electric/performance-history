@@ -11,9 +11,9 @@ at{
 
 
 #livecode :begin
-zoomout
+#zoomout
 live_loop :Attune, sync: :unsyncable do; tick
-  silence!
+  silence?
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127) do
     #tick_reset_all
