@@ -1,19 +1,11 @@
-load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, kick: 0
+load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
+init true && start_init
 
-# at{
-#   sync :Attune
-#   sleep 4
-#   flop_on :b2
-# }
 
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127) do
-    flop_cc motion: (flow 0.0 0.57 32).look
-
-    flop :a3, 60, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
-    flop :e3, 60, sus: (cycle 0.25 0.5 1).rot(-1).look if spread(1,1).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -24,16 +16,10 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
-
-    flop :e3, 60, sus: (cycle 1).look if spread(3,8).look
-    flop :c3, 60, sus: (cycle 1).look if !spread(3,8).look
 
     sleep 1/2.0
     sleep 1/2.0
     sleep 1/2.0
-
-    flop :c4, 120, sus: (cycle 1/2.0).look if spread(1,1).look
-
     sleep 1/2.0
   end
 end
@@ -49,19 +35,11 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm @bpm=(127*1) do
     score = (cycle
-      [[:g2] 8]
+      [[_] 8]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    resonate chd[0]+12,1, sus: sleeps, pads: [0], sat: 0, drive: 0
-
-    sleep sleeps/2.0
-
-    with_swing((flow 0.0 sleeps/2.0 64).look){
-      resonate chd,100, sus: sleeps, pads: [2], sat: 0, drive: 0
-    }
-
-    sleep sleeps/2.0
+    sleep sleeps
   end
 end
 
