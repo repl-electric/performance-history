@@ -49,7 +49,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     overclock :f4,15, sus: 3
 
     fn =[(method :flip),(method :flop)].choose
-    flip :g4, 55, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
+    flip :g4, 120, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
     fn.(:e4, 120, sus: (cycle 0.25 0.5 1).rot(-1).look) if spread(1,1).look
 
  #   flop :b3, 80, sus: (cycle 2.0).look if !spread(7,11).look
