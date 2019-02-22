@@ -124,13 +124,15 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     #   overclock :f4, 20, sus: 1/4.0, motion: 0.3
     #   resonate chd[0],85, sus: sleeps, pads: [2], sat: 0, drive: 0.59
     # }
-
+    stop
     sleep sleeps/2.0
   end
 end
 
 #attune
 
-roots_chase throttle: 0
+#roots_chase throttle: 0
+
+vol 0
 
 live_loop(:unsyncable)do;sleep 1.0;end
