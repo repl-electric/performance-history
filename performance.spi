@@ -61,7 +61,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     sleep sleeps/2.0
 
     with_swing((flow 0.0 sleeps/2.0 64).look){
-      resonate :f2,85, sus: sleeps/2.0, pads: [2], sat: 0, drive: 0
+      resonate :f2,89, sus: sleeps/2.0, pads: [2], sat: 0, drive: 0
     }
 
 
