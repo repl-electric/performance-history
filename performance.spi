@@ -10,7 +10,7 @@ at{
 
 livecode :sleep
 
-overclock_cc motion: 0.0
+overclock_cc motion: 0.49
 
 
 
