@@ -17,7 +17,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     overclock_cc oct: (cycle  0, 0, 19, 0, 0, 24,).look
     overclock :f4,25, sus: 3#, motion: 0.5, sync: 1
     flop_cc motion: (flow 0.5, 0.57, 32,).look, drive: 0.32
-    flip_cc motion: 0.6, drive: 0.30
+    flip_cc motion: 0.6, drive: 0.40
 
     fn = [(method :flop), (method :flip)].choose
     create_sea (cycle 0.5,  -0.3,).look
