@@ -3,12 +3,12 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 
 #lets try and bring it back to life
 
-world time: 2.0
-overclock_cc attune: 0.45
+world time: 1.0
+overclock_cc attune: 0.50, sync: 1
+recover
 
 
-
-stop
+#stop
 
 at{
   sync :Attune
