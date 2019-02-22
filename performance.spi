@@ -23,7 +23,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
 
-    flop :c3, 60, sus: (cycle 2).look if spread(1,1).look
+    flop :e3, 60, sus: (cycle 2).look if spread(1,1).look
 
 
     sleep 1/2.0
@@ -57,7 +57,6 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
     with_swing((flow 0.0 sleeps/2.0 64).look){
       resonate chd[0],50, sus: sleeps, pads: [2], sat: 0, drive: 0
-
     }
 
 
