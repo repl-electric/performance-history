@@ -35,7 +35,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 
 #roots_chase target: :spiral,force: 120
 
-fx reverb: 1.00, drive: 0.80
+fx reverb: 1.00, drive: 0.90
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
