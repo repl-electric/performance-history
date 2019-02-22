@@ -6,7 +6,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #world time: 1.0
 #overclock_cc attune: 0.50, sync: 1
 #recover
-
+create_sea
 
 #stop
 
