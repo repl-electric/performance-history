@@ -25,15 +25,15 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #livecode :sleep
 #overclock_cc motion: 0.27
 #zoomout
-cam :top
+#cam :top
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
-  with_bpm @bpm=(127*2) do
+  with_bpm @bpm=(127*3) do
     flop_cc motion: (flow 0.4, 0.57, 32,).look
     overclock :f4, 10,sus: 3
-    overclock_cc oct: (cycle 0, -12, 0, 19,).look
+    overclock_cc oct: (cycle 0, -12, 0, 19,).look, drive: 0.30
 
     fn=[(method :flip), (method :flop)].choose
 
