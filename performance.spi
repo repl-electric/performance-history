@@ -26,7 +26,7 @@ at{
 
 #cam :top
 
-fx reverb: 0.70, drive: 0.30
+fx reverb: 0.70, drive: 0.42
 
 #livecode :begin
 #zoomout
