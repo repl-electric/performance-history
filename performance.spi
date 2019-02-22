@@ -144,8 +144,9 @@ end
 
 #attune
 
-#livecode :end
-vol 0
+
+livecode :end
+#vol 0
 
 
 
