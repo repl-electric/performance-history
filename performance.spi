@@ -29,7 +29,6 @@ live_loop :Attune, sync: :unsyncable do; tick
 
     flop :c4, 60, sus: (cycle 1).look if spread(1,1).look
 
-
     sleep 1/2.0
   end
 end
@@ -41,6 +40,8 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
     perc_machine perc.to_a
   end
 end
+
+create_aura
 
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm @bpm=(127*1) do
