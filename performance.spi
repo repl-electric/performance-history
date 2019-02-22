@@ -33,8 +33,8 @@ live_loop :Attune, sync: :unsyncable do; tick
   with_bpm @bpm=(127*4) do
     flop_cc motion: (flow 0.5 0.57 32).look
     overclock :f4, 10,sus: 3
-    overclock_cc oct: (cycle 0  24 ).look, drive: 0.26
-    flip_cc motion: 0.5
+    overclock_cc oct: (cycle 0  24).look, drive: 0.33
+    flip_cc motion: 0.5, drive: 0.2
     fn=[(method :flip), (method :flop)].choose
 
     flip :g4, 80, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
