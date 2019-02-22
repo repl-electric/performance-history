@@ -5,12 +5,18 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 # overclock_cc attune: 0.49, sync: 1
 
 #cam :top
-overclock_cc attune: 0.49
+#overclock_cc attune: 0.49
 
 
-eject_cpu_core
+#eject_cpu_core
 
-fx reverb: 0.50, drive: 0.80
+
+attune
+
+
+
+
+#fx reverb: 0.50, drive: 0.80
 
 #recover
 #sea circle: 0
