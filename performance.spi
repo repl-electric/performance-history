@@ -109,11 +109,10 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     #   resonate chd[0],100, sus: sleeps, pads: [2], sat: 0, drive: 0.61
     # }
 
-
     sleep sleeps/2.0
   end
 end
 
-#roots_chase target: :spiral
+roots_chase target: :spiral, force: 150
 
 live_loop(:unsyncable)do;sleep 1.0;end
