@@ -23,7 +23,7 @@ live_loop :Attune, sync: :unsyncable do; tick
 
     roots_chase target: :slow
 
-    flip :g3, 60, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
+    flip :g4, 60, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
     flop :e3, 60, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
 
     flop :b3, 60, sus: (cycle 2).look if !spread(7,11).look
