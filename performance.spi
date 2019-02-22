@@ -61,7 +61,6 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
       resonate chd,100, sus: sleeps, pads: [2], sat: 0, drive: 0
     }
 
-
     sleep sleeps/2.0
   end
 end
