@@ -5,7 +5,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #   sleep 3
 overclock_x :f3#, motion: 0.57
 # }
-puts note(:f3)
+flop_xputs note(:f3)
 
 #overclock_x
 
