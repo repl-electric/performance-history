@@ -17,7 +17,7 @@ at{
 }
 
 
-#cam :top
+cam :top
 
 #recover
 #livecode :sleep
