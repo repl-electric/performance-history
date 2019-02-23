@@ -37,7 +37,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     flop_cc motion: (flow 0.5 0.57 32).look, drive: 0.37
     flip_cc motion: 0.5, drive: 0.49
 
-    overclock_cc oct: (cycle 24 0 19 ).look, drive: 0.50
+    overclock_cc oct: (cycle 24  19 ).look, drive: 0.50
     overclock :f4, 18, sus: 3#, attune: 0.41
 
     fn = [(method :flip), (method :flop)].choose
