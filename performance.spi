@@ -43,6 +43,8 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
 end
 
 
+unity "/lights/end",2
+
 
 
 live_loop :MachineInstructions, sync: :unsyncable do; tick
