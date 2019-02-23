@@ -34,7 +34,7 @@ live_loop :Attune, sync: :unsyncable do; tick
 #  cam :top
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127*4) do
-    flop_cc motion: (flow 0.55 0.57 32).look, drive: 0.30
+    flop_cc motion: (flow 0.5 0.57 32).look, drive: 0.30
     flip_cc motion: 0.4, drive: 0.40
 
     overclock_cc oct: (cycle 24 0 19 ).look, drive: 0.37
