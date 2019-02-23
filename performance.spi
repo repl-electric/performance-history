@@ -10,7 +10,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #zoomout
 
 
-#cam :top
+cam :top
 #star throttle: 1.0, size: 5, life: 2
 #unity "/star/throttle",0
 
