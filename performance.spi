@@ -7,9 +7,9 @@ at{
 
 }
 
-#livecode :rescue
+livecode :sleep
 
-overclock_cc motion: 0.55
+overclock_cc motion: 0.46
 
 
 #create_aura
