@@ -15,7 +15,7 @@ live_loop :Attune, sync: :unsyncable do; tick
 
 #    tick_reset_all
     flop_cc motion: (flow 0.5 0.57 32).look
-    flip_cc motion: 0.5, drive: 0.2
+    flip_cc motion: 0.55, drive: 0.2
 
     flip :g4, 100, sus: (cycle 0.25 0.5 1).look if spread(5,8).look
     flop :e4, 110, sus: (cycle 0.25 0.5 1).rot(-1).look# if spread(3,8).look
