@@ -9,7 +9,7 @@ fx reverb: 0.60
 live_loop :Attune, sync: :unsyncable do; tick
   silence? #please no
   zero_delay [2,5,6].shuffle
-  with_bpm @bpm=(127*4) do
+  with_bpm @bpm=(127*5) do
     overclock :f4, 15, sus: 3#, motion: 0.4
     overclock_cc oct: (cycle 24 19).look, drive: 0.35
 
