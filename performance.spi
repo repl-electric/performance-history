@@ -1,28 +1,9 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 0
 
 
-world time: 2.00
-overclock_cc attune: 0.50
+world time: 1
+overclock_cc attune: 0.50, sync: 1
 
-
-
-stop
-
-#Lets see what error brings us.
-#lets crash the server.
-
-at{
-  sync :Attune
-  sleep 6
-#  overclock_on :f3, 60, motion: 0.55
-#  flop_on :b2
-}
-
-#livecode :raise
-
-#livecode :sleep
-#overclock_cc motion: 0.27
-#zoomout
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence? #please no
