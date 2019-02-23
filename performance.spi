@@ -4,7 +4,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #lets try and bring it back online
 
 # world time: 1.00
- overclock_cc attune: 0.50, sync: 1
+# overclock_cc attune: 0.50, sync: 1
 
 
 at{
@@ -35,7 +35,9 @@ live_loop :Attune, sync: :unsyncable do; tick
 
     flip_cc motion: 0.4
 
+    overclock_cc oct: (cycle 0 -12 0 19).look
 
+    overclock :f4, 15, sus: 3, motion: 0.4
 
 
     flip :g3, 100, sus: (cycle 0.25 0.5 1).look if spread(5,8).look
