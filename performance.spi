@@ -97,12 +97,12 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     sleeps = score.look[-1]
     tick_reset_all
 
-
-    resonate_on chd[0],10, sus: sleeps, pads: [0], sat: 0, drive: 0
+    resonate_on chd[0]-12,10, sus: sleeps, pads: [0], sat: 0, drive: 0
     control_unit root(chd), 14,sus: sleeps, drive: 1.00, sat: 0.0
 
 #    at{sleep 0.5; create_sea; sleep 0.5; cam :chase}
 
+    stop
     sleep sleeps/2.0
 
     with_swing((flow 0.0 sleeps/2.0 64).look){
