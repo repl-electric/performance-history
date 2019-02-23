@@ -14,7 +14,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #star throttle: 1.0, size: 5, life: 2
 #unity "/star/throttle",0
 
-unity "/lights/end",1
+unity "/lights/end",2
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
