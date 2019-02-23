@@ -1,5 +1,5 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 0
-
+cam :top
 
 world time: 1
 overclock_cc attune: 0.50, sync: 1
