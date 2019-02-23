@@ -42,9 +42,6 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
   end
 end
 
-roots_chase target: :slow #force: 0.0
-
-
 
 
 
