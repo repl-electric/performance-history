@@ -120,7 +120,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
     #at{sleep 0.5; create_sea; sleep 0.5; cam :chase}
 
-    control_unit root(chd), 10,sus: sleeps, drive: 0.60, sat: 0.0
+    control_unit root(chd), 10,sus: sleeps, drive: 0.70, sat: 0.0
 
     sleep sleeps/2.0
     # with_swing((flow 0.0 sleeps/2.0 64).look){
