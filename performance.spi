@@ -32,7 +32,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     # sleep 1/2.0
 
     flop :c4
-
+    $pmode = 2
     sleep 1/2.0
   end
 end
