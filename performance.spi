@@ -11,7 +11,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 
 
 #cam :top
-star throttle: 0.0
+star throttle: 0.0, size: 0
 #unity "/star/throttle",0
 stop
 live_loop :Attune, sync: :unsyncable do; tick
