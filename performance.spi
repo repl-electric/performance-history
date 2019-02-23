@@ -7,9 +7,10 @@ at{
 
 }
 
-livecode :sleep
+#livecode :sleep
 
-overclock_cc motion: 0.30
+overclock_cc motion: 0.42
+zoomout
 
 
 #create_aura
