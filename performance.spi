@@ -1,8 +1,10 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
 
 
-#overclock_on :a3
+overclock_x :a3
 world time: 1
+
+
 
 
 
