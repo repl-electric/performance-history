@@ -8,9 +8,7 @@ at{
   sync :Attune
   sleep 4
   flop_on :b2
-
 }
-
 
 #flop_x :b2
 
@@ -31,7 +29,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
 
     flop :e3, 120, sus: (cycle 1.0).look if spread(1,1).look
-    flop :e3, 120, sus: (cycle 1.0).look if spread(1,1).look
+    flop :c3, 120, sus: (cycle 1.0).look if spread(1,1).look
 
     sleep 1/2.0
     sleep 1/2.0
