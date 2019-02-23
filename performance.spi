@@ -21,7 +21,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
 
-    flop :g3, 100, sus: (cycle 1).look
+    flop :g4, 100, sus: (cycle 1).look
 
     sleep 1/4.0
     sleep 1/4.0
