@@ -8,7 +8,7 @@ live_loop :Attune, sync: :unsyncable do; tick
   silence? #please no
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127*3) do
-    overclock :f4, 15, sus: 3, motion: 0.2
+    overclock :f4, 15, sus: 3, motion: 0.3
     overclock_cc oct: (cycle 0 -12 0 19 24).look, drive: 0.22
 
 #    tick_reset_all
