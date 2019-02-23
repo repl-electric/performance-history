@@ -23,6 +23,8 @@ live_loop :Attune, sync: :unsyncable do; tick
     flip :g3, 90, sus: (cycle 0.25, 0.5, 1,).look if spread(1,1).look
     flop :e3, 100, sus: (cycle 0.25, 0.5, 1,).rot(-1).look if spread(1,1).look
 
+    flop :g4, 85 if spread(7,11).look
+
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
