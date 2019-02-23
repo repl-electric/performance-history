@@ -53,7 +53,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     chd = score.look[0]
     sleeps = score.look[-1]
 
-#    at{sleep 0.5; create_sea; sleep 0.5; cam :chase}
+    at{sleep 0.5; create_sea; sleep 0.5; cam :chase}
 
 
     sleep sleeps
