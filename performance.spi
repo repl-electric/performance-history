@@ -1,7 +1,10 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, kick: 0
 #init true && start_init
 
-overclock_on :f3
+#overclock_on :f3
+
+overclock_x motion: 0.27
+
 
 #flop_on :b2
 
