@@ -6,6 +6,8 @@ at{
 #  flop_on :b2
 }
 
+livecode :begin
+
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127) do
@@ -20,7 +22,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
 
-    flop :g3, 85
+    #flop :g3, 85
 
     sleep 1/4.0
     sleep 1/4.0
