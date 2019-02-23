@@ -15,13 +15,12 @@ live_loop :Attune, sync: :unsyncable do; tick
 
     flop :A3, 60, sus: (cycle 1,).look if spread(1,1).look
 
-
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
 
-    flop :g3, sus: 1
+    #flop :g3, sus: 1
 
     sleep 1/4.0
     sleep 1/4.0
