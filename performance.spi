@@ -7,7 +7,9 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #overclock_on :e3
 
 overclock_cc motion: 0.27
-zoomout
+#zoomout
+
+
 
 
 
@@ -47,7 +49,13 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
       )
     chd = score.look[0]
     sleeps = score.look[-1]
+
+    at{sleep 0.5; create_sea; sleep 0.5; cam :chase}
+
+
     sleep sleeps
+
+
   end
 end
 
