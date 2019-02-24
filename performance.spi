@@ -14,7 +14,7 @@ star life: 0, size: 0
 
 #stop
 
-cam :top
+#cam :top
 create_sea -2
 
 at{
