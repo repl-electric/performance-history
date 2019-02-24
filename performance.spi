@@ -1,12 +1,11 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
+warm
+stop
 
 #lets bring it back to life
 
 # world time: 1
 # overclock_cc attune: 0.50, sync: 1
-
-
-
 
 
 # at{
@@ -35,8 +34,6 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #eject_cpu_core
 
 live_loop :Attune, sync: :unsyncable do; tick
-stop
-  silence?
 #  cam :top
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127*4) do
