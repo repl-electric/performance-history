@@ -92,7 +92,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
 
     with_swing((flow 0.0 1/4.0 64).look){
       glitch_cc corrode: rand
-      dark :d3,127 if spread(1,12).look
+      dark :e3,127 if spread(1,12).look
     }
     sleep 1/4.0
 
