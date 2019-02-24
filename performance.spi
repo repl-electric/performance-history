@@ -89,7 +89,8 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
   with_bpm @bpm=(127*(cycle 1 0.5 0.5 1).look) do
     #perc_machine perc.to_a
     #at{sleep 0.5; sea circle: 0; aura scale: rand*1.5}
-    glitch :C3
+
+    glitch :C3,100
     sleep 1/4.0
 
   end
