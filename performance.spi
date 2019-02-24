@@ -30,8 +30,9 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 
 #cam :top
 #recover
-colorb 1
-unity "/lights/end",1.0
+#colorb 1
+#unity "/lights/end",1.0
+recover
 stop
 #fx reverb: 1.00,drive: 1.00
 #hold on
