@@ -46,7 +46,7 @@ live_loop :Attune, sync: :unsyncable do; tick
   silence?
 #  cam :top
 
-  kal :f4
+  kal :f4, 10
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127*5) do
     #   tick_reset_all
