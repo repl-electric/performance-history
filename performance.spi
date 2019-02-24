@@ -18,7 +18,6 @@ live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127) do
     flop_cc motion: (flow 0.35 0.57 32).look
-
     flip :g4, 120, sus: (cycle 0.25 0.5 1).look if spread(5,8).look
     flop :e4, 110, sus: (cycle 0.25 0.5 1).rot(-1).look if spread(1,1).look
 
@@ -53,7 +52,7 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
+  perc=(cycle 1 1 1 1  0 0 0 0  0 0 0 0  0 0 0 0)
   with_bpm @bpm=(127*(cycle 1).look) do
     perc_machine perc.to_a
   end
