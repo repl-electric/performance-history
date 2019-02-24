@@ -133,6 +133,9 @@ stop
   end
 end
 
-vol 0
+#vol 0
+
+livecode :end
+
 
 live_loop(:unsyncable)do;sleep 1.0;end
