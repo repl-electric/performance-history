@@ -16,7 +16,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 
 #create_aura
 
-roots_chase target: :spiral #,force: 0.0
+#roots_chase target: :spiral #,force: 0.0
 
 
 live_loop :Attune, sync: :unsyncable do; tick
@@ -50,7 +50,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/2.0
     sleep 1/2.0
 
-    flop :c4, 110, sus: (cycle 1/2.0).look if spread(1,1).look
+    flop :e4, 110, sus: (cycle 1/2.0).look if spread(1,1).look
 
 
     sleep 1/2.0
