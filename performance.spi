@@ -33,7 +33,7 @@ at{
 
 #roots_chase target: :spiral #,force: 0.0
 
-#cam :top
+cam :top
 
 #star throttle: 0
 #create_sea
