@@ -37,7 +37,7 @@ at{
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
-  with_bpm @bpm=(127*3) do
+  with_bpm @bpm=(127*4) do
  #   tick_reset_all
     flop_cc motion: (flow 0.35 0.57 32).look
     flip :g4, 110, sus: (cycle 0.25 0.5 1).look if spread(5,8).look
