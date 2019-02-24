@@ -1,5 +1,14 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 0
 
+#lets bring it back to life
+
+world time: 0.1
+overclock_cc motion: 0.27
+
+
+
+stop
+
 # at{
 #   sync :Attune
 #   sleep 1.5
@@ -17,6 +26,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #create_aura
 
 #roots_chase target: :spiral #,force: 0.0
+
 
 
 live_loop :Attune, sync: :unsyncable do; tick
@@ -75,28 +85,28 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
       [[:F4 :A6 :C5] 8]
       [[:C3 :E5 :G4] 4]
       [Zz 4]
-      [[:A3 :C5 :E4] 8]
-      [[:E4 :G5 :B3] 8]
-      [[:F4 :A6 :C5 :E5] 8]
-      [[:C3 :E5 :G4] 8]
-      [Zz 8]
+      # [[:A3 :C5 :E4] 8]
+      # [[:E4 :G5 :B3] 8]
+      # [[:F4 :A6 :C5 :E5] 8]
+      # [[:C3 :E5 :G4] 8]
+      # [Zz 8]
 
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      [[:A3 :C5 :E4] 4]
-      [[:A3 :C5 :E4] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:E4 :G5 :B3] 4]
-      [[:G4 :B6 :D5 :F4] 8]
-      [[:C4 :E5 :G4] 8]
-      [Zz 8]
+      # [[:A3 :C5 :E4] 8]
+      # [[:F4 :A6 :C5] 8]
+      # [[:C3 :E5 :G4] 4]
+      # [Zz 4]
+      # [[:A3 :C5 :E4] 4]
+      # [[:A3 :C5 :E4] 4]
+      # [[:E4 :G5 :B3] 4]
+      # [[:E4 :G5 :B3] 4]
+      # [[:G4 :B6 :D5 :F4] 8]
+      # [[:C4 :E5 :G4] 8]
+      # [Zz 8]
 
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    resonate chd[0]+12,1, sus: sleeps, pads: [0,1], sat: 0, drive: 0
+    resonate chd[0]+12,1, sus: sleeps, pads: [0], sat: 0, drive: 0
     control_unit root(chd), 10,sus: sleeps, drive: 0.0, sat: 0.0
 
 #    at{sleep 0.5; create_sea; sleep 0.5; cam :chase}
