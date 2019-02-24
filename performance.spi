@@ -21,7 +21,10 @@ live_loop :Attune, sync: :unsyncable do; tick
  #   tick_reset_all
     flop_cc motion: (flow 0.35 0.57 32).look
     flop :g3, 110, sus: (cycle 0.25 0.5 1).look if spread(5,8).look
-    flop :e4, 110, sus: (cycle 0.25 0.5 1).rot(-1).look if spread(1,1).look
+
+    fn = [(method :flop), (method :flip)].choose
+
+    fn.(:e4, 110, sus: (cycle 0.25 0.5 1).rot(-1).look) if spread(1,1).look
 
     flop :b3, 127, sus: (cycle 1.0).look if !spread(7,11).look
 
