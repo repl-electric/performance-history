@@ -20,14 +20,13 @@ live_loop :Attune, sync: :unsyncable do; tick
 
     flop :g3, 60, sus: (cycle 1).look if spread(1,1).look
 
-
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
 
     flop :e3, 105, sus: (cycle 1.0 1/2.0).look if !spread(3,8).look
-    flop :c3, 105, sus: (cycle 1.0 ).look if spread(3,8).look
+    flop :c4, 105, sus: (cycle 1.0 ).look if spread(3,8).look
 
     sleep 1/2.0
     sleep 1/2.0
@@ -39,7 +38,7 @@ live_loop :Attune, sync: :unsyncable do; tick
   end
 end
 
-create_aura
+#create_aura
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
