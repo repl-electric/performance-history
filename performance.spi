@@ -37,7 +37,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #fx reverb: 1.00, drive: 1.00
 
 #hold on.
-#eject_cpu_core
+eject_cpu_core
 
 live_loop :Attune, sync: :unsyncable do; tick
 stop
@@ -137,6 +137,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 end
 
 
-vol 0
+#vol 0
+
 
 live_loop(:unsyncable)do;sleep 1.0;end
