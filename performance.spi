@@ -133,10 +133,10 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     # }
 
         sleep sleeps/2.0
-
   end
 end
 
-#attune
+
+vol 0
 
 live_loop(:unsyncable)do;sleep 1.0;end
