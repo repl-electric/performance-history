@@ -2,13 +2,13 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, k
 
 at{
   sync :Attune
-  sleep 5
-#  flop_on :g2
-
+  sleep 1.5
+  overclock_on :a3, 40, motion: 0.4
 }
-livecode :begin
+livecode :raise
 
 live_loop :Attune, sync: :unsyncable do; tick
+  silence!
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127) do
     flop_cc motion: (flow 0.0 0.57 32).look
@@ -61,11 +61,11 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     resonate chd[0]+12,1, sus: sleeps, pads: [0], sat: 0, drive: 0
 
     sleep sleeps/2.0
-    with_swing((flow 0.0 sleeps/2.0 64).look){
-      overclock :f4, 15, sus: 3, motion: rand*0.5
-      resonate chd[0],100, sus: sleeps/2.0, pads: [2], sat: 0, drive: 0.60
+    # with_swing((flow 0.0 sleeps/2.0 64).look){
+    #   overclock :f4, 15, sus: 3, motion: rand*0.5
+    #   resonate chd[0],100, sus: sleeps/2.0, pads: [2], sat: 0, drive: 0.60
 
-    }
+    # }
 
         sleep sleeps/2.0
 
