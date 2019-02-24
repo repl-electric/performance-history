@@ -91,7 +91,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
     #at{sleep 0.5; sea circle: 0; aura scale: rand*1.5}
 
     with_swing((flow 0.0 1/4.0 64).look){
-      glitch corrode: 0
+      glitch_Cc corrode: 0
       glitch scale(:c3,:major).choose,120
     }
 
