@@ -10,11 +10,11 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 
 
 #recover
-#star life: 1, size:
+star life: 0, size: 0
 
 #stop
 
-cam :top
+#cam :top
 #create_sea -2
 
 at{
