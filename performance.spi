@@ -29,7 +29,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #recover
 
 #cam :top
-recover
+#recover
 #colorb 1
 #unity "/lights/end",1.0
 #recover
@@ -45,7 +45,7 @@ live_loop :Attune, sync: :unsyncable do; tick
 #    overclock_cc oct: (cycle 24  19).look
 #    overclock :e4, 15, sus: 3, motion: 0.40, drive: 1.00
     #tick_reset_all
- #   flop_cc motion: (flow 0.5 0.57 32).look, drive: 0.55
+    flop_cc motion: (flow 0.5 0.57 32).look, drive: 0.55
  #   flip_cc motion: 0.6, drive: 0.99
 
     flip :g4, 100, sus: (cycle 0.25 0.5 1).look*2
