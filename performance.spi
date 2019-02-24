@@ -8,7 +8,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #livecode :raise
 
 livecode :sleep
-overclock_cc motion: 0.39
+overclock_cc motion: 0.33
 
 
 
