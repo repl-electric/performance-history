@@ -48,7 +48,7 @@ live_loop :Attune, sync: :unsyncable do; tick
 
 
   zero_delay [2,5,6].shuffle
-  overclock_cc oct: (cycle 0 12 0 19 0 19 0 19 0 24).look
+  overclock_cc oct: (cycle 0 12 0 19 0 19 0 19 0 24).look, drive: 0.30
   overclock :f4, (cycle 60 70 80).look, sus: (cycle 0.25 1 2).look, motion: 0.50
   flip :c4,127, sus: 3, motion: 0.60
   flip :a3,127, sus: 2, motion: 0.60
