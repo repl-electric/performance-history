@@ -11,7 +11,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #livecode :begin
 
 livecode :sleep
-overclock_cc motion: 0.0
+overclock_cc motion: 0.5
 
 
 #create_aura
