@@ -1,6 +1,7 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
 
-cam :chase
+#cam :chase
+zoomout
 
 #lets bring it back to life
 
