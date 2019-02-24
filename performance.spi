@@ -1,7 +1,7 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
 
 #cam :chase
-zoomout
+#zoomout
 
 #lets bring it back to life
 
@@ -37,7 +37,7 @@ zoomout
 live_loop :Attune, sync: :unsyncable do; tick
 #  cam :top
   zero_delay [2,5,6].shuffle
-  with_bpm @bpm=(127*4) do
+  with_bpm @bpm=(127*1) do
     overclock_cc oct: (cycle 24  19).look
     overclock :c4, 15, sus: 3, motion: 0.40, drive: 1.00
     #tick_reset_all
