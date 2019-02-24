@@ -1,4 +1,4 @@
-load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
+load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, kick: 0
 
 #lets see what error brings us
 #lets crash the server!
@@ -12,7 +12,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #recover
 star life: 0, size: 0
 
-eject_cpu_core
+#eject_cpu_core
 
 
 #stop
