@@ -61,7 +61,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     resonate chd[0]+12,1, sus: sleeps, pads: [0], sat: 0, drive: 0
     sleep sleeps/2.0
 
-    resonate :d4,5, sus: sleeps/2.0, pads: [1], sat: 0, drive: 0.3
+    resonate :d4,5, sus: sleeps/2.0, pads: [1], sat: 0, drive: 0.4
 
     sleep sleeps/2.0
   end
