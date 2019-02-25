@@ -6,7 +6,7 @@ at{ #G A B C D F A
   sleep 6  # 2 5 6
 #  flop :d2
 }
-#flop_x
+flop_x
 #b2 6
 #d3 2
 
