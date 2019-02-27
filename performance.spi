@@ -11,6 +11,7 @@ at{ #G A B C D F A
 #b2 6
 #d3 2
 flip_on :a3
+puts :go
 stop
 
 live_loop :Attune, sync: :unsyncable do; tick
