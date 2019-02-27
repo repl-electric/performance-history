@@ -10,6 +10,8 @@ at{ #G A B C D F A
 #flop_x
 #b2 6
 #d3 2
+flip_on :a3
+stop
 
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
