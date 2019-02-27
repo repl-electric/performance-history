@@ -10,7 +10,7 @@ at{ #G A B C D F A
 #flop_x
 #b2 6
 #d3 2
-flip_on :a3
+flip_off :a3
 puts :go
 stop
 
