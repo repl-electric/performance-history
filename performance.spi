@@ -12,7 +12,7 @@ flop_x
 #d3 2
 
 live_loop :Attune, sync: :unsyncable do; tick
-  stop
+puts "go"
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127) do
     #tick_reset_all
