@@ -3,11 +3,13 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #lets try and bring it back to life
 
 
-world time: 2
-overclock_cc attune: 0.50
+#world time: 2
+#overclock_cc attune: 0.50
+
+#its out of control!!!!
 
 
-stop
+recover
 
 # at{
 #   sync :Attune
@@ -102,7 +104,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    resonate chd[0]+12,1, sus: sleeps, pads: [0], sat: 0, drive: 0
+    resonate chd[0]+12,1, sus: sleeps, pads: [0,1], sat: 0, drive: 0
     control_unit root(chd), 10,sus: sleeps, drive: 0.1, sat: 0.0
 
 #    at{sleep 0.5; create_sea; sleep 0.5; cam :chase}
