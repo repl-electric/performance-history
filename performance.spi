@@ -13,7 +13,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     flop_cc motion: (flow 0.0 0.5 32).look, drive: (flow 0.0 0.3 32).look
 
     flip :a3, 30, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
-    flop :e3, 30, sus: (cycle 1).look if spread(1,1).look
+    flop :e3, 30, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -27,7 +27,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
 
-    flop :e3, 60, sus: (cycle 2).look if !spread(3,8).look
+    flop :e3, 60, sus: (cycle 2 1 0.5).look if !spread(3,8).look
     flop :c3, 60, sus: (cycle 2).look if spread(3,8).look
 
 
