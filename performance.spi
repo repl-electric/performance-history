@@ -60,7 +60,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
     }
     resonate :d4,1, sus: sleeps, pads: [1], sat: 0, drive: 0.1
-
+create_aura
 
     sleep sleeps/2.0
   end
