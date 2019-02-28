@@ -1,163 +1,57 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
+init true && start_init
+
+ #  /$$$$$$$                      /$$       /$$$$$$$$ /$$                       /$$               /$$
+ # | $$__  $$                    | $$      | $$_____/| $$                      | $$              |__/
+ # | $$  \ $$  /$$$$$$   /$$$$$$ | $$      | $$      | $$  /$$$$$$   /$$$$$$$ /$$$$$$    /$$$$$$  /$$  /$$$$$$$
+ # | $$$$$$$/ /$$__  $$ /$$__  $$| $$      | $$$$$   | $$ /$$__  $$ /$$_____/|_  $$_/   /$$__  $$| $$ /$$_____/
+ # | $$__  $$| $$$$$$$$| $$  \ $$| $$      | $$__/   | $$| $$$$$$$$| $$        | $$    | $$  \__/| $$| $$
+ # | $$  \ $$| $$_____/| $$  | $$| $$      | $$      | $$| $$_____/| $$        | $$ /$$| $$      | $$| $$
+ # | $$  | $$|  $$$$$$$| $$$$$$$/| $$      | $$$$$$$$| $$|  $$$$$$$|  $$$$$$$  |  $$$$/| $$      | $$|  $$$$$$$
+#|__/  |__/ \_______/| $$____/ |__/      |________/|__/ \_______/ \_______/   \___/  |__/      |__/ \_______/
+#                    | $$
+#                    | $$
+#                    |__/
 
 
-#lets bring it back to life
-
-#world time: 1.0
-#overclock_cc attune: 0.5, sync: 1
-
-#its out of control!!!
-
-
-#recover
-
-
-#create_sea
-#sea circle: 0
-
-#cam :top
-
-
-#stop
-
-#lets see what error brings us
-#lets crash the server!....
-
-at{
-  sync :Attune
-  sleep 6
-
-  # flop_off :d2
-  # flop_on :d3
- # overclock_on :f3, 55, motion: 0.55
-
-}
-#flop_x
-#livecode :begin
-
-#livecode :sleep
-#overclock_cc motion: 0.27
-#zoomout
-
-
-#roots_chase target: :spiral ,force: 100
-
-
-
-#hold on tight
-
-#this might hurt
-
-
-#eject_cpu_core
-
-#create_aura
 live_loop :Attune, sync: :unsyncable do; tick
-stop
-  #cam :top
-  silence? #please
   zero_delay [2,5,6].shuffle
-  with_bpm @bpm=(127*5) do
-    overclock_cc oct: (cycle 24  19).look
-
-    overclock :f4, 18, sus: 3, motion: 0.50, drive: 0.76
-
-    #tick_reset_all
-    flop_cc motion: (flow 0.5 0.6 32).look, drive: (flow 0.0 0.35 32).look
-    flip_cc motion: 0.5
-
-    fn = [(method :flop), (method :flip)].choose
-
-    flip :g4, 45, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
-    fn.(:e4, 80, sus: (cycle 0.25 0.5 1).rot(-1).look) if spread(1,1).look
-
-#    flop :b3, 80, sus: (cycle 1.0).look if !spread(7,11).look
+  with_bpm @bpm=(127) do
 
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
 
- #   flop :g4, 90, sus: (cycle 1.0).look if spread(7,11).look
-
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
-
-    flop :e3, 60, sus: (cycle 2.0, 0.5).look if !spread(3,8).look
-    flop :c4, 60, sus: (cycle 2.0, 1.0).look if spread(3,8).look
 
     sleep 1/2.0
     sleep 1/2.0
     sleep 1/2.0
-
-    flop :f4, 120, sus: (cycle 1/2.0).look if spread(1,1).look
-
     sleep 1/2.0
   end
 end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1 0 1 1  1 1 1 1  1 1 1 1  1 1 1 1)
-  with_bpm @bpm=(127*(cycle 1 0.5 0.5 1).look) do
+  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
+  with_bpm @bpm=(127*(cycle 1).look) do
     perc_machine perc.to_a
-    at{sleep 0.5; sea circle: 0; aura scale: rand*1.5}
-
   end
 end
 
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm @bpm=(127*1) do
     score = (cycle
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      # [[:A3 :C5 :E4] 8]
-      # [[:E4 :G5 :B3] 8]
-      # [[:F4 :A6 :C5 :E5] 8]
-      # [[:C3 :E5 :G4] 8]
-      # [Zz 8]
-
-      # [[:A3 :C5 :E4] 8]
-      # [[:F4 :A6 :C5] 8]
-      # [[:C3 :E5 :G4] 4]
-      # [Zz 4]
-      # [[:A3 :C5 :E4] 4]
-      # [[:A3 :C5 :E4] 4]
-      # [[:E4 :G5 :B3] 4]
-      # [[:E4 :G5 :B3] 4]
-      # [[:G4 :B6 :D5 :F4] 8]
-      # [[:C4 :E5 :G4] 8]
-      # [Zz 8]
-
+      [[_] 8]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    resonate_on chd[0]-12-12,100, sus: sleeps, pads: [0,1], sat: 0, drive: 0
-
-    control_unit root(chd), 10,sus: sleeps, drive: 1.00, sat: 0.0
-
-#    at{sleep 0.5; create_sea; sleep 0.5; cam :chase}
-
-
-    sleep sleeps/2.0
-    # with_swing((flow 0.0 sleeps/2.0 64).look){
-    #   overclock :b4,20, sus: 1/2.0, motion: 0.3
-    # }
-#    resonate :g4,3, sus: sleeps, pads: [2], sat: 0, drive: 0.84
-
-    sleep sleeps/2.0
+    sleep sleeps
   end
 end
 
-sleep 18
-livecode :end
-#vol 0
-
-
-
-#attune
 live_loop(:unsyncable)do;sleep 1.0;end
