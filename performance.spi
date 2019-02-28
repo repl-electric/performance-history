@@ -2,6 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, k
 init true && start_init
 warm
 resonate :g4,1, sus: 2, pads: [0,1,2], sat: 0, drive: 0
+control_unit :a4
 
 
 # stop
