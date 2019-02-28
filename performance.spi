@@ -17,7 +17,7 @@ at{
 #zoomout
 
 
-roots_chase target: :start #,force: 0.0
+roots_chase target: :spiral #,force:
 
 
 #create_aura
