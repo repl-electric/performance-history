@@ -36,7 +36,7 @@ at{
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence?  #please maybe
-  cam :top
+#  cam :top
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127*2) do
     flop_cc motion: (flow 0.35 0.5 32).look, drive: (flow 0.0 0.3 32).look
