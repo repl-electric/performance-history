@@ -45,6 +45,7 @@ at{
 
 #create_aura
 live_loop :Attune, sync: :unsyncable do; tick
+cam :top
   silence? #please
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127) do
