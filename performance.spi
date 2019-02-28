@@ -51,7 +51,7 @@ live_loop :Attune, sync: :unsyncable do; tick
   with_bpm @bpm=(127*4) do
     overclock_cc oct: (cycle 24 0 19).look
 
-    overclock :f4, 18, sus: 3, motion: 0.45, drive: 0.71
+    overclock :f4, 18, sus: 3, motion: 0.45, drive: 0.72
 
     #tick_reset_all
     flop_cc motion: (flow 0.5 0.6 32).look, drive: (flow 0.0 0.35 32).look
@@ -129,7 +129,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     sleeps = score.look[-1]
     resonate chd[0]+12,1, sus: sleeps, pads: [0,1], sat: 0, drive: 0
 
-    control_unit root(chd), 10,sus: sleeps, drive: 0.1, sat: 0.0
+    control_unit root(chd), 10,sus: sleeps, drive: 0.40, sat: 0.0
 
 #    at{sleep 0.5; create_sea; sleep 0.5; cam :chase}
 
