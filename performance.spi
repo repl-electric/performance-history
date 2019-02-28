@@ -16,7 +16,7 @@ at{
 
 #livecode :begin
 
-roots_chase target: :spiral ,force: 100.0
+#roots_chase target: :spiral ,force: 100.0
 
 
 live_loop :Attune, sync: :unsyncable do; tick
@@ -51,7 +51,7 @@ silence? #please
     sleep 1/2.0
     sleep 1/2.0
 
-    flop :e4, 127, sus: (cycle 1/2.0).look if spread(1,1).look
+    flop :c4, 127, sus: (cycle 1/2.0).look if spread(1,1).look
 
     sleep 1/2.0
   end
