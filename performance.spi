@@ -12,8 +12,10 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #recover
 
 
-create_sea
-sea circle: 0
+#create_sea
+#sea circle: 0
+
+cam :top
 
 
 #stop
