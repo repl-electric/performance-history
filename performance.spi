@@ -10,7 +10,7 @@ at{
 #flop_x
 
 livecode :sleep
-overclock_cc motion: 0.49
+overclock_cc motion: 0.43
 
 
 #livecode :begin
