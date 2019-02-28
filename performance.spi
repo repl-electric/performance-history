@@ -1,5 +1,9 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 0
 
+roots_chase target: :spiral #,force: 0.0
+
+
+
 at{
   sync :Attune
   sleep 1.5
