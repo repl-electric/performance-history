@@ -1,15 +1,15 @@
-load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 1, kick: 0
+load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
 
 
 at{
   sync :Attune
   sleep 2
-  overclock_on :a3, 40, motion: 0.3
-  livecode :raise
+  overclock_on :e3, 50, motion: 0.4
+#  livecode :raise
 }
-#flop_x
+flop_x
 
-livecode :begin
+#livecode :begin
 
 live_loop :Attune, sync: :unsyncable do; tick
 silence! #please
