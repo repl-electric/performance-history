@@ -40,7 +40,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     overclock :f4, 18, sus: 3, motion: 0.39, drive: 0.29
 #    tick_reset_all
     flop_cc motion: (flow 0.5, 0.57, 64,).look#, drive: (flow 0.2, 0.4, 32,).look
-    flip_cc motion: 0.5
+#    flip_cc motion: 0.5
 
     flip :g4, 40, sus: (cycle 0.25, 0.5, 1,).look if spread(5,8).look
 
