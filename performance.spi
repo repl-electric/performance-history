@@ -31,13 +31,14 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 
 #hold on
 
-eject_cpu_core
+#eject_cpu_core
 
 
 #fx reverb: 1.00, drive: 0.80
 
 live_loop :Attune, sync: :unsyncable do; tick
-#  cam :top
+stop
+  #  cam :top
   silence?
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127*5) do
@@ -138,5 +139,5 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
   end
 end
-
+attune
 live_loop(:unsyncable)do;sleep 1.0;end
