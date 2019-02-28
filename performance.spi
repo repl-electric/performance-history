@@ -122,7 +122,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    resonate_on chd[0],100, sus: sleeps, pads: [0], sat: 0, drive: 0
+    resonate_on chd[0],120, sus: sleeps, pads: [0], sat: 0, drive: 0
     control_unit root(chd), 10,sus: sleeps, drive: 0.8, sat: 0.0
 
 #    at{sleep 0.5; create_sea; sleep 0.5; cam :chase}
