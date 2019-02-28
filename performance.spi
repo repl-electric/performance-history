@@ -6,11 +6,16 @@ at{
 
   # flop_off :d2
   # flop_on :d3
-  overclock_on :f3, 55, motion: 0.55
+ # overclock_on :f3, 55, motion: 0.55
 
 }
 #flop_x
 #livecode :begin
+
+livecode :sleep
+overclock_cc motion: 0.27
+
+
 
 #create_aura
 live_loop :Attune, sync: :unsyncable do; tick
