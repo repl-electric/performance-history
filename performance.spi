@@ -1,11 +1,10 @@
-load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 0
+load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
 
 
 #lets bring it back to life
 
 #world time: 1.0
-overclock_cc attune: 0.5, sync: 1
-
+#overclock_cc attune: 0.5, sync: 1
 
 
 #its out of control!!!!
@@ -33,7 +32,7 @@ at{
 #roots_chase target: :spiral ,force: 100.0
 
 
-cam :top
+#cam :top
 
 live_loop :Attune, sync: :unsyncable do; tick
 silence? #please
@@ -53,7 +52,7 @@ silence? #please
     sleep 1/4.0
     sleep 1/4.0
 
-    flop :g4, 60, sus: (cycle 1).look if spread(7,11).look
+ #   flop :g4, 60, sus: (cycle 1).look if spread(7,11).look
 
     sleep 1/4.0
     sleep 1/4.0
