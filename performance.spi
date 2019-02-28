@@ -6,8 +6,9 @@ at{
 #  overclock_on :f3,50, motion: 0.55
 }
 
-livecode :sleep
-overclock_cc motion: 0.40
+#livecode :sleep
+overclock_cc motion: 0.27
+zoomout
 
 
 #livecode :raise
