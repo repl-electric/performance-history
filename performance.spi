@@ -39,7 +39,7 @@ silence? #please
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(12*27) do
    # tick_reset_all
-    flop_cc motion: (flow 0.3 0.57 32).look, drive: (flow 0.0 0.3 32).look
+    flop_cc motion: (flow 0.4 0.57 32).look, drive: (flow 0.0 0.3 32).look
     flip_cc motion: 0.4
 
     flip :g3, 38, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
