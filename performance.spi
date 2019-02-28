@@ -16,7 +16,6 @@ live_loop :Attune, sync: :unsyncable do; tick
    # tick_reset_all
     flop_cc motion: (flow 0.0 0.5 32).look, drive: (flow 0.0 0.3 32).look
 
-
     flip :a3, 30, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
     flop :e3, 60, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
 
@@ -63,7 +62,14 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     create_aura
     resonate chd[0]+12,1, sus: sleeps, pads: [0], sat: 0, drive: 0
 
-    sleep sleeps
+    sleep sleeps/2.0
+    with_swing((flow 0.0 sleeps/2.0 64).look){
+
+    }
+    resonate :g4,1, sus: sleeps, pads: [2], sat: 0, drive: 0
+
+
+    sleep sleeps/2.0
   end
 end
 
