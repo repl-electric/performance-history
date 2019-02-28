@@ -48,7 +48,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     flip_cc motion: 0.4
 
     flip :g4, sus: (cycle 0.25 0.5 1).look if spread(5,8).look
-    flop :e3, sus: (cycle 0.25 0.5 1).rot(-1).look if spread(1,1).look
+    flop :e4, sus: (cycle 0.25 0.5 1).rot(-1).look if spread(1,1).look
 
 #    flop :b3, 60, sus: (cycle 1).look if !spread(7,11).look
 
