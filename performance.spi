@@ -35,7 +35,11 @@ at{
 #cam :top
 
 #hold on tight
-fx reverb: 1.00, drive: 1.00
+#fx reverb: 1.00, drive: 1.00
+
+
+#here we do.
+eject_cpu_core
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence? #please
