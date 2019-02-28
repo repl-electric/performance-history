@@ -32,7 +32,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/2.0
     sleep 1/2.0
 
-    flop :c3, 60, sus: (cycle 1/2.0).look if spread(1,1).look
+    flop :c4, 60, sus: (cycle 1/2.0).look if spread(1,1).look
 
     sleep 1/2.0
   end
@@ -60,7 +60,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
     }
     resonate :d4,1, sus: sleeps, pads: [1], sat: 0, drive: 0.1
-create_aura
+    #create_aura
 
     sleep sleeps/2.0
   end
