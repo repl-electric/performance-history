@@ -49,10 +49,11 @@ at{
 #this might hurt
 
 
-eject_cpu_core
+#eject_cpu_core
 
 #create_aura
 live_loop :Attune, sync: :unsyncable do; tick
+stop
   #cam :top
   silence? #please
   zero_delay [2,5,6].shuffle
