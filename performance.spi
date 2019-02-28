@@ -1,4 +1,4 @@
-load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 0
+load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
 
 #lets bring it back to life
 
@@ -30,6 +30,8 @@ at{
 #livecode :raise
 
 #flop_x
+
+cam :top
 
 #livecode :begin
 
