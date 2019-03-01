@@ -40,9 +40,9 @@ live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127*2) do
     overclock_cc oct: (cycle 0 -12 0 19).look
-    overclock :f4,20, sus: 3, motion: 0.4, drive: 0.2
+    overclock :f4,20, sus: 3, motion: 0.4, drive: 0.28
 
-    flop_cc motion: (flow 0.5 0.57 32).look#, drive: (flow 0.0 0.3 32).look
+    flop_cc motion: (flow 0.5 0.57 32).look, drive: 0.2
     flip_cc motion: 0.4
     flip :g4, 35, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
     [(method :flip), (method :flop)].choose.(:e4, 60, sus: (cycle 0.25 0.5 1).rot(-1).look) if spread(1,1).look
