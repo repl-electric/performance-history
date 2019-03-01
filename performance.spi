@@ -10,8 +10,8 @@ at{
 #flop_x
 
 livecode :sleep
-overclock_cc motion: 0.40
-#zoomout
+overclock_cc motion: 0.30
+zoomout
 
 
 #livecode :raise
