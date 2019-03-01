@@ -21,9 +21,6 @@ live_loop :Attune, sync: :unsyncable do; tick
   with_bpm @bpm=(127) do
     flop_cc motion: (flow 0.0 0.57 64).look, drive: (flow 0.0 0.3 32).look
     flip :g3, 35, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
-
-
-
     [(method :flip), (method :flop)].choose.(:e4, 60, sus: (cycle 0.25 0.5 1).rot(-1).look) if spread(1,1).look
 
     sleep 1/4.0
@@ -31,7 +28,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
 
-    flop :g3, 60, sus: (cycle 1).look if spread(1,1).look
+    flop :g4, 60, sus: (cycle 1).look if spread(1,1).look
 
     sleep 1/4.0
     sleep 1/4.0
