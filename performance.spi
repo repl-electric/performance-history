@@ -16,7 +16,7 @@ at{
 #livecode :raise
 
 live_loop :Attune, sync: :unsyncable do; tick
-  silence!
+  silence?
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127) do
     flop_cc motion: (flow 0.0 0.57 64).look, drive: (flow 0.0 0.3 32).look
@@ -87,7 +87,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     resonate chd[0]+12,1, sus: sleeps, pads: [0], sat: 0, drive: 0
     control_unit root(chd), 10,sus: sleeps, drive: 0.1, sat: 0.0
 
-    at{sleep 0.5; create_sea; sleep 0.5 ; cam :chase}
+#    at{sleep 0.5; create_sea; sleep 0.5 ; cam :chase}
 
 
 
