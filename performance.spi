@@ -7,7 +7,13 @@ at{
   overclock_on :f3,60, motion: 0.55
 
 }
-flop_x
+#flop_x
+
+livecode :sleep
+overclock_cc motion: 0.53
+
+#zoomout
+
 
 #livecode :raise
 
