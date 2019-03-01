@@ -1,6 +1,8 @@
 load_support('piezoelectric_resonator'); use_bpm 127#; alive perc: 0, pitch: 0, kick: 0
 init true && start_init
 warm
+control_unit :A3
+
  #  /$$$$$$$                      /$$       /$$$$$$$$ /$$                       /$$               /$$
  # | $$__  $$                    | $$      | $$_____/| $$                      | $$              |__/
  # | $$  \ $$  /$$$$$$   /$$$$$$ | $$      | $$      | $$  /$$$$$$   /$$$$$$$ /$$$$$$    /$$$$$$  /$$  /$$$$$$$
