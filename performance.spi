@@ -31,8 +31,8 @@ at{
 #Lets see what error brings us
 #lets crash the server
 
-#cam :top
-
+cam :top
+create_sea
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
