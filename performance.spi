@@ -37,9 +37,10 @@ at{
 #hold on
 #fx reverb: 1.00, drive: 0.88
 
-eject_cpu_core
+#eject_cpu_core
 
 live_loop :Attune, sync: :unsyncable do; tick
+  stop
   silence?
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127*5) do
@@ -114,7 +115,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    resonate chd[0]+12,1, sus: sleeps, pads: [0], sat: 0, drive: 0
+    resonate chd[0],10, sus: sleeps, pads: [0], sat: 0, drive: 0
     control_unit root(chd), 10,sus: sleeps, drive: 1.00, sat: 0.0
 
 #    at{sleep 0.5; create_sea; sleep 0.5 ; cam :chase}
