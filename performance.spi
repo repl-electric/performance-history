@@ -34,13 +34,17 @@ at{
 #cam :top
 #create_sea
 
-fx reverb: 0.86
+#hold on
+#fx reverb: 1.00, drive: 0.88
+
+eject_cpu_core
+
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127*5) do
     overclock_cc oct: (cycle 19 0 24).look
-    overclock :f4,21, sus: 3, motion: 0.50, drive: 0.41
+    overclock :f4,21, sus: 3, motion: 0.50, drive: 1.00
 
     flop_cc motion: (flow 0.5 0.57 32).look, drive: 0.2
     flip_cc motion: 0.4
