@@ -31,8 +31,8 @@ at{
 #Lets see what error brings us
 #lets crash the server
 
-cam :top
-create_sea
+#cam :top
+#create_sea
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
@@ -72,7 +72,7 @@ end
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
   perc=(cycle 1 0 1 1  1 1 1 1  1 1 1 1  1 1 1 1)
-  with_bpm @bpm=(127*(cycle 1).look) do
+  with_bpm @bpm=(127*(cycle 1 0.5 0.5 1).look) do
     perc_machine perc.to_a
     at{sleep 0.5; sea circle: rand*0.0; aura scale: rand*1.8}
   end
