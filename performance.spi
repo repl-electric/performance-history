@@ -1,6 +1,14 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 0
 
 
+#lets bring it back to life
+
+world time: 0.1
+overclock_cc motion: 0.27
+
+
+stop
+
 at{
   sync :Attune
   sleep 5
@@ -16,6 +24,9 @@ at{
 #livecode :raise
 
 #roots_chase target: :spiral ,force: 100.0
+
+#Lets see what error brings us
+#lets crash the server
 
 
 live_loop :Attune, sync: :unsyncable do; tick
