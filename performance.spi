@@ -34,7 +34,7 @@ at{
 #cam :top
 #create_sea
 
-fx reverb 0.86
+fx reverb: 0.86
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
