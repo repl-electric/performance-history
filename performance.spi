@@ -34,13 +34,13 @@ at{
 #cam :top
 #create_sea
 
-#fx
+fx reverb 0.86
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127*4) do
-    overclock_cc oct: (cycle 0  19).look
-    overclock :f4,20, sus: 3, motion: 0.50, drive: 0.37
+    overclock_cc oct: (cycle 0  24).look
+    overclock :f4,21, sus: 3, motion: 0.50, drive: 0.37
 
     flop_cc motion: (flow 0.5 0.57 32).look, drive: 0.2
     flip_cc motion: 0.4
@@ -111,7 +111,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     chd = score.look[0]
     sleeps = score.look[-1]
     resonate chd[0]+12,1, sus: sleeps, pads: [0], sat: 0, drive: 0
-    control_unit root(chd), 10,sus: sleeps, drive: 0.40, sat: 0.0
+    control_unit root(chd), 10,sus: sleeps, drive: 0.60, sat: 0.0
 
 #    at{sleep 0.5; create_sea; sleep 0.5 ; cam :chase}
 
