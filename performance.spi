@@ -4,13 +4,13 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 #lets bring it back to life
 
 #world time: 1
-overclock_cc attune: 0.50, sync: 1
+#overclock_cc attune: 0.50, sync: 1
 
 #its out of control!!!
 
 #stop
 
-recover #please please
+#recover #please please
 
 at{
   sync :Attune
@@ -30,6 +30,8 @@ at{
 
 #Lets see what error brings us
 #lets crash the server
+
+#cam :top
 
 
 live_loop :Attune, sync: :unsyncable do; tick
@@ -72,7 +74,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
   perc=(cycle 1 0 1 1  1 1 1 1  1 1 1 1  1 1 1 1)
   with_bpm @bpm=(127*(cycle 1).look) do
     perc_machine perc.to_a
-    at{sleep 0.5; sea circle: rand*0.6; aura scale: rand*1.8}
+    at{sleep 0.5; sea circle: rand*0.0; aura scale: rand*1.8}
   end
 end
 
