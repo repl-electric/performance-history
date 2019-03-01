@@ -22,7 +22,6 @@ live_loop :Attune, sync: :unsyncable do; tick
 
     flop :g3, 60, sus: (cycle 1).look if spread(1,1).look
 
-
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
@@ -35,7 +34,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/2.0
     sleep 1/2.0
 
-    flop :c3, 60, sus: (cycle 1/2.0).look if spread(1,1).look
+    flop :c3, 100, sus: (cycle 1/2.0).look if spread(1,1).look
 
     sleep 1/2.0
   end
@@ -56,7 +55,6 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
       )
     chd = score.look[0]
     sleeps = score.look[-1]
-    create_aura
     resonate chd[0]+12,1, sus: sleeps, pads: [0], sat: 0, drive: 0
 
     sleep sleeps
