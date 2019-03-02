@@ -9,8 +9,9 @@ at{
 #flop_x
 
 
-overclock_cc motion: 0.50
+overclock_cc motion: 0.34
 livecode :sleep
+zoomout
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence!
