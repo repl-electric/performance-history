@@ -14,6 +14,8 @@ live_loop :Attune, sync: :unsyncable do; tick
     #tick_reset_all
     flop_cc motion: (flow 0.0 0.57 64).look, drive: (flow 0.0 0.3 64).look
 
+    flop :a3, 30, sus: (cycle 1).look if spread(1,1).look
+
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
