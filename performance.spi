@@ -5,7 +5,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, k
 
 
 world time: 0.6
-overclock_cc motion: 0.38
+overclock_cc motion: 0.40
 
 
 
