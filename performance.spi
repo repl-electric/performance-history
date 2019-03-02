@@ -8,10 +8,9 @@ at{
 ##livecode :raise
 #flop_x
 
-
-overclock_cc motion: 0.34
-livecode :sleep
-zoomout
+#overclock_cc motion: 0.27
+#livecode :sleep
+#zoomout
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence!
@@ -21,7 +20,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     flop_cc motion: (flow 0.0 0.57 64).look, drive: (flow 0.0 0.3 64).look
     flip_cc motion: 0.4
 
-    flip :a3, 33, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
+    flip :g3, 33, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
     flop :e3, 50, sus: (cycle 0.25 0.5 1).rot(-1).look if spread(1,1).look
 
     sleep 1/4.0
@@ -29,7 +28,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
     sleep 1/4.0
 
-    flop :g3, 60, sus: (cycle 1).look if spread(1,1).look
+    flop :g4, 60, sus: (cycle 1).look if spread(1,1).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -60,11 +59,37 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm @bpm=(127*1) do
     score = (cycle
-      [[:g2] 8]
+      [[:A3 :C5 :E4] 8]
+      [[:F4 :A6 :C5] 8]
+      [[:C3 :E5 :G4] 4]
+      [Zz 4]
+      # [[:A3 :C5 :E4] 8]
+      # [[:E4 :G5 :B3] 8]
+      # [[:F4 :A6 :C5 :E5] 8]
+      # [[:C3 :E5 :G4] 8]
+      # [Zz 8]
+
+      # [[:A3 :C5 :E4] 8]
+      # [[:F4 :A6 :C5] 8]
+      # [[:C3 :E5 :G4] 4]
+      # [Zz 4]
+      # [[:A3 :C5 :E4] 4]
+      # [[:A3 :C5 :E4] 4]
+      # [[:E4 :G5 :B3] 4]
+      # [[:E4 :G5 :B3] 4]
+      # [[:G4 :B6 :D5 :F4] 8]
+      # [[:C4 :E5 :G4] 8]
+      # [Zz 8]
+
       )
     chd = score.look[0]
     sleeps = score.look[-1]
     resonate chd[0]+12,1, sus: sleeps, pads: [0], sat: 0, drive: 0
+
+    control_unit root(chd), 10,sus: sleeps, drive: 0.1, sat: 0.0
+
+    at{sleep 0.5; create_sea; sleep 0.5; cam :chase}
+
 
     sleep sleeps/2.0
 
