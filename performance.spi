@@ -12,7 +12,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #                    | $$
 #                    |__/
 
-aura scale: -0.999
+aura scale: -1.0
 
 
 
