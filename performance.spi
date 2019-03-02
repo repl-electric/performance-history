@@ -51,7 +51,7 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 1 0 1 1  1 0 0 1  1 1 1 1  1 1 )
+  perc=(cycle 1 0 1 1  1 1 1 1  1 1 1 1  1 1 )
   with_bpm @bpm=(127*(cycle 1 0.5 0.5 1).look) do
     perc_machine perc.to_a
     at{sleep 0.5; sea circle: rand*0.8; aura scale: rand*1.8}
