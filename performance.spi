@@ -1,5 +1,21 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 0
 
+
+#lets bring it back ti life
+
+
+world time: 0.1
+overclock_cc motion: 0.27
+
+
+
+stop
+
+
+#lets see what error brings us
+
+#lets crash the server!
+
 at{
   sync :Attune
   sleep 6
