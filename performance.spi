@@ -72,3 +72,4 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 end
 
 live_loop(:unsyncable)do;sleep 1.0;end
+livecode :begin
