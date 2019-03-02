@@ -30,14 +30,14 @@ at{
 #zoomout
 
 #hold on it might get crazy
-fx reverb: 1.00, drive: 0.45
+fx reverb: 1.00, drive: 0.66
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127*4) do
     #tick_reset_all
-    flop_cc motion: (flow 0.5 0.57 64).look, drive: 0.3
+    flop_cc motion: (flow 0.55 0.57 64).look, drive: 0.3
     flip_cc motion: 0.5
 
 #    cam :top
