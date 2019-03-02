@@ -37,7 +37,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     flop_cc motion: (flow 0.35 0.57 64).look#, drive: (flow 0.0 0.3 64).look
     flip_cc motion: 0.4
 
-    overclock :f4, 10, sus: 3
+    overclock :f4, 10, sus: 3, motion: 0.3
 
     flip :g4, 33, sus: (cycle 0.25 0.5 1).look if spread(5,8).look
     [(method :flip), (method :flop)].choose.(:e3, 50, sus: (cycle 0.25 0.5 1).rot(-1).look) if spread(1,1).look
