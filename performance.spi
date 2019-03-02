@@ -32,13 +32,13 @@ at{
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
   zero_delay [2,5,6].shuffle
-  with_bpm @bpm=(127*2) do
+  with_bpm @bpm=(127*4) do
     #tick_reset_all
     flop_cc motion: (flow 0.5 0.57 64).look, drive: 0.3
     flip_cc motion: 0.5
 
 #    cam :top
-    overclock_cc oct: (cycle 0 19 ).look
+    overclock_cc oct: (cycle 0 24).look
     overclock :f4, 18, sus: 3, motion: 0.41, drive: 0.32
 
     flip :g4, 33, sus: (cycle 0.25 0.5 1).look if spread(5,8).look
