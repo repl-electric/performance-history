@@ -22,7 +22,7 @@ live_loop :Attune, sync: :unsyncable do; tick
 
     flip :g3, 33, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
 
-    flop :e3, 50, sus: (cycle 0.25 0.5 1).rot(-1).look if spread(1,1).look
+    [(method :flip), (method :flop)].choose.(:e3, 50, sus: (cycle 0.25 0.5 1).rot(-1).look) if spread(1,1).look
     flop :b3, 60, sus: (cycle 1).look if !spread(7,11).look
 
     sleep 1/4.0
@@ -58,8 +58,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
   end
 end
 
-roots_chase target: :start #,force: 0.0
-
+#roots_chase target: :spiral #,force: 0.0
 
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm @bpm=(127*1) do
