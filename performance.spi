@@ -30,7 +30,12 @@ at{
 #zoomout
 
 #hold on it might get crazy
-fx reverb: 1.00, drive: 0.66
+#fx reverb: 1.00, drive: 0.80
+
+
+eject_cpu_core
+
+
 
 live_loop :Attune, sync: :unsyncable do; tick
   silence?
@@ -42,7 +47,7 @@ live_loop :Attune, sync: :unsyncable do; tick
 
 #    cam :top
     overclock_cc oct: (cycle  24 0 19).look
-    overclock :f4, 18, sus: 3, motion: 0.60, drive: 0.83
+    overclock :f4, 18, sus: 3, motion: 0.60, drive: 0.90
 
     flip :g4, 33, sus: (cycle 0.25 0.5 1).look if spread(5,8).look
     [(method :flip), (method :flop)].choose.(:e3, 50, sus: (cycle 0.25 0.5 1).rot(-1).look) if spread(1,1).look
