@@ -31,6 +31,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 
 roots throttle: 1
 
+cam :top
+
 #overclock_on :e3
 # burst 1.0
 # unity "/cube/hit", 1.0
