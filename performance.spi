@@ -19,7 +19,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #flop_on :d2
 
 #zoomout
-overclock_on :E2
+overclock_on :A3
 
 
 
