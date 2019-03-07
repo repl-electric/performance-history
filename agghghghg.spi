@@ -1,4 +1,4 @@
-#cam0
+cam3
 #cam3 true
 #terrain 0.1
 live_loop :name do
