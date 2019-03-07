@@ -11,7 +11,8 @@ unity "/lights/end",0.0
 
 star size: 16.0,life: 2
 
-color 1
+#color 1
+colorb 1
 
 
 #create_sea
