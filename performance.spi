@@ -33,6 +33,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 # unity "/cube/hit", 1.0
 # world time: 1.0
 shard 0.0
+burst 0.0
 
 
 live_loop :Attune, sync: :unsyncable do; tick
