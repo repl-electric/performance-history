@@ -25,8 +25,8 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #unity "/camtop/zoomin",205.0
 # unity "/cubecam/zoomout", 0.0
 # unity "/cubecam/zoomout", 1.0
-#create_aura
-create_cube
+create_aura -2
+#create_cube
 live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127) do
@@ -51,8 +51,8 @@ end
 live_loop :ClockCycle, sync: :unsyncable do; tick
   stop
   #sync :MachineInstructions
-  perc=(cycle 0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,)
-  with_bpm @bpm=(127*(cycle 1,).look) do
+  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
+  with_bpm @bpm=(127*(cycle 1).look) do
 #    perc_machine perc.to_a
   end
 end
@@ -60,7 +60,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm @bpm=(127*1) do
     score = (cycle
-      [[:d2], 8],
+      [[:d2] 8]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
