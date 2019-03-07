@@ -3,7 +3,7 @@ ROOT="/Users/josephwilk/Workspace/repl-electric/adventures-in-algorhythm/you_fal
 #camlogo
 #focus
 
-cam :main
+
 live_loop :fall_into_your_screen, sync: :unsyncable do; tick
 
   sleep 1
