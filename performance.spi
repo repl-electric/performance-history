@@ -3,7 +3,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 
 #cam :top
 
-roots swirl: 1,
+roots swirl: 1, throttle: 1
 
 #create_sea
 
