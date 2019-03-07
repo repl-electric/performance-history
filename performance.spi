@@ -38,7 +38,7 @@ roots throttle: 1
 overclock_on :f3
 # burst 1.0
 # unity "/cube/hit", 1.0
-# world time: 1.0
+ world time: 1.0
 shard 0.5
 #burst 0.1
 
