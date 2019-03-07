@@ -7,8 +7,9 @@ roots swirl: 0, amp: 0.1, drag: 0
 
 unity "/lights/up",0.0
 unity "/fadeout",1.0
-
 unity "/lights/end",0.0
+
+star size: 2
 
 color 1
 
@@ -52,8 +53,8 @@ end
 live_loop :ClockCycle, sync: :unsyncable do; tick
   stop
   #sync :MachineInstructions
-  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
-  with_bpm @bpm=(127*(cycle 1).look) do
+  perc=(cycle 0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,)
+  with_bpm @bpm=(127*(cycle 1,).look) do
 #    perc_machine perc.to_a
   end
 end
@@ -61,7 +62,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm @bpm=(127*1) do
     score = (cycle
-      [[_] 8]
+      [[_], 8],
       )
     chd = score.look[0]
     sleeps = score.look[-1]
