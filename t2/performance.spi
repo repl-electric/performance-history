@@ -98,7 +98,7 @@ end
 
 live_loop :melo, sync: :unsyncable do
 #  stop
-  midi :bb4, sus: W*(cycle 1 1 2 4).look, channel: 3
+  lofi :bb4, sus: W*(cycle 1 1 2 4).look
   midi 'c1',(cycle 127 0).look, channel: 3
   at{sleep 1.0; shudder_fx (cycle :e3).look} if spread(1,2).rot(-1).look
 
