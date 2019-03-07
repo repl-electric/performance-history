@@ -47,6 +47,7 @@ live_loop :Attune, sync: :unsyncable do; tick
 end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
+  stop
   #sync :MachineInstructions
   perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
   with_bpm @bpm=(127*(cycle 1).look) do
