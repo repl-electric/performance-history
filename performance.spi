@@ -22,7 +22,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #overclock_on :F3
 #zoomout
 #unity "/camtop/zoomin",0.0
-unity "/camtop/zoomin",15.0
+unity "/camtop/zoomin",205.0
 
 
 
