@@ -1,0 +1,63 @@
+load_support('piezoelectric_resonator'); use_bpm 127
+alive perc: 1, sop: 0
+# C D E F G A B
+ # at{
+ #   sync :fast
+ #   flop_on :C3
+ # }
+#overclock_cc motion: 0.27
+
+#flop_on :D2,65
+#flip_on :A2,60
+#overclock_on :A2, 50
+overclock_cc motion: 0.55
+
+live_loop :play do
+  tick
+  flip_cc motion: (vec 0.5 0.3 0.1).look
+  flop_cc motion: (flow 0.2 0.5 32).look
+  s = [[:F1, :D1], :D1, :D1, :C1, :F1].choose
+  #kal :Ds5, 1, sus: 1/2.0 if spread(1,32*0.5).rot(-2).look
+  midi :E5, 85, channel: 14, sus: 2 if spread(1,16).rot(-2).look
+
+  flop :D2,50, sus: 1.0
+  with_swing 0.1 {
+  flip (vec :C4 :C4 :E4 :E4 :D4 :D4).look, 35, sus: 1.0 if spread(4,6).look
+  }
+
+  if s.is_a?(Array)
+    if spread(1,3).rot(-1).look
+    at{
+      s.map{|n| ze n; sleep rand*0.1 }
+
+      }
+    end
+  else
+    ze s if spread(1,3).rot(-1).look
+  end
+  sleep 1
+  with_swing((flow 0 0.1 256).look){
+    glitch :fs3, 60 if spread(3*4,12*4).look
+  }
+
+  with_swing 0.1 {
+    midi :A4, 85, channel: 14, sus: 4 if spread(1,3).look
+  }
+
+
+  sleep 1
+  if dice(8)>5
+    midi :F4, 80, channel: 14, sus: 4 if spread(1,3).look
+  end
+
+  glitch :f3, 60 if spread(3*4,12).look
+end
+
+
+#flip_x
+
+#flip_on :A3
+#flip_cc motion: 0.30
+
+
+stop
