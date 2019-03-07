@@ -35,7 +35,7 @@ roots throttle: 1
 
 #cam :
 
-overclock_on :e3
+overclock_on :f3
 # burst 1.0
 # unity "/cube/hit", 1.0
 # world time: 1.0
