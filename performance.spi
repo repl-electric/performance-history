@@ -33,7 +33,7 @@ roots throttle: 1
 
 #cam :top
 
-cam :cube
+cam :main
 
 #overclock_on :e3
 # burst 1.0
