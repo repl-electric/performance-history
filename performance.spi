@@ -3,7 +3,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 
 #cam :top
 
-unity "/knitroots/target/spiral", 1.0
+roots swirl: 1,
 
 #create_sea
 
