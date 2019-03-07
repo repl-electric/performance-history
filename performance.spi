@@ -1,5 +1,5 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
-init true && start_init
+#init true && start_init
 
 
  #  /$$$$$$$                      /$$       /$$$$$$$$ /$$                       /$$               /$$
@@ -15,6 +15,9 @@ init true && start_init
 #                    |__/
 
 #create_aura
+
+
+
 
 #flop_on :d2
 
@@ -34,6 +37,8 @@ init true && start_init
 # #cam :top
 
 # #cam :
+
+create_sea
 
 # overclock_on :f3
 # # burst 1.0
