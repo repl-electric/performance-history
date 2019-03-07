@@ -1,4 +1,4 @@
-load_support('t2'); use_bpm 160.0
+iload_support('t2'); use_bpm 160.0
 
 W=1.0
 H=1/2.0
@@ -77,7 +77,7 @@ live_loop :creatures, sync: :unsyncable do
     if spread(1,64).look
       #creature_cc dirt: rand*1.0, filter: rand*1.0, talk: rand*1.0
       shudder_fx (cycle :cs3).tick(:in)
-      creature :eb4, (ine 40 100 128).look, sus:8
+      creature :eb4, (flow 40 100 128).look, sus:8
 #      at{
 #        sleep 8.0
 #        midi (cycle :ds4, :e4).look, 80, channel: 11
