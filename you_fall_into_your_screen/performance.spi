@@ -8,6 +8,7 @@ live_loop :fall_into_your_screen, sync: :unsyncable do; tick
 
   operator :A3
   null :A2
+  corrupt :a2
 
   puts :A
   sleep 1
