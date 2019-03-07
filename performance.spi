@@ -1,6 +1,9 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
 #init true && start_init
 
+cam :start
+
+
 
  #  /$$$$$$$                      /$$       /$$$$$$$$ /$$                       /$$               /$$
  # | $$__  $$                    | $$      | $$_____/| $$                      | $$              |__/
@@ -40,7 +43,6 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 
 
 
-create_cube
 
 
 
