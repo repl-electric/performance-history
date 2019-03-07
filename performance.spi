@@ -4,6 +4,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #cam :top
 create_sea
 create_bird
+rock orbit: 100
 roots swirl: 1,  drag: 2.0
 
 #unity "/lights/up",0.0
