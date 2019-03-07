@@ -9,7 +9,7 @@ unity "/lights/up",0.0
 unity "/fadeout",1.0
 unity "/lights/end",0.0
 
-star size: 16.0,life: 10
+star size: 16.0,life: 20
 
 color 1
 
