@@ -2,7 +2,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #init true && start_init
 
 #cam :top
-create_sea
+create_sea -2
 create_bird
 rocks orbit: 10
 roots swirl: 0,  drag: 0.5, amp: 0.1
