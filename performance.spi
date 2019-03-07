@@ -35,7 +35,7 @@ roots throttle: 1
 
 #cam :
 
-overclock_on :e3
+overclock_on :a3
 # burst 1.0
 # unity "/cube/hit", 1.0
 # world time: 1.0
@@ -69,8 +69,8 @@ end
 live_loop :ClockCycle, sync: :unsyncable do; tick
   stop
   #sync :MachineInstructions
-  perc=(cycle 0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,  0, 0, 0, 0,)
-  with_bpm @bpm=(127*(cycle 1,).look) do
+  perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
+  with_bpm @bpm=(127*(cycle 1).look) do
 #    perc_machine perc.to_a
   end
 end
@@ -78,7 +78,7 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm @bpm=(127*1) do
     score = (cycle
-      [[:d2], 8],
+      [[:d2] 8]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
