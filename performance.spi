@@ -1,15 +1,15 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, kick: 0
 #init true && start_init
 
-cam :top
-
+#cam :top
+create_sea
 #roots swirl: 0, amp: 0.1, drag: 0
 
 #unity "/lights/up",0.0
 unity "/fadeout", 1.0
 #unity "/lights/end",0.0
 #cam :top
-star size: 16.0,life: 2
+#star size: 16.0,life: 2
 
 #color 1
 colorb 1
