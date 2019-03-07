@@ -49,7 +49,7 @@ live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
   perc=(cycle 0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0)
   with_bpm @bpm=(127*(cycle 1).look) do
-    perc_machine perc.to_a
+#    perc_machine perc.to_a
   end
 end
 
