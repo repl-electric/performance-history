@@ -28,12 +28,14 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #create_aura
 #create_cube -2
 
-#overclock_on :f3
+overclock_on :f3
 # burst 1.0
 # unity "/cube/hit", 1.0
 # world time: 1.0
 shard 0.5
 burst 0.1
+
+
 
 
 live_loop :Attune, sync: :unsyncable do; tick
