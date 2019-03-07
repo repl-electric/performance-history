@@ -38,7 +38,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 
 # #cam :
 
-create_sea
+create_light
 
 # overclock_on :f3
 # # burst 1.0
