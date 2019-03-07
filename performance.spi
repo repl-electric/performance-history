@@ -28,7 +28,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 #create_aura -2
 #create_cube
 
-overclock_on :a3
+overclock_on :e3
 
 
 
