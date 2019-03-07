@@ -5,7 +5,7 @@ load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 0, pitch: 0, k
 
 roots swirl: 0, amp: 0.1, drag: 0
 
-unity "/lights/up",1.0
+unity "/lights/up",100.0
 unity "/fadeout",1.0
 color 1
 
