@@ -42,7 +42,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/2.0
     sleep 1/2.0
 
-    glitch :cs3,55
+    glitch :cs3, 55
 
     flop :c3, 40, sus: (cycle 1/2.0).look if spread(1,1).look
 
