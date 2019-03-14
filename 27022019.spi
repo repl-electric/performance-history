@@ -47,7 +47,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/4.0
 
     #flop :e3, 40, sus: (cycle 2.0 1).look if !spread(3,8).look
-    #flop :c4, 40, sus: (cycle 1 2.0 0.5).look if spread(3,8).look
+    flop :c3, 40, sus: (cycle 1 2.0 0.5).look if spread(3,8).look
 
     sleep 1/2.0
     sleep 1/2.0
@@ -56,7 +56,6 @@ live_loop :Attune, sync: :unsyncable do; tick
 
 
     at{glitch :cs3, 48; sleep [1,2.0].choose; glitch :g3,20}
-
 
     flop :c3, 40, sus: (cycle 1/2.0).look if spread(1,1).look
 
