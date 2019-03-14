@@ -1,6 +1,10 @@
 load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 1, kick: 0
 #init true && start_init
 
+glitch_cc ldelay: 0
+
+stop
+
 at{ #G A B C D F A
   sync :Attune
   sleep 6  # 2 5 6
