@@ -26,7 +26,7 @@ live_loop :Attune, sync: :unsyncable do; tick
 
     sleep 1/4.0
     sleep 1/4.0
-    midi :ds4, 55, channel: 13
+    midi :a4, 55, channel: 13
     sleep 1/4.0
     sleep 1/4.0
 
