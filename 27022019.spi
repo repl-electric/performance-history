@@ -17,28 +17,28 @@ live_loop :Attune, sync: :unsyncable do; tick
   zero_delay [2,5,6].shuffle
   with_bpm @bpm=(127) do
     #tick_reset_all
-    flop_cc motion: (flow 0.0 0.57 64).look, drive: (flow 0.0, 0.32, 64).look
+    flop_cc motion: (flow 0.0, 0.57, 64,).look, drive: (flow 0.0,  0.32,  64,).look
     flip_cc motion: 0.4
-    flip :g4, 30, sus: (cycle 0.25 0.5 1).look if spread(1,1).look
-    flop :e3, 60, sus: (cycle 0.25 0.5 1).rot(-1).look if spread(1,1).look
+    flip :g4, 30, sus: (cycle 0.25, 0.5, 1,).look if spread(1,1).look
+    flop :e3, 60, sus: (cycle 0.25, 0.5, 1,).rot(-1).look if spread(1,1).look
 
-    flop :b3, 40, sus: (cycle 1.0).look if !spread(7,11).look
-
-    sleep 1/4.0
-    sleep 1/4.0
-    midi :a4, 95, channel: 13
-    sleep 1/4.0
-    sleep 1/4.0
-
-    flop :g4, 40, sus: (cycle 4.0 1 1).look if spread(7,11).look
+    flop :b3, 40, sus: (cycle 1.0,).look if !spread(7,11).look
 
     sleep 1/4.0
     sleep 1/4.0
+    midi :a4, 195, channel: 13
     sleep 1/4.0
     sleep 1/4.0
 
-    flop :e3, 40, sus: (cycle 2.0 1).look if !spread(3,8).look
-    flop :c4, 40, sus: (cycle 1 2.0 0.5).look if spread(3,8).look
+    flop :g4, 40, sus: (cycle 4.0, 1, 1,).look if spread(7,11).look
+
+    sleep 1/4.0
+    sleep 1/4.0
+    sleep 1/4.0
+    sleep 1/4.0
+
+    flop :e3, 40, sus: (cycle 2.0, 1,).look if !spread(3,8).look
+    flop :c4, 40, sus: (cycle 1, 2.0, 0.5,).look if spread(3,8).look
 
     sleep 1/2.0
     sleep 1/2.0
@@ -47,7 +47,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     at{glitch :cs3, 48; sleep [1,2.0].choose; glitch :g3,20}
 
 
-    flop :e3, 40, sus: (cycle 1/2.0).look if spread(1,1).look
+    flop :e3, 40, sus: (cycle 1/2.0,).look if spread(1,1).look
 
     sleep 1/2.0
   end
@@ -56,8 +56,8 @@ end
 live_loop :ClockCycle, sync: :unsyncable do; tick
   stop
   #sync :MachineInstructions
-  perc=(cycle 1 0 1 1  1 1 0 1  1 1 1 1  1 1 1 0)
-  with_bpm @bpm=(127*(cycle 1).look) do
+  perc=(cycle 1, 0, 1, 1,  1, 1, 0, 1,  1, 1, 1, 1,  1, 1, 1, 0,)
+  with_bpm @bpm=(127*(cycle 1,).look) do
     perc_machine perc.to_a
   end
 end
@@ -66,15 +66,15 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
   #stop
   with_bpm @bpm=(127*1) do
     score = (cycle
-      [[:g2] 4]
+      [[:g2], 4],
       )
     chd = score.look[0]
     sleeps = score.look[-1]
     resonate chd[0]+12,1, sus: sleeps, pads: [0], sat: 0, drive: 0
     sleep sleeps/2.0
 
-    with_swing((flow 0.0 sleeps/2.0 64).look){
-      overclock :b4, 20, sus: 1/2.0, motion: 0.3, drive: (flow 0.0 0.40 6).look
+    with_swing((flow 0.0, sleeps/2.0, 64,).look){
+      overclock :b4, 20, sus: 1/2.0, motion: 0.3, drive: (flow 0.0, 0.40, 6,).look
     }
     resonate :d4, 2, sus: sleeps/2.0, pads: [1], sat: 0, drive: 0.60
 
