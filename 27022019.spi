@@ -29,7 +29,7 @@ live_loop :Attune, sync: :unsyncable do; tick
 
     #flop :b3, 40, sus: (cycle 1.0).look if !spread(7,11).look
 
-    glitch_cc rdelay: rand((flow 0.0, 1.0, 32).look), ldelay: (flow 0.0, 1.0, 32).look
+    glitch_cc rdelay: (flow 0.0, 1.0, 32).look, ldelay: (flow 0.0, 1.0, 32).look
 
     sleep 1/4.0
     sleep 1/4.0
