@@ -9,7 +9,7 @@ at{ #G A B C D F A
 #  flop_off :b2
 #  flop_on :b3
 }
-#flop_x
+flop_x
 #b2 6
 #d3 2
 
