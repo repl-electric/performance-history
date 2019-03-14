@@ -10,7 +10,7 @@ at{ #G A B C D F A
   sync :Attune
 #  sleep 6  # 2 5 6
  # flop_off :b3
-  flop_on :b3
+#  flop_on :b3
 #  flop_off :b2
 #  flop_on :b3
 }
@@ -52,7 +52,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/2.0
     sleep 1/2.0
 
-    at{glitch :cs3, 48; sleep [1,2.0].choose; glitch :g3,20}
+    at{glitch :cs3, 48*2; sleep [1,2.0].choose; glitch :g3,20}
 
     flop :c4, 40, sus: (cycle 1/2.0).look if spread(1,1).look
 
