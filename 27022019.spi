@@ -1,9 +1,10 @@
 load_support('piezoelectric_resonator'); use_bpm 127#; alive perc: 1, pitch: 1, kick: 0
 #init true && start_init
 
-glitch_cc rdelay: 0.2
 
-stop
+
+
+#stop
 
 at{ #G A B C D F A
   sync :Attune
@@ -27,6 +28,9 @@ live_loop :Attune, sync: :unsyncable do; tick
     #flop :e3, 60, sus: (cycle 0.25 0.5 1).rot(-1).look if spread(1,1).look
 
     #flop :b3, 40, sus: (cycle 1.0).look if !spread(7,11).look
+
+
+    glitch_cc rdelay: 0.2
 
     sleep 1/4.0
     sleep 1/4.0
