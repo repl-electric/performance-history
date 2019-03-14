@@ -74,7 +74,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
   #stop
   with_bpm @bpm=(127*1) do
     score = (cycle
-      [[:f2] 4]
+      [[:g2] 4]
       )
     chd = score.look[0]
     sleeps = score.look[-1]
