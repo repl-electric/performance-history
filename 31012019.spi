@@ -1,0 +1,225 @@
+load_support('piezoelectric_resonator'); use_bpm 127; alive perc: 1, pitch: 0, kick: 1
+#init
+#cam :top
+#stop
+#colort  20.0
+#unity "/endroots/target/circle",1.0
+#unity "/fadeout",0
+
+#stop
+# live_loop :test do
+
+#   tick
+
+#   sleep 6
+#   p = (ring 'lt', 'rb', 'rt', 'lb').shuffle.look
+#   puts p
+#   unity "/endroots/target/#{p}",1
+
+# unity "/camtop/color1/s",rand*1
+#   unity "/camtop/color1/h",rand*1
+#   unity "/camtop/color1/b",rand*1
+# # unity "/camtop/color2/b",rand*2
+# # unity "/camtop/color2/s",rand*2
+# # unity "/camtop/color2/h",rand*2
+
+# # unity "/camtop/color3/b",rand*2
+# # unity "/camtop/color3/s",rand*2
+# # unity "/camtop/color3/h",rand*2
+#   sleep 1
+# end
+
+
+#unity "/fadeout",0.0
+
+
+
+# stop
+
+# unity "/color1/b",1
+# unity "/color2/b",1
+# unity "/color3/b",1
+
+# unity "/linecolor/h",1
+# unity "/linecolor/s",1
+# unity "/linecolor/b",1
+
+
+
+# unity "/linecolor/cube/s",2
+# unity "/linecolor/cube/b",2
+# unity "/linecolor/cube/h",2
+
+
+# #unity "/fadeout",0.0
+# #zoom_in
+
+
+# stop
+# #colorb 800
+
+
+
+# #stop
+# #init true && start_init
+# #overclock_x
+# #stop
+# #at{
+# #  sync :Attune
+#    # sleep 3
+#    # flop_on :g3
+#   # sleep 3
+#   # operator :B5, 95
+#   # overclock_off :A3, 15
+#   # sleep 3
+
+# #   overclock_on :f3, 15
+# #  sleep 1/6.0
+# #  flop_on :b3
+# #}
+# #init true
+# #zoomout
+# #cam :top
+
+# #cam :top
+
+# #resonate :A2
+
+# # A B C *D E F  *G  A B C
+# #overclock :A3,1,sus: 12
+
+# # at{
+# #   sync :Attune
+# #   sleep 1.5
+# # #  overclock_on :E3
+# # }
+
+# #overclock_cc motion: 0.49
+
+# #      [[:A3 :C5 :E4] 8]
+# #      [[:F4 :A6 :C5] 8]
+# #      [[:C3 :E5 :G4] 4]
+# #init
+# #cam :top
+# #cam :top
+# #world time: 1
+# #attune
+# #unity "/lights/up",0.0
+# #eject_cpu_core
+# #world time: 1
+# #init true
+# #unity "/fadeout",0.0
+# #colorb 0.9
+# #eject_cpu_core
+# #unity "/fadeout",2.0
+# #cam :top
+# #vol 0
+# #init
+# #cam :top
+# #stop
+# unity "/lights/up", 7.5
+
+#overclock_cc motion: 0.40
+
+live_loop :Attune, sync: :unsyncable do; tick
+
+  silence?
+  zero_delay [2,5,6].shuffle
+  #  overclock :e4,5, sus: 2 if spread(1,4).look
+  #operator :e4,105, sus: 3
+  overclock :f4, sus: 3 if spread(1,1).look
+  overclock_cc oct: (cycle 0 -12 0 19 0 12).look
+
+  with_bpm 127*1 do
+    #tick_reset_all
+    flop_cc motion: (flow 0.4 0.57 32).look
+    flip_cc motion: 0.6
+    flip :e4,127, sus: (cycle 0.25 0.5 1).look
+    fn = (ring
+      (method :flip),(method :flip),(method :flip),
+      (method :flop),(method :flop),(method :flop) ).look
+    flop(:g4,127, sus: (cycle 0.125 0.5 1).rot(look%6).look)
+
+    sleep 1/4.0
+    sleep 1/4.0
+    sleep 1/4.0
+    sleep 1/4.0
+#    overclock (cycle :g3  :A3  :G3).look,10,sus: 1.0/12.0 if spread(7,11).look
+#    alu (cycle :G3).look if spread(1,4).look
+
+    sleep 1/4.0
+    sleep 1/4.0
+    sleep 1/4.0
+    sleep 1/4.0
+
+    flop :c4,127, sus: 1/2.0
+
+    sleep 1/2.0
+    sleep 1/2.0
+    sleep 1/2.0
+    flop :e4,127, sus: 1/2.0
+    sleep 1/2.0
+  end
+end
+
+live_loop :ClockCycle, sync: :unsyncable do; tick
+  #sync :MachineInstructions
+  perc=(cycle 0 0 1 1  1 1 0 1  1 0 0 0  0 0 0 0)
+  with_bpm 127*(cycle 1).look do
+    #perc_machine perc.to_a
+    #sleep 1.0/2.0
+    with_swing((flow 0.0 1/4.0 16*4).look){
+      puts (flow 0.0 1/4.0 16*4).look if spread(4,8).look
+      glitch :c3, 120 if spread(4,8).look
+      glitch_cc corode: rand
+    }
+    sleep 1.0/4.0
+  end
+end
+
+live_loop :MachineInstructions, sync: :unsyncable do; tick
+  with_bpm 127*1 do
+    score = (cycle
+#      [[:a3] 8]
+
+#      [[:fs3] 8]
+
+      [[:A3 :C5 :E4] 8]
+      [[:F4 :A6 :C5] 8]
+      [[:C3 :E5 :G4] 4]
+      [Zz 4]
+      # [[:A3 :C5 :E4] 8]
+      # [[:E4 :G5 :B3] 8]
+      # [[:F4 :A6 :C5 :E5] 8]
+      # [[:C3 :E5 :G4] 8]
+      # [Zz 8]
+
+      # [[:A3 :C5 :E4] 8]
+      # [[:F4 :A6 :C5] 8]
+      # [[:C3 :E5 :G4] 4]
+      # [Zz 4]
+      # [[:A3 :C5 :E4] 4]
+      # [[:A3 :C5 :E4] 4]
+      # [[:E4 :G5 :B3] 4]
+      # [[:E4 :G5 :B3] 4]
+      # [[:G4 :B6 :D5 :F4] 8]
+      # [[:C4 :E5 :G4] 8]
+      # [Zz 8]
+
+      )
+    chd = score.look[0]
+    sleeps = score.look[-1]
+    resonate chd[0]+12,1, sus: sleeps, pads: [0,1,2], sat: 0, drive: 0
+    #control_unit root(chd)+12, 10,sus: sleeps, drive: 0.0, sat: 0.0
+
+    sleep sleeps/2.0
+    operator chd[-1]+[9,7].choose,95, sus: 8
+    with_swing((flow 0.0 sleeps/4.0 64).look){
+      operator chd[-1]+12+[9,7].choose,91, sus: 8
+    }
+
+    sleep sleeps/2.0
+  end
+end
+
+live_loop(:unsyncable)do;sleep 1.0;end
