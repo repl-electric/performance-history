@@ -34,7 +34,7 @@ live_loop :Attune, sync: :unsyncable do; tick
 
     sleep 1/4.0
     sleep 1/4.0
-    midi :a3, 25, channel: 13 if spread(7,22).look)
+    midi :a3, 25, channel: 13 if spread(7,22).look
     sleep 1/4.0
     sleep 1/4.0
 
