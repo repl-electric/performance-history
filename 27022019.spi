@@ -9,7 +9,7 @@ at{ #G A B C D F A
 #  flop_off :b2
 #  flop_on :b3
 }
-flop_x
+#flop_x
 #b2 6
 #d3 2
 
@@ -77,7 +77,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
     with_swing((flow 0.0 sleeps/2.0 64).look){
       overclock :b4, 20, sus: 1/2.0, motion: 0.3, drive: (flow 0.0 0.40 6).look
     }
-    resonate :d4, 2, sus: sleeps/2.0, pads: [1], sat: 0, drive: 0.60
+    resonate :d4, 2, sus: sleeps/2.0, pads: [1], sat: 0, drive: 0.0
 
     sleep sleeps/2.0
   end
