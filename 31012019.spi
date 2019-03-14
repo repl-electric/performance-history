@@ -128,24 +128,24 @@ live_loop :Attune, sync: :unsyncable do; tick
   #  overclock :e4,5, sus: 2 if spread(1,4).look
   #operator :e4,105, sus: 3
   overclock :f4, sus: 3 if spread(1,1).look
-  overclock_cc oct: (cycle 0 -12 0 19 0 12).look
+  overclock_cc oct: (cycle 0, -12, 0, 19, 0, 12,).look
 
   with_bpm 127*1 do
     #tick_reset_all
-    flop_cc motion: (flow 0.4 0.57 32).look
+    flop_cc motion: (flow 0.4, 0.57, 32,).look
     flip_cc motion: 0.6
-    flip :e4,127, sus: (cycle 0.25 0.5 1).look
+    flip :e4,127, sus: (cycle 0.25, 0.5, 1,).look
     fn = (ring
       (method :flip),(method :flip),(method :flip),
       (method :flop),(method :flop),(method :flop) ).look
-    flop(:g4,127, sus: (cycle 0.125 0.5 1).rot(look%6).look)
+    flop(:g4,127, sus: (cycle 0.125, 0.5, 1,).rot(look%6).look)
 
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
     sleep 1/4.0
-#    overclock (cycle :g3  :A3  :G3).look,10,sus: 1.0/12.0 if spread(7,11).look
-#    alu (cycle :G3).look if spread(1,4).look
+#    overclock (cycle :g3,  :A3,  :G3,).look,10,sus: 1.0/12.0 if spread(7,11).look
+#    alu (cycle :G3,).look if spread(1,4).look
 
     sleep 1/4.0
     sleep 1/4.0
@@ -164,12 +164,12 @@ end
 
 live_loop :ClockCycle, sync: :unsyncable do; tick
   #sync :MachineInstructions
-  perc=(cycle 0 0 1 1  1 1 0 1  1 0 0 0  0 0 0 0)
-  with_bpm 127*(cycle 1).look do
+  perc=(cycle 0, 0, 1, 1,  1, 1, 0, 1,  1, 0, 0, 0,  0, 0, 0, 0,)
+  with_bpm 127*(cycle 1,).look do
     #perc_machine perc.to_a
     #sleep 1.0/2.0
-    with_swing((flow 0.0 1/4.0 16*4).look){
-      puts (flow 0.0 1/4.0 16*4).look if spread(4,8).look
+    with_swing((flow 0.0, 1/4.0, 16*4,).look){
+      puts (flow 0.0, 1/4.0, 16*4,).look if spread(4,8).look
       glitch :c3, 120 if spread(4,8).look
       glitch_cc corode: rand
     }
@@ -180,31 +180,31 @@ end
 live_loop :MachineInstructions, sync: :unsyncable do; tick
   with_bpm 127*1 do
     score = (cycle
-#      [[:a3] 8]
+#,      [[:a3], 8],
 
-#      [[:fs3] 8]
+#,      [[:fs3], 8],
 
-      [[:A3 :C5 :E4] 8]
-      [[:F4 :A6 :C5] 8]
-      [[:C3 :E5 :G4] 4]
-      [Zz 4]
-      # [[:A3 :C5 :E4] 8]
-      # [[:E4 :G5 :B3] 8]
-      # [[:F4 :A6 :C5 :E5] 8]
-      # [[:C3 :E5 :G4] 8]
-      # [Zz 8]
+      [[:A3, :C5, :E4], 8],
+      [[:F4, :A6, :C5], 8],
+      [[:C3, :E5, :G4], 4],
+      [Zz, 4],
+      #, [[:A3, :C5, :E4], 8],
+      #, [[:E4, :G5, :B3], 8],
+      #, [[:F4, :A6, :C5, :E5], 8],
+      #, [[:C3, :E5, :G4], 8],
+      #, [Zz, 8],
 
-      # [[:A3 :C5 :E4] 8]
-      # [[:F4 :A6 :C5] 8]
-      # [[:C3 :E5 :G4] 4]
-      # [Zz 4]
-      # [[:A3 :C5 :E4] 4]
-      # [[:A3 :C5 :E4] 4]
-      # [[:E4 :G5 :B3] 4]
-      # [[:E4 :G5 :B3] 4]
-      # [[:G4 :B6 :D5 :F4] 8]
-      # [[:C4 :E5 :G4] 8]
-      # [Zz 8]
+      #, [[:A3, :C5, :E4], 8],
+      #, [[:F4, :A6, :C5], 8],
+      #, [[:C3, :E5, :G4], 4],
+      #, [Zz, 4],
+      #, [[:A3, :C5, :E4], 4],
+      #, [[:A3, :C5, :E4], 4],
+      #, [[:E4, :G5, :B3], 4],
+      #, [[:E4, :G5, :B3], 4],
+      #, [[:G4, :B6, :D5, :F4], 8],
+      #, [[:C4, :E5, :G4], 8],
+      #, [Zz, 8],
 
       )
     chd = score.look[0]
@@ -214,7 +214,7 @@ live_loop :MachineInstructions, sync: :unsyncable do; tick
 
     sleep sleeps/2.0
     operator chd[-1]+[9,7].choose,95, sus: 8
-    with_swing((flow 0.0 sleeps/4.0 64).look){
+    with_swing((flow 0.0, sleeps/4.0, 64,).look){
       operator chd[-1]+12+[9,7].choose,91, sus: 8
     }
 
