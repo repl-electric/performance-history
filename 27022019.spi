@@ -44,7 +44,7 @@ live_loop :Attune, sync: :unsyncable do; tick
     sleep 1/2.0
 
     at{glitch :cs3, 48; sleep [1,2.0].choose; glitch :g3,20}
-    midi :c4, 85, channel: 13
+    midi :cs4, 85, channel: 13
 
     flop :e3, 40, sus: (cycle 1/2.0).look if spread(1,1).look
 
